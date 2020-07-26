@@ -14,4 +14,4 @@
 
 一个半吊子的理想主义者~
 
-
+# Next page [life and chance](https://github.com/xiaomuhou/xiaomuhou.github.io/blob/master/life.md) 
