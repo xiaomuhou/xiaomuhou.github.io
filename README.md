@@ -1,4 +1,4 @@
-## Welcome to my blog
+# Welcome to my blog
 
 ## 怎么会迷上你，我在问自己
 
