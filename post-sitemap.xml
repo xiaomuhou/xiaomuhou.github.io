@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2021/01/06/%E8%AE%B0%E5%BD%95/%E8%AE%B0%E5%BD%95/</loc>
+        <lastmod>2021-01-06T13:59:04.535Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2021-01-05T14:29:11.347Z</lastmod>
         <changefreq>weekly</changefreq>
