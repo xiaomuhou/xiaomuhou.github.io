@@ -8,8 +8,32 @@
     </url>
 
     <url>
+        <loc>http://yoursite.com/2021/02/03/fluid-model/fluid-model/</loc>
+        <lastmod>2021-02-03T03:07:58.678Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2021/02/03/ff14%E5%AE%8F/ff14%E5%AE%8F/</loc>
+        <lastmod>2021-02-03T03:04:37.477Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/2021/02/03/impedance-control/impedance-control/</loc>
+        <lastmod>2021-02-03T03:00:31.140Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite.com/2021/01/06/%E8%AE%B0%E5%BD%95/%E8%AE%B0%E5%BD%95/</loc>
-        <lastmod>2021-01-06T13:59:04.535Z</lastmod>
+        <lastmod>2021-02-03T02:51:11.124Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +41,7 @@
 
     <url>
         <loc>http://yoursite.com/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</loc>
-        <lastmod>2021-01-05T14:29:11.347Z</lastmod>
+        <lastmod>2021-02-03T02:49:49.464Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
