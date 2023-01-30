@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>DOC_exercise</title>
+    <url>/2021/08/29/DOC-exercise/DOC-exercise/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+
+
+<h1 id="随笔加一些更新计划"><a href="#随笔加一些更新计划" class="headerlink" title="随笔加一些更新计划"></a>随笔加一些更新计划</h1><p>人生不长，总归还是想做一些有意义的事情—–这是一切的出发点</p>
+<a id="more"></a>
+
+<h2 id="更新计划"><a href="#更新计划" class="headerlink" title="更新计划"></a>更新计划</h2><p>之后会更新一些视频与博客，博客文案，视频过程，在记录的同时巩固自己，希望可以帮助到一些朋友，要更新一些硬货，2333</p>
+<p>1.专业相关内容的研究，根据情况落实</p>
+<p>2.ROS、模拟软件以及一些算法记录过程</p>
+<p>3.游戏历史考据，比方说最近想得是重装的怪物史，总不可能是凭空出现的，回忆下过去，开拓下视野。</p>
+<p>4.文学方面的内容，提高一下，没想好更新什么，以后慢慢来</p>
+<h2 id="一些需要时刻记住的事情"><a href="#一些需要时刻记住的事情" class="headerlink" title="一些需要时刻记住的事情"></a>一些需要时刻记住的事情</h2><p>行甚于言，很重要的一点；</p>
+<p>前段时间总是自我怀疑，希望不要忘记自己的初心，我还是有一些优点的，踏踏实实的做事就好；</p>
+<p>操千曲而后晓声，观千剑而后识器，大量且规律的积累是以后必须做到的；</p>
+<p><strong>要努力提高英语呀，坚持日积月累；</strong></p>
+<p>拓展视野，坚实基础；保持信心，提高自己；</p>
+<p>去做一些更好玩的事情，记住自己的初心，坚持下去（已经确确实实是个成年人了，以后要更成熟一点）</p>
+<h2 id="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"><a href="#未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人" class="headerlink" title="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"></a>未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人</h2>]]></content>
+      <tags>
+        <tag>plan</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Quaternion</title>
+    <url>/2021/11/24/Quaternion/Quaternion/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="万向锁问题"><a href="#万向锁问题" class="headerlink" title="万向锁问题"></a>万向锁问题</h1><h2 id="造成影响："><a href="#造成影响：" class="headerlink" title="造成影响："></a>造成影响：</h2><p>出现万向锁后会丢失自由度</p>
+<a id="more"></a>
+
+<h2 id="从结构角度分析："><a href="#从结构角度分析：" class="headerlink" title="从结构角度分析："></a>从结构角度分析：</h2><p>主要原因是由于各旋转轴之间存在运动关系，即动态欧拉角，角度变化后，坐标系随之发生变化，比如万向锁结构，三个坐标轴分别可以用环结构表示，外环、中环、内环，当内环转动，即等效沿某一轴转动，内环与中、外环都存在运动关系，坐标系同时变化，就不会发生重叠现象，；当中环运动时，内环不会运动，只有外环会进行运动，那么内环所代表的坐标系可能会与外环所代表的坐标系重合，当进行动态旋转时，沿着外环与内环代表的坐标系运动，只会产生一个方向的自由度，由此发生了万向锁现象，即丢失一个自由度。</p>
+<h2 id="后续一些想法"><a href="#后续一些想法" class="headerlink" title="后续一些想法"></a>后续一些想法</h2><p>看b站评论说为什么不选取惯性坐标系作为参考运动，这样就不会出现万向锁现象了？</p>
+<p>其实这是一个概念的问题，首先需要理解欧拉角的意义，欧拉角是用来描述姿态的三个角度，包含静态、动态两种，静态欧拉角即沿着惯性坐标系进行运动，而动态欧拉角则会出现万向锁现象，动态有12种旋转方式，XYZ、XZY、XYX、XZX、YXZ、YZX、YXY、YZY、ZXY、ZYX、ZXZ、ZYZ,含有中间轴Y都存在万向锁问题。</p>
+<p>因此该问题的本质是动态欧拉角的意义是什么？</p>
+<p>基于动态坐标的欧拉角旋转，其惯性张量不随着时间改变而改变，将其进行对角化处理，即可以得到一个一组主轴和一个只含三个分量的主动惯量，动力学计算较为容易，这一部分内容可以机器人动力学模型计算案例中深入理解。</p>
+<h2 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h2><p>为了描述复杂运动以及规避一些特殊点，可以用四元数工具进行描述分析，最近正在整理旋量与四元数的并联应用分析内容，以后会写一个小总结。</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>mathematica</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>plan+review</title>
     <url>/2020/07/27/Fplan/Fplan/</url>
     <content><![CDATA[<h1 id="2020-7-27"><a href="#2020-7-27" class="headerlink" title="2020.7.27"></a>2020.7.27</h1><p>1.Dynamixel work_bench   c++  python</p>
@@ -617,84 +665,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>DOC_exercise</title>
-    <url>/2021/08/29/DOC-exercise/DOC-exercise/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-
-
-<h1 id="随笔加一些更新计划"><a href="#随笔加一些更新计划" class="headerlink" title="随笔加一些更新计划"></a>随笔加一些更新计划</h1><p>人生不长，总归还是想做一些有意义的事情—–这是一切的出发点</p>
-<a id="more"></a>
-
-<h2 id="更新计划"><a href="#更新计划" class="headerlink" title="更新计划"></a>更新计划</h2><p>之后会更新一些视频与博客，博客文案，视频过程，在记录的同时巩固自己，希望可以帮助到一些朋友，要更新一些硬货，2333</p>
-<p>1.专业相关内容的研究，根据情况落实</p>
-<p>2.ROS、模拟软件以及一些算法记录过程</p>
-<p>3.游戏历史考据，比方说最近想得是重装的怪物史，总不可能是凭空出现的，回忆下过去，开拓下视野。</p>
-<p>4.文学方面的内容，提高一下，没想好更新什么，以后慢慢来</p>
-<h2 id="一些需要时刻记住的事情"><a href="#一些需要时刻记住的事情" class="headerlink" title="一些需要时刻记住的事情"></a>一些需要时刻记住的事情</h2><p>行甚于言，很重要的一点；</p>
-<p>前段时间总是自我怀疑，希望不要忘记自己的初心，我还是有一些优点的，踏踏实实的做事就好；</p>
-<p>操千曲而后晓声，观千剑而后识器，大量且规律的积累是以后必须做到的；</p>
-<p><strong>要努力提高英语呀，坚持日积月累；</strong></p>
-<p>拓展视野，坚实基础；保持信心，提高自己；</p>
-<p>去做一些更好玩的事情，记住自己的初心，坚持下去（已经确确实实是个成年人了，以后要更成熟一点）</p>
-<h2 id="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"><a href="#未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人" class="headerlink" title="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"></a>未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人</h2>]]></content>
-      <tags>
-        <tag>plan</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Quaternion</title>
-    <url>/2021/11/24/Quaternion/Quaternion/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<h1 id="万向锁问题"><a href="#万向锁问题" class="headerlink" title="万向锁问题"></a>万向锁问题</h1><h2 id="造成影响："><a href="#造成影响：" class="headerlink" title="造成影响："></a>造成影响：</h2><p>出现万向锁后会丢失自由度</p>
-<a id="more"></a>
-
-<h2 id="从结构角度分析："><a href="#从结构角度分析：" class="headerlink" title="从结构角度分析："></a>从结构角度分析：</h2><p>主要原因是由于各旋转轴之间存在运动关系，即动态欧拉角，角度变化后，坐标系随之发生变化，比如万向锁结构，三个坐标轴分别可以用环结构表示，外环、中环、内环，当内环转动，即等效沿某一轴转动，内环与中、外环都存在运动关系，坐标系同时变化，就不会发生重叠现象，；当中环运动时，内环不会运动，只有外环会进行运动，那么内环所代表的坐标系可能会与外环所代表的坐标系重合，当进行动态旋转时，沿着外环与内环代表的坐标系运动，只会产生一个方向的自由度，由此发生了万向锁现象，即丢失一个自由度。</p>
-<h2 id="后续一些想法"><a href="#后续一些想法" class="headerlink" title="后续一些想法"></a>后续一些想法</h2><p>看b站评论说为什么不选取惯性坐标系作为参考运动，这样就不会出现万向锁现象了？</p>
-<p>其实这是一个概念的问题，首先需要理解欧拉角的意义，欧拉角是用来描述姿态的三个角度，包含静态、动态两种，静态欧拉角即沿着惯性坐标系进行运动，而动态欧拉角则会出现万向锁现象，动态有12种旋转方式，XYZ、XZY、XYX、XZX、YXZ、YZX、YXY、YZY、ZXY、ZYX、ZXZ、ZYZ,含有中间轴Y都存在万向锁问题。</p>
-<p>因此该问题的本质是动态欧拉角的意义是什么？</p>
-<p>基于动态坐标的欧拉角旋转，其惯性张量不随着时间改变而改变，将其进行对角化处理，即可以得到一个一组主轴和一个只含三个分量的主动惯量，动力学计算较为容易，这一部分内容可以机器人动力学模型计算案例中深入理解。</p>
-<h2 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h2><p>为了描述复杂运动以及规避一些特殊点，可以用四元数工具进行描述分析，最近正在整理旋量与四元数的并联应用分析内容，以后会写一个小总结。</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>mathematica</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>configure_bag</title>
-    <url>/2020/11/30/configure-bag/configure-bag/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
-<p>以及补充后续图像处理相关项目内容</p>
-<a id="more"></a>
-
-<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
-<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
-<p>（原因后续深入了解了之后继续补充）</p>
-<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
-<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
-<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;&#x2F;dev&#x2F;null | grep &#39;\.rp_filter&#39;</span><br></pre></td></tr></table></figure>
-
-<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter&#x3D;0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter&#x3D;0</span><br></pre></td></tr></table></figure>
-
-<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
-<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
-<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
-<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
-<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
-]]></content>
-      <categories>
-        <category>camera</category>
-      </categories>
-  </entry>
-  <entry>
     <title>daliy_life</title>
     <url>/2020/08/17/daliy-life/daliy-life/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer">
@@ -733,6 +703,36 @@
 <p>奇异位置分析内容（待补充）。</p>
 <p>接下来写雅各比速度推导，后续还会补充控制方案，伸缩机构可能会写一篇，看设计的情况了。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>configure_bag</title>
+    <url>/2020/11/30/configure-bag/configure-bag/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
+<p>以及补充后续图像处理相关项目内容</p>
+<a id="more"></a>
+
+<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
+<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
+<p>（原因后续深入了解了之后继续补充）</p>
+<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
+<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
+<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;&#x2F;dev&#x2F;null | grep &#39;\.rp_filter&#39;</span><br></pre></td></tr></table></figure>
+
+<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter&#x3D;0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter&#x3D;0</span><br></pre></td></tr></table></figure>
+
+<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
+<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
+<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
+<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
+<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
+]]></content>
+      <categories>
+        <category>camera</category>
+      </categories>
   </entry>
   <entry>
     <title>delta_ros</title>
@@ -1711,6 +1711,35 @@
 ]]></content>
   </entry>
   <entry>
+    <title>lifespan</title>
+    <url>/2020/11/07/lifespan/lifespan/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="无常的人生-小记"><a href="#无常的人生-小记" class="headerlink" title="无常的人生-小记"></a>无常的人生-小记</h1><p>今天心情还挺复杂的，不自主的想着好多事情，不想让熟人知道，但是又想倾诉一下，所以在博客里稍微说一说，（未来不管陌生人还是熟人，或者是自己，看到这篇小记，是否会心有所感呢？）</p>
+<a id="more"></a>
+
+<h2 id="1-纪念一场似是而非的“感情”"><a href="#1-纪念一场似是而非的“感情”" class="headerlink" title="1.纪念一场似是而非的“感情”"></a>1.纪念一场似是而非的“感情”</h2><p>友谊和爱情终究是有差别的，这是我所笃定的，但是差别的界定，我好像又是模糊的，前些天我好像做了一些很对不起你的事情，但是我又不得不这么做。</p>
+<p>为什么我下不了决心呢，我后来自己想了想，其实不是我所谓的不懂体贴、太过“直男”，而是我觉得我们太熟悉了，虽然几乎有两年没见过，熟悉带来的于我而言就是陌生，更重要的一点是，你我都不知道这段未来的感情里掺杂了多少另外多余的东西，比如周围的环境、别人的看法，各自的兴趣爱好甚至与一些观念理想，你我都不是好多年前的那个人了。</p>
+<p>说实话，很久之前，我应该是喜欢的，不过那会不敢跟你说，也不知道你怎么想，再后来，经历了很多事情，我的想法也慢慢变了，但是终究你对我而言，和别人是不同的，这可能就是你说的差别对待感觉的来源，但是这个差别来自于很多年前，并且可能并不会更进一步，我害怕我以后会伤害你，所以我在不算开始的现在退出，我也不想去试这个模糊感是不是有未来，我总感觉有些事情应该是顺其自然的…</p>
+<p>希望你未来能找到更合适的，我会衷心的祝福，真的</p>
+<p>我们应该还是朋友吧…有些事不说还好，说了真是尴尬</p>
+<p>确定不了你的想法为什么忽然那么坚定，我也无法确定我的想法，总体来讲，就是这个原因。</p>
+<p>我会努力提高自己，当然希望你也能健健康康的快乐生活，我会帮助你，以一个好朋友的身份，不管你接不接受。没有前一段经历，或许我也不能下定决心做一件事。</p>
+<p>感觉你最近蛮开心的，那我也就放心了，希望我没有对你造成什么伤害…</p>
+<p>你可能不会看到这篇碎碎念的文章吧，毕竟我没和别人讲过这个博客，我居然能写出这么多废话…</p>
+<p>想起来又是好复杂，感觉好烦，爱情真是烦人啊，不如多看两篇文献…</p>
+<h2 id="2人生之路漫漫长"><a href="#2人生之路漫漫长" class="headerlink" title="2人生之路漫漫长"></a>2人生之路漫漫长</h2><p>未来几年的方向应该是确定了，模糊又坚定，我有自己的指标，我会努力去完成</p>
+<p>踏实一点、坚定一点、乐观一点</p>
+<h2 id="3现在"><a href="#3现在" class="headerlink" title="3现在"></a>3现在</h2><p>是不是很奇怪的顺序，确实，不过这本身就是一篇奇怪的文章，和我的现实性格一点也不搭。</p>
+<p>现在我做的应该也是踏踏实实的，把每日目标和小目标努力完成了，最近遇到点小难题，一点一点得去记录并且克服掉</p>
+<p>摸鱼虽然舒服，但是真的浪费时间，拒绝正式时间摸鱼，从我做起</p>
+<p>严格规划时间了呀啊喂！</p>
+<p>周末晚之前做一版，下周严格的把模型推导完，整理知识，克服难题</p>
+<p>人生啊—真是漫长</p>
+<p>应该不会有人看到吧，真是尴尬…</p>
+]]></content>
+  </entry>
+  <entry>
     <title>life/life</title>
     <url>/2022/08/02/life/life/</url>
     <content><![CDATA[<p> <strong>怎么会迷上你，我在问自己</strong></p>
@@ -1720,6 +1749,141 @@
 <p>犹豫、常常忽略一些事情、讨厌很多事情</p>
 <p>一个半吊子的理想主义者～</p>
 <p><a href="/img/R.jpg">r</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>manipulator_HU_learninging</title>
+    <url>/2020/10/12/manipulator-HU-learninging/manipulator-HU-learninging/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="记录一套开发流程，没啥意义"><a href="#记录一套开发流程，没啥意义" class="headerlink" title="记录一套开发流程，没啥意义"></a>记录一套开发流程，没啥意义</h1><p>后续可看，ppt要好好做</p>
+<a id="more"></a>
+
+<p>1.基本理论</p>
+<p>2.开发</p>
+<p>ISO</p>
+<ol>
+<li>机器人动作机构具有类似于人或其他生物体的某些器官（肢体、感受等）的功能；、</li>
+<li>机器人具有通用性，工作种类多样，动作程序灵活易变；</li>
+<li>机器人具有不同程度的智能性，比如记忆、感知、推理、决策、学习等；</li>
+<li>机器人具有独立性、完整的机器人系统在工作中不可以依赖于人的干预。</li>
+</ol>
+<p>驱动系统</p>
+<ul>
+<li>电源子系统</li>
+<li>电机驱动系统–控制信号-电信号</li>
+<li>传感器</li>
+</ul>
+<p>内部传感器</p>
+<ul>
+<li>机器人里程计</li>
+<li>惯性测量单元IMU</li>
+</ul>
+<p>控制系统</p>
+<p>PC–人机交互（SLAM、导航、图像识别、语音识别）</p>
+<p>TCP/UDP</p>
+<p>硬件系统：控制、传感器数据采集、驱动系统通信、外设连接</p>
+<p>外部传感器</p>
+<ul>
+<li>外部摄像头、Kinect</li>
+<li>激光雷达</li>
+</ul>
+<p>移动机器人-常见</p>
+<p>机器人架构可参考（ppt制作，针对特种环境的通信干扰分析）</p>
+<p>云机器人架构思想：</p>
+<ul>
+<li>全局云：全局数据存储、共享和交互</li>
+<li>本地云：密集型计算的机器人应用服务</li>
+<li>机器人：面向用户的终端服务单元</li>
+</ul>
+<p>优点：局部网络占优</p>
+<ul>
+<li>本地云数据共享更加灵活、快捷</li>
+<li>数据保存与本地服务器，更加安全、可靠</li>
+<li>服务于多种机器人</li>
+</ul>
+<p>整理常见机械臂：</p>
+<ul>
+<li>UR机械臂，安全度高、编程简单、灵活度高，负载10-18kg，工作半径85-130cm。</li>
+<li></li>
+</ul>
+<p>控制框架架构+系统架构+云系统架构</p>
+<h2 id="开发具体流程分析与记录（代码分析）："><a href="#开发具体流程分析与记录（代码分析）：" class="headerlink" title="开发具体流程分析与记录（代码分析）："></a>开发具体流程分析与记录（代码分析）：</h2><p>1.常见基础</p>
+<p>2.manipulator_moveit</p>
+<p>3.moveit+gazebo 仿真系统搭建</p>
+<p>ros_control 为开发者提供的机器人控制中间件，包含一系列控制器接口、传动器接口、硬件接口、控制器工具箱</p>
+<p>包括有速度控制、位置控制、力控制</p>
+<p>关节位置控制器：PID 具体参照arm包 yaml文件或者gazebo_control内yaml文件</p>
+<p>加载控制器，加载conrollers关节参数，加载publisher参数节点，三部分，关节矩阵变换</p>
+<p>moveit与gazebo rviz 联合仿真</p>
+<p>编程接口</p>
+<p>moveit_commander python接口</p>
+<p>1.连接控制需要的规划组 2.设置目标位姿 3.设置运动约束 4.使用moveit！规划一条到达目标的轨迹</p>
+<p>5.修改轨迹 6.执行规划出的轨迹</p>
+<p>启动moveit包-moveit_config,程序中给出目标位置以及执行器位置信息，软件自动规划最优路径</p>
+<p>编程—针对规划组编写，设置目标位置参数，臂则设置位置信息，数组导入，完成机械臂规划</p>
+<p>工作空间运动规划–轨迹规划(关键代码参数)</p>
+<p>创建规划组的控制对象</p>
+<p>获取机器人终端LINK名称</p>
+<p>设置目标位姿对应的参考坐标系和起始、终止位姿</p>
+<p>完成规划并控制机械臂完成运动</p>
+<p>运动限制约束设置</p>
+<p>运动学插件问题KDL，插件选用以及<code>二次开发</code>问题</p>
+<p>抓取与放置，attach与un，避障规划</p>
+<p>代码分析与移植待补充～～</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>literature</title>
+    <url>/2020/09/03/literature/literature/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
+<p>abstract    consult    discussion   method   result</p>
+<p>review</p>
+<a id="more"></a>
+
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
+<p>摘要分层</p>
+<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
+<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
+<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
+<p>2.indicative abstract</p>
+<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
+<p>3.extended abstract</p>
+<p> thesis   dissertation</p>
+<p>4.structured abstract</p>
+<p>5.conference abstract</p>
+<p>6.graphical abstract</p>
+<p>7.executive summary</p>
+<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
+<ol>
+<li>Introduction  </li>
+<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
+<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
+</ol>
+<p>分层</p>
+<p>1.review of the present study</p>
+<p>2.consolidating ofthe results</p>
+<p>3.stating limitations and possible research directions</p>
+<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
+<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
+</ol>
+<p>分层</p>
+<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
+<p>一些特点 linguistic features</p>
+<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
+<p>Method classification</p>
+<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
+<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
+<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
+<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
+<p>…用的比较少，不列了</p>
+<p>缺一部分，改天再补，回寝了～</p>
 ]]></content>
   </entry>
   <entry>
@@ -1908,117 +2072,18 @@
       </categories>
   </entry>
   <entry>
-    <title>logic_symbol</title>
-    <url>/2020/07/27/logic-symbol/logic-symbol/</url>
-    <content><![CDATA[<h1 id="逻辑符号"><a href="#逻辑符号" class="headerlink" title="逻辑符号"></a>逻辑符号</h1><p>这篇博文主要为了总结一下逻辑运算符号（拯救混乱记忆，雾）</p>
-<p>(下一篇是题目总结顺便复习)</p>
-<a id="more"></a>
+    <title>newnote</title>
+    <url>/2022/08/02/newnote/newnote/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
 
-
-
-<p>1.逻辑结构</p>
-<p>与运算：</p>
-<p>与(&amp;&amp;)：逻辑规则是两真才真。与and等同。</p>
-<p>或运算：</p>
-<p>或(||)：逻辑规则是只有一个为真就为真。与or等同。</p>
-<p>异或：</p>
-<p>异或(^)：逻辑规则是两个不同就为真。</p>
-<p>非运算符：</p>
-<p>非(！)：逻辑规则是反转操作数的含义。与not等同。</p>
- 
-
-<h2 id="电路中的符合逻辑"><a href="#电路中的符合逻辑" class="headerlink" title="电路中的符合逻辑"></a>电路中的符合逻辑</h2><p>与非：  输入只要有0，输出为1.输入全1，输出才0</p>
-<p>或非：输入只要有1，输出为0，输入全为0，输出才1</p>
-<p>与或非：复合运算</p>
- 
-
-<p>电路中还存在异或与同或</p>
-<p>异或：相异则为1</p>
-<p>同或：相同则为1</p>
-<p>关于逻辑电路门，以后再说吧233</p>
-]]></content>
+<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
+<a id="more"></a>]]></content>
       <categories>
-        <category>logic</category>
+        <category>note</category>
       </categories>
-  </entry>
-  <entry>
-    <title>lifespan</title>
-    <url>/2020/11/07/lifespan/lifespan/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<h1 id="无常的人生-小记"><a href="#无常的人生-小记" class="headerlink" title="无常的人生-小记"></a>无常的人生-小记</h1><p>今天心情还挺复杂的，不自主的想着好多事情，不想让熟人知道，但是又想倾诉一下，所以在博客里稍微说一说，（未来不管陌生人还是熟人，或者是自己，看到这篇小记，是否会心有所感呢？）</p>
-<a id="more"></a>
-
-<h2 id="1-纪念一场似是而非的“感情”"><a href="#1-纪念一场似是而非的“感情”" class="headerlink" title="1.纪念一场似是而非的“感情”"></a>1.纪念一场似是而非的“感情”</h2><p>友谊和爱情终究是有差别的，这是我所笃定的，但是差别的界定，我好像又是模糊的，前些天我好像做了一些很对不起你的事情，但是我又不得不这么做。</p>
-<p>为什么我下不了决心呢，我后来自己想了想，其实不是我所谓的不懂体贴、太过“直男”，而是我觉得我们太熟悉了，虽然几乎有两年没见过，熟悉带来的于我而言就是陌生，更重要的一点是，你我都不知道这段未来的感情里掺杂了多少另外多余的东西，比如周围的环境、别人的看法，各自的兴趣爱好甚至与一些观念理想，你我都不是好多年前的那个人了。</p>
-<p>说实话，很久之前，我应该是喜欢的，不过那会不敢跟你说，也不知道你怎么想，再后来，经历了很多事情，我的想法也慢慢变了，但是终究你对我而言，和别人是不同的，这可能就是你说的差别对待感觉的来源，但是这个差别来自于很多年前，并且可能并不会更进一步，我害怕我以后会伤害你，所以我在不算开始的现在退出，我也不想去试这个模糊感是不是有未来，我总感觉有些事情应该是顺其自然的…</p>
-<p>希望你未来能找到更合适的，我会衷心的祝福，真的</p>
-<p>我们应该还是朋友吧…有些事不说还好，说了真是尴尬</p>
-<p>确定不了你的想法为什么忽然那么坚定，我也无法确定我的想法，总体来讲，就是这个原因。</p>
-<p>我会努力提高自己，当然希望你也能健健康康的快乐生活，我会帮助你，以一个好朋友的身份，不管你接不接受。没有前一段经历，或许我也不能下定决心做一件事。</p>
-<p>感觉你最近蛮开心的，那我也就放心了，希望我没有对你造成什么伤害…</p>
-<p>你可能不会看到这篇碎碎念的文章吧，毕竟我没和别人讲过这个博客，我居然能写出这么多废话…</p>
-<p>想起来又是好复杂，感觉好烦，爱情真是烦人啊，不如多看两篇文献…</p>
-<h2 id="2人生之路漫漫长"><a href="#2人生之路漫漫长" class="headerlink" title="2人生之路漫漫长"></a>2人生之路漫漫长</h2><p>未来几年的方向应该是确定了，模糊又坚定，我有自己的指标，我会努力去完成</p>
-<p>踏实一点、坚定一点、乐观一点</p>
-<h2 id="3现在"><a href="#3现在" class="headerlink" title="3现在"></a>3现在</h2><p>是不是很奇怪的顺序，确实，不过这本身就是一篇奇怪的文章，和我的现实性格一点也不搭。</p>
-<p>现在我做的应该也是踏踏实实的，把每日目标和小目标努力完成了，最近遇到点小难题，一点一点得去记录并且克服掉</p>
-<p>摸鱼虽然舒服，但是真的浪费时间，拒绝正式时间摸鱼，从我做起</p>
-<p>严格规划时间了呀啊喂！</p>
-<p>周末晚之前做一版，下周严格的把模型推导完，整理知识，克服难题</p>
-<p>人生啊—真是漫长</p>
-<p>应该不会有人看到吧，真是尴尬…</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>literature</title>
-    <url>/2020/09/03/literature/literature/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
-<p>abstract    consult    discussion   method   result</p>
-<p>review</p>
-<a id="more"></a>
-
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
-<p>摘要分层</p>
-<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
-<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
-<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
-<p>2.indicative abstract</p>
-<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
-<p>3.extended abstract</p>
-<p> thesis   dissertation</p>
-<p>4.structured abstract</p>
-<p>5.conference abstract</p>
-<p>6.graphical abstract</p>
-<p>7.executive summary</p>
-<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
-<ol>
-<li>Introduction  </li>
-<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
-<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
-</ol>
-<p>分层</p>
-<p>1.review of the present study</p>
-<p>2.consolidating ofthe results</p>
-<p>3.stating limitations and possible research directions</p>
-<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
-<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
-<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
-</ol>
-<p>分层</p>
-<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
-<p>一些特点 linguistic features</p>
-<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
-<p>Method classification</p>
-<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
-<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
-<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
-<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
-<p>…用的比较少，不列了</p>
-<p>缺一部分，改天再补，回寝了～</p>
-]]></content>
+      <tags>
+        <tag>airfact</tag>
+      </tags>
   </entry>
   <entry>
     <title>manipulator_review</title>
@@ -2133,127 +2198,38 @@
       </categories>
   </entry>
   <entry>
-    <title>manipulator_HU_learninging</title>
-    <url>/2020/10/12/manipulator-HU-learninging/manipulator-HU-learninging/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<h1 id="记录一套开发流程，没啥意义"><a href="#记录一套开发流程，没啥意义" class="headerlink" title="记录一套开发流程，没啥意义"></a>记录一套开发流程，没啥意义</h1><p>后续可看，ppt要好好做</p>
+    <title>logic_symbol</title>
+    <url>/2020/07/27/logic-symbol/logic-symbol/</url>
+    <content><![CDATA[<h1 id="逻辑符号"><a href="#逻辑符号" class="headerlink" title="逻辑符号"></a>逻辑符号</h1><p>这篇博文主要为了总结一下逻辑运算符号（拯救混乱记忆，雾）</p>
+<p>(下一篇是题目总结顺便复习)</p>
 <a id="more"></a>
 
-<p>1.基本理论</p>
-<p>2.开发</p>
-<p>ISO</p>
-<ol>
-<li>机器人动作机构具有类似于人或其他生物体的某些器官（肢体、感受等）的功能；、</li>
-<li>机器人具有通用性，工作种类多样，动作程序灵活易变；</li>
-<li>机器人具有不同程度的智能性，比如记忆、感知、推理、决策、学习等；</li>
-<li>机器人具有独立性、完整的机器人系统在工作中不可以依赖于人的干预。</li>
-</ol>
-<p>驱动系统</p>
-<ul>
-<li>电源子系统</li>
-<li>电机驱动系统–控制信号-电信号</li>
-<li>传感器</li>
-</ul>
-<p>内部传感器</p>
-<ul>
-<li>机器人里程计</li>
-<li>惯性测量单元IMU</li>
-</ul>
-<p>控制系统</p>
-<p>PC–人机交互（SLAM、导航、图像识别、语音识别）</p>
-<p>TCP/UDP</p>
-<p>硬件系统：控制、传感器数据采集、驱动系统通信、外设连接</p>
-<p>外部传感器</p>
-<ul>
-<li>外部摄像头、Kinect</li>
-<li>激光雷达</li>
-</ul>
-<p>移动机器人-常见</p>
-<p>机器人架构可参考（ppt制作，针对特种环境的通信干扰分析）</p>
-<p>云机器人架构思想：</p>
-<ul>
-<li>全局云：全局数据存储、共享和交互</li>
-<li>本地云：密集型计算的机器人应用服务</li>
-<li>机器人：面向用户的终端服务单元</li>
-</ul>
-<p>优点：局部网络占优</p>
-<ul>
-<li>本地云数据共享更加灵活、快捷</li>
-<li>数据保存与本地服务器，更加安全、可靠</li>
-<li>服务于多种机器人</li>
-</ul>
-<p>整理常见机械臂：</p>
-<ul>
-<li>UR机械臂，安全度高、编程简单、灵活度高，负载10-18kg，工作半径85-130cm。</li>
-<li></li>
-</ul>
-<p>控制框架架构+系统架构+云系统架构</p>
-<h2 id="开发具体流程分析与记录（代码分析）："><a href="#开发具体流程分析与记录（代码分析）：" class="headerlink" title="开发具体流程分析与记录（代码分析）："></a>开发具体流程分析与记录（代码分析）：</h2><p>1.常见基础</p>
-<p>2.manipulator_moveit</p>
-<p>3.moveit+gazebo 仿真系统搭建</p>
-<p>ros_control 为开发者提供的机器人控制中间件，包含一系列控制器接口、传动器接口、硬件接口、控制器工具箱</p>
-<p>包括有速度控制、位置控制、力控制</p>
-<p>关节位置控制器：PID 具体参照arm包 yaml文件或者gazebo_control内yaml文件</p>
-<p>加载控制器，加载conrollers关节参数，加载publisher参数节点，三部分，关节矩阵变换</p>
-<p>moveit与gazebo rviz 联合仿真</p>
-<p>编程接口</p>
-<p>moveit_commander python接口</p>
-<p>1.连接控制需要的规划组 2.设置目标位姿 3.设置运动约束 4.使用moveit！规划一条到达目标的轨迹</p>
-<p>5.修改轨迹 6.执行规划出的轨迹</p>
-<p>启动moveit包-moveit_config,程序中给出目标位置以及执行器位置信息，软件自动规划最优路径</p>
-<p>编程—针对规划组编写，设置目标位置参数，臂则设置位置信息，数组导入，完成机械臂规划</p>
-<p>工作空间运动规划–轨迹规划(关键代码参数)</p>
-<p>创建规划组的控制对象</p>
-<p>获取机器人终端LINK名称</p>
-<p>设置目标位姿对应的参考坐标系和起始、终止位姿</p>
-<p>完成规划并控制机械臂完成运动</p>
-<p>运动限制约束设置</p>
-<p>运动学插件问题KDL，插件选用以及<code>二次开发</code>问题</p>
-<p>抓取与放置，attach与un，避障规划</p>
-<p>代码分析与移植待补充～～</p>
+
+
+<p>1.逻辑结构</p>
+<p>与运算：</p>
+<p>与(&amp;&amp;)：逻辑规则是两真才真。与and等同。</p>
+<p>或运算：</p>
+<p>或(||)：逻辑规则是只有一个为真就为真。与or等同。</p>
+<p>异或：</p>
+<p>异或(^)：逻辑规则是两个不同就为真。</p>
+<p>非运算符：</p>
+<p>非(！)：逻辑规则是反转操作数的含义。与not等同。</p>
+ 
+
+<h2 id="电路中的符合逻辑"><a href="#电路中的符合逻辑" class="headerlink" title="电路中的符合逻辑"></a>电路中的符合逻辑</h2><p>与非：  输入只要有0，输出为1.输入全1，输出才0</p>
+<p>或非：输入只要有1，输出为0，输入全为0，输出才1</p>
+<p>与或非：复合运算</p>
+ 
+
+<p>电路中还存在异或与同或</p>
+<p>异或：相异则为1</p>
+<p>同或：相同则为1</p>
+<p>关于逻辑电路门，以后再说吧233</p>
 ]]></content>
       <categories>
-        <category>note</category>
+        <category>logic</category>
       </categories>
-  </entry>
-  <entry>
-    <title>movie_fish</title>
-    <url>/2020/07/30/movie-fish/movie-fish/</url>
-    <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><a id="more"></a>
-
-<h1 id="V字仇杀队"><a href="#V字仇杀队" class="headerlink" title="V字仇杀队"></a>V字仇杀队</h1><p>时隔多年再次欣赏这部电影，感觉平淡了许多，不再像当初那么愤青了。</p>
-<p>世界上没有完美的事情，过于理性的审视一切，有很多好处，同时也失去了很多东西。</p>
-<p>思想是不可消亡了～</p>
-<h1 id="窃听风暴"><a href="#窃听风暴" class="headerlink" title="窃听风暴"></a>窃听风暴</h1><p>压抑的bgm，紧凑的情节</p>
-<p>断续的信息流，完整的情感线，人类本质的体现</p>
-<p>风云变换的历史，个人永远都是渺小的，滔天海浪的压迫感觉</p>
-<p>百年未有之大变局，如何在历史的洪流中生活，放弃一些无用的主义思维，守好自己所相信的底线。</p>
-<p>没有绝对的对错之分，安安静静的就好～</p>
-<h2 id="黑客帝国三矩阵革命"><a href="#黑客帝国三矩阵革命" class="headerlink" title="黑客帝国三矩阵革命"></a>黑客帝国三矩阵革命</h2><p>画面不错</p>
-<h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
-<p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
-<p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
-<p><img src="/../pictures/R.jpg" alt></p>
-<h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
-<p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
-<p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
-<p>（生气的时候，有一点很重要，问自己一下，有必要么？）</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>newnote</title>
-    <url>/2022/08/02/newnote/newnote/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>airfact</tag>
-      </tags>
   </entry>
   <entry>
     <title>note</title>
@@ -2277,6 +2253,30 @@
       <tags>
         <tag>formula</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>movie_fish</title>
+    <url>/2020/07/30/movie-fish/movie-fish/</url>
+    <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><a id="more"></a>
+
+<h1 id="V字仇杀队"><a href="#V字仇杀队" class="headerlink" title="V字仇杀队"></a>V字仇杀队</h1><p>时隔多年再次欣赏这部电影，感觉平淡了许多，不再像当初那么愤青了。</p>
+<p>世界上没有完美的事情，过于理性的审视一切，有很多好处，同时也失去了很多东西。</p>
+<p>思想是不可消亡了～</p>
+<h1 id="窃听风暴"><a href="#窃听风暴" class="headerlink" title="窃听风暴"></a>窃听风暴</h1><p>压抑的bgm，紧凑的情节</p>
+<p>断续的信息流，完整的情感线，人类本质的体现</p>
+<p>风云变换的历史，个人永远都是渺小的，滔天海浪的压迫感觉</p>
+<p>百年未有之大变局，如何在历史的洪流中生活，放弃一些无用的主义思维，守好自己所相信的底线。</p>
+<p>没有绝对的对错之分，安安静静的就好～</p>
+<h2 id="黑客帝国三矩阵革命"><a href="#黑客帝国三矩阵革命" class="headerlink" title="黑客帝国三矩阵革命"></a>黑客帝国三矩阵革命</h2><p>画面不错</p>
+<h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
+<p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
+<p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
+<p><img src="/2020/07/30/movie-fish/movie-fish/pictures/R.jpg" alt></p>
+<h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
+<p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
+<p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
+<p>（生气的时候，有一点很重要，问自己一下，有必要么？）</p>
+]]></content>
   </entry>
   <entry>
     <title>numpy_py</title>
@@ -2386,33 +2386,6 @@
 <pre><code></code></pre>]]></content>
   </entry>
   <entry>
-    <title>plan</title>
-    <url>/2023/01/29/plan/plan/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<p>2023开学随笔</p>
-<a id="more"></a>
-
-<p>说着要更新，但是因为各种各样的事情总是拖后，上个学期有了一些进度，但是后续仍然有很多需要落实的地方，今天顺便一起想了，生活上也有好多事情要处理，后天开学了，晚上闲来无事，大概想想~</p>
-<p>1.总的来讲，很多事进度没有严格按计划落实，还是个人惰性的问题，我自己一个人呆着的时候进度总是很慢，喜欢摸鱼，我打算严格落实目标，坚持完成。</p>
-<p>2.有句话我觉得很有用-“你的人生没有那么多观众”，我现在已经可以下意识的做的一部分，但是还是没办法完全做到，不必强求吧，太过了可能也不好，对所有事都没兴趣，终归有问题，但是对一些没意义的事情，还是要避免，不去做没意义的事情；电话 会议？2333</p>
-<p>3.开学之后是31，到元宵节，6天时间要加班把那个任务完成，最重要的一件事是每天也要坚持看英文文献，如果可以理解两个，把任务压缩到分配到每天，必须完成这些事情，然后汇报一下；这个是现阶段最最重要的事情</p>
-<p>4.之前每天坚持落实的事情，要继续坚持下去，这个细规划吧；</p>
-<p>5.生活上，过了个年胖了几斤，去了还是要规律饮食，坚持游泳，加油呀；</p>
-<p>总结一下，落实进度，不要着急，行胜于言；</p>
-<p>少说话，事情多做，多出自己的想法，多总结论文，多学习；</p>
-<p>抵制下惰性，要努力呀；</p>
-<p>有些话还想说，我觉得以后要果断一点，但前提是这半年要把目标落实了，很重要；</p>
-<p>其余的生活规划放在后半年的时间里，总之脚踏实地，慢慢推进吧；</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>airfact</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>plan_emotion</title>
     <url>/2021/08/26/plan-emotion/plan-emotion/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer">
@@ -2466,7 +2439,7 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line">now = time.strptime(<span class="string">'2019-08-20'</span>, <span class="string">'%Y-%m-%d'</span>)</span><br><span class="line"><span class="keyword">print</span> (now)</span><br><span class="line">time.strftime(<span class="string">'%Y-%m-%d'</span>, now) <span class="comment">#2019-08-20</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line">someDay = datetime.date(<span class="number">1999</span>,<span class="number">2</span>,<span class="number">10</span>)</span><br><span class="line">anotherDay = datetime.date(<span class="number">1999</span>,<span class="number">2</span>,<span class="number">15</span>)</span><br><span class="line">deltaDay = anotherDay - someDay</span><br><span class="line">deltaDay.days</span><br></pre></td></tr></table></figure>
 
 <p align="left">
-  <img width="400" src="/1.jpg">
+  <img width="400" src="/2020/07/27/pybasic/pybasic/1.jpg">
 </p>
 
 
@@ -2497,6 +2470,57 @@
       <categories>
         <category>基础</category>
       </categories>
+  </entry>
+  <entry>
+    <title>plan</title>
+    <url>/2023/01/29/plan/plan/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<p>2023开学随笔</p>
+<a id="more"></a>
+
+<p>说着要更新，但是因为各种各样的事情总是拖后，上个学期有了一些进度，但是后续仍然有很多需要落实的地方，今天顺便一起想了，生活上也有好多事情要处理，后天开学了，晚上闲来无事，大概想想~</p>
+<p>1.总的来讲，很多事进度没有严格按计划落实，还是个人惰性的问题，我自己一个人呆着的时候进度总是很慢，喜欢摸鱼，我打算严格落实目标，坚持完成。</p>
+<p>2.有句话我觉得很有用-“你的人生没有那么多观众”，我现在已经可以下意识的做的一部分，但是还是没办法完全做到，不必强求吧，太过了可能也不好，对所有事都没兴趣，终归有问题，但是对一些没意义的事情，还是要避免，不去做没意义的事情；电话 会议？2333</p>
+<p>3.开学之后是31，到元宵节，6天时间要加班把那个任务完成，最重要的一件事是每天也要坚持看英文文献，如果可以理解两个，把任务压缩到分配到每天，必须完成这些事情，然后汇报一下；这个是现阶段最最重要的事情</p>
+<p>4.之前每天坚持落实的事情，要继续坚持下去，这个细规划吧；</p>
+<p>5.生活上，过了个年胖了几斤，去了还是要规律饮食，坚持游泳，加油呀；</p>
+<p>总结一下，落实进度，不要着急，行胜于言；</p>
+<p>少说话，事情多做，多出自己的想法，多总结论文，多学习；</p>
+<p>抵制下惰性，要努力呀；</p>
+<p>有些话还想说，我觉得以后要果断一点，但前提是这半年要把目标落实了，很重要；</p>
+<p>其余的生活规划放在后半年的时间里，总之脚踏实地，慢慢推进吧；</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>airfact</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ros问题总结</title>
+    <url>/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h1><a id="more"></a>
+
+<h2 id="缺少cmake文件，安装方式"><a href="#缺少cmake文件，安装方式" class="headerlink" title="缺少cmake文件，安装方式"></a>缺少cmake文件，安装方式</h2><p>提示 xxConfig.cmake 找不到</p>
+<p>查找上一行 …provided by “xx”</p>
+<p>补充  sudo apt-get install ros-ROS版本-xx </p>
+<p>roscore运行出错</p>
+<p>Unable to contact my own server a</p>
+<p>xiaomu@GL:<del>$ export ROS_HOSTNAME=localhost<br>xiaomu@GL:</del>$ export ROS_MASTER_URI=<a href="http://localhost:11311" target="_blank" rel="noopener">http://localhost:11311</a></p>
+<p>Unable to contact my own server at [<a href="http://192.168.0.106:35623/]" target="_blank" rel="noopener">http://192.168.0.106:35623/]</a>.</p>
+<p>This usually means that the network is not configured properly.</p>
+<p>A common cause is that the machine cannot connect to itself.  Please check<br>for errors by running:</p>
+<pre><code>ping 192.168.0.106</code></pre><p>For more tips, please see</p>
+<pre><code>http://www.ros.org/wiki/ROS/NetworkSetup</code></pre><p>修正：</p>
+<ol>
+<li>$ export ROS_HOSTNAME=localhost</li>
+<li>$ export ROS_MASTER_URI=<a href="http://localhost:11311" target="_blank" rel="noopener">http://localhost:11311</a></li>
+</ol>
+]]></content>
   </entry>
   <entry>
     <title>reading_note1</title>
@@ -2736,97 +2760,6 @@
 <h2 id="ROSGO"><a href="#ROSGO" class="headerlink" title="ROSGO"></a>ROSGO</h2>]]></content>
   </entry>
   <entry>
-    <title>记录</title>
-    <url>/2021/01/06/%E8%AE%B0%E5%BD%95/%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<h1 id="会议记录"><a href="#会议记录" class="headerlink" title="会议记录"></a>会议记录</h1><p>学习，学习一下</p>
-<a id="more"></a>
-
-<p> human-like，行为传递</p>
-<p>接触性作业–需要涉及force control</p>
-<p>阻抗控制</p>
-<p>刚度无法直接测量–机电信号与刚度信号</p>
-<p>类人控制从两方面思考</p>
-<p>1.控制器 </p>
-<p>2.操作</p>
-<p>敲钉子–固定位置，但是又不可以握紧，松一点反而方便操作</p>
-<p>对刚度矩阵进行操作，控制</p>
-<p>接触力与刚度</p>
-<hr>
-<p>刚度不变，改变接触力；接触力基本不变改变刚度</p>
-<hr>
-<p>控制模型（学习模型）</p>
-<p>对干扰方向增加刚度，其余方向保持柔顺，</p>
-<p>变刚度控制–保证精确控制</p>
-<p>其余应用：</p>
-<p>人机协同领域：根据人力改变刚度，比如锯木头案例</p>
-<p>机器人与环境交互</p>
-<p><strong>一项思考，针对水阻力进行变刚度控制，是否能实现精确位置控制，抵抗阻力呢，可以尝试··</strong></p>
-<p>2011文章</p>
-<p>分布于力场中的机构，运动，未知力场（流体力场？）保证机器人进行直线运动，进行轨迹规划，可以借鉴，论文</p>
-<p>如何分析力场？神经网络学习力场</p>
-<p>增量学习法控制器，是机械臂沿直线运动，学习之后进行目标运动</p>
-<p>示教学习</p>
-<p>c.yang ieee tll 2018</p>
-<p>泛化–分割</p>
-<p>大多考虑运动控制，考虑力控制，才能实现精确作业</p>
-<p>通过机械脉冲，测量刚度</p>
-<p>基于IMUs和ARM model测量</p>
-<p>力、刚度stiffness、位置控制</p>
-<h2 id="遥操作相关"><a href="#遥操作相关" class="headerlink" title="遥操作相关"></a>遥操作相关</h2><p>特殊环境通信？？</p>
-<p>避障–机器人建模</p>
-<p>了解一下  MYO armhand</p>
-<p>双臂操作 控制小车</p>
-<p>利用操作杆 控制小车</p>
-<p>优点：手环只有视觉效果，这里是否可以应用于目前手机厂商的手环产品上呢？可以尝试一下</p>
-<p>操作杆：可以有力反馈</p>
-<p>虚拟环境力反馈，模仿了人类的视角作业</p>
-<p>12.30 – 20.30</p>
-<p>增量学习-鲁棒项</p>
-<p>希望实现全局稳定–当运动范围过大时，加入鲁棒项进行回收。</p>
-<p>学习外界环境</p>
-<p>力场，不考虑机构本身，利用机构本身控制模型去学习外场，这样是否可以在动力模型不引入外阻力项，仅仅通过外刚度变化控制，实现对于未知力场学习后，进行精确轨迹路线的规划。</p>
-<p>示教学习是一个良好的方向</p>
-<p>云服务应用于示教学习，案例共享。</p>
-<p>组装工序</p>
-<p>LQR线性模型学习人体阻抗模型</p>
-<p>保持本身–外部环境隔开-学习外部环境</p>
-<p>机电信号测量刚度—匹配刚度矩阵–</p>
-<p>长时间泛化 误差累积和噪声累积</p>
-<p>RBF神经网络学习</p>
-<p>扩大范围，进行控制覆盖，建立地图。</p>
-<p>神经网络用于提高性能，优化</p>
-<p>稳定利用传统控制方法进行稳定</p>
-<p>一对多控制</p>
-<p>emgsensor 8通道</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>ros问题总结</title>
-    <url>/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<h1 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h1><a id="more"></a>
-
-<h2 id="缺少cmake文件，安装方式"><a href="#缺少cmake文件，安装方式" class="headerlink" title="缺少cmake文件，安装方式"></a>缺少cmake文件，安装方式</h2><p>提示 xxConfig.cmake 找不到</p>
-<p>查找上一行 …provided by “xx”</p>
-<p>补充  sudo apt-get install ros-ROS版本-xx </p>
-<p>roscore运行出错</p>
-<p>Unable to contact my own server a</p>
-<p>xiaomu@GL:<del>$ export ROS_HOSTNAME=localhost<br>xiaomu@GL:</del>$ export ROS_MASTER_URI=<a href="http://localhost:11311" target="_blank" rel="noopener">http://localhost:11311</a></p>
-<p>Unable to contact my own server at [<a href="http://192.168.0.106:35623/]" target="_blank" rel="noopener">http://192.168.0.106:35623/]</a>.</p>
-<p>This usually means that the network is not configured properly.</p>
-<p>A common cause is that the machine cannot connect to itself.  Please check<br>for errors by running:</p>
-<pre><code>ping 192.168.0.106</code></pre><p>For more tips, please see</p>
-<pre><code>http://www.ros.org/wiki/ROS/NetworkSetup</code></pre><p>修正：</p>
-<ol>
-<li>$ export ROS_HOSTNAME=localhost</li>
-<li>$ export ROS_MASTER_URI=<a href="http://localhost:11311" target="_blank" rel="noopener">http://localhost:11311</a></li>
-</ol>
-]]></content>
-  </entry>
-  <entry>
     <title>爬虫记录_bro</title>
     <url>/2020/12/05/%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95-bro/%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95-bro/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer">
@@ -2924,6 +2857,73 @@
 <p>UTS相关规定</p>
 <p>robots.txt</p>
 <p>软件爬虫告一段落，目前为止，较为简单，算是学学新东西，下一阶段顺便复习一下语法基础。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>记录</title>
+    <url>/2021/01/06/%E8%AE%B0%E5%BD%95/%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="会议记录"><a href="#会议记录" class="headerlink" title="会议记录"></a>会议记录</h1><p>学习，学习一下</p>
+<a id="more"></a>
+
+<p> human-like，行为传递</p>
+<p>接触性作业–需要涉及force control</p>
+<p>阻抗控制</p>
+<p>刚度无法直接测量–机电信号与刚度信号</p>
+<p>类人控制从两方面思考</p>
+<p>1.控制器 </p>
+<p>2.操作</p>
+<p>敲钉子–固定位置，但是又不可以握紧，松一点反而方便操作</p>
+<p>对刚度矩阵进行操作，控制</p>
+<p>接触力与刚度</p>
+<hr>
+<p>刚度不变，改变接触力；接触力基本不变改变刚度</p>
+<hr>
+<p>控制模型（学习模型）</p>
+<p>对干扰方向增加刚度，其余方向保持柔顺，</p>
+<p>变刚度控制–保证精确控制</p>
+<p>其余应用：</p>
+<p>人机协同领域：根据人力改变刚度，比如锯木头案例</p>
+<p>机器人与环境交互</p>
+<p><strong>一项思考，针对水阻力进行变刚度控制，是否能实现精确位置控制，抵抗阻力呢，可以尝试··</strong></p>
+<p>2011文章</p>
+<p>分布于力场中的机构，运动，未知力场（流体力场？）保证机器人进行直线运动，进行轨迹规划，可以借鉴，论文</p>
+<p>如何分析力场？神经网络学习力场</p>
+<p>增量学习法控制器，是机械臂沿直线运动，学习之后进行目标运动</p>
+<p>示教学习</p>
+<p>c.yang ieee tll 2018</p>
+<p>泛化–分割</p>
+<p>大多考虑运动控制，考虑力控制，才能实现精确作业</p>
+<p>通过机械脉冲，测量刚度</p>
+<p>基于IMUs和ARM model测量</p>
+<p>力、刚度stiffness、位置控制</p>
+<h2 id="遥操作相关"><a href="#遥操作相关" class="headerlink" title="遥操作相关"></a>遥操作相关</h2><p>特殊环境通信？？</p>
+<p>避障–机器人建模</p>
+<p>了解一下  MYO armhand</p>
+<p>双臂操作 控制小车</p>
+<p>利用操作杆 控制小车</p>
+<p>优点：手环只有视觉效果，这里是否可以应用于目前手机厂商的手环产品上呢？可以尝试一下</p>
+<p>操作杆：可以有力反馈</p>
+<p>虚拟环境力反馈，模仿了人类的视角作业</p>
+<p>12.30 – 20.30</p>
+<p>增量学习-鲁棒项</p>
+<p>希望实现全局稳定–当运动范围过大时，加入鲁棒项进行回收。</p>
+<p>学习外界环境</p>
+<p>力场，不考虑机构本身，利用机构本身控制模型去学习外场，这样是否可以在动力模型不引入外阻力项，仅仅通过外刚度变化控制，实现对于未知力场学习后，进行精确轨迹路线的规划。</p>
+<p>示教学习是一个良好的方向</p>
+<p>云服务应用于示教学习，案例共享。</p>
+<p>组装工序</p>
+<p>LQR线性模型学习人体阻抗模型</p>
+<p>保持本身–外部环境隔开-学习外部环境</p>
+<p>机电信号测量刚度—匹配刚度矩阵–</p>
+<p>长时间泛化 误差累积和噪声累积</p>
+<p>RBF神经网络学习</p>
+<p>扩大范围，进行控制覆盖，建立地图。</p>
+<p>神经网络用于提高性能，优化</p>
+<p>稳定利用传统控制方法进行稳定</p>
+<p>一对多控制</p>
+<p>emgsensor 8通道</p>
 ]]></content>
   </entry>
   <entry>
@@ -3184,7 +3184,7 @@
 
 <p>implimantation of object oriented programming</p>
 <p>～～～`～～～～～～～～～～～～～～</p>
-<p><img src="/../life/R.jpg" alt="R"></p>
+<p><img src="/2020/07/28/python100/python100/life/R.jpg" alt="R"></p>
 <h5 id="try-except"><a href="#try-except" class="headerlink" title="try / except"></a>try / except</h5><p>51.编写一个函数以计算5/0并使用try / except捕获异常。</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">throws</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">5</span>/<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    throws()</span><br><span class="line"><span class="keyword">except</span> ZeroDivisionError:</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"division by zero!"</span></span><br><span class="line"><span class="keyword">except</span> Exception, err:</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'Caught an exception'</span></span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'In finally block for cleanup'</span></span><br><span class="line">    </span><br><span class="line">python3</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">divide</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">5</span>/<span class="number">0</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    divide()</span><br><span class="line"><span class="keyword">except</span> ZeroDivisionError <span class="keyword">as</span> ze:</span><br><span class="line">    print(<span class="string">"Why on earth you are dividing a number by ZERO!!"</span>)</span><br><span class="line"><span class="keyword">except</span>:</span><br><span class="line">    print(<span class="string">"Any other exception"</span>)</span><br></pre></td></tr></table></figure>
 
