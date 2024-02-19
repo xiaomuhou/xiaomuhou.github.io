@@ -107,173 +107,16 @@
       </tags>
   </entry>
   <entry>
-    <title>Quaternion</title>
-    <url>/2021/11/24/Quaternion/Quaternion/</url>
+    <title>daliy_life</title>
+    <url>/2020/08/17/daliy-life/daliy-life/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer">
 
-<h1 id="万向锁问题"><a href="#万向锁问题" class="headerlink" title="万向锁问题"></a>万向锁问题</h1><h2 id="造成影响："><a href="#造成影响：" class="headerlink" title="造成影响："></a>造成影响：</h2><p>出现万向锁后会丢失自由度</p>
-<a id="more"></a>
-
-<h2 id="从结构角度分析："><a href="#从结构角度分析：" class="headerlink" title="从结构角度分析："></a>从结构角度分析：</h2><p>主要原因是由于各旋转轴之间存在运动关系，即动态欧拉角，角度变化后，坐标系随之发生变化，比如万向锁结构，三个坐标轴分别可以用环结构表示，外环、中环、内环，当内环转动，即等效沿某一轴转动，内环与中、外环都存在运动关系，坐标系同时变化，就不会发生重叠现象，；当中环运动时，内环不会运动，只有外环会进行运动，那么内环所代表的坐标系可能会与外环所代表的坐标系重合，当进行动态旋转时，沿着外环与内环代表的坐标系运动，只会产生一个方向的自由度，由此发生了万向锁现象，即丢失一个自由度。</p>
-<h2 id="后续一些想法"><a href="#后续一些想法" class="headerlink" title="后续一些想法"></a>后续一些想法</h2><p>看b站评论说为什么不选取惯性坐标系作为参考运动，这样就不会出现万向锁现象了？</p>
-<p>其实这是一个概念的问题，首先需要理解欧拉角的意义，欧拉角是用来描述姿态的三个角度，包含静态、动态两种，静态欧拉角即沿着惯性坐标系进行运动，而动态欧拉角则会出现万向锁现象，动态有12种旋转方式，XYZ、XZY、XYX、XZX、YXZ、YZX、YXY、YZY、ZXY、ZYX、ZXZ、ZYZ,含有中间轴Y都存在万向锁问题。</p>
-<p>因此该问题的本质是动态欧拉角的意义是什么？</p>
-<p>基于动态坐标的欧拉角旋转，其惯性张量不随着时间改变而改变，将其进行对角化处理，即可以得到一个一组主轴和一个只含三个分量的主动惯量，动力学计算较为容易，这一部分内容可以机器人动力学模型计算案例中深入理解。</p>
-<h2 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h2><p>为了描述复杂运动以及规避一些特殊点，可以用四元数工具进行描述分析，最近正在整理旋量与四元数的并联应用分析内容，以后会写一个小总结。</p>
-]]></content>
+<h1 id="处事之则，日常所想"><a href="#处事之则，日常所想" class="headerlink" title="处事之则，日常所想"></a>处事之则，日常所想</h1><p>搭模型的时候，听了听电视剧琅琊榜的电台，听到景睿的台词，有点感触，为人处世就应该这样，清清爽爽，潇洒一生。</p>
+<p>不为蝇营狗苟之事，不对他人做过分之求，一切唯心而已。</p>
+<h4 id="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"><a href="#“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。" class="headerlink" title="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"></a>“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。</h4><h4 id="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"><a href="#我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。" class="headerlink" title="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"></a>我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。</h4><h4 id="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"><a href="#若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也" class="headerlink" title="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"></a>若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也</h4><h4 id="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"><a href="#没有责任要以我为先，以我为重。无论我如何希望也不能强求。" class="headerlink" title="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"></a>没有责任要以我为先，以我为重。无论我如何希望也不能强求。</h4><h4 id="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"><a href="#我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也" class="headerlink" title="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"></a>我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也</h4><h4 id="没有什么可后悔的。”"><a href="#没有什么可后悔的。”" class="headerlink" title="没有什么可后悔的。”"></a>没有什么可后悔的。”</h4>]]></content>
       <categories>
-        <category>note</category>
+        <category>touch_fish</category>
       </categories>
-      <tags>
-        <tag>mathematica</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>configure_bag</title>
-    <url>/2020/11/30/configure-bag/configure-bag/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
-<p>以及补充后续图像处理相关项目内容</p>
-<a id="more"></a>
-
-<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
-<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
-<p>（原因后续深入了解了之后继续补充）</p>
-<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
-<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
-<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;&#x2F;dev&#x2F;null | grep &#39;\.rp_filter&#39;</span><br></pre></td></tr></table></figure>
-
-<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter&#x3D;0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter&#x3D;0</span><br></pre></td></tr></table></figure>
-
-<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
-<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
-<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
-<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
-<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
-]]></content>
-      <categories>
-        <category>camera</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Ros_sdk</title>
-    <url>/2020/08/07/Ros-sdk/Ros-sdk/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-
-
-<h1 id="SDK-ros版本代码记录"><a href="#SDK-ros版本代码记录" class="headerlink" title="SDK_ros版本代码记录"></a>SDK_ros版本代码记录</h1><a id="more"></a>
-
-<p>arm.yaml 参数记录</p>
-<p>xm540_w270</p>
-<p>  Protocol: 2<br>  Return_Delay_Time: 100   #0~254<br>  Operating_Mode: 3   #Position Control Mode<br>  Profile_Acceleration: 10  #time<br>  Profile_Velocity: 40<br>  Shutdown: 33 #00100001  Input Voltage Error/Overload Error(default) 最大负载</p>
-<p>  Protocol: 2<br>  Return_Delay_Time: 100<br>  Operating_Mode: 3<br>  Profile_Acceleration: 10<br>  Profile_Velocity: 40</p>
-<p>  #Velocity_Trajectory:</p>
-<p>  Shutdown: 33<br>  Min_Position: 625   #0~4095<br>  Max_Position: 3409<br>  Velocity_Limit: 40</p>
-<p>这些值将位置控制模式（联合模式）的最大和最小期望位置限制在1转（0〜4,095）的范围内。<br>因此，目标位置（116）应该配置在位置限制范围内。<br>在扩展位置控制模式和基于电流的位置控制模式中不使用这些值。</p>
-<p>  Protocol: 2</p>
-<p>  Shadow_ID: 5  #？</p>
-<p>  Return_Delay_Time: 100</p>
-<p>  Operating_Mode: 3</p>
-<p>  Profile_Acceleration: 10</p>
-<p>  Profile_Velocity: 40</p>
-<p>  # Velocity_Trajectory:</p>
-<p>  Shutdown: 33</p>
-<p>  Drive_Mode: 1</p>
-<p>  Min_Position: 625</p>
-<p>  Max_Position: 3409</p>
-<p>  Velocity_Limit: 40</p>
-<p>～～～～～～～～～～～～～～手动分割线</p>
-<p>  Protocol: 1</p>
-<p>  Return_Delay_Time: 100</p>
-<p>  Min_Position: 0</p>
-<p>  Max_Position: 1023</p>
-<p>  Max_Torque: 200</p>
-<p>  Torque_Limit: 200</p>
-<p>辅助id不反馈数据包</p>
-<p>初始位置参数表.yaml</p>
-<h2 id="底层代码-launch文件（节点）"><a href="#底层代码-launch文件（节点）" class="headerlink" title="底层代码+launch文件（节点）"></a>底层代码+launch文件（节点）</h2><p>example</p>
-<p>node:joint_publisher  初始化设定臂与爪的初始位置home</p>
-<p>ping：protocol2.0协议，连接dynamixel ，同read_write</p>
-<p>示例文件，初始化、参数设定与连接使能</p>
-<p>src and launch</p>
-<p>dynamixel–电机参数表，model_number ,电机型号参数以及协议选择，原代码 MX与AX</p>
-<p>XM540-W150对应参数：270同</p>
-<p>​        1130: {</p>
-<p>​            “Return_Delay_Time”: ModelFlag(9, 1),</p>
-<p>​            “Drive_Mode”: ModelFlag(10, 1),</p>
-<p>​            “Operating_Mode”: ModelFlag(11, 1),</p>
-<p>​            “Shadow_ID”: ModelFlag(12, 1),</p>
-<p>​            “Velocity_Limit”: ModelFlag(44, 4),</p>
-<p>​            “Max_Position”: ModelFlag(48, 4),</p>
-<p>​            “Min_Position”: ModelFlag(52, 4),</p>
-<p>​            “Shutdown”: ModelFlag(63, 1),</p>
-<p>​            “Torque_Enabled”: ModelFlag(64, 1),</p>
-<p>​            “Goal_Velocity”: ModelFlag(104, 4),</p>
-<p>​            “Profile_Acceleration”: ModelFlag(108, 4),</p>
-<p>​            “Profile_Velocity”: ModelFlag(112, 4),</p>
-<p>​            “Goal_Position”: ModelFlag(116, 4),</p>
-<p>​            “Moving”: ModelFlag(122, 1),</p>
-<p>​            “Present_Current”: ModelFlag(126, 2),</p>
-<p>​            “Present_Velocity”: ModelFlag(128, 4),</p>
-<p>​            “Present_Position”: ModelFlag(132, 4),</p>
-<p>​            “Present_Voltage”: ModelFlag(144, 2),</p>
-<p>​            “Present_Temperature”: ModelFlag(146, 1),</p>
-<p>​            “Velocity_Trajectory”: ModelFlag(136, 4)</p>
-<p>​        },</p>
-<p>定义两种类型电机，我的只用了了一种xm540，控制模式不同，可改</p>
-<p>协议1.0 2.0通用</p>
-<p>将write与read定义到了类class中 </p>
-<p>功能：读取位置、转角并且转化数据，读取负载（使用protocol2.0），读取速度值并进行转化</p>
-<p>current 温度值 位置？？？待修改</p>
-<p>目标位置数值—–移动</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>delta_ros</title>
-    <url>/2020/09/11/delta-ros/delta-ros/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<p>记录delta算法</p>
-<p>（1）实现了Delta型机器人的正逆运动学及其速度空间变换，见DeltaRobotKinematics类<br>（2）实现了关节空间和直线轨迹的运动规划，能够设置加减速因子，见DeltaRobotMotionPlanning类<br>（3）实现了Delta机器人的位置控制和速度控制，见DeltaRobotControl类</p>
-<p><a href="https://github.com/zhonghang1187151422/Mini-delta-robot.git" target="_blank" rel="noopener">https://github.com/zhonghang1187151422/Mini-delta-robot.git</a></p>
-<p><a href="https://github.com/manuelilg/eeduro_delta.git" target="_blank" rel="noopener">https://github.com/manuelilg/eeduro_delta.git</a></p>
-<p><a href="https://github.com/RemcoKuijpers/delta_robot_simulation.git" target="_blank" rel="noopener">https://github.com/RemcoKuijpers/delta_robot_simulation.git</a></p>
-<p><a href="https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo" target="_blank" rel="noopener">https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo</a></p>
-<p>关于ros2的delta运动规划</p>
-<p><a href="https://github.com/manuelilg?tab=repositories" target="_blank" rel="noopener">https://github.com/manuelilg?tab=repositories</a></p>
-<p>学习一下</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>dynamixelros</title>
-    <url>/2020/07/28/dynamixelros/dynamixelros/</url>
-    <content><![CDATA[<h1 id="Dynamixel-workbench"><a href="#Dynamixel-workbench" class="headerlink" title="Dynamixel_workbench"></a>Dynamixel_workbench</h1><p>目的：解析一下workbench包以及dynamixel_motor包，复习语法以及ros基础</p>
-<a id="more"></a>
-
-<p>dynamixel_workbench </p>
-<p>0.dynamixel_workbench </p>
-<p>package.xml</p>
-<p>workbench 用于ros开发</p>
-<p>1.controllers  查询电机属性</p>
-<p>2.operators 控制电机</p>
-<p>3.toolbox 库</p>
-<h2 id="dynamixel-motor-python"><a href="#dynamixel-motor-python" class="headerlink" title="dynamixel_motor(python)"></a>dynamixel_motor(python)</h2><p>该软件包包含一个可配置的节点，服务和一个生成器脚本，用于启动，停止和重新启动一个或多个控制器插件。 为常见的Dynamixel电机接头定义了可重复使用的控制器类型。 可以为每个关节设置速度和扭矩。 此python软件包可由更特定的机器人控制器使用，并且所有可配置的参数都可以通过yaml文件加载。</p>
-<p>1.controllers</p>
-<p>node</p>
-<p>controller_manager:</p>
-<p>controller_spawner:</p>
-<p>2.driver</p>
-<p>该软件包为Robotis Dynamixel伺服器提供了低电平IO。 完全支持AX-12，AX-18，RX-24，RX-28，MX-28，RX-64，EX-106型号并经过测试。 定义了特定于硬件的常量，用于从Dynamixel伺服器读取信息或向其写入信息。 大多数ROS用户都不会直接使用此低级软件包。 更高级别的dynamixel_controllers和特定的机器人关节控制器使用此程序包。</p>
-<p>3.motor</p>
-<p>4.msgs</p>
-<p>整个dynamixel_motor堆栈使用的常见消息。</p>
-<p>5.tutorials</p>
-<p>dynamixel_motor堆栈的示例配置和启动文件。</p>
-]]></content>
   </entry>
   <entry>
     <title>c++_qt_note</title>
@@ -738,16 +581,83 @@
 ]]></content>
   </entry>
   <entry>
-    <title>daliy_life</title>
-    <url>/2020/08/17/daliy-life/daliy-life/</url>
+    <title>Quaternion</title>
+    <url>/2021/11/24/Quaternion/Quaternion/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer">
 
-<h1 id="处事之则，日常所想"><a href="#处事之则，日常所想" class="headerlink" title="处事之则，日常所想"></a>处事之则，日常所想</h1><p>搭模型的时候，听了听电视剧琅琊榜的电台，听到景睿的台词，有点感触，为人处世就应该这样，清清爽爽，潇洒一生。</p>
-<p>不为蝇营狗苟之事，不对他人做过分之求，一切唯心而已。</p>
-<h4 id="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"><a href="#“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。" class="headerlink" title="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"></a>“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。</h4><h4 id="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"><a href="#我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。" class="headerlink" title="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"></a>我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。</h4><h4 id="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"><a href="#若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也" class="headerlink" title="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"></a>若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也</h4><h4 id="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"><a href="#没有责任要以我为先，以我为重。无论我如何希望也不能强求。" class="headerlink" title="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"></a>没有责任要以我为先，以我为重。无论我如何希望也不能强求。</h4><h4 id="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"><a href="#我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也" class="headerlink" title="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"></a>我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也</h4><h4 id="没有什么可后悔的。”"><a href="#没有什么可后悔的。”" class="headerlink" title="没有什么可后悔的。”"></a>没有什么可后悔的。”</h4>]]></content>
+<h1 id="万向锁问题"><a href="#万向锁问题" class="headerlink" title="万向锁问题"></a>万向锁问题</h1><h2 id="造成影响："><a href="#造成影响：" class="headerlink" title="造成影响："></a>造成影响：</h2><p>出现万向锁后会丢失自由度</p>
+<a id="more"></a>
+
+<h2 id="从结构角度分析："><a href="#从结构角度分析：" class="headerlink" title="从结构角度分析："></a>从结构角度分析：</h2><p>主要原因是由于各旋转轴之间存在运动关系，即动态欧拉角，角度变化后，坐标系随之发生变化，比如万向锁结构，三个坐标轴分别可以用环结构表示，外环、中环、内环，当内环转动，即等效沿某一轴转动，内环与中、外环都存在运动关系，坐标系同时变化，就不会发生重叠现象，；当中环运动时，内环不会运动，只有外环会进行运动，那么内环所代表的坐标系可能会与外环所代表的坐标系重合，当进行动态旋转时，沿着外环与内环代表的坐标系运动，只会产生一个方向的自由度，由此发生了万向锁现象，即丢失一个自由度。</p>
+<h2 id="后续一些想法"><a href="#后续一些想法" class="headerlink" title="后续一些想法"></a>后续一些想法</h2><p>看b站评论说为什么不选取惯性坐标系作为参考运动，这样就不会出现万向锁现象了？</p>
+<p>其实这是一个概念的问题，首先需要理解欧拉角的意义，欧拉角是用来描述姿态的三个角度，包含静态、动态两种，静态欧拉角即沿着惯性坐标系进行运动，而动态欧拉角则会出现万向锁现象，动态有12种旋转方式，XYZ、XZY、XYX、XZX、YXZ、YZX、YXY、YZY、ZXY、ZYX、ZXZ、ZYZ,含有中间轴Y都存在万向锁问题。</p>
+<p>因此该问题的本质是动态欧拉角的意义是什么？</p>
+<p>基于动态坐标的欧拉角旋转，其惯性张量不随着时间改变而改变，将其进行对角化处理，即可以得到一个一组主轴和一个只含三个分量的主动惯量，动力学计算较为容易，这一部分内容可以机器人动力学模型计算案例中深入理解。</p>
+<h2 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h2><p>为了描述复杂运动以及规避一些特殊点，可以用四元数工具进行描述分析，最近正在整理旋量与四元数的并联应用分析内容，以后会写一个小总结。</p>
+]]></content>
       <categories>
-        <category>touch_fish</category>
+        <category>note</category>
       </categories>
+      <tags>
+        <tag>mathematica</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>configure_bag</title>
+    <url>/2020/11/30/configure-bag/configure-bag/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
+<p>以及补充后续图像处理相关项目内容</p>
+<a id="more"></a>
+
+<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
+<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
+<p>（原因后续深入了解了之后继续补充）</p>
+<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
+<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
+<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;&#x2F;dev&#x2F;null | grep &#39;\.rp_filter&#39;</span><br></pre></td></tr></table></figure>
+
+<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter&#x3D;0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter&#x3D;0</span><br></pre></td></tr></table></figure>
+
+<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
+<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
+<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
+<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
+<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
+]]></content>
+      <categories>
+        <category>camera</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>dynamixelros</title>
+    <url>/2020/07/28/dynamixelros/dynamixelros/</url>
+    <content><![CDATA[<h1 id="Dynamixel-workbench"><a href="#Dynamixel-workbench" class="headerlink" title="Dynamixel_workbench"></a>Dynamixel_workbench</h1><p>目的：解析一下workbench包以及dynamixel_motor包，复习语法以及ros基础</p>
+<a id="more"></a>
+
+<p>dynamixel_workbench </p>
+<p>0.dynamixel_workbench </p>
+<p>package.xml</p>
+<p>workbench 用于ros开发</p>
+<p>1.controllers  查询电机属性</p>
+<p>2.operators 控制电机</p>
+<p>3.toolbox 库</p>
+<h2 id="dynamixel-motor-python"><a href="#dynamixel-motor-python" class="headerlink" title="dynamixel_motor(python)"></a>dynamixel_motor(python)</h2><p>该软件包包含一个可配置的节点，服务和一个生成器脚本，用于启动，停止和重新启动一个或多个控制器插件。 为常见的Dynamixel电机接头定义了可重复使用的控制器类型。 可以为每个关节设置速度和扭矩。 此python软件包可由更特定的机器人控制器使用，并且所有可配置的参数都可以通过yaml文件加载。</p>
+<p>1.controllers</p>
+<p>node</p>
+<p>controller_manager:</p>
+<p>controller_spawner:</p>
+<p>2.driver</p>
+<p>该软件包为Robotis Dynamixel伺服器提供了低电平IO。 完全支持AX-12，AX-18，RX-24，RX-28，MX-28，RX-64，EX-106型号并经过测试。 定义了特定于硬件的常量，用于从Dynamixel伺服器读取信息或向其写入信息。 大多数ROS用户都不会直接使用此低级软件包。 更高级别的dynamixel_controllers和特定的机器人关节控制器使用此程序包。</p>
+<p>3.motor</p>
+<p>4.msgs</p>
+<p>整个dynamixel_motor堆栈使用的常见消息。</p>
+<p>5.tutorials</p>
+<p>dynamixel_motor堆栈的示例配置和启动文件。</p>
+]]></content>
   </entry>
   <entry>
     <title>delta_matlab</title>
@@ -775,6 +685,96 @@
 <p>关于8组逆解的问题，这套方案已经进行了排除。</p>
 <p>奇异位置分析内容（待补充）。</p>
 <p>接下来写雅各比速度推导，后续还会补充控制方案，伸缩机构可能会写一篇，看设计的情况了。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>delta_ros</title>
+    <url>/2020/09/11/delta-ros/delta-ros/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<p>记录delta算法</p>
+<p>（1）实现了Delta型机器人的正逆运动学及其速度空间变换，见DeltaRobotKinematics类<br>（2）实现了关节空间和直线轨迹的运动规划，能够设置加减速因子，见DeltaRobotMotionPlanning类<br>（3）实现了Delta机器人的位置控制和速度控制，见DeltaRobotControl类</p>
+<p><a href="https://github.com/zhonghang1187151422/Mini-delta-robot.git" target="_blank" rel="noopener">https://github.com/zhonghang1187151422/Mini-delta-robot.git</a></p>
+<p><a href="https://github.com/manuelilg/eeduro_delta.git" target="_blank" rel="noopener">https://github.com/manuelilg/eeduro_delta.git</a></p>
+<p><a href="https://github.com/RemcoKuijpers/delta_robot_simulation.git" target="_blank" rel="noopener">https://github.com/RemcoKuijpers/delta_robot_simulation.git</a></p>
+<p><a href="https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo" target="_blank" rel="noopener">https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo</a></p>
+<p>关于ros2的delta运动规划</p>
+<p><a href="https://github.com/manuelilg?tab=repositories" target="_blank" rel="noopener">https://github.com/manuelilg?tab=repositories</a></p>
+<p>学习一下</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Ros_sdk</title>
+    <url>/2020/08/07/Ros-sdk/Ros-sdk/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+
+
+<h1 id="SDK-ros版本代码记录"><a href="#SDK-ros版本代码记录" class="headerlink" title="SDK_ros版本代码记录"></a>SDK_ros版本代码记录</h1><a id="more"></a>
+
+<p>arm.yaml 参数记录</p>
+<p>xm540_w270</p>
+<p>  Protocol: 2<br>  Return_Delay_Time: 100   #0~254<br>  Operating_Mode: 3   #Position Control Mode<br>  Profile_Acceleration: 10  #time<br>  Profile_Velocity: 40<br>  Shutdown: 33 #00100001  Input Voltage Error/Overload Error(default) 最大负载</p>
+<p>  Protocol: 2<br>  Return_Delay_Time: 100<br>  Operating_Mode: 3<br>  Profile_Acceleration: 10<br>  Profile_Velocity: 40</p>
+<p>  #Velocity_Trajectory:</p>
+<p>  Shutdown: 33<br>  Min_Position: 625   #0~4095<br>  Max_Position: 3409<br>  Velocity_Limit: 40</p>
+<p>这些值将位置控制模式（联合模式）的最大和最小期望位置限制在1转（0〜4,095）的范围内。<br>因此，目标位置（116）应该配置在位置限制范围内。<br>在扩展位置控制模式和基于电流的位置控制模式中不使用这些值。</p>
+<p>  Protocol: 2</p>
+<p>  Shadow_ID: 5  #？</p>
+<p>  Return_Delay_Time: 100</p>
+<p>  Operating_Mode: 3</p>
+<p>  Profile_Acceleration: 10</p>
+<p>  Profile_Velocity: 40</p>
+<p>  # Velocity_Trajectory:</p>
+<p>  Shutdown: 33</p>
+<p>  Drive_Mode: 1</p>
+<p>  Min_Position: 625</p>
+<p>  Max_Position: 3409</p>
+<p>  Velocity_Limit: 40</p>
+<p>～～～～～～～～～～～～～～手动分割线</p>
+<p>  Protocol: 1</p>
+<p>  Return_Delay_Time: 100</p>
+<p>  Min_Position: 0</p>
+<p>  Max_Position: 1023</p>
+<p>  Max_Torque: 200</p>
+<p>  Torque_Limit: 200</p>
+<p>辅助id不反馈数据包</p>
+<p>初始位置参数表.yaml</p>
+<h2 id="底层代码-launch文件（节点）"><a href="#底层代码-launch文件（节点）" class="headerlink" title="底层代码+launch文件（节点）"></a>底层代码+launch文件（节点）</h2><p>example</p>
+<p>node:joint_publisher  初始化设定臂与爪的初始位置home</p>
+<p>ping：protocol2.0协议，连接dynamixel ，同read_write</p>
+<p>示例文件，初始化、参数设定与连接使能</p>
+<p>src and launch</p>
+<p>dynamixel–电机参数表，model_number ,电机型号参数以及协议选择，原代码 MX与AX</p>
+<p>XM540-W150对应参数：270同</p>
+<p>​        1130: {</p>
+<p>​            “Return_Delay_Time”: ModelFlag(9, 1),</p>
+<p>​            “Drive_Mode”: ModelFlag(10, 1),</p>
+<p>​            “Operating_Mode”: ModelFlag(11, 1),</p>
+<p>​            “Shadow_ID”: ModelFlag(12, 1),</p>
+<p>​            “Velocity_Limit”: ModelFlag(44, 4),</p>
+<p>​            “Max_Position”: ModelFlag(48, 4),</p>
+<p>​            “Min_Position”: ModelFlag(52, 4),</p>
+<p>​            “Shutdown”: ModelFlag(63, 1),</p>
+<p>​            “Torque_Enabled”: ModelFlag(64, 1),</p>
+<p>​            “Goal_Velocity”: ModelFlag(104, 4),</p>
+<p>​            “Profile_Acceleration”: ModelFlag(108, 4),</p>
+<p>​            “Profile_Velocity”: ModelFlag(112, 4),</p>
+<p>​            “Goal_Position”: ModelFlag(116, 4),</p>
+<p>​            “Moving”: ModelFlag(122, 1),</p>
+<p>​            “Present_Current”: ModelFlag(126, 2),</p>
+<p>​            “Present_Velocity”: ModelFlag(128, 4),</p>
+<p>​            “Present_Position”: ModelFlag(132, 4),</p>
+<p>​            “Present_Voltage”: ModelFlag(144, 2),</p>
+<p>​            “Present_Temperature”: ModelFlag(146, 1),</p>
+<p>​            “Velocity_Trajectory”: ModelFlag(136, 4)</p>
+<p>​        },</p>
+<p>定义两种类型电机，我的只用了了一种xm540，控制模式不同，可改</p>
+<p>协议1.0 2.0通用</p>
+<p>将write与read定义到了类class中 </p>
+<p>功能：读取位置、转角并且转化数据，读取负载（使用protocol2.0），读取速度值并进行转化</p>
+<p>current 温度值 位置？？？待修改</p>
+<p>目标位置数值—–移动</p>
 ]]></content>
   </entry>
   <entry>
@@ -1034,6 +1034,156 @@
       <categories>
         <category>project</category>
       </categories>
+  </entry>
+  <entry>
+    <title>impedance_control</title>
+    <url>/2021/02/03/impedance-control/impedance-control/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="阻抗相关"><a href="#阻抗相关" class="headerlink" title="阻抗相关"></a>阻抗相关</h1><p>记录部分内容</p>
+<a id="more"></a>
+
+<h2 id="人机协作"><a href="#人机协作" class="headerlink" title="人机协作"></a>人机协作</h2><p>协作定义：协作参与方具备共同目标、具备感知交流能力、协同能力</p>
+<p>标准：安全、协作、智能</p>
+<h2 id="交互控制-力控制"><a href="#交互控制-力控制" class="headerlink" title="交互控制-力控制"></a>交互控制-力控制</h2><h3 id="直接力控"><a href="#直接力控" class="headerlink" title="直接力控"></a>直接力控</h3><p>直接设定数值，通过反馈进行精确设定控制</p>
+<p>1.成本高、精度差、存在噪声、干扰难以判断</p>
+<p>2.无法确定具体所需控制数值</p>
+<h3 id="间接控制"><a href="#间接控制" class="headerlink" title="间接控制"></a>间接控制</h3><h4 id="柔顺控制"><a href="#柔顺控制" class="headerlink" title="柔顺控制"></a>柔顺控制</h4><p>被动柔顺：通过含有弹性元件的机械设备在接触过程中体现柔顺</p>
+<p>主动柔顺：通过控制的方式实现，越位设置，在接触过程中产生作用</p>
+<h4 id="阻抗-导纳控制："><a href="#阻抗-导纳控制：" class="headerlink" title="阻抗/导纳控制："></a>阻抗/导纳控制：</h4><p>关节空间</p>
+<p>笛卡尔空间：常用</p>
+<h4 id="力-位混合控制"><a href="#力-位混合控制" class="headerlink" title="力/位混合控制"></a>力/位混合控制</h4><h2 id="关节空间阻抗控制"><a href="#关节空间阻抗控制" class="headerlink" title="关节空间阻抗控制"></a>关节空间阻抗控制</h2><p>阻尼：抵消机械震荡</p>
+<p>弹性元件：柔顺性调整</p>
+<p>控制理论</p>
+<p>阻抗控制主要是控制运动与力之间的动态关系控制</p>
+<p>实现理想阻抗控制需要满足：</p>
+<p>1.机器人动态模型及相关参数</p>
+<p>2.机器人关节角、关节角速度的实时反馈（传感器）</p>
+<p>3.机器人关节力矩实时反馈（转矩传感器获得/测量驱动电机电流，通过电流关系进行计算分析）</p>
+<p>4.机器人转矩控制</p>
+<p>设定k值</p>
+<p>k大–抵抗性较强</p>
+<p>k小–柔顺性较高</p>
+<p>k=0，随外力改变位置</p>
+<h2 id="笛卡尔关节控制"><a href="#笛卡尔关节控制" class="headerlink" title="笛卡尔关节控制"></a>笛卡尔关节控制</h2><p>1.求解雅克比（伪）逆矩阵，以及雅克比矩阵导数矩阵</p>
+<p>2.精确测量机器人执行器末端所受外力</p>
+<p>3.精确的机器人运动学以及动力学模型</p>
+<p>4.机器人关节位置及转速的测量</p>
+<p>5.机器人关节转矩控制</p>
+<p>姿态不要过度接近奇异点</p>
+<p>控制机器人运动与外力之间的动态关系，使其等效为弹簧-阻尼-质量组成的二阶系统</p>
+<p>需要条件</p>
+<p>1.机器人动力学及运动学模型</p>
+<p>2.关节角及角速度反馈</p>
+<p>3.关节转矩控制</p>
+<p>4.外力（矩）的测量（非必要）</p>
+<p>导纳控制与阻抗控制区别</p>
+<p>1.计算出力，控制器输入位置输出力</p>
+<p>2.控制器输入力输出位置，机器人输入位移输出力</p>
+<p><em>当外界环境阻抗系数高，采用阻抗控制</em></p>
+<p><em>当外界环境阻抗系数低，采用导纳控制？？</em></p>
+<p>导纳控制有点像变刚度控制，区分并进行理解。</p>
+<h1 id="自适应阻抗控制"><a href="#自适应阻抗控制" class="headerlink" title="自适应阻抗控制"></a>自适应阻抗控制</h1><p>自主调整阻抗，满足环境要求</p>
+<p>1.自主目标 阻抗系数或者运动设定</p>
+<p>2.如何实现参数修改</p>
+<p>基准：保证机器人稳定性</p>
+<p>一些例子</p>
+<p>1.根据外力反馈调整阻尼系数，预测运动意图</p>
+<p>2.稳定性分析</p>
+<p>3.估算人的阻抗系数</p>
+<p>力增大-意图为该方向加速-机器人减小阻抗系数以顺应需求-减小接触力，反之亦然</p>
+<p>思路可以换一下，外力作为负反馈进行相应调节</p>
+<p>阻抗模型</p>
+<p>水的阻抗模型？？？</p>
+<p>参数辨识法</p>
+<p>通过速度反馈调节参数进行示教学习</p>
+<p>提高舒适跟随</p>
+<p>根据实验进行确定稳定区域模型而非理论推导–不严谨但是更贴近实际</p>
+<p>1.基于可操作性</p>
+<p>2.基于阻抗控制误差</p>
+<p>三.</p>
+<p>1.多传感器融合，建立手臂运动中 姿态以及肌肉信号实时反馈</p>
+<p>2.基于机电信息，建立手臂阻抗模型，并调整机器的阻抗系数</p>
+<p>3.力/阻抗混合控制</p>
+<p>肌肉电信号EMG使用方法</p>
+<p>optitrack 视觉信息使用</p>
+<p>该方案中捕捉手臂姿态的变化，根据姿态变化调整机器人阻抗系数在空间上的分布</p>
+<p>力传感器</p>
+<p>机械臂末端</p>
+<p>四</p>
+<p>1.基于视觉信息，利用高斯过程回归，在线预测人运动轨迹，评估预测不确定性</p>
+<p>2.基于预测结果，调整机器人运动</p>
+<p>3.利用阻抗控制跟随设定轨迹，同时改变参数大小，保证safe</p>
+<h1 id="强化学习"><a href="#强化学习" class="headerlink" title="强化学习"></a>强化学习</h1><p>阻抗控制引入强化学习</p>
+<p>学习力场？？？？学习一下</p>
+<p>强化学习是机器学习的一个领域，强调如何基于换将反馈而行动，已取得最大化的预期利益。</p>
+<p>寻找最优策略，使得价值函数最大</p>
+<p>1.基于模型的强化学习</p>
+<p>需要建立模型</p>
+<p>2.基于价值函数的强化学习</p>
+<p>根据价值调整策略</p>
+<p>3.基于策略函数的强化学习</p>
+<p>不依赖于模型</p>
+<p>缺点 ：收敛慢、可能会到达危险状态、</p>
+<p>原因：</p>
+<p>1.建模较为困难</p>
+<p>2.机器人可以不断优化自身行为，理论上可以得到最优解</p>
+<p>核心;</p>
+<p>求解问题：</p>
+<p>1.基于价值函数</p>
+<p>2.基于神经网络的Actor-critic算法</p>
+<p>3.策略迭代</p>
+<p>策略 —如何保障安全性</p>
+<p>基于价值函数的强化学习</p>
+<p>1.定义人机协作最优控制问题，基于Q-leaning设计自适应阻抗</p>
+<p>2.利用人和机器人的阻抗模型及线性回归的方法估测人的示教轨迹</p>
+<p>自适应阻抗学习时间最小，同时保证了一定时间</p>
+<p>基于策略函数的强化学习</p>
+<p>价值</p>
+<p>理论完整，可以达到全局最优</p>
+<p>实现简单，收敛较快</p>
+<p>缺点：维数灾难，控制策略会受到函数近似误差影响</p>
+<p>策略</p>
+<p>不存在维数灾难</p>
+<p>理论上只能局部最优，收敛较慢</p>
+<p>案例分析</p>
+<p>1.基于策略函数的强化学习算法</p>
+<p>2.运用于机器人的自适应阻抗中，并在不同平台测试</p>
+<p>机器人仅在任务需要时候保证高阻抗，其余保证低阻抗</p>
+<p>目前问题：有些不可达到的点集成于学习过程中，进行处理</p>
+<p>强化学习应用于控制理论阶段</p>
+<p>1.机器人动力学参数辨识</p>
+<p>2.关节摩擦力的建模和补偿</p>
+<p>3.基于电流环或关节转矩测量外力估算</p>
+<p>4.阻抗系数矩阵非对角元素设计</p>
+<p>方向</p>
+<p>1.基于多传感器多信息融合的自适应阻抗控制</p>
+<p>2.与人工智能相关技术结合</p>
+<p>3.基于强化学习的阻抗控制</p>
+<ol>
+<li>与基于模型的最优控制结合（发挥各自有点）</li>
+<li>状态约束和稳定性分析</li>
+<li>基于策略搜索的强化学习</li>
+</ol>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>control</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>life/life</title>
+    <url>/2022/08/02/life/life/</url>
+    <content><![CDATA[<p> <strong>怎么会迷上你，我在问自己</strong></p>
+<p> <strong>我什么都能放弃，居然今天难离去</strong></p>
+<p>我是个什么人呢？</p>
+<p>乐观、向上、热心又冷漠</p>
+<p>犹豫、常常忽略一些事情、讨厌很多事情</p>
+<p>一个半吊子的理想主义者～</p>
+<p><a href="/img/R.jpg">r</a></p>
+]]></content>
   </entry>
   <entry>
     <title>latex_note</title>
@@ -1573,203 +1723,32 @@
 ]]></content>
   </entry>
   <entry>
-    <title>impedance_control</title>
-    <url>/2021/02/03/impedance-control/impedance-control/</url>
+    <title>lifespan</title>
+    <url>/2020/11/07/lifespan/lifespan/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer">
 
-<h1 id="阻抗相关"><a href="#阻抗相关" class="headerlink" title="阻抗相关"></a>阻抗相关</h1><p>记录部分内容</p>
+<h1 id="无常的人生-小记"><a href="#无常的人生-小记" class="headerlink" title="无常的人生-小记"></a>无常的人生-小记</h1><p>今天心情还挺复杂的，不自主的想着好多事情，不想让熟人知道，但是又想倾诉一下，所以在博客里稍微说一说，（未来不管陌生人还是熟人，或者是自己，看到这篇小记，是否会心有所感呢？）</p>
 <a id="more"></a>
 
-<h2 id="人机协作"><a href="#人机协作" class="headerlink" title="人机协作"></a>人机协作</h2><p>协作定义：协作参与方具备共同目标、具备感知交流能力、协同能力</p>
-<p>标准：安全、协作、智能</p>
-<h2 id="交互控制-力控制"><a href="#交互控制-力控制" class="headerlink" title="交互控制-力控制"></a>交互控制-力控制</h2><h3 id="直接力控"><a href="#直接力控" class="headerlink" title="直接力控"></a>直接力控</h3><p>直接设定数值，通过反馈进行精确设定控制</p>
-<p>1.成本高、精度差、存在噪声、干扰难以判断</p>
-<p>2.无法确定具体所需控制数值</p>
-<h3 id="间接控制"><a href="#间接控制" class="headerlink" title="间接控制"></a>间接控制</h3><h4 id="柔顺控制"><a href="#柔顺控制" class="headerlink" title="柔顺控制"></a>柔顺控制</h4><p>被动柔顺：通过含有弹性元件的机械设备在接触过程中体现柔顺</p>
-<p>主动柔顺：通过控制的方式实现，越位设置，在接触过程中产生作用</p>
-<h4 id="阻抗-导纳控制："><a href="#阻抗-导纳控制：" class="headerlink" title="阻抗/导纳控制："></a>阻抗/导纳控制：</h4><p>关节空间</p>
-<p>笛卡尔空间：常用</p>
-<h4 id="力-位混合控制"><a href="#力-位混合控制" class="headerlink" title="力/位混合控制"></a>力/位混合控制</h4><h2 id="关节空间阻抗控制"><a href="#关节空间阻抗控制" class="headerlink" title="关节空间阻抗控制"></a>关节空间阻抗控制</h2><p>阻尼：抵消机械震荡</p>
-<p>弹性元件：柔顺性调整</p>
-<p>控制理论</p>
-<p>阻抗控制主要是控制运动与力之间的动态关系控制</p>
-<p>实现理想阻抗控制需要满足：</p>
-<p>1.机器人动态模型及相关参数</p>
-<p>2.机器人关节角、关节角速度的实时反馈（传感器）</p>
-<p>3.机器人关节力矩实时反馈（转矩传感器获得/测量驱动电机电流，通过电流关系进行计算分析）</p>
-<p>4.机器人转矩控制</p>
-<p>设定k值</p>
-<p>k大–抵抗性较强</p>
-<p>k小–柔顺性较高</p>
-<p>k=0，随外力改变位置</p>
-<h2 id="笛卡尔关节控制"><a href="#笛卡尔关节控制" class="headerlink" title="笛卡尔关节控制"></a>笛卡尔关节控制</h2><p>1.求解雅克比（伪）逆矩阵，以及雅克比矩阵导数矩阵</p>
-<p>2.精确测量机器人执行器末端所受外力</p>
-<p>3.精确的机器人运动学以及动力学模型</p>
-<p>4.机器人关节位置及转速的测量</p>
-<p>5.机器人关节转矩控制</p>
-<p>姿态不要过度接近奇异点</p>
-<p>控制机器人运动与外力之间的动态关系，使其等效为弹簧-阻尼-质量组成的二阶系统</p>
-<p>需要条件</p>
-<p>1.机器人动力学及运动学模型</p>
-<p>2.关节角及角速度反馈</p>
-<p>3.关节转矩控制</p>
-<p>4.外力（矩）的测量（非必要）</p>
-<p>导纳控制与阻抗控制区别</p>
-<p>1.计算出力，控制器输入位置输出力</p>
-<p>2.控制器输入力输出位置，机器人输入位移输出力</p>
-<p><em>当外界环境阻抗系数高，采用阻抗控制</em></p>
-<p><em>当外界环境阻抗系数低，采用导纳控制？？</em></p>
-<p>导纳控制有点像变刚度控制，区分并进行理解。</p>
-<h1 id="自适应阻抗控制"><a href="#自适应阻抗控制" class="headerlink" title="自适应阻抗控制"></a>自适应阻抗控制</h1><p>自主调整阻抗，满足环境要求</p>
-<p>1.自主目标 阻抗系数或者运动设定</p>
-<p>2.如何实现参数修改</p>
-<p>基准：保证机器人稳定性</p>
-<p>一些例子</p>
-<p>1.根据外力反馈调整阻尼系数，预测运动意图</p>
-<p>2.稳定性分析</p>
-<p>3.估算人的阻抗系数</p>
-<p>力增大-意图为该方向加速-机器人减小阻抗系数以顺应需求-减小接触力，反之亦然</p>
-<p>思路可以换一下，外力作为负反馈进行相应调节</p>
-<p>阻抗模型</p>
-<p>水的阻抗模型？？？</p>
-<p>参数辨识法</p>
-<p>通过速度反馈调节参数进行示教学习</p>
-<p>提高舒适跟随</p>
-<p>根据实验进行确定稳定区域模型而非理论推导–不严谨但是更贴近实际</p>
-<p>1.基于可操作性</p>
-<p>2.基于阻抗控制误差</p>
-<p>三.</p>
-<p>1.多传感器融合，建立手臂运动中 姿态以及肌肉信号实时反馈</p>
-<p>2.基于机电信息，建立手臂阻抗模型，并调整机器的阻抗系数</p>
-<p>3.力/阻抗混合控制</p>
-<p>肌肉电信号EMG使用方法</p>
-<p>optitrack 视觉信息使用</p>
-<p>该方案中捕捉手臂姿态的变化，根据姿态变化调整机器人阻抗系数在空间上的分布</p>
-<p>力传感器</p>
-<p>机械臂末端</p>
-<p>四</p>
-<p>1.基于视觉信息，利用高斯过程回归，在线预测人运动轨迹，评估预测不确定性</p>
-<p>2.基于预测结果，调整机器人运动</p>
-<p>3.利用阻抗控制跟随设定轨迹，同时改变参数大小，保证safe</p>
-<h1 id="强化学习"><a href="#强化学习" class="headerlink" title="强化学习"></a>强化学习</h1><p>阻抗控制引入强化学习</p>
-<p>学习力场？？？？学习一下</p>
-<p>强化学习是机器学习的一个领域，强调如何基于换将反馈而行动，已取得最大化的预期利益。</p>
-<p>寻找最优策略，使得价值函数最大</p>
-<p>1.基于模型的强化学习</p>
-<p>需要建立模型</p>
-<p>2.基于价值函数的强化学习</p>
-<p>根据价值调整策略</p>
-<p>3.基于策略函数的强化学习</p>
-<p>不依赖于模型</p>
-<p>缺点 ：收敛慢、可能会到达危险状态、</p>
-<p>原因：</p>
-<p>1.建模较为困难</p>
-<p>2.机器人可以不断优化自身行为，理论上可以得到最优解</p>
-<p>核心;</p>
-<p>求解问题：</p>
-<p>1.基于价值函数</p>
-<p>2.基于神经网络的Actor-critic算法</p>
-<p>3.策略迭代</p>
-<p>策略 —如何保障安全性</p>
-<p>基于价值函数的强化学习</p>
-<p>1.定义人机协作最优控制问题，基于Q-leaning设计自适应阻抗</p>
-<p>2.利用人和机器人的阻抗模型及线性回归的方法估测人的示教轨迹</p>
-<p>自适应阻抗学习时间最小，同时保证了一定时间</p>
-<p>基于策略函数的强化学习</p>
-<p>价值</p>
-<p>理论完整，可以达到全局最优</p>
-<p>实现简单，收敛较快</p>
-<p>缺点：维数灾难，控制策略会受到函数近似误差影响</p>
-<p>策略</p>
-<p>不存在维数灾难</p>
-<p>理论上只能局部最优，收敛较慢</p>
-<p>案例分析</p>
-<p>1.基于策略函数的强化学习算法</p>
-<p>2.运用于机器人的自适应阻抗中，并在不同平台测试</p>
-<p>机器人仅在任务需要时候保证高阻抗，其余保证低阻抗</p>
-<p>目前问题：有些不可达到的点集成于学习过程中，进行处理</p>
-<p>强化学习应用于控制理论阶段</p>
-<p>1.机器人动力学参数辨识</p>
-<p>2.关节摩擦力的建模和补偿</p>
-<p>3.基于电流环或关节转矩测量外力估算</p>
-<p>4.阻抗系数矩阵非对角元素设计</p>
-<p>方向</p>
-<p>1.基于多传感器多信息融合的自适应阻抗控制</p>
-<p>2.与人工智能相关技术结合</p>
-<p>3.基于强化学习的阻抗控制</p>
-<ol>
-<li>与基于模型的最优控制结合（发挥各自有点）</li>
-<li>状态约束和稳定性分析</li>
-<li>基于策略搜索的强化学习</li>
-</ol>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>control</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>life/life</title>
-    <url>/2022/08/02/life/life/</url>
-    <content><![CDATA[<p> <strong>怎么会迷上你，我在问自己</strong></p>
-<p> <strong>我什么都能放弃，居然今天难离去</strong></p>
-<p>我是个什么人呢？</p>
-<p>乐观、向上、热心又冷漠</p>
-<p>犹豫、常常忽略一些事情、讨厌很多事情</p>
-<p>一个半吊子的理想主义者～</p>
-<p><a href="/img/R.jpg">r</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>literature</title>
-    <url>/2020/09/03/literature/literature/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
-<p>abstract    consult    discussion   method   result</p>
-<p>review</p>
-<a id="more"></a>
-
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
-<p>摘要分层</p>
-<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
-<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
-<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
-<p>2.indicative abstract</p>
-<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
-<p>3.extended abstract</p>
-<p> thesis   dissertation</p>
-<p>4.structured abstract</p>
-<p>5.conference abstract</p>
-<p>6.graphical abstract</p>
-<p>7.executive summary</p>
-<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
-<ol>
-<li>Introduction  </li>
-<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
-<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
-</ol>
-<p>分层</p>
-<p>1.review of the present study</p>
-<p>2.consolidating ofthe results</p>
-<p>3.stating limitations and possible research directions</p>
-<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
-<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
-<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
-</ol>
-<p>分层</p>
-<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
-<p>一些特点 linguistic features</p>
-<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
-<p>Method classification</p>
-<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
-<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
-<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
-<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
-<p>…用的比较少，不列了</p>
-<p>缺一部分，改天再补，回寝了～</p>
+<h2 id="1-纪念一场似是而非的“感情”"><a href="#1-纪念一场似是而非的“感情”" class="headerlink" title="1.纪念一场似是而非的“感情”"></a>1.纪念一场似是而非的“感情”</h2><p>友谊和爱情终究是有差别的，这是我所笃定的，但是差别的界定，我好像又是模糊的，前些天我好像做了一些很对不起你的事情，但是我又不得不这么做。</p>
+<p>为什么我下不了决心呢，我后来自己想了想，其实不是我所谓的不懂体贴、太过“直男”，而是我觉得我们太熟悉了，虽然几乎有两年没见过，熟悉带来的于我而言就是陌生，更重要的一点是，你我都不知道这段未来的感情里掺杂了多少另外多余的东西，比如周围的环境、别人的看法，各自的兴趣爱好甚至与一些观念理想，你我都不是好多年前的那个人了。</p>
+<p>说实话，很久之前，我应该是喜欢的，不过那会不敢跟你说，也不知道你怎么想，再后来，经历了很多事情，我的想法也慢慢变了，但是终究你对我而言，和别人是不同的，这可能就是你说的差别对待感觉的来源，但是这个差别来自于很多年前，并且可能并不会更进一步，我害怕我以后会伤害你，所以我在不算开始的现在退出，我也不想去试这个模糊感是不是有未来，我总感觉有些事情应该是顺其自然的…</p>
+<p>希望你未来能找到更合适的，我会衷心的祝福，真的</p>
+<p>我们应该还是朋友吧…有些事不说还好，说了真是尴尬</p>
+<p>确定不了你的想法为什么忽然那么坚定，我也无法确定我的想法，总体来讲，就是这个原因。</p>
+<p>我会努力提高自己，当然希望你也能健健康康的快乐生活，我会帮助你，以一个好朋友的身份，不管你接不接受。没有前一段经历，或许我也不能下定决心做一件事。</p>
+<p>感觉你最近蛮开心的，那我也就放心了，希望我没有对你造成什么伤害…</p>
+<p>你可能不会看到这篇碎碎念的文章吧，毕竟我没和别人讲过这个博客，我居然能写出这么多废话…</p>
+<p>想起来又是好复杂，感觉好烦，爱情真是烦人啊，不如多看两篇文献…</p>
+<h2 id="2人生之路漫漫长"><a href="#2人生之路漫漫长" class="headerlink" title="2人生之路漫漫长"></a>2人生之路漫漫长</h2><p>未来几年的方向应该是确定了，模糊又坚定，我有自己的指标，我会努力去完成</p>
+<p>踏实一点、坚定一点、乐观一点</p>
+<h2 id="3现在"><a href="#3现在" class="headerlink" title="3现在"></a>3现在</h2><p>是不是很奇怪的顺序，确实，不过这本身就是一篇奇怪的文章，和我的现实性格一点也不搭。</p>
+<p>现在我做的应该也是踏踏实实的，把每日目标和小目标努力完成了，最近遇到点小难题，一点一点得去记录并且克服掉</p>
+<p>摸鱼虽然舒服，但是真的浪费时间，拒绝正式时间摸鱼，从我做起</p>
+<p>严格规划时间了呀啊喂！</p>
+<p>周末晚之前做一版，下周严格的把模型推导完，整理知识，克服难题</p>
+<p>人生啊—真是漫长</p>
+<p>应该不会有人看到吧，真是尴尬…</p>
 ]]></content>
   </entry>
   <entry>
@@ -1958,6 +1937,90 @@
       </categories>
   </entry>
   <entry>
+    <title>literature</title>
+    <url>/2020/09/03/literature/literature/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
+<p>abstract    consult    discussion   method   result</p>
+<p>review</p>
+<a id="more"></a>
+
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
+<p>摘要分层</p>
+<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
+<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
+<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
+<p>2.indicative abstract</p>
+<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
+<p>3.extended abstract</p>
+<p> thesis   dissertation</p>
+<p>4.structured abstract</p>
+<p>5.conference abstract</p>
+<p>6.graphical abstract</p>
+<p>7.executive summary</p>
+<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
+<ol>
+<li>Introduction  </li>
+<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
+<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
+</ol>
+<p>分层</p>
+<p>1.review of the present study</p>
+<p>2.consolidating ofthe results</p>
+<p>3.stating limitations and possible research directions</p>
+<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
+<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
+</ol>
+<p>分层</p>
+<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
+<p>一些特点 linguistic features</p>
+<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
+<p>Method classification</p>
+<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
+<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
+<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
+<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
+<p>…用的比较少，不列了</p>
+<p>缺一部分，改天再补，回寝了～</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>logic_symbol</title>
+    <url>/2020/07/27/logic-symbol/logic-symbol/</url>
+    <content><![CDATA[<h1 id="逻辑符号"><a href="#逻辑符号" class="headerlink" title="逻辑符号"></a>逻辑符号</h1><p>这篇博文主要为了总结一下逻辑运算符号（拯救混乱记忆，雾）</p>
+<p>(下一篇是题目总结顺便复习)</p>
+<a id="more"></a>
+
+
+
+<p>1.逻辑结构</p>
+<p>与运算：</p>
+<p>与(&amp;&amp;)：逻辑规则是两真才真。与and等同。</p>
+<p>或运算：</p>
+<p>或(||)：逻辑规则是只有一个为真就为真。与or等同。</p>
+<p>异或：</p>
+<p>异或(^)：逻辑规则是两个不同就为真。</p>
+<p>非运算符：</p>
+<p>非(！)：逻辑规则是反转操作数的含义。与not等同。</p>
+ 
+
+<h2 id="电路中的符合逻辑"><a href="#电路中的符合逻辑" class="headerlink" title="电路中的符合逻辑"></a>电路中的符合逻辑</h2><p>与非：  输入只要有0，输出为1.输入全1，输出才0</p>
+<p>或非：输入只要有1，输出为0，输入全为0，输出才1</p>
+<p>与或非：复合运算</p>
+ 
+
+<p>电路中还存在异或与同或</p>
+<p>异或：相异则为1</p>
+<p>同或：相同则为1</p>
+<p>关于逻辑电路门，以后再说吧233</p>
+]]></content>
+      <categories>
+        <category>logic</category>
+      </categories>
+  </entry>
+  <entry>
     <title>manipulator_HU_learninging</title>
     <url>/2020/10/12/manipulator-HU-learninging/manipulator-HU-learninging/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer">
@@ -2043,32 +2106,27 @@
       </categories>
   </entry>
   <entry>
-    <title>lifespan</title>
-    <url>/2020/11/07/lifespan/lifespan/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
+    <title>movie_fish</title>
+    <url>/2020/07/30/movie-fish/movie-fish/</url>
+    <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><a id="more"></a>
 
-<h1 id="无常的人生-小记"><a href="#无常的人生-小记" class="headerlink" title="无常的人生-小记"></a>无常的人生-小记</h1><p>今天心情还挺复杂的，不自主的想着好多事情，不想让熟人知道，但是又想倾诉一下，所以在博客里稍微说一说，（未来不管陌生人还是熟人，或者是自己，看到这篇小记，是否会心有所感呢？）</p>
-<a id="more"></a>
-
-<h2 id="1-纪念一场似是而非的“感情”"><a href="#1-纪念一场似是而非的“感情”" class="headerlink" title="1.纪念一场似是而非的“感情”"></a>1.纪念一场似是而非的“感情”</h2><p>友谊和爱情终究是有差别的，这是我所笃定的，但是差别的界定，我好像又是模糊的，前些天我好像做了一些很对不起你的事情，但是我又不得不这么做。</p>
-<p>为什么我下不了决心呢，我后来自己想了想，其实不是我所谓的不懂体贴、太过“直男”，而是我觉得我们太熟悉了，虽然几乎有两年没见过，熟悉带来的于我而言就是陌生，更重要的一点是，你我都不知道这段未来的感情里掺杂了多少另外多余的东西，比如周围的环境、别人的看法，各自的兴趣爱好甚至与一些观念理想，你我都不是好多年前的那个人了。</p>
-<p>说实话，很久之前，我应该是喜欢的，不过那会不敢跟你说，也不知道你怎么想，再后来，经历了很多事情，我的想法也慢慢变了，但是终究你对我而言，和别人是不同的，这可能就是你说的差别对待感觉的来源，但是这个差别来自于很多年前，并且可能并不会更进一步，我害怕我以后会伤害你，所以我在不算开始的现在退出，我也不想去试这个模糊感是不是有未来，我总感觉有些事情应该是顺其自然的…</p>
-<p>希望你未来能找到更合适的，我会衷心的祝福，真的</p>
-<p>我们应该还是朋友吧…有些事不说还好，说了真是尴尬</p>
-<p>确定不了你的想法为什么忽然那么坚定，我也无法确定我的想法，总体来讲，就是这个原因。</p>
-<p>我会努力提高自己，当然希望你也能健健康康的快乐生活，我会帮助你，以一个好朋友的身份，不管你接不接受。没有前一段经历，或许我也不能下定决心做一件事。</p>
-<p>感觉你最近蛮开心的，那我也就放心了，希望我没有对你造成什么伤害…</p>
-<p>你可能不会看到这篇碎碎念的文章吧，毕竟我没和别人讲过这个博客，我居然能写出这么多废话…</p>
-<p>想起来又是好复杂，感觉好烦，爱情真是烦人啊，不如多看两篇文献…</p>
-<h2 id="2人生之路漫漫长"><a href="#2人生之路漫漫长" class="headerlink" title="2人生之路漫漫长"></a>2人生之路漫漫长</h2><p>未来几年的方向应该是确定了，模糊又坚定，我有自己的指标，我会努力去完成</p>
-<p>踏实一点、坚定一点、乐观一点</p>
-<h2 id="3现在"><a href="#3现在" class="headerlink" title="3现在"></a>3现在</h2><p>是不是很奇怪的顺序，确实，不过这本身就是一篇奇怪的文章，和我的现实性格一点也不搭。</p>
-<p>现在我做的应该也是踏踏实实的，把每日目标和小目标努力完成了，最近遇到点小难题，一点一点得去记录并且克服掉</p>
-<p>摸鱼虽然舒服，但是真的浪费时间，拒绝正式时间摸鱼，从我做起</p>
-<p>严格规划时间了呀啊喂！</p>
-<p>周末晚之前做一版，下周严格的把模型推导完，整理知识，克服难题</p>
-<p>人生啊—真是漫长</p>
-<p>应该不会有人看到吧，真是尴尬…</p>
+<h1 id="V字仇杀队"><a href="#V字仇杀队" class="headerlink" title="V字仇杀队"></a>V字仇杀队</h1><p>时隔多年再次欣赏这部电影，感觉平淡了许多，不再像当初那么愤青了。</p>
+<p>世界上没有完美的事情，过于理性的审视一切，有很多好处，同时也失去了很多东西。</p>
+<p>思想是不可消亡了～</p>
+<h1 id="窃听风暴"><a href="#窃听风暴" class="headerlink" title="窃听风暴"></a>窃听风暴</h1><p>压抑的bgm，紧凑的情节</p>
+<p>断续的信息流，完整的情感线，人类本质的体现</p>
+<p>风云变换的历史，个人永远都是渺小的，滔天海浪的压迫感觉</p>
+<p>百年未有之大变局，如何在历史的洪流中生活，放弃一些无用的主义思维，守好自己所相信的底线。</p>
+<p>没有绝对的对错之分，安安静静的就好～</p>
+<h2 id="黑客帝国三矩阵革命"><a href="#黑客帝国三矩阵革命" class="headerlink" title="黑客帝国三矩阵革命"></a>黑客帝国三矩阵革命</h2><p>画面不错</p>
+<h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
+<p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
+<p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
+<p><img src="/2020/07/30/movie-fish/movie-fish/pictures/R.jpg" alt></p>
+<h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
+<p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
+<p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
+<p>（生气的时候，有一点很重要，问自己一下，有必要么？）</p>
 ]]></content>
   </entry>
   <entry>
@@ -2182,30 +2240,6 @@
       <categories>
         <category>note</category>
       </categories>
-  </entry>
-  <entry>
-    <title>movie_fish</title>
-    <url>/2020/07/30/movie-fish/movie-fish/</url>
-    <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><a id="more"></a>
-
-<h1 id="V字仇杀队"><a href="#V字仇杀队" class="headerlink" title="V字仇杀队"></a>V字仇杀队</h1><p>时隔多年再次欣赏这部电影，感觉平淡了许多，不再像当初那么愤青了。</p>
-<p>世界上没有完美的事情，过于理性的审视一切，有很多好处，同时也失去了很多东西。</p>
-<p>思想是不可消亡了～</p>
-<h1 id="窃听风暴"><a href="#窃听风暴" class="headerlink" title="窃听风暴"></a>窃听风暴</h1><p>压抑的bgm，紧凑的情节</p>
-<p>断续的信息流，完整的情感线，人类本质的体现</p>
-<p>风云变换的历史，个人永远都是渺小的，滔天海浪的压迫感觉</p>
-<p>百年未有之大变局，如何在历史的洪流中生活，放弃一些无用的主义思维，守好自己所相信的底线。</p>
-<p>没有绝对的对错之分，安安静静的就好～</p>
-<h2 id="黑客帝国三矩阵革命"><a href="#黑客帝国三矩阵革命" class="headerlink" title="黑客帝国三矩阵革命"></a>黑客帝国三矩阵革命</h2><p>画面不错</p>
-<h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
-<p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
-<p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
-<p><img src="/2020/07/30/movie-fish/movie-fish/pictures/R.jpg" alt></p>
-<h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
-<p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
-<p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
-<p>（生气的时候，有一点很重要，问自己一下，有必要么？）</p>
-]]></content>
   </entry>
   <entry>
     <title>newnote</title>
@@ -2352,60 +2386,6 @@
 <pre><code></code></pre>]]></content>
   </entry>
   <entry>
-    <title>logic_symbol</title>
-    <url>/2020/07/27/logic-symbol/logic-symbol/</url>
-    <content><![CDATA[<h1 id="逻辑符号"><a href="#逻辑符号" class="headerlink" title="逻辑符号"></a>逻辑符号</h1><p>这篇博文主要为了总结一下逻辑运算符号（拯救混乱记忆，雾）</p>
-<p>(下一篇是题目总结顺便复习)</p>
-<a id="more"></a>
-
-
-
-<p>1.逻辑结构</p>
-<p>与运算：</p>
-<p>与(&amp;&amp;)：逻辑规则是两真才真。与and等同。</p>
-<p>或运算：</p>
-<p>或(||)：逻辑规则是只有一个为真就为真。与or等同。</p>
-<p>异或：</p>
-<p>异或(^)：逻辑规则是两个不同就为真。</p>
-<p>非运算符：</p>
-<p>非(！)：逻辑规则是反转操作数的含义。与not等同。</p>
- 
-
-<h2 id="电路中的符合逻辑"><a href="#电路中的符合逻辑" class="headerlink" title="电路中的符合逻辑"></a>电路中的符合逻辑</h2><p>与非：  输入只要有0，输出为1.输入全1，输出才0</p>
-<p>或非：输入只要有1，输出为0，输入全为0，输出才1</p>
-<p>与或非：复合运算</p>
- 
-
-<p>电路中还存在异或与同或</p>
-<p>异或：相异则为1</p>
-<p>同或：相同则为1</p>
-<p>关于逻辑电路门，以后再说吧233</p>
-]]></content>
-      <categories>
-        <category>logic</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>plan_emotion</title>
-    <url>/2021/08/26/plan-emotion/plan-emotion/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<h1 id="Ubuntu修复windows无法启动问题"><a href="#Ubuntu修复windows无法启动问题" class="headerlink" title="Ubuntu修复windows无法启动问题"></a>Ubuntu修复windows无法启动问题</h1><a id="more"></a>
-
-<p>配置：ubuntu16.04+windows8.1</p>
-<p>背景：电脑不小心被砸了一下，然后windows系统无法启动，也无法进入bios和安全模式，尝试启动Ubuntu系统，发现可以进入，Linux永远的神！！</p>
-<p>linux端进入后，发现电脑系统盘无法读取，出现挂载错误，可能windows就是因为这个问题无法启动，尝试修复，记录一下最后有效的过程：</p>
-<h5 id="1-查看系统下所有分区的挂载情况是否正常"><a href="#1-查看系统下所有分区的挂载情况是否正常" class="headerlink" title="1.查看系统下所有分区的挂载情况是否正常"></a>1.查看系统下所有分区的挂载情况是否正常</h5><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">sudo fdisk -l</span><br></pre></td></tr></table></figure>
-
-<p>根据×号判断</p>
-<h5 id="2-修复对应分区，我显示的是-dev-sdb3"><a href="#2-修复对应分区，我显示的是-dev-sdb3" class="headerlink" title="2.修复对应分区，我显示的是/dev/sdb3"></a>2.修复对应分区，我显示的是/dev/sdb3</h5><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">sudo ntfsfix /dev/sdb3</span><br></pre></td></tr></table></figure>
-
-<p>全部修复后，windows可以正常启动</p>
-<p>以后正常更新啦…</p>
-<p>等会儿再写一个生活计划日志…</p>
-]]></content>
-  </entry>
-  <entry>
     <title>plan</title>
     <url>/2023/01/29/plan/plan/</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer">
@@ -2497,6 +2477,26 @@
       <categories>
         <category>基础</category>
       </categories>
+  </entry>
+  <entry>
+    <title>plan_emotion</title>
+    <url>/2021/08/26/plan-emotion/plan-emotion/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h1 id="Ubuntu修复windows无法启动问题"><a href="#Ubuntu修复windows无法启动问题" class="headerlink" title="Ubuntu修复windows无法启动问题"></a>Ubuntu修复windows无法启动问题</h1><a id="more"></a>
+
+<p>配置：ubuntu16.04+windows8.1</p>
+<p>背景：电脑不小心被砸了一下，然后windows系统无法启动，也无法进入bios和安全模式，尝试启动Ubuntu系统，发现可以进入，Linux永远的神！！</p>
+<p>linux端进入后，发现电脑系统盘无法读取，出现挂载错误，可能windows就是因为这个问题无法启动，尝试修复，记录一下最后有效的过程：</p>
+<h5 id="1-查看系统下所有分区的挂载情况是否正常"><a href="#1-查看系统下所有分区的挂载情况是否正常" class="headerlink" title="1.查看系统下所有分区的挂载情况是否正常"></a>1.查看系统下所有分区的挂载情况是否正常</h5><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">sudo fdisk -l</span><br></pre></td></tr></table></figure>
+
+<p>根据×号判断</p>
+<h5 id="2-修复对应分区，我显示的是-dev-sdb3"><a href="#2-修复对应分区，我显示的是-dev-sdb3" class="headerlink" title="2.修复对应分区，我显示的是/dev/sdb3"></a>2.修复对应分区，我显示的是/dev/sdb3</h5><figure class="highlight html"><table><tr><td class="code"><pre><span class="line">sudo ntfsfix /dev/sdb3</span><br></pre></td></tr></table></figure>
+
+<p>全部修复后，windows可以正常启动</p>
+<p>以后正常更新啦…</p>
+<p>等会儿再写一个生活计划日志…</p>
+]]></content>
   </entry>
   <entry>
     <title>reading_note1</title>
