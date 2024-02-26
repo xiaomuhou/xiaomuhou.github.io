@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2024/02/26/Q/Q/</loc>
+    <loc>http://yoursite.com/2024/02/26/Q/%E5%9B%9E%E5%BF%86/</loc>
     
     <lastmod>2024-02-26</lastmod>
     
@@ -394,14 +394,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/mathematica/</loc>
+    <loc>http://yoursite.com/tags/movie/</loc>
     <lastmod>2024-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/movie/</loc>
+    <loc>http://yoursite.com/tags/mathematica/</loc>
     <lastmod>2024-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -445,21 +445,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/note/</loc>
-    <lastmod>2024-02-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/categories/touch-fish/</loc>
-    <lastmod>2024-02-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/categories/feeling/</loc>
+    <lastmod>2024-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/note/</loc>
     <lastmod>2024-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -480,6 +473,13 @@
   </url>
   
   <url>
+    <loc>http://yoursite.com/categories/touch-fish/</loc>
+    <lastmod>2024-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/categories/project/</loc>
     <lastmod>2024-02-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -487,14 +487,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/logic/</loc>
+    <loc>http://yoursite.com/categories/linux/</loc>
     <lastmod>2024-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/linux/</loc>
+    <loc>http://yoursite.com/categories/logic/</loc>
     <lastmod>2024-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
