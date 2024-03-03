@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2024-02-26T15:22:24.012Z</updated>
+  <updated>2024-03-03T14:18:15.084Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>QT开发</title>
+    <link href="http://yoursite.com/2024/03/03/QT%E5%BC%80%E5%8F%91/QT%E5%BC%80%E5%8F%91/"/>
+    <id>http://yoursite.com/2024/03/03/QT%E5%BC%80%E5%8F%91/QT%E5%BC%80%E5%8F%91/</id>
+    <published>2024-03-03T14:16:57.000Z</published>
+    <updated>2024-03-03T14:18:15.084Z</updated>
+    
+    <content type="html"><![CDATA[<meta name="referrer" content="no-referrer"><h1 id="QT5开发总结"><a href="#QT5开发总结" class="headerlink" title="QT5开发总结"></a>QT5开发总结</h1><p>空间XX优化开发界面-2024.2.5完成提交版</p><h2 id="功能需求"><a href="#功能需求" class="headerlink" title="功能需求:"></a>功能需求:</h2><ul><li>基于控制逻辑界面跳转</li><li>调用底层计算代码并优化</li><li>几个虚拟加载进度条</li><li>多阶输入读取及判断方式</li></ul><p>总体：上位机需求功能比较简单，调用代码由于老师提供的底层的优化算法本身存在运行问题，导致一部分协调存在bug，因此整体功能存在问题，基本数据控制功能开发完成，已提交，暂时结束。</p><a id="more"></a><p>1.跳转算法：</p><p>基于py的开发逻辑与C++一致，常见的几种，这里我使用的是按键检测，几个功能就写几个子界面，比较笨，但是容易理解，示例代码如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Ui_ST1_1 <span class="keyword">import</span> Ui_Form1_1</span><br><span class="line">self.pushButton.clicked.connect(self.popWindow) <span class="comment">#调用</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">popWindow</span><span class="params">(self)</span>:</span><span class="comment">#定义</span></span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        self.uiZ= Ui_Form1_1() <span class="comment">#逻辑界面</span></span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></table></figure><p>2.底层代码调用：</p><p>abaqus子程序存在bug，这部分暂缺，后续如需要继续开发，代码修正后补充。</p><p>商业软件调用，写了一种基于subprocess调用外部EXE程序的方式，同样通过定义函数实现，注意一些小问题</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line">self.pushButton_3.clicked.connect(self.open)<span class="comment">#steupUI</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">open</span><span class="params">(self)</span>:</span></span><br><span class="line">        subprocess.Popen(<span class="string">r"E:\Program Files\Inkscape\bin\inkscape.exe"</span>)<span class="comment">#这里注意一下python中的路径转义字符，要不就使用正斜杆，否则如上。</span></span><br><span class="line"><span class="comment">#补充一个启动文件</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.openFile)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">openFile</span><span class="params">(self)</span>:</span></span><br><span class="line">        directory1 = QFileDialog.getExistingDirectory(<span class="literal">None</span>, <span class="string">"启动程序"</span>,<span class="string">"./"</span>)</span><br><span class="line">        print(directory1)</span><br></pre></td></tr></table></figure><p>3.假装加载2333以及读取数据</p><p>读取doublespinbox与progressbar协调，延时用法以及其余读取代码句式参照那本书，边查边记。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">valu = <span class="number">1</span><span class="comment">#定义初值</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.va)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">va</span><span class="params">(self)</span>:</span><span class="comment">#点击执行只是循环一个功能，记住以后不要一个按钮对应多个按键，功能全部放在一起，执行顺序会有变化</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">100</span>):</span><br><span class="line">            time.sleep(<span class="number">0.09</span>)</span><br><span class="line">            self.progressBar.setProperty(<span class="string">"value"</span>, i)</span><br><span class="line">        valu=self.doubleSpinBox_4.value()<span class="comment">#读取数据句式</span></span><br><span class="line">        print(valu)</span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        <span class="keyword">if</span> valu==<span class="number">1</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_3()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_31()</span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.progressBar.setProperty(<span class="string">"value"</span>, <span class="number">100</span>)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></table></figure><p>4.图片读取流程，再次记录一下：</p><p>QTcreator中构建资源库，在转成代码后进行转换运行，图片加载均通过UI端完成。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pyrcc5 apprcc.qrc -o apprcc_re.py<span class="comment">#转换</span></span><br><span class="line">pyinstaller -F -W XX.py<span class="comment">#启动文件，其余控项可以看书</span></span><br></pre></td></tr></table></figure><h2 id="后续总结："><a href="#后续总结：" class="headerlink" title="后续总结："></a>后续总结：</h2><p>希望早点把我的”雇佣兵”工资结了QAQ。</p><p>那本书多看看，后续完成底层代码的协调，以及一个上位机的编写，李工那边的火星车上位机，有空的话帮他了结一下。</p><p>学学特效，多看看语法书，慢慢牢固基础~</p>]]></content>
+    
+    
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;h1 id=&quot;QT5开发总结&quot;&gt;&lt;a href=&quot;#QT5开发总结&quot; class=&quot;headerlink&quot; title=&quot;QT5开发总结&quot;&gt;&lt;/a&gt;QT5开发总结&lt;/h1&gt;&lt;p&gt;空间XX优化开发界面-2024.2.5完成提交版&lt;/p&gt;
+&lt;h2 id=&quot;功能需求&quot;&gt;&lt;a href=&quot;#功能需求&quot; class=&quot;headerlink&quot; title=&quot;功能需求:&quot;&gt;&lt;/a&gt;功能需求:&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;基于控制逻辑界面跳转&lt;/li&gt;
+&lt;li&gt;调用底层计算代码并优化&lt;/li&gt;
+&lt;li&gt;几个虚拟加载进度条&lt;/li&gt;
+&lt;li&gt;多阶输入读取及判断方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总体：上位机需求功能比较简单，调用代码由于老师提供的底层的优化算法本身存在运行问题，导致一部分协调存在bug，因此整体功能存在问题，基本数据控制功能开发完成，已提交，暂时结束。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Q</title>
@@ -431,25 +457,6 @@
     
     
     <category term="camera" scheme="http://yoursite.com/categories/camera/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>lifespan</title>
-    <link href="http://yoursite.com/2020/11/07/lifespan/lifespan/"/>
-    <id>http://yoursite.com/2020/11/07/lifespan/lifespan/</id>
-    <published>2020-11-07T12:48:59.000Z</published>
-    <updated>2020-11-07T13:36:16.341Z</updated>
-    
-    <content type="html"><![CDATA[<meta name="referrer" content="no-referrer"><h1 id="无常的人生-小记"><a href="#无常的人生-小记" class="headerlink" title="无常的人生-小记"></a>无常的人生-小记</h1><p>今天心情还挺复杂的，不自主的想着好多事情，不想让熟人知道，但是又想倾诉一下，所以在博客里稍微说一说，（未来不管陌生人还是熟人，或者是自己，看到这篇小记，是否会心有所感呢？）</p><a id="more"></a><h2 id="1-纪念一场似是而非的“感情”"><a href="#1-纪念一场似是而非的“感情”" class="headerlink" title="1.纪念一场似是而非的“感情”"></a>1.纪念一场似是而非的“感情”</h2><p>友谊和爱情终究是有差别的，这是我所笃定的，但是差别的界定，我好像又是模糊的，前些天我好像做了一些很对不起你的事情，但是我又不得不这么做。</p><p>为什么我下不了决心呢，我后来自己想了想，其实不是我所谓的不懂体贴、太过“直男”，而是我觉得我们太熟悉了，虽然几乎有两年没见过，熟悉带来的于我而言就是陌生，更重要的一点是，你我都不知道这段未来的感情里掺杂了多少另外多余的东西，比如周围的环境、别人的看法，各自的兴趣爱好甚至与一些观念理想，你我都不是好多年前的那个人了。</p><p>说实话，很久之前，我应该是喜欢的，不过那会不敢跟你说，也不知道你怎么想，再后来，经历了很多事情，我的想法也慢慢变了，但是终究你对我而言，和别人是不同的，这可能就是你说的差别对待感觉的来源，但是这个差别来自于很多年前，并且可能并不会更进一步，我害怕我以后会伤害你，所以我在不算开始的现在退出，我也不想去试这个模糊感是不是有未来，我总感觉有些事情应该是顺其自然的…</p><p>希望你未来能找到更合适的，我会衷心的祝福，真的</p><p>我们应该还是朋友吧…有些事不说还好，说了真是尴尬</p><p>确定不了你的想法为什么忽然那么坚定，我也无法确定我的想法，总体来讲，就是这个原因。</p><p>我会努力提高自己，当然希望你也能健健康康的快乐生活，我会帮助你，以一个好朋友的身份，不管你接不接受。没有前一段经历，或许我也不能下定决心做一件事。</p><p>感觉你最近蛮开心的，那我也就放心了，希望我没有对你造成什么伤害…</p><p>你可能不会看到这篇碎碎念的文章吧，毕竟我没和别人讲过这个博客，我居然能写出这么多废话…</p><p>想起来又是好复杂，感觉好烦，爱情真是烦人啊，不如多看两篇文献…</p><h2 id="2人生之路漫漫长"><a href="#2人生之路漫漫长" class="headerlink" title="2人生之路漫漫长"></a>2人生之路漫漫长</h2><p>未来几年的方向应该是确定了，模糊又坚定，我有自己的指标，我会努力去完成</p><p>踏实一点、坚定一点、乐观一点</p><h2 id="3现在"><a href="#3现在" class="headerlink" title="3现在"></a>3现在</h2><p>是不是很奇怪的顺序，确实，不过这本身就是一篇奇怪的文章，和我的现实性格一点也不搭。</p><p>现在我做的应该也是踏踏实实的，把每日目标和小目标努力完成了，最近遇到点小难题，一点一点得去记录并且克服掉</p><p>摸鱼虽然舒服，但是真的浪费时间，拒绝正式时间摸鱼，从我做起</p><p>严格规划时间了呀啊喂！</p><p>周末晚之前做一版，下周严格的把模型推导完，整理知识，克服难题</p><p>人生啊—真是漫长</p><p>应该不会有人看到吧，真是尴尬…</p>]]></content>
-    
-    
-    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-
-&lt;h1 id=&quot;无常的人生-小记&quot;&gt;&lt;a href=&quot;#无常的人生-小记&quot; class=&quot;headerlink&quot; title=&quot;无常的人生-小记&quot;&gt;&lt;/a&gt;无常的人生-小记&lt;/h1&gt;&lt;p&gt;今天心情还挺复杂的，不自主的想着好多事情，不想让熟人知道，但是又想倾诉一下，所以在博客里稍微说一说，（未来不管陌生人还是熟人，或者是自己，看到这篇小记，是否会心有所感呢？）&lt;/p&gt;</summary>
-    
-    
     
     
   </entry>
