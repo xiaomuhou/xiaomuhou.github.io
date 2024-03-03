@@ -403,14 +403,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/mathematica/</loc>
+    <loc>http://yoursite.com/tags/movie/</loc>
     <lastmod>2024-03-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/movie/</loc>
+    <loc>http://yoursite.com/tags/mathematica/</loc>
     <lastmod>2024-03-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -424,14 +424,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/airfact/</loc>
+    <loc>http://yoursite.com/tags/formula/</loc>
     <lastmod>2024-03-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/formula/</loc>
+    <loc>http://yoursite.com/tags/airfact/</loc>
     <lastmod>2024-03-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -445,6 +445,13 @@
   </url>
   
 
+  
+  <url>
+    <loc>http://yoursite.com/categories/feeling/</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>http://yoursite.com/categories/note/</loc>
@@ -468,7 +475,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/feeling/</loc>
+    <loc>http://yoursite.com/categories/game/</loc>
     <lastmod>2024-03-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -483,13 +490,6 @@
   
   <url>
     <loc>http://yoursite.com/categories/project/</loc>
-    <lastmod>2024-03-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/categories/game/</loc>
     <lastmod>2024-03-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
