@@ -432,13 +432,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/plan/</loc>
-    <lastmod>2024-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/tags/movie/</loc>
     <lastmod>2024-07-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -447,6 +440,13 @@
   
   <url>
     <loc>http://yoursite.com/tags/mathematica/</loc>
+    <lastmod>2024-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/plan/</loc>
     <lastmod>2024-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -474,14 +474,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/airfact/</loc>
+    <loc>http://yoursite.com/tags/formula/</loc>
     <lastmod>2024-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/formula/</loc>
+    <loc>http://yoursite.com/tags/airfact/</loc>
     <lastmod>2024-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -511,14 +511,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/touch-fish/</loc>
+    <loc>http://yoursite.com/categories/camera/</loc>
     <lastmod>2024-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/camera/</loc>
+    <loc>http://yoursite.com/categories/touch-fish/</loc>
     <lastmod>2024-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
