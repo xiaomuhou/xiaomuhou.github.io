@@ -386,7 +386,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  657
+                  651
                 </span>
               
 
@@ -411,9 +411,7 @@
       
 
       
-        <meta name="referrer" content="no-referrer">
-
-<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
+        <h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
 <p>以及补充后续图像处理相关项目内容</p>
 <a id="more"></a>
 
@@ -423,10 +421,10 @@
 <p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
 <p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
 <p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl -a 2&gt;&#x2F;dev&#x2F;null | grep &#39;\.rp_filter&#39;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl -a 2&gt;/dev/null | grep '\.rp_filter'</span><br></pre></td></tr></tbody></table></figure>
 
 <p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter&#x3D;0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter&#x3D;0</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter=0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter=0</span><br></pre></td></tr></tbody></table></figure>
 
 <p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
 <p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
