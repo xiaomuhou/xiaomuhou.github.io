@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Q</title>
-    <url>/2024/02/26/Q/Q/</url>
-    <content><![CDATA[# 琥珀川与荻野千寻
-
-<p>不乱于心，不困于情，不畏将来，不念过往。</p>
-<a id="more"></a>
-
-<p>看完之后脑子里立刻跳出来这句话。</p>
-<p>又看了一遍台配版的千与千寻，童年的记忆来源于此版，有些东西确实只是忘记，而不会消失，偶然间看到一些痕迹，就会瞬间回忆，不过别回头就好，不念过往。</p>
-<p>总是希望所有的一切事情按照自己的计划进行，面对未知的事情常常心怀恐惧而不愿意前进，权衡利弊之后，重要的事情可以克服，在一些小事上却常常让步，谓之不在意，其实不然，内心是在畏惧狭义上的未来，千寻初入汤屋有点这个感觉，但是随着故事的发展，千寻是做到不畏将来了，不论是给河神洗澡、给白龙和无脸怪吃河神的丸子，或者是爬梯子进入汤婆婆的房子，这些没有人给她指引，都是自己基于想法做出的选择，只要自己认为是对的，如果暂时判断不了，只要无愧于心，即使未来不可预测，脚踏实地的去做就很好，想必未来也不会后悔，不畏将来。</p>
-<p>人生的环境总在不断变化，主动接受变化就是不畏将来，主动接受就不会恐惧，千寻开始的恐惧来源于被动，被动常常引起焦虑，负面情绪随之增长，以前很喜欢袁朗说的一句话：“不太焦虑，耐得住寂寞，有很多人天天都在焦虑，怕没得到，怕寂寞，我喜欢不焦虑的人”，千寻后来是不焦虑的，慢慢的去做事本身也是一种快乐的过程。</p>
-<p>“容是别人，欲是自己”，去做一切自己想做的事情，少去思考虚无的无数可能性，不可预料的东西常常是惊喜，也是缘分。</p>
-]]></content>
-      <categories>
-        <category>feeling</category>
-      </categories>
-      <tags>
-        <tag>movie</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>DOC_exercise</title>
     <url>/2021/08/29/DOC-exercise/DOC-exercise/</url>
     <content><![CDATA[<h1 id="随笔加一些更新计划"><a href="#随笔加一些更新计划" class="headerlink" title="随笔加一些更新计划"></a>随笔加一些更新计划</h1><p>人生不长，总归还是想做一些有意义的事情—–这是一切的出发点</p>
@@ -44,136 +23,24 @@
       </tags>
   </entry>
   <entry>
-    <title>Quaternion</title>
-    <url>/2021/11/24/Quaternion/Quaternion/</url>
-    <content><![CDATA[<h1 id="万向锁问题"><a href="#万向锁问题" class="headerlink" title="万向锁问题"></a>万向锁问题</h1><h2 id="造成影响："><a href="#造成影响：" class="headerlink" title="造成影响："></a>造成影响：</h2><p>出现万向锁后会丢失自由度</p>
+    <title>Q</title>
+    <url>/2024/02/26/Q/Q/</url>
+    <content><![CDATA[# 琥珀川与荻野千寻
+
+<p>不乱于心，不困于情，不畏将来，不念过往。</p>
 <a id="more"></a>
 
-<h2 id="从结构角度分析："><a href="#从结构角度分析：" class="headerlink" title="从结构角度分析："></a>从结构角度分析：</h2><p>主要原因是由于各旋转轴之间存在运动关系，即动态欧拉角，角度变化后，坐标系随之发生变化，比如万向锁结构，三个坐标轴分别可以用环结构表示，外环、中环、内环，当内环转动，即等效沿某一轴转动，内环与中、外环都存在运动关系，坐标系同时变化，就不会发生重叠现象，；当中环运动时，内环不会运动，只有外环会进行运动，那么内环所代表的坐标系可能会与外环所代表的坐标系重合，当进行动态旋转时，沿着外环与内环代表的坐标系运动，只会产生一个方向的自由度，由此发生了万向锁现象，即丢失一个自由度。</p>
-<h2 id="后续一些想法"><a href="#后续一些想法" class="headerlink" title="后续一些想法"></a>后续一些想法</h2><p>看b站评论说为什么不选取惯性坐标系作为参考运动，这样就不会出现万向锁现象了？</p>
-<p>其实这是一个概念的问题，首先需要理解欧拉角的意义，欧拉角是用来描述姿态的三个角度，包含静态、动态两种，静态欧拉角即沿着惯性坐标系进行运动，而动态欧拉角则会出现万向锁现象，动态有12种旋转方式，XYZ、XZY、XYX、XZX、YXZ、YZX、YXY、YZY、ZXY、ZYX、ZXZ、ZYZ,含有中间轴Y都存在万向锁问题。</p>
-<p>因此该问题的本质是动态欧拉角的意义是什么？</p>
-<p>基于动态坐标的欧拉角旋转，其惯性张量不随着时间改变而改变，将其进行对角化处理，即可以得到一个一组主轴和一个只含三个分量的主动惯量，动力学计算较为容易，这一部分内容可以机器人动力学模型计算案例中深入理解。</p>
-<h2 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h2><p>为了描述复杂运动以及规避一些特殊点，可以用四元数工具进行描述分析，最近正在整理旋量与四元数的并联应用分析内容，以后会写一个小总结。</p>
+<p>看完之后脑子里立刻跳出来这句话。</p>
+<p>又看了一遍台配版的千与千寻，童年的记忆来源于此版，有些东西确实只是忘记，而不会消失，偶然间看到一些痕迹，就会瞬间回忆，不过别回头就好，不念过往。</p>
+<p>总是希望所有的一切事情按照自己的计划进行，面对未知的事情常常心怀恐惧而不愿意前进，权衡利弊之后，重要的事情可以克服，在一些小事上却常常让步，谓之不在意，其实不然，内心是在畏惧狭义上的未来，千寻初入汤屋有点这个感觉，但是随着故事的发展，千寻是做到不畏将来了，不论是给河神洗澡、给白龙和无脸怪吃河神的丸子，或者是爬梯子进入汤婆婆的房子，这些没有人给她指引，都是自己基于想法做出的选择，只要自己认为是对的，如果暂时判断不了，只要无愧于心，即使未来不可预测，脚踏实地的去做就很好，想必未来也不会后悔，不畏将来。</p>
+<p>人生的环境总在不断变化，主动接受变化就是不畏将来，主动接受就不会恐惧，千寻开始的恐惧来源于被动，被动常常引起焦虑，负面情绪随之增长，以前很喜欢袁朗说的一句话：“不太焦虑，耐得住寂寞，有很多人天天都在焦虑，怕没得到，怕寂寞，我喜欢不焦虑的人”，千寻后来是不焦虑的，慢慢的去做事本身也是一种快乐的过程。</p>
+<p>“容是别人，欲是自己”，去做一切自己想做的事情，少去思考虚无的无数可能性，不可预料的东西常常是惊喜，也是缘分。</p>
 ]]></content>
       <categories>
-        <category>note</category>
+        <category>feeling</category>
       </categories>
       <tags>
-        <tag>mathematica</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ros_sdk</title>
-    <url>/2020/08/07/Ros-sdk/Ros-sdk/</url>
-    <content><![CDATA[<h1 id="SDK-ros版本代码记录"><a href="#SDK-ros版本代码记录" class="headerlink" title="SDK_ros版本代码记录"></a>SDK_ros版本代码记录</h1><a id="more"></a>
-
-<p>arm.yaml 参数记录</p>
-<p>xm540_w270</p>
-<p>  Protocol: 2<br>  Return_Delay_Time: 100   #0~254<br>  Operating_Mode: 3   #Position Control Mode<br>  Profile_Acceleration: 10  #time<br>  Profile_Velocity: 40<br>  Shutdown: 33 #00100001  Input Voltage Error/Overload Error(default) 最大负载</p>
-<p>  Protocol: 2<br>  Return_Delay_Time: 100<br>  Operating_Mode: 3<br>  Profile_Acceleration: 10<br>  Profile_Velocity: 40</p>
-<p>  #Velocity_Trajectory:</p>
-<p>  Shutdown: 33<br>  Min_Position: 625   #0~4095<br>  Max_Position: 3409<br>  Velocity_Limit: 40</p>
-<p>这些值将位置控制模式（联合模式）的最大和最小期望位置限制在1转（0〜4,095）的范围内。<br>因此，目标位置（116）应该配置在位置限制范围内。<br>在扩展位置控制模式和基于电流的位置控制模式中不使用这些值。</p>
-<p>  Protocol: 2</p>
-<p>  Shadow_ID: 5  #？</p>
-<p>  Return_Delay_Time: 100</p>
-<p>  Operating_Mode: 3</p>
-<p>  Profile_Acceleration: 10</p>
-<p>  Profile_Velocity: 40</p>
-<p>  # Velocity_Trajectory:</p>
-<p>  Shutdown: 33</p>
-<p>  Drive_Mode: 1</p>
-<p>  Min_Position: 625</p>
-<p>  Max_Position: 3409</p>
-<p>  Velocity_Limit: 40</p>
-<p>～～～～～～～～～～～～～～手动分割线</p>
-<p>  Protocol: 1</p>
-<p>  Return_Delay_Time: 100</p>
-<p>  Min_Position: 0</p>
-<p>  Max_Position: 1023</p>
-<p>  Max_Torque: 200</p>
-<p>  Torque_Limit: 200</p>
-<p>辅助id不反馈数据包</p>
-<p>初始位置参数表.yaml</p>
-<h2 id="底层代码-launch文件（节点）"><a href="#底层代码-launch文件（节点）" class="headerlink" title="底层代码+launch文件（节点）"></a>底层代码+launch文件（节点）</h2><p>example</p>
-<p>node:joint_publisher  初始化设定臂与爪的初始位置home</p>
-<p>ping：protocol2.0协议，连接dynamixel ，同read_write</p>
-<p>示例文件，初始化、参数设定与连接使能</p>
-<p>src and launch</p>
-<p>dynamixel–电机参数表，model_number ,电机型号参数以及协议选择，原代码 MX与AX</p>
-<p>XM540-W150对应参数：270同</p>
-<p>​        1130: {</p>
-<p>​            “Return_Delay_Time”: ModelFlag(9, 1),</p>
-<p>​            “Drive_Mode”: ModelFlag(10, 1),</p>
-<p>​            “Operating_Mode”: ModelFlag(11, 1),</p>
-<p>​            “Shadow_ID”: ModelFlag(12, 1),</p>
-<p>​            “Velocity_Limit”: ModelFlag(44, 4),</p>
-<p>​            “Max_Position”: ModelFlag(48, 4),</p>
-<p>​            “Min_Position”: ModelFlag(52, 4),</p>
-<p>​            “Shutdown”: ModelFlag(63, 1),</p>
-<p>​            “Torque_Enabled”: ModelFlag(64, 1),</p>
-<p>​            “Goal_Velocity”: ModelFlag(104, 4),</p>
-<p>​            “Profile_Acceleration”: ModelFlag(108, 4),</p>
-<p>​            “Profile_Velocity”: ModelFlag(112, 4),</p>
-<p>​            “Goal_Position”: ModelFlag(116, 4),</p>
-<p>​            “Moving”: ModelFlag(122, 1),</p>
-<p>​            “Present_Current”: ModelFlag(126, 2),</p>
-<p>​            “Present_Velocity”: ModelFlag(128, 4),</p>
-<p>​            “Present_Position”: ModelFlag(132, 4),</p>
-<p>​            “Present_Voltage”: ModelFlag(144, 2),</p>
-<p>​            “Present_Temperature”: ModelFlag(146, 1),</p>
-<p>​            “Velocity_Trajectory”: ModelFlag(136, 4)</p>
-<p>​        },</p>
-<p>定义两种类型电机，我的只用了了一种xm540，控制模式不同，可改</p>
-<p>协议1.0 2.0通用</p>
-<p>将write与read定义到了类class中 </p>
-<p>功能：读取位置、转角并且转化数据，读取负载（使用protocol2.0），读取速度值并进行转化</p>
-<p>current 温度值 位置？？？待修改</p>
-<p>目标位置数值—–移动</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>QT开发</title>
-    <url>/2024/03/03/QT%E5%BC%80%E5%8F%91/QT%E5%BC%80%E5%8F%91/</url>
-    <content><![CDATA[# QT5开发总结
-
-<p>空间XX优化开发界面-2024.2.5完成提交版</p>
-<h2 id="功能需求"><a href="#功能需求" class="headerlink" title="功能需求:"></a>功能需求:</h2><ul>
-<li>基于控制逻辑界面跳转</li>
-<li>调用底层计算代码并优化</li>
-<li>几个虚拟加载进度条</li>
-<li>多阶输入读取及判断方式</li>
-</ul>
-<p>总体：上位机需求功能比较简单，调用代码由于老师提供的底层的优化算法本身存在运行问题，导致一部分协调存在bug，因此整体功能存在问题，基本数据控制功能开发完成，已提交，暂时结束。</p>
-<a id="more"></a>
-
-<p>1.跳转算法：</p>
-<p>基于py的开发逻辑与C++一致，常见的几种，这里我使用的是按键检测，几个功能就写几个子界面，比较笨，但是容易理解，示例代码如下：</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> Ui_ST1_1 <span class="keyword">import</span> Ui_Form1_1</span><br><span class="line">self.pushButton.clicked.connect(self.popWindow) <span class="comment">#调用</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">popWindow</span><span class="params">(self)</span>:</span><span class="comment">#定义</span></span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        self.uiZ= Ui_Form1_1() <span class="comment">#逻辑界面</span></span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></tbody></table></figure>
-
-<p>2.底层代码调用：</p>
-<p>abaqus子程序存在bug，这部分暂缺，后续如需要继续开发，代码修正后补充。</p>
-<p>商业软件调用，写了一种基于subprocess调用外部EXE程序的方式，同样通过定义函数实现，注意一些小问题</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line">self.pushButton_3.clicked.connect(self.open)<span class="comment">#steupUI</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">open</span><span class="params">(self)</span>:</span></span><br><span class="line">        subprocess.Popen(<span class="string">r"E:\Program Files\Inkscape\bin\inkscape.exe"</span>)<span class="comment">#这里注意一下python中的路径转义字符，要不就使用正斜杆，否则如上。</span></span><br><span class="line"><span class="comment">#补充一个启动文件</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.openFile)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">openFile</span><span class="params">(self)</span>:</span></span><br><span class="line">        directory1 = QFileDialog.getExistingDirectory(<span class="literal">None</span>, <span class="string">"启动程序"</span>,<span class="string">"./"</span>)</span><br><span class="line">        print(directory1)</span><br></pre></td></tr></tbody></table></figure>
-
-<p>3.假装加载2333以及读取数据</p>
-<p>读取doublespinbox与progressbar协调，延时用法以及其余读取代码句式参照那本书，边查边记。</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">valu = <span class="number">1</span><span class="comment">#定义初值</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.va)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">va</span><span class="params">(self)</span>:</span><span class="comment">#点击执行只是循环一个功能，记住以后不要一个按钮对应多个按键，功能全部放在一起，执行顺序会有变化</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">100</span>):</span><br><span class="line">            time.sleep(<span class="number">0.09</span>)</span><br><span class="line">            self.progressBar.setProperty(<span class="string">"value"</span>, i)</span><br><span class="line">        valu=self.doubleSpinBox_4.value()<span class="comment">#读取数据句式</span></span><br><span class="line">        print(valu)</span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        <span class="keyword">if</span> valu==<span class="number">1</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_3()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_31()</span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.progressBar.setProperty(<span class="string">"value"</span>, <span class="number">100</span>)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></tbody></table></figure>
-
-<p>4.图片读取流程，再次记录一下：</p>
-<p>QTcreator中构建资源库，在转成代码后进行转换运行，图片加载均通过UI端完成。</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">pyrcc5 apprcc.qrc -o apprcc_re.py<span class="comment">#转换</span></span><br><span class="line">pyinstaller -F -W XX.py<span class="comment">#启动文件，其余控项可以看书</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="后续总结："><a href="#后续总结：" class="headerlink" title="后续总结："></a>后续总结：</h2><p>希望早点把我的”雇佣兵”工资结了QAQ。</p>
-<p>那本书多看看，后续完成底层代码的协调，以及一个上位机的编写，李工那边的火星车上位机，有空的话帮他了结一下。</p>
-<p>学学特效，多看看语法书，慢慢牢固基础~</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>note</tag>
+        <tag>movie</tag>
       </tags>
   </entry>
   <entry>
@@ -257,6 +124,203 @@
       </tags>
   </entry>
   <entry>
+    <title>Ros_sdk</title>
+    <url>/2020/08/07/Ros-sdk/Ros-sdk/</url>
+    <content><![CDATA[<h1 id="SDK-ros版本代码记录"><a href="#SDK-ros版本代码记录" class="headerlink" title="SDK_ros版本代码记录"></a>SDK_ros版本代码记录</h1><a id="more"></a>
+
+<p>arm.yaml 参数记录</p>
+<p>xm540_w270</p>
+<p>  Protocol: 2<br>  Return_Delay_Time: 100   #0~254<br>  Operating_Mode: 3   #Position Control Mode<br>  Profile_Acceleration: 10  #time<br>  Profile_Velocity: 40<br>  Shutdown: 33 #00100001  Input Voltage Error/Overload Error(default) 最大负载</p>
+<p>  Protocol: 2<br>  Return_Delay_Time: 100<br>  Operating_Mode: 3<br>  Profile_Acceleration: 10<br>  Profile_Velocity: 40</p>
+<p>  #Velocity_Trajectory:</p>
+<p>  Shutdown: 33<br>  Min_Position: 625   #0~4095<br>  Max_Position: 3409<br>  Velocity_Limit: 40</p>
+<p>这些值将位置控制模式（联合模式）的最大和最小期望位置限制在1转（0〜4,095）的范围内。<br>因此，目标位置（116）应该配置在位置限制范围内。<br>在扩展位置控制模式和基于电流的位置控制模式中不使用这些值。</p>
+<p>  Protocol: 2</p>
+<p>  Shadow_ID: 5  #？</p>
+<p>  Return_Delay_Time: 100</p>
+<p>  Operating_Mode: 3</p>
+<p>  Profile_Acceleration: 10</p>
+<p>  Profile_Velocity: 40</p>
+<p>  # Velocity_Trajectory:</p>
+<p>  Shutdown: 33</p>
+<p>  Drive_Mode: 1</p>
+<p>  Min_Position: 625</p>
+<p>  Max_Position: 3409</p>
+<p>  Velocity_Limit: 40</p>
+<p>～～～～～～～～～～～～～～手动分割线</p>
+<p>  Protocol: 1</p>
+<p>  Return_Delay_Time: 100</p>
+<p>  Min_Position: 0</p>
+<p>  Max_Position: 1023</p>
+<p>  Max_Torque: 200</p>
+<p>  Torque_Limit: 200</p>
+<p>辅助id不反馈数据包</p>
+<p>初始位置参数表.yaml</p>
+<h2 id="底层代码-launch文件（节点）"><a href="#底层代码-launch文件（节点）" class="headerlink" title="底层代码+launch文件（节点）"></a>底层代码+launch文件（节点）</h2><p>example</p>
+<p>node:joint_publisher  初始化设定臂与爪的初始位置home</p>
+<p>ping：protocol2.0协议，连接dynamixel ，同read_write</p>
+<p>示例文件，初始化、参数设定与连接使能</p>
+<p>src and launch</p>
+<p>dynamixel–电机参数表，model_number ,电机型号参数以及协议选择，原代码 MX与AX</p>
+<p>XM540-W150对应参数：270同</p>
+<p>​        1130: {</p>
+<p>​            “Return_Delay_Time”: ModelFlag(9, 1),</p>
+<p>​            “Drive_Mode”: ModelFlag(10, 1),</p>
+<p>​            “Operating_Mode”: ModelFlag(11, 1),</p>
+<p>​            “Shadow_ID”: ModelFlag(12, 1),</p>
+<p>​            “Velocity_Limit”: ModelFlag(44, 4),</p>
+<p>​            “Max_Position”: ModelFlag(48, 4),</p>
+<p>​            “Min_Position”: ModelFlag(52, 4),</p>
+<p>​            “Shutdown”: ModelFlag(63, 1),</p>
+<p>​            “Torque_Enabled”: ModelFlag(64, 1),</p>
+<p>​            “Goal_Velocity”: ModelFlag(104, 4),</p>
+<p>​            “Profile_Acceleration”: ModelFlag(108, 4),</p>
+<p>​            “Profile_Velocity”: ModelFlag(112, 4),</p>
+<p>​            “Goal_Position”: ModelFlag(116, 4),</p>
+<p>​            “Moving”: ModelFlag(122, 1),</p>
+<p>​            “Present_Current”: ModelFlag(126, 2),</p>
+<p>​            “Present_Velocity”: ModelFlag(128, 4),</p>
+<p>​            “Present_Position”: ModelFlag(132, 4),</p>
+<p>​            “Present_Voltage”: ModelFlag(144, 2),</p>
+<p>​            “Present_Temperature”: ModelFlag(146, 1),</p>
+<p>​            “Velocity_Trajectory”: ModelFlag(136, 4)</p>
+<p>​        },</p>
+<p>定义两种类型电机，我的只用了了一种xm540，控制模式不同，可改</p>
+<p>协议1.0 2.0通用</p>
+<p>将write与read定义到了类class中 </p>
+<p>功能：读取位置、转角并且转化数据，读取负载（使用protocol2.0），读取速度值并进行转化</p>
+<p>current 温度值 位置？？？待修改</p>
+<p>目标位置数值—–移动</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Quaternion</title>
+    <url>/2021/11/24/Quaternion/Quaternion/</url>
+    <content><![CDATA[<h1 id="万向锁问题"><a href="#万向锁问题" class="headerlink" title="万向锁问题"></a>万向锁问题</h1><h2 id="造成影响："><a href="#造成影响：" class="headerlink" title="造成影响："></a>造成影响：</h2><p>出现万向锁后会丢失自由度</p>
+<a id="more"></a>
+
+<h2 id="从结构角度分析："><a href="#从结构角度分析：" class="headerlink" title="从结构角度分析："></a>从结构角度分析：</h2><p>主要原因是由于各旋转轴之间存在运动关系，即动态欧拉角，角度变化后，坐标系随之发生变化，比如万向锁结构，三个坐标轴分别可以用环结构表示，外环、中环、内环，当内环转动，即等效沿某一轴转动，内环与中、外环都存在运动关系，坐标系同时变化，就不会发生重叠现象，；当中环运动时，内环不会运动，只有外环会进行运动，那么内环所代表的坐标系可能会与外环所代表的坐标系重合，当进行动态旋转时，沿着外环与内环代表的坐标系运动，只会产生一个方向的自由度，由此发生了万向锁现象，即丢失一个自由度。</p>
+<h2 id="后续一些想法"><a href="#后续一些想法" class="headerlink" title="后续一些想法"></a>后续一些想法</h2><p>看b站评论说为什么不选取惯性坐标系作为参考运动，这样就不会出现万向锁现象了？</p>
+<p>其实这是一个概念的问题，首先需要理解欧拉角的意义，欧拉角是用来描述姿态的三个角度，包含静态、动态两种，静态欧拉角即沿着惯性坐标系进行运动，而动态欧拉角则会出现万向锁现象，动态有12种旋转方式，XYZ、XZY、XYX、XZX、YXZ、YZX、YXY、YZY、ZXY、ZYX、ZXZ、ZYZ,含有中间轴Y都存在万向锁问题。</p>
+<p>因此该问题的本质是动态欧拉角的意义是什么？</p>
+<p>基于动态坐标的欧拉角旋转，其惯性张量不随着时间改变而改变，将其进行对角化处理，即可以得到一个一组主轴和一个只含三个分量的主动惯量，动力学计算较为容易，这一部分内容可以机器人动力学模型计算案例中深入理解。</p>
+<h2 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h2><p>为了描述复杂运动以及规避一些特殊点，可以用四元数工具进行描述分析，最近正在整理旋量与四元数的并联应用分析内容，以后会写一个小总结。</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>mathematica</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>configure_bag</title>
+    <url>/2020/11/30/configure-bag/configure-bag/</url>
+    <content><![CDATA[<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
+<p>以及补充后续图像处理相关项目内容</p>
+<a id="more"></a>
+
+<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
+<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
+<p>（原因后续深入了解了之后继续补充）</p>
+<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
+<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
+<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;/dev/null | grep '\.rp_filter'</span><br></pre></td></tr></tbody></table></figure>
+
+<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter=0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter=0</span><br></pre></td></tr></tbody></table></figure>
+
+<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
+<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
+<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
+<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
+<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
+]]></content>
+      <categories>
+        <category>camera</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>daliy_life</title>
+    <url>/2020/08/17/daliy-life/daliy-life/</url>
+    <content><![CDATA[<h1 id="处事之则，日常所想"><a href="#处事之则，日常所想" class="headerlink" title="处事之则，日常所想"></a>处事之则，日常所想</h1><p>搭模型的时候，听了听电视剧琅琊榜的电台，听到景睿的台词，有点感触，为人处世就应该这样，清清爽爽，潇洒一生。</p>
+<p>不为蝇营狗苟之事，不对他人做过分之求，一切唯心而已。</p>
+<h4 id="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"><a href="#“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。" class="headerlink" title="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"></a>“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。</h4><h4 id="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"><a href="#我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。" class="headerlink" title="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"></a>我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。</h4><h4 id="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"><a href="#若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也" class="headerlink" title="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"></a>若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也</h4><h4 id="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"><a href="#没有责任要以我为先，以我为重。无论我如何希望也不能强求。" class="headerlink" title="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"></a>没有责任要以我为先，以我为重。无论我如何希望也不能强求。</h4><h4 id="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"><a href="#我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也" class="headerlink" title="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"></a>我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也</h4><h4 id="没有什么可后悔的。”"><a href="#没有什么可后悔的。”" class="headerlink" title="没有什么可后悔的。”"></a>没有什么可后悔的。”</h4>]]></content>
+      <categories>
+        <category>touch_fish</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>delta_matlab</title>
+    <url>/2020/08/13/delta-matlab/delta-matlab/</url>
+    <content><![CDATA[<h1 id="Delta正逆解（matlab）"><a href="#Delta正逆解（matlab）" class="headerlink" title="Delta正逆解（matlab）"></a>Delta正逆解（matlab）</h1><p>课题里用到一部分关于delta底座的结构，所以进行了相应的理论推导及运动空间求解，工具是万能的matlab，这里记录一下。</p>
+<p>记录内容：目前精度、推导问题、相关文献…</p>
+<a id="more"></a>
+
+<p>初步代码正逆解精度：</p>
+<p>电机转角误差在0.1度左右，坐标误差在毫米个位数级别，感觉没有特别精确，师兄那套复杂并联都小数点后三位级别了，但是我目前想不到对算法进行优化的方式，不过先搁置吧，先去做绳驱那部分的机构，最后再回来优化。</p>
+<p>推导来源：</p>
+<p>正解理论依据我看的是工大03年赵杰老师的一篇期刊，应用平移几何进行简化，用向量实现对于动平台中心点运动状态的描述</p>
+<p>（这里有个小问题，看期刊的时候，几何向量中求解垂直向量时，期刊里的公式是错的（也有可能03年就是错误公式？？？），哈哈哈，这里我换了一种平移方式，构成多面体进行解析）</p>
+<p>逆解理论来源是16年黄师兄的硕士毕业论文，借鉴了一下他的单几何方式，组成方程组进行求解，这个方式得出的结果精度也比较高。</p>
+<p>误差主要来源于正解，现在不知为什么，以后待解决。</p>
+<p>以下是代码主体，参数不放了</p>
+<p>正解：</p>
+<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[Z]</span> = <span class="title">FK3</span><span class="params">(a1,a2,a3)</span></span></span><br><span class="line">R</span><br><span class="line">r</span><br><span class="line">Lac</span><br><span class="line">Lbc</span><br><span class="line">theta1 = a1*<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">theta2 = a2*<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">theta3 = a3*<span class="built_in">pi</span>/<span class="number">180</span>;*</span><br><span class="line"></span><br><span class="line">beta1=(<span class="number">1</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta2=(<span class="number">2</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta3=(<span class="number">3</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>; </span><br><span class="line"></span><br><span class="line">OA1=R*[<span class="built_in">cos</span>(beta1);<span class="built_in">sin</span>(beta1);<span class="number">0</span>];</span><br><span class="line">OA2=R*[<span class="built_in">cos</span>(beta2);<span class="built_in">sin</span>(beta2);<span class="number">0</span>];</span><br><span class="line">OA3=R*[<span class="built_in">cos</span>(beta3);<span class="built_in">sin</span>(beta3);<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">OE1=R*[(R-r+Lac*<span class="built_in">cos</span>(theta1))*<span class="built_in">cos</span>(beta1);(R-r+Lac*<span class="built_in">cos</span>(theta1))*<span class="built_in">sin</span>(beta1);-Lac*<span class="built_in">sin</span>(theta1)];</span><br><span class="line">OE2=R*[(R-r+Lac*<span class="built_in">cos</span>(theta2))*<span class="built_in">cos</span>(beta2);(R-r+Lac*<span class="built_in">cos</span>(theta2))*<span class="built_in">sin</span>(beta2);-Lac*<span class="built_in">sin</span>(theta2)];</span><br><span class="line">OE3=R*[(R-r+Lac*<span class="built_in">cos</span>(theta3))*<span class="built_in">cos</span>(beta3);(R-r+Lac*<span class="built_in">cos</span>(theta3))*<span class="built_in">sin</span>(beta3);-Lac*<span class="built_in">sin</span>(theta3)];</span><br><span class="line">OG=<span class="number">0.5</span>*(OE1+OE2);</span><br><span class="line">E1E2=OE2-OE1;</span><br><span class="line">E2E3=OE3-OE2;</span><br><span class="line">E3E1=OE1-OE3;</span><br><span class="line">a=norm(E1E2); </span><br><span class="line">b=norm(E2E3);</span><br><span class="line">c=norm(E3E1);</span><br><span class="line"></span><br><span class="line">p=(a+b+c)/<span class="number">2</span>;</span><br><span class="line">s=<span class="built_in">sqrt</span>(p*(p-a)*(p-b)*(p-c));</span><br><span class="line"><span class="comment">%E1E2E3 </span></span><br><span class="line">d=(a*b*c)/(<span class="number">4</span>*s);</span><br><span class="line">f=(d^<span class="number">2</span><span class="number">-0.25</span>*a^<span class="number">2</span>);</span><br><span class="line">if f&gt;=0 #这里进行筛选，开始出现复数结果还很奇怪233，这个可以解决</span><br><span class="line">    f1=<span class="built_in">sqrt</span>(f);</span><br><span class="line">    n_GF1=<span class="built_in">cross</span>(<span class="built_in">cross</span>(E2E3,E3E1),E1E2);</span><br><span class="line">    g=norm(n_GF1);</span><br><span class="line">    n_GF = n_GF1/g;</span><br><span class="line">    GF= n_GF*f1;n_FP1=<span class="built_in">cross</span>(E1E2,E2E3);</span><br><span class="line">h=norm(n_FP1);</span><br><span class="line">n_FP=n_FP1/h;</span><br><span class="line"><span class="comment">%FP  |FP|</span></span><br><span class="line"><span class="built_in">i</span>=<span class="built_in">sqrt</span>(Lbc^<span class="number">2</span>-d^<span class="number">2</span>);</span><br><span class="line">FP = n_FP*<span class="built_in">i</span>;</span><br><span class="line">OP=<span class="number">0.5</span>*(OE1+OE2)+GF+FP;</span><br><span class="line">S=OP;</span><br><span class="line"></span><br><span class="line"> e1=[<span class="number">1</span>;<span class="number">0</span>;<span class="number">0</span>];</span><br><span class="line"> e2=[<span class="number">0</span>;<span class="number">1</span>;<span class="number">0</span>];</span><br><span class="line"> e3=[<span class="number">0</span>;<span class="number">0</span>;<span class="number">1</span>];</span><br><span class="line"> x=S'*e1;</span><br><span class="line"> y=S'*e2;</span><br><span class="line"> z=S'*e3;</span><br><span class="line">Ponit=[x,y,z]</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">disp</span>(<span class="string">'空间外'</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></tbody></table></figure>
+<p>逆解代码：</p>
+<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[thetas]</span> = <span class="title">IK3</span><span class="params">(x,y,z)</span></span></span><br><span class="line">R   </span><br><span class="line">r</span><br><span class="line">Lac  </span><br><span class="line">Lbc </span><br><span class="line">p=[x;y;z];</span><br><span class="line">beta1=(<span class="number">1</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta2=(<span class="number">2</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta3=(<span class="number">3</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>; </span><br><span class="line"><span class="comment">%OP=OA+AC+CB+BP</span></span><br><span class="line"><span class="comment">%OP-OA+PB-Lac*n_AC=Lbc_n_CB</span></span><br><span class="line"><span class="comment">% N_AC1=[cos(beta1)cos(theta1)];</span></span><br><span class="line">r1=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta1)*(x+(r-R)*<span class="built_in">cos</span>(beta1))+<span class="built_in">sin</span>(beta1)*(y+(r-R)*<span class="built_in">sin</span>(beta1)));</span><br><span class="line">r2=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta2)*(x+(r-R)*<span class="built_in">cos</span>(beta2))+<span class="built_in">sin</span>(beta2)*(y+(r-R)*<span class="built_in">sin</span>(beta2)));</span><br><span class="line">r3=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta3)*(x+(r-R)*<span class="built_in">cos</span>(beta3))+<span class="built_in">sin</span>(beta3)*(y+(r-R)*<span class="built_in">sin</span>(beta3)));</span><br><span class="line">s1=<span class="number">2</span>*Lac*z;</span><br><span class="line">s2=<span class="number">2</span>*Lac*z;</span><br><span class="line">s3=<span class="number">2</span>*Lac*z;</span><br><span class="line">t1=(x+(r-R)*<span class="built_in">cos</span>(beta1))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta1))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line">t2=(x+(r-R)*<span class="built_in">cos</span>(beta2))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta2))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line">t3=(x+(r-R)*<span class="built_in">cos</span>(beta3))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta3))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line"><span class="comment">%rcostheta+ssintheta+t=0;</span></span><br><span class="line"><span class="keyword">if</span> t1-r1==<span class="number">0</span></span><br><span class="line">    theta1=<span class="number">2</span>*<span class="built_in">atan</span>((-r1-t1)/(<span class="number">2</span>*s1));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta1=<span class="number">2</span>*<span class="built_in">atan</span>((-s1-<span class="built_in">sqrt</span>(r1^<span class="number">2</span>+s1^<span class="number">2</span>-t1^<span class="number">2</span>))/(t1-r1));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">if</span> t2-r2==<span class="number">0</span></span><br><span class="line">    theta2=<span class="number">2</span>*<span class="built_in">atan</span>((-r2-t2)/(<span class="number">2</span>*s2));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta2=<span class="number">2</span>*<span class="built_in">atan</span>((-s2-<span class="built_in">sqrt</span>(r2^<span class="number">2</span>+s2^<span class="number">2</span>-t2^<span class="number">2</span>))/(t2-r2));</span><br><span class="line"><span class="keyword">end</span>    </span><br><span class="line"><span class="keyword">if</span> t3-r3==<span class="number">0</span></span><br><span class="line">    theta3=<span class="number">2</span>*<span class="built_in">atan</span>((-r3-t3)/(<span class="number">2</span>*s3));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta3=<span class="number">2</span>*<span class="built_in">atan</span>((-s3-<span class="built_in">sqrt</span>(r3^<span class="number">2</span>+s3^<span class="number">2</span>-t3^<span class="number">2</span>))/(t3-r3));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">thetas=[theta1;theta2;theta3]*<span class="number">180</span>/<span class="built_in">pi</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>（待优化）</p>
+<p>关于8组逆解的问题，这套方案已经进行了排除。</p>
+<p>奇异位置分析内容（待补充）。</p>
+<p>接下来写雅各比速度推导，后续还会补充控制方案，伸缩机构可能会写一篇，看设计的情况了。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>QT开发</title>
+    <url>/2024/03/03/QT%E5%BC%80%E5%8F%91/QT%E5%BC%80%E5%8F%91/</url>
+    <content><![CDATA[# QT5开发总结
+
+<p>空间XX优化开发界面-2024.2.5完成提交版</p>
+<h2 id="功能需求"><a href="#功能需求" class="headerlink" title="功能需求:"></a>功能需求:</h2><ul>
+<li>基于控制逻辑界面跳转</li>
+<li>调用底层计算代码并优化</li>
+<li>几个虚拟加载进度条</li>
+<li>多阶输入读取及判断方式</li>
+</ul>
+<p>总体：上位机需求功能比较简单，调用代码由于老师提供的底层的优化算法本身存在运行问题，导致一部分协调存在bug，因此整体功能存在问题，基本数据控制功能开发完成，已提交，暂时结束。</p>
+<a id="more"></a>
+
+<p>1.跳转算法：</p>
+<p>基于py的开发逻辑与C++一致，常见的几种，这里我使用的是按键检测，几个功能就写几个子界面，比较笨，但是容易理解，示例代码如下：</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> Ui_ST1_1 <span class="keyword">import</span> Ui_Form1_1</span><br><span class="line">self.pushButton.clicked.connect(self.popWindow) <span class="comment">#调用</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">popWindow</span><span class="params">(self)</span>:</span><span class="comment">#定义</span></span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        self.uiZ= Ui_Form1_1() <span class="comment">#逻辑界面</span></span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></tbody></table></figure>
+
+<p>2.底层代码调用：</p>
+<p>abaqus子程序存在bug，这部分暂缺，后续如需要继续开发，代码修正后补充。</p>
+<p>商业软件调用，写了一种基于subprocess调用外部EXE程序的方式，同样通过定义函数实现，注意一些小问题</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line">self.pushButton_3.clicked.connect(self.open)<span class="comment">#steupUI</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">open</span><span class="params">(self)</span>:</span></span><br><span class="line">        subprocess.Popen(<span class="string">r"E:\Program Files\Inkscape\bin\inkscape.exe"</span>)<span class="comment">#这里注意一下python中的路径转义字符，要不就使用正斜杆，否则如上。</span></span><br><span class="line"><span class="comment">#补充一个启动文件</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.openFile)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">openFile</span><span class="params">(self)</span>:</span></span><br><span class="line">        directory1 = QFileDialog.getExistingDirectory(<span class="literal">None</span>, <span class="string">"启动程序"</span>,<span class="string">"./"</span>)</span><br><span class="line">        print(directory1)</span><br></pre></td></tr></tbody></table></figure>
+
+<p>3.假装加载2333以及读取数据</p>
+<p>读取doublespinbox与progressbar协调，延时用法以及其余读取代码句式参照那本书，边查边记。</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">valu = <span class="number">1</span><span class="comment">#定义初值</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.va)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">va</span><span class="params">(self)</span>:</span><span class="comment">#点击执行只是循环一个功能，记住以后不要一个按钮对应多个按键，功能全部放在一起，执行顺序会有变化</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">100</span>):</span><br><span class="line">            time.sleep(<span class="number">0.09</span>)</span><br><span class="line">            self.progressBar.setProperty(<span class="string">"value"</span>, i)</span><br><span class="line">        valu=self.doubleSpinBox_4.value()<span class="comment">#读取数据句式</span></span><br><span class="line">        print(valu)</span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        <span class="keyword">if</span> valu==<span class="number">1</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_3()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_31()</span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.progressBar.setProperty(<span class="string">"value"</span>, <span class="number">100</span>)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></tbody></table></figure>
+
+<p>4.图片读取流程，再次记录一下：</p>
+<p>QTcreator中构建资源库，在转成代码后进行转换运行，图片加载均通过UI端完成。</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">pyrcc5 apprcc.qrc -o apprcc_re.py<span class="comment">#转换</span></span><br><span class="line">pyinstaller -F -W XX.py<span class="comment">#启动文件，其余控项可以看书</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="后续总结："><a href="#后续总结：" class="headerlink" title="后续总结："></a>后续总结：</h2><p>希望早点把我的”雇佣兵”工资结了QAQ。</p>
+<p>那本书多看看，后续完成底层代码的协调，以及一个上位机的编写，李工那边的火星车上位机，有空的话帮他了结一下。</p>
+<p>学学特效，多看看语法书，慢慢牢固基础~</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>note</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Silence</title>
     <url>/2024/03/20/Silence/Silence/</url>
     <content><![CDATA[<p>沉默的大多数决定一切，当然也可能一点不重要</p>
@@ -275,6 +339,20 @@
       <tags>
         <tag>emo</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>delta_ros</title>
+    <url>/2020/09/11/delta-ros/delta-ros/</url>
+    <content><![CDATA[<p>记录delta算法</p>
+<p>（1）实现了Delta型机器人的正逆运动学及其速度空间变换，见DeltaRobotKinematics类<br>（2）实现了关节空间和直线轨迹的运动规划，能够设置加减速因子，见DeltaRobotMotionPlanning类<br>（3）实现了Delta机器人的位置控制和速度控制，见DeltaRobotControl类</p>
+<p><a href="https://github.com/zhonghang1187151422/Mini-delta-robot.git" target="_blank" rel="noopener">https://github.com/zhonghang1187151422/Mini-delta-robot.git</a></p>
+<p><a href="https://github.com/manuelilg/eeduro_delta.git" target="_blank" rel="noopener">https://github.com/manuelilg/eeduro_delta.git</a></p>
+<p><a href="https://github.com/RemcoKuijpers/delta_robot_simulation.git" target="_blank" rel="noopener">https://github.com/RemcoKuijpers/delta_robot_simulation.git</a></p>
+<p><a href="https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo" target="_blank" rel="noopener">https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo</a></p>
+<p>关于ros2的delta运动规划</p>
+<p><a href="https://github.com/manuelilg?tab=repositories" target="_blank" rel="noopener">https://github.com/manuelilg?tab=repositories</a></p>
+<p>学习一下</p>
+]]></content>
   </entry>
   <entry>
     <title>c++_qt_note</title>
@@ -737,70 +815,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>daliy_life</title>
-    <url>/2020/08/17/daliy-life/daliy-life/</url>
-    <content><![CDATA[<h1 id="处事之则，日常所想"><a href="#处事之则，日常所想" class="headerlink" title="处事之则，日常所想"></a>处事之则，日常所想</h1><p>搭模型的时候，听了听电视剧琅琊榜的电台，听到景睿的台词，有点感触，为人处世就应该这样，清清爽爽，潇洒一生。</p>
-<p>不为蝇营狗苟之事，不对他人做过分之求，一切唯心而已。</p>
-<h4 id="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"><a href="#“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。" class="headerlink" title="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"></a>“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。</h4><h4 id="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"><a href="#我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。" class="headerlink" title="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"></a>我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。</h4><h4 id="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"><a href="#若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也" class="headerlink" title="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"></a>若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也</h4><h4 id="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"><a href="#没有责任要以我为先，以我为重。无论我如何希望也不能强求。" class="headerlink" title="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"></a>没有责任要以我为先，以我为重。无论我如何希望也不能强求。</h4><h4 id="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"><a href="#我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也" class="headerlink" title="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"></a>我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也</h4><h4 id="没有什么可后悔的。”"><a href="#没有什么可后悔的。”" class="headerlink" title="没有什么可后悔的。”"></a>没有什么可后悔的。”</h4>]]></content>
-      <categories>
-        <category>touch_fish</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>configure_bag</title>
-    <url>/2020/11/30/configure-bag/configure-bag/</url>
-    <content><![CDATA[<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
-<p>以及补充后续图像处理相关项目内容</p>
-<a id="more"></a>
-
-<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
-<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
-<p>（原因后续深入了解了之后继续补充）</p>
-<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
-<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
-<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;/dev/null | grep '\.rp_filter'</span><br></pre></td></tr></tbody></table></figure>
-
-<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter=0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter=0</span><br></pre></td></tr></tbody></table></figure>
-
-<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
-<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
-<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
-<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
-<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
-]]></content>
-      <categories>
-        <category>camera</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>delta_matlab</title>
-    <url>/2020/08/13/delta-matlab/delta-matlab/</url>
-    <content><![CDATA[<h1 id="Delta正逆解（matlab）"><a href="#Delta正逆解（matlab）" class="headerlink" title="Delta正逆解（matlab）"></a>Delta正逆解（matlab）</h1><p>课题里用到一部分关于delta底座的结构，所以进行了相应的理论推导及运动空间求解，工具是万能的matlab，这里记录一下。</p>
-<p>记录内容：目前精度、推导问题、相关文献…</p>
-<a id="more"></a>
-
-<p>初步代码正逆解精度：</p>
-<p>电机转角误差在0.1度左右，坐标误差在毫米个位数级别，感觉没有特别精确，师兄那套复杂并联都小数点后三位级别了，但是我目前想不到对算法进行优化的方式，不过先搁置吧，先去做绳驱那部分的机构，最后再回来优化。</p>
-<p>推导来源：</p>
-<p>正解理论依据我看的是工大03年赵杰老师的一篇期刊，应用平移几何进行简化，用向量实现对于动平台中心点运动状态的描述</p>
-<p>（这里有个小问题，看期刊的时候，几何向量中求解垂直向量时，期刊里的公式是错的（也有可能03年就是错误公式？？？），哈哈哈，这里我换了一种平移方式，构成多面体进行解析）</p>
-<p>逆解理论来源是16年黄师兄的硕士毕业论文，借鉴了一下他的单几何方式，组成方程组进行求解，这个方式得出的结果精度也比较高。</p>
-<p>误差主要来源于正解，现在不知为什么，以后待解决。</p>
-<p>以下是代码主体，参数不放了</p>
-<p>正解：</p>
-<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[Z]</span> = <span class="title">FK3</span><span class="params">(a1,a2,a3)</span></span></span><br><span class="line">R</span><br><span class="line">r</span><br><span class="line">Lac</span><br><span class="line">Lbc</span><br><span class="line">theta1 = a1*<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">theta2 = a2*<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">theta3 = a3*<span class="built_in">pi</span>/<span class="number">180</span>;*</span><br><span class="line"></span><br><span class="line">beta1=(<span class="number">1</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta2=(<span class="number">2</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta3=(<span class="number">3</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>; </span><br><span class="line"></span><br><span class="line">OA1=R*[<span class="built_in">cos</span>(beta1);<span class="built_in">sin</span>(beta1);<span class="number">0</span>];</span><br><span class="line">OA2=R*[<span class="built_in">cos</span>(beta2);<span class="built_in">sin</span>(beta2);<span class="number">0</span>];</span><br><span class="line">OA3=R*[<span class="built_in">cos</span>(beta3);<span class="built_in">sin</span>(beta3);<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">OE1=R*[(R-r+Lac*<span class="built_in">cos</span>(theta1))*<span class="built_in">cos</span>(beta1);(R-r+Lac*<span class="built_in">cos</span>(theta1))*<span class="built_in">sin</span>(beta1);-Lac*<span class="built_in">sin</span>(theta1)];</span><br><span class="line">OE2=R*[(R-r+Lac*<span class="built_in">cos</span>(theta2))*<span class="built_in">cos</span>(beta2);(R-r+Lac*<span class="built_in">cos</span>(theta2))*<span class="built_in">sin</span>(beta2);-Lac*<span class="built_in">sin</span>(theta2)];</span><br><span class="line">OE3=R*[(R-r+Lac*<span class="built_in">cos</span>(theta3))*<span class="built_in">cos</span>(beta3);(R-r+Lac*<span class="built_in">cos</span>(theta3))*<span class="built_in">sin</span>(beta3);-Lac*<span class="built_in">sin</span>(theta3)];</span><br><span class="line">OG=<span class="number">0.5</span>*(OE1+OE2);</span><br><span class="line">E1E2=OE2-OE1;</span><br><span class="line">E2E3=OE3-OE2;</span><br><span class="line">E3E1=OE1-OE3;</span><br><span class="line">a=norm(E1E2); </span><br><span class="line">b=norm(E2E3);</span><br><span class="line">c=norm(E3E1);</span><br><span class="line"></span><br><span class="line">p=(a+b+c)/<span class="number">2</span>;</span><br><span class="line">s=<span class="built_in">sqrt</span>(p*(p-a)*(p-b)*(p-c));</span><br><span class="line"><span class="comment">%E1E2E3 </span></span><br><span class="line">d=(a*b*c)/(<span class="number">4</span>*s);</span><br><span class="line">f=(d^<span class="number">2</span><span class="number">-0.25</span>*a^<span class="number">2</span>);</span><br><span class="line">if f&gt;=0 #这里进行筛选，开始出现复数结果还很奇怪233，这个可以解决</span><br><span class="line">    f1=<span class="built_in">sqrt</span>(f);</span><br><span class="line">    n_GF1=<span class="built_in">cross</span>(<span class="built_in">cross</span>(E2E3,E3E1),E1E2);</span><br><span class="line">    g=norm(n_GF1);</span><br><span class="line">    n_GF = n_GF1/g;</span><br><span class="line">    GF= n_GF*f1;n_FP1=<span class="built_in">cross</span>(E1E2,E2E3);</span><br><span class="line">h=norm(n_FP1);</span><br><span class="line">n_FP=n_FP1/h;</span><br><span class="line"><span class="comment">%FP  |FP|</span></span><br><span class="line"><span class="built_in">i</span>=<span class="built_in">sqrt</span>(Lbc^<span class="number">2</span>-d^<span class="number">2</span>);</span><br><span class="line">FP = n_FP*<span class="built_in">i</span>;</span><br><span class="line">OP=<span class="number">0.5</span>*(OE1+OE2)+GF+FP;</span><br><span class="line">S=OP;</span><br><span class="line"></span><br><span class="line"> e1=[<span class="number">1</span>;<span class="number">0</span>;<span class="number">0</span>];</span><br><span class="line"> e2=[<span class="number">0</span>;<span class="number">1</span>;<span class="number">0</span>];</span><br><span class="line"> e3=[<span class="number">0</span>;<span class="number">0</span>;<span class="number">1</span>];</span><br><span class="line"> x=S'*e1;</span><br><span class="line"> y=S'*e2;</span><br><span class="line"> z=S'*e3;</span><br><span class="line">Ponit=[x,y,z]</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">disp</span>(<span class="string">'空间外'</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></tbody></table></figure>
-<p>逆解代码：</p>
-<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[thetas]</span> = <span class="title">IK3</span><span class="params">(x,y,z)</span></span></span><br><span class="line">R   </span><br><span class="line">r</span><br><span class="line">Lac  </span><br><span class="line">Lbc </span><br><span class="line">p=[x;y;z];</span><br><span class="line">beta1=(<span class="number">1</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta2=(<span class="number">2</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta3=(<span class="number">3</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>; </span><br><span class="line"><span class="comment">%OP=OA+AC+CB+BP</span></span><br><span class="line"><span class="comment">%OP-OA+PB-Lac*n_AC=Lbc_n_CB</span></span><br><span class="line"><span class="comment">% N_AC1=[cos(beta1)cos(theta1)];</span></span><br><span class="line">r1=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta1)*(x+(r-R)*<span class="built_in">cos</span>(beta1))+<span class="built_in">sin</span>(beta1)*(y+(r-R)*<span class="built_in">sin</span>(beta1)));</span><br><span class="line">r2=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta2)*(x+(r-R)*<span class="built_in">cos</span>(beta2))+<span class="built_in">sin</span>(beta2)*(y+(r-R)*<span class="built_in">sin</span>(beta2)));</span><br><span class="line">r3=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta3)*(x+(r-R)*<span class="built_in">cos</span>(beta3))+<span class="built_in">sin</span>(beta3)*(y+(r-R)*<span class="built_in">sin</span>(beta3)));</span><br><span class="line">s1=<span class="number">2</span>*Lac*z;</span><br><span class="line">s2=<span class="number">2</span>*Lac*z;</span><br><span class="line">s3=<span class="number">2</span>*Lac*z;</span><br><span class="line">t1=(x+(r-R)*<span class="built_in">cos</span>(beta1))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta1))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line">t2=(x+(r-R)*<span class="built_in">cos</span>(beta2))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta2))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line">t3=(x+(r-R)*<span class="built_in">cos</span>(beta3))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta3))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line"><span class="comment">%rcostheta+ssintheta+t=0;</span></span><br><span class="line"><span class="keyword">if</span> t1-r1==<span class="number">0</span></span><br><span class="line">    theta1=<span class="number">2</span>*<span class="built_in">atan</span>((-r1-t1)/(<span class="number">2</span>*s1));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta1=<span class="number">2</span>*<span class="built_in">atan</span>((-s1-<span class="built_in">sqrt</span>(r1^<span class="number">2</span>+s1^<span class="number">2</span>-t1^<span class="number">2</span>))/(t1-r1));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">if</span> t2-r2==<span class="number">0</span></span><br><span class="line">    theta2=<span class="number">2</span>*<span class="built_in">atan</span>((-r2-t2)/(<span class="number">2</span>*s2));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta2=<span class="number">2</span>*<span class="built_in">atan</span>((-s2-<span class="built_in">sqrt</span>(r2^<span class="number">2</span>+s2^<span class="number">2</span>-t2^<span class="number">2</span>))/(t2-r2));</span><br><span class="line"><span class="keyword">end</span>    </span><br><span class="line"><span class="keyword">if</span> t3-r3==<span class="number">0</span></span><br><span class="line">    theta3=<span class="number">2</span>*<span class="built_in">atan</span>((-r3-t3)/(<span class="number">2</span>*s3));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta3=<span class="number">2</span>*<span class="built_in">atan</span>((-s3-<span class="built_in">sqrt</span>(r3^<span class="number">2</span>+s3^<span class="number">2</span>-t3^<span class="number">2</span>))/(t3-r3));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">thetas=[theta1;theta2;theta3]*<span class="number">180</span>/<span class="built_in">pi</span>;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>（待优化）</p>
-<p>关于8组逆解的问题，这套方案已经进行了排除。</p>
-<p>奇异位置分析内容（待补充）。</p>
-<p>接下来写雅各比速度推导，后续还会补充控制方案，伸缩机构可能会写一篇，看设计的情况了。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>dynamixelros</title>
     <url>/2020/07/28/dynamixelros/dynamixelros/</url>
     <content><![CDATA[<h1 id="Dynamixel-workbench"><a href="#Dynamixel-workbench" class="headerlink" title="Dynamixel_workbench"></a>Dynamixel_workbench</h1><p>目的：解析一下workbench包以及dynamixel_motor包，复习语法以及ros基础</p>
@@ -826,89 +840,6 @@
 <p>5.tutorials</p>
 <p>dynamixel_motor堆栈的示例配置和启动文件。</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>gcyyy</title>
-    <url>/2021/09/10/gcyyy/gcyyy/</url>
-    <content><![CDATA[<h1 id="并联机构弹性动力学建模与振动主动控制论文"><a href="#并联机构弹性动力学建模与振动主动控制论文" class="headerlink" title="并联机构弹性动力学建模与振动主动控制论文"></a>并联机构弹性动力学建模与振动主动控制论文</h1><p>2021.9.8</p>
-<h4 id="并联机器人高维运动规划研究–刚柔耦合"><a href="#并联机器人高维运动规划研究–刚柔耦合" class="headerlink" title="并联机器人高维运动规划研究–刚柔耦合"></a>并联机器人高维运动规划研究–刚柔耦合</h4><p>非线性力学———–形变+运动规划——–非线性数学模型———–弹性运动规划算法</p>
-<p>无碰撞未超过运动规划极限–自由位形</p>
-<p>（缺少论文整理部分）</p>
-<a id="more"></a>
-
-<p><strong>特殊规划-路径无奇异且路径具备刚度与精度</strong></p>
-<p>弹性路径数学模型–内力与内力矩微分方程传递性，作用于整条路径，外部不具有传递性，只发生于作用点。</p>
-<p>本构模型—激励与响应的关系</p>
-<p>路径形变控制机理</p>
-<p>子任务内容：耦合作用机理、弹性运动模型、运动控制反解模型</p>
-<p><strong>联合运动</strong>：动舵/直接力复合控制的难点在于如何有效、快速地融合气动舵的连续输出与直接力的离散输出。传统的优化融合策略需在每个控制周期内求解最优分配问题，这将消耗大量的机载计算资源。</p>
-<p>问题：非线性弹性动力模型建立不够清晰</p>
-<p>来源：TUOsd_cjm</p>
-<p>动力模型过程清晰，验证存在一定疑问</p>
-<p>3RRR构型</p>
-<p>柔性机器人-造价低、操作速度快、驱动力小、能耗低、良好的机动性能、安全性高</p>
-<p>关键词：并联、刚柔耦合动力学、振动抑制</p>
-<p>杆件关节变形能</p>
-<p>柔性机器人动力学方程–多自由度偏微分方程–有限维常微分方程近似替代</p>
-<p>连续系统离散化处理—假设模态法AMM、有限元方法FEM、集中参数法IPM。</p>
-<p>记录一下小概念</p>
-<p><strong>动力学方程</strong>：研究力和位移或力矩和转角的关系</p>
-<ol>
-<li>获得描述广义坐标随时间变化的闭环方程—–牛顿拉格朗日</li>
-<li>给定广义坐标后，需要给系统多大的广义力，可以实现预期的广义坐标轨迹——-牛顿欧拉</li>
-</ol>
-<p>动力学建模方法：笛卡尔坐标、关节坐标、动力学样条法、波方法，李群李代数。</p>
-<p>柔性机器人振动控制：</p>
-<p>被动控制：</p>
-<ul>
-<li>优化构件截面参数及几何参数</li>
-<li>复合材料替代金属材料</li>
-<li>阻尼处理构件–减振</li>
-</ul>
-<p>主动控制：</p>
-<ul>
-<li>传感器与作动器</li>
-<li>设计多个可控原动件的受控机构</li>
-<li>基于动力模型的控制系统</li>
-</ul>
-<p>压电陶瓷片</p>
-<p>压电陶瓷驱动器相关应用：压电驱动器绑定在弹性结构表面或嵌入压层复合材料中Edward</p>
-<p>柔性机器人研究包含毂-两结构、柔性两杆和四杆机构，对于柔性并联研究较少。</p>
-<p>质量、运动轨迹导致各关节驱动力矩和能耗差别很大</p>
-<h2 id="柔性机器人动力学特性分析内容"><a href="#柔性机器人动力学特性分析内容" class="headerlink" title="柔性机器人动力学特性分析内容"></a>柔性机器人动力学特性分析内容</h2><p>频率特性分析、灵敏度分析、模态分析、动应力分析</p>
-<p>系统弹性振动主要有低阶模态决定，固有频率越低，系统刚度越小，越容易振动</p>
-<p>两步法：KED假设弹性变形位移是小的，忽略弹性变形对于刚体运动的影响，建立系统刚体动力学方程，将运动学变量带入弹性变形运动动力学方程。</p>
-<p>一步法：考虑刚体运动与弹性变形运动耦合，更精确的模型求解方法</p>
-<h2 id="力热固耦合弹性动力学（一致温度）"><a href="#力热固耦合弹性动力学（一致温度）" class="headerlink" title="力热固耦合弹性动力学（一致温度）"></a>力热固耦合弹性动力学（一致温度）</h2><p>基于有限元方法和Hamilton原理</p>
-<p>建立单元弹性动力学模型，假设热载荷导致机构产生的变形量与应力导致的变形线性且各向同性，建立联立应变方程。</p>
-<p>基于ANSYS瞬态动力学仿真，计算了主动关节和被动关节没有热载荷和多种温度下最大等效应力图</p>
-<p>记录了多地温度变化曲线，测量连杆最大等效应力随时间的变化关系</p>
-<p><strong>结论：</strong>温度变化，最大等效应力保持周期性上升；气温不变，最大等效应力保持周期性稳定。</p>
-<p>温度高低不是决定因素，温差大小决定应力变化</p>
-<p>柔性并联机器人的动态性能不仅与温度该改变量大小和材料的温度膨胀系数有关，而且与温度变化曲线也密切相关。</p>
-<p><em>文章通过气象台的温度数据，导入CFD软件中，进行瞬态动力学分析，得到应力变化图，进而分析温度关系</em>，还是没能给出一个直接的解析式呀，复杂机构的耦合动力学模型建模还是一个难解。</p>
-<h2 id="弹性动力学的动力钢化问题"><a href="#弹性动力学的动力钢化问题" class="headerlink" title="弹性动力学的动力钢化问题"></a>弹性动力学的动力钢化问题</h2><p>高速、高加速柔性并联机器人是否存在动力钢化现象。</p>
-<p>单元–系统   </p>
-<p>一阶近似耦合模型FOAC:包含名义运动相关的<em>动力刚度项</em></p>
-<p>传统混合坐标建模方法 ZOAC：无法很好的反应系统的动力学性能，假设轴向与横向变形位移解耦。适用于并联机构</p>
-<p>无论系统运动速度、加速度多大，系统刚度项对系统动力学特性影响微小。</p>
-<p>执行机构动力学模型建立结束，基于模型的振动控制</p>
-<h2 id="主动振动控制研究"><a href="#主动振动控制研究" class="headerlink" title="主动振动控制研究"></a>主动振动控制研究</h2><p>控制目的：抑制并联机器人柔性连杆的残余振动，保证动平台精确地到达给定的位姿。</p>
-<p>PZT压电驱动器作用机理：给驱动器施加电压信号，PZT驱动器产生应变，在驱动器两端，这种应变将在梁单元对应的位置上引起剪切变形</p>
-<p>通过驱动器对梁单元施加外力矩</p>
-<p>控制器优化方向-能量优化，在更低的控制电压下可以取得更好的控制效果。一对PZT控制效果优于一片。</p>
-<p>控制内容后续完善</p>
-<p><strong>结论：</strong>单独控制柔性杆时，可以抑制自身的弹性振动，无法控制其他两柔性杆振动，当三根杆同时振动时，各柔性杆的弹性振动都能得到很好的抑制。</p>
-<p>平台质量和运动轨迹对驱动能耗有直接影响。—–</p>
-<p><em>轻量化设计以及轨迹规划内容，不过这篇文章感觉这部分写不了啥论文</em></p>
-<p>建立并联机器人刚柔耦合非线性动力学方程</p>
-<p><em>构件弹性变形与刚体运动之间互相耦合影响</em></p>
-<p><strong>感觉压电陶瓷驱动器抑振是文章最重要的点。</strong></p>
-<p>文章方向整理：</p>
-]]></content>
-      <categories>
-        <category>project</category>
-      </categories>
   </entry>
   <entry>
     <title>ff14宏</title>
@@ -1067,20 +998,6 @@
       </categories>
   </entry>
   <entry>
-    <title>delta_ros</title>
-    <url>/2020/09/11/delta-ros/delta-ros/</url>
-    <content><![CDATA[<p>记录delta算法</p>
-<p>（1）实现了Delta型机器人的正逆运动学及其速度空间变换，见DeltaRobotKinematics类<br>（2）实现了关节空间和直线轨迹的运动规划，能够设置加减速因子，见DeltaRobotMotionPlanning类<br>（3）实现了Delta机器人的位置控制和速度控制，见DeltaRobotControl类</p>
-<p><a href="https://github.com/zhonghang1187151422/Mini-delta-robot.git" target="_blank" rel="noopener">https://github.com/zhonghang1187151422/Mini-delta-robot.git</a></p>
-<p><a href="https://github.com/manuelilg/eeduro_delta.git" target="_blank" rel="noopener">https://github.com/manuelilg/eeduro_delta.git</a></p>
-<p><a href="https://github.com/RemcoKuijpers/delta_robot_simulation.git" target="_blank" rel="noopener">https://github.com/RemcoKuijpers/delta_robot_simulation.git</a></p>
-<p><a href="https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo" target="_blank" rel="noopener">https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo</a></p>
-<p>关于ros2的delta运动规划</p>
-<p><a href="https://github.com/manuelilg?tab=repositories" target="_blank" rel="noopener">https://github.com/manuelilg?tab=repositories</a></p>
-<p>学习一下</p>
-]]></content>
-  </entry>
-  <entry>
     <title>fluid_model</title>
     <url>/2021/02/03/fluid-model/fluid-model/</url>
     <content><![CDATA[<h1 id="流体相关"><a href="#流体相关" class="headerlink" title="流体相关"></a>流体相关</h1><p>开个坑，后续补充</p>
@@ -1091,6 +1008,89 @@
 ]]></content>
       <categories>
         <category>learning</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>gcyyy</title>
+    <url>/2021/09/10/gcyyy/gcyyy/</url>
+    <content><![CDATA[<h1 id="并联机构弹性动力学建模与振动主动控制论文"><a href="#并联机构弹性动力学建模与振动主动控制论文" class="headerlink" title="并联机构弹性动力学建模与振动主动控制论文"></a>并联机构弹性动力学建模与振动主动控制论文</h1><p>2021.9.8</p>
+<h4 id="并联机器人高维运动规划研究–刚柔耦合"><a href="#并联机器人高维运动规划研究–刚柔耦合" class="headerlink" title="并联机器人高维运动规划研究–刚柔耦合"></a>并联机器人高维运动规划研究–刚柔耦合</h4><p>非线性力学———–形变+运动规划——–非线性数学模型———–弹性运动规划算法</p>
+<p>无碰撞未超过运动规划极限–自由位形</p>
+<p>（缺少论文整理部分）</p>
+<a id="more"></a>
+
+<p><strong>特殊规划-路径无奇异且路径具备刚度与精度</strong></p>
+<p>弹性路径数学模型–内力与内力矩微分方程传递性，作用于整条路径，外部不具有传递性，只发生于作用点。</p>
+<p>本构模型—激励与响应的关系</p>
+<p>路径形变控制机理</p>
+<p>子任务内容：耦合作用机理、弹性运动模型、运动控制反解模型</p>
+<p><strong>联合运动</strong>：动舵/直接力复合控制的难点在于如何有效、快速地融合气动舵的连续输出与直接力的离散输出。传统的优化融合策略需在每个控制周期内求解最优分配问题，这将消耗大量的机载计算资源。</p>
+<p>问题：非线性弹性动力模型建立不够清晰</p>
+<p>来源：TUOsd_cjm</p>
+<p>动力模型过程清晰，验证存在一定疑问</p>
+<p>3RRR构型</p>
+<p>柔性机器人-造价低、操作速度快、驱动力小、能耗低、良好的机动性能、安全性高</p>
+<p>关键词：并联、刚柔耦合动力学、振动抑制</p>
+<p>杆件关节变形能</p>
+<p>柔性机器人动力学方程–多自由度偏微分方程–有限维常微分方程近似替代</p>
+<p>连续系统离散化处理—假设模态法AMM、有限元方法FEM、集中参数法IPM。</p>
+<p>记录一下小概念</p>
+<p><strong>动力学方程</strong>：研究力和位移或力矩和转角的关系</p>
+<ol>
+<li>获得描述广义坐标随时间变化的闭环方程—–牛顿拉格朗日</li>
+<li>给定广义坐标后，需要给系统多大的广义力，可以实现预期的广义坐标轨迹——-牛顿欧拉</li>
+</ol>
+<p>动力学建模方法：笛卡尔坐标、关节坐标、动力学样条法、波方法，李群李代数。</p>
+<p>柔性机器人振动控制：</p>
+<p>被动控制：</p>
+<ul>
+<li>优化构件截面参数及几何参数</li>
+<li>复合材料替代金属材料</li>
+<li>阻尼处理构件–减振</li>
+</ul>
+<p>主动控制：</p>
+<ul>
+<li>传感器与作动器</li>
+<li>设计多个可控原动件的受控机构</li>
+<li>基于动力模型的控制系统</li>
+</ul>
+<p>压电陶瓷片</p>
+<p>压电陶瓷驱动器相关应用：压电驱动器绑定在弹性结构表面或嵌入压层复合材料中Edward</p>
+<p>柔性机器人研究包含毂-两结构、柔性两杆和四杆机构，对于柔性并联研究较少。</p>
+<p>质量、运动轨迹导致各关节驱动力矩和能耗差别很大</p>
+<h2 id="柔性机器人动力学特性分析内容"><a href="#柔性机器人动力学特性分析内容" class="headerlink" title="柔性机器人动力学特性分析内容"></a>柔性机器人动力学特性分析内容</h2><p>频率特性分析、灵敏度分析、模态分析、动应力分析</p>
+<p>系统弹性振动主要有低阶模态决定，固有频率越低，系统刚度越小，越容易振动</p>
+<p>两步法：KED假设弹性变形位移是小的，忽略弹性变形对于刚体运动的影响，建立系统刚体动力学方程，将运动学变量带入弹性变形运动动力学方程。</p>
+<p>一步法：考虑刚体运动与弹性变形运动耦合，更精确的模型求解方法</p>
+<h2 id="力热固耦合弹性动力学（一致温度）"><a href="#力热固耦合弹性动力学（一致温度）" class="headerlink" title="力热固耦合弹性动力学（一致温度）"></a>力热固耦合弹性动力学（一致温度）</h2><p>基于有限元方法和Hamilton原理</p>
+<p>建立单元弹性动力学模型，假设热载荷导致机构产生的变形量与应力导致的变形线性且各向同性，建立联立应变方程。</p>
+<p>基于ANSYS瞬态动力学仿真，计算了主动关节和被动关节没有热载荷和多种温度下最大等效应力图</p>
+<p>记录了多地温度变化曲线，测量连杆最大等效应力随时间的变化关系</p>
+<p><strong>结论：</strong>温度变化，最大等效应力保持周期性上升；气温不变，最大等效应力保持周期性稳定。</p>
+<p>温度高低不是决定因素，温差大小决定应力变化</p>
+<p>柔性并联机器人的动态性能不仅与温度该改变量大小和材料的温度膨胀系数有关，而且与温度变化曲线也密切相关。</p>
+<p><em>文章通过气象台的温度数据，导入CFD软件中，进行瞬态动力学分析，得到应力变化图，进而分析温度关系</em>，还是没能给出一个直接的解析式呀，复杂机构的耦合动力学模型建模还是一个难解。</p>
+<h2 id="弹性动力学的动力钢化问题"><a href="#弹性动力学的动力钢化问题" class="headerlink" title="弹性动力学的动力钢化问题"></a>弹性动力学的动力钢化问题</h2><p>高速、高加速柔性并联机器人是否存在动力钢化现象。</p>
+<p>单元–系统   </p>
+<p>一阶近似耦合模型FOAC:包含名义运动相关的<em>动力刚度项</em></p>
+<p>传统混合坐标建模方法 ZOAC：无法很好的反应系统的动力学性能，假设轴向与横向变形位移解耦。适用于并联机构</p>
+<p>无论系统运动速度、加速度多大，系统刚度项对系统动力学特性影响微小。</p>
+<p>执行机构动力学模型建立结束，基于模型的振动控制</p>
+<h2 id="主动振动控制研究"><a href="#主动振动控制研究" class="headerlink" title="主动振动控制研究"></a>主动振动控制研究</h2><p>控制目的：抑制并联机器人柔性连杆的残余振动，保证动平台精确地到达给定的位姿。</p>
+<p>PZT压电驱动器作用机理：给驱动器施加电压信号，PZT驱动器产生应变，在驱动器两端，这种应变将在梁单元对应的位置上引起剪切变形</p>
+<p>通过驱动器对梁单元施加外力矩</p>
+<p>控制器优化方向-能量优化，在更低的控制电压下可以取得更好的控制效果。一对PZT控制效果优于一片。</p>
+<p>控制内容后续完善</p>
+<p><strong>结论：</strong>单独控制柔性杆时，可以抑制自身的弹性振动，无法控制其他两柔性杆振动，当三根杆同时振动时，各柔性杆的弹性振动都能得到很好的抑制。</p>
+<p>平台质量和运动轨迹对驱动能耗有直接影响。—–</p>
+<p><em>轻量化设计以及轨迹规划内容，不过这篇文章感觉这部分写不了啥论文</em></p>
+<p>建立并联机器人刚柔耦合非线性动力学方程</p>
+<p><em>构件弹性变形与刚体运动之间互相耦合影响</em></p>
+<p><strong>感觉压电陶瓷驱动器抑振是文章最重要的点。</strong></p>
+<p>文章方向整理：</p>
+]]></content>
+      <categories>
+        <category>project</category>
       </categories>
   </entry>
   <entry>
@@ -1228,33 +1228,6 @@
       <tags>
         <tag>control</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>lifespan</title>
-    <url>/2020/11/07/lifespan/lifespan/</url>
-    <content><![CDATA[<h1 id="无常的人生-小记"><a href="#无常的人生-小记" class="headerlink" title="无常的人生-小记"></a>无常的人生-小记</h1><p>今天心情还挺复杂的，不自主的想着好多事情，不想让熟人知道，但是又想倾诉一下，所以在博客里稍微说一说，（未来不管陌生人还是熟人，或者是自己，看到这篇小记，是否会心有所感呢？）</p>
-<a id="more"></a>
-
-<h2 id="1-纪念一场似是而非的“感情”"><a href="#1-纪念一场似是而非的“感情”" class="headerlink" title="1.纪念一场似是而非的“感情”"></a>1.纪念一场似是而非的“感情”</h2><p>友谊和爱情终究是有差别的，这是我所笃定的，但是差别的界定，我好像又是模糊的，前些天我好像做了一些很对不起你的事情，但是我又不得不这么做。</p>
-<p>为什么我下不了决心呢，我后来自己想了想，其实不是我所谓的不懂体贴、太过“直男”，而是我觉得我们太熟悉了，虽然几乎有两年没见过，熟悉带来的于我而言就是陌生，更重要的一点是，你我都不知道这段未来的感情里掺杂了多少另外多余的东西，比如周围的环境、别人的看法，各自的兴趣爱好甚至与一些观念理想，你我都不是好多年前的那个人了。</p>
-<p>说实话，很久之前，我应该是喜欢的，不过那会不敢跟你说，也不知道你怎么想，再后来，经历了很多事情，我的想法也慢慢变了，但是终究你对我而言，和别人是不同的，这可能就是你说的差别对待感觉的来源，但是这个差别来自于很多年前，并且可能并不会更进一步，我害怕我以后会伤害你，所以我在不算开始的现在退出，我也不想去试这个模糊感是不是有未来，我总感觉有些事情应该是顺其自然的…</p>
-<p>希望你未来能找到更合适的，我会衷心的祝福，真的</p>
-<p>我们应该还是朋友吧…有些事不说还好，说了真是尴尬</p>
-<p>确定不了你的想法为什么忽然那么坚定，我也无法确定我的想法，总体来讲，就是这个原因。</p>
-<p>我会努力提高自己，当然希望你也能健健康康的快乐生活，我会帮助你，以一个好朋友的身份，不管你接不接受。没有前一段经历，或许我也不能下定决心做一件事。</p>
-<p>感觉你最近蛮开心的，那我也就放心了，希望我没有对你造成什么伤害…</p>
-<p>你可能不会看到这篇碎碎念的文章吧，毕竟我没和别人讲过这个博客，我居然能写出这么多废话…</p>
-<p>想起来又是好复杂，感觉好烦，爱情真是烦人啊，不如多看两篇文献…</p>
-<h2 id="2人生之路漫漫长"><a href="#2人生之路漫漫长" class="headerlink" title="2人生之路漫漫长"></a>2人生之路漫漫长</h2><p>未来几年的方向应该是确定了，模糊又坚定，我有自己的指标，我会努力去完成</p>
-<p>踏实一点、坚定一点、乐观一点</p>
-<h2 id="3现在"><a href="#3现在" class="headerlink" title="3现在"></a>3现在</h2><p>是不是很奇怪的顺序，确实，不过这本身就是一篇奇怪的文章，和我的现实性格一点也不搭。</p>
-<p>现在我做的应该也是踏踏实实的，把每日目标和小目标努力完成了，最近遇到点小难题，一点一点得去记录并且克服掉</p>
-<p>摸鱼虽然舒服，但是真的浪费时间，拒绝正式时间摸鱼，从我做起</p>
-<p>严格规划时间了呀啊喂！</p>
-<p>周末晚之前做一版，下周严格的把模型推导完，整理知识，克服难题</p>
-<p>人生啊—真是漫长</p>
-<p>应该不会有人看到吧，真是尴尬…</p>
-]]></content>
   </entry>
   <entry>
     <title>latex_note</title>
@@ -1792,6 +1765,81 @@
 ]]></content>
   </entry>
   <entry>
+    <title>lifespan</title>
+    <url>/2020/11/07/lifespan/lifespan/</url>
+    <content><![CDATA[<h1 id="无常的人生-小记"><a href="#无常的人生-小记" class="headerlink" title="无常的人生-小记"></a>无常的人生-小记</h1><p>今天心情还挺复杂的，不自主的想着好多事情，不想让熟人知道，但是又想倾诉一下，所以在博客里稍微说一说，（未来不管陌生人还是熟人，或者是自己，看到这篇小记，是否会心有所感呢？）</p>
+<a id="more"></a>
+
+<h2 id="1-纪念一场似是而非的“感情”"><a href="#1-纪念一场似是而非的“感情”" class="headerlink" title="1.纪念一场似是而非的“感情”"></a>1.纪念一场似是而非的“感情”</h2><p>友谊和爱情终究是有差别的，这是我所笃定的，但是差别的界定，我好像又是模糊的，前些天我好像做了一些很对不起你的事情，但是我又不得不这么做。</p>
+<p>为什么我下不了决心呢，我后来自己想了想，其实不是我所谓的不懂体贴、太过“直男”，而是我觉得我们太熟悉了，虽然几乎有两年没见过，熟悉带来的于我而言就是陌生，更重要的一点是，你我都不知道这段未来的感情里掺杂了多少另外多余的东西，比如周围的环境、别人的看法，各自的兴趣爱好甚至与一些观念理想，你我都不是好多年前的那个人了。</p>
+<p>说实话，很久之前，我应该是喜欢的，不过那会不敢跟你说，也不知道你怎么想，再后来，经历了很多事情，我的想法也慢慢变了，但是终究你对我而言，和别人是不同的，这可能就是你说的差别对待感觉的来源，但是这个差别来自于很多年前，并且可能并不会更进一步，我害怕我以后会伤害你，所以我在不算开始的现在退出，我也不想去试这个模糊感是不是有未来，我总感觉有些事情应该是顺其自然的…</p>
+<p>希望你未来能找到更合适的，我会衷心的祝福，真的</p>
+<p>我们应该还是朋友吧…有些事不说还好，说了真是尴尬</p>
+<p>确定不了你的想法为什么忽然那么坚定，我也无法确定我的想法，总体来讲，就是这个原因。</p>
+<p>我会努力提高自己，当然希望你也能健健康康的快乐生活，我会帮助你，以一个好朋友的身份，不管你接不接受。没有前一段经历，或许我也不能下定决心做一件事。</p>
+<p>感觉你最近蛮开心的，那我也就放心了，希望我没有对你造成什么伤害…</p>
+<p>你可能不会看到这篇碎碎念的文章吧，毕竟我没和别人讲过这个博客，我居然能写出这么多废话…</p>
+<p>想起来又是好复杂，感觉好烦，爱情真是烦人啊，不如多看两篇文献…</p>
+<h2 id="2人生之路漫漫长"><a href="#2人生之路漫漫长" class="headerlink" title="2人生之路漫漫长"></a>2人生之路漫漫长</h2><p>未来几年的方向应该是确定了，模糊又坚定，我有自己的指标，我会努力去完成</p>
+<p>踏实一点、坚定一点、乐观一点</p>
+<h2 id="3现在"><a href="#3现在" class="headerlink" title="3现在"></a>3现在</h2><p>是不是很奇怪的顺序，确实，不过这本身就是一篇奇怪的文章，和我的现实性格一点也不搭。</p>
+<p>现在我做的应该也是踏踏实实的，把每日目标和小目标努力完成了，最近遇到点小难题，一点一点得去记录并且克服掉</p>
+<p>摸鱼虽然舒服，但是真的浪费时间，拒绝正式时间摸鱼，从我做起</p>
+<p>严格规划时间了呀啊喂！</p>
+<p>周末晚之前做一版，下周严格的把模型推导完，整理知识，克服难题</p>
+<p>人生啊—真是漫长</p>
+<p>应该不会有人看到吧，真是尴尬…</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>literature</title>
+    <url>/2020/09/03/literature/literature/</url>
+    <content><![CDATA[<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
+<p>abstract    consult    discussion   method   result</p>
+<p>review</p>
+<a id="more"></a>
+
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
+<p>摘要分层</p>
+<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
+<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
+<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
+<p>2.indicative abstract</p>
+<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
+<p>3.extended abstract</p>
+<p> thesis   dissertation</p>
+<p>4.structured abstract</p>
+<p>5.conference abstract</p>
+<p>6.graphical abstract</p>
+<p>7.executive summary</p>
+<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
+<ol>
+<li>Introduction  </li>
+<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
+<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
+</ol>
+<p>分层</p>
+<p>1.review of the present study</p>
+<p>2.consolidating ofthe results</p>
+<p>3.stating limitations and possible research directions</p>
+<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
+<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
+</ol>
+<p>分层</p>
+<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
+<p>一些特点 linguistic features</p>
+<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
+<p>Method classification</p>
+<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
+<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
+<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
+<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
+<p>…用的比较少，不列了</p>
+<p>缺一部分，改天再补，回寝了～</p>
+]]></content>
+  </entry>
+  <entry>
     <title>linux_cleanfile</title>
     <url>/2020/10/20/linux-cleanfile/linux-cleanfile/</url>
     <content><![CDATA[<h1 id="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"><a href="#由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录" class="headerlink" title="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"></a>由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录</h1><p>昨天晚上测试运动算法包，更新中间发现系统磁盘爆满，终端terminal无法运行，启动文件节点无法启动，于今天下午解决问题，写一篇日志记录一下，顺便谈一下linux的多版本软件安装基理。</p>
@@ -2104,6 +2152,30 @@
       </categories>
   </entry>
   <entry>
+    <title>movie_fish</title>
+    <url>/2020/07/30/movie-fish/movie-fish/</url>
+    <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><a id="more"></a>
+
+<h1 id="V字仇杀队"><a href="#V字仇杀队" class="headerlink" title="V字仇杀队"></a>V字仇杀队</h1><p>时隔多年再次欣赏这部电影，感觉平淡了许多，不再像当初那么愤青了。</p>
+<p>世界上没有完美的事情，过于理性的审视一切，有很多好处，同时也失去了很多东西。</p>
+<p>思想是不可消亡了～</p>
+<h1 id="窃听风暴"><a href="#窃听风暴" class="headerlink" title="窃听风暴"></a>窃听风暴</h1><p>压抑的bgm，紧凑的情节</p>
+<p>断续的信息流，完整的情感线，人类本质的体现</p>
+<p>风云变换的历史，个人永远都是渺小的，滔天海浪的压迫感觉</p>
+<p>百年未有之大变局，如何在历史的洪流中生活，放弃一些无用的主义思维，守好自己所相信的底线。</p>
+<p>没有绝对的对错之分，安安静静的就好～</p>
+<h2 id="黑客帝国三矩阵革命"><a href="#黑客帝国三矩阵革命" class="headerlink" title="黑客帝国三矩阵革命"></a>黑客帝国三矩阵革命</h2><p>画面不错</p>
+<h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
+<p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
+<p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
+<p><img src="/2020/07/30/movie-fish/movie-fish/pictures/R.jpg" alt></p>
+<h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
+<p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
+<p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
+<p>（生气的时候，有一点很重要，问自己一下，有必要么？）</p>
+]]></content>
+  </entry>
+  <entry>
     <title>manipulator_review</title>
     <url>/2020/10/02/manipulator-review/manipulator-review/</url>
     <content><![CDATA[<h1 id="综述笔记-manipulator-review-underwater-system已补充结束"><a href="#综述笔记-manipulator-review-underwater-system已补充结束" class="headerlink" title="综述笔记-manipulator_review(underwater)-(system已补充结束)"></a>综述笔记-manipulator_review(underwater)-(system已补充结束)</h1><p>一篇综述[1]的总体方向笔记，非文献整理。</p>
@@ -2214,129 +2286,6 @@
       </categories>
   </entry>
   <entry>
-    <title>movie_fish</title>
-    <url>/2020/07/30/movie-fish/movie-fish/</url>
-    <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><a id="more"></a>
-
-<h1 id="V字仇杀队"><a href="#V字仇杀队" class="headerlink" title="V字仇杀队"></a>V字仇杀队</h1><p>时隔多年再次欣赏这部电影，感觉平淡了许多，不再像当初那么愤青了。</p>
-<p>世界上没有完美的事情，过于理性的审视一切，有很多好处，同时也失去了很多东西。</p>
-<p>思想是不可消亡了～</p>
-<h1 id="窃听风暴"><a href="#窃听风暴" class="headerlink" title="窃听风暴"></a>窃听风暴</h1><p>压抑的bgm，紧凑的情节</p>
-<p>断续的信息流，完整的情感线，人类本质的体现</p>
-<p>风云变换的历史，个人永远都是渺小的，滔天海浪的压迫感觉</p>
-<p>百年未有之大变局，如何在历史的洪流中生活，放弃一些无用的主义思维，守好自己所相信的底线。</p>
-<p>没有绝对的对错之分，安安静静的就好～</p>
-<h2 id="黑客帝国三矩阵革命"><a href="#黑客帝国三矩阵革命" class="headerlink" title="黑客帝国三矩阵革命"></a>黑客帝国三矩阵革命</h2><p>画面不错</p>
-<h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
-<p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
-<p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
-<p><img src="/2020/07/30/movie-fish/movie-fish/pictures/R.jpg" alt=""></p>
-<h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
-<p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
-<p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
-<p>（生气的时候，有一点很重要，问自己一下，有必要么？）</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>note</title>
-    <url>/2021/09/10/note/note/</url>
-    <content><![CDATA[<h1 id="常用的几个latex图片框架以及公式"><a href="#常用的几个latex图片框架以及公式" class="headerlink" title="常用的几个latex图片框架以及公式"></a>常用的几个latex图片框架以及公式</h1><a id="more"></a>
-
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">常用补充</span><br><span class="line"></span><br><span class="line">公式备注</span><br><span class="line"></span><br><span class="line">\begin{tabularx}{\textwidth}{@{}l@{\quad}r@{———}X@{}} 	 	 	</span><br><span class="line">	式中&amp; $C_{D, i}$&amp;表示阻力系数，数值可根据表xx查询确定 \\ </span><br><span class="line">\end{tabularx}\vspace{3.15bp}  </span><br><span class="line"></span><br><span class="line">图片备注</span><br><span class="line"></span><br><span class="line">\begin{figure}[!h]</span><br><span class="line">	\setlength{\subfigcapskip}{-1bp}</span><br><span class="line">	\centering</span><br><span class="line">	\begin{minipage}{\textwidth}</span><br><span class="line">		\centering</span><br><span class="line">		\subfigure{\label{a}}\addtocounter{subfigure}{-2}</span><br><span class="line">		\subfigure{\subfigure[R=80mm]{\includegraphics[width=0.25\textwidth]{80}}}</span><br><span class="line">		\hspace{1em}</span><br><span class="line">		\subfigure{\label{b}}\addtocounter{subfigure}{-2}</span><br><span class="line">		\subfigure{\subfigure[R=90mm]{\includegraphics[width=0.25\textwidth]{90}}}</span><br><span class="line">		\hspace{1em}</span><br><span class="line">	\end{minipage}</span><br><span class="line">	\vspace{0.2em}</span><br><span class="line">	\caption{不同静平台半径机构条件数分布图}</span><br><span class="line">\end{figure}</span><br><span class="line"></span><br><span class="line">\begin{figure}[htbp]</span><br><span class="line">	\centering</span><br><span class="line">	\begin{minipage}[t]{0.4\textwidth}</span><br><span class="line">		\centering</span><br><span class="line">		\includegraphics[width=\textwidth]{431}</span><br><span class="line">		\caption{静平台坐标系}</span><br><span class="line">	\end{minipage}</span><br><span class="line">	\centering</span><br><span class="line">	\begin{minipage}[t]{0.4\textwidth}</span><br><span class="line">		\centering</span><br><span class="line">		\includegraphics[width=\textwidth]{432}</span><br><span class="line">		\caption{动平台坐标系}</span><br><span class="line">	\end{minipage}</span><br><span class="line">	\centering</span><br><span class="line">	\begin{minipage}[t]{0.8\textwidth}</span><br><span class="line">		\centering</span><br><span class="line">		\includegraphics[width=\textwidth]{45}</span><br><span class="line">		\caption{等效四面体示意图}</span><br><span class="line">	\end{minipage}</span><br><span class="line">\end{figure}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>无用</p>
-<p>结构紧凑，速度响应更快，定位精度更高，刚度更高，负载支持更好，动态性能更好，功耗更低</p>
-<p>可以将辐射引起的力和力矩确定为三个新分量的总和：</p>
-<p>（1）由于周围流体的惯性而增加的质量</p>
-<p>（2）由于产生的表面波带走的能量而引起的辐射诱导的电位阻尼 。</p>
-<p>（3）由于阿基米德（重量和浮力）而恢复。</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>formula</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>newnote</title>
-    <url>/2022/08/02/newnote/newnote/</url>
-    <content><![CDATA[<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>airfact</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>plan_emotion</title>
-    <url>/2021/08/26/plan-emotion/plan-emotion/</url>
-    <content><![CDATA[<h1 id="Ubuntu修复windows无法启动问题"><a href="#Ubuntu修复windows无法启动问题" class="headerlink" title="Ubuntu修复windows无法启动问题"></a>Ubuntu修复windows无法启动问题</h1><a id="more"></a>
-
-<p>配置：ubuntu16.04+windows8.1</p>
-<p>背景：电脑不小心被砸了一下，然后windows系统无法启动，也无法进入bios和安全模式，尝试启动Ubuntu系统，发现可以进入，Linux永远的神！！</p>
-<p>linux端进入后，发现电脑系统盘无法读取，出现挂载错误，可能windows就是因为这个问题无法启动，尝试修复，记录一下最后有效的过程：</p>
-<h5 id="1-查看系统下所有分区的挂载情况是否正常"><a href="#1-查看系统下所有分区的挂载情况是否正常" class="headerlink" title="1.查看系统下所有分区的挂载情况是否正常"></a>1.查看系统下所有分区的挂载情况是否正常</h5><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">sudo fdisk -l</span><br></pre></td></tr></tbody></table></figure>
-
-<p>根据×号判断</p>
-<h5 id="2-修复对应分区，我显示的是-dev-sdb3"><a href="#2-修复对应分区，我显示的是-dev-sdb3" class="headerlink" title="2.修复对应分区，我显示的是/dev/sdb3"></a>2.修复对应分区，我显示的是/dev/sdb3</h5><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">sudo ntfsfix /dev/sdb3</span><br></pre></td></tr></tbody></table></figure>
-
-<p>全部修复后，windows可以正常启动</p>
-<p>以后正常更新啦…</p>
-<p>等会儿再写一个生活计划日志…</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>literature</title>
-    <url>/2020/09/03/literature/literature/</url>
-    <content><![CDATA[<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
-<p>abstract    consult    discussion   method   result</p>
-<p>review</p>
-<a id="more"></a>
-
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
-<p>摘要分层</p>
-<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
-<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
-<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
-<p>2.indicative abstract</p>
-<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
-<p>3.extended abstract</p>
-<p> thesis   dissertation</p>
-<p>4.structured abstract</p>
-<p>5.conference abstract</p>
-<p>6.graphical abstract</p>
-<p>7.executive summary</p>
-<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
-<ol>
-<li>Introduction  </li>
-<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
-<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
-</ol>
-<p>分层</p>
-<p>1.review of the present study</p>
-<p>2.consolidating ofthe results</p>
-<p>3.stating limitations and possible research directions</p>
-<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
-<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
-<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
-</ol>
-<p>分层</p>
-<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
-<p>一些特点 linguistic features</p>
-<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
-<p>Method classification</p>
-<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
-<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
-<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
-<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
-<p>…用的比较少，不列了</p>
-<p>缺一部分，改天再补，回寝了～</p>
-]]></content>
-  </entry>
-  <entry>
     <title>numpy_py</title>
     <url>/2020/10/29/numpy-py/numpy-py/</url>
     <content><![CDATA[<h1 id="矩阵学习记录-数据分析方向"><a href="#矩阵学习记录-数据分析方向" class="headerlink" title="矩阵学习记录-数据分析方向"></a>矩阵学习记录-数据分析方向</h1><p>后续扩展内容</p>
@@ -2442,6 +2391,39 @@
 <pre><code></code></pre>]]></content>
   </entry>
   <entry>
+    <title>note</title>
+    <url>/2021/09/10/note/note/</url>
+    <content><![CDATA[<h1 id="常用的几个latex图片框架以及公式"><a href="#常用的几个latex图片框架以及公式" class="headerlink" title="常用的几个latex图片框架以及公式"></a>常用的几个latex图片框架以及公式</h1><a id="more"></a>
+
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">常用补充</span><br><span class="line"></span><br><span class="line">公式备注</span><br><span class="line"></span><br><span class="line">\begin{tabularx}{\textwidth}{@{}l@{\quad}r@{———}X@{}} 	 	 	</span><br><span class="line">	式中&amp; $C_{D, i}$&amp;表示阻力系数，数值可根据表xx查询确定 \\ </span><br><span class="line">\end{tabularx}\vspace{3.15bp}  </span><br><span class="line"></span><br><span class="line">图片备注</span><br><span class="line"></span><br><span class="line">\begin{figure}[!h]</span><br><span class="line">	\setlength{\subfigcapskip}{-1bp}</span><br><span class="line">	\centering</span><br><span class="line">	\begin{minipage}{\textwidth}</span><br><span class="line">		\centering</span><br><span class="line">		\subfigure{\label{a}}\addtocounter{subfigure}{-2}</span><br><span class="line">		\subfigure{\subfigure[R=80mm]{\includegraphics[width=0.25\textwidth]{80}}}</span><br><span class="line">		\hspace{1em}</span><br><span class="line">		\subfigure{\label{b}}\addtocounter{subfigure}{-2}</span><br><span class="line">		\subfigure{\subfigure[R=90mm]{\includegraphics[width=0.25\textwidth]{90}}}</span><br><span class="line">		\hspace{1em}</span><br><span class="line">	\end{minipage}</span><br><span class="line">	\vspace{0.2em}</span><br><span class="line">	\caption{不同静平台半径机构条件数分布图}</span><br><span class="line">\end{figure}</span><br><span class="line"></span><br><span class="line">\begin{figure}[htbp]</span><br><span class="line">	\centering</span><br><span class="line">	\begin{minipage}[t]{0.4\textwidth}</span><br><span class="line">		\centering</span><br><span class="line">		\includegraphics[width=\textwidth]{431}</span><br><span class="line">		\caption{静平台坐标系}</span><br><span class="line">	\end{minipage}</span><br><span class="line">	\centering</span><br><span class="line">	\begin{minipage}[t]{0.4\textwidth}</span><br><span class="line">		\centering</span><br><span class="line">		\includegraphics[width=\textwidth]{432}</span><br><span class="line">		\caption{动平台坐标系}</span><br><span class="line">	\end{minipage}</span><br><span class="line">	\centering</span><br><span class="line">	\begin{minipage}[t]{0.8\textwidth}</span><br><span class="line">		\centering</span><br><span class="line">		\includegraphics[width=\textwidth]{45}</span><br><span class="line">		\caption{等效四面体示意图}</span><br><span class="line">	\end{minipage}</span><br><span class="line">\end{figure}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>无用</p>
+<p>结构紧凑，速度响应更快，定位精度更高，刚度更高，负载支持更好，动态性能更好，功耗更低</p>
+<p>可以将辐射引起的力和力矩确定为三个新分量的总和：</p>
+<p>（1）由于周围流体的惯性而增加的质量</p>
+<p>（2）由于产生的表面波带走的能量而引起的辐射诱导的电位阻尼 。</p>
+<p>（3）由于阿基米德（重量和浮力）而恢复。</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>formula</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>newnote</title>
+    <url>/2022/08/02/newnote/newnote/</url>
+    <content><![CDATA[<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>airfact</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>plan</title>
     <url>/2023/01/29/plan/plan/</url>
     <content><![CDATA[<p>2023开学随笔</p>
@@ -2465,6 +2447,24 @@
       <tags>
         <tag>airfact</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>plan_emotion</title>
+    <url>/2021/08/26/plan-emotion/plan-emotion/</url>
+    <content><![CDATA[<h1 id="Ubuntu修复windows无法启动问题"><a href="#Ubuntu修复windows无法启动问题" class="headerlink" title="Ubuntu修复windows无法启动问题"></a>Ubuntu修复windows无法启动问题</h1><a id="more"></a>
+
+<p>配置：ubuntu16.04+windows8.1</p>
+<p>背景：电脑不小心被砸了一下，然后windows系统无法启动，也无法进入bios和安全模式，尝试启动Ubuntu系统，发现可以进入，Linux永远的神！！</p>
+<p>linux端进入后，发现电脑系统盘无法读取，出现挂载错误，可能windows就是因为这个问题无法启动，尝试修复，记录一下最后有效的过程：</p>
+<h5 id="1-查看系统下所有分区的挂载情况是否正常"><a href="#1-查看系统下所有分区的挂载情况是否正常" class="headerlink" title="1.查看系统下所有分区的挂载情况是否正常"></a>1.查看系统下所有分区的挂载情况是否正常</h5><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">sudo fdisk -l</span><br></pre></td></tr></tbody></table></figure>
+
+<p>根据×号判断</p>
+<h5 id="2-修复对应分区，我显示的是-dev-sdb3"><a href="#2-修复对应分区，我显示的是-dev-sdb3" class="headerlink" title="2.修复对应分区，我显示的是/dev/sdb3"></a>2.修复对应分区，我显示的是/dev/sdb3</h5><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">sudo ntfsfix /dev/sdb3</span><br></pre></td></tr></tbody></table></figure>
+
+<p>全部修复后，windows可以正常启动</p>
+<p>以后正常更新啦…</p>
+<p>等会儿再写一个生活计划日志…</p>
+]]></content>
   </entry>
   <entry>
     <title>pybasic</title>
@@ -2531,53 +2531,6 @@
       <categories>
         <category>基础</category>
       </categories>
-  </entry>
-  <entry>
-    <title>reading_note1</title>
-    <url>/2020/11/02/reading-note1/reading-note1/</url>
-    <content><![CDATA[<h1 id="并联机构优化阅读笔记1"><a href="#并联机构优化阅读笔记1" class="headerlink" title="并联机构优化阅读笔记1"></a>并联机构优化阅读笔记1</h1><p>A new method for optimum design of parallel manipulator based on kinematics and dynamics</p>
-<p>并联机械臂优化设计</p>
-<p>（不太规范，慢慢进步）（推导及公式说明latex 写完后会补充）</p>
-<a id="more"></a>
-
-<p>综合考虑机构运动学与动力学特性，一种优化机构尺寸参数的方案，可以用于提高并联机器人动态性能</p>
-<p><strong>Abstract</strong> </p>
-<p>This paper presents a new method for the optimum design of parallel manipulators by taking both the kinematics and dynamic characteristics into account. The optimum design of a 3-DOF 4-RRR planar parallel manipulator with actuation redundancy is investigated to demonstrate the method. The kinematic performance indices such as the conditioning index, the velocity index, and workspace area are analyzed.<br>Further, the dynamic dexterity, which is used to evaluate the dynamic characteristics, is investigated. The corresponding atlases are represented graphically in the established design space. Based on these atlases, the geometrical parameters without dimension are determined. Then the optimum dimension parameters are achieved based on the optimum non-dimensional result. By using the method proposed in this paper, the designer can obtain the optimum result with respect to both kinematic performance indices and dynamic performance indices. Since the dynamic performance is considered in the process of optimum design by using the method proposed in this paper, it is expected to realize the high dynamics of parallel manipulators.</p>
-<p><strong>Introduction</strong></p>
-<p>Parallel manipulators have attracted much attention in both industry and academia because of their conceptual potentials in high motion dynamics and accuracy combined with high structural rigidity due to their closed kinematic loops. However, there is a gap between the expectation and practical application of parallel manipulators in the machine tool/robot sectors [1, 2]. One of the reasons is that their potentially desirable high dynamics can not be realized since the dynamic characteristics are not considered in the optimal design phase and only are considered in the modelbased control after the prototype is built. Since the prototype is fabricated, the improvement of dynamic characteristics is limited even if model-based control is used. If the dynamic characteristics can also be involved in the process of the optimum design before the prototype is built, the dynamic performance will be improved. Thus, it is helpful to realize the high motion dynamics.</p>
-<p>并联机构实际应用动态效果一般，原因在于优化设计阶段未考虑动态特性，模型完成后，控制就会受限于模型本身，动态特性无法实现，如果在优化设计时考虑到动态特性，整体效果会得到改善。</p>
-<p>Optimal kinematic design is an important subject in designing a parallel manipulator. No matter how simple the parallel manipulator is, the optimum design is always challenging. Many efforts have been contributed to this issue [3–7]. These approaches can be classified into two kinds: one is based on the performance indices and the other is based on the performance atlases. The methods based on the performance indices are traditional ones, implemented in the commercial software MATLAB based on an established object function. If the design criterion number is increased, the procedure will be more complicated. The method based on the performance atlases can give designers a global and visual information on with what kind of link lengths the mechanism can have a good or best performance. However, the dynamic performance is usually neglected.</p>
-<p>最优设计局限性，未考虑动态特性</p>
-<p>Some researchers attempt to study the dynamic performance by defining some dynamic performance indices. Conventionally, dynamic manipulability ellipsoid (DME) [8, 9] and generalized inertia ellipsoid (GIE) [10] were used as performance indices to evaluate the dynamic manipulability of a robot manipulator.<br>Besides, some other measures for evaluating dynamic manipulability have been proposed. Graettinger and Krogh [11] introduced acceleration radius. Hashimoto [12] used the harmonic mean of the square singular values matrix to evaluate the dynamic manipulability.Li et al. [13] presented the smallest singular value of inertia matrix of a manipulator as the evaluation index when the manipulability in the hardest direction was considered. However, almost all of these contributions concentrated on the analysis and evaluation of the dynamic characteristics, and are not used for the optimum design to improve the dynamic performance.Although Asada [14] draw the GIE on a computer display and aid the design by visualizing the dynamic behavior, it is difficult to obtain an optimum design result.</p>
-<p>关于动态性能指标集中指标，注意一下文中提到的文献13中惯性矩阵最小奇异值优化方式，简单优化方式</p>
-<p>动态指标优化方式与问题</p>
-<p>The goal of this paper is to present a new method to take the dynamic characteristics of parallel manipulators into account in the process of optimum design.Based on the performance atlases, both the kinematics and dynamics of a 3-DOF 4-RRR planar parallel manipulator with actuation redundancy are involved.The kinematic performance indices such as the conditioning index, the velocity index, and workspace area are analyzed. Further, the dynamic dexterity of the manipulator is investigated. The corresponding atlases are represented graphically in the established design space. Based on these atlases, the geometrical parameters without dimension are determined. Then the optimum dimensional parameters are achieved based on the optimum nondimensional result. By using the method proposed in this paper, the designer can obtain the optimum result with respect to both kinematic performance indices and dynamic performance indices.</p>
-<p>目标：基于performance atlase 性能图谱优化分析</p>
-<h2 id="运动学分析"><a href="#运动学分析" class="headerlink" title="运动学分析"></a>运动学分析</h2><p>Inverse kinematics 常规闭链解法，不记录了，大同小异</p>
-<p>Velcocity equation 求解jacobian </p>
-<p>这里方法类似于向量推导，从表达过程看，与通过那篇向量几何范数方式推导的硕士论文（郭-）结果一致，之前看那篇方法没有引用相关文献，可能方法出自这里……</p>
-<h2 id="运动学性能指标及图谱"><a href="#运动学性能指标及图谱" class="headerlink" title="运动学性能指标及图谱"></a>运动学性能指标及图谱</h2><p>推导补充（latex写好会放过来）</p>
-<h2 id="全局性能指标与图谱"><a href="#全局性能指标与图谱" class="headerlink" title="全局性能指标与图谱"></a>全局性能指标与图谱</h2><p>The condition number is regarded as the local performance index for evaluating the velocity, accuracy, and rigidity mapping characteristics between the joint variables and the moving platform. The condition number κ is defined as <em>1 ≤ κ = σ 2 ≤∞ σ 1</em> where σ 1 and σ 2 are the minimum and maximum singular values of the Jacobian matrix associated with a given posture.<br>条件数可用于评估关节变量、平台速度、精度、刚度局部性能指标。</p>
-<h2 id="全局速度指标与图谱"><a href="#全局速度指标与图谱" class="headerlink" title="全局速度指标与图谱"></a>全局速度指标与图谱</h2><p>输出速度作为并联机械臂的重要指标，速度性能越好，最小速度越大。</p>
-<h2 id="动力学推导（虚功原理）"><a href="#动力学推导（虚功原理）" class="headerlink" title="动力学推导（虚功原理）"></a>动力学推导（虚功原理）</h2><p>常规推导方式，不作记录</p>
-<p>基于图谱的优化设计</p>
-<p>通过线性规划，给出了一个可行区域</p>
-<p>这里注意数学理论上最优与工程最优区别，实际工程上需要从实际出发，在可行域内选择合适尺寸参数。</p>
-<p>基于运动学优化设计</p>
-<p>工作空间、调节指数以及输出速度</p>
-<p>基于运动学与动力学的优化设计</p>
-<p>优化过程：</p>
-<p>1.根据运动学性能指标划定规划域</p>
-<p>2.根据动态性能指标确定另一个最佳区域，该区域为1子集</p>
-<p>3.确定机械臂参数</p>
-<p>4.基于逆运动学模型确定系统输入角度范围</p>
-<p>5.确定系统机构质量</p>
-<p>In order to investigate the performance of the designed manipulator, the condition number of Jacobian matrix and the distribution of κ D are given, as shown in Figs. 9 and 10. One may see that the condition number distribution and the distribution of κ D are symmetrical and the mechanism has the desired condition performance with η &gt; 0.11 and dynamic manipulability with η̄ D &gt; 0.05. In the center, the condition number of Jacobian matrix has the maximum value 0.33, and κ D = 0.12. It means that the 4-RRR manipulator has a better kinematic dexterity and dynamic manipulability in the center.</p>
-<p>中心位置雅克比矩阵考虑</p>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>本文是一种综合考虑运动学与动态性能的优化方案，通过无量纲参数获取杆件尺寸。</p>
-<p>目标操作器具备理想的运动学和动态性能。</p>
-<p>（推导分析后续补充）</p>
-]]></content>
   </entry>
   <entry>
     <title>ros-work/ros-work</title>
@@ -2957,6 +2910,53 @@
 ]]></content>
   </entry>
   <entry>
+    <title>reading_note1</title>
+    <url>/2020/11/02/reading-note1/reading-note1/</url>
+    <content><![CDATA[<h1 id="并联机构优化阅读笔记1"><a href="#并联机构优化阅读笔记1" class="headerlink" title="并联机构优化阅读笔记1"></a>并联机构优化阅读笔记1</h1><p>A new method for optimum design of parallel manipulator based on kinematics and dynamics</p>
+<p>并联机械臂优化设计</p>
+<p>（不太规范，慢慢进步）（推导及公式说明latex 写完后会补充）</p>
+<a id="more"></a>
+
+<p>综合考虑机构运动学与动力学特性，一种优化机构尺寸参数的方案，可以用于提高并联机器人动态性能</p>
+<p><strong>Abstract</strong> </p>
+<p>This paper presents a new method for the optimum design of parallel manipulators by taking both the kinematics and dynamic characteristics into account. The optimum design of a 3-DOF 4-RRR planar parallel manipulator with actuation redundancy is investigated to demonstrate the method. The kinematic performance indices such as the conditioning index, the velocity index, and workspace area are analyzed.<br>Further, the dynamic dexterity, which is used to evaluate the dynamic characteristics, is investigated. The corresponding atlases are represented graphically in the established design space. Based on these atlases, the geometrical parameters without dimension are determined. Then the optimum dimension parameters are achieved based on the optimum non-dimensional result. By using the method proposed in this paper, the designer can obtain the optimum result with respect to both kinematic performance indices and dynamic performance indices. Since the dynamic performance is considered in the process of optimum design by using the method proposed in this paper, it is expected to realize the high dynamics of parallel manipulators.</p>
+<p><strong>Introduction</strong></p>
+<p>Parallel manipulators have attracted much attention in both industry and academia because of their conceptual potentials in high motion dynamics and accuracy combined with high structural rigidity due to their closed kinematic loops. However, there is a gap between the expectation and practical application of parallel manipulators in the machine tool/robot sectors [1, 2]. One of the reasons is that their potentially desirable high dynamics can not be realized since the dynamic characteristics are not considered in the optimal design phase and only are considered in the modelbased control after the prototype is built. Since the prototype is fabricated, the improvement of dynamic characteristics is limited even if model-based control is used. If the dynamic characteristics can also be involved in the process of the optimum design before the prototype is built, the dynamic performance will be improved. Thus, it is helpful to realize the high motion dynamics.</p>
+<p>并联机构实际应用动态效果一般，原因在于优化设计阶段未考虑动态特性，模型完成后，控制就会受限于模型本身，动态特性无法实现，如果在优化设计时考虑到动态特性，整体效果会得到改善。</p>
+<p>Optimal kinematic design is an important subject in designing a parallel manipulator. No matter how simple the parallel manipulator is, the optimum design is always challenging. Many efforts have been contributed to this issue [3–7]. These approaches can be classified into two kinds: one is based on the performance indices and the other is based on the performance atlases. The methods based on the performance indices are traditional ones, implemented in the commercial software MATLAB based on an established object function. If the design criterion number is increased, the procedure will be more complicated. The method based on the performance atlases can give designers a global and visual information on with what kind of link lengths the mechanism can have a good or best performance. However, the dynamic performance is usually neglected.</p>
+<p>最优设计局限性，未考虑动态特性</p>
+<p>Some researchers attempt to study the dynamic performance by defining some dynamic performance indices. Conventionally, dynamic manipulability ellipsoid (DME) [8, 9] and generalized inertia ellipsoid (GIE) [10] were used as performance indices to evaluate the dynamic manipulability of a robot manipulator.<br>Besides, some other measures for evaluating dynamic manipulability have been proposed. Graettinger and Krogh [11] introduced acceleration radius. Hashimoto [12] used the harmonic mean of the square singular values matrix to evaluate the dynamic manipulability.Li et al. [13] presented the smallest singular value of inertia matrix of a manipulator as the evaluation index when the manipulability in the hardest direction was considered. However, almost all of these contributions concentrated on the analysis and evaluation of the dynamic characteristics, and are not used for the optimum design to improve the dynamic performance.Although Asada [14] draw the GIE on a computer display and aid the design by visualizing the dynamic behavior, it is difficult to obtain an optimum design result.</p>
+<p>关于动态性能指标集中指标，注意一下文中提到的文献13中惯性矩阵最小奇异值优化方式，简单优化方式</p>
+<p>动态指标优化方式与问题</p>
+<p>The goal of this paper is to present a new method to take the dynamic characteristics of parallel manipulators into account in the process of optimum design.Based on the performance atlases, both the kinematics and dynamics of a 3-DOF 4-RRR planar parallel manipulator with actuation redundancy are involved.The kinematic performance indices such as the conditioning index, the velocity index, and workspace area are analyzed. Further, the dynamic dexterity of the manipulator is investigated. The corresponding atlases are represented graphically in the established design space. Based on these atlases, the geometrical parameters without dimension are determined. Then the optimum dimensional parameters are achieved based on the optimum nondimensional result. By using the method proposed in this paper, the designer can obtain the optimum result with respect to both kinematic performance indices and dynamic performance indices.</p>
+<p>目标：基于performance atlase 性能图谱优化分析</p>
+<h2 id="运动学分析"><a href="#运动学分析" class="headerlink" title="运动学分析"></a>运动学分析</h2><p>Inverse kinematics 常规闭链解法，不记录了，大同小异</p>
+<p>Velcocity equation 求解jacobian </p>
+<p>这里方法类似于向量推导，从表达过程看，与通过那篇向量几何范数方式推导的硕士论文（郭-）结果一致，之前看那篇方法没有引用相关文献，可能方法出自这里……</p>
+<h2 id="运动学性能指标及图谱"><a href="#运动学性能指标及图谱" class="headerlink" title="运动学性能指标及图谱"></a>运动学性能指标及图谱</h2><p>推导补充（latex写好会放过来）</p>
+<h2 id="全局性能指标与图谱"><a href="#全局性能指标与图谱" class="headerlink" title="全局性能指标与图谱"></a>全局性能指标与图谱</h2><p>The condition number is regarded as the local performance index for evaluating the velocity, accuracy, and rigidity mapping characteristics between the joint variables and the moving platform. The condition number κ is defined as <em>1 ≤ κ = σ 2 ≤∞ σ 1</em> where σ 1 and σ 2 are the minimum and maximum singular values of the Jacobian matrix associated with a given posture.<br>条件数可用于评估关节变量、平台速度、精度、刚度局部性能指标。</p>
+<h2 id="全局速度指标与图谱"><a href="#全局速度指标与图谱" class="headerlink" title="全局速度指标与图谱"></a>全局速度指标与图谱</h2><p>输出速度作为并联机械臂的重要指标，速度性能越好，最小速度越大。</p>
+<h2 id="动力学推导（虚功原理）"><a href="#动力学推导（虚功原理）" class="headerlink" title="动力学推导（虚功原理）"></a>动力学推导（虚功原理）</h2><p>常规推导方式，不作记录</p>
+<p>基于图谱的优化设计</p>
+<p>通过线性规划，给出了一个可行区域</p>
+<p>这里注意数学理论上最优与工程最优区别，实际工程上需要从实际出发，在可行域内选择合适尺寸参数。</p>
+<p>基于运动学优化设计</p>
+<p>工作空间、调节指数以及输出速度</p>
+<p>基于运动学与动力学的优化设计</p>
+<p>优化过程：</p>
+<p>1.根据运动学性能指标划定规划域</p>
+<p>2.根据动态性能指标确定另一个最佳区域，该区域为1子集</p>
+<p>3.确定机械臂参数</p>
+<p>4.基于逆运动学模型确定系统输入角度范围</p>
+<p>5.确定系统机构质量</p>
+<p>In order to investigate the performance of the designed manipulator, the condition number of Jacobian matrix and the distribution of κ D are given, as shown in Figs. 9 and 10. One may see that the condition number distribution and the distribution of κ D are symmetrical and the mechanism has the desired condition performance with η &gt; 0.11 and dynamic manipulability with η̄ D &gt; 0.05. In the center, the condition number of Jacobian matrix has the maximum value 0.33, and κ D = 0.12. It means that the 4-RRR manipulator has a better kinematic dexterity and dynamic manipulability in the center.</p>
+<p>中心位置雅克比矩阵考虑</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>本文是一种综合考虑运动学与动态性能的优化方案，通过无量纲参数获取杆件尺寸。</p>
+<p>目标操作器具备理想的运动学和动态性能。</p>
+<p>（推导分析后续补充）</p>
+]]></content>
+  </entry>
+  <entry>
     <title>心情随笔</title>
     <url>/2024/05/15/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/</url>
     <content><![CDATA[<h1 id="心情随笔，胡思乱想"><a href="#心情随笔，胡思乱想" class="headerlink" title="心情随笔，胡思乱想"></a>心情随笔，胡思乱想</h1><p>胡乱笔记，想到什么记什么。</p>
@@ -3217,7 +3217,7 @@
 
 <blockquote>
 <ul>
-<li><input checked="" disabled="" type="checkbox"> <strong>QAQ</strong></li>
+<li><input checked disabled type="checkbox"> <strong>QAQ</strong></li>
 </ul>
 </blockquote>
 <p>4.编写一个程序，该程序从控制台接受一个逗号分隔的数字序列，并生成一个列表和一个包含每个数字的元组，假设向该程序提供了以下输入：转化</p>
