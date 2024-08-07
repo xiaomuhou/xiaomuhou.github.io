@@ -23,6 +23,139 @@
       </tags>
   </entry>
   <entry>
+    <title>Quaternion</title>
+    <url>/2021/11/24/Quaternion/Quaternion/</url>
+    <content><![CDATA[<h1 id="万向锁问题"><a href="#万向锁问题" class="headerlink" title="万向锁问题"></a>万向锁问题</h1><h2 id="造成影响："><a href="#造成影响：" class="headerlink" title="造成影响："></a>造成影响：</h2><p>出现万向锁后会丢失自由度</p>
+<a id="more"></a>
+
+<h2 id="从结构角度分析："><a href="#从结构角度分析：" class="headerlink" title="从结构角度分析："></a>从结构角度分析：</h2><p>主要原因是由于各旋转轴之间存在运动关系，即动态欧拉角，角度变化后，坐标系随之发生变化，比如万向锁结构，三个坐标轴分别可以用环结构表示，外环、中环、内环，当内环转动，即等效沿某一轴转动，内环与中、外环都存在运动关系，坐标系同时变化，就不会发生重叠现象，；当中环运动时，内环不会运动，只有外环会进行运动，那么内环所代表的坐标系可能会与外环所代表的坐标系重合，当进行动态旋转时，沿着外环与内环代表的坐标系运动，只会产生一个方向的自由度，由此发生了万向锁现象，即丢失一个自由度。</p>
+<h2 id="后续一些想法"><a href="#后续一些想法" class="headerlink" title="后续一些想法"></a>后续一些想法</h2><p>看b站评论说为什么不选取惯性坐标系作为参考运动，这样就不会出现万向锁现象了？</p>
+<p>其实这是一个概念的问题，首先需要理解欧拉角的意义，欧拉角是用来描述姿态的三个角度，包含静态、动态两种，静态欧拉角即沿着惯性坐标系进行运动，而动态欧拉角则会出现万向锁现象，动态有12种旋转方式，XYZ、XZY、XYX、XZX、YXZ、YZX、YXY、YZY、ZXY、ZYX、ZXZ、ZYZ,含有中间轴Y都存在万向锁问题。</p>
+<p>因此该问题的本质是动态欧拉角的意义是什么？</p>
+<p>基于动态坐标的欧拉角旋转，其惯性张量不随着时间改变而改变，将其进行对角化处理，即可以得到一个一组主轴和一个只含三个分量的主动惯量，动力学计算较为容易，这一部分内容可以机器人动力学模型计算案例中深入理解。</p>
+<h2 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h2><p>为了描述复杂运动以及规避一些特殊点，可以用四元数工具进行描述分析，最近正在整理旋量与四元数的并联应用分析内容，以后会写一个小总结。</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>mathematica</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>QT开发</title>
+    <url>/2024/03/03/QT%E5%BC%80%E5%8F%91/QT%E5%BC%80%E5%8F%91/</url>
+    <content><![CDATA[# QT5开发总结
+
+<p>空间XX优化开发界面-2024.2.5完成提交版</p>
+<h2 id="功能需求"><a href="#功能需求" class="headerlink" title="功能需求:"></a>功能需求:</h2><ul>
+<li>基于控制逻辑界面跳转</li>
+<li>调用底层计算代码并优化</li>
+<li>几个虚拟加载进度条</li>
+<li>多阶输入读取及判断方式</li>
+</ul>
+<p>总体：上位机需求功能比较简单，调用代码由于老师提供的底层的优化算法本身存在运行问题，导致一部分协调存在bug，因此整体功能存在问题，基本数据控制功能开发完成，已提交，暂时结束。</p>
+<a id="more"></a>
+
+<p>1.跳转算法：</p>
+<p>基于py的开发逻辑与C++一致，常见的几种，这里我使用的是按键检测，几个功能就写几个子界面，比较笨，但是容易理解，示例代码如下：</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> Ui_ST1_1 <span class="keyword">import</span> Ui_Form1_1</span><br><span class="line">self.pushButton.clicked.connect(self.popWindow) <span class="comment">#调用</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">popWindow</span><span class="params">(self)</span>:</span><span class="comment">#定义</span></span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        self.uiZ= Ui_Form1_1() <span class="comment">#逻辑界面</span></span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></tbody></table></figure>
+
+<p>2.底层代码调用：</p>
+<p>abaqus子程序存在bug，这部分暂缺，后续如需要继续开发，代码修正后补充。</p>
+<p>商业软件调用，写了一种基于subprocess调用外部EXE程序的方式，同样通过定义函数实现，注意一些小问题</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line">self.pushButton_3.clicked.connect(self.open)<span class="comment">#steupUI</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">open</span><span class="params">(self)</span>:</span></span><br><span class="line">        subprocess.Popen(<span class="string">r"E:\Program Files\Inkscape\bin\inkscape.exe"</span>)<span class="comment">#这里注意一下python中的路径转义字符，要不就使用正斜杆，否则如上。</span></span><br><span class="line"><span class="comment">#补充一个启动文件</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.openFile)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">openFile</span><span class="params">(self)</span>:</span></span><br><span class="line">        directory1 = QFileDialog.getExistingDirectory(<span class="literal">None</span>, <span class="string">"启动程序"</span>,<span class="string">"./"</span>)</span><br><span class="line">        print(directory1)</span><br></pre></td></tr></tbody></table></figure>
+
+<p>3.假装加载2333以及读取数据</p>
+<p>读取doublespinbox与progressbar协调，延时用法以及其余读取代码句式参照那本书，边查边记。</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">valu = <span class="number">1</span><span class="comment">#定义初值</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.va)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">va</span><span class="params">(self)</span>:</span><span class="comment">#点击执行只是循环一个功能，记住以后不要一个按钮对应多个按键，功能全部放在一起，执行顺序会有变化</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">100</span>):</span><br><span class="line">            time.sleep(<span class="number">0.09</span>)</span><br><span class="line">            self.progressBar.setProperty(<span class="string">"value"</span>, i)</span><br><span class="line">        valu=self.doubleSpinBox_4.value()<span class="comment">#读取数据句式</span></span><br><span class="line">        print(valu)</span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        <span class="keyword">if</span> valu==<span class="number">1</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_3()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_31()</span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.progressBar.setProperty(<span class="string">"value"</span>, <span class="number">100</span>)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></tbody></table></figure>
+
+<p>4.图片读取流程，再次记录一下：</p>
+<p>QTcreator中构建资源库，在转成代码后进行转换运行，图片加载均通过UI端完成。</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">pyrcc5 apprcc.qrc -o apprcc_re.py<span class="comment">#转换</span></span><br><span class="line">pyinstaller -F -W XX.py<span class="comment">#启动文件，其余控项可以看书</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="后续总结："><a href="#后续总结：" class="headerlink" title="后续总结："></a>后续总结：</h2><p>希望早点把我的”雇佣兵”工资结了QAQ。</p>
+<p>那本书多看看，后续完成底层代码的协调，以及一个上位机的编写，李工那边的火星车上位机，有空的话帮他了结一下。</p>
+<p>学学特效，多看看语法书，慢慢牢固基础~</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ros_sdk</title>
+    <url>/2020/08/07/Ros-sdk/Ros-sdk/</url>
+    <content><![CDATA[<h1 id="SDK-ros版本代码记录"><a href="#SDK-ros版本代码记录" class="headerlink" title="SDK_ros版本代码记录"></a>SDK_ros版本代码记录</h1><a id="more"></a>
+
+<p>arm.yaml 参数记录</p>
+<p>xm540_w270</p>
+<p>  Protocol: 2<br>  Return_Delay_Time: 100   #0~254<br>  Operating_Mode: 3   #Position Control Mode<br>  Profile_Acceleration: 10  #time<br>  Profile_Velocity: 40<br>  Shutdown: 33 #00100001  Input Voltage Error/Overload Error(default) 最大负载</p>
+<p>  Protocol: 2<br>  Return_Delay_Time: 100<br>  Operating_Mode: 3<br>  Profile_Acceleration: 10<br>  Profile_Velocity: 40</p>
+<p>  #Velocity_Trajectory:</p>
+<p>  Shutdown: 33<br>  Min_Position: 625   #0~4095<br>  Max_Position: 3409<br>  Velocity_Limit: 40</p>
+<p>这些值将位置控制模式（联合模式）的最大和最小期望位置限制在1转（0〜4,095）的范围内。<br>因此，目标位置（116）应该配置在位置限制范围内。<br>在扩展位置控制模式和基于电流的位置控制模式中不使用这些值。</p>
+<p>  Protocol: 2</p>
+<p>  Shadow_ID: 5  #？</p>
+<p>  Return_Delay_Time: 100</p>
+<p>  Operating_Mode: 3</p>
+<p>  Profile_Acceleration: 10</p>
+<p>  Profile_Velocity: 40</p>
+<p>  # Velocity_Trajectory:</p>
+<p>  Shutdown: 33</p>
+<p>  Drive_Mode: 1</p>
+<p>  Min_Position: 625</p>
+<p>  Max_Position: 3409</p>
+<p>  Velocity_Limit: 40</p>
+<p>～～～～～～～～～～～～～～手动分割线</p>
+<p>  Protocol: 1</p>
+<p>  Return_Delay_Time: 100</p>
+<p>  Min_Position: 0</p>
+<p>  Max_Position: 1023</p>
+<p>  Max_Torque: 200</p>
+<p>  Torque_Limit: 200</p>
+<p>辅助id不反馈数据包</p>
+<p>初始位置参数表.yaml</p>
+<h2 id="底层代码-launch文件（节点）"><a href="#底层代码-launch文件（节点）" class="headerlink" title="底层代码+launch文件（节点）"></a>底层代码+launch文件（节点）</h2><p>example</p>
+<p>node:joint_publisher  初始化设定臂与爪的初始位置home</p>
+<p>ping：protocol2.0协议，连接dynamixel ，同read_write</p>
+<p>示例文件，初始化、参数设定与连接使能</p>
+<p>src and launch</p>
+<p>dynamixel–电机参数表，model_number ,电机型号参数以及协议选择，原代码 MX与AX</p>
+<p>XM540-W150对应参数：270同</p>
+<p>​        1130: {</p>
+<p>​            “Return_Delay_Time”: ModelFlag(9, 1),</p>
+<p>​            “Drive_Mode”: ModelFlag(10, 1),</p>
+<p>​            “Operating_Mode”: ModelFlag(11, 1),</p>
+<p>​            “Shadow_ID”: ModelFlag(12, 1),</p>
+<p>​            “Velocity_Limit”: ModelFlag(44, 4),</p>
+<p>​            “Max_Position”: ModelFlag(48, 4),</p>
+<p>​            “Min_Position”: ModelFlag(52, 4),</p>
+<p>​            “Shutdown”: ModelFlag(63, 1),</p>
+<p>​            “Torque_Enabled”: ModelFlag(64, 1),</p>
+<p>​            “Goal_Velocity”: ModelFlag(104, 4),</p>
+<p>​            “Profile_Acceleration”: ModelFlag(108, 4),</p>
+<p>​            “Profile_Velocity”: ModelFlag(112, 4),</p>
+<p>​            “Goal_Position”: ModelFlag(116, 4),</p>
+<p>​            “Moving”: ModelFlag(122, 1),</p>
+<p>​            “Present_Current”: ModelFlag(126, 2),</p>
+<p>​            “Present_Velocity”: ModelFlag(128, 4),</p>
+<p>​            “Present_Position”: ModelFlag(132, 4),</p>
+<p>​            “Present_Voltage”: ModelFlag(144, 2),</p>
+<p>​            “Present_Temperature”: ModelFlag(146, 1),</p>
+<p>​            “Velocity_Trajectory”: ModelFlag(136, 4)</p>
+<p>​        },</p>
+<p>定义两种类型电机，我的只用了了一种xm540，控制模式不同，可改</p>
+<p>协议1.0 2.0通用</p>
+<p>将write与read定义到了类class中 </p>
+<p>功能：读取位置、转角并且转化数据，读取负载（使用protocol2.0），读取速度值并进行转化</p>
+<p>current 温度值 位置？？？待修改</p>
+<p>目标位置数值—–移动</p>
+]]></content>
+  </entry>
+  <entry>
     <title>plan+review</title>
     <url>/2020/07/27/Fplan/Fplan/</url>
     <content><![CDATA[<h1 id="2020-7-27"><a href="#2020-7-27" class="headerlink" title="2020.7.27"></a>2020.7.27</h1><p>1.Dynamixel work_bench   c++  python</p>
@@ -103,197 +236,6 @@
       </tags>
   </entry>
   <entry>
-    <title>QT开发</title>
-    <url>/2024/03/03/QT%E5%BC%80%E5%8F%91/QT%E5%BC%80%E5%8F%91/</url>
-    <content><![CDATA[# QT5开发总结
-
-<p>空间XX优化开发界面-2024.2.5完成提交版</p>
-<h2 id="功能需求"><a href="#功能需求" class="headerlink" title="功能需求:"></a>功能需求:</h2><ul>
-<li>基于控制逻辑界面跳转</li>
-<li>调用底层计算代码并优化</li>
-<li>几个虚拟加载进度条</li>
-<li>多阶输入读取及判断方式</li>
-</ul>
-<p>总体：上位机需求功能比较简单，调用代码由于老师提供的底层的优化算法本身存在运行问题，导致一部分协调存在bug，因此整体功能存在问题，基本数据控制功能开发完成，已提交，暂时结束。</p>
-<a id="more"></a>
-
-<p>1.跳转算法：</p>
-<p>基于py的开发逻辑与C++一致，常见的几种，这里我使用的是按键检测，几个功能就写几个子界面，比较笨，但是容易理解，示例代码如下：</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> Ui_ST1_1 <span class="keyword">import</span> Ui_Form1_1</span><br><span class="line">self.pushButton.clicked.connect(self.popWindow) <span class="comment">#调用</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">popWindow</span><span class="params">(self)</span>:</span><span class="comment">#定义</span></span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        self.uiZ= Ui_Form1_1() <span class="comment">#逻辑界面</span></span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></tbody></table></figure>
-
-<p>2.底层代码调用：</p>
-<p>abaqus子程序存在bug，这部分暂缺，后续如需要继续开发，代码修正后补充。</p>
-<p>商业软件调用，写了一种基于subprocess调用外部EXE程序的方式，同样通过定义函数实现，注意一些小问题</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line">self.pushButton_3.clicked.connect(self.open)<span class="comment">#steupUI</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">open</span><span class="params">(self)</span>:</span></span><br><span class="line">        subprocess.Popen(<span class="string">r"E:\Program Files\Inkscape\bin\inkscape.exe"</span>)<span class="comment">#这里注意一下python中的路径转义字符，要不就使用正斜杆，否则如上。</span></span><br><span class="line"><span class="comment">#补充一个启动文件</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.openFile)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">openFile</span><span class="params">(self)</span>:</span></span><br><span class="line">        directory1 = QFileDialog.getExistingDirectory(<span class="literal">None</span>, <span class="string">"启动程序"</span>,<span class="string">"./"</span>)</span><br><span class="line">        print(directory1)</span><br></pre></td></tr></tbody></table></figure>
-
-<p>3.假装加载2333以及读取数据</p>
-<p>读取doublespinbox与progressbar协调，延时用法以及其余读取代码句式参照那本书，边查边记。</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">valu = <span class="number">1</span><span class="comment">#定义初值</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.va)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">va</span><span class="params">(self)</span>:</span><span class="comment">#点击执行只是循环一个功能，记住以后不要一个按钮对应多个按键，功能全部放在一起，执行顺序会有变化</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">100</span>):</span><br><span class="line">            time.sleep(<span class="number">0.09</span>)</span><br><span class="line">            self.progressBar.setProperty(<span class="string">"value"</span>, i)</span><br><span class="line">        valu=self.doubleSpinBox_4.value()<span class="comment">#读取数据句式</span></span><br><span class="line">        print(valu)</span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        <span class="keyword">if</span> valu==<span class="number">1</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_3()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_31()</span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.progressBar.setProperty(<span class="string">"value"</span>, <span class="number">100</span>)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></tbody></table></figure>
-
-<p>4.图片读取流程，再次记录一下：</p>
-<p>QTcreator中构建资源库，在转成代码后进行转换运行，图片加载均通过UI端完成。</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">pyrcc5 apprcc.qrc -o apprcc_re.py<span class="comment">#转换</span></span><br><span class="line">pyinstaller -F -W XX.py<span class="comment">#启动文件，其余控项可以看书</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="后续总结："><a href="#后续总结：" class="headerlink" title="后续总结："></a>后续总结：</h2><p>希望早点把我的”雇佣兵”工资结了QAQ。</p>
-<p>那本书多看看，后续完成底层代码的协调，以及一个上位机的编写，李工那边的火星车上位机，有空的话帮他了结一下。</p>
-<p>学学特效，多看看语法书，慢慢牢固基础~</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>note</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Quaternion</title>
-    <url>/2021/11/24/Quaternion/Quaternion/</url>
-    <content><![CDATA[<h1 id="万向锁问题"><a href="#万向锁问题" class="headerlink" title="万向锁问题"></a>万向锁问题</h1><h2 id="造成影响："><a href="#造成影响：" class="headerlink" title="造成影响："></a>造成影响：</h2><p>出现万向锁后会丢失自由度</p>
-<a id="more"></a>
-
-<h2 id="从结构角度分析："><a href="#从结构角度分析：" class="headerlink" title="从结构角度分析："></a>从结构角度分析：</h2><p>主要原因是由于各旋转轴之间存在运动关系，即动态欧拉角，角度变化后，坐标系随之发生变化，比如万向锁结构，三个坐标轴分别可以用环结构表示，外环、中环、内环，当内环转动，即等效沿某一轴转动，内环与中、外环都存在运动关系，坐标系同时变化，就不会发生重叠现象，；当中环运动时，内环不会运动，只有外环会进行运动，那么内环所代表的坐标系可能会与外环所代表的坐标系重合，当进行动态旋转时，沿着外环与内环代表的坐标系运动，只会产生一个方向的自由度，由此发生了万向锁现象，即丢失一个自由度。</p>
-<h2 id="后续一些想法"><a href="#后续一些想法" class="headerlink" title="后续一些想法"></a>后续一些想法</h2><p>看b站评论说为什么不选取惯性坐标系作为参考运动，这样就不会出现万向锁现象了？</p>
-<p>其实这是一个概念的问题，首先需要理解欧拉角的意义，欧拉角是用来描述姿态的三个角度，包含静态、动态两种，静态欧拉角即沿着惯性坐标系进行运动，而动态欧拉角则会出现万向锁现象，动态有12种旋转方式，XYZ、XZY、XYX、XZX、YXZ、YZX、YXY、YZY、ZXY、ZYX、ZXZ、ZYZ,含有中间轴Y都存在万向锁问题。</p>
-<p>因此该问题的本质是动态欧拉角的意义是什么？</p>
-<p>基于动态坐标的欧拉角旋转，其惯性张量不随着时间改变而改变，将其进行对角化处理，即可以得到一个一组主轴和一个只含三个分量的主动惯量，动力学计算较为容易，这一部分内容可以机器人动力学模型计算案例中深入理解。</p>
-<h2 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h2><p>为了描述复杂运动以及规避一些特殊点，可以用四元数工具进行描述分析，最近正在整理旋量与四元数的并联应用分析内容，以后会写一个小总结。</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>mathematica</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Silence</title>
-    <url>/2024/03/20/Silence/Silence/</url>
-    <content><![CDATA[<p>沉默的大多数决定一切，当然也可能一点不重要</p>
-<a id="more"></a>
-
-<p>之前很喜欢一个民谣歌手，从崖边跌落开始入坑，最后听的是茶酒伴，再然后就听的少了许多，可能是因为随着年龄增长，越来越喜欢怀旧，容易留恋过去，导致对于新鲜的事物接受度越来越低，新出的歌听起来总是没什么感觉，看到歌手各种各样“叛逆”动态，心里想想开心就好，自己没啥资格留下对别人的评论，于是就沉默下来，每个人都是为自己活着，确实是自己开心就好。</p>
-<p>不幸的是，现实里却常常事与愿违，面对上位压迫，往往还是会做出妥协，面对下位请求，则是做自己，这样的做法是否是真的做自己呢？印象里有一次评论区说一句喜欢过去的借我，春花发出近乎切割这首歌的言论，但是后来雷军转发，还是转的歌手原版本，春花也会出来营业，不知道那时候心里作何想法。</p>
-<p>无意贬低任何人，只是在描述自己看到的一切，毕竟自己也是个俗人，在面对不影响自己太大利益的问题前，我会做到保持自我，开心就好，但是面对不可抵抗的问题，我也常常妥协，只是常常会思考，这个百分比占到多少才能算开心就好，坦然接受不纯粹，是不是也算？</p>
-<p>过去几年发生的很多事情改变了我很多对于这个世界的看法，依据不同的标准，就会做出不同的判断，以生死或者身边亲人朋友庞大的利益关系作为标准，沉默的大多数就不能被忽视，除非狠得下心放弃一切，所以最终大家都会成为俗人，只是没有被逼到那个程度（战争年代保有信仰的先辈是真的值得敬佩），这也是当今各种制度能够运行的基础，天下乌鸦一般黑，哪有绝对的是非对错，如果有，那只能是数学，但是这个世界又没有完全独立运转的事物，常常都是混杂在一起，所有常说难得糊涂，没有绝对的邪恶，只有正义的偏离。</p>
-<p>言归正传，借用之前自己一句评论，朴树的歌能让我从难过变得平和，而春花的歌让我从平和到更加平和，未来依然会喜欢他们，但是也很好奇未来会是什么样子，毕竟很多老牌歌手几十年了还是被粉丝要求唱同一首歌，很喜欢观察完全不同生活的变化轨迹。</p>
-<p>沉默、沉默，既要真实也要沉默，不带功利心的做一些事，人生才能持续下去…</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>emo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ros_sdk</title>
-    <url>/2020/08/07/Ros-sdk/Ros-sdk/</url>
-    <content><![CDATA[<h1 id="SDK-ros版本代码记录"><a href="#SDK-ros版本代码记录" class="headerlink" title="SDK_ros版本代码记录"></a>SDK_ros版本代码记录</h1><a id="more"></a>
-
-<p>arm.yaml 参数记录</p>
-<p>xm540_w270</p>
-<p>  Protocol: 2<br>  Return_Delay_Time: 100   #0~254<br>  Operating_Mode: 3   #Position Control Mode<br>  Profile_Acceleration: 10  #time<br>  Profile_Velocity: 40<br>  Shutdown: 33 #00100001  Input Voltage Error/Overload Error(default) 最大负载</p>
-<p>  Protocol: 2<br>  Return_Delay_Time: 100<br>  Operating_Mode: 3<br>  Profile_Acceleration: 10<br>  Profile_Velocity: 40</p>
-<p>  #Velocity_Trajectory:</p>
-<p>  Shutdown: 33<br>  Min_Position: 625   #0~4095<br>  Max_Position: 3409<br>  Velocity_Limit: 40</p>
-<p>这些值将位置控制模式（联合模式）的最大和最小期望位置限制在1转（0〜4,095）的范围内。<br>因此，目标位置（116）应该配置在位置限制范围内。<br>在扩展位置控制模式和基于电流的位置控制模式中不使用这些值。</p>
-<p>  Protocol: 2</p>
-<p>  Shadow_ID: 5  #？</p>
-<p>  Return_Delay_Time: 100</p>
-<p>  Operating_Mode: 3</p>
-<p>  Profile_Acceleration: 10</p>
-<p>  Profile_Velocity: 40</p>
-<p>  # Velocity_Trajectory:</p>
-<p>  Shutdown: 33</p>
-<p>  Drive_Mode: 1</p>
-<p>  Min_Position: 625</p>
-<p>  Max_Position: 3409</p>
-<p>  Velocity_Limit: 40</p>
-<p>～～～～～～～～～～～～～～手动分割线</p>
-<p>  Protocol: 1</p>
-<p>  Return_Delay_Time: 100</p>
-<p>  Min_Position: 0</p>
-<p>  Max_Position: 1023</p>
-<p>  Max_Torque: 200</p>
-<p>  Torque_Limit: 200</p>
-<p>辅助id不反馈数据包</p>
-<p>初始位置参数表.yaml</p>
-<h2 id="底层代码-launch文件（节点）"><a href="#底层代码-launch文件（节点）" class="headerlink" title="底层代码+launch文件（节点）"></a>底层代码+launch文件（节点）</h2><p>example</p>
-<p>node:joint_publisher  初始化设定臂与爪的初始位置home</p>
-<p>ping：protocol2.0协议，连接dynamixel ，同read_write</p>
-<p>示例文件，初始化、参数设定与连接使能</p>
-<p>src and launch</p>
-<p>dynamixel–电机参数表，model_number ,电机型号参数以及协议选择，原代码 MX与AX</p>
-<p>XM540-W150对应参数：270同</p>
-<p>​        1130: {</p>
-<p>​            “Return_Delay_Time”: ModelFlag(9, 1),</p>
-<p>​            “Drive_Mode”: ModelFlag(10, 1),</p>
-<p>​            “Operating_Mode”: ModelFlag(11, 1),</p>
-<p>​            “Shadow_ID”: ModelFlag(12, 1),</p>
-<p>​            “Velocity_Limit”: ModelFlag(44, 4),</p>
-<p>​            “Max_Position”: ModelFlag(48, 4),</p>
-<p>​            “Min_Position”: ModelFlag(52, 4),</p>
-<p>​            “Shutdown”: ModelFlag(63, 1),</p>
-<p>​            “Torque_Enabled”: ModelFlag(64, 1),</p>
-<p>​            “Goal_Velocity”: ModelFlag(104, 4),</p>
-<p>​            “Profile_Acceleration”: ModelFlag(108, 4),</p>
-<p>​            “Profile_Velocity”: ModelFlag(112, 4),</p>
-<p>​            “Goal_Position”: ModelFlag(116, 4),</p>
-<p>​            “Moving”: ModelFlag(122, 1),</p>
-<p>​            “Present_Current”: ModelFlag(126, 2),</p>
-<p>​            “Present_Velocity”: ModelFlag(128, 4),</p>
-<p>​            “Present_Position”: ModelFlag(132, 4),</p>
-<p>​            “Present_Voltage”: ModelFlag(144, 2),</p>
-<p>​            “Present_Temperature”: ModelFlag(146, 1),</p>
-<p>​            “Velocity_Trajectory”: ModelFlag(136, 4)</p>
-<p>​        },</p>
-<p>定义两种类型电机，我的只用了了一种xm540，控制模式不同，可改</p>
-<p>协议1.0 2.0通用</p>
-<p>将write与read定义到了类class中 </p>
-<p>功能：读取位置、转角并且转化数据，读取负载（使用protocol2.0），读取速度值并进行转化</p>
-<p>current 温度值 位置？？？待修改</p>
-<p>目标位置数值—–移动</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>daliy_life</title>
-    <url>/2020/08/17/daliy-life/daliy-life/</url>
-    <content><![CDATA[<h1 id="处事之则，日常所想"><a href="#处事之则，日常所想" class="headerlink" title="处事之则，日常所想"></a>处事之则，日常所想</h1><p>搭模型的时候，听了听电视剧琅琊榜的电台，听到景睿的台词，有点感触，为人处世就应该这样，清清爽爽，潇洒一生。</p>
-<p>不为蝇营狗苟之事，不对他人做过分之求，一切唯心而已。</p>
-<h4 id="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"><a href="#“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。" class="headerlink" title="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"></a>“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。</h4><h4 id="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"><a href="#我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。" class="headerlink" title="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"></a>我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。</h4><h4 id="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"><a href="#若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也" class="headerlink" title="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"></a>若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也</h4><h4 id="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"><a href="#没有责任要以我为先，以我为重。无论我如何希望也不能强求。" class="headerlink" title="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"></a>没有责任要以我为先，以我为重。无论我如何希望也不能强求。</h4><h4 id="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"><a href="#我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也" class="headerlink" title="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"></a>我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也</h4><h4 id="没有什么可后悔的。”"><a href="#没有什么可后悔的。”" class="headerlink" title="没有什么可后悔的。”"></a>没有什么可后悔的。”</h4>]]></content>
-      <categories>
-        <category>touch_fish</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>configure_bag</title>
-    <url>/2020/11/30/configure-bag/configure-bag/</url>
-    <content><![CDATA[<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
-<p>以及补充后续图像处理相关项目内容</p>
-<a id="more"></a>
-
-<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
-<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
-<p>（原因后续深入了解了之后继续补充）</p>
-<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
-<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
-<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;/dev/null | grep '\.rp_filter'</span><br></pre></td></tr></tbody></table></figure>
-
-<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter=0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter=0</span><br></pre></td></tr></tbody></table></figure>
-
-<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
-<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
-<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
-<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
-<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
-]]></content>
-      <categories>
-        <category>camera</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Q</title>
     <url>/2024/02/26/Q/Q/</url>
     <content><![CDATA[# 琥珀川与荻野千寻
@@ -313,73 +255,6 @@
       <tags>
         <tag>movie</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>delta_matlab</title>
-    <url>/2020/08/13/delta-matlab/delta-matlab/</url>
-    <content><![CDATA[<h1 id="Delta正逆解（matlab）"><a href="#Delta正逆解（matlab）" class="headerlink" title="Delta正逆解（matlab）"></a>Delta正逆解（matlab）</h1><p>课题里用到一部分关于delta底座的结构，所以进行了相应的理论推导及运动空间求解，工具是万能的matlab，这里记录一下。</p>
-<p>记录内容：目前精度、推导问题、相关文献…</p>
-<a id="more"></a>
-
-<p>初步代码正逆解精度：</p>
-<p>电机转角误差在0.1度左右，坐标误差在毫米个位数级别，感觉没有特别精确，师兄那套复杂并联都小数点后三位级别了，但是我目前想不到对算法进行优化的方式，不过先搁置吧，先去做绳驱那部分的机构，最后再回来优化。</p>
-<p>推导来源：</p>
-<p>正解理论依据我看的是工大03年赵杰老师的一篇期刊，应用平移几何进行简化，用向量实现对于动平台中心点运动状态的描述</p>
-<p>（这里有个小问题，看期刊的时候，几何向量中求解垂直向量时，期刊里的公式是错的（也有可能03年就是错误公式？？？），哈哈哈，这里我换了一种平移方式，构成多面体进行解析）</p>
-<p>逆解理论来源是16年黄师兄的硕士毕业论文，借鉴了一下他的单几何方式，组成方程组进行求解，这个方式得出的结果精度也比较高。</p>
-<p>误差主要来源于正解，现在不知为什么，以后待解决。</p>
-<p>以下是代码主体，参数不放了</p>
-<p>正解：</p>
-<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[Z]</span> = <span class="title">FK3</span><span class="params">(a1,a2,a3)</span></span></span><br><span class="line">R</span><br><span class="line">r</span><br><span class="line">Lac</span><br><span class="line">Lbc</span><br><span class="line">theta1 = a1*<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">theta2 = a2*<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">theta3 = a3*<span class="built_in">pi</span>/<span class="number">180</span>;*</span><br><span class="line"></span><br><span class="line">beta1=(<span class="number">1</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta2=(<span class="number">2</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta3=(<span class="number">3</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>; </span><br><span class="line"></span><br><span class="line">OA1=R*[<span class="built_in">cos</span>(beta1);<span class="built_in">sin</span>(beta1);<span class="number">0</span>];</span><br><span class="line">OA2=R*[<span class="built_in">cos</span>(beta2);<span class="built_in">sin</span>(beta2);<span class="number">0</span>];</span><br><span class="line">OA3=R*[<span class="built_in">cos</span>(beta3);<span class="built_in">sin</span>(beta3);<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">OE1=R*[(R-r+Lac*<span class="built_in">cos</span>(theta1))*<span class="built_in">cos</span>(beta1);(R-r+Lac*<span class="built_in">cos</span>(theta1))*<span class="built_in">sin</span>(beta1);-Lac*<span class="built_in">sin</span>(theta1)];</span><br><span class="line">OE2=R*[(R-r+Lac*<span class="built_in">cos</span>(theta2))*<span class="built_in">cos</span>(beta2);(R-r+Lac*<span class="built_in">cos</span>(theta2))*<span class="built_in">sin</span>(beta2);-Lac*<span class="built_in">sin</span>(theta2)];</span><br><span class="line">OE3=R*[(R-r+Lac*<span class="built_in">cos</span>(theta3))*<span class="built_in">cos</span>(beta3);(R-r+Lac*<span class="built_in">cos</span>(theta3))*<span class="built_in">sin</span>(beta3);-Lac*<span class="built_in">sin</span>(theta3)];</span><br><span class="line">OG=<span class="number">0.5</span>*(OE1+OE2);</span><br><span class="line">E1E2=OE2-OE1;</span><br><span class="line">E2E3=OE3-OE2;</span><br><span class="line">E3E1=OE1-OE3;</span><br><span class="line">a=norm(E1E2); </span><br><span class="line">b=norm(E2E3);</span><br><span class="line">c=norm(E3E1);</span><br><span class="line"></span><br><span class="line">p=(a+b+c)/<span class="number">2</span>;</span><br><span class="line">s=<span class="built_in">sqrt</span>(p*(p-a)*(p-b)*(p-c));</span><br><span class="line"><span class="comment">%E1E2E3 </span></span><br><span class="line">d=(a*b*c)/(<span class="number">4</span>*s);</span><br><span class="line">f=(d^<span class="number">2</span><span class="number">-0.25</span>*a^<span class="number">2</span>);</span><br><span class="line">if f&gt;=0 #这里进行筛选，开始出现复数结果还很奇怪233，这个可以解决</span><br><span class="line">    f1=<span class="built_in">sqrt</span>(f);</span><br><span class="line">    n_GF1=<span class="built_in">cross</span>(<span class="built_in">cross</span>(E2E3,E3E1),E1E2);</span><br><span class="line">    g=norm(n_GF1);</span><br><span class="line">    n_GF = n_GF1/g;</span><br><span class="line">    GF= n_GF*f1;n_FP1=<span class="built_in">cross</span>(E1E2,E2E3);</span><br><span class="line">h=norm(n_FP1);</span><br><span class="line">n_FP=n_FP1/h;</span><br><span class="line"><span class="comment">%FP  |FP|</span></span><br><span class="line"><span class="built_in">i</span>=<span class="built_in">sqrt</span>(Lbc^<span class="number">2</span>-d^<span class="number">2</span>);</span><br><span class="line">FP = n_FP*<span class="built_in">i</span>;</span><br><span class="line">OP=<span class="number">0.5</span>*(OE1+OE2)+GF+FP;</span><br><span class="line">S=OP;</span><br><span class="line"></span><br><span class="line"> e1=[<span class="number">1</span>;<span class="number">0</span>;<span class="number">0</span>];</span><br><span class="line"> e2=[<span class="number">0</span>;<span class="number">1</span>;<span class="number">0</span>];</span><br><span class="line"> e3=[<span class="number">0</span>;<span class="number">0</span>;<span class="number">1</span>];</span><br><span class="line"> x=S'*e1;</span><br><span class="line"> y=S'*e2;</span><br><span class="line"> z=S'*e3;</span><br><span class="line">Ponit=[x,y,z]</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">disp</span>(<span class="string">'空间外'</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></tbody></table></figure>
-<p>逆解代码：</p>
-<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[thetas]</span> = <span class="title">IK3</span><span class="params">(x,y,z)</span></span></span><br><span class="line">R   </span><br><span class="line">r</span><br><span class="line">Lac  </span><br><span class="line">Lbc </span><br><span class="line">p=[x;y;z];</span><br><span class="line">beta1=(<span class="number">1</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta2=(<span class="number">2</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta3=(<span class="number">3</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>; </span><br><span class="line"><span class="comment">%OP=OA+AC+CB+BP</span></span><br><span class="line"><span class="comment">%OP-OA+PB-Lac*n_AC=Lbc_n_CB</span></span><br><span class="line"><span class="comment">% N_AC1=[cos(beta1)cos(theta1)];</span></span><br><span class="line">r1=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta1)*(x+(r-R)*<span class="built_in">cos</span>(beta1))+<span class="built_in">sin</span>(beta1)*(y+(r-R)*<span class="built_in">sin</span>(beta1)));</span><br><span class="line">r2=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta2)*(x+(r-R)*<span class="built_in">cos</span>(beta2))+<span class="built_in">sin</span>(beta2)*(y+(r-R)*<span class="built_in">sin</span>(beta2)));</span><br><span class="line">r3=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta3)*(x+(r-R)*<span class="built_in">cos</span>(beta3))+<span class="built_in">sin</span>(beta3)*(y+(r-R)*<span class="built_in">sin</span>(beta3)));</span><br><span class="line">s1=<span class="number">2</span>*Lac*z;</span><br><span class="line">s2=<span class="number">2</span>*Lac*z;</span><br><span class="line">s3=<span class="number">2</span>*Lac*z;</span><br><span class="line">t1=(x+(r-R)*<span class="built_in">cos</span>(beta1))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta1))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line">t2=(x+(r-R)*<span class="built_in">cos</span>(beta2))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta2))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line">t3=(x+(r-R)*<span class="built_in">cos</span>(beta3))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta3))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line"><span class="comment">%rcostheta+ssintheta+t=0;</span></span><br><span class="line"><span class="keyword">if</span> t1-r1==<span class="number">0</span></span><br><span class="line">    theta1=<span class="number">2</span>*<span class="built_in">atan</span>((-r1-t1)/(<span class="number">2</span>*s1));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta1=<span class="number">2</span>*<span class="built_in">atan</span>((-s1-<span class="built_in">sqrt</span>(r1^<span class="number">2</span>+s1^<span class="number">2</span>-t1^<span class="number">2</span>))/(t1-r1));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">if</span> t2-r2==<span class="number">0</span></span><br><span class="line">    theta2=<span class="number">2</span>*<span class="built_in">atan</span>((-r2-t2)/(<span class="number">2</span>*s2));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta2=<span class="number">2</span>*<span class="built_in">atan</span>((-s2-<span class="built_in">sqrt</span>(r2^<span class="number">2</span>+s2^<span class="number">2</span>-t2^<span class="number">2</span>))/(t2-r2));</span><br><span class="line"><span class="keyword">end</span>    </span><br><span class="line"><span class="keyword">if</span> t3-r3==<span class="number">0</span></span><br><span class="line">    theta3=<span class="number">2</span>*<span class="built_in">atan</span>((-r3-t3)/(<span class="number">2</span>*s3));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta3=<span class="number">2</span>*<span class="built_in">atan</span>((-s3-<span class="built_in">sqrt</span>(r3^<span class="number">2</span>+s3^<span class="number">2</span>-t3^<span class="number">2</span>))/(t3-r3));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">thetas=[theta1;theta2;theta3]*<span class="number">180</span>/<span class="built_in">pi</span>;</span><br></pre></td></tr></tbody></table></figure>
-
-<p>（待优化）</p>
-<p>关于8组逆解的问题，这套方案已经进行了排除。</p>
-<p>奇异位置分析内容（待补充）。</p>
-<p>接下来写雅各比速度推导，后续还会补充控制方案，伸缩机构可能会写一篇，看设计的情况了。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>dynamixelros</title>
-    <url>/2020/07/28/dynamixelros/dynamixelros/</url>
-    <content><![CDATA[<h1 id="Dynamixel-workbench"><a href="#Dynamixel-workbench" class="headerlink" title="Dynamixel_workbench"></a>Dynamixel_workbench</h1><p>目的：解析一下workbench包以及dynamixel_motor包，复习语法以及ros基础</p>
-<a id="more"></a>
-
-<p>dynamixel_workbench </p>
-<p>0.dynamixel_workbench </p>
-<p>package.xml</p>
-<p>workbench 用于ros开发</p>
-<p>1.controllers  查询电机属性</p>
-<p>2.operators 控制电机</p>
-<p>3.toolbox 库</p>
-<h2 id="dynamixel-motor-python"><a href="#dynamixel-motor-python" class="headerlink" title="dynamixel_motor(python)"></a>dynamixel_motor(python)</h2><p>该软件包包含一个可配置的节点，服务和一个生成器脚本，用于启动，停止和重新启动一个或多个控制器插件。 为常见的Dynamixel电机接头定义了可重复使用的控制器类型。 可以为每个关节设置速度和扭矩。 此python软件包可由更特定的机器人控制器使用，并且所有可配置的参数都可以通过yaml文件加载。</p>
-<p>1.controllers</p>
-<p>node</p>
-<p>controller_manager:</p>
-<p>controller_spawner:</p>
-<p>2.driver</p>
-<p>该软件包为Robotis Dynamixel伺服器提供了低电平IO。 完全支持AX-12，AX-18，RX-24，RX-28，MX-28，RX-64，EX-106型号并经过测试。 定义了特定于硬件的常量，用于从Dynamixel伺服器读取信息或向其写入信息。 大多数ROS用户都不会直接使用此低级软件包。 更高级别的dynamixel_controllers和特定的机器人关节控制器使用此程序包。</p>
-<p>3.motor</p>
-<p>4.msgs</p>
-<p>整个dynamixel_motor堆栈使用的常见消息。</p>
-<p>5.tutorials</p>
-<p>dynamixel_motor堆栈的示例配置和启动文件。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>delta_ros</title>
-    <url>/2020/09/11/delta-ros/delta-ros/</url>
-    <content><![CDATA[<p>记录delta算法</p>
-<p>（1）实现了Delta型机器人的正逆运动学及其速度空间变换，见DeltaRobotKinematics类<br>（2）实现了关节空间和直线轨迹的运动规划，能够设置加减速因子，见DeltaRobotMotionPlanning类<br>（3）实现了Delta机器人的位置控制和速度控制，见DeltaRobotControl类</p>
-<p><a href="https://github.com/zhonghang1187151422/Mini-delta-robot.git" target="_blank" rel="noopener">https://github.com/zhonghang1187151422/Mini-delta-robot.git</a></p>
-<p><a href="https://github.com/manuelilg/eeduro_delta.git" target="_blank" rel="noopener">https://github.com/manuelilg/eeduro_delta.git</a></p>
-<p><a href="https://github.com/RemcoKuijpers/delta_robot_simulation.git" target="_blank" rel="noopener">https://github.com/RemcoKuijpers/delta_robot_simulation.git</a></p>
-<p><a href="https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo" target="_blank" rel="noopener">https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo</a></p>
-<p>关于ros2的delta运动规划</p>
-<p><a href="https://github.com/manuelilg?tab=repositories" target="_blank" rel="noopener">https://github.com/manuelilg?tab=repositories</a></p>
-<p>学习一下</p>
-]]></content>
   </entry>
   <entry>
     <title>c++_qt_note</title>
@@ -842,6 +717,78 @@
 ]]></content>
   </entry>
   <entry>
+    <title>configure_bag</title>
+    <url>/2020/11/30/configure-bag/configure-bag/</url>
+    <content><![CDATA[<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
+<p>以及补充后续图像处理相关项目内容</p>
+<a id="more"></a>
+
+<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
+<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
+<p>（原因后续深入了解了之后继续补充）</p>
+<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
+<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
+<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;/dev/null | grep '\.rp_filter'</span><br></pre></td></tr></tbody></table></figure>
+
+<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter=0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter=0</span><br></pre></td></tr></tbody></table></figure>
+
+<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
+<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
+<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
+<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
+<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
+]]></content>
+      <categories>
+        <category>camera</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Silence</title>
+    <url>/2024/03/20/Silence/Silence/</url>
+    <content><![CDATA[<p>沉默的大多数决定一切，当然也可能一点不重要</p>
+<a id="more"></a>
+
+<p>之前很喜欢一个民谣歌手，从崖边跌落开始入坑，最后听的是茶酒伴，再然后就听的少了许多，可能是因为随着年龄增长，越来越喜欢怀旧，容易留恋过去，导致对于新鲜的事物接受度越来越低，新出的歌听起来总是没什么感觉，看到歌手各种各样“叛逆”动态，心里想想开心就好，自己没啥资格留下对别人的评论，于是就沉默下来，每个人都是为自己活着，确实是自己开心就好。</p>
+<p>不幸的是，现实里却常常事与愿违，面对上位压迫，往往还是会做出妥协，面对下位请求，则是做自己，这样的做法是否是真的做自己呢？印象里有一次评论区说一句喜欢过去的借我，春花发出近乎切割这首歌的言论，但是后来雷军转发，还是转的歌手原版本，春花也会出来营业，不知道那时候心里作何想法。</p>
+<p>无意贬低任何人，只是在描述自己看到的一切，毕竟自己也是个俗人，在面对不影响自己太大利益的问题前，我会做到保持自我，开心就好，但是面对不可抵抗的问题，我也常常妥协，只是常常会思考，这个百分比占到多少才能算开心就好，坦然接受不纯粹，是不是也算？</p>
+<p>过去几年发生的很多事情改变了我很多对于这个世界的看法，依据不同的标准，就会做出不同的判断，以生死或者身边亲人朋友庞大的利益关系作为标准，沉默的大多数就不能被忽视，除非狠得下心放弃一切，所以最终大家都会成为俗人，只是没有被逼到那个程度（战争年代保有信仰的先辈是真的值得敬佩），这也是当今各种制度能够运行的基础，天下乌鸦一般黑，哪有绝对的是非对错，如果有，那只能是数学，但是这个世界又没有完全独立运转的事物，常常都是混杂在一起，所有常说难得糊涂，没有绝对的邪恶，只有正义的偏离。</p>
+<p>言归正传，借用之前自己一句评论，朴树的歌能让我从难过变得平和，而春花的歌让我从平和到更加平和，未来依然会喜欢他们，但是也很好奇未来会是什么样子，毕竟很多老牌歌手几十年了还是被粉丝要求唱同一首歌，很喜欢观察完全不同生活的变化轨迹。</p>
+<p>沉默、沉默，既要真实也要沉默，不带功利心的做一些事，人生才能持续下去…</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>emo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>daliy_life</title>
+    <url>/2020/08/17/daliy-life/daliy-life/</url>
+    <content><![CDATA[<h1 id="处事之则，日常所想"><a href="#处事之则，日常所想" class="headerlink" title="处事之则，日常所想"></a>处事之则，日常所想</h1><p>搭模型的时候，听了听电视剧琅琊榜的电台，听到景睿的台词，有点感触，为人处世就应该这样，清清爽爽，潇洒一生。</p>
+<p>不为蝇营狗苟之事，不对他人做过分之求，一切唯心而已。</p>
+<h4 id="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"><a href="#“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。" class="headerlink" title="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"></a>“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。</h4><h4 id="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"><a href="#我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。" class="headerlink" title="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"></a>我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。</h4><h4 id="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"><a href="#若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也" class="headerlink" title="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"></a>若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也</h4><h4 id="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"><a href="#没有责任要以我为先，以我为重。无论我如何希望也不能强求。" class="headerlink" title="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"></a>没有责任要以我为先，以我为重。无论我如何希望也不能强求。</h4><h4 id="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"><a href="#我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也" class="headerlink" title="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"></a>我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也</h4><h4 id="没有什么可后悔的。”"><a href="#没有什么可后悔的。”" class="headerlink" title="没有什么可后悔的。”"></a>没有什么可后悔的。”</h4>]]></content>
+      <categories>
+        <category>touch_fish</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>delta_ros</title>
+    <url>/2020/09/11/delta-ros/delta-ros/</url>
+    <content><![CDATA[<p>记录delta算法</p>
+<p>（1）实现了Delta型机器人的正逆运动学及其速度空间变换，见DeltaRobotKinematics类<br>（2）实现了关节空间和直线轨迹的运动规划，能够设置加减速因子，见DeltaRobotMotionPlanning类<br>（3）实现了Delta机器人的位置控制和速度控制，见DeltaRobotControl类</p>
+<p><a href="https://github.com/zhonghang1187151422/Mini-delta-robot.git" target="_blank" rel="noopener">https://github.com/zhonghang1187151422/Mini-delta-robot.git</a></p>
+<p><a href="https://github.com/manuelilg/eeduro_delta.git" target="_blank" rel="noopener">https://github.com/manuelilg/eeduro_delta.git</a></p>
+<p><a href="https://github.com/RemcoKuijpers/delta_robot_simulation.git" target="_blank" rel="noopener">https://github.com/RemcoKuijpers/delta_robot_simulation.git</a></p>
+<p><a href="https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo" target="_blank" rel="noopener">https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo</a></p>
+<p>关于ros2的delta运动规划</p>
+<p><a href="https://github.com/manuelilg?tab=repositories" target="_blank" rel="noopener">https://github.com/manuelilg?tab=repositories</a></p>
+<p>学习一下</p>
+]]></content>
+  </entry>
+  <entry>
     <title>fluid_model</title>
     <url>/2021/02/03/fluid-model/fluid-model/</url>
     <content><![CDATA[<h1 id="流体相关"><a href="#流体相关" class="headerlink" title="流体相关"></a>流体相关</h1><p>开个坑，后续补充</p>
@@ -853,6 +800,59 @@
       <categories>
         <category>learning</category>
       </categories>
+  </entry>
+  <entry>
+    <title>dynamixelros</title>
+    <url>/2020/07/28/dynamixelros/dynamixelros/</url>
+    <content><![CDATA[<h1 id="Dynamixel-workbench"><a href="#Dynamixel-workbench" class="headerlink" title="Dynamixel_workbench"></a>Dynamixel_workbench</h1><p>目的：解析一下workbench包以及dynamixel_motor包，复习语法以及ros基础</p>
+<a id="more"></a>
+
+<p>dynamixel_workbench </p>
+<p>0.dynamixel_workbench </p>
+<p>package.xml</p>
+<p>workbench 用于ros开发</p>
+<p>1.controllers  查询电机属性</p>
+<p>2.operators 控制电机</p>
+<p>3.toolbox 库</p>
+<h2 id="dynamixel-motor-python"><a href="#dynamixel-motor-python" class="headerlink" title="dynamixel_motor(python)"></a>dynamixel_motor(python)</h2><p>该软件包包含一个可配置的节点，服务和一个生成器脚本，用于启动，停止和重新启动一个或多个控制器插件。 为常见的Dynamixel电机接头定义了可重复使用的控制器类型。 可以为每个关节设置速度和扭矩。 此python软件包可由更特定的机器人控制器使用，并且所有可配置的参数都可以通过yaml文件加载。</p>
+<p>1.controllers</p>
+<p>node</p>
+<p>controller_manager:</p>
+<p>controller_spawner:</p>
+<p>2.driver</p>
+<p>该软件包为Robotis Dynamixel伺服器提供了低电平IO。 完全支持AX-12，AX-18，RX-24，RX-28，MX-28，RX-64，EX-106型号并经过测试。 定义了特定于硬件的常量，用于从Dynamixel伺服器读取信息或向其写入信息。 大多数ROS用户都不会直接使用此低级软件包。 更高级别的dynamixel_controllers和特定的机器人关节控制器使用此程序包。</p>
+<p>3.motor</p>
+<p>4.msgs</p>
+<p>整个dynamixel_motor堆栈使用的常见消息。</p>
+<p>5.tutorials</p>
+<p>dynamixel_motor堆栈的示例配置和启动文件。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>delta_matlab</title>
+    <url>/2020/08/13/delta-matlab/delta-matlab/</url>
+    <content><![CDATA[<h1 id="Delta正逆解（matlab）"><a href="#Delta正逆解（matlab）" class="headerlink" title="Delta正逆解（matlab）"></a>Delta正逆解（matlab）</h1><p>课题里用到一部分关于delta底座的结构，所以进行了相应的理论推导及运动空间求解，工具是万能的matlab，这里记录一下。</p>
+<p>记录内容：目前精度、推导问题、相关文献…</p>
+<a id="more"></a>
+
+<p>初步代码正逆解精度：</p>
+<p>电机转角误差在0.1度左右，坐标误差在毫米个位数级别，感觉没有特别精确，师兄那套复杂并联都小数点后三位级别了，但是我目前想不到对算法进行优化的方式，不过先搁置吧，先去做绳驱那部分的机构，最后再回来优化。</p>
+<p>推导来源：</p>
+<p>正解理论依据我看的是工大03年赵杰老师的一篇期刊，应用平移几何进行简化，用向量实现对于动平台中心点运动状态的描述</p>
+<p>（这里有个小问题，看期刊的时候，几何向量中求解垂直向量时，期刊里的公式是错的（也有可能03年就是错误公式？？？），哈哈哈，这里我换了一种平移方式，构成多面体进行解析）</p>
+<p>逆解理论来源是16年黄师兄的硕士毕业论文，借鉴了一下他的单几何方式，组成方程组进行求解，这个方式得出的结果精度也比较高。</p>
+<p>误差主要来源于正解，现在不知为什么，以后待解决。</p>
+<p>以下是代码主体，参数不放了</p>
+<p>正解：</p>
+<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[Z]</span> = <span class="title">FK3</span><span class="params">(a1,a2,a3)</span></span></span><br><span class="line">R</span><br><span class="line">r</span><br><span class="line">Lac</span><br><span class="line">Lbc</span><br><span class="line">theta1 = a1*<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">theta2 = a2*<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">theta3 = a3*<span class="built_in">pi</span>/<span class="number">180</span>;*</span><br><span class="line"></span><br><span class="line">beta1=(<span class="number">1</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta2=(<span class="number">2</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta3=(<span class="number">3</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>; </span><br><span class="line"></span><br><span class="line">OA1=R*[<span class="built_in">cos</span>(beta1);<span class="built_in">sin</span>(beta1);<span class="number">0</span>];</span><br><span class="line">OA2=R*[<span class="built_in">cos</span>(beta2);<span class="built_in">sin</span>(beta2);<span class="number">0</span>];</span><br><span class="line">OA3=R*[<span class="built_in">cos</span>(beta3);<span class="built_in">sin</span>(beta3);<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">OE1=R*[(R-r+Lac*<span class="built_in">cos</span>(theta1))*<span class="built_in">cos</span>(beta1);(R-r+Lac*<span class="built_in">cos</span>(theta1))*<span class="built_in">sin</span>(beta1);-Lac*<span class="built_in">sin</span>(theta1)];</span><br><span class="line">OE2=R*[(R-r+Lac*<span class="built_in">cos</span>(theta2))*<span class="built_in">cos</span>(beta2);(R-r+Lac*<span class="built_in">cos</span>(theta2))*<span class="built_in">sin</span>(beta2);-Lac*<span class="built_in">sin</span>(theta2)];</span><br><span class="line">OE3=R*[(R-r+Lac*<span class="built_in">cos</span>(theta3))*<span class="built_in">cos</span>(beta3);(R-r+Lac*<span class="built_in">cos</span>(theta3))*<span class="built_in">sin</span>(beta3);-Lac*<span class="built_in">sin</span>(theta3)];</span><br><span class="line">OG=<span class="number">0.5</span>*(OE1+OE2);</span><br><span class="line">E1E2=OE2-OE1;</span><br><span class="line">E2E3=OE3-OE2;</span><br><span class="line">E3E1=OE1-OE3;</span><br><span class="line">a=norm(E1E2); </span><br><span class="line">b=norm(E2E3);</span><br><span class="line">c=norm(E3E1);</span><br><span class="line"></span><br><span class="line">p=(a+b+c)/<span class="number">2</span>;</span><br><span class="line">s=<span class="built_in">sqrt</span>(p*(p-a)*(p-b)*(p-c));</span><br><span class="line"><span class="comment">%E1E2E3 </span></span><br><span class="line">d=(a*b*c)/(<span class="number">4</span>*s);</span><br><span class="line">f=(d^<span class="number">2</span><span class="number">-0.25</span>*a^<span class="number">2</span>);</span><br><span class="line">if f&gt;=0 #这里进行筛选，开始出现复数结果还很奇怪233，这个可以解决</span><br><span class="line">    f1=<span class="built_in">sqrt</span>(f);</span><br><span class="line">    n_GF1=<span class="built_in">cross</span>(<span class="built_in">cross</span>(E2E3,E3E1),E1E2);</span><br><span class="line">    g=norm(n_GF1);</span><br><span class="line">    n_GF = n_GF1/g;</span><br><span class="line">    GF= n_GF*f1;n_FP1=<span class="built_in">cross</span>(E1E2,E2E3);</span><br><span class="line">h=norm(n_FP1);</span><br><span class="line">n_FP=n_FP1/h;</span><br><span class="line"><span class="comment">%FP  |FP|</span></span><br><span class="line"><span class="built_in">i</span>=<span class="built_in">sqrt</span>(Lbc^<span class="number">2</span>-d^<span class="number">2</span>);</span><br><span class="line">FP = n_FP*<span class="built_in">i</span>;</span><br><span class="line">OP=<span class="number">0.5</span>*(OE1+OE2)+GF+FP;</span><br><span class="line">S=OP;</span><br><span class="line"></span><br><span class="line"> e1=[<span class="number">1</span>;<span class="number">0</span>;<span class="number">0</span>];</span><br><span class="line"> e2=[<span class="number">0</span>;<span class="number">1</span>;<span class="number">0</span>];</span><br><span class="line"> e3=[<span class="number">0</span>;<span class="number">0</span>;<span class="number">1</span>];</span><br><span class="line"> x=S'*e1;</span><br><span class="line"> y=S'*e2;</span><br><span class="line"> z=S'*e3;</span><br><span class="line">Ponit=[x,y,z]</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">disp</span>(<span class="string">'空间外'</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></tbody></table></figure>
+<p>逆解代码：</p>
+<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[thetas]</span> = <span class="title">IK3</span><span class="params">(x,y,z)</span></span></span><br><span class="line">R   </span><br><span class="line">r</span><br><span class="line">Lac  </span><br><span class="line">Lbc </span><br><span class="line">p=[x;y;z];</span><br><span class="line">beta1=(<span class="number">1</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta2=(<span class="number">2</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta3=(<span class="number">3</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>; </span><br><span class="line"><span class="comment">%OP=OA+AC+CB+BP</span></span><br><span class="line"><span class="comment">%OP-OA+PB-Lac*n_AC=Lbc_n_CB</span></span><br><span class="line"><span class="comment">% N_AC1=[cos(beta1)cos(theta1)];</span></span><br><span class="line">r1=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta1)*(x+(r-R)*<span class="built_in">cos</span>(beta1))+<span class="built_in">sin</span>(beta1)*(y+(r-R)*<span class="built_in">sin</span>(beta1)));</span><br><span class="line">r2=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta2)*(x+(r-R)*<span class="built_in">cos</span>(beta2))+<span class="built_in">sin</span>(beta2)*(y+(r-R)*<span class="built_in">sin</span>(beta2)));</span><br><span class="line">r3=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta3)*(x+(r-R)*<span class="built_in">cos</span>(beta3))+<span class="built_in">sin</span>(beta3)*(y+(r-R)*<span class="built_in">sin</span>(beta3)));</span><br><span class="line">s1=<span class="number">2</span>*Lac*z;</span><br><span class="line">s2=<span class="number">2</span>*Lac*z;</span><br><span class="line">s3=<span class="number">2</span>*Lac*z;</span><br><span class="line">t1=(x+(r-R)*<span class="built_in">cos</span>(beta1))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta1))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line">t2=(x+(r-R)*<span class="built_in">cos</span>(beta2))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta2))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line">t3=(x+(r-R)*<span class="built_in">cos</span>(beta3))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta3))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line"><span class="comment">%rcostheta+ssintheta+t=0;</span></span><br><span class="line"><span class="keyword">if</span> t1-r1==<span class="number">0</span></span><br><span class="line">    theta1=<span class="number">2</span>*<span class="built_in">atan</span>((-r1-t1)/(<span class="number">2</span>*s1));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta1=<span class="number">2</span>*<span class="built_in">atan</span>((-s1-<span class="built_in">sqrt</span>(r1^<span class="number">2</span>+s1^<span class="number">2</span>-t1^<span class="number">2</span>))/(t1-r1));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">if</span> t2-r2==<span class="number">0</span></span><br><span class="line">    theta2=<span class="number">2</span>*<span class="built_in">atan</span>((-r2-t2)/(<span class="number">2</span>*s2));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta2=<span class="number">2</span>*<span class="built_in">atan</span>((-s2-<span class="built_in">sqrt</span>(r2^<span class="number">2</span>+s2^<span class="number">2</span>-t2^<span class="number">2</span>))/(t2-r2));</span><br><span class="line"><span class="keyword">end</span>    </span><br><span class="line"><span class="keyword">if</span> t3-r3==<span class="number">0</span></span><br><span class="line">    theta3=<span class="number">2</span>*<span class="built_in">atan</span>((-r3-t3)/(<span class="number">2</span>*s3));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta3=<span class="number">2</span>*<span class="built_in">atan</span>((-s3-<span class="built_in">sqrt</span>(r3^<span class="number">2</span>+s3^<span class="number">2</span>-t3^<span class="number">2</span>))/(t3-r3));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">thetas=[theta1;theta2;theta3]*<span class="number">180</span>/<span class="built_in">pi</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>（待优化）</p>
+<p>关于8组逆解的问题，这套方案已经进行了排除。</p>
+<p>奇异位置分析内容（待补充）。</p>
+<p>接下来写雅各比速度推导，后续还会补充控制方案，伸缩机构可能会写一篇，看设计的情况了。</p>
+]]></content>
   </entry>
   <entry>
     <title>ff14宏</title>
@@ -1011,101 +1011,6 @@
       </categories>
   </entry>
   <entry>
-    <title>gcyyy</title>
-    <url>/2021/09/10/gcyyy/gcyyy/</url>
-    <content><![CDATA[<h1 id="并联机构弹性动力学建模与振动主动控制论文"><a href="#并联机构弹性动力学建模与振动主动控制论文" class="headerlink" title="并联机构弹性动力学建模与振动主动控制论文"></a>并联机构弹性动力学建模与振动主动控制论文</h1><p>2021.9.8</p>
-<h4 id="并联机器人高维运动规划研究–刚柔耦合"><a href="#并联机器人高维运动规划研究–刚柔耦合" class="headerlink" title="并联机器人高维运动规划研究–刚柔耦合"></a>并联机器人高维运动规划研究–刚柔耦合</h4><p>非线性力学———–形变+运动规划——–非线性数学模型———–弹性运动规划算法</p>
-<p>无碰撞未超过运动规划极限–自由位形</p>
-<p>（缺少论文整理部分）</p>
-<a id="more"></a>
-
-<p><strong>特殊规划-路径无奇异且路径具备刚度与精度</strong></p>
-<p>弹性路径数学模型–内力与内力矩微分方程传递性，作用于整条路径，外部不具有传递性，只发生于作用点。</p>
-<p>本构模型—激励与响应的关系</p>
-<p>路径形变控制机理</p>
-<p>子任务内容：耦合作用机理、弹性运动模型、运动控制反解模型</p>
-<p><strong>联合运动</strong>：动舵/直接力复合控制的难点在于如何有效、快速地融合气动舵的连续输出与直接力的离散输出。传统的优化融合策略需在每个控制周期内求解最优分配问题，这将消耗大量的机载计算资源。</p>
-<p>问题：非线性弹性动力模型建立不够清晰</p>
-<p>来源：TUOsd_cjm</p>
-<p>动力模型过程清晰，验证存在一定疑问</p>
-<p>3RRR构型</p>
-<p>柔性机器人-造价低、操作速度快、驱动力小、能耗低、良好的机动性能、安全性高</p>
-<p>关键词：并联、刚柔耦合动力学、振动抑制</p>
-<p>杆件关节变形能</p>
-<p>柔性机器人动力学方程–多自由度偏微分方程–有限维常微分方程近似替代</p>
-<p>连续系统离散化处理—假设模态法AMM、有限元方法FEM、集中参数法IPM。</p>
-<p>记录一下小概念</p>
-<p><strong>动力学方程</strong>：研究力和位移或力矩和转角的关系</p>
-<ol>
-<li>获得描述广义坐标随时间变化的闭环方程—–牛顿拉格朗日</li>
-<li>给定广义坐标后，需要给系统多大的广义力，可以实现预期的广义坐标轨迹——-牛顿欧拉</li>
-</ol>
-<p>动力学建模方法：笛卡尔坐标、关节坐标、动力学样条法、波方法，李群李代数。</p>
-<p>柔性机器人振动控制：</p>
-<p>被动控制：</p>
-<ul>
-<li>优化构件截面参数及几何参数</li>
-<li>复合材料替代金属材料</li>
-<li>阻尼处理构件–减振</li>
-</ul>
-<p>主动控制：</p>
-<ul>
-<li>传感器与作动器</li>
-<li>设计多个可控原动件的受控机构</li>
-<li>基于动力模型的控制系统</li>
-</ul>
-<p>压电陶瓷片</p>
-<p>压电陶瓷驱动器相关应用：压电驱动器绑定在弹性结构表面或嵌入压层复合材料中Edward</p>
-<p>柔性机器人研究包含毂-两结构、柔性两杆和四杆机构，对于柔性并联研究较少。</p>
-<p>质量、运动轨迹导致各关节驱动力矩和能耗差别很大</p>
-<h2 id="柔性机器人动力学特性分析内容"><a href="#柔性机器人动力学特性分析内容" class="headerlink" title="柔性机器人动力学特性分析内容"></a>柔性机器人动力学特性分析内容</h2><p>频率特性分析、灵敏度分析、模态分析、动应力分析</p>
-<p>系统弹性振动主要有低阶模态决定，固有频率越低，系统刚度越小，越容易振动</p>
-<p>两步法：KED假设弹性变形位移是小的，忽略弹性变形对于刚体运动的影响，建立系统刚体动力学方程，将运动学变量带入弹性变形运动动力学方程。</p>
-<p>一步法：考虑刚体运动与弹性变形运动耦合，更精确的模型求解方法</p>
-<h2 id="力热固耦合弹性动力学（一致温度）"><a href="#力热固耦合弹性动力学（一致温度）" class="headerlink" title="力热固耦合弹性动力学（一致温度）"></a>力热固耦合弹性动力学（一致温度）</h2><p>基于有限元方法和Hamilton原理</p>
-<p>建立单元弹性动力学模型，假设热载荷导致机构产生的变形量与应力导致的变形线性且各向同性，建立联立应变方程。</p>
-<p>基于ANSYS瞬态动力学仿真，计算了主动关节和被动关节没有热载荷和多种温度下最大等效应力图</p>
-<p>记录了多地温度变化曲线，测量连杆最大等效应力随时间的变化关系</p>
-<p><strong>结论：</strong>温度变化，最大等效应力保持周期性上升；气温不变，最大等效应力保持周期性稳定。</p>
-<p>温度高低不是决定因素，温差大小决定应力变化</p>
-<p>柔性并联机器人的动态性能不仅与温度该改变量大小和材料的温度膨胀系数有关，而且与温度变化曲线也密切相关。</p>
-<p><em>文章通过气象台的温度数据，导入CFD软件中，进行瞬态动力学分析，得到应力变化图，进而分析温度关系</em>，还是没能给出一个直接的解析式呀，复杂机构的耦合动力学模型建模还是一个难解。</p>
-<h2 id="弹性动力学的动力钢化问题"><a href="#弹性动力学的动力钢化问题" class="headerlink" title="弹性动力学的动力钢化问题"></a>弹性动力学的动力钢化问题</h2><p>高速、高加速柔性并联机器人是否存在动力钢化现象。</p>
-<p>单元–系统   </p>
-<p>一阶近似耦合模型FOAC:包含名义运动相关的<em>动力刚度项</em></p>
-<p>传统混合坐标建模方法 ZOAC：无法很好的反应系统的动力学性能，假设轴向与横向变形位移解耦。适用于并联机构</p>
-<p>无论系统运动速度、加速度多大，系统刚度项对系统动力学特性影响微小。</p>
-<p>执行机构动力学模型建立结束，基于模型的振动控制</p>
-<h2 id="主动振动控制研究"><a href="#主动振动控制研究" class="headerlink" title="主动振动控制研究"></a>主动振动控制研究</h2><p>控制目的：抑制并联机器人柔性连杆的残余振动，保证动平台精确地到达给定的位姿。</p>
-<p>PZT压电驱动器作用机理：给驱动器施加电压信号，PZT驱动器产生应变，在驱动器两端，这种应变将在梁单元对应的位置上引起剪切变形</p>
-<p>通过驱动器对梁单元施加外力矩</p>
-<p>控制器优化方向-能量优化，在更低的控制电压下可以取得更好的控制效果。一对PZT控制效果优于一片。</p>
-<p>控制内容后续完善</p>
-<p><strong>结论：</strong>单独控制柔性杆时，可以抑制自身的弹性振动，无法控制其他两柔性杆振动，当三根杆同时振动时，各柔性杆的弹性振动都能得到很好的抑制。</p>
-<p>平台质量和运动轨迹对驱动能耗有直接影响。—–</p>
-<p><em>轻量化设计以及轨迹规划内容，不过这篇文章感觉这部分写不了啥论文</em></p>
-<p>建立并联机器人刚柔耦合非线性动力学方程</p>
-<p><em>构件弹性变形与刚体运动之间互相耦合影响</em></p>
-<p><strong>感觉压电陶瓷驱动器抑振是文章最重要的点。</strong></p>
-<p>文章方向整理：</p>
-]]></content>
-      <categories>
-        <category>project</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>life/life</title>
-    <url>/2022/08/02/life/life/</url>
-    <content><![CDATA[<p> <strong>怎么会迷上你，我在问自己</strong></p>
-<p> <strong>我什么都能放弃，居然今天难离去</strong></p>
-<p>我是个什么人呢？</p>
-<p>乐观、向上、热心又冷漠</p>
-<p>犹豫、常常忽略一些事情、讨厌很多事情</p>
-<p>一个半吊子的理想主义者～</p>
-<p><a href="/img/R.jpg">r</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>impedance_control</title>
     <url>/2021/02/03/impedance-control/impedance-control/</url>
     <content><![CDATA[<h1 id="阻抗相关"><a href="#阻抗相关" class="headerlink" title="阻抗相关"></a>阻抗相关</h1><p>记录部分内容</p>
@@ -1242,6 +1147,18 @@
       </tags>
   </entry>
   <entry>
+    <title>life/life</title>
+    <url>/2022/08/02/life/life/</url>
+    <content><![CDATA[<p> <strong>怎么会迷上你，我在问自己</strong></p>
+<p> <strong>我什么都能放弃，居然今天难离去</strong></p>
+<p>我是个什么人呢？</p>
+<p>乐观、向上、热心又冷漠</p>
+<p>犹豫、常常忽略一些事情、讨厌很多事情</p>
+<p>一个半吊子的理想主义者～</p>
+<p><a href="/img/R.jpg">r</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>lifespan</title>
     <url>/2020/11/07/lifespan/lifespan/</url>
     <content><![CDATA[<h1 id="无常的人生-小记"><a href="#无常的人生-小记" class="headerlink" title="无常的人生-小记"></a>无常的人生-小记</h1><p>今天心情还挺复杂的，不自主的想着好多事情，不想让熟人知道，但是又想倾诉一下，所以在博客里稍微说一说，（未来不管陌生人还是熟人，或者是自己，看到这篇小记，是否会心有所感呢？）</p>
@@ -1267,6 +1184,559 @@
 <p>人生啊—真是漫长</p>
 <p>应该不会有人看到吧，真是尴尬…</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>literature</title>
+    <url>/2020/09/03/literature/literature/</url>
+    <content><![CDATA[<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
+<p>abstract    consult    discussion   method   result</p>
+<p>review</p>
+<a id="more"></a>
+
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
+<p>摘要分层</p>
+<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
+<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
+<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
+<p>2.indicative abstract</p>
+<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
+<p>3.extended abstract</p>
+<p> thesis   dissertation</p>
+<p>4.structured abstract</p>
+<p>5.conference abstract</p>
+<p>6.graphical abstract</p>
+<p>7.executive summary</p>
+<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
+<ol>
+<li>Introduction  </li>
+<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
+<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
+</ol>
+<p>分层</p>
+<p>1.review of the present study</p>
+<p>2.consolidating ofthe results</p>
+<p>3.stating limitations and possible research directions</p>
+<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
+<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
+</ol>
+<p>分层</p>
+<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
+<p>一些特点 linguistic features</p>
+<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
+<p>Method classification</p>
+<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
+<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
+<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
+<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
+<p>…用的比较少，不列了</p>
+<p>缺一部分，改天再补，回寝了～</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>gcyyy</title>
+    <url>/2021/09/10/gcyyy/gcyyy/</url>
+    <content><![CDATA[<h1 id="并联机构弹性动力学建模与振动主动控制论文"><a href="#并联机构弹性动力学建模与振动主动控制论文" class="headerlink" title="并联机构弹性动力学建模与振动主动控制论文"></a>并联机构弹性动力学建模与振动主动控制论文</h1><p>2021.9.8</p>
+<h4 id="并联机器人高维运动规划研究–刚柔耦合"><a href="#并联机器人高维运动规划研究–刚柔耦合" class="headerlink" title="并联机器人高维运动规划研究–刚柔耦合"></a>并联机器人高维运动规划研究–刚柔耦合</h4><p>非线性力学———–形变+运动规划——–非线性数学模型———–弹性运动规划算法</p>
+<p>无碰撞未超过运动规划极限–自由位形</p>
+<p>（缺少论文整理部分）</p>
+<a id="more"></a>
+
+<p><strong>特殊规划-路径无奇异且路径具备刚度与精度</strong></p>
+<p>弹性路径数学模型–内力与内力矩微分方程传递性，作用于整条路径，外部不具有传递性，只发生于作用点。</p>
+<p>本构模型—激励与响应的关系</p>
+<p>路径形变控制机理</p>
+<p>子任务内容：耦合作用机理、弹性运动模型、运动控制反解模型</p>
+<p><strong>联合运动</strong>：动舵/直接力复合控制的难点在于如何有效、快速地融合气动舵的连续输出与直接力的离散输出。传统的优化融合策略需在每个控制周期内求解最优分配问题，这将消耗大量的机载计算资源。</p>
+<p>问题：非线性弹性动力模型建立不够清晰</p>
+<p>来源：TUOsd_cjm</p>
+<p>动力模型过程清晰，验证存在一定疑问</p>
+<p>3RRR构型</p>
+<p>柔性机器人-造价低、操作速度快、驱动力小、能耗低、良好的机动性能、安全性高</p>
+<p>关键词：并联、刚柔耦合动力学、振动抑制</p>
+<p>杆件关节变形能</p>
+<p>柔性机器人动力学方程–多自由度偏微分方程–有限维常微分方程近似替代</p>
+<p>连续系统离散化处理—假设模态法AMM、有限元方法FEM、集中参数法IPM。</p>
+<p>记录一下小概念</p>
+<p><strong>动力学方程</strong>：研究力和位移或力矩和转角的关系</p>
+<ol>
+<li>获得描述广义坐标随时间变化的闭环方程—–牛顿拉格朗日</li>
+<li>给定广义坐标后，需要给系统多大的广义力，可以实现预期的广义坐标轨迹——-牛顿欧拉</li>
+</ol>
+<p>动力学建模方法：笛卡尔坐标、关节坐标、动力学样条法、波方法，李群李代数。</p>
+<p>柔性机器人振动控制：</p>
+<p>被动控制：</p>
+<ul>
+<li>优化构件截面参数及几何参数</li>
+<li>复合材料替代金属材料</li>
+<li>阻尼处理构件–减振</li>
+</ul>
+<p>主动控制：</p>
+<ul>
+<li>传感器与作动器</li>
+<li>设计多个可控原动件的受控机构</li>
+<li>基于动力模型的控制系统</li>
+</ul>
+<p>压电陶瓷片</p>
+<p>压电陶瓷驱动器相关应用：压电驱动器绑定在弹性结构表面或嵌入压层复合材料中Edward</p>
+<p>柔性机器人研究包含毂-两结构、柔性两杆和四杆机构，对于柔性并联研究较少。</p>
+<p>质量、运动轨迹导致各关节驱动力矩和能耗差别很大</p>
+<h2 id="柔性机器人动力学特性分析内容"><a href="#柔性机器人动力学特性分析内容" class="headerlink" title="柔性机器人动力学特性分析内容"></a>柔性机器人动力学特性分析内容</h2><p>频率特性分析、灵敏度分析、模态分析、动应力分析</p>
+<p>系统弹性振动主要有低阶模态决定，固有频率越低，系统刚度越小，越容易振动</p>
+<p>两步法：KED假设弹性变形位移是小的，忽略弹性变形对于刚体运动的影响，建立系统刚体动力学方程，将运动学变量带入弹性变形运动动力学方程。</p>
+<p>一步法：考虑刚体运动与弹性变形运动耦合，更精确的模型求解方法</p>
+<h2 id="力热固耦合弹性动力学（一致温度）"><a href="#力热固耦合弹性动力学（一致温度）" class="headerlink" title="力热固耦合弹性动力学（一致温度）"></a>力热固耦合弹性动力学（一致温度）</h2><p>基于有限元方法和Hamilton原理</p>
+<p>建立单元弹性动力学模型，假设热载荷导致机构产生的变形量与应力导致的变形线性且各向同性，建立联立应变方程。</p>
+<p>基于ANSYS瞬态动力学仿真，计算了主动关节和被动关节没有热载荷和多种温度下最大等效应力图</p>
+<p>记录了多地温度变化曲线，测量连杆最大等效应力随时间的变化关系</p>
+<p><strong>结论：</strong>温度变化，最大等效应力保持周期性上升；气温不变，最大等效应力保持周期性稳定。</p>
+<p>温度高低不是决定因素，温差大小决定应力变化</p>
+<p>柔性并联机器人的动态性能不仅与温度该改变量大小和材料的温度膨胀系数有关，而且与温度变化曲线也密切相关。</p>
+<p><em>文章通过气象台的温度数据，导入CFD软件中，进行瞬态动力学分析，得到应力变化图，进而分析温度关系</em>，还是没能给出一个直接的解析式呀，复杂机构的耦合动力学模型建模还是一个难解。</p>
+<h2 id="弹性动力学的动力钢化问题"><a href="#弹性动力学的动力钢化问题" class="headerlink" title="弹性动力学的动力钢化问题"></a>弹性动力学的动力钢化问题</h2><p>高速、高加速柔性并联机器人是否存在动力钢化现象。</p>
+<p>单元–系统   </p>
+<p>一阶近似耦合模型FOAC:包含名义运动相关的<em>动力刚度项</em></p>
+<p>传统混合坐标建模方法 ZOAC：无法很好的反应系统的动力学性能，假设轴向与横向变形位移解耦。适用于并联机构</p>
+<p>无论系统运动速度、加速度多大，系统刚度项对系统动力学特性影响微小。</p>
+<p>执行机构动力学模型建立结束，基于模型的振动控制</p>
+<h2 id="主动振动控制研究"><a href="#主动振动控制研究" class="headerlink" title="主动振动控制研究"></a>主动振动控制研究</h2><p>控制目的：抑制并联机器人柔性连杆的残余振动，保证动平台精确地到达给定的位姿。</p>
+<p>PZT压电驱动器作用机理：给驱动器施加电压信号，PZT驱动器产生应变，在驱动器两端，这种应变将在梁单元对应的位置上引起剪切变形</p>
+<p>通过驱动器对梁单元施加外力矩</p>
+<p>控制器优化方向-能量优化，在更低的控制电压下可以取得更好的控制效果。一对PZT控制效果优于一片。</p>
+<p>控制内容后续完善</p>
+<p><strong>结论：</strong>单独控制柔性杆时，可以抑制自身的弹性振动，无法控制其他两柔性杆振动，当三根杆同时振动时，各柔性杆的弹性振动都能得到很好的抑制。</p>
+<p>平台质量和运动轨迹对驱动能耗有直接影响。—–</p>
+<p><em>轻量化设计以及轨迹规划内容，不过这篇文章感觉这部分写不了啥论文</em></p>
+<p>建立并联机器人刚柔耦合非线性动力学方程</p>
+<p><em>构件弹性变形与刚体运动之间互相耦合影响</em></p>
+<p><strong>感觉压电陶瓷驱动器抑振是文章最重要的点。</strong></p>
+<p>文章方向整理：</p>
+]]></content>
+      <categories>
+        <category>project</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>logic_symbol</title>
+    <url>/2020/07/27/logic-symbol/logic-symbol/</url>
+    <content><![CDATA[<h1 id="逻辑符号"><a href="#逻辑符号" class="headerlink" title="逻辑符号"></a>逻辑符号</h1><p>这篇博文主要为了总结一下逻辑运算符号（拯救混乱记忆，雾）</p>
+<p>(下一篇是题目总结顺便复习)</p>
+<a id="more"></a>
+
+
+
+<p>1.逻辑结构</p>
+<p>与运算：</p>
+<p>与(&amp;&amp;)：逻辑规则是两真才真。与and等同。</p>
+<p>或运算：</p>
+<p>或(||)：逻辑规则是只有一个为真就为真。与or等同。</p>
+<p>异或：</p>
+<p>异或(^)：逻辑规则是两个不同就为真。</p>
+<p>非运算符：</p>
+<p>非(！)：逻辑规则是反转操作数的含义。与not等同。</p>
+ 
+
+<h2 id="电路中的符合逻辑"><a href="#电路中的符合逻辑" class="headerlink" title="电路中的符合逻辑"></a>电路中的符合逻辑</h2><p>与非：  输入只要有0，输出为1.输入全1，输出才0</p>
+<p>或非：输入只要有1，输出为0，输入全为0，输出才1</p>
+<p>与或非：复合运算</p>
+ 
+
+<p>电路中还存在异或与同或</p>
+<p>异或：相异则为1</p>
+<p>同或：相同则为1</p>
+<p>关于逻辑电路门，以后再说吧233</p>
+]]></content>
+      <categories>
+        <category>logic</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>linux_cleanfile</title>
+    <url>/2020/10/20/linux-cleanfile/linux-cleanfile/</url>
+    <content><![CDATA[<h1 id="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"><a href="#由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录" class="headerlink" title="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"></a>由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录</h1><p>昨天晚上测试运动算法包，更新中间发现系统磁盘爆满，终端terminal无法运行，启动文件节点无法启动，于今天下午解决问题，写一篇日志记录一下，顺便谈一下linux的多版本软件安装基理。</p>
+<a id="more"></a>
+
+<p>启动terminal，显示终端内存不足，导致文件无法启动，猜想原因是点击系统更新中断后产生bug文件，使得根目录爆满，这里介绍一条指令便于分析大内存位置：</p>
+<p>Traceback (most recent call last):<br>  File “/opt/ros/kinetic/_setup_util.py”, line 297, in <module><br>    sys.stdout.flush()<br>IOError: [Errno 28] No space left on device<br>Failed to run ‘“/opt/ros/kinetic/_setup_util.py” ‘: return code 1<br>Traceback (most recent call last):<br>  File “/home/xiaomu/ws_moveit/devel/_setup_util.py”, line 297, in <module><br>    sys.stdout.flush()</module></module></p>
+<p>首先 df -h 或者 df -hi查看linux总分区，寻找剩余空间不多的分区，我的是根目录显示爆满</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">/dev/sda9        23G   22G     0 100% /</span><br></pre></td></tr></tbody></table></figure>
+
+<p>输入 </p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo du -h -x --max-depth=1</span><br></pre></td></tr></tbody></table></figure>
+
+<p>比如我的显示 var与usr文件爆满</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">13M	./sbin</span><br><span class="line">16K	./lost+found</span><br><span class="line">4.0K	./mnt</span><br><span class="line">4.0K	./lib64</span><br><span class="line">20M	./root</span><br><span class="line">9.9G	./var</span><br><span class="line">775M	./lib</span><br><span class="line">8.0K	./media</span><br><span class="line">4.6M	./libx32</span><br><span class="line">3.9M	./lib32</span><br><span class="line">16K	./snap</span><br><span class="line">1.2G	./opt</span><br><span class="line">16M	./etc</span><br><span class="line">9.8G	./usr</span><br><span class="line">4.0K	./srv</span><br><span class="line">60K	./tmp</span><br><span class="line">13M	./bin</span><br><span class="line">4.0K	./cdrom</span><br><span class="line">22G	.</span><br></pre></td></tr></tbody></table></figure>
+
+<p>根据信息对相应文件进行删除，小心误删重要文件</p>
+<h2 id="var文件夹"><a href="#var文件夹" class="headerlink" title="var文件夹"></a>var文件夹</h2><p>系统运行后占用硬盘内存，主要针对常态性变动文件，包括缓存、登录文件、以及某些软件运行所产生的文件等，log中放置登录文件日志</p>
+<blockquote>
+<p>/var的意义与内容</p>
+<p>如果/usr是安装时会占用较大硬盘容量目录，那么/var就是在系统运行后才会渐渐占用硬盘容量的目录。因为/var目录主要针对常态性变动文件，包括缓存（cache）、登录文件（logfile）以及某些软件运行所产生的文件，包括程序文件（lock file，run file），或者例如Mysql数据库的文件等。常见的子目录如下：</p>
+<p>/var/cache：应用程序本身运行过程中会产生生的一些暂存文件。</p>
+<p>/var/lib:程序本身执行的过程中需要使用到的数据文件放置的目录。再次目录下各自的软件应该要有各自的目录。举例来说，Mysql的数据库放置到/var/lib/mysql，而rpm的数据库则放到/var/lib/rpm目录下。</p>
+<p>/var/lock:某些设备或者是文件资源一次只能被一个应用程序所使用 ，如当系统中有一个刻录机两个人都要使用，那么需要在一个人使用的时候上锁，那么第一个人使用完毕后，第二个人才可以继续使用。</p>
+<p>/var/log:这个是登录文件放置日志的的目录。里面比较重要的文件/var/log/messages，/var/log/harry(记录登陆者信息)等。</p>
+<p>/var/run/：某些程序启动服务后，会将他们PID放置在这个目录下。</p>
+<p>—-来源—<a href="https://www.cnblogs.com/Renyi-Fan/p/11504111.html" target="_blank" rel="noopener">https://www.cnblogs.com/Renyi-Fan/p/11504111.html</a></p>
+</blockquote>
+<p>（本次问题主要出现在这里，推测由于中断更新，导致产生了两个大的错误日志，经过上述方法，在log中发现了两个4g多的日志文件，进行了强制删除，系统恢复正常）</p>
+<p>文件分别为syslog以及kern.log，这里删除后注意重启服务</p>
+<blockquote>
+<p>service syslog restart</p>
+</blockquote>
+<p>至此，问题已经解决，过程中发现usr文件夹同样较大，其实没有问题，原因是因为我平时跑ros以及各种图像代码，库中安装了多个版本的软件，当初只是按照教程进行安装，却不知道为什么linux可以这样，今天知道了原因：</p>
+<h2 id="usr文件夹"><a href="#usr文件夹" class="headerlink" title="usr文件夹"></a>usr文件夹</h2><blockquote>
+<table>
+<thead>
+<tr>
+<th>/usr/X11R6/</th>
+<th>为X Window System重要数据所放置的目录，之所以取名为X11R6是因为最后的X版本为第11版，且该版的第6次释出之意。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/usr/bin/</td>
+<td>绝大部分的用户可使用指令都放在这里。请注意到他与/bin的不同之处。(是否与开机过程有关)</td>
+</tr>
+<tr>
+<td>/usr/include/</td>
+<td>c/c++等程序语言的档头(header)与包含档(include)放置处，当我们以tarball方式 (*.tar.gz 的方式安装软件)安装某些数据时，会使用到里头的许多包含档。</td>
+</tr>
+<tr>
+<td>/usr/lib/</td>
+<td>包含各应用软件的函式库、目标文件(object file)，以及不被一般使用者惯用的执行档或脚本(script)。  某些软件会提供一些特殊的指令来进行服务器的设定，这些指令也不会经常被系统管理员操作，  那就会被摆放到这个目录下啦。要注意的是，如果你使用的是X86_64的Linux系统， 那可能会有/usr/lib64/目录产生</td>
+</tr>
+<tr>
+<td>/usr/local/</td>
+<td>统管理员在本机自行安装自己下载的软件(非distribution默认提供者)，建议安装到此目录， 这样会比较便于管理。举例来说，你的distribution提供的软件较旧，你想安装较新的软件但又不想移除旧版，  此时你可以将新版软件安装于/usr/local/目录下，可与原先的旧版软件有分别啦。  你可以自行到/usr/local去看看，该目录下也是具有bin, etc, include, lib…的次目录</td>
+</tr>
+<tr>
+<td>/usr/sbin/</td>
+<td>非系统正常运作所需要的系统指令。最常见的就是某些网络服务器软件的服务指令(daemon)</td>
+</tr>
+<tr>
+<td>/usr/share/</td>
+<td>放置共享文件的地方，在这个目录下放置的数据几乎是不分硬件架构均可读取的数据， 因为几乎都是文本文件嘛。在此目录下常见的还有这些次目录：/usr/share/man：联机帮助文件  /usr/share/doc：软件杂项的文件说明  /usr/share/zoneinfo：与时区有关的时区文件</td>
+</tr>
+<tr>
+<td>/usr/src/</td>
+<td>一般原始码建议放置到这里，src有source的意思。至于核心原始码则建议放置到/usr/src/linux/目录下。</td>
+</tr>
+</tbody></table>
+<p>—来源—<a href="https://www.cnblogs.com/ftl1012/p/9278578.html" target="_blank" rel="noopener">https://www.cnblogs.com/ftl1012/p/9278578.html</a></p>
+</blockquote>
+<p>关于local文件夹，依据上述介绍，同理可以手动进行其余软件多版本的安装。</p>
+<p>总之，个人觉得ubuntu更新还是慎重，其次，装双系统的时候尽量空间给多一点，学会随时终端查看磁盘存储情况，根据报错解决问题，最后写一下查看磁盘的终端命令指南：</p>
+<p>df</p>
+<p>df以磁盘分区为单位查看文件系统</p>
+<p>显示内容参数说明：</p>
+<ul>
+<li><strong>Filesystem</strong>：文件系统</li>
+<li><strong>Size</strong>：  分区大小</li>
+<li><strong>Used</strong>： 已使用容量</li>
+<li><strong>Avail</strong>： 还可以使用的容量</li>
+<li><strong>Use%</strong>： 已用百分比</li>
+<li><strong>Mounted on</strong>： 挂载点　</li>
+</ul>
+<h2 id="Linux-查看磁盘空间"><a href="#Linux-查看磁盘空间" class="headerlink" title="Linux 查看磁盘空间"></a>Linux 查看磁盘空间</h2><p>Linux 查看磁盘空间可以使用 df 和 du 命令。</p>
+<hr>
+<h2 id="df"><a href="#df" class="headerlink" title="df"></a>df</h2><p>df 以磁盘分区为单位查看文件系统，可以获取硬盘被占用了多少空间，目前还剩下多少空间等信息。</p>
+<p>例如，我们使用df -h命令来查看磁盘信息， -h 选项为根据大小适当显示： </p>
+<p>显示内容参数说明：</p>
+<ul>
+<li><strong>Filesystem</strong>：文件系统</li>
+<li><strong>Size</strong>：  分区大小</li>
+<li><strong>Used</strong>： 已使用容量</li>
+<li><strong>Avail</strong>： 还可以使用的容量</li>
+<li><strong>Use%</strong>： 已用百分比</li>
+<li><strong>Mounted on</strong>： 挂载点　</li>
+</ul>
+<p><strong>相关命令：</strong></p>
+<ul>
+<li>df -hl：查看磁盘剩余空间</li>
+<li>df -h：查看每个根路径的分区大小</li>
+<li>du -sh [目录名]：返回该目录的大小</li>
+<li>du -sm [文件夹]：返回该文件夹总M数</li>
+<li>du -h [目录名]：查看指定文件夹下的所有文件大小（包含子文件夹）</li>
+</ul>
+<h2 id="du"><a href="#du" class="headerlink" title="du"></a>du</h2><p>disk usage ，查看磁盘的使用情况</p>
+<p>查看当前目录的总大小</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line"># du -sh</span><br></pre></td></tr></tbody></table></figure>
+
+<p>du 命令用于查看当前目录的总大小：</p>
+<ul>
+<li>-a或-all 为每个指定文件显示磁盘使用情况，或者为目录中每个文件显示各自磁盘使用情况。</li>
+<li>-b或-bytes 显示目录或文件大小时，以byte为单位。</li>
+<li>-c或–total 除了显示目录或文件的大小外，同时也显示所有目录或文件的总和。</li>
+<li>-D或–dereference-args 显示指定符号连接的源文件大小。</li>
+<li>-h或–human-readable 以K，M，G为单位，提高信息的可读性。</li>
+<li>-H或–si 与-h参数相同，但是K，M，G是以1000为换算单位,而不是以1024为换算单位。</li>
+<li>-k或–kilobytes 以1024 bytes为单位。</li>
+<li>-l或–count-links 重复计算硬件连接的文件。</li>
+<li>-L&lt;符号连接&gt;或–dereference&lt;符号连接&gt; 显示选项中所指定符号连接的源文件大小。</li>
+<li>-m或–megabytes 以1MB为单位。</li>
+<li>-s或–summarize 仅显示总计，即当前目录的大小。</li>
+<li>-S或–separate-dirs 显示每个目录的大小时，并不含其子目录的大小。</li>
+<li>-x或–one-file-xystem 以一开始处理时的文件系统为准，若遇上其它不同的文件系统目录则略过。</li>
+<li>-X&lt;文件&gt;或–exclude-from=&lt;文件&gt; 在&lt;文件&gt;指定目录或文件。</li>
+<li>–exclude=&lt;目录或文件&gt; 略过指定的目录或文件。</li>
+<li>–max-depth=&lt;目录层数&gt; 超过指定层数的目录后，予以忽略。</li>
+<li>–help 显示帮助。</li>
+<li>–version 显示版本信息。</li>
+</ul>
+<p>本文中用到的两个指令：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">df -h</span><br><span class="line"></span><br><span class="line">sudo du -h -x --max-depth=1</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h2><p>以下资料来源于，转载非原创 <a href="https://www.sysgeek.cn/ubuntu-free-up-space/" target="_blank" rel="noopener">https://www.sysgeek.cn/ubuntu-free-up-space/</a></p>
+<p>1.移除不再需要的软件包</p>
+<p>如果你了解过 apt-get 或 apt 命令的详细用法，应该知道 autoremove 选项。此选项可以删除「安装某个软件包时」自动安装的依赖库和包，这些自动安装的依赖包在系统中通常是无用的，只用浪费磁盘空间。当然，autoremove 选项也可以自动删除那些系统升级过程中被取代的老旧无用 Linux 内核。</p>
+<p>这是一个自动化的傻瓜命令，可以时不时用它为 Ubuntu 系统释放一些可用硬盘空间：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt autoremove</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="2-清理Ubuntu中的APT缓存"><a href="#2-清理Ubuntu中的APT缓存" class="headerlink" title="2. 清理Ubuntu中的APT缓存"></a>2. 清理Ubuntu中的APT缓存</h3><p>Ubuntu 使用 APT（高级软件包工具）在系统上安装、删除和管理软件，并且在软件卸载之后它还会保留先前下载和安装软件包的缓存。</p>
+<p>APT 包管理系统会将下载的 DEB 包缓存在 /var/cache/apt/archives 文件中，随着时间的推移，由于拥有大量不需要的包这个缓存目录可以增长得相当大。</p>
+<p>你可以使用以下命令查看此缓存的大小：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo du -sh /var/cache/apt</span><br></pre></td></tr></tbody></table></figure>
+
+<p>对于 APT 缓存我们有两种可选方式对其进行清理，其一为只删除过时的软件包：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt autoclean</span><br></pre></td></tr></tbody></table></figure>
+
+<p>另一种则是清理整个缓存（释放更多的磁盘空间）：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt clean</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="3-清理缩略图缓存"><a href="#3-清理缩略图缓存" class="headerlink" title="3.清理缩略图缓存"></a>3.清理缩略图缓存</h3><p>为方便用户预览图片，Ubuntu 会自动为图片文件创建一个缩略图，用于在文件管理器中查看，而这些这些缩略图其实也是以文件形式隐藏存储在用户账户的 ~/.cache/thumbnails 目录当中。</p>
+<p>如果你是摄影爱好者或是图片收藏者，随着时间的推移，缩略图的数量将大大增加。特别需要注意的是，如果你删除了某些照片或图片，这些自动生成的缩略图缓存还是会存在于磁盘当中，而不会自动清除。</p>
+<p>你可以使用以下命令检查缩略图缓存的大小：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">du -sh ~/.cache/thumbnails</span><br></pre></td></tr></tbody></table></figure>
+
+<p>因此，每几个月左右清除缩略图缓存是一个很好的习惯。 最快捷的方法就是使用终端命令：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">rm -rf ~/.cache/thumbnails/*</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="4-手动删除老旧Linux内核（专业）"><a href="#4-手动删除老旧Linux内核（专业）" class="headerlink" title="4.手动删除老旧Linux内核（专业）"></a>4.手动删除老旧Linux内核（专业）</h3><p>前面介绍第 1 种方法时就提到了可以自动删除那些老旧无用的 Linux Kernel，但如果你在 Ubuntu 中曾手动安装过内核，则 apt autoremove 命令选项则不适用了。但删除不使用的旧版内核确实又可节省大量磁盘空间，所以对于手动安装的 Ubuntu 内核可以进行手动卸载。</p>
+<p>首先使用如下命令列出当前 Ubuntu 中所有已经安装的 Linux Kernel：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo dpkg --list 'linux-image*'*</span><br></pre></td></tr></tbody></table></figure>
+
+<p>删除旧版内核与删除任何其他软件包一样：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt remove linux-image-VERSION</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="5-删除多余的孤立包（专业）"><a href="#5-删除多余的孤立包（专业）" class="headerlink" title="5. 删除多余的孤立包（专业）"></a>5. 删除多余的孤立包（专业）</h3><p>首先我们要说说什么是 Ubuntu 系统中的孤立包（也叫多余的包）：假设你安装了一个名为 myprogram 的软件包，而这个包又依赖于 mylib 库，这个库通常在安装 myprogram 时便会自动安装到系统当中。当你卸载 myprogram 应用时，mylib 库可能仍然保留在系统中。 此种情况下，mylib 就会成为一个孤立的包。</p>
+<p>gtkorphan 这款图形化应用可以可以轻松找出并删除 Ubuntu 系统中的孤立包，先使用如下终端命令进行安装：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt install gtkorphan</span><br></pre></td></tr></tbody></table></figure>
+
+<p>安装好后在「多余的包」选项卡中即可对查找、删除孤立包。</p>
+<h3 id="6-卸载不必要的应用程序"><a href="#6-卸载不必要的应用程序" class="headerlink" title="6.卸载不必要的应用程序"></a>6.卸载不必要的应用程序</h3><p>相信每个人都有那么一款和几款几乎不用的游戏或应用程序存在于系统当中。不相信？去你 Ubuntu 系统查下软件列表就知道了。其实这条也不用我多说，如果你需要更多的磁盘空间，删除那些从不使用或较少使用的应用程序总是一个好方法。</p>
+<p>删除软件可以使用「Ubuntu 软件」或直接终端命令：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt remove 软件包名</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="7-使用GUI工具释放Ubuntu空间"><a href="#7-使用GUI工具释放Ubuntu空间" class="headerlink" title="7. 使用GUI工具释放Ubuntu空间"></a>7. 使用GUI工具释放Ubuntu空间</h3><p>转载非原创 <a href="https://www.sysgeek.cn/ubuntu-free-up-space/" target="_blank" rel="noopener">https://www.sysgeek.cn/ubuntu-free-up-space/</a></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>newnote</title>
+    <url>/2022/08/02/newnote/newnote/</url>
+    <content><![CDATA[<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>airfact</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>manipulator_HU_learninging</title>
+    <url>/2020/10/12/manipulator-HU-learninging/manipulator-HU-learninging/</url>
+    <content><![CDATA[<h1 id="记录一套开发流程，没啥意义"><a href="#记录一套开发流程，没啥意义" class="headerlink" title="记录一套开发流程，没啥意义"></a>记录一套开发流程，没啥意义</h1><p>后续可看，ppt要好好做</p>
+<a id="more"></a>
+
+<p>1.基本理论</p>
+<p>2.开发</p>
+<p>ISO</p>
+<ol>
+<li>机器人动作机构具有类似于人或其他生物体的某些器官（肢体、感受等）的功能；、</li>
+<li>机器人具有通用性，工作种类多样，动作程序灵活易变；</li>
+<li>机器人具有不同程度的智能性，比如记忆、感知、推理、决策、学习等；</li>
+<li>机器人具有独立性、完整的机器人系统在工作中不可以依赖于人的干预。</li>
+</ol>
+<p>驱动系统</p>
+<ul>
+<li>电源子系统</li>
+<li>电机驱动系统–控制信号-电信号</li>
+<li>传感器</li>
+</ul>
+<p>内部传感器</p>
+<ul>
+<li>机器人里程计</li>
+<li>惯性测量单元IMU</li>
+</ul>
+<p>控制系统</p>
+<p>PC–人机交互（SLAM、导航、图像识别、语音识别）</p>
+<p>TCP/UDP</p>
+<p>硬件系统：控制、传感器数据采集、驱动系统通信、外设连接</p>
+<p>外部传感器</p>
+<ul>
+<li>外部摄像头、Kinect</li>
+<li>激光雷达</li>
+</ul>
+<p>移动机器人-常见</p>
+<p>机器人架构可参考（ppt制作，针对特种环境的通信干扰分析）</p>
+<p>云机器人架构思想：</p>
+<ul>
+<li>全局云：全局数据存储、共享和交互</li>
+<li>本地云：密集型计算的机器人应用服务</li>
+<li>机器人：面向用户的终端服务单元</li>
+</ul>
+<p>优点：局部网络占优</p>
+<ul>
+<li>本地云数据共享更加灵活、快捷</li>
+<li>数据保存与本地服务器，更加安全、可靠</li>
+<li>服务于多种机器人</li>
+</ul>
+<p>整理常见机械臂：</p>
+<ul>
+<li>UR机械臂，安全度高、编程简单、灵活度高，负载10-18kg，工作半径85-130cm。</li>
+<li></li>
+</ul>
+<p>控制框架架构+系统架构+云系统架构</p>
+<h2 id="开发具体流程分析与记录（代码分析）："><a href="#开发具体流程分析与记录（代码分析）：" class="headerlink" title="开发具体流程分析与记录（代码分析）："></a>开发具体流程分析与记录（代码分析）：</h2><p>1.常见基础</p>
+<p>2.manipulator_moveit</p>
+<p>3.moveit+gazebo 仿真系统搭建</p>
+<p>ros_control 为开发者提供的机器人控制中间件，包含一系列控制器接口、传动器接口、硬件接口、控制器工具箱</p>
+<p>包括有速度控制、位置控制、力控制</p>
+<p>关节位置控制器：PID 具体参照arm包 yaml文件或者gazebo_control内yaml文件</p>
+<p>加载控制器，加载conrollers关节参数，加载publisher参数节点，三部分，关节矩阵变换</p>
+<p>moveit与gazebo rviz 联合仿真</p>
+<p>编程接口</p>
+<p>moveit_commander python接口</p>
+<p>1.连接控制需要的规划组 2.设置目标位姿 3.设置运动约束 4.使用moveit！规划一条到达目标的轨迹</p>
+<p>5.修改轨迹 6.执行规划出的轨迹</p>
+<p>启动moveit包-moveit_config,程序中给出目标位置以及执行器位置信息，软件自动规划最优路径</p>
+<p>编程—针对规划组编写，设置目标位置参数，臂则设置位置信息，数组导入，完成机械臂规划</p>
+<p>工作空间运动规划–轨迹规划(关键代码参数)</p>
+<p>创建规划组的控制对象</p>
+<p>获取机器人终端LINK名称</p>
+<p>设置目标位姿对应的参考坐标系和起始、终止位姿</p>
+<p>完成规划并控制机械臂完成运动</p>
+<p>运动限制约束设置</p>
+<p>运动学插件问题KDL，插件选用以及<code>二次开发</code>问题</p>
+<p>抓取与放置，attach与un，避障规划</p>
+<p>代码分析与移植待补充～～</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>manipulator_review</title>
+    <url>/2020/10/02/manipulator-review/manipulator-review/</url>
+    <content><![CDATA[<h1 id="综述笔记-manipulator-review-underwater-system已补充结束"><a href="#综述笔记-manipulator-review-underwater-system已补充结束" class="headerlink" title="综述笔记-manipulator_review(underwater)-(system已补充结束)"></a>综述笔记-manipulator_review(underwater)-(system已补充结束)</h1><p>一篇综述[1]的总体方向笔记，非文献整理。</p>
+<blockquote>
+<p>[1] SIVČEV S, COLEMAN J, OMERDIĆ E, et al. Underwater manipulators: A review [J]. 2018, 163(431-50.</p>
+</blockquote>
+<p>UUV-unmanned underwater vehicles   </p>
+<p>ROV–remotely operated vehicles</p>
+<p>AUV-autonomous underwater vehicles</p>
+<p>UVMS-Underwater Vehicle Manipulator Systems</p>
+<a id="more"></a>
+
+<p>(水下双臂–一号臂抓取固定机器人本体，二号臂执行预定作业内容)</p>
+<h2 id="常见任务："><a href="#常见任务：" class="headerlink" title="常见任务："></a>常见任务：</h2><p>1.管道检测    2.沉没物体打捞作业     3.矿井作业 </p>
+<p>4.清洁表面作业    5.开关阀门、钻探、rope cutting     6.线缆铺设以及维修</p>
+<p>7.清理碎片或渔网    8.生物地质采样    9.考古archaeological work</p>
+<h2 id="特殊环境材料选择（水下）"><a href="#特殊环境材料选择（水下）" class="headerlink" title="特殊环境材料选择（水下）"></a>特殊环境材料选择（水下）</h2><p>作业约束：</p>
+<p>1.the size of the workspace</p>
+<p>2.lifting capacity </p>
+<p>3.wrist torque</p>
+<p>常用金属合金，比如TI6-4、阳极氧化铝、不锈钢合金以及某些塑料（聚乙烯）</p>
+<p>–较高强度、耐腐蚀性、良好的可加工性质、减轻水中的重量以及减少执行器负担</p>
+<p>Reach–水下机械手运动链长</p>
+<ol>
+<li><p>水下机械手能产生的最大腕部扭矩范围8NM-250NM</p>
+</li>
+<li><p>水下机械手的载荷5kg-500kg左右</p>
+</li>
+<li><p>水下机械手的运动范围为0.5m-2.4m</p>
+<p>参数：max.nominal  最大额定值    at full extension 完全伸展  at rated speed 额定速度</p>
+<p>through envelope </p>
+</li>
+</ol>
+<h2 id="关于水下控制模型意义"><a href="#关于水下控制模型意义" class="headerlink" title="关于水下控制模型意义"></a>关于水下控制模型意义</h2><p>机械手的质量尽量占比较小，为了可以忽略或至少将动态耦合考虑为可以解决的外部干扰，通过水下机器人的动态定位，更大的重量和尺寸对水下机器人推进器系统对由动态耦合引起的干扰的鲁棒性提出了更高的要求。</p>
+<h2 id="机械爪"><a href="#机械爪" class="headerlink" title="机械爪"></a>机械爪</h2><p>通常设计三到六个自由度，三个自由度可以到达任意位置，六个自由度可以实现末端执行器的任意位置和方向</p>
+<p>高自由度具有冗余性，常用于避障作业</p>
+<h2 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h2><ul>
+<li>海水驱动，缺点较多被放弃</li>
+<li>液压驱动–<ul>
+<li>高负载，高效率、简单、过载保护</li>
+<li>定位精度差、容易泄露造成污染</li>
+</ul>
+</li>
+<li>电驱动<ul>
+<li>电动用于商业较少，难以满足工业速度、可靠性、强度或力量要求</li>
+</ul>
+</li>
+<li>电液混合驱动</li>
+</ul>
+<p>以上电与液压驱动均有大量研究文章，有时间挑着看看商用水下操纵器控制系统安装在ROV上的商用水下操纵器由遥操作系统控制，并且完全依赖于位于水面船只上的回路中的驾驶员/操纵员。 飞行员通过摄像头和/或声纳系统的反馈来观察场景，并同时做出有关运动的决定，并使用一些备用输入设备之一远程操作水下操纵器。 根据水下机械手的技术能力，使用不同的控制方法。</p>
+<h3 id="商业用控制系统"><a href="#商业用控制系统" class="headerlink" title="商业用控制系统"></a>商业用控制系统</h3><p>商业级别一般使用遥操作</p>
+<ul>
+<li>rate control    液压通过流量与速度控制</li>
+<li>position control     位置传感器通过电位计、analog resolvers、digital optical encoders 、solid state linear position sensors</li>
+<li>force feedback  商业级应用，常用于辅助人工操作</li>
+</ul>
+<p>gripper control</p>
+<h2 id="水下理论控制模型（文章较多，研究重点）"><a href="#水下理论控制模型（文章较多，研究重点）" class="headerlink" title="水下理论控制模型（文章较多，研究重点）"></a>水下理论控制模型（文章较多，研究重点）</h2><p>manipulator作为一种多体动力学问题，控制方案包含集中控制与分散控制方案两类，此外还包括神经网络控制模型。</p>
+<p>浮力、增加的质量、耗散的阻力和升力以及外部干扰（电流、波浪等），增加了非线性与不确定性因素，使得建模控制变得更加复杂。此外<code>水动力系数</code>无法估计，因为他们会随着温度、深度、盐度等变化，当人体通过液体加速时，水体产生格外的惯性，即质量附加效应</p>
+<p>波浪、海流和潮汐导致流体加速，导致外部和运动干扰以及机械手和机器人的强烈震荡和负载，最后在机器人与机械臂之间发生强烈的运动学和动力学耦合效应</p>
+<p>分散控制–PID</p>
+<p>集中控制–非线性集中控制方案</p>
+<ul>
+<li>多层神经网络控制器</li>
+<li>基于非回归的自适应控制器</li>
+<li>基于滑膜控制策略和动力学模型的水下机器人鲁棒轨迹跟踪控制器等等（–后续记录）</li>
+</ul>
+<p>神经网络模糊控制</p>
+<p>利用模糊增益调整在不确定性和扰动下实现自适应，神经网络用于逼近水下机械手的动力学并添加前馈，补偿输入到PD模糊控制器</p>
+<h2 id="运动控制探讨（高级控制）"><a href="#运动控制探讨（高级控制）" class="headerlink" title="运动控制探讨（高级控制）"></a>运动控制探讨（高级控制）</h2><p>传统：水下航行器与机械臂是分开协调的，因此将整个系统视为两个独立系统。</p>
+<p>特殊环境下的耦合需要采用高级控制方案</p>
+<p>针对耦合动力问题进行探讨（方案细节见技术综述笔记，个人认为这里可以进行改进研究）</p>
+<p>有一种不错的思路，控制重心而非机器人具体姿态</p>
+<p>整体系统控制-基于鲁棒的自适应控制方案</p>
+<p>反馈、前馈控制器（方案细节见技术综述笔记）</p>
+<p><strong>总体而言，水下控制模型主要处理的就是由于水下特殊环境引起的干扰以及特殊环境下的运动耦合</strong></p>
+<h2 id="运动控制与规划（路径规划与轨迹规划"><a href="#运动控制与规划（路径规划与轨迹规划" class="headerlink" title="运动控制与规划（路径规划与轨迹规划"></a>运动控制与规划（路径规划与轨迹规划</h2><p>-笛卡尔遥操作方案</p>
+<p>这里注意一下2013年沈阳自动化所提出的六自由度水下机械臂控制策略</p>
+<p>2018年的碰撞检测算法</p>
+<p>触觉交互</p>
+<p>冗余解析度</p>
+<p>通过不同次要目标解决冗余分辨率，避免关节限制、奇异性、高关节速度，将末端执行器保持在机载摄像头视线范围 内，将阻力最小化</p>
+<h2 id="理想与实际"><a href="#理想与实际" class="headerlink" title="理想与实际"></a>理想与实际</h2><p>大多基于关节空间设定点进行工作，但是需要位置、速度和加速度的详细信息反馈跟踪</p>
+<p>电动具有高效率优势</p>
+<h2 id="Force-control"><a href="#Force-control" class="headerlink" title="Force control"></a>Force control</h2><p>关于被动与主动顺应性控制、阻抗控制和混合阻抗控制，这里注意一下1996年的针对水下环境的混合力位控制的方案</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>问题：高质量的传感器与驱动器组成机器人系统，但是控制系统能力不足，可建议讲工业制造中使用的机器人手臂伺服控制只是引入水下环境。</p>
+<p>低精度、低重复性、低控制环路频率</p>
+<p>控制算法本身存在问题，缺乏与实际的结合与改进</p>
+<p>这里注意下国外实验室的一个项目（细节见技术笔记）</p>
+<p>提出了两种思路</p>
+<ul>
+<li>将车辆导航与定位数据用于机械手控制，补偿运动误差系统</li>
+<li>从机械角度出发，一种稳定器（从末端执行器角度考虑）</li>
+</ul>
+<p>目的：简化操作</p>
+<p>总而言之，文章一直在说一个问题，就是关于高级控制方案落地的问题，个人觉得很类似理论控制的现状，不过嘛，人人都有自己的目的想法，就这样吧。</p>
+<h2 id="后续会补充一篇系统综述"><a href="#后续会补充一篇系统综述" class="headerlink" title="后续会补充一篇系统综述"></a>后续会补充一篇系统综述</h2><p>机器人系统-深入了解水下机器人技术、产品和应用</p>
+<p>ROV深海采矿作业</p>
+<p>AUV-长期运行能力、深水深处返回数据的能力</p>
+<p>水下声学定位系统</p>
+<p>悬停方向的AUV，悬停运动由于同时使用水平推进器和垂直推进器完成</p>
+<p>水下滑翔机</p>
+<p>始于军事，拓展为海上油气等等，比如海上搜索和救援、海洋学等</p>
+<p>未来展望</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
   </entry>
   <entry>
     <title>latex_note</title>
@@ -1804,366 +2274,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>literature</title>
-    <url>/2020/09/03/literature/literature/</url>
-    <content><![CDATA[<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
-<p>abstract    consult    discussion   method   result</p>
-<p>review</p>
-<a id="more"></a>
-
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
-<p>摘要分层</p>
-<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
-<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
-<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
-<p>2.indicative abstract</p>
-<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
-<p>3.extended abstract</p>
-<p> thesis   dissertation</p>
-<p>4.structured abstract</p>
-<p>5.conference abstract</p>
-<p>6.graphical abstract</p>
-<p>7.executive summary</p>
-<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
-<ol>
-<li>Introduction  </li>
-<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
-<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
-</ol>
-<p>分层</p>
-<p>1.review of the present study</p>
-<p>2.consolidating ofthe results</p>
-<p>3.stating limitations and possible research directions</p>
-<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
-<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
-<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
-</ol>
-<p>分层</p>
-<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
-<p>一些特点 linguistic features</p>
-<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
-<p>Method classification</p>
-<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
-<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
-<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
-<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
-<p>…用的比较少，不列了</p>
-<p>缺一部分，改天再补，回寝了～</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>logic_symbol</title>
-    <url>/2020/07/27/logic-symbol/logic-symbol/</url>
-    <content><![CDATA[<h1 id="逻辑符号"><a href="#逻辑符号" class="headerlink" title="逻辑符号"></a>逻辑符号</h1><p>这篇博文主要为了总结一下逻辑运算符号（拯救混乱记忆，雾）</p>
-<p>(下一篇是题目总结顺便复习)</p>
-<a id="more"></a>
-
-
-
-<p>1.逻辑结构</p>
-<p>与运算：</p>
-<p>与(&amp;&amp;)：逻辑规则是两真才真。与and等同。</p>
-<p>或运算：</p>
-<p>或(||)：逻辑规则是只有一个为真就为真。与or等同。</p>
-<p>异或：</p>
-<p>异或(^)：逻辑规则是两个不同就为真。</p>
-<p>非运算符：</p>
-<p>非(！)：逻辑规则是反转操作数的含义。与not等同。</p>
- 
-
-<h2 id="电路中的符合逻辑"><a href="#电路中的符合逻辑" class="headerlink" title="电路中的符合逻辑"></a>电路中的符合逻辑</h2><p>与非：  输入只要有0，输出为1.输入全1，输出才0</p>
-<p>或非：输入只要有1，输出为0，输入全为0，输出才1</p>
-<p>与或非：复合运算</p>
- 
-
-<p>电路中还存在异或与同或</p>
-<p>异或：相异则为1</p>
-<p>同或：相同则为1</p>
-<p>关于逻辑电路门，以后再说吧233</p>
-]]></content>
-      <categories>
-        <category>logic</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>manipulator_HU_learninging</title>
-    <url>/2020/10/12/manipulator-HU-learninging/manipulator-HU-learninging/</url>
-    <content><![CDATA[<h1 id="记录一套开发流程，没啥意义"><a href="#记录一套开发流程，没啥意义" class="headerlink" title="记录一套开发流程，没啥意义"></a>记录一套开发流程，没啥意义</h1><p>后续可看，ppt要好好做</p>
-<a id="more"></a>
-
-<p>1.基本理论</p>
-<p>2.开发</p>
-<p>ISO</p>
-<ol>
-<li>机器人动作机构具有类似于人或其他生物体的某些器官（肢体、感受等）的功能；、</li>
-<li>机器人具有通用性，工作种类多样，动作程序灵活易变；</li>
-<li>机器人具有不同程度的智能性，比如记忆、感知、推理、决策、学习等；</li>
-<li>机器人具有独立性、完整的机器人系统在工作中不可以依赖于人的干预。</li>
-</ol>
-<p>驱动系统</p>
-<ul>
-<li>电源子系统</li>
-<li>电机驱动系统–控制信号-电信号</li>
-<li>传感器</li>
-</ul>
-<p>内部传感器</p>
-<ul>
-<li>机器人里程计</li>
-<li>惯性测量单元IMU</li>
-</ul>
-<p>控制系统</p>
-<p>PC–人机交互（SLAM、导航、图像识别、语音识别）</p>
-<p>TCP/UDP</p>
-<p>硬件系统：控制、传感器数据采集、驱动系统通信、外设连接</p>
-<p>外部传感器</p>
-<ul>
-<li>外部摄像头、Kinect</li>
-<li>激光雷达</li>
-</ul>
-<p>移动机器人-常见</p>
-<p>机器人架构可参考（ppt制作，针对特种环境的通信干扰分析）</p>
-<p>云机器人架构思想：</p>
-<ul>
-<li>全局云：全局数据存储、共享和交互</li>
-<li>本地云：密集型计算的机器人应用服务</li>
-<li>机器人：面向用户的终端服务单元</li>
-</ul>
-<p>优点：局部网络占优</p>
-<ul>
-<li>本地云数据共享更加灵活、快捷</li>
-<li>数据保存与本地服务器，更加安全、可靠</li>
-<li>服务于多种机器人</li>
-</ul>
-<p>整理常见机械臂：</p>
-<ul>
-<li>UR机械臂，安全度高、编程简单、灵活度高，负载10-18kg，工作半径85-130cm。</li>
-<li></li>
-</ul>
-<p>控制框架架构+系统架构+云系统架构</p>
-<h2 id="开发具体流程分析与记录（代码分析）："><a href="#开发具体流程分析与记录（代码分析）：" class="headerlink" title="开发具体流程分析与记录（代码分析）："></a>开发具体流程分析与记录（代码分析）：</h2><p>1.常见基础</p>
-<p>2.manipulator_moveit</p>
-<p>3.moveit+gazebo 仿真系统搭建</p>
-<p>ros_control 为开发者提供的机器人控制中间件，包含一系列控制器接口、传动器接口、硬件接口、控制器工具箱</p>
-<p>包括有速度控制、位置控制、力控制</p>
-<p>关节位置控制器：PID 具体参照arm包 yaml文件或者gazebo_control内yaml文件</p>
-<p>加载控制器，加载conrollers关节参数，加载publisher参数节点，三部分，关节矩阵变换</p>
-<p>moveit与gazebo rviz 联合仿真</p>
-<p>编程接口</p>
-<p>moveit_commander python接口</p>
-<p>1.连接控制需要的规划组 2.设置目标位姿 3.设置运动约束 4.使用moveit！规划一条到达目标的轨迹</p>
-<p>5.修改轨迹 6.执行规划出的轨迹</p>
-<p>启动moveit包-moveit_config,程序中给出目标位置以及执行器位置信息，软件自动规划最优路径</p>
-<p>编程—针对规划组编写，设置目标位置参数，臂则设置位置信息，数组导入，完成机械臂规划</p>
-<p>工作空间运动规划–轨迹规划(关键代码参数)</p>
-<p>创建规划组的控制对象</p>
-<p>获取机器人终端LINK名称</p>
-<p>设置目标位姿对应的参考坐标系和起始、终止位姿</p>
-<p>完成规划并控制机械臂完成运动</p>
-<p>运动限制约束设置</p>
-<p>运动学插件问题KDL，插件选用以及<code>二次开发</code>问题</p>
-<p>抓取与放置，attach与un，避障规划</p>
-<p>代码分析与移植待补充～～</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>linux_cleanfile</title>
-    <url>/2020/10/20/linux-cleanfile/linux-cleanfile/</url>
-    <content><![CDATA[<h1 id="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"><a href="#由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录" class="headerlink" title="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"></a>由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录</h1><p>昨天晚上测试运动算法包，更新中间发现系统磁盘爆满，终端terminal无法运行，启动文件节点无法启动，于今天下午解决问题，写一篇日志记录一下，顺便谈一下linux的多版本软件安装基理。</p>
-<a id="more"></a>
-
-<p>启动terminal，显示终端内存不足，导致文件无法启动，猜想原因是点击系统更新中断后产生bug文件，使得根目录爆满，这里介绍一条指令便于分析大内存位置：</p>
-<p>Traceback (most recent call last):<br>  File “/opt/ros/kinetic/_setup_util.py”, line 297, in <module><br>    sys.stdout.flush()<br>IOError: [Errno 28] No space left on device<br>Failed to run ‘“/opt/ros/kinetic/_setup_util.py” ‘: return code 1<br>Traceback (most recent call last):<br>  File “/home/xiaomu/ws_moveit/devel/_setup_util.py”, line 297, in <module><br>    sys.stdout.flush()</module></module></p>
-<p>首先 df -h 或者 df -hi查看linux总分区，寻找剩余空间不多的分区，我的是根目录显示爆满</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">/dev/sda9        23G   22G     0 100% /</span><br></pre></td></tr></tbody></table></figure>
-
-<p>输入 </p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo du -h -x --max-depth=1</span><br></pre></td></tr></tbody></table></figure>
-
-<p>比如我的显示 var与usr文件爆满</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">13M	./sbin</span><br><span class="line">16K	./lost+found</span><br><span class="line">4.0K	./mnt</span><br><span class="line">4.0K	./lib64</span><br><span class="line">20M	./root</span><br><span class="line">9.9G	./var</span><br><span class="line">775M	./lib</span><br><span class="line">8.0K	./media</span><br><span class="line">4.6M	./libx32</span><br><span class="line">3.9M	./lib32</span><br><span class="line">16K	./snap</span><br><span class="line">1.2G	./opt</span><br><span class="line">16M	./etc</span><br><span class="line">9.8G	./usr</span><br><span class="line">4.0K	./srv</span><br><span class="line">60K	./tmp</span><br><span class="line">13M	./bin</span><br><span class="line">4.0K	./cdrom</span><br><span class="line">22G	.</span><br></pre></td></tr></tbody></table></figure>
-
-<p>根据信息对相应文件进行删除，小心误删重要文件</p>
-<h2 id="var文件夹"><a href="#var文件夹" class="headerlink" title="var文件夹"></a>var文件夹</h2><p>系统运行后占用硬盘内存，主要针对常态性变动文件，包括缓存、登录文件、以及某些软件运行所产生的文件等，log中放置登录文件日志</p>
-<blockquote>
-<p>/var的意义与内容</p>
-<p>如果/usr是安装时会占用较大硬盘容量目录，那么/var就是在系统运行后才会渐渐占用硬盘容量的目录。因为/var目录主要针对常态性变动文件，包括缓存（cache）、登录文件（logfile）以及某些软件运行所产生的文件，包括程序文件（lock file，run file），或者例如Mysql数据库的文件等。常见的子目录如下：</p>
-<p>/var/cache：应用程序本身运行过程中会产生生的一些暂存文件。</p>
-<p>/var/lib:程序本身执行的过程中需要使用到的数据文件放置的目录。再次目录下各自的软件应该要有各自的目录。举例来说，Mysql的数据库放置到/var/lib/mysql，而rpm的数据库则放到/var/lib/rpm目录下。</p>
-<p>/var/lock:某些设备或者是文件资源一次只能被一个应用程序所使用 ，如当系统中有一个刻录机两个人都要使用，那么需要在一个人使用的时候上锁，那么第一个人使用完毕后，第二个人才可以继续使用。</p>
-<p>/var/log:这个是登录文件放置日志的的目录。里面比较重要的文件/var/log/messages，/var/log/harry(记录登陆者信息)等。</p>
-<p>/var/run/：某些程序启动服务后，会将他们PID放置在这个目录下。</p>
-<p>—-来源—<a href="https://www.cnblogs.com/Renyi-Fan/p/11504111.html" target="_blank" rel="noopener">https://www.cnblogs.com/Renyi-Fan/p/11504111.html</a></p>
-</blockquote>
-<p>（本次问题主要出现在这里，推测由于中断更新，导致产生了两个大的错误日志，经过上述方法，在log中发现了两个4g多的日志文件，进行了强制删除，系统恢复正常）</p>
-<p>文件分别为syslog以及kern.log，这里删除后注意重启服务</p>
-<blockquote>
-<p>service syslog restart</p>
-</blockquote>
-<p>至此，问题已经解决，过程中发现usr文件夹同样较大，其实没有问题，原因是因为我平时跑ros以及各种图像代码，库中安装了多个版本的软件，当初只是按照教程进行安装，却不知道为什么linux可以这样，今天知道了原因：</p>
-<h2 id="usr文件夹"><a href="#usr文件夹" class="headerlink" title="usr文件夹"></a>usr文件夹</h2><blockquote>
-<table>
-<thead>
-<tr>
-<th>/usr/X11R6/</th>
-<th>为X Window System重要数据所放置的目录，之所以取名为X11R6是因为最后的X版本为第11版，且该版的第6次释出之意。</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>/usr/bin/</td>
-<td>绝大部分的用户可使用指令都放在这里。请注意到他与/bin的不同之处。(是否与开机过程有关)</td>
-</tr>
-<tr>
-<td>/usr/include/</td>
-<td>c/c++等程序语言的档头(header)与包含档(include)放置处，当我们以tarball方式 (*.tar.gz 的方式安装软件)安装某些数据时，会使用到里头的许多包含档。</td>
-</tr>
-<tr>
-<td>/usr/lib/</td>
-<td>包含各应用软件的函式库、目标文件(object file)，以及不被一般使用者惯用的执行档或脚本(script)。  某些软件会提供一些特殊的指令来进行服务器的设定，这些指令也不会经常被系统管理员操作，  那就会被摆放到这个目录下啦。要注意的是，如果你使用的是X86_64的Linux系统， 那可能会有/usr/lib64/目录产生</td>
-</tr>
-<tr>
-<td>/usr/local/</td>
-<td>统管理员在本机自行安装自己下载的软件(非distribution默认提供者)，建议安装到此目录， 这样会比较便于管理。举例来说，你的distribution提供的软件较旧，你想安装较新的软件但又不想移除旧版，  此时你可以将新版软件安装于/usr/local/目录下，可与原先的旧版软件有分别啦。  你可以自行到/usr/local去看看，该目录下也是具有bin, etc, include, lib…的次目录</td>
-</tr>
-<tr>
-<td>/usr/sbin/</td>
-<td>非系统正常运作所需要的系统指令。最常见的就是某些网络服务器软件的服务指令(daemon)</td>
-</tr>
-<tr>
-<td>/usr/share/</td>
-<td>放置共享文件的地方，在这个目录下放置的数据几乎是不分硬件架构均可读取的数据， 因为几乎都是文本文件嘛。在此目录下常见的还有这些次目录：/usr/share/man：联机帮助文件  /usr/share/doc：软件杂项的文件说明  /usr/share/zoneinfo：与时区有关的时区文件</td>
-</tr>
-<tr>
-<td>/usr/src/</td>
-<td>一般原始码建议放置到这里，src有source的意思。至于核心原始码则建议放置到/usr/src/linux/目录下。</td>
-</tr>
-</tbody></table>
-<p>—来源—<a href="https://www.cnblogs.com/ftl1012/p/9278578.html" target="_blank" rel="noopener">https://www.cnblogs.com/ftl1012/p/9278578.html</a></p>
-</blockquote>
-<p>关于local文件夹，依据上述介绍，同理可以手动进行其余软件多版本的安装。</p>
-<p>总之，个人觉得ubuntu更新还是慎重，其次，装双系统的时候尽量空间给多一点，学会随时终端查看磁盘存储情况，根据报错解决问题，最后写一下查看磁盘的终端命令指南：</p>
-<p>df</p>
-<p>df以磁盘分区为单位查看文件系统</p>
-<p>显示内容参数说明：</p>
-<ul>
-<li><strong>Filesystem</strong>：文件系统</li>
-<li><strong>Size</strong>：  分区大小</li>
-<li><strong>Used</strong>： 已使用容量</li>
-<li><strong>Avail</strong>： 还可以使用的容量</li>
-<li><strong>Use%</strong>： 已用百分比</li>
-<li><strong>Mounted on</strong>： 挂载点　</li>
-</ul>
-<h2 id="Linux-查看磁盘空间"><a href="#Linux-查看磁盘空间" class="headerlink" title="Linux 查看磁盘空间"></a>Linux 查看磁盘空间</h2><p>Linux 查看磁盘空间可以使用 df 和 du 命令。</p>
-<hr>
-<h2 id="df"><a href="#df" class="headerlink" title="df"></a>df</h2><p>df 以磁盘分区为单位查看文件系统，可以获取硬盘被占用了多少空间，目前还剩下多少空间等信息。</p>
-<p>例如，我们使用df -h命令来查看磁盘信息， -h 选项为根据大小适当显示： </p>
-<p>显示内容参数说明：</p>
-<ul>
-<li><strong>Filesystem</strong>：文件系统</li>
-<li><strong>Size</strong>：  分区大小</li>
-<li><strong>Used</strong>： 已使用容量</li>
-<li><strong>Avail</strong>： 还可以使用的容量</li>
-<li><strong>Use%</strong>： 已用百分比</li>
-<li><strong>Mounted on</strong>： 挂载点　</li>
-</ul>
-<p><strong>相关命令：</strong></p>
-<ul>
-<li>df -hl：查看磁盘剩余空间</li>
-<li>df -h：查看每个根路径的分区大小</li>
-<li>du -sh [目录名]：返回该目录的大小</li>
-<li>du -sm [文件夹]：返回该文件夹总M数</li>
-<li>du -h [目录名]：查看指定文件夹下的所有文件大小（包含子文件夹）</li>
-</ul>
-<h2 id="du"><a href="#du" class="headerlink" title="du"></a>du</h2><p>disk usage ，查看磁盘的使用情况</p>
-<p>查看当前目录的总大小</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line"># du -sh</span><br></pre></td></tr></tbody></table></figure>
-
-<p>du 命令用于查看当前目录的总大小：</p>
-<ul>
-<li>-a或-all 为每个指定文件显示磁盘使用情况，或者为目录中每个文件显示各自磁盘使用情况。</li>
-<li>-b或-bytes 显示目录或文件大小时，以byte为单位。</li>
-<li>-c或–total 除了显示目录或文件的大小外，同时也显示所有目录或文件的总和。</li>
-<li>-D或–dereference-args 显示指定符号连接的源文件大小。</li>
-<li>-h或–human-readable 以K，M，G为单位，提高信息的可读性。</li>
-<li>-H或–si 与-h参数相同，但是K，M，G是以1000为换算单位,而不是以1024为换算单位。</li>
-<li>-k或–kilobytes 以1024 bytes为单位。</li>
-<li>-l或–count-links 重复计算硬件连接的文件。</li>
-<li>-L&lt;符号连接&gt;或–dereference&lt;符号连接&gt; 显示选项中所指定符号连接的源文件大小。</li>
-<li>-m或–megabytes 以1MB为单位。</li>
-<li>-s或–summarize 仅显示总计，即当前目录的大小。</li>
-<li>-S或–separate-dirs 显示每个目录的大小时，并不含其子目录的大小。</li>
-<li>-x或–one-file-xystem 以一开始处理时的文件系统为准，若遇上其它不同的文件系统目录则略过。</li>
-<li>-X&lt;文件&gt;或–exclude-from=&lt;文件&gt; 在&lt;文件&gt;指定目录或文件。</li>
-<li>–exclude=&lt;目录或文件&gt; 略过指定的目录或文件。</li>
-<li>–max-depth=&lt;目录层数&gt; 超过指定层数的目录后，予以忽略。</li>
-<li>–help 显示帮助。</li>
-<li>–version 显示版本信息。</li>
-</ul>
-<p>本文中用到的两个指令：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">df -h</span><br><span class="line"></span><br><span class="line">sudo du -h -x --max-depth=1</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h2><p>以下资料来源于，转载非原创 <a href="https://www.sysgeek.cn/ubuntu-free-up-space/" target="_blank" rel="noopener">https://www.sysgeek.cn/ubuntu-free-up-space/</a></p>
-<p>1.移除不再需要的软件包</p>
-<p>如果你了解过 apt-get 或 apt 命令的详细用法，应该知道 autoremove 选项。此选项可以删除「安装某个软件包时」自动安装的依赖库和包，这些自动安装的依赖包在系统中通常是无用的，只用浪费磁盘空间。当然，autoremove 选项也可以自动删除那些系统升级过程中被取代的老旧无用 Linux 内核。</p>
-<p>这是一个自动化的傻瓜命令，可以时不时用它为 Ubuntu 系统释放一些可用硬盘空间：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt autoremove</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="2-清理Ubuntu中的APT缓存"><a href="#2-清理Ubuntu中的APT缓存" class="headerlink" title="2. 清理Ubuntu中的APT缓存"></a>2. 清理Ubuntu中的APT缓存</h3><p>Ubuntu 使用 APT（高级软件包工具）在系统上安装、删除和管理软件，并且在软件卸载之后它还会保留先前下载和安装软件包的缓存。</p>
-<p>APT 包管理系统会将下载的 DEB 包缓存在 /var/cache/apt/archives 文件中，随着时间的推移，由于拥有大量不需要的包这个缓存目录可以增长得相当大。</p>
-<p>你可以使用以下命令查看此缓存的大小：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo du -sh /var/cache/apt</span><br></pre></td></tr></tbody></table></figure>
-
-<p>对于 APT 缓存我们有两种可选方式对其进行清理，其一为只删除过时的软件包：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt autoclean</span><br></pre></td></tr></tbody></table></figure>
-
-<p>另一种则是清理整个缓存（释放更多的磁盘空间）：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt clean</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="3-清理缩略图缓存"><a href="#3-清理缩略图缓存" class="headerlink" title="3.清理缩略图缓存"></a>3.清理缩略图缓存</h3><p>为方便用户预览图片，Ubuntu 会自动为图片文件创建一个缩略图，用于在文件管理器中查看，而这些这些缩略图其实也是以文件形式隐藏存储在用户账户的 ~/.cache/thumbnails 目录当中。</p>
-<p>如果你是摄影爱好者或是图片收藏者，随着时间的推移，缩略图的数量将大大增加。特别需要注意的是，如果你删除了某些照片或图片，这些自动生成的缩略图缓存还是会存在于磁盘当中，而不会自动清除。</p>
-<p>你可以使用以下命令检查缩略图缓存的大小：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">du -sh ~/.cache/thumbnails</span><br></pre></td></tr></tbody></table></figure>
-
-<p>因此，每几个月左右清除缩略图缓存是一个很好的习惯。 最快捷的方法就是使用终端命令：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">rm -rf ~/.cache/thumbnails/*</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="4-手动删除老旧Linux内核（专业）"><a href="#4-手动删除老旧Linux内核（专业）" class="headerlink" title="4.手动删除老旧Linux内核（专业）"></a>4.手动删除老旧Linux内核（专业）</h3><p>前面介绍第 1 种方法时就提到了可以自动删除那些老旧无用的 Linux Kernel，但如果你在 Ubuntu 中曾手动安装过内核，则 apt autoremove 命令选项则不适用了。但删除不使用的旧版内核确实又可节省大量磁盘空间，所以对于手动安装的 Ubuntu 内核可以进行手动卸载。</p>
-<p>首先使用如下命令列出当前 Ubuntu 中所有已经安装的 Linux Kernel：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo dpkg --list 'linux-image*'*</span><br></pre></td></tr></tbody></table></figure>
-
-<p>删除旧版内核与删除任何其他软件包一样：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt remove linux-image-VERSION</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="5-删除多余的孤立包（专业）"><a href="#5-删除多余的孤立包（专业）" class="headerlink" title="5. 删除多余的孤立包（专业）"></a>5. 删除多余的孤立包（专业）</h3><p>首先我们要说说什么是 Ubuntu 系统中的孤立包（也叫多余的包）：假设你安装了一个名为 myprogram 的软件包，而这个包又依赖于 mylib 库，这个库通常在安装 myprogram 时便会自动安装到系统当中。当你卸载 myprogram 应用时，mylib 库可能仍然保留在系统中。 此种情况下，mylib 就会成为一个孤立的包。</p>
-<p>gtkorphan 这款图形化应用可以可以轻松找出并删除 Ubuntu 系统中的孤立包，先使用如下终端命令进行安装：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt install gtkorphan</span><br></pre></td></tr></tbody></table></figure>
-
-<p>安装好后在「多余的包」选项卡中即可对查找、删除孤立包。</p>
-<h3 id="6-卸载不必要的应用程序"><a href="#6-卸载不必要的应用程序" class="headerlink" title="6.卸载不必要的应用程序"></a>6.卸载不必要的应用程序</h3><p>相信每个人都有那么一款和几款几乎不用的游戏或应用程序存在于系统当中。不相信？去你 Ubuntu 系统查下软件列表就知道了。其实这条也不用我多说，如果你需要更多的磁盘空间，删除那些从不使用或较少使用的应用程序总是一个好方法。</p>
-<p>删除软件可以使用「Ubuntu 软件」或直接终端命令：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">sudo apt remove 软件包名</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="7-使用GUI工具释放Ubuntu空间"><a href="#7-使用GUI工具释放Ubuntu空间" class="headerlink" title="7. 使用GUI工具释放Ubuntu空间"></a>7. 使用GUI工具释放Ubuntu空间</h3><p>转载非原创 <a href="https://www.sysgeek.cn/ubuntu-free-up-space/" target="_blank" rel="noopener">https://www.sysgeek.cn/ubuntu-free-up-space/</a></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>newnote</title>
-    <url>/2022/08/02/newnote/newnote/</url>
-    <content><![CDATA[<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>airfact</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>movie_fish</title>
     <url>/2020/07/30/movie-fish/movie-fish/</url>
     <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><a id="more"></a>
@@ -2207,116 +2317,6 @@
       <tags>
         <tag>formula</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>manipulator_review</title>
-    <url>/2020/10/02/manipulator-review/manipulator-review/</url>
-    <content><![CDATA[<h1 id="综述笔记-manipulator-review-underwater-system已补充结束"><a href="#综述笔记-manipulator-review-underwater-system已补充结束" class="headerlink" title="综述笔记-manipulator_review(underwater)-(system已补充结束)"></a>综述笔记-manipulator_review(underwater)-(system已补充结束)</h1><p>一篇综述[1]的总体方向笔记，非文献整理。</p>
-<blockquote>
-<p>[1] SIVČEV S, COLEMAN J, OMERDIĆ E, et al. Underwater manipulators: A review [J]. 2018, 163(431-50.</p>
-</blockquote>
-<p>UUV-unmanned underwater vehicles   </p>
-<p>ROV–remotely operated vehicles</p>
-<p>AUV-autonomous underwater vehicles</p>
-<p>UVMS-Underwater Vehicle Manipulator Systems</p>
-<a id="more"></a>
-
-<p>(水下双臂–一号臂抓取固定机器人本体，二号臂执行预定作业内容)</p>
-<h2 id="常见任务："><a href="#常见任务：" class="headerlink" title="常见任务："></a>常见任务：</h2><p>1.管道检测    2.沉没物体打捞作业     3.矿井作业 </p>
-<p>4.清洁表面作业    5.开关阀门、钻探、rope cutting     6.线缆铺设以及维修</p>
-<p>7.清理碎片或渔网    8.生物地质采样    9.考古archaeological work</p>
-<h2 id="特殊环境材料选择（水下）"><a href="#特殊环境材料选择（水下）" class="headerlink" title="特殊环境材料选择（水下）"></a>特殊环境材料选择（水下）</h2><p>作业约束：</p>
-<p>1.the size of the workspace</p>
-<p>2.lifting capacity </p>
-<p>3.wrist torque</p>
-<p>常用金属合金，比如TI6-4、阳极氧化铝、不锈钢合金以及某些塑料（聚乙烯）</p>
-<p>–较高强度、耐腐蚀性、良好的可加工性质、减轻水中的重量以及减少执行器负担</p>
-<p>Reach–水下机械手运动链长</p>
-<ol>
-<li><p>水下机械手能产生的最大腕部扭矩范围8NM-250NM</p>
-</li>
-<li><p>水下机械手的载荷5kg-500kg左右</p>
-</li>
-<li><p>水下机械手的运动范围为0.5m-2.4m</p>
-<p>参数：max.nominal  最大额定值    at full extension 完全伸展  at rated speed 额定速度</p>
-<p>through envelope </p>
-</li>
-</ol>
-<h2 id="关于水下控制模型意义"><a href="#关于水下控制模型意义" class="headerlink" title="关于水下控制模型意义"></a>关于水下控制模型意义</h2><p>机械手的质量尽量占比较小，为了可以忽略或至少将动态耦合考虑为可以解决的外部干扰，通过水下机器人的动态定位，更大的重量和尺寸对水下机器人推进器系统对由动态耦合引起的干扰的鲁棒性提出了更高的要求。</p>
-<h2 id="机械爪"><a href="#机械爪" class="headerlink" title="机械爪"></a>机械爪</h2><p>通常设计三到六个自由度，三个自由度可以到达任意位置，六个自由度可以实现末端执行器的任意位置和方向</p>
-<p>高自由度具有冗余性，常用于避障作业</p>
-<h2 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h2><ul>
-<li>海水驱动，缺点较多被放弃</li>
-<li>液压驱动–<ul>
-<li>高负载，高效率、简单、过载保护</li>
-<li>定位精度差、容易泄露造成污染</li>
-</ul>
-</li>
-<li>电驱动<ul>
-<li>电动用于商业较少，难以满足工业速度、可靠性、强度或力量要求</li>
-</ul>
-</li>
-<li>电液混合驱动</li>
-</ul>
-<p>以上电与液压驱动均有大量研究文章，有时间挑着看看商用水下操纵器控制系统安装在ROV上的商用水下操纵器由遥操作系统控制，并且完全依赖于位于水面船只上的回路中的驾驶员/操纵员。 飞行员通过摄像头和/或声纳系统的反馈来观察场景，并同时做出有关运动的决定，并使用一些备用输入设备之一远程操作水下操纵器。 根据水下机械手的技术能力，使用不同的控制方法。</p>
-<h3 id="商业用控制系统"><a href="#商业用控制系统" class="headerlink" title="商业用控制系统"></a>商业用控制系统</h3><p>商业级别一般使用遥操作</p>
-<ul>
-<li>rate control    液压通过流量与速度控制</li>
-<li>position control     位置传感器通过电位计、analog resolvers、digital optical encoders 、solid state linear position sensors</li>
-<li>force feedback  商业级应用，常用于辅助人工操作</li>
-</ul>
-<p>gripper control</p>
-<h2 id="水下理论控制模型（文章较多，研究重点）"><a href="#水下理论控制模型（文章较多，研究重点）" class="headerlink" title="水下理论控制模型（文章较多，研究重点）"></a>水下理论控制模型（文章较多，研究重点）</h2><p>manipulator作为一种多体动力学问题，控制方案包含集中控制与分散控制方案两类，此外还包括神经网络控制模型。</p>
-<p>浮力、增加的质量、耗散的阻力和升力以及外部干扰（电流、波浪等），增加了非线性与不确定性因素，使得建模控制变得更加复杂。此外<code>水动力系数</code>无法估计，因为他们会随着温度、深度、盐度等变化，当人体通过液体加速时，水体产生格外的惯性，即质量附加效应</p>
-<p>波浪、海流和潮汐导致流体加速，导致外部和运动干扰以及机械手和机器人的强烈震荡和负载，最后在机器人与机械臂之间发生强烈的运动学和动力学耦合效应</p>
-<p>分散控制–PID</p>
-<p>集中控制–非线性集中控制方案</p>
-<ul>
-<li>多层神经网络控制器</li>
-<li>基于非回归的自适应控制器</li>
-<li>基于滑膜控制策略和动力学模型的水下机器人鲁棒轨迹跟踪控制器等等（–后续记录）</li>
-</ul>
-<p>神经网络模糊控制</p>
-<p>利用模糊增益调整在不确定性和扰动下实现自适应，神经网络用于逼近水下机械手的动力学并添加前馈，补偿输入到PD模糊控制器</p>
-<h2 id="运动控制探讨（高级控制）"><a href="#运动控制探讨（高级控制）" class="headerlink" title="运动控制探讨（高级控制）"></a>运动控制探讨（高级控制）</h2><p>传统：水下航行器与机械臂是分开协调的，因此将整个系统视为两个独立系统。</p>
-<p>特殊环境下的耦合需要采用高级控制方案</p>
-<p>针对耦合动力问题进行探讨（方案细节见技术综述笔记，个人认为这里可以进行改进研究）</p>
-<p>有一种不错的思路，控制重心而非机器人具体姿态</p>
-<p>整体系统控制-基于鲁棒的自适应控制方案</p>
-<p>反馈、前馈控制器（方案细节见技术综述笔记）</p>
-<p><strong>总体而言，水下控制模型主要处理的就是由于水下特殊环境引起的干扰以及特殊环境下的运动耦合</strong></p>
-<h2 id="运动控制与规划（路径规划与轨迹规划"><a href="#运动控制与规划（路径规划与轨迹规划" class="headerlink" title="运动控制与规划（路径规划与轨迹规划"></a>运动控制与规划（路径规划与轨迹规划</h2><p>-笛卡尔遥操作方案</p>
-<p>这里注意一下2013年沈阳自动化所提出的六自由度水下机械臂控制策略</p>
-<p>2018年的碰撞检测算法</p>
-<p>触觉交互</p>
-<p>冗余解析度</p>
-<p>通过不同次要目标解决冗余分辨率，避免关节限制、奇异性、高关节速度，将末端执行器保持在机载摄像头视线范围 内，将阻力最小化</p>
-<h2 id="理想与实际"><a href="#理想与实际" class="headerlink" title="理想与实际"></a>理想与实际</h2><p>大多基于关节空间设定点进行工作，但是需要位置、速度和加速度的详细信息反馈跟踪</p>
-<p>电动具有高效率优势</p>
-<h2 id="Force-control"><a href="#Force-control" class="headerlink" title="Force control"></a>Force control</h2><p>关于被动与主动顺应性控制、阻抗控制和混合阻抗控制，这里注意一下1996年的针对水下环境的混合力位控制的方案</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>问题：高质量的传感器与驱动器组成机器人系统，但是控制系统能力不足，可建议讲工业制造中使用的机器人手臂伺服控制只是引入水下环境。</p>
-<p>低精度、低重复性、低控制环路频率</p>
-<p>控制算法本身存在问题，缺乏与实际的结合与改进</p>
-<p>这里注意下国外实验室的一个项目（细节见技术笔记）</p>
-<p>提出了两种思路</p>
-<ul>
-<li>将车辆导航与定位数据用于机械手控制，补偿运动误差系统</li>
-<li>从机械角度出发，一种稳定器（从末端执行器角度考虑）</li>
-</ul>
-<p>目的：简化操作</p>
-<p>总而言之，文章一直在说一个问题，就是关于高级控制方案落地的问题，个人觉得很类似理论控制的现状，不过嘛，人人都有自己的目的想法，就这样吧。</p>
-<h2 id="后续会补充一篇系统综述"><a href="#后续会补充一篇系统综述" class="headerlink" title="后续会补充一篇系统综述"></a>后续会补充一篇系统综述</h2><p>机器人系统-深入了解水下机器人技术、产品和应用</p>
-<p>ROV深海采矿作业</p>
-<p>AUV-长期运行能力、深水深处返回数据的能力</p>
-<p>水下声学定位系统</p>
-<p>悬停方向的AUV，悬停运动由于同时使用水平推进器和垂直推进器完成</p>
-<p>水下滑翔机</p>
-<p>始于军事，拓展为海上油气等等，比如海上搜索和救援、海洋学等</p>
-<p>未来展望</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
   </entry>
   <entry>
     <title>numpy_py</title>
@@ -2440,6 +2440,117 @@
 <p>以后正常更新啦…</p>
 <p>等会儿再写一个生活计划日志…</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>morphing_and_deformation</title>
+    <url>/2024/07/05/morphing-and-deformation/morphing-and-deformation/</url>
+    <content><![CDATA[<p><strong>morphing与deformation区别</strong></p>
+<a id="more"></a>
+
+<h3 id="Shape-Morphing"><a href="#Shape-Morphing" class="headerlink" title="Shape Morphing"></a>Shape Morphing</h3><ul>
+<li><strong>Context</strong>: Shape morphing is typically discussed in areas where objects or materials are designed to change shape in a controlled, intentional, and often reversible manner.</li>
+<li><strong>Applications</strong>:<ul>
+<li><strong>Computer Graphics and Animation</strong>: Smooth transitions between different shapes or forms, often used in character animations or special effects.</li>
+<li><strong>Aerospace Engineering</strong>: Wings or other components that change shape to optimize performance under different conditions.</li>
+<li><strong>Robotics</strong>: Soft robots that can change shape to navigate through different environments.</li>
+<li><strong>Smart Materials</strong>: Materials that can change their shape in response to stimuli (e.g., temperature, light, electric fields).</li>
+</ul>
+</li>
+<li><strong>Example</strong>: “The development of shape morphing structures can lead to more efficient and adaptable aircraft designs.”</li>
+</ul>
+<h3 id="Shape-Deformation"><a href="#Shape-Deformation" class="headerlink" title="Shape Deformation"></a>Shape Deformation</h3><ul>
+<li><strong>Context</strong>: Shape deformation is a broader term that encompasses any change in shape, whether it is controlled or due to external forces. It includes both elastic (reversible) and plastic (permanent) deformations.</li>
+<li><strong>Applications</strong>:<ul>
+<li><strong>Physics and Mechanics</strong>: Studying how materials deform under various forces and conditions (e.g., tension, compression, shear).</li>
+<li><strong>Materials Science</strong>: Understanding how different materials respond to stress and strain.</li>
+<li><strong>Engineering</strong>: Designing structures and components that can withstand deformations without failing.</li>
+<li><strong>Biology</strong>: Examining how biological tissues deform under pressure or during movement.</li>
+</ul>
+</li>
+<li><strong>Example</strong>: “The research analyzes the shape deformation of metal alloys under high stress to improve their performance in structural applications.”</li>
+</ul>
+<h3 id="Academic-and-Idiomatic-Use"><a href="#Academic-and-Idiomatic-Use" class="headerlink" title="Academic and Idiomatic Use"></a>Academic and Idiomatic Use</h3><ul>
+<li><strong>Shape Morphing</strong>:<ul>
+<li>More specific and often used in advanced or niche fields.</li>
+<li>Conveys a sense of smooth and intentional transformation.</li>
+<li>Less common in general academic literature but highly relevant in fields like aerospace, robotics, and smart materials.</li>
+</ul>
+</li>
+<li><strong>Shape Deformation</strong>:<ul>
+<li>More general and widely applicable across many scientific and engineering disciplines.</li>
+<li>Includes both controlled and uncontrolled changes in shape.</li>
+<li>More commonly found in academic papers, textbooks, and research articles across a broad range of subjects.</li>
+</ul>
+</li>
+</ul>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><ul>
+<li><strong>Shape Morphing</strong>: Best used when discussing specific, controlled, and often reversible shape changes in specialized contexts.</li>
+<li><strong>Shape Deformation</strong>: More suitable for general discussions about changes in shape, whether controlled or due to external forces, across a wide range of scientific and engineering disciplines.</li>
+</ul>
+<h3 id="Key-Differences"><a href="#Key-Differences" class="headerlink" title="Key Differences"></a>Key Differences</h3><ul>
+<li><p>Influence</p>
+<p> often implies a more subtle or indirect impact, potentially over time.</p>
+<ul>
+<li>Example: “Her advice influenced my career path over the years.”</li>
+</ul>
+</li>
+<li><p>Affect</p>
+<p> generally denotes a direct and immediate impact.</p>
+<ul>
+<li>Example: “The sudden change in temperature affected the crops.”</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>老黄采访记录：</p>
+<p>played the game,not the score</p>
+<p>just do your best,go to school,take the right classes,do your best,do you homework,</p>
+<p>dedicate your self to be a good student,</p>
+<p>that  grades will take care of itself,</p>
+<p>if you go backwards,and you teach children just focus on the grades,</p>
+<p>they’ll take easier classes,</p>
+<p>ther’ll focus on just doing well in class and test but not learning and they might learn the wrong thing.</p>
+<p>they might take less risk,they might challenge themselves less</p>
+<p>i would prefer that our company challenges itself more,</p>
+<p>this discover unknown things, do things that no one else has ever done before,</p>
+<p>and be willing to fail, and be willing to learn along the way.,rather than i want you to deliver growth,growth,growth…growth margin,growth margin or whatever results.</p>
+<p>you cannot control those things. don’t worry about those things.</p>
+<p>and so i created a system called early indicators of future success.</p>
+<p>don’t worry about future sucess, worry about the early indicators of future success.</p>
+<p>and what are some of the things of early indicators ,you decide for yourself? </p>
+<p>what are the early indicatos that your believe will lead to future success.</p>
+<p>and that’s why our company focus on that.</p>
+<p>we don’t let somebody else decide for us.</p>
+<p>what’s the definition of success.as we thought we created ourselves.</p>
+<p>and that’s why the company has to go create those indicators on work</p>
+<p>don’t worry about anything else</p>
+<p>and the results will take care of yourself</p>
+<hr>
+<p>乱七八糟转载</p>
+<p>不太过分就尽量忍让，开心就好。</p>
+<p>  <em>家人、朋友和重要的人要放在优先位置。少数亲密朋友胜过一百个普通朋友。不要与老朋友失联。</em> </p>
+<p>  <em>做让你快乐的事，不要做让你不快乐的事。不要和满是负能量的人联系。</em> </p>
+<p> <em>努力工作，但不要错过生活。成为专业领域的顶尖，找到自己的生产力系统，*</em>不要害怕冒险。*** </p>
+<p> <em>赚钱比花钱有趣，但在朋友、新体验、节省时间、旅行和事业上花的钱不要吝啬。</em> </p>
+<p> <em>不要受人摆布。人们可以变得强大，自信与傲慢有区别，目标是前者</em>。 -表面听话，骨子里全是叛逆。。。</p>
+<p> <em>为自己设定每天、每年和每十年的清晰目标</em>。 -有点难，每天比较重要。</p>
+<p> <em>勇敢追求你想要的。如果你认为不做某事会后悔，那就去做。遗憾通常来自于没做的事</em> </p>
+<p> <em>尽力帮助别人，对陌生人友好，即使在没人注意没有回报的时刻也要友好</em>。 -无目的的帮助别人确实会很开心</p>
+<p> <em>要贪婪地学习。 - 经常尝试新事物：做新事物能让时间过得慢些，增加幸福感，保持生活有趣，还能防止思维僵化。每年在生活和工作中都要尝试一些重大、新颖、有挑战的事情。</em> </p>
+<p>  <em>学会原谅：要学会原谅他人。</em> -这个确实，只要不是太过分，影响小，能退一步就退一步，心里过去自己也能舒服。毕竟不能指望每个人十全十美。</p>
+<p> <em>不过分追求地位：地位没有真实价值维持不了多久，而且会让人感到空虚。</em> 平等就行，所谓年纪辈分都是没意义的垃圾；</p>
+<p> <em>感恩和正确看待问题：学会感恩，不要过多抱怨，不要嫉妒别人的成功。有些人可能会嫉妒你的成功，你得学会忽略这些声音。</em> 走自己的路，平常心就是这样</p>
+<p> <em>做行动派：做一个行动派，而不是只会空谈的人。</em> 低头，很难呀</p>
+<p> <em>冷静思考：行动前先冷静思考几秒。如果你很愤怒，那就多思考几分钟。</em> </p>
+<p> <em>不妄下定论：不要轻易对他人妄下定论，你可能永远无法完全了解他们的全部故事，要学会设身处地为他人着想。</em>  体会人的复杂，慎重决定</p>
+<p> <em>不要轻易说‘很难’，不为失败找借口，只为成功找方法.</em>  尝试</p>
+]]></content>
+      <categories>
+        <category>GPT</category>
+      </categories>
+      <tags>
+        <tag>ACADEMIC</tag>
+      </tags>
   </entry>
   <entry>
     <title>pybasic</title>
@@ -2694,117 +2805,6 @@
 <h2 id="ROSGO"><a href="#ROSGO" class="headerlink" title="ROSGO"></a>ROSGO</h2>]]></content>
   </entry>
   <entry>
-    <title>morphing_and_deformation</title>
-    <url>/2024/07/05/morphing-and-deformation/morphing-and-deformation/</url>
-    <content><![CDATA[<p><strong>morphing与deformation区别</strong></p>
-<a id="more"></a>
-
-<h3 id="Shape-Morphing"><a href="#Shape-Morphing" class="headerlink" title="Shape Morphing"></a>Shape Morphing</h3><ul>
-<li><strong>Context</strong>: Shape morphing is typically discussed in areas where objects or materials are designed to change shape in a controlled, intentional, and often reversible manner.</li>
-<li><strong>Applications</strong>:<ul>
-<li><strong>Computer Graphics and Animation</strong>: Smooth transitions between different shapes or forms, often used in character animations or special effects.</li>
-<li><strong>Aerospace Engineering</strong>: Wings or other components that change shape to optimize performance under different conditions.</li>
-<li><strong>Robotics</strong>: Soft robots that can change shape to navigate through different environments.</li>
-<li><strong>Smart Materials</strong>: Materials that can change their shape in response to stimuli (e.g., temperature, light, electric fields).</li>
-</ul>
-</li>
-<li><strong>Example</strong>: “The development of shape morphing structures can lead to more efficient and adaptable aircraft designs.”</li>
-</ul>
-<h3 id="Shape-Deformation"><a href="#Shape-Deformation" class="headerlink" title="Shape Deformation"></a>Shape Deformation</h3><ul>
-<li><strong>Context</strong>: Shape deformation is a broader term that encompasses any change in shape, whether it is controlled or due to external forces. It includes both elastic (reversible) and plastic (permanent) deformations.</li>
-<li><strong>Applications</strong>:<ul>
-<li><strong>Physics and Mechanics</strong>: Studying how materials deform under various forces and conditions (e.g., tension, compression, shear).</li>
-<li><strong>Materials Science</strong>: Understanding how different materials respond to stress and strain.</li>
-<li><strong>Engineering</strong>: Designing structures and components that can withstand deformations without failing.</li>
-<li><strong>Biology</strong>: Examining how biological tissues deform under pressure or during movement.</li>
-</ul>
-</li>
-<li><strong>Example</strong>: “The research analyzes the shape deformation of metal alloys under high stress to improve their performance in structural applications.”</li>
-</ul>
-<h3 id="Academic-and-Idiomatic-Use"><a href="#Academic-and-Idiomatic-Use" class="headerlink" title="Academic and Idiomatic Use"></a>Academic and Idiomatic Use</h3><ul>
-<li><strong>Shape Morphing</strong>:<ul>
-<li>More specific and often used in advanced or niche fields.</li>
-<li>Conveys a sense of smooth and intentional transformation.</li>
-<li>Less common in general academic literature but highly relevant in fields like aerospace, robotics, and smart materials.</li>
-</ul>
-</li>
-<li><strong>Shape Deformation</strong>:<ul>
-<li>More general and widely applicable across many scientific and engineering disciplines.</li>
-<li>Includes both controlled and uncontrolled changes in shape.</li>
-<li>More commonly found in academic papers, textbooks, and research articles across a broad range of subjects.</li>
-</ul>
-</li>
-</ul>
-<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><ul>
-<li><strong>Shape Morphing</strong>: Best used when discussing specific, controlled, and often reversible shape changes in specialized contexts.</li>
-<li><strong>Shape Deformation</strong>: More suitable for general discussions about changes in shape, whether controlled or due to external forces, across a wide range of scientific and engineering disciplines.</li>
-</ul>
-<h3 id="Key-Differences"><a href="#Key-Differences" class="headerlink" title="Key Differences"></a>Key Differences</h3><ul>
-<li><p>Influence</p>
-<p> often implies a more subtle or indirect impact, potentially over time.</p>
-<ul>
-<li>Example: “Her advice influenced my career path over the years.”</li>
-</ul>
-</li>
-<li><p>Affect</p>
-<p> generally denotes a direct and immediate impact.</p>
-<ul>
-<li>Example: “The sudden change in temperature affected the crops.”</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p>老黄采访记录：</p>
-<p>played the game,not the score</p>
-<p>just do your best,go to school,take the right classes,do your best,do you homework,</p>
-<p>dedicate your self to be a good student,</p>
-<p>that  grades will take care of itself,</p>
-<p>if you go backwards,and you teach children just focus on the grades,</p>
-<p>they’ll take easier classes,</p>
-<p>ther’ll focus on just doing well in class and test but not learning and they might learn the wrong thing.</p>
-<p>they might take less risk,they might challenge themselves less</p>
-<p>i would prefer that our company challenges itself more,</p>
-<p>this discover unknown things, do things that no one else has ever done before,</p>
-<p>and be willing to fail, and be willing to learn along the way.,rather than i want you to deliver growth,growth,growth…growth margin,growth margin or whatever results.</p>
-<p>you cannot control those things. don’t worry about those things.</p>
-<p>and so i created a system called early indicators of future success.</p>
-<p>don’t worry about future sucess, worry about the early indicators of future success.</p>
-<p>and what are some of the things of early indicators ,you decide for yourself? </p>
-<p>what are the early indicatos that your believe will lead to future success.</p>
-<p>and that’s why our company focus on that.</p>
-<p>we don’t let somebody else decide for us.</p>
-<p>what’s the definition of success.as we thought we created ourselves.</p>
-<p>and that’s why the company has to go create those indicators on work</p>
-<p>don’t worry about anything else</p>
-<p>and the results will take care of yourself</p>
-<hr>
-<p>乱七八糟转载</p>
-<p>不太过分就尽量忍让，开心就好。</p>
-<p>  <em>家人、朋友和重要的人要放在优先位置。少数亲密朋友胜过一百个普通朋友。不要与老朋友失联。</em> </p>
-<p>  <em>做让你快乐的事，不要做让你不快乐的事。不要和满是负能量的人联系。</em> </p>
-<p> <em>努力工作，但不要错过生活。成为专业领域的顶尖，找到自己的生产力系统，*</em>不要害怕冒险。*** </p>
-<p> <em>赚钱比花钱有趣，但在朋友、新体验、节省时间、旅行和事业上花的钱不要吝啬。</em> </p>
-<p> <em>不要受人摆布。人们可以变得强大，自信与傲慢有区别，目标是前者</em>。 -表面听话，骨子里全是叛逆。。。</p>
-<p> <em>为自己设定每天、每年和每十年的清晰目标</em>。 -有点难，每天比较重要。</p>
-<p> <em>勇敢追求你想要的。如果你认为不做某事会后悔，那就去做。遗憾通常来自于没做的事</em> </p>
-<p> <em>尽力帮助别人，对陌生人友好，即使在没人注意没有回报的时刻也要友好</em>。 -无目的的帮助别人确实会很开心</p>
-<p> <em>要贪婪地学习。 - 经常尝试新事物：做新事物能让时间过得慢些，增加幸福感，保持生活有趣，还能防止思维僵化。每年在生活和工作中都要尝试一些重大、新颖、有挑战的事情。</em> </p>
-<p>  <em>学会原谅：要学会原谅他人。</em> -这个确实，只要不是太过分，影响小，能退一步就退一步，心里过去自己也能舒服。毕竟不能指望每个人十全十美。</p>
-<p> <em>不过分追求地位：地位没有真实价值维持不了多久，而且会让人感到空虚。</em> 平等就行，所谓年纪辈分都是没意义的垃圾；</p>
-<p> <em>感恩和正确看待问题：学会感恩，不要过多抱怨，不要嫉妒别人的成功。有些人可能会嫉妒你的成功，你得学会忽略这些声音。</em> 走自己的路，平常心就是这样</p>
-<p> <em>做行动派：做一个行动派，而不是只会空谈的人。</em> 低头，很难呀</p>
-<p> <em>冷静思考：行动前先冷静思考几秒。如果你很愤怒，那就多思考几分钟。</em> </p>
-<p> <em>不妄下定论：不要轻易对他人妄下定论，你可能永远无法完全了解他们的全部故事，要学会设身处地为他人着想。</em>  体会人的复杂，慎重决定</p>
-<p> <em>不要轻易说‘很难’，不为失败找借口，只为成功找方法.</em>  尝试</p>
-]]></content>
-      <categories>
-        <category>GPT</category>
-      </categories>
-      <tags>
-        <tag>ACADEMIC</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>reading_note1</title>
     <url>/2020/11/02/reading-note1/reading-note1/</url>
     <content><![CDATA[<h1 id="并联机构优化阅读笔记1"><a href="#并联机构优化阅读笔记1" class="headerlink" title="并联机构优化阅读笔记1"></a>并联机构优化阅读笔记1</h1><p>A new method for optimum design of parallel manipulator based on kinematics and dynamics</p>
@@ -2852,6 +2852,28 @@
 ]]></content>
   </entry>
   <entry>
+    <title>ros问题总结</title>
+    <url>/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h1><a id="more"></a>
+
+<h2 id="缺少cmake文件，安装方式"><a href="#缺少cmake文件，安装方式" class="headerlink" title="缺少cmake文件，安装方式"></a>缺少cmake文件，安装方式</h2><p>提示 xxConfig.cmake 找不到</p>
+<p>查找上一行 …provided by “xx”</p>
+<p>补充  sudo apt-get install ros-ROS版本-xx </p>
+<p>roscore运行出错</p>
+<p>Unable to contact my own server a</p>
+<p>xiaomu@GL:<del>$ export ROS_HOSTNAME=localhost<br>xiaomu@GL:</del>$ export ROS_MASTER_URI=<a href="http://localhost:11311" target="_blank" rel="noopener">http://localhost:11311</a></p>
+<p>Unable to contact my own server at [<a href="http://192.168.0.106:35623/]" target="_blank" rel="noopener">http://192.168.0.106:35623/]</a>.</p>
+<p>This usually means that the network is not configured properly.</p>
+<p>A common cause is that the machine cannot connect to itself.  Please check<br>for errors by running:</p>
+<pre><code>ping 192.168.0.106</code></pre><p>For more tips, please see</p>
+<pre><code>http://www.ros.org/wiki/ROS/NetworkSetup</code></pre><p>修正：</p>
+<ol>
+<li>$ export ROS_HOSTNAME=localhost</li>
+<li>$ export ROS_MASTER_URI=<a href="http://localhost:11311" target="_blank" rel="noopener">http://localhost:11311</a></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
     <title>plan</title>
     <url>/2023/01/29/plan/plan/</url>
     <content><![CDATA[<p>2023开学随笔</p>
@@ -2875,28 +2897,6 @@
       <tags>
         <tag>airfact</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>ros问题总结</title>
-    <url>/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h1><a id="more"></a>
-
-<h2 id="缺少cmake文件，安装方式"><a href="#缺少cmake文件，安装方式" class="headerlink" title="缺少cmake文件，安装方式"></a>缺少cmake文件，安装方式</h2><p>提示 xxConfig.cmake 找不到</p>
-<p>查找上一行 …provided by “xx”</p>
-<p>补充  sudo apt-get install ros-ROS版本-xx </p>
-<p>roscore运行出错</p>
-<p>Unable to contact my own server a</p>
-<p>xiaomu@GL:<del>$ export ROS_HOSTNAME=localhost<br>xiaomu@GL:</del>$ export ROS_MASTER_URI=<a href="http://localhost:11311" target="_blank" rel="noopener">http://localhost:11311</a></p>
-<p>Unable to contact my own server at [<a href="http://192.168.0.106:35623/]" target="_blank" rel="noopener">http://192.168.0.106:35623/]</a>.</p>
-<p>This usually means that the network is not configured properly.</p>
-<p>A common cause is that the machine cannot connect to itself.  Please check<br>for errors by running:</p>
-<pre><code>ping 192.168.0.106</code></pre><p>For more tips, please see</p>
-<pre><code>http://www.ros.org/wiki/ROS/NetworkSetup</code></pre><p>修正：</p>
-<ol>
-<li>$ export ROS_HOSTNAME=localhost</li>
-<li>$ export ROS_MASTER_URI=<a href="http://localhost:11311" target="_blank" rel="noopener">http://localhost:11311</a></li>
-</ol>
-]]></content>
   </entry>
   <entry>
     <title>skill</title>
@@ -3093,6 +3093,34 @@
       </tags>
   </entry>
   <entry>
+    <title>随笔II</title>
+    <url>/2024/08/05/%E9%9A%8F%E7%AC%94II/%E9%9A%8F%E7%AC%94II/</url>
+    <content><![CDATA[**平常心平常心~**
+
+<a id="more"></a>
+
+<p>做事要有耐心，要对家人有耐心，要对陌生人有耐心。</p>
+<p>经常遇到自己不乐意的事情就容易表露出来，给人一种拒人千里的感觉，事后老后悔让别人不开心了，真的不太好，多点换位思考，耐心一点。</p>
+<hr>
+<p>最近事情比较多，论文写的也不太顺利，其实内容上已经没有太大问题，运动模式部分还需要看数据才能判断怎么区分维度和驱动速度的关系，得得踏踏实实的推进实质内容了，8月5日周一，这周需要一些进度完成，动力学部分在运动模式部分加入一下，曲线规划也有一部分内容，至少20号之前要有个中期初版。</p>
+<hr>
+<p>看了个医疗电视剧问心，结局还是停留在美好了，其实往后想想还是一堆问题，曾经向往真挚的情感，现在开始更多考虑现实，与一些朋友要保持距离，开开心心的聊天就行，没有未来，就不去耽误别人，柴米油盐才是生活的本质，人的成分也基本一致，漫长的时光会磨灭一切。</p>
+<p>护士长因为自己产检，没有及时把钱打回账户，刚看到的时候，那一瞬间有点怪人家，连带着辩护都有些讨厌，后来一想，其实是可以理解得，毕竟人家的事情更重要，比较下来这边的事情也不是很重要，后来也可以澄清，突然开始觉得自己可恶，怎么可以怪人家，现实里也是，真得多想想，耐心一点耐心一点，绕绕路等等人呗~</p>
+<p>再就是年龄问题，平时看动漫看其他电视剧，看看主角的年龄总会觉得自己真老了，佟湘玉都说自己24岁，但是看看这个剧，又感觉自己也不是很老，培养一个医学博士需要耗费相当久的时间，虽然不是学医得，但是经历也算类似，所以还是希望像剧中人一样可以选择不受牵绊的去做一些自己想做的事情，没必要一直纠结。</p>
+<p>毛晓彤确实有点甜分超标，过于可爱了属于是233</p>
+<hr>
+<ul>
+<li><input checked disabled type="checkbox"> 其实都不太重要，还是耐心比较重要，有时候自己麻烦一点，让别人舒心，后续也会开心一点，就这样，当然是对家人、对朋友。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>EMO</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>爬虫记录_bro</title>
     <url>/2020/12/05/%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95-bro/%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95-bro/</url>
     <content><![CDATA[<h1 id="爬虫记录"><a href="#爬虫记录" class="headerlink" title="爬虫记录"></a>爬虫记录</h1><p>出于兴趣跟着一个本科的老学长学学这个方向，顺便做个记录，方便查看</p>
@@ -3254,30 +3282,6 @@
 <p>一对多控制</p>
 <p>emgsensor 8通道</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>随笔II</title>
-    <url>/2024/08/05/%E9%9A%8F%E7%AC%94II/%E9%9A%8F%E7%AC%94II/</url>
-    <content><![CDATA[<p><strong>平常心平常心~</strong></p>
-<a id="more"></a>
-
-<p>做事要有耐心，要对家人有耐心，要对陌生人有耐心。</p>
-<p>经常遇到自己不乐意的事情就容易表露出来，给人一种拒人千里的感觉，事后老后悔让别人不开心了，真的不太好，多点换位思考，耐心一点。</p>
-<hr>
-<p>最近事情比较多，论文写的也不太顺利，其实内容上已经没有太大问题，运动模式部分还需要看数据才能判断怎么区分维度和驱动速度的关系，得得踏踏实实的推进实质内容了，8月5日周一，这周需要一些进度完成，动力学部分在运动模式部分加入一下，曲线规划也有一部分内容，至少20号之前要有个中期初版。</p>
-<hr>
-<p>看了个医疗电视剧问心，结局还是停留在美好了，其实往后想想还是一堆问题，曾经向往真挚的情感，现在开始更多考虑现实，与一些朋友要保持距离，开开心心的聊天就行，没有未来，就不去耽误别人，柴米油盐才是生活的本质，人的成分也基本一致，漫长的时光会磨灭一切。</p>
-<hr>
-<ul>
-<li><input checked disabled type="checkbox"> 其实都不太重要，还是耐心比较重要，有时候自己麻烦一点，让别人舒心，后续也会开心一点，就这样，当然是对家人、对朋友。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>EMO</tag>
-      </tags>
   </entry>
   <entry>
     <title>start2024</title>
