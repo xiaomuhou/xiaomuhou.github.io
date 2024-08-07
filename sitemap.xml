@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2024/08/05/%E9%9A%8F%E7%AC%94II/%E9%9A%8F%E7%AC%94II/</loc>
+    <loc>http://yoursite.com/2024/07/05/morphing-and-deformation/morphing-and-deformation/</loc>
     
     <lastmod>2024-08-07</lastmod>
     
@@ -11,9 +11,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2024/07/05/morphing-and-deformation/morphing-and-deformation/</loc>
+    <loc>http://yoursite.com/2024/08/05/%E9%9A%8F%E7%AC%94II/%E9%9A%8F%E7%AC%94II/</loc>
     
-    <lastmod>2024-07-05</lastmod>
+    <lastmod>2024-08-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -450,20 +450,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/mathematica/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/tags/note/</loc>
-    <lastmod>2024-08-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/tags/bor/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -485,6 +471,20 @@
   </url>
   
   <url>
+    <loc>http://yoursite.com/tags/mathematica/</loc>
+    <lastmod>2024-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/note/</loc>
+    <lastmod>2024-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/tags/control/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -492,14 +492,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/airfact/</loc>
+    <loc>http://yoursite.com/tags/formula/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/formula/</loc>
+    <loc>http://yoursite.com/tags/airfact/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -529,14 +529,14 @@
 
   
   <url>
-    <loc>http://yoursite.com/categories/note/</loc>
+    <loc>http://yoursite.com/categories/feeling/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/feeling/</loc>
+    <loc>http://yoursite.com/categories/note/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -578,14 +578,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/logic/</loc>
+    <loc>http://yoursite.com/categories/linux/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/linux/</loc>
+    <loc>http://yoursite.com/categories/logic/</loc>
     <lastmod>2024-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
