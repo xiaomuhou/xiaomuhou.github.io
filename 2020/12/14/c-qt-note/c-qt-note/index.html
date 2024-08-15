@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="GUO-WM-0.0" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="c++与QT学习记录给李工干项目涉及到相关知识，终究躲不过c艹，开个帖子记录学习，方便查询相关 FF">
+<meta property="og:type" content="article">
+<meta property="og:title" content="c++_qt_note">
+<meta property="og:url" content="http://xiaomuhou.github.io/2020/12/14/c-qt-note/c-qt-note/index.html">
+<meta property="og:site_name" content="GUO-WM-0.0">
+<meta property="og:description" content="c++与QT学习记录给李工干项目涉及到相关知识，终究躲不过c艹，开个帖子记录学习，方便查询相关 FF">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-12-14T13:24:42.000Z">
+<meta property="article:modified_time" content="2021-01-01T12:39:29.616Z">
+<meta property="article:author" content="Ming">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","width":300,"display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://xiaomuhou.github.io/2020/12/14/c-qt-note/c-qt-note/"/>
+
+
+
+
+
+  <title>c++_qt_note | GUO-WM-0.0</title>
+  
+
+
+
+
+
+
+
+
+<!--pjax：防止跳转页面音乐暂停-->
+  <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
+<meta name="generator" content="Hexo 7.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">GUO-WM-0.0</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">你说我世上最坚强，我说你世上最善良</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://xiaomuhou.github.io/2020/12/14/c-qt-note/c-qt-note/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GUO-WM-0.0">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">c++_qt_note</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-12-14T21:24:42+08:00">
+                2020-12-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  4.6k
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="c-与QT学习记录"><a href="#c-与QT学习记录" class="headerlink" title="c++与QT学习记录"></a>c++与QT学习记录</h1><p>给李工干项目涉及到相关知识，终究躲不过c艹，开个帖子记录学习，方便查询相关</p>
+<p>FF</p>
+<span id="more"></span>
+
+<p>资料来源</p>
+<p>C++：<a target="_blank" rel="noopener" href="http://c.biancheng.net/cplus/">http://c.biancheng.net/cplus/</a></p>
+<p>QT：<a target="_blank" rel="noopener" href="http://c.biancheng.net/qt/">http://c.biancheng.net/qt/</a>    // QT官方教程</p>
+<p>快捷键记录</p>
+<p>1）帮助文件：<code>F1</code> （光标在函数名字或类名上，按 <code>F1</code> 即可跳转到对应帮助文档，查看其详细用法）</p>
+<p>2）.h 文件和对应.cpp 文件切换：<code>F4</code></p>
+<p>3）编译并运行：<code>Ctrl + R</code></p>
+<p>4）函数声明和定义(函数调用和定义)切换：<code>F2</code></p>
+<p>5）代码注释取消注释：<code>Ctrl + /</code> （选中代码再按快捷键）</p>
+<p>6）字体变大变小：<code>Ctrl + 鼠标滚轮向上向下</code></p>
+<p>7）移动代码：<code>选中所要移动的代码 -&gt; 按住 ctrl + shift -&gt; 键盘方向键</code></p>
+<p>8）查找替换关键字：<code>Ctrl + F</code></p>
+<p>9）快速打开代码所在目录：编辑模式下 -&gt; 选中项目文件 -&gt; 右击 -&gt; 选择“显示包含的目录”，即可显示项目所在目录（此方法同样可以打开代码文件所在目录）</p>
+<p>关于语言相关资料来源<a target="_blank" rel="noopener" href="https://wizardforcel.gitbooks.io/wudi-qt4/content/19.html">https://wizardforcel.gitbooks.io/wudi-qt4/content/19.html</a></p>
+<p>linux常用指令</p>
+<table>
+<thead>
+<tr>
+<th align="left">man</th>
+<th align="left">获得联机帮助，是类 Unix 用户的在线帮助手册</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">cd</td>
+<td align="left">切换当前路径命令</td>
+</tr>
+<tr>
+<td align="left">pwd</td>
+<td align="left">显示当前路径</td>
+</tr>
+<tr>
+<td align="left">ls</td>
+<td align="left">显示目录下面的文件和子目录情况</td>
+</tr>
+<tr>
+<td align="left">chmod</td>
+<td align="left">变更文件和目录的属性</td>
+</tr>
+<tr>
+<td align="left">mkdir</td>
+<td align="left">建立目录</td>
+</tr>
+<tr>
+<td align="left">rm</td>
+<td align="left">删除目录或文件</td>
+</tr>
+<tr>
+<td align="left">su</td>
+<td align="left">切换用户登录到 shell，常见从一般用户到 root 用户或者相反顺序</td>
+</tr>
+<tr>
+<td align="left">exec</td>
+<td align="left">执行程序，并且不返回到当前 shell</td>
+</tr>
+<tr>
+<td align="left">ldd</td>
+<td align="left">查看应用程序使用的动态库</td>
+</tr>
+<tr>
+<td align="left">nm</td>
+<td align="left">查看程序或库的调试信息</td>
+</tr>
+<tr>
+<td align="left">objdump</td>
+<td align="left">查看程序或库的信息</td>
+</tr>
+<tr>
+<td align="left">env</td>
+<td align="left">查看环境变量</td>
+</tr>
+<tr>
+<td align="left">grep</td>
+<td align="left">从文件中查找字符串</td>
+</tr>
+<tr>
+<td align="left">find</td>
+<td align="left">查找文件</td>
+</tr>
+<tr>
+<td align="left">which</td>
+<td align="left">查找命令的可执行文件</td>
+</tr>
+<tr>
+<td align="left">uname</td>
+<td align="left">查看操作系统版本</td>
+</tr>
+<tr>
+<td align="left">ps</td>
+<td align="left">查看进程信息</td>
+</tr>
+<tr>
+<td align="left">top</td>
+<td align="left">查看系统资源信息</td>
+</tr>
+<tr>
+<td align="left">vmstat</td>
+<td align="left">查看系统虚拟机各资源信息</td>
+</tr>
+<tr>
+<td align="left">vi/vim</td>
+<td align="left">使用 vi/vim 编辑器</td>
+</tr>
+<tr>
+<td align="left">make</td>
+<td align="left">处理工程文件，生成可执行文件或库或其他资源文件</td>
+</tr>
+<tr>
+<td align="left">gdb/dbx</td>
+<td align="left">调试工具命令</td>
+</tr>
+<tr>
+<td align="left">strace/ltrace</td>
+<td align="left">跟踪程序调用的系统函数情况</td>
+</tr>
+<tr>
+<td align="left">file</td>
+<td align="left">查看文件的格式</td>
+</tr>
+<tr>
+<td align="left">fuser</td>
+<td align="left">查看进程使用了哪些文件</td>
+</tr>
+</tbody></table>
+<p>关于各个文件配合关系–距离说明</p>
+<table>
+<thead>
+<tr>
+<th>.h</th>
+<th>定义窗体类的头文件，定义了类Widget</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>.cpp</td>
+<td>Widget 类的功能实现源程序文件</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>.ui</th>
+<th>窗体界面文件，由UI设计器自动生成，存储了窗体上各个组件的属性设置和布局</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ui_widget.h</td>
+<td>编译后，根据窗体上的组件及其属性、信号与槽的关联等自动生成的一个类的定义文件，类的名称是Ui_Widget</td>
+</tr>
+</tbody></table>
+<h2 id="UI布局"><a href="#UI布局" class="headerlink" title="UI布局"></a>UI布局</h2><table>
+<thead>
+<tr>
+<th>布局组件</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Vertical Layout</td>
+<td>垂直方向布局，组件自动在垂直方向上分布</td>
+</tr>
+<tr>
+<td>Horizontal Layout</td>
+<td>水平方向布局，组件自动在水平方向上分布</td>
+</tr>
+<tr>
+<td>Grid Layout</td>
+<td>网格状布局，网状布局大小改变时，每个网格的大小都改变</td>
+</tr>
+<tr>
+<td>Form Layout</td>
+<td>窗体布局，与网格状布局类似，但是只有最右侧的一列网格会改变大小</td>
+</tr>
+<tr>
+<td>Horizontal Spacer</td>
+<td>一个用于水平分隔的空格</td>
+</tr>
+<tr>
+<td>Vertical Spacer</td>
+<td>一个用于垂直分隔的空格</td>
+</tr>
+</tbody></table>
+<h2 id="快捷键查询"><a href="#快捷键查询" class="headerlink" title="快捷键查询"></a>快捷键查询</h2><table>
+<thead>
+<tr>
+<th>按钮及快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Edit Widget (F3)</td>
+<td>界面设计进入编辑状态，就是正常的设计状态</td>
+</tr>
+<tr>
+<td>Edit Signals/Slots(F4)</td>
+<td>进入信号与槽的可视化设计状态</td>
+</tr>
+<tr>
+<td>Edit Buddies</td>
+<td>进入伙伴关系编辑状态，可以设置一个Label 与一个组件成为伙伴关系</td>
+</tr>
+<tr>
+<td>Edit Tab Order</td>
+<td>进入Tab 顺序编辑状态，Tab 顺序是在键盘上按Tab 键时，输入焦点在界面各组件之间跳动的顺序</td>
+</tr>
+<tr>
+<td>Lay Out Horizontally (Ctrl+H)</td>
+<td>将窗体上所选组件水平布局</td>
+</tr>
+<tr>
+<td>Lay Out Vertically (Ctrl+L)</td>
+<td>将窗体上所选组件垂直布局</td>
+</tr>
+<tr>
+<td>Lay Out Horizontally in Splitter</td>
+<td>将窗体上所选组件用一个分割条进行水平分割布局</td>
+</tr>
+<tr>
+<td>Lay Out Vertically in Splitter</td>
+<td>将窗体上所选组件用一个分割条进行垂直分割布局</td>
+</tr>
+<tr>
+<td>Lay Out in a Form Layout</td>
+<td>将窗体上所选组件按窗体布局</td>
+</tr>
+<tr>
+<td>Lay Out in a Grid</td>
+<td>将窗体上所选组件网格布局</td>
+</tr>
+<tr>
+<td>Break Layout</td>
+<td>解除窗体上所选组件的布局，也就是打散现有的布局</td>
+</tr>
+<tr>
+<td>Adjust Size(Ctrl+J)</td>
+<td>自动调整所选组件的大小</td>
+</tr>
+</tbody></table>
+<h2 id="项目功能实现"><a href="#项目功能实现" class="headerlink" title="项目功能实现"></a>项目功能实现</h2><h2 id="ui-xxx-h-文件"><a href="#ui-xxx-h-文件" class="headerlink" title="ui_xxx.h 文件"></a>ui_xxx.h 文件</h2><p>查看  crtl在头文件查询 资料来源</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/modi000/article/details/107550427">https://blog.csdn.net/modi000/article/details/107550427</a></p>
+<h2 id="关于使用designer-ui编写c"><a href="#关于使用designer-ui编写c" class="headerlink" title="关于使用designer  ui编写c++"></a>关于使用designer  ui编写c++</h2><p>第二种方法相对比较简单一点，就是将Ui::Dialog ui或Ui::Dialog *ui写成一个新定义类的一个数据成员，也就是qtcreator提供的那种方法。（也叫<strong>单继承方法</strong>，只继承了QDialog类）</p>
+<p>以下来源：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/rainbow70626/p/6919240.html">https://www.cnblogs.com/rainbow70626/p/6919240.html</a></p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QDialog&gt;</span></span></span><br><span class="line">        <span class="meta">#<span class="keyword">include</span> <span class="string">"ui_dialog.h"</span></span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dialog</span> : <span class="keyword">public</span> QDialog {</span><br><span class="line">                Q_OBJECT</span><br><span class="line">        <span class="keyword">public</span>:</span><br><span class="line">                <span class="built_in">Dialog</span>(QWidget *parent = <span class="number">0</span>);</span><br><span class="line">                ~<span class="built_in">Dialog</span>();</span><br><span class="line"><span class="keyword">protected</span>:</span><br><span class="line">                <span class="function"><span class="type">void</span> <span class="title">changeEvent</span><span class="params">(QEvent *e)</span></span>;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">                Ui::Dialog *ui;</span><br><span class="line"><span class="keyword">private</span> slots:</span><br><span class="line">                <span class="function"><span class="type">void</span> <span class="title">on_pushButton_clicked</span><span class="params">()</span></span>;</span><br><span class="line">        };</span><br></pre></td></tr></tbody></table></figure>
+
+<p>/home/xiaomu/QT/build-Application-Desktop-Debug/ui_qwdialog.h</p>
+<p>UI–go to slot</p>
+<p>1.<br>       <em>//定义bool型输出变量</em><br>2. ​    bool enable = false;<br>3. ​    <em>//调用文字属性设置变量,传输输入变量enable用于保存是否点击了ok按钮，第二个参数为文字属性对话框默认值</em><br>4. ​    QFont font = QFontDialog::getFont(&amp;enable,QFont(“宋体”,20,QFont::Bold),this,”自定义文字属性”);<br>5. ​    <em>//当点击属性对话框的ok按钮后，变量enable的值为true</em><br>6. ​    if(enable)<br>7. ​    {<br>8. ​        ui-&gt;label-&gt;setFont(font);<br>9. </p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//    qApp-&gt;setFont(QFont("宋体",20,QFont::Bold));</span></span><br><span class="line">    QFont font;</span><br><span class="line">    <span class="comment">//设置文字字体</span></span><br><span class="line">    font.<span class="built_in">setFamily</span>(<span class="string">"宋体"</span>);</span><br><span class="line">    <span class="comment">//设置文字大小为50像素</span></span><br><span class="line">    font.<span class="built_in">setPixelSize</span>(<span class="number">50</span>);</span><br><span class="line">    <span class="comment">//设置文字为粗体</span></span><br><span class="line">    font.<span class="built_in">setBold</span>(<span class="literal">true</span>);             <span class="comment">//封装的setWeight函数</span></span><br><span class="line">    <span class="comment">//设置文字为斜体</span></span><br><span class="line">    font.<span class="built_in">setItalic</span>(<span class="literal">true</span>);           <span class="comment">//封装的setStyle函数</span></span><br><span class="line">    <span class="comment">//设置文字大小</span></span><br><span class="line">    font.<span class="built_in">setPointSize</span>(<span class="number">20</span>);</span><br><span class="line">    <span class="comment">//设置文字倾斜</span></span><br><span class="line">    font.<span class="built_in">setStyle</span>(QFont::StyleItalic);</span><br><span class="line">    <span class="comment">//设置文字粗细//enum Weight 存在5个值</span></span><br><span class="line">    font.<span class="built_in">setWeight</span>(QFont::Light);</span><br><span class="line">    <span class="comment">//设置文字上划线</span></span><br><span class="line">    font.<span class="built_in">setOverline</span>(<span class="literal">true</span>);</span><br><span class="line">    <span class="comment">//设置文字下划线</span></span><br><span class="line">    font.<span class="built_in">setUnderline</span>(<span class="literal">true</span>);</span><br><span class="line">    <span class="comment">//设置文字中划线</span></span><br><span class="line">    font.<span class="built_in">setStrikeOut</span>(<span class="literal">true</span>);</span><br><span class="line"> </span><br><span class="line">    <span class="comment">//设置字间距%</span></span><br><span class="line">    font.<span class="built_in">setLetterSpacing</span>(QFont::PercentageSpacing,<span class="number">300</span>);          <span class="comment">//300%,100为默认</span></span><br><span class="line">    <span class="comment">//设置字间距像素值</span></span><br><span class="line">    font.<span class="built_in">setLetterSpacing</span>(QFont::AbsoluteSpacing,<span class="number">20</span>);             <span class="comment">//设置字间距为100像素</span></span><br><span class="line">    <span class="comment">//设置首个字母大写（跟参数有关，也可以设置全部大写AllUppercase）</span></span><br><span class="line">    font.<span class="built_in">setCapitalization</span>(QFont::Capitalize);</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">    <span class="comment">//通过QFontMetrics获取字体的值</span></span><br><span class="line">    <span class="function">QFontMetrics <span class="title">fm</span><span class="params">(font)</span></span>;</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; fm.<span class="built_in">height</span>();            <span class="comment">//获取文字高度</span></span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; fm.<span class="built_in">maxWidth</span>();          <span class="comment">//获取文字宽度</span></span><br><span class="line"> </span><br><span class="line">    <span class="comment">//通过QFontInfo获取也能获取字体信息</span></span><br><span class="line"> </span><br><span class="line">    <span class="function">QFontInfo <span class="title">fInfo</span><span class="params">(font)</span></span>;</span><br><span class="line">    <span class="built_in">qDebug</span>() &lt;&lt; fInfo.<span class="built_in">family</span>() &lt;&lt;<span class="string">"  "</span>&lt;&lt;fInfo.<span class="built_in">style</span>() &lt;&lt; fInfo.<span class="built_in">pixelSize</span>() &lt;&lt; fInfo.<span class="built_in">overline</span>();</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">    <span class="comment">//设可以单独置QPlainTextEdit字体</span></span><br><span class="line">    <span class="comment">//ui-&gt;plainTextEdit-&gt;setFont(font);</span></span><br><span class="line"> </span><br><span class="line">    <span class="comment">//将当前设置的字体设置为默认字体</span></span><br><span class="line">    qApp-&gt;<span class="built_in">setFont</span>(font);</span><br></pre></td></tr></tbody></table></figure>
+
+<p>非自动生成的，需要在cpp文件中手动添加链接关系</p>
+<p>.h文件中声明函数</p>
+<p>.cpp文件中设置功能，若非自动生成，则需要在cpp文件setup处手动添加连接关系，具体查看测试文件qwdialog</p>
+<h2 id="关联-QT信号与槽机制详解"><a href="#关联-QT信号与槽机制详解" class="headerlink" title="关联-QT信号与槽机制详解"></a>关联-QT信号与槽机制详解</h2><p>信号与槽（Signal &amp; Slot）是 <a target="_blank" rel="noopener" href="http://c.biancheng.net/qt/">Qt</a> 编程的基础，也是 Qt 的一大创新。因为有了信号与槽的编程机制，在 Qt 中处理界面各个组件的交互操作时变得更加直观和简单。</p>
+<p>信号（Signal）就是在特定情况下被发射的事件，例如PushButton 最常见的信号就是鼠标单击时发射的 clicked() 信号，一个 ComboBox 最常见的信号是选择的列表项变化时发射的 CurrentIndexChanged() 信号。</p>
+<p>槽（Slot）就是对信号响应的函数。槽就是一个函数，与一般的<a target="_blank" rel="noopener" href="http://c.biancheng.net/cplus/">C++</a>函数是一样的，可以定义在类的任何部分（public、private 或 protected），可以具有任何参数，也可以被直接调用。槽函数与一般的函数不同的是：槽函数可以与一个信号关联，当信号被发射时，关联的槽函数被自动执行。</p>
+<p>信号与槽关联是用 QObject::connect() 函数实现的，其基本格式是：</p>
+<p>QObject::connect(sender, SIGNAL(signal()), receiver, SLOT(slot()));</p>
+<p>connect() 是 QObject 类的一个静态函数，而 QObject 是所有 Qt 类的基类，在实际调用时可以忽略前面的限定符，所以可以直接写为：</p>
+<p>connect(sender, SIGNAL(signal()), receiver, SLOT(slot()));</p>
+<p>其中，sender 是发射信号的对象的名称，signal() 是信号名称。信号可以看做是特殊的函数，需要带括号，有参数时还需要指明参数。receiver 是接收信号的对象名称，slot() 是槽函数的名称，需要带括号，有参数时还需要指明参数。</p>
+<p>SIGNAL 和 SLOT 是 Qt 的宏，用于指明信号和槽，并将它们的参数转换为相应的字符串。例如，在 samp2_1（前面章节中的项目）的 ui_widget.h 文件中，在 setupUi() 函数中有如下的语句：</p>
+<p>QObject::connect(btnClose, SIGNAL(clicked()), Widget, SLOT(close()));</p>
+<p>其作用就是将 btnClose 按钮的 clicked() 信号与窗体（Widget）的槽函数 close() 相关联，这样，当单击 btnClose 按钮（就是界面上的“Close”按钮）时，就会执行 Widget 的 close() 槽函数。</p>
+<p>关于信号与槽的使用，有以下一些规则需要注意：</p>
+<ul>
+<li><p>一个信号可以连接多个槽，例如：</p>
+<p>connect(spinNum, SIGNAL(valueChanged(int)), this, SLOT(addFun(int));<br>connect(spinNum, SIGNAL(valueChanged(int)), this, SLOT(updateStatus(int));</p>
+<p>这是当一个对象 spinNum 的数值发生变化时，所在窗体有两个槽进行响应，一个 addFun()用于计算，一个 updateStatus() 用于更新状态。</p>
+<p>当一个信号与多个槽函数关联时，槽函数按照建立连接时的顺序依次执行。</p>
+<p>当信号和槽函数带有参数时，在 connect()函数里，要写明参数的类型，但可以不写参数名称。</p>
+</li>
+<li><p>多个信号可以连接同一个槽，例如在 samp2_2（前面章节中的项目）中，让三个选择颜色的 RadioButton的clicked() 信号关联到相同的一个自定义槽函数 setTextFontColor()。</p>
+<p>connect(ui-&gt;rBtnBlue,SIGNAL(clicked()),this,SLOT(setTextFontColor()));<br>connect(ui-&gt;rBtnRed,SIGNAL(clicked()),this,SLOT(setTextFontColor()));<br>connect(ui-&gt;rBtnBlack,SIGNAL(clicked()),this,SLOT(setTextFontColor()));</p>
+<p>这样，当任何一个 RadioButton 被单击时，都会执行 setTextFontColor() 函数。</p>
+</li>
+<li><p>一个信号可以连接另外一个信号，例如：</p>
+<p>connect(spinNum, SIGNAL(valueChanged(int)), this, SIGNAL (refreshInfo(int));</p>
+<p>这样，当一个信号发射时，也会发射另外一个信号，实现某些特殊的功能。</p>
+</li>
+<li><p>严格的情况下，信号与槽的参数个数和类型需要一致，至少信号的参数不能少于槽的参数。如果不匹配，会出现编译错误或运行错误。</p>
+</li>
+<li><p>在使用信号与槽的类中，必须在类的定义中加入宏 Q_OBJECT。</p>
+</li>
+<li><p>当一个信号被发射时，与其关联的槽函数通常被立即执行，就像正常调用一个函数一样。只有当信号关联的所有槽函数执行完毕后，才会执行发射信号处后面的代码。</p>
+</li>
+</ul>
+<p>信号与槽机制是 Qt GUI 编程的基础，使用信号与槽机制可以比较容易地将信号与响应代码关联起来。</p>
+<h2 id="QtDesiger-更改按钮的背景、字体颜色、大小"><a href="#QtDesiger-更改按钮的背景、字体颜色、大小" class="headerlink" title="QtDesiger 更改按钮的背景、字体颜色、大小"></a>QtDesiger 更改按钮的背景、字体颜色、大小</h2><h3 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h3><p>更改QtDesgner 按钮上的背景、字体颜色、字体大小、字体格式</p>
+<h3 id="2、更改背景"><a href="#2、更改背景" class="headerlink" title="2、更改背景"></a>2、更改背景</h3><p>代码中：</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">self.pushButton.<span class="built_in">setStyleSheet</span>(<span class="string">"border-image:url(./image/test.png)"</span>)</span><br><span class="line">border-image:<span class="built_in">url</span>(./image/test.png)</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="3、更改字体颜色、大小、格式"><a href="#3、更改字体颜色、大小、格式" class="headerlink" title="3、更改字体颜色、大小、格式"></a>3、更改字体颜色、大小、格式</h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.pushButton.setStyleSheet("color:rgb(0,0,255)")</span><br></pre></td></tr></tbody></table></figure>
+
+<p>font 修改</p>
+<h3 id="纯QT代码较复杂，暂时不考虑。"><a href="#纯QT代码较复杂，暂时不考虑。" class="headerlink" title="纯QT代码较复杂，暂时不考虑。"></a>纯QT代码较复杂，暂时不考虑。</h3><h2 id="qtcreator-使用快捷键"><a href="#qtcreator-使用快捷键" class="headerlink" title="qtcreator 使用快捷键"></a>qtcreator 使用快捷键</h2><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>快捷键</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Switch Header/Source</td>
+<td>F4</td>
+<td>在同名的头文件和源程序文件之间切换</td>
+</tr>
+<tr>
+<td>Follow Symbol Under Cursor</td>
+<td>F2</td>
+<td>跟踪光标下的符号，若是变量，可跟踪到变量声明的地方；若是函数体或函数声明，可在两者之间切换</td>
+</tr>
+<tr>
+<td>Switch Between Function Declaration and Definition</td>
+<td>Shift+F2</td>
+<td>在函数的声明（函数原型）和定义（函数实现）之间切换</td>
+</tr>
+<tr>
+<td>Refactor\Rename Symbol Under Cursor</td>
+<td>Ctrl+Shift+R</td>
+<td>对光标处的符号更改名称，这将替换到所有用到这个符号的地方</td>
+</tr>
+<tr>
+<td>Refactor\Add Definition in .cpp</td>
+<td></td>
+<td>为函数原型在 cpp 文件里生成函数体</td>
+</tr>
+<tr>
+<td>Auto-indent Selection</td>
+<td>Ctrl+I</td>
+<td>为选择的文字自动进行缩进</td>
+</tr>
+<tr>
+<td>Toggle Comment Selection</td>
+<td>Ctrl+/</td>
+<td>为选择的文字进行注释符号的切换，即可以注释所选代码，或取消注释</td>
+</tr>
+<tr>
+<td>Context Help</td>
+<td>F1</td>
+<td>为光标所在的符号显示帮助文件的内容</td>
+</tr>
+<tr>
+<td>Save All</td>
+<td>Ctrl+Shift+S</td>
+<td>文件全部保存</td>
+</tr>
+<tr>
+<td>Find/Replace</td>
+<td>Ctrl+F</td>
+<td>调出查找/替换对话框</td>
+</tr>
+<tr>
+<td>Find Next</td>
+<td>F3</td>
+<td>查找下一个</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>Ctrl+B</td>
+<td>编译当前项目</td>
+</tr>
+<tr>
+<td>Start Debugging</td>
+<td>F5</td>
+<td>开始调试</td>
+</tr>
+<tr>
+<td>Step Over</td>
+<td>F10</td>
+<td>调试状态下单步略过，即执行当前行程序语句</td>
+</tr>
+<tr>
+<td>Step Into</td>
+<td>F11</td>
+<td>调试状态下跟踪进入，即如果当前行里有函数，就跟踪进入函数体</td>
+</tr>
+<tr>
+<td>Toggle Breakpoint</td>
+<td>F9</td>
+<td>设置或取消当前行的断点设置</td>
+</tr>
+</tbody></table>
+<h2 id="项目相关-数据显示"><a href="#项目相关-数据显示" class="headerlink" title="项目相关-数据显示"></a>项目相关-数据显示</h2><p>QLabel 用于显示字符串，QLineEdit 用于显示和输入字符串。这两个类都有如下的两个函数用于读取和设置显示文字。</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">QString <span class="title">text</span><span class="params">()</span> <span class="type">const</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setText</span><span class="params">(<span class="type">const</span> QString &amp;)</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>column  row</p>
+<p>action添加图像节点</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">MainWindow::on_actAddFiles_triggered</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{<span class="comment">//添加图片文件节点</span></span><br><span class="line">    QStringList files=QFileDialog::<span class="built_in">getOpenFileNames</span>(<span class="keyword">this</span>,<span class="string">"选择一个或多个文件"</span>,<span class="string">""</span>,<span class="string">"Images(*.jpg)"</span>);<span class="comment">//多选文件</span></span><br><span class="line">    <span class="keyword">if</span> (files.<span class="built_in">isEmpty</span>()) <span class="comment">//如果一个文件都没选</span></span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    QTreeWidgetItem *parItem,*item; <span class="comment">//节点</span></span><br><span class="line">    item=ui-&gt;treeFiles-&gt;<span class="built_in">currentItem</span>(); <span class="comment">//当前节点</span></span><br><span class="line">    <span class="keyword">if</span> (item-&gt;<span class="built_in">type</span>()==itImageItem) <span class="comment">//若当前节点是图片节点，取其父节点作为父节点</span></span><br><span class="line">       parItem=item-&gt;<span class="built_in">parent</span>();</span><br><span class="line">    <span class="keyword">else</span> <span class="comment">//否则取当前节点为父节点</span></span><br><span class="line">       parItem=item;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; files.<span class="built_in">size</span>(); ++i)</span><br><span class="line">    {</span><br><span class="line">        QString aFilename=files.<span class="built_in">at</span>(i); <span class="comment">//得到StringList里的一行，也就是一个文件名</span></span><br><span class="line">        <span class="built_in">addImageItem</span>(parItem,aFilename); <span class="comment">//添加一个图片节点</span></span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MainWindow::addImageItem</span><span class="params">(QTreeWidgetItem *parItem, QString aFilename)</span></span></span><br><span class="line"><span class="function"></span>{<span class="comment">//添加一个图片文件节点</span></span><br><span class="line">    <span class="function">QIcon   <span class="title">icon</span><span class="params">(<span class="string">":/images/icons/31.ico"</span>)</span></span>;<span class="comment">//ICON的图标</span></span><br><span class="line">    QString NodeText=<span class="built_in">getFinalFolderName</span>(aFilename); <span class="comment">//获得最后的文件名称</span></span><br><span class="line">    QTreeWidgetItem *item; <span class="comment">//节点</span></span><br><span class="line">    item=<span class="keyword">new</span> <span class="built_in">QTreeWidgetItem</span>(MainWindow::itImageItem); <span class="comment">//新建节点时设定类型为 itImageItem</span></span><br><span class="line">    item-&gt;<span class="built_in">setIcon</span>(colItem,icon); <span class="comment">//设置图标</span></span><br><span class="line">    item-&gt;<span class="built_in">setText</span>(colItem,NodeText); <span class="comment">//最后的文件夹名称</span></span><br><span class="line">    <span class="comment">//item-&gt;setText(colSecond,"type=itImageItem; data="+aFilename); //完整目录名称</span></span><br><span class="line">    item-&gt;<span class="built_in">setText</span>(colItemType,<span class="string">"type=itImageItem"</span>); <span class="comment">//完整目录名称</span></span><br><span class="line">    item-&gt;<span class="built_in">setFlags</span>(Qt::ItemIsSelectable | Qt::ItemIsUserCheckable | Qt::ItemIsEnabled | Qt::ItemIsAutoTristate); <span class="comment">//设置节点选项</span></span><br><span class="line">    item-&gt;<span class="built_in">setCheckState</span>(colItem,Qt::Checked); <span class="comment">//节点选中</span></span><br><span class="line">    item-&gt;<span class="built_in">setData</span>(colItem,Qt::UserRole,<span class="built_in">QVariant</span>(aFilename)); <span class="comment">//设置节点Qt::UserRole的Data,存储完整文件名称</span></span><br><span class="line">    parItem-&gt;<span class="built_in">addChild</span>(item); <span class="comment">//在父节点下面添加子节点</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>QFileSystemModel 提供了一个可用于访问本机文件系统的数据模型。</p>
+<p>文本文档读入数据并显示</p>
+<p>多UI并列设计</p>
+<p>QT MDI 应用四界面方案 — usel删去</p>
+<p>读写文件方式  7_1 采集项目中的图片</p>
+<ol>
+<li>用 QFile 类的 IODevice 读写功能直接进行读写   io设备</li>
+<li>利用 QFile 和 QTextStream 结合起来，用流（Stream)的方法进行文件读写。 读写相关</li>
+</ol>
+<p>关于中文乱码</p>
+<p>最后读取编码，并且发送一定位数的编码数据</p>
+<ul>
+<li>QFile 负责文件的 IO 设备接口，即与文件的物理交互；</li>
+<li>QDataStream 以数据流的方式读取文件内容或写入文件内容。</li>
+</ul>
+<p>dat文件读取与写入</p>
+<h2 id="以下qt例程-（用qt4写了一遍5-sample）"><a href="#以下qt例程-（用qt4写了一遍5-sample）" class="headerlink" title="以下qt例程   （用qt4写了一遍5-sample）"></a>以下qt例程   （用qt4写了一遍5-sample）</h2><p>熟悉显示功能、读取功能、截取视频流方式</p>
+<p>1.mainwindow 窗口样式界面简单，省略  label  Qlabel</p>
+<p>2.application  dialog样式 —学习常用按键以及命名习惯</p>
+<p>包含 修改字体、颜色</p>
+<p>使用功能键位：（class）QPushButton   QCheckBox 方框打勾  QRadioButton  圆圈打勾    QPlainTextEdit</p>
+<p>命名习惯（暂时这样）：btn（OK、CLOSE、cancel） chkBox（Bold、Under、italic）、rBtn（Black、Blue、Red）   txtEdit</p>
+<p>3.纯代码编写界面 sample2.3，同2—-了解原理、以后再学习</p>
+<p>建立一个 Widget Appliation 项目</p>
+<p>关键是取消创建窗体，即不勾选“Generate form”（创建界面）复选框，无选项框选</p>
+<p>iniUI</p>
+<p>声明函数–代码建立功能键位–建立功能映射–connect相关</p>
+<p>声明class 自动生成，不要修改，注意变量</p>
+<p>4.字符串读取模板</p>
+<h3 id="qt宏、顺序容器关联容器、迭代器、foreach关键字、库模块，嗨呀，没弄懂…-以后再说"><a href="#qt宏、顺序容器关联容器、迭代器、foreach关键字、库模块，嗨呀，没弄懂…-以后再说" class="headerlink" title="qt宏、顺序容器关联容器、迭代器、foreach关键字、库模块，嗨呀，没弄懂….以后再说"></a>qt宏、顺序容器关联容器、迭代器、foreach关键字、库模块，嗨呀，没弄懂….以后再说</h3><p>各类附加模块</p>
+<p>qt界面修改尺寸—-geometry</p>
+<h2 id="frame-框架修改"><a href="#frame-框架修改" class="headerlink" title="frame 框架修改"></a>frame 框架修改</h2><p>#frame{border:1px solid rgb(0,255,0)} //frame代表你需要设置边框的frame对象名，1px是边框的线宽，solid为边框形式为实线，rgb为边框颜色</p>
+<h1 id="css-border：solid实线，dashed虚线；dotted点状-double双线"><a href="#css-border：solid实线，dashed虚线；dotted点状-double双线" class="headerlink" title="css border：solid实线，dashed虚线；dotted点状,,double双线"></a>css border：solid实线，dashed虚线；dotted点状,,double双线</h1><p>border:0.5px solid rgb(25,25,25)</p>
+<p>border:2px dashed rgb(255,15,15)</p>
+<p>border:0px solid    </p>
+<h3 id="关于Qstyle-Stylesheet"><a href="#关于Qstyle-Stylesheet" class="headerlink" title="关于Qstyle  Stylesheet"></a>关于Qstyle  Stylesheet</h3><p>如果你对某个widget设置QStyle，那么该样式<strong>只对</strong>该widget有效，其子widget不受影响；但如果设置样式表，那么所有的子widget会<strong>继承</strong>该样式表。</p>
+<h3 id="利用sheet实现只修改外部不修改内部"><a href="#利用sheet实现只修改外部不修改内部" class="headerlink" title="利用sheet实现只修改外部不修改内部"></a>利用sheet实现只修改外部不修改内部</h3><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">QGroupBox {</span><br><span class="line">    border-color: <span class="built_in">rgb</span>(<span class="number">156</span>, <span class="number">156</span>, <span class="number">156</span>);</span><br><span class="line">    border-width: <span class="number">1</span>px;</span><br><span class="line">    border-style: solid;</span><br><span class="line">    margin-top: <span class="number">0.5</span>ex;</span><br><span class="line">} <span class="comment">// 这里可以实现单部分修改</span></span><br><span class="line">QGroupBox::title {</span><br><span class="line">    subcontrol-origin: margin;</span><br><span class="line">    subcontrol-position: top left;</span><br><span class="line">    left: <span class="number">10</span>px;</span><br><span class="line">    margin-left: <span class="number">2</span>px;</span><br><span class="line">    padding: <span class="number">0</span>  <span class="number">0</span>px;</span><br><span class="line">}</span><br><span class="line">QpushButton {</span><br><span class="line">    border-color: <span class="built_in">rgb</span>(<span class="number">255</span>, <span class="number">15</span>, <span class="number">15</span>);</span><br><span class="line">    border-width: <span class="number">2</span>px;</span><br><span class="line">    border-style: dashed;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="图像化设置圆形"><a href="#图像化设置圆形" class="headerlink" title="图像化设置圆形"></a>图像化设置圆形</h2><h1 id="一、使用setStyleSheet方法"><a href="#一、使用setStyleSheet方法" class="headerlink" title="一、使用setStyleSheet方法"></a>一、使用setStyleSheet方法</h1><p>使用的主要是使用border-radius 属性，关于这个属性，可选的样式有<br>border-top-left-radius 设置左上角圆角;<br>border-top-right-radius 设置右上角圆角;<br>border-bottom-left-radius 设置左下角圆角;<br>border-bottom-right-radius 设置右下角圆角;<br>border-radius 设置四个角圆角;</p>
+<p>关于border-radius 后面的参数<br>(1)一个参数 </p>
+<p>(2)两个参数<br>border-radius: 15px 50px<br>第一个参数设置X轴方向的半径<br>第二个参数设置Y轴方向的半径 </p>
+<p>从图中可以看出设置一个参数代表X轴和Y轴设置了同样的值，而两个参数分别为X轴和Y轴方向的半径。大家可以根据不同需要去设置参数。</p>
+<p>border:2px groove gray;border-radius:50px;padding:2px 4px solid   </p>
+<h2 id="pushbutton样式选择"><a href="#pushbutton样式选择" class="headerlink" title="pushbutton样式选择"></a>pushbutton样式选择</h2><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">QPushButton{border-radius:<span class="number">10</span>px;</span><br><span class="line">border:<span class="number">2</span>px solid white;</span><br><span class="line">border:<span class="number">2</span>px solid white;</span><br><span class="line">color:white;</span><br><span class="line">background:transparent;</span><br><span class="line">}</span><br><span class="line">QPushButton:hover{</span><br><span class="line">border:<span class="number">2</span><span class="function">px solid <span class="title">rgb</span><span class="params">(<span class="number">71</span>,<span class="number">186</span>,<span class="number">204</span>)</span></span>;</span><br><span class="line">color:<span class="built_in">rgb</span>(<span class="number">71</span>,<span class="number">186</span>,<span class="number">204</span>);</span><br><span class="line">background:transparent;</span><br><span class="line">}</span><br><span class="line">QPushButton:pressed{</span><br><span class="line">border:<span class="number">2</span>px solid white;</span><br><span class="line">color:white;</span><br><span class="line">background-color:<span class="built_in">rgb</span>(<span class="number">71</span>,<span class="number">186</span>,<span class="number">204</span>);</span><br><span class="line">}</span><br><span class="line">QPushButton:!enabled</span><br><span class="line">{</span><br><span class="line">border:<span class="number">2</span><span class="function">px solid <span class="title">rgb</span><span class="params">(<span class="number">130</span>,<span class="number">130</span>,<span class="number">130</span>)</span></span>;</span><br><span class="line">color:<span class="built_in">rgb</span>(<span class="number">130</span>,<span class="number">130</span>,<span class="number">130</span>);</span><br><span class="line">}</span><br><span class="line">QPushButton:focus {</span><br><span class="line">border:<span class="number">2</span>px solid black;</span><br><span class="line">color:black;</span><br><span class="line">background-color:white;</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<p>pushbutton与toolbutton </p>
+<p>tool工具栏按钮</p>
+<p>push 普通按钮</p>
+<p>comm.h √ comm.cpp √  </p>
+<p>设置参数值不用管，使能 重置 停止 运行</p>
+<h2 id="难顶，浪费了一天时间"><a href="#难顶，浪费了一天时间" class="headerlink" title="难顶，浪费了一天时间"></a>难顶，浪费了一天时间</h2><p>控制模型不改了，就用楼下的电脑修改就好</p>
+<p>其余控制通过5.8进行，我可太笨了</p>
+<p>关于ads通信，发送图片</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/12/09/latex-note/latex-note/" rel="next" title="latex_note">
+                <i class="fa fa-chevron-left"></i> latex_note
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/" rel="prev" title="ros问题总结">
+                ros问题总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+    
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+    
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/1.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+    
+          <nav class="site-state motion-element">
+    
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">44</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+    
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+    
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+    
+          </nav>
+    
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+    
+          
+    
+          
+          
+    
+          
+          
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=548648140&auto=1&height=66"></iframe>
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
+src="//music.163.com/outchain/player?type=2&id=26429375&auto=1&height=66"></iframe>
+
+        </div>
+      </section>
+    
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+    
+            
+              
+            
+    
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#c-%E4%B8%8EQT%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95"><span class="nav-number">1.</span> <span class="nav-text">c++与QT学习记录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#UI%E5%B8%83%E5%B1%80"><span class="nav-number">1.1.</span> <span class="nav-text">UI布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%9F%A5%E8%AF%A2"><span class="nav-number">1.2.</span> <span class="nav-text">快捷键查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.3.</span> <span class="nav-text">项目功能实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ui-xxx-h-%E6%96%87%E4%BB%B6"><span class="nav-number">1.4.</span> <span class="nav-text">ui_xxx.h 文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8designer-ui%E7%BC%96%E5%86%99c"><span class="nav-number">1.5.</span> <span class="nav-text">关于使用designer  ui编写c++</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E8%81%94-QT%E4%BF%A1%E5%8F%B7%E4%B8%8E%E6%A7%BD%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3"><span class="nav-number">1.6.</span> <span class="nav-text">关联-QT信号与槽机制详解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QtDesiger-%E6%9B%B4%E6%94%B9%E6%8C%89%E9%92%AE%E7%9A%84%E8%83%8C%E6%99%AF%E3%80%81%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2%E3%80%81%E5%A4%A7%E5%B0%8F"><span class="nav-number">1.7.</span> <span class="nav-text">QtDesiger 更改按钮的背景、字体颜色、大小</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E7%AE%80%E4%BB%8B"><span class="nav-number">1.7.1.</span> <span class="nav-text">1、简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%9B%B4%E6%94%B9%E8%83%8C%E6%99%AF"><span class="nav-number">1.7.2.</span> <span class="nav-text">2、更改背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E6%9B%B4%E6%94%B9%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2%E3%80%81%E5%A4%A7%E5%B0%8F%E3%80%81%E6%A0%BC%E5%BC%8F"><span class="nav-number">1.7.3.</span> <span class="nav-text">3、更改字体颜色、大小、格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%AFQT%E4%BB%A3%E7%A0%81%E8%BE%83%E5%A4%8D%E6%9D%82%EF%BC%8C%E6%9A%82%E6%97%B6%E4%B8%8D%E8%80%83%E8%99%91%E3%80%82"><span class="nav-number">1.7.4.</span> <span class="nav-text">纯QT代码较复杂，暂时不考虑。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#qtcreator-%E4%BD%BF%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">1.8.</span> <span class="nav-text">qtcreator 使用快捷键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3-%E6%95%B0%E6%8D%AE%E6%98%BE%E7%A4%BA"><span class="nav-number">1.9.</span> <span class="nav-text">项目相关-数据显示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A5%E4%B8%8Bqt%E4%BE%8B%E7%A8%8B-%EF%BC%88%E7%94%A8qt4%E5%86%99%E4%BA%86%E4%B8%80%E9%81%8D5-sample%EF%BC%89"><span class="nav-number">1.10.</span> <span class="nav-text">以下qt例程   （用qt4写了一遍5-sample）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#qt%E5%AE%8F%E3%80%81%E9%A1%BA%E5%BA%8F%E5%AE%B9%E5%99%A8%E5%85%B3%E8%81%94%E5%AE%B9%E5%99%A8%E3%80%81%E8%BF%AD%E4%BB%A3%E5%99%A8%E3%80%81foreach%E5%85%B3%E9%94%AE%E5%AD%97%E3%80%81%E5%BA%93%E6%A8%A1%E5%9D%97%EF%BC%8C%E5%97%A8%E5%91%80%EF%BC%8C%E6%B2%A1%E5%BC%84%E6%87%82%E2%80%A6-%E4%BB%A5%E5%90%8E%E5%86%8D%E8%AF%B4"><span class="nav-number">1.10.1.</span> <span class="nav-text">qt宏、顺序容器关联容器、迭代器、foreach关键字、库模块，嗨呀，没弄懂….以后再说</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#frame-%E6%A1%86%E6%9E%B6%E4%BF%AE%E6%94%B9"><span class="nav-number">1.11.</span> <span class="nav-text">frame 框架修改</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#css-border%EF%BC%9Asolid%E5%AE%9E%E7%BA%BF%EF%BC%8Cdashed%E8%99%9A%E7%BA%BF%EF%BC%9Bdotted%E7%82%B9%E7%8A%B6-double%E5%8F%8C%E7%BA%BF"><span class="nav-number">2.</span> <span class="nav-text">css border：solid实线，dashed虚线；dotted点状,,double双线</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8EQstyle-Stylesheet"><span class="nav-number">2.0.1.</span> <span class="nav-text">关于Qstyle  Stylesheet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A9%E7%94%A8sheet%E5%AE%9E%E7%8E%B0%E5%8F%AA%E4%BF%AE%E6%94%B9%E5%A4%96%E9%83%A8%E4%B8%8D%E4%BF%AE%E6%94%B9%E5%86%85%E9%83%A8"><span class="nav-number">2.0.2.</span> <span class="nav-text">利用sheet实现只修改外部不修改内部</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E5%83%8F%E5%8C%96%E8%AE%BE%E7%BD%AE%E5%9C%86%E5%BD%A2"><span class="nav-number">2.1.</span> <span class="nav-text">图像化设置圆形</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E4%BD%BF%E7%94%A8setStyleSheet%E6%96%B9%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">一、使用setStyleSheet方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#pushbutton%E6%A0%B7%E5%BC%8F%E9%80%89%E6%8B%A9"><span class="nav-number">3.1.</span> <span class="nav-text">pushbutton样式选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9A%BE%E9%A1%B6%EF%BC%8C%E6%B5%AA%E8%B4%B9%E4%BA%86%E4%B8%80%E5%A4%A9%E6%97%B6%E9%97%B4"><span class="nav-number">3.2.</span> <span class="nav-text">难顶，浪费了一天时间</span></a></li></ol></li></ol></div>
+            
+    
+          </div>
+        </section>
+      <!--/noindex-->
+      
+    
+      
+    
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ming</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+<div>
+    <style>
+    .footer-beian{
+        box-shadow:2px 2px 2px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        border-radius:4px;
+        text-shadow:none;
+        font-size:12px;
+        color: #fff;
+        line-height: 15px;
+        background-color: #abbac3;
+        margin: 5px 10px;
+    }
+    .badge-subject {
+        display: inline-block;
+          padding: 4px 4px 4px 6px;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+    }
+    .badge-value {
+        display: inline-block;
+        padding: 4px 6px 4px 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+    }
+    </style>
+    <div class="footer-beian">
+        <a target="_blank" rel="nofollow" href="https://hexo.io/" title="由 Hexo 强力驱动">
+              <span class="badge-subject">Powered</span><span class="badge-value">Hexo</span>
+        </a>
+    </div>
+    <div class="footer-beian">
+        <a rel="nofollow" href="https://github.com/next-theme/hexo-theme-next" target="_blank" title="站点使用 NexT 主题">
+            <span class="badge-subject">Theme</span><span class="badge-value">NexT</span>
+        </a>
+    </div>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"log":false});</script></body>
+</html>
+<!-- 页面点击小红心 --> <script type="text/javascript" src="/js/fireworks.js"></script>
+

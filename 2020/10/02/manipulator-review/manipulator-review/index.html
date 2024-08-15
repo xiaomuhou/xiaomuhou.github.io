@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="GUO-WM-0.0" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="综述笔记-manipulator_review(underwater)-(system已补充结束)一篇综述[1]的总体方向笔记，非文献整理。  [1] SIVČEV S, COLEMAN J, OMERDIĆ E, et al. Underwater manipulators: A review [J]. 2018, 163(431-50.  UUV-unmanned underwater veh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="manipulator_review">
+<meta property="og:url" content="http://xiaomuhou.github.io/2020/10/02/manipulator-review/manipulator-review/index.html">
+<meta property="og:site_name" content="GUO-WM-0.0">
+<meta property="og:description" content="综述笔记-manipulator_review(underwater)-(system已补充结束)一篇综述[1]的总体方向笔记，非文献整理。  [1] SIVČEV S, COLEMAN J, OMERDIĆ E, et al. Underwater manipulators: A review [J]. 2018, 163(431-50.  UUV-unmanned underwater veh">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-10-02T07:45:08.000Z">
+<meta property="article:modified_time" content="2021-08-29T08:50:34.702Z">
+<meta property="article:author" content="Ming">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","width":300,"display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://xiaomuhou.github.io/2020/10/02/manipulator-review/manipulator-review/"/>
+
+
+
+
+
+  <title>manipulator_review | GUO-WM-0.0</title>
+  
+
+
+
+
+
+
+
+
+<!--pjax：防止跳转页面音乐暂停-->
+  <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
+<meta name="generator" content="Hexo 7.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">GUO-WM-0.0</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">你说我世上最坚强，我说你世上最善良</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://xiaomuhou.github.io/2020/10/02/manipulator-review/manipulator-review/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GUO-WM-0.0">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">manipulator_review</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-10-02T15:45:08+08:00">
+                2020-10-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/note/" itemprop="url" rel="index">
+                    <span itemprop="name">note</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2k
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="综述笔记-manipulator-review-underwater-system已补充结束"><a href="#综述笔记-manipulator-review-underwater-system已补充结束" class="headerlink" title="综述笔记-manipulator_review(underwater)-(system已补充结束)"></a>综述笔记-manipulator_review(underwater)-(system已补充结束)</h1><p>一篇综述[1]的总体方向笔记，非文献整理。</p>
+<blockquote>
+<p>[1] SIVČEV S, COLEMAN J, OMERDIĆ E, et al. Underwater manipulators: A review [J]. 2018, 163(431-50.</p>
+</blockquote>
+<p>UUV-unmanned underwater vehicles   </p>
+<p>ROV–remotely operated vehicles</p>
+<p>AUV-autonomous underwater vehicles</p>
+<p>UVMS-Underwater Vehicle Manipulator Systems</p>
+<span id="more"></span>
+
+<p>(水下双臂–一号臂抓取固定机器人本体，二号臂执行预定作业内容)</p>
+<h2 id="常见任务："><a href="#常见任务：" class="headerlink" title="常见任务："></a>常见任务：</h2><p>1.管道检测	2.沉没物体打捞作业	 3.矿井作业 </p>
+<p>4.清洁表面作业	5.开关阀门、钻探、rope cutting 	6.线缆铺设以及维修</p>
+<p>7.清理碎片或渔网	8.生物地质采样	9.考古archaeological work</p>
+<h2 id="特殊环境材料选择（水下）"><a href="#特殊环境材料选择（水下）" class="headerlink" title="特殊环境材料选择（水下）"></a>特殊环境材料选择（水下）</h2><p>作业约束：</p>
+<p>1.the size of the workspace</p>
+<p>2.lifting capacity </p>
+<p>3.wrist torque</p>
+<p>常用金属合金，比如TI6-4、阳极氧化铝、不锈钢合金以及某些塑料（聚乙烯）</p>
+<p>–较高强度、耐腐蚀性、良好的可加工性质、减轻水中的重量以及减少执行器负担</p>
+<p>Reach–水下机械手运动链长</p>
+<ol>
+<li><p>水下机械手能产生的最大腕部扭矩范围8NM-250NM</p>
+</li>
+<li><p>水下机械手的载荷5kg-500kg左右</p>
+</li>
+<li><p>水下机械手的运动范围为0.5m-2.4m</p>
+<p>参数：max.nominal  最大额定值	at full extension 完全伸展  at rated speed 额定速度</p>
+<p>through envelope</p>
+</li>
+</ol>
+<h2 id="关于水下控制模型意义"><a href="#关于水下控制模型意义" class="headerlink" title="关于水下控制模型意义"></a>关于水下控制模型意义</h2><p>机械手的质量尽量占比较小，为了可以忽略或至少将动态耦合考虑为可以解决的外部干扰，通过水下机器人的动态定位，更大的重量和尺寸对水下机器人推进器系统对由动态耦合引起的干扰的鲁棒性提出了更高的要求。</p>
+<h2 id="机械爪"><a href="#机械爪" class="headerlink" title="机械爪"></a>机械爪</h2><p>通常设计三到六个自由度，三个自由度可以到达任意位置，六个自由度可以实现末端执行器的任意位置和方向</p>
+<p>高自由度具有冗余性，常用于避障作业</p>
+<h2 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h2><ul>
+<li>海水驱动，缺点较多被放弃</li>
+<li>液压驱动–<ul>
+<li>高负载，高效率、简单、过载保护</li>
+<li>定位精度差、容易泄露造成污染</li>
+</ul>
+</li>
+<li>电驱动<ul>
+<li>电动用于商业较少，难以满足工业速度、可靠性、强度或力量要求</li>
+</ul>
+</li>
+<li>电液混合驱动</li>
+</ul>
+<p>以上电与液压驱动均有大量研究文章，有时间挑着看看商用水下操纵器控制系统安装在ROV上的商用水下操纵器由遥操作系统控制，并且完全依赖于位于水面船只上的回路中的驾驶员/操纵员。 飞行员通过摄像头和/或声纳系统的反馈来观察场景，并同时做出有关运动的决定，并使用一些备用输入设备之一远程操作水下操纵器。 根据水下机械手的技术能力，使用不同的控制方法。</p>
+<h3 id="商业用控制系统"><a href="#商业用控制系统" class="headerlink" title="商业用控制系统"></a>商业用控制系统</h3><p>商业级别一般使用遥操作</p>
+<ul>
+<li>rate control	液压通过流量与速度控制</li>
+<li>position control     位置传感器通过电位计、analog resolvers、digital optical encoders 、solid state linear position sensors</li>
+<li>force feedback  商业级应用，常用于辅助人工操作</li>
+</ul>
+<p>gripper control</p>
+<h2 id="水下理论控制模型（文章较多，研究重点）"><a href="#水下理论控制模型（文章较多，研究重点）" class="headerlink" title="水下理论控制模型（文章较多，研究重点）"></a>水下理论控制模型（文章较多，研究重点）</h2><p>manipulator作为一种多体动力学问题，控制方案包含集中控制与分散控制方案两类，此外还包括神经网络控制模型。</p>
+<p>浮力、增加的质量、耗散的阻力和升力以及外部干扰（电流、波浪等），增加了非线性与不确定性因素，使得建模控制变得更加复杂。此外<code>水动力系数</code>无法估计，因为他们会随着温度、深度、盐度等变化，当人体通过液体加速时，水体产生格外的惯性，即质量附加效应</p>
+<p>波浪、海流和潮汐导致流体加速，导致外部和运动干扰以及机械手和机器人的强烈震荡和负载，最后在机器人与机械臂之间发生强烈的运动学和动力学耦合效应</p>
+<p>分散控制–PID</p>
+<p>集中控制–非线性集中控制方案</p>
+<ul>
+<li>多层神经网络控制器</li>
+<li>基于非回归的自适应控制器</li>
+<li>基于滑膜控制策略和动力学模型的水下机器人鲁棒轨迹跟踪控制器等等（–后续记录）</li>
+</ul>
+<p>神经网络模糊控制</p>
+<p>利用模糊增益调整在不确定性和扰动下实现自适应，神经网络用于逼近水下机械手的动力学并添加前馈，补偿输入到PD模糊控制器</p>
+<h2 id="运动控制探讨（高级控制）"><a href="#运动控制探讨（高级控制）" class="headerlink" title="运动控制探讨（高级控制）"></a>运动控制探讨（高级控制）</h2><p>传统：水下航行器与机械臂是分开协调的，因此将整个系统视为两个独立系统。</p>
+<p>特殊环境下的耦合需要采用高级控制方案</p>
+<p>针对耦合动力问题进行探讨（方案细节见技术综述笔记，个人认为这里可以进行改进研究）</p>
+<p>有一种不错的思路，控制重心而非机器人具体姿态</p>
+<p>整体系统控制-基于鲁棒的自适应控制方案</p>
+<p>反馈、前馈控制器（方案细节见技术综述笔记）</p>
+<p><strong>总体而言，水下控制模型主要处理的就是由于水下特殊环境引起的干扰以及特殊环境下的运动耦合</strong></p>
+<h2 id="运动控制与规划（路径规划与轨迹规划"><a href="#运动控制与规划（路径规划与轨迹规划" class="headerlink" title="运动控制与规划（路径规划与轨迹规划"></a>运动控制与规划（路径规划与轨迹规划</h2><p>-笛卡尔遥操作方案</p>
+<p>这里注意一下2013年沈阳自动化所提出的六自由度水下机械臂控制策略</p>
+<p>2018年的碰撞检测算法</p>
+<p>触觉交互</p>
+<p>冗余解析度</p>
+<p>通过不同次要目标解决冗余分辨率，避免关节限制、奇异性、高关节速度，将末端执行器保持在机载摄像头视线范围 内，将阻力最小化</p>
+<h2 id="理想与实际"><a href="#理想与实际" class="headerlink" title="理想与实际"></a>理想与实际</h2><p>大多基于关节空间设定点进行工作，但是需要位置、速度和加速度的详细信息反馈跟踪</p>
+<p>电动具有高效率优势</p>
+<h2 id="Force-control"><a href="#Force-control" class="headerlink" title="Force control"></a>Force control</h2><p>关于被动与主动顺应性控制、阻抗控制和混合阻抗控制，这里注意一下1996年的针对水下环境的混合力位控制的方案</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>问题：高质量的传感器与驱动器组成机器人系统，但是控制系统能力不足，可建议讲工业制造中使用的机器人手臂伺服控制只是引入水下环境。</p>
+<p>低精度、低重复性、低控制环路频率</p>
+<p>控制算法本身存在问题，缺乏与实际的结合与改进</p>
+<p>这里注意下国外实验室的一个项目（细节见技术笔记）</p>
+<p>提出了两种思路</p>
+<ul>
+<li>将车辆导航与定位数据用于机械手控制，补偿运动误差系统</li>
+<li>从机械角度出发，一种稳定器（从末端执行器角度考虑）</li>
+</ul>
+<p>目的：简化操作</p>
+<p>总而言之，文章一直在说一个问题，就是关于高级控制方案落地的问题，个人觉得很类似理论控制的现状，不过嘛，人人都有自己的目的想法，就这样吧。</p>
+<h2 id="后续会补充一篇系统综述"><a href="#后续会补充一篇系统综述" class="headerlink" title="后续会补充一篇系统综述"></a>后续会补充一篇系统综述</h2><p>机器人系统-深入了解水下机器人技术、产品和应用</p>
+<p>ROV深海采矿作业</p>
+<p>AUV-长期运行能力、深水深处返回数据的能力</p>
+<p>水下声学定位系统</p>
+<p>悬停方向的AUV，悬停运动由于同时使用水平推进器和垂直推进器完成</p>
+<p>水下滑翔机</p>
+<p>始于军事，拓展为海上油气等等，比如海上搜索和救援、海洋学等</p>
+<p>未来展望</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/09/11/delta-ros/delta-ros/" rel="next" title="delta_ros">
+                <i class="fa fa-chevron-left"></i> delta_ros
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/10/12/manipulator-HU-learninging/manipulator-HU-learninging/" rel="prev" title="manipulator_HU_learninging">
+                manipulator_HU_learninging <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+    
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+    
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/1.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+    
+          <nav class="site-state motion-element">
+    
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">44</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+    
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+    
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+    
+          </nav>
+    
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+    
+          
+    
+          
+          
+    
+          
+          
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=548648140&auto=1&height=66"></iframe>
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
+src="//music.163.com/outchain/player?type=2&id=26429375&auto=1&height=66"></iframe>
+
+        </div>
+      </section>
+    
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+    
+            
+              
+            
+    
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%BC%E8%BF%B0%E7%AC%94%E8%AE%B0-manipulator-review-underwater-system%E5%B7%B2%E8%A1%A5%E5%85%85%E7%BB%93%E6%9D%9F"><span class="nav-number">1.</span> <span class="nav-text">综述笔记-manipulator_review(underwater)-(system已补充结束)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E4%BB%BB%E5%8A%A1%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">常见任务：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%B9%E6%AE%8A%E7%8E%AF%E5%A2%83%E6%9D%90%E6%96%99%E9%80%89%E6%8B%A9%EF%BC%88%E6%B0%B4%E4%B8%8B%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">特殊环境材料选择（水下）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E6%B0%B4%E4%B8%8B%E6%8E%A7%E5%88%B6%E6%A8%A1%E5%9E%8B%E6%84%8F%E4%B9%89"><span class="nav-number">1.3.</span> <span class="nav-text">关于水下控制模型意义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%BA%E6%A2%B0%E7%88%AA"><span class="nav-number">1.4.</span> <span class="nav-text">机械爪</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A9%B1%E5%8A%A8"><span class="nav-number">1.5.</span> <span class="nav-text">驱动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%95%86%E4%B8%9A%E7%94%A8%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.5.1.</span> <span class="nav-text">商业用控制系统</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B0%B4%E4%B8%8B%E7%90%86%E8%AE%BA%E6%8E%A7%E5%88%B6%E6%A8%A1%E5%9E%8B%EF%BC%88%E6%96%87%E7%AB%A0%E8%BE%83%E5%A4%9A%EF%BC%8C%E7%A0%94%E7%A9%B6%E9%87%8D%E7%82%B9%EF%BC%89"><span class="nav-number">1.6.</span> <span class="nav-text">水下理论控制模型（文章较多，研究重点）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%E6%8E%A2%E8%AE%A8%EF%BC%88%E9%AB%98%E7%BA%A7%E6%8E%A7%E5%88%B6%EF%BC%89"><span class="nav-number">1.7.</span> <span class="nav-text">运动控制探讨（高级控制）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%E4%B8%8E%E8%A7%84%E5%88%92%EF%BC%88%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E4%B8%8E%E8%BD%A8%E8%BF%B9%E8%A7%84%E5%88%92"><span class="nav-number">1.8.</span> <span class="nav-text">运动控制与规划（路径规划与轨迹规划</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%90%86%E6%83%B3%E4%B8%8E%E5%AE%9E%E9%99%85"><span class="nav-number">1.9.</span> <span class="nav-text">理想与实际</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Force-control"><span class="nav-number">1.10.</span> <span class="nav-text">Force control</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">1.11.</span> <span class="nav-text">Conclusion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8E%E7%BB%AD%E4%BC%9A%E8%A1%A5%E5%85%85%E4%B8%80%E7%AF%87%E7%B3%BB%E7%BB%9F%E7%BB%BC%E8%BF%B0"><span class="nav-number">1.12.</span> <span class="nav-text">后续会补充一篇系统综述</span></a></li></ol></li></ol></div>
+            
+    
+          </div>
+        </section>
+      <!--/noindex-->
+      
+    
+      
+    
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ming</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+<div>
+    <style>
+    .footer-beian{
+        box-shadow:2px 2px 2px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        border-radius:4px;
+        text-shadow:none;
+        font-size:12px;
+        color: #fff;
+        line-height: 15px;
+        background-color: #abbac3;
+        margin: 5px 10px;
+    }
+    .badge-subject {
+        display: inline-block;
+          padding: 4px 4px 4px 6px;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+    }
+    .badge-value {
+        display: inline-block;
+        padding: 4px 6px 4px 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+    }
+    </style>
+    <div class="footer-beian">
+        <a target="_blank" rel="nofollow" href="https://hexo.io/" title="由 Hexo 强力驱动">
+              <span class="badge-subject">Powered</span><span class="badge-value">Hexo</span>
+        </a>
+    </div>
+    <div class="footer-beian">
+        <a rel="nofollow" href="https://github.com/next-theme/hexo-theme-next" target="_blank" title="站点使用 NexT 主题">
+            <span class="badge-subject">Theme</span><span class="badge-value">NexT</span>
+        </a>
+    </div>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"log":false});</script></body>
+</html>
+<!-- 页面点击小红心 --> <script type="text/javascript" src="/js/fireworks.js"></script>
+

@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="GUO-WM-0.0" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="爬虫记录出于兴趣跟着一个本科的老学长学学这个方向，顺便做个记录，方便查看 （超级超级基础） 持续更新…">
+<meta property="og:type" content="article">
+<meta property="og:title" content="爬虫记录_bro">
+<meta property="og:url" content="http://xiaomuhou.github.io/2020/12/05/%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95-bro/%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95-bro/index.html">
+<meta property="og:site_name" content="GUO-WM-0.0">
+<meta property="og:description" content="爬虫记录出于兴趣跟着一个本科的老学长学学这个方向，顺便做个记录，方便查看 （超级超级基础） 持续更新…">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-12-05T07:38:46.000Z">
+<meta property="article:modified_time" content="2021-01-05T13:55:25.315Z">
+<meta property="article:author" content="Ming">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","width":300,"display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://xiaomuhou.github.io/2020/12/05/爬虫记录-bro/爬虫记录-bro/"/>
+
+
+
+
+
+  <title>爬虫记录_bro | GUO-WM-0.0</title>
+  
+
+
+
+
+
+
+
+
+<!--pjax：防止跳转页面音乐暂停-->
+  <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
+<meta name="generator" content="Hexo 7.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">GUO-WM-0.0</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">你说我世上最坚强，我说你世上最善良</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://xiaomuhou.github.io/2020/12/05/%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95-bro/%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95-bro/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GUO-WM-0.0">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">爬虫记录_bro</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-12-05T15:38:46+08:00">
+                2020-12-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.4k
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="爬虫记录"><a href="#爬虫记录" class="headerlink" title="爬虫记录"></a>爬虫记录</h1><p>出于兴趣跟着一个本科的老学长学学这个方向，顺便做个记录，方便查看</p>
+<p>（超级超级基础）</p>
+<p>持续更新…</p>
+<span id="more"></span>
+
+<p>一些脚本</p>
+<p>油猴插件:<a target="_blank" rel="noopener" href="https://www.tampermonkey.net/">https://www.tampermonkey.net/</a><br>脚本:<a target="_blank" rel="noopener" href="https://greasyfork.org/zh-CN">https://greasyfork.org/zh-CN</a></p>
+<p>插件入门级别爬虫-webscraper</p>
+<h2 id="单页抓取例子"><a href="#单页抓取例子" class="headerlink" title="单页抓取例子"></a>单页抓取例子</h2><h3 id="选择抓取的对象相关"><a href="#选择抓取的对象相关" class="headerlink" title="选择抓取的对象相关"></a>选择抓取的对象相关</h3><p>打开目标页面-webscraper-create new sitemap–设置相关参数</p>
+<p>抓取开始-根据参数进行填写</p>
+<p>select选取目标-dowload-运行（记得勾选multiple）</p>
+<h3 id="启动设置的脚本过程"><a href="#启动设置的脚本过程" class="headerlink" title="启动设置的脚本过程"></a>启动设置的脚本过程</h3><p>启动-sitemapdouban-scrape-设置时间（根据网速）</p>
+<h3 id="导出过程"><a href="#导出过程" class="headerlink" title="导出过程"></a>导出过程</h3><p>sitemap-export excel文件操作 cav</p>
+<h3 id="过程总结"><a href="#过程总结" class="headerlink" title="过程总结"></a>过程总结</h3><p>1.打开webscraper</p>
+<p>2.创建sitemap</p>
+<p>3.设置selector（根据爬去类型进行分析计算）</p>
+<p>4.启动程序并保存数据</p>
+<p>例子测试，爬一下我自己的博客内容<a href="%7B/file/title.csv">文件</a>–测试成功</p>
+<p>代码–编写脚本文件</p>
+<p>下一部分是网页开发知识相关–css与html(明晚更新)</p>
+<p>（小事情–【】+（）)</p>
+<h4 id="css-html相关"><a href="#css-html相关" class="headerlink" title="css html相关"></a>css html相关</h4><p>html 超文本标记语言</p>
+<p>css javascript</p>
+<p>css-设置各种字体大小</p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>first(runoob.com)<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="selector-tag">body</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">background-color</span>:<span class="number">#d0e4fe</span>;</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">h1</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">color</span>:orange;</span></span><br><span class="line"><span class="language-css">	<span class="attribute">text-align</span>:center;</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">p</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">font-family</span>:<span class="string">"Times New Roman"</span>;</span></span><br><span class="line"><span class="language-css">	<span class="attribute">font-size</span>:<span class="number">20px</span>;</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">h4</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">background-color</span>:red;</span></span><br><span class="line"><span class="language-css">	<span class="attribute">text-align</span>:center;</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">a</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">color</span>: red</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">h4</span> <span class="selector-tag">b</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">color</span>: blue</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>简单测试一下!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是WM的个人博客。<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"www.xiaomuh.cn"</span>&gt;</span>小牧网站<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>笔记相关<span class="tag">&lt;<span class="name">b</span> <span class="attr">href</span>=<span class="string">"www.google.cn/"</span>&gt;</span>搜索学习<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>elements-</p>
+<h2 id="选择多列信息"><a href="#选择多列信息" class="headerlink" title="选择多列信息"></a>选择多列信息</h2><p>常规方式-第二类爬取不勾选mutiply</p>
+<p>sitemap_new</p>
+<p>选择元素的原因是，提供一个较为精确的基准，方便多列爬取而不发生错误排列。</p>
+<p>elements 元素选择器  –li class</p>
+<p>选择按钮–之后在下方查看各个参数信息</p>
+<p><strong>整体–格式改变–选择elements–multiply</strong></p>
+<p>进入从分支选择-txt格式文件</p>
+<p>对齐–第一个选择作为基准-其余不勾选multiply可以自动对齐</p>
+<p>尝试爬取论文</p>
+<p>graph查看节点分布</p>
+<h2 id="翻页功能"><a href="#翻页功能" class="headerlink" title="翻页功能"></a>翻页功能</h2><p>根据翻页链接比较区别</p>
+<p>url链接页数格式修改</p>
+<p><strong>页数[1-n],可进行选择页数遍历</strong>(尝试抓取liu博的机器人文章内容)如下</p>
+<p>对于？后面的条件参数可以忽略(测试一下)</p>
+<p>文件-zhuhuyys.csv完成</p>
+<p>TH–缺乏隔多页处理方法，简介只能表面列表，针对不规则链接如何进行分析应用</p>
+<h2 id="等差翻页方式"><a href="#等差翻页方式" class="headerlink" title="等差翻页方式"></a>等差翻页方式</h2><p>比如豆瓣差值页数差值为25</p>
+<p>[0-225:25] </p>
+<p>关于常见网站翻页方式</p>
+<p>翻页</p>
+<h2 id="滚动形式网页怎么抓取"><a href="#滚动形式网页怎么抓取" class="headerlink" title="滚动形式网页怎么抓取"></a>滚动形式网页怎么抓取</h2><h3 id="1-制作-Sitemap"><a href="#1-制作-Sitemap" class="headerlink" title="1.制作 Sitemap"></a>1.制作 Sitemap</h3><p>刚开始我们要先创建一个 container，包含要抓取的三类数据，为了实现滚动到底加载数据的功能，我们把 **container 的 Type 选为 <code>Element scroll down</code>**，就是滚动到网页底部加载数据的意思。</p>
+<p>**元素名后加个 <code>nth-of-type(-n+100) </code>**，暂时只抓取前 100 条数据。注意加：</p>
+<p><strong>以上是重点</strong> </p>
+<p>然后我们保存 container 这个节点，并在这个节点下选择要抓取的三个数据类型。</p>
+<p>首先是标题，我们取名为 title，选择的元素名为 <code>[itemprop='zhihu:question'] a</code>：</p>
+<p>然后是答题人名字 name 与 赞同数 like，选择的元素名分别为 <code>#Popover10-toggle a</code> 和 <code>button.VoteButton--up</code>：</p>
+<p>尝试爬取readhub滚动网页相关内容</p>
+<p>p父话题   由单体选择不要总体选了再父话题，容易出错。无法选择到单个框位置，就先选标题再通过p选框，在选择整体。</p>
+<p>完成</p>
+<h3 id="翻页-滚动型混合界面"><a href="#翻页-滚动型混合界面" class="headerlink" title="翻页 滚动型混合界面"></a>翻页 滚动型混合界面</h3><p>滚动型页面收集方式基本类似，</p>
+<p>sitemap-type</p>
+<p>微博混合型抓取马前卒新闻页面尝试</p>
+<p>翻页寻找规律</p>
+<p>马微博是混合型</p>
+<p><a target="_blank" rel="noopener" href="https://weibo.com/u/6534413254">https://weibo.com/u/6534413254</a></p>
+<p><a target="_blank" rel="noopener" href="https://weibo.com/u/6534413254?is_search=0&amp;visible=0&amp;is_all=1&amp;is_tag=0&amp;profile_ftype=1&amp;page=2#feedtop">https://weibo.com/u/6534413254?is_search=0&amp;visible=0&amp;is_all=1&amp;is_tag=0&amp;profile_ftype=1&amp;page=2#feedtop</a></p>
+<p><a target="_blank" rel="noopener" href="https://weibo.com/u/6534413254?is_search=0&amp;visible=0&amp;is_all=1&amp;is_tag=0&amp;profile_ftype=1&amp;page=3#feedtop">https://weibo.com/u/6534413254?is_search=0&amp;visible=0&amp;is_all=1&amp;is_tag=0&amp;profile_ftype=1&amp;page=3#feedtop</a></p>
+<p>可以发现规律</p>
+<p>需要限定数量就选择 <strong><code>nth-of-type(-n+100)</code></strong></p>
+<p>修改界面 edit metadata 修改爬取到页数</p>
+<p>作业：没有规律网页如何翻页爬取</p>
+<p>提示：element click 点击爬取</p>
+<h2 id="点击爬取-无规则翻页"><a href="#点击爬取-无规则翻页" class="headerlink" title="点击爬取-无规则翻页"></a>点击爬取-无规则翻页</h2><p>element click</p>
+<p>click selector</p>
+<p>选择 css  selector</p>
+<p> 选择多个项目，完成</p>
+<p>思考：这个可以应用于所有翻页型网页，无论有没有规则。</p>
+<p>作为书签 选择link类型</p>
+<p>测试–知乎yys</p>
+<p>emmm</p>
+<p>文章太少嘞，换个师兄，知名劝退师兄2333</p>
+<p>内容太多了</p>
+<p>思考：如何爬取详细信息—界面信息内容较少，无法获得有效信息</p>
+<p>解决方式 下一节</p>
+<h2 id="爬取子页面具体信息"><a href="#爬取子页面具体信息" class="headerlink" title="爬取子页面具体信息"></a>爬取子页面具体信息</h2><p>sitemap</p>
+<p>子内容选择link，点击目标链接</p>
+<p>切换目标页面，重新在同一项目中操作，选择内容进行操作</p>
+<p>测试 YYS文章，尝试加入翻页功能</p>
+<p>测试完成 保存于硬盘</p>
+<h2 id="爬取图片文件"><a href="#爬取图片文件" class="headerlink" title="爬取图片文件"></a>爬取图片文件</h2><p>目标网页</p>
+<p>类型选择图片image</p>
+<p>点击链接可以显示图片</p>
+<h2 id="一些法律小知识"><a href="#一些法律小知识" class="headerlink" title="一些法律小知识"></a>一些法律小知识</h2><p>数据不可商业化活动</p>
+<p>UTS相关规定</p>
+<p>robots.txt</p>
+<p>软件爬虫告一段落，目前为止，较为简单，算是学学新东西，下一阶段顺便复习一下语法基础。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/11/30/configure-bag/configure-bag/" rel="next" title="configure_bag">
+                <i class="fa fa-chevron-left"></i> configure_bag
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/12/09/latex-note/latex-note/" rel="prev" title="latex_note">
+                latex_note <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+    
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+    
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/1.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+    
+          <nav class="site-state motion-element">
+    
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">44</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+    
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+    
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+    
+          </nav>
+    
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+    
+          
+    
+          
+          
+    
+          
+          
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=548648140&auto=1&height=66"></iframe>
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
+src="//music.163.com/outchain/player?type=2&id=26429375&auto=1&height=66"></iframe>
+
+        </div>
+      </section>
+    
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+    
+            
+              
+            
+    
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95"><span class="nav-number">1.</span> <span class="nav-text">爬虫记录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E9%A1%B5%E6%8A%93%E5%8F%96%E4%BE%8B%E5%AD%90"><span class="nav-number">1.1.</span> <span class="nav-text">单页抓取例子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E6%8A%93%E5%8F%96%E7%9A%84%E5%AF%B9%E8%B1%A1%E7%9B%B8%E5%85%B3"><span class="nav-number">1.1.1.</span> <span class="nav-text">选择抓取的对象相关</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E8%AE%BE%E7%BD%AE%E7%9A%84%E8%84%9A%E6%9C%AC%E8%BF%87%E7%A8%8B"><span class="nav-number">1.1.2.</span> <span class="nav-text">启动设置的脚本过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%BC%E5%87%BA%E8%BF%87%E7%A8%8B"><span class="nav-number">1.1.3.</span> <span class="nav-text">导出过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%87%E7%A8%8B%E6%80%BB%E7%BB%93"><span class="nav-number">1.1.4.</span> <span class="nav-text">过程总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#css-html%E7%9B%B8%E5%85%B3"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">css html相关</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E5%A4%9A%E5%88%97%E4%BF%A1%E6%81%AF"><span class="nav-number">1.2.</span> <span class="nav-text">选择多列信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BF%BB%E9%A1%B5%E5%8A%9F%E8%83%BD"><span class="nav-number">1.3.</span> <span class="nav-text">翻页功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AD%89%E5%B7%AE%E7%BF%BB%E9%A1%B5%E6%96%B9%E5%BC%8F"><span class="nav-number">1.4.</span> <span class="nav-text">等差翻页方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BB%9A%E5%8A%A8%E5%BD%A2%E5%BC%8F%E7%BD%91%E9%A1%B5%E6%80%8E%E4%B9%88%E6%8A%93%E5%8F%96"><span class="nav-number">1.5.</span> <span class="nav-text">滚动形式网页怎么抓取</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%88%B6%E4%BD%9C-Sitemap"><span class="nav-number">1.5.1.</span> <span class="nav-text">1.制作 Sitemap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BF%BB%E9%A1%B5-%E6%BB%9A%E5%8A%A8%E5%9E%8B%E6%B7%B7%E5%90%88%E7%95%8C%E9%9D%A2"><span class="nav-number">1.5.2.</span> <span class="nav-text">翻页 滚动型混合界面</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%82%B9%E5%87%BB%E7%88%AC%E5%8F%96-%E6%97%A0%E8%A7%84%E5%88%99%E7%BF%BB%E9%A1%B5"><span class="nav-number">1.6.</span> <span class="nav-text">点击爬取-无规则翻页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%88%AC%E5%8F%96%E5%AD%90%E9%A1%B5%E9%9D%A2%E5%85%B7%E4%BD%93%E4%BF%A1%E6%81%AF"><span class="nav-number">1.7.</span> <span class="nav-text">爬取子页面具体信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%88%AC%E5%8F%96%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6"><span class="nav-number">1.8.</span> <span class="nav-text">爬取图片文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E6%B3%95%E5%BE%8B%E5%B0%8F%E7%9F%A5%E8%AF%86"><span class="nav-number">1.9.</span> <span class="nav-text">一些法律小知识</span></a></li></ol></li></ol></div>
+            
+    
+          </div>
+        </section>
+      <!--/noindex-->
+      
+    
+      
+    
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ming</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+<div>
+    <style>
+    .footer-beian{
+        box-shadow:2px 2px 2px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        border-radius:4px;
+        text-shadow:none;
+        font-size:12px;
+        color: #fff;
+        line-height: 15px;
+        background-color: #abbac3;
+        margin: 5px 10px;
+    }
+    .badge-subject {
+        display: inline-block;
+          padding: 4px 4px 4px 6px;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+    }
+    .badge-value {
+        display: inline-block;
+        padding: 4px 6px 4px 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+    }
+    </style>
+    <div class="footer-beian">
+        <a target="_blank" rel="nofollow" href="https://hexo.io/" title="由 Hexo 强力驱动">
+              <span class="badge-subject">Powered</span><span class="badge-value">Hexo</span>
+        </a>
+    </div>
+    <div class="footer-beian">
+        <a rel="nofollow" href="https://github.com/next-theme/hexo-theme-next" target="_blank" title="站点使用 NexT 主题">
+            <span class="badge-subject">Theme</span><span class="badge-value">NexT</span>
+        </a>
+    </div>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"log":false});</script></body>
+</html>
+<!-- 页面点击小红心 --> <script type="text/javascript" src="/js/fireworks.js"></script>
+

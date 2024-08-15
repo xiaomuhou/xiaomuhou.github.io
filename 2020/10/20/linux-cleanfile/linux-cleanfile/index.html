@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="GUO-WM-0.0" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录昨天晚上测试运动算法包，更新中间发现系统磁盘爆满，终端terminal无法运行，启动文件节点无法启动，于今天下午解决问题，写一篇日志记录一下，顺便谈一下linux的多版本软件安装基理。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux_cleanfile">
+<meta property="og:url" content="http://xiaomuhou.github.io/2020/10/20/linux-cleanfile/linux-cleanfile/index.html">
+<meta property="og:site_name" content="GUO-WM-0.0">
+<meta property="og:description" content="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录昨天晚上测试运动算法包，更新中间发现系统磁盘爆满，终端terminal无法运行，启动文件节点无法启动，于今天下午解决问题，写一篇日志记录一下，顺便谈一下linux的多版本软件安装基理。">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-10-20T07:27:15.000Z">
+<meta property="article:modified_time" content="2020-11-16T13:33:31.985Z">
+<meta property="article:author" content="Ming">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","width":300,"display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://xiaomuhou.github.io/2020/10/20/linux-cleanfile/linux-cleanfile/"/>
+
+
+
+
+
+  <title>linux_cleanfile | GUO-WM-0.0</title>
+  
+
+
+
+
+
+
+
+
+<!--pjax：防止跳转页面音乐暂停-->
+  <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
+<meta name="generator" content="Hexo 7.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">GUO-WM-0.0</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">你说我世上最坚强，我说你世上最善良</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://xiaomuhou.github.io/2020/10/20/linux-cleanfile/linux-cleanfile/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GUO-WM-0.0">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">linux_cleanfile</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-10-20T15:27:15+08:00">
+                2020-10-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  3.4k
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"><a href="#由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录" class="headerlink" title="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"></a>由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录</h1><p>昨天晚上测试运动算法包，更新中间发现系统磁盘爆满，终端terminal无法运行，启动文件节点无法启动，于今天下午解决问题，写一篇日志记录一下，顺便谈一下linux的多版本软件安装基理。</p>
+<span id="more"></span>
+
+<p>启动terminal，显示终端内存不足，导致文件无法启动，猜想原因是点击系统更新中断后产生bug文件，使得根目录爆满，这里介绍一条指令便于分析大内存位置：</p>
+<p>Traceback (most recent call last):<br>  File “/opt/ros/kinetic/_setup_util.py”, line 297, in <module><br>    sys.stdout.flush()<br>IOError: [Errno 28] No space left on device<br>Failed to run ‘“/opt/ros/kinetic/_setup_util.py” ‘: return code 1<br>Traceback (most recent call last):<br>  File “/home/xiaomu/ws_moveit/devel/_setup_util.py”, line 297, in <module><br>    sys.stdout.flush()</module></module></p>
+<p>首先 df -h 或者 df -hi查看linux总分区，寻找剩余空间不多的分区，我的是根目录显示爆满</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/dev/sda9        23G   22G     0 100% /</span><br></pre></td></tr></tbody></table></figure>
+
+<p>输入 </p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo du -h -x --max-depth=1</span><br></pre></td></tr></tbody></table></figure>
+
+<p>比如我的显示 var与usr文件爆满</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">13M	./sbin</span><br><span class="line">16K	./lost+found</span><br><span class="line">4.0K	./mnt</span><br><span class="line">4.0K	./lib64</span><br><span class="line">20M	./root</span><br><span class="line">9.9G	./var</span><br><span class="line">775M	./lib</span><br><span class="line">8.0K	./media</span><br><span class="line">4.6M	./libx32</span><br><span class="line">3.9M	./lib32</span><br><span class="line">16K	./snap</span><br><span class="line">1.2G	./opt</span><br><span class="line">16M	./etc</span><br><span class="line">9.8G	./usr</span><br><span class="line">4.0K	./srv</span><br><span class="line">60K	./tmp</span><br><span class="line">13M	./bin</span><br><span class="line">4.0K	./cdrom</span><br><span class="line">22G	.</span><br></pre></td></tr></tbody></table></figure>
+
+<p>根据信息对相应文件进行删除，小心误删重要文件</p>
+<h2 id="var文件夹"><a href="#var文件夹" class="headerlink" title="var文件夹"></a>var文件夹</h2><p>系统运行后占用硬盘内存，主要针对常态性变动文件，包括缓存、登录文件、以及某些软件运行所产生的文件等，log中放置登录文件日志</p>
+<blockquote>
+<p>/var的意义与内容</p>
+<p>如果/usr是安装时会占用较大硬盘容量目录，那么/var就是在系统运行后才会渐渐占用硬盘容量的目录。因为/var目录主要针对常态性变动文件，包括缓存（cache）、登录文件（logfile）以及某些软件运行所产生的文件，包括程序文件（lock file，run file），或者例如Mysql数据库的文件等。常见的子目录如下：</p>
+<p>/var/cache：应用程序本身运行过程中会产生生的一些暂存文件。</p>
+<p>/var/lib:程序本身执行的过程中需要使用到的数据文件放置的目录。再次目录下各自的软件应该要有各自的目录。举例来说，Mysql的数据库放置到/var/lib/mysql，而rpm的数据库则放到/var/lib/rpm目录下。</p>
+<p>/var/lock:某些设备或者是文件资源一次只能被一个应用程序所使用 ，如当系统中有一个刻录机两个人都要使用，那么需要在一个人使用的时候上锁，那么第一个人使用完毕后，第二个人才可以继续使用。</p>
+<p>/var/log:这个是登录文件放置日志的的目录。里面比较重要的文件/var/log/messages，/var/log/harry(记录登陆者信息)等。</p>
+<p>/var/run/：某些程序启动服务后，会将他们PID放置在这个目录下。</p>
+<p>—-来源—<a target="_blank" rel="noopener" href="https://www.cnblogs.com/Renyi-Fan/p/11504111.html">https://www.cnblogs.com/Renyi-Fan/p/11504111.html</a></p>
+</blockquote>
+<p>（本次问题主要出现在这里，推测由于中断更新，导致产生了两个大的错误日志，经过上述方法，在log中发现了两个4g多的日志文件，进行了强制删除，系统恢复正常）</p>
+<p>文件分别为syslog以及kern.log，这里删除后注意重启服务</p>
+<blockquote>
+<p>service syslog restart</p>
+</blockquote>
+<p>至此，问题已经解决，过程中发现usr文件夹同样较大，其实没有问题，原因是因为我平时跑ros以及各种图像代码，库中安装了多个版本的软件，当初只是按照教程进行安装，却不知道为什么linux可以这样，今天知道了原因：</p>
+<h2 id="usr文件夹"><a href="#usr文件夹" class="headerlink" title="usr文件夹"></a>usr文件夹</h2><blockquote>
+<table>
+<thead>
+<tr>
+<th>/usr/X11R6/</th>
+<th>为X Window System重要数据所放置的目录，之所以取名为X11R6是因为最后的X版本为第11版，且该版的第6次释出之意。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/usr/bin/</td>
+<td>绝大部分的用户可使用指令都放在这里。请注意到他与/bin的不同之处。(是否与开机过程有关)</td>
+</tr>
+<tr>
+<td>/usr/include/</td>
+<td>c/c++等程序语言的档头(header)与包含档(include)放置处，当我们以tarball方式 (*.tar.gz 的方式安装软件)安装某些数据时，会使用到里头的许多包含档。</td>
+</tr>
+<tr>
+<td>/usr/lib/</td>
+<td>包含各应用软件的函式库、目标文件(object file)，以及不被一般使用者惯用的执行档或脚本(script)。  某些软件会提供一些特殊的指令来进行服务器的设定，这些指令也不会经常被系统管理员操作，  那就会被摆放到这个目录下啦。要注意的是，如果你使用的是X86_64的Linux系统， 那可能会有/usr/lib64/目录产生</td>
+</tr>
+<tr>
+<td>/usr/local/</td>
+<td>统管理员在本机自行安装自己下载的软件(非distribution默认提供者)，建议安装到此目录， 这样会比较便于管理。举例来说，你的distribution提供的软件较旧，你想安装较新的软件但又不想移除旧版，  此时你可以将新版软件安装于/usr/local/目录下，可与原先的旧版软件有分别啦。  你可以自行到/usr/local去看看，该目录下也是具有bin, etc, include, lib…的次目录</td>
+</tr>
+<tr>
+<td>/usr/sbin/</td>
+<td>非系统正常运作所需要的系统指令。最常见的就是某些网络服务器软件的服务指令(daemon)</td>
+</tr>
+<tr>
+<td>/usr/share/</td>
+<td>放置共享文件的地方，在这个目录下放置的数据几乎是不分硬件架构均可读取的数据， 因为几乎都是文本文件嘛。在此目录下常见的还有这些次目录：/usr/share/man：联机帮助文件  /usr/share/doc：软件杂项的文件说明  /usr/share/zoneinfo：与时区有关的时区文件</td>
+</tr>
+<tr>
+<td>/usr/src/</td>
+<td>一般原始码建议放置到这里，src有source的意思。至于核心原始码则建议放置到/usr/src/linux/目录下。</td>
+</tr>
+</tbody></table>
+<p>—来源—<a target="_blank" rel="noopener" href="https://www.cnblogs.com/ftl1012/p/9278578.html">https://www.cnblogs.com/ftl1012/p/9278578.html</a></p>
+</blockquote>
+<p>关于local文件夹，依据上述介绍，同理可以手动进行其余软件多版本的安装。</p>
+<p>总之，个人觉得ubuntu更新还是慎重，其次，装双系统的时候尽量空间给多一点，学会随时终端查看磁盘存储情况，根据报错解决问题，最后写一下查看磁盘的终端命令指南：</p>
+<p>df</p>
+<p>df以磁盘分区为单位查看文件系统</p>
+<p>显示内容参数说明：</p>
+<ul>
+<li><strong>Filesystem</strong>：文件系统</li>
+<li><strong>Size</strong>：  分区大小</li>
+<li><strong>Used</strong>： 已使用容量</li>
+<li><strong>Avail</strong>： 还可以使用的容量</li>
+<li>**Use%**： 已用百分比</li>
+<li><strong>Mounted on</strong>： 挂载点</li>
+</ul>
+<p>　</p>
+<h2 id="Linux-查看磁盘空间"><a href="#Linux-查看磁盘空间" class="headerlink" title="Linux 查看磁盘空间"></a>Linux 查看磁盘空间</h2><p>Linux 查看磁盘空间可以使用 df 和 du 命令。</p>
+<hr>
+<h2 id="df"><a href="#df" class="headerlink" title="df"></a>df</h2><p>df 以磁盘分区为单位查看文件系统，可以获取硬盘被占用了多少空间，目前还剩下多少空间等信息。</p>
+<p>例如，我们使用df -h命令来查看磁盘信息， -h 选项为根据大小适当显示： </p>
+<p>显示内容参数说明：</p>
+<ul>
+<li><strong>Filesystem</strong>：文件系统</li>
+<li><strong>Size</strong>：  分区大小</li>
+<li><strong>Used</strong>： 已使用容量</li>
+<li><strong>Avail</strong>： 还可以使用的容量</li>
+<li>**Use%**： 已用百分比</li>
+<li><strong>Mounted on</strong>： 挂载点</li>
+</ul>
+<p>　</p>
+<p><strong>相关命令：</strong></p>
+<ul>
+<li>df -hl：查看磁盘剩余空间</li>
+<li>df -h：查看每个根路径的分区大小</li>
+<li>du -sh [目录名]：返回该目录的大小</li>
+<li>du -sm [文件夹]：返回该文件夹总M数</li>
+<li>du -h [目录名]：查看指定文件夹下的所有文件大小（包含子文件夹）</li>
+</ul>
+<h2 id="du"><a href="#du" class="headerlink" title="du"></a>du</h2><p>disk usage ，查看磁盘的使用情况</p>
+<p>查看当前目录的总大小</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># du -sh</span><br></pre></td></tr></tbody></table></figure>
+
+<p>du 命令用于查看当前目录的总大小：</p>
+<ul>
+<li>-a或-all 为每个指定文件显示磁盘使用情况，或者为目录中每个文件显示各自磁盘使用情况。</li>
+<li>-b或-bytes 显示目录或文件大小时，以byte为单位。</li>
+<li>-c或–total 除了显示目录或文件的大小外，同时也显示所有目录或文件的总和。</li>
+<li>-D或–dereference-args 显示指定符号连接的源文件大小。</li>
+<li>-h或–human-readable 以K，M，G为单位，提高信息的可读性。</li>
+<li>-H或–si 与-h参数相同，但是K，M，G是以1000为换算单位,而不是以1024为换算单位。</li>
+<li>-k或–kilobytes 以1024 bytes为单位。</li>
+<li>-l或–count-links 重复计算硬件连接的文件。</li>
+<li>-L&lt;符号连接&gt;或–dereference&lt;符号连接&gt; 显示选项中所指定符号连接的源文件大小。</li>
+<li>-m或–megabytes 以1MB为单位。</li>
+<li>-s或–summarize 仅显示总计，即当前目录的大小。</li>
+<li>-S或–separate-dirs 显示每个目录的大小时，并不含其子目录的大小。</li>
+<li>-x或–one-file-xystem 以一开始处理时的文件系统为准，若遇上其它不同的文件系统目录则略过。</li>
+<li>-X&lt;文件&gt;或–exclude-from=&lt;文件&gt; 在&lt;文件&gt;指定目录或文件。</li>
+<li>–exclude=&lt;目录或文件&gt; 略过指定的目录或文件。</li>
+<li>–max-depth=&lt;目录层数&gt; 超过指定层数的目录后，予以忽略。</li>
+<li>–help 显示帮助。</li>
+<li>–version 显示版本信息。</li>
+</ul>
+<p>本文中用到的两个指令：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">df -h</span><br><span class="line"></span><br><span class="line">sudo du -h -x --max-depth=1</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h2><p>以下资料来源于，转载非原创 <a target="_blank" rel="noopener" href="https://www.sysgeek.cn/ubuntu-free-up-space/">https://www.sysgeek.cn/ubuntu-free-up-space/</a></p>
+<p>1.移除不再需要的软件包</p>
+<p>如果你了解过 apt-get 或 apt 命令的详细用法，应该知道 autoremove 选项。此选项可以删除「安装某个软件包时」自动安装的依赖库和包，这些自动安装的依赖包在系统中通常是无用的，只用浪费磁盘空间。当然，autoremove 选项也可以自动删除那些系统升级过程中被取代的老旧无用 Linux 内核。</p>
+<p>这是一个自动化的傻瓜命令，可以时不时用它为 Ubuntu 系统释放一些可用硬盘空间：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt autoremove</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="2-清理Ubuntu中的APT缓存"><a href="#2-清理Ubuntu中的APT缓存" class="headerlink" title="2. 清理Ubuntu中的APT缓存"></a>2. 清理Ubuntu中的APT缓存</h3><p>Ubuntu 使用 APT（高级软件包工具）在系统上安装、删除和管理软件，并且在软件卸载之后它还会保留先前下载和安装软件包的缓存。</p>
+<p>APT 包管理系统会将下载的 DEB 包缓存在 /var/cache/apt/archives 文件中，随着时间的推移，由于拥有大量不需要的包这个缓存目录可以增长得相当大。</p>
+<p>你可以使用以下命令查看此缓存的大小：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo du -sh /var/cache/apt</span><br></pre></td></tr></tbody></table></figure>
+
+<p>对于 APT 缓存我们有两种可选方式对其进行清理，其一为只删除过时的软件包：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt autoclean</span><br></pre></td></tr></tbody></table></figure>
+
+<p>另一种则是清理整个缓存（释放更多的磁盘空间）：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt clean</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="3-清理缩略图缓存"><a href="#3-清理缩略图缓存" class="headerlink" title="3.清理缩略图缓存"></a>3.清理缩略图缓存</h3><p>为方便用户预览图片，Ubuntu 会自动为图片文件创建一个缩略图，用于在文件管理器中查看，而这些这些缩略图其实也是以文件形式隐藏存储在用户账户的 ~/.cache/thumbnails 目录当中。</p>
+<p>如果你是摄影爱好者或是图片收藏者，随着时间的推移，缩略图的数量将大大增加。特别需要注意的是，如果你删除了某些照片或图片，这些自动生成的缩略图缓存还是会存在于磁盘当中，而不会自动清除。</p>
+<p>你可以使用以下命令检查缩略图缓存的大小：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -sh ~/.cache/thumbnails</span><br></pre></td></tr></tbody></table></figure>
+
+<p>因此，每几个月左右清除缩略图缓存是一个很好的习惯。 最快捷的方法就是使用终端命令：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf ~/.cache/thumbnails/*</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="4-手动删除老旧Linux内核（专业）"><a href="#4-手动删除老旧Linux内核（专业）" class="headerlink" title="4.手动删除老旧Linux内核（专业）"></a>4.手动删除老旧Linux内核（专业）</h3><p>前面介绍第 1 种方法时就提到了可以自动删除那些老旧无用的 Linux Kernel，但如果你在 Ubuntu 中曾手动安装过内核，则 apt autoremove 命令选项则不适用了。但删除不使用的旧版内核确实又可节省大量磁盘空间，所以对于手动安装的 Ubuntu 内核可以进行手动卸载。</p>
+<p>首先使用如下命令列出当前 Ubuntu 中所有已经安装的 Linux Kernel：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg --list 'linux-image*'*</span><br></pre></td></tr></tbody></table></figure>
+
+<p>删除旧版内核与删除任何其他软件包一样：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt remove linux-image-VERSION</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="5-删除多余的孤立包（专业）"><a href="#5-删除多余的孤立包（专业）" class="headerlink" title="5. 删除多余的孤立包（专业）"></a>5. 删除多余的孤立包（专业）</h3><p>首先我们要说说什么是 Ubuntu 系统中的孤立包（也叫多余的包）：假设你安装了一个名为 myprogram 的软件包，而这个包又依赖于 mylib 库，这个库通常在安装 myprogram 时便会自动安装到系统当中。当你卸载 myprogram 应用时，mylib 库可能仍然保留在系统中。 此种情况下，mylib 就会成为一个孤立的包。</p>
+<p>gtkorphan 这款图形化应用可以可以轻松找出并删除 Ubuntu 系统中的孤立包，先使用如下终端命令进行安装：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install gtkorphan</span><br></pre></td></tr></tbody></table></figure>
+
+<p>安装好后在「多余的包」选项卡中即可对查找、删除孤立包。</p>
+<h3 id="6-卸载不必要的应用程序"><a href="#6-卸载不必要的应用程序" class="headerlink" title="6.卸载不必要的应用程序"></a>6.卸载不必要的应用程序</h3><p>相信每个人都有那么一款和几款几乎不用的游戏或应用程序存在于系统当中。不相信？去你 Ubuntu 系统查下软件列表就知道了。其实这条也不用我多说，如果你需要更多的磁盘空间，删除那些从不使用或较少使用的应用程序总是一个好方法。</p>
+<p>删除软件可以使用「Ubuntu 软件」或直接终端命令：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt remove 软件包名</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="7-使用GUI工具释放Ubuntu空间"><a href="#7-使用GUI工具释放Ubuntu空间" class="headerlink" title="7. 使用GUI工具释放Ubuntu空间"></a>7. 使用GUI工具释放Ubuntu空间</h3><p>转载非原创 <a target="_blank" rel="noopener" href="https://www.sysgeek.cn/ubuntu-free-up-space/">https://www.sysgeek.cn/ubuntu-free-up-space/</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/10/12/manipulator-HU-learninging/manipulator-HU-learninging/" rel="next" title="manipulator_HU_learninging">
+                <i class="fa fa-chevron-left"></i> manipulator_HU_learninging
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/10/29/numpy-py/numpy-py/" rel="prev" title="numpy_py">
+                numpy_py <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+    
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+    
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/1.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+    
+          <nav class="site-state motion-element">
+    
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">44</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+    
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+    
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+    
+          </nav>
+    
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+    
+          
+    
+          
+          
+    
+          
+          
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=548648140&auto=1&height=66"></iframe>
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
+src="//music.163.com/outchain/player?type=2&id=26429375&auto=1&height=66"></iframe>
+
+        </div>
+      </section>
+    
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+    
+            
+              
+            
+    
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%B1Linux-bug%E6%96%87%E4%BB%B6%E6%B8%85%E7%90%86%E4%BB%A5%E5%8F%8A%E5%88%A0%E9%99%A4%E6%83%B3%E5%88%B0%E7%9A%84linux%E5%A4%9A%E7%89%88%E6%9C%AC%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%83%B3%E6%B3%95%E7%90%86%E8%A7%A3%E8%AE%B0%E5%BD%95"><span class="nav-number">1.</span> <span class="nav-text">由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#var%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">1.1.</span> <span class="nav-text">var文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#usr%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">1.2.</span> <span class="nav-text">usr文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-%E6%9F%A5%E7%9C%8B%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4"><span class="nav-number">1.3.</span> <span class="nav-text">Linux 查看磁盘空间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#df"><span class="nav-number">1.4.</span> <span class="nav-text">df</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#du"><span class="nav-number">1.5.</span> <span class="nav-text">du</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98"><span class="nav-number">1.6.</span> <span class="nav-text">清理缓存</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%B8%85%E7%90%86Ubuntu%E4%B8%AD%E7%9A%84APT%E7%BC%93%E5%AD%98"><span class="nav-number">1.6.1.</span> <span class="nav-text">2. 清理Ubuntu中的APT缓存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%B8%85%E7%90%86%E7%BC%A9%E7%95%A5%E5%9B%BE%E7%BC%93%E5%AD%98"><span class="nav-number">1.6.2.</span> <span class="nav-text">3.清理缩略图缓存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E6%89%8B%E5%8A%A8%E5%88%A0%E9%99%A4%E8%80%81%E6%97%A7Linux%E5%86%85%E6%A0%B8%EF%BC%88%E4%B8%93%E4%B8%9A%EF%BC%89"><span class="nav-number">1.6.3.</span> <span class="nav-text">4.手动删除老旧Linux内核（专业）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E5%88%A0%E9%99%A4%E5%A4%9A%E4%BD%99%E7%9A%84%E5%AD%A4%E7%AB%8B%E5%8C%85%EF%BC%88%E4%B8%93%E4%B8%9A%EF%BC%89"><span class="nav-number">1.6.4.</span> <span class="nav-text">5. 删除多余的孤立包（专业）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E5%8D%B8%E8%BD%BD%E4%B8%8D%E5%BF%85%E8%A6%81%E7%9A%84%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F"><span class="nav-number">1.6.5.</span> <span class="nav-text">6.卸载不必要的应用程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E4%BD%BF%E7%94%A8GUI%E5%B7%A5%E5%85%B7%E9%87%8A%E6%94%BEUbuntu%E7%A9%BA%E9%97%B4"><span class="nav-number">1.6.6.</span> <span class="nav-text">7. 使用GUI工具释放Ubuntu空间</span></a></li></ol></li></ol></li></ol></div>
+            
+    
+          </div>
+        </section>
+      <!--/noindex-->
+      
+    
+      
+    
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ming</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+<div>
+    <style>
+    .footer-beian{
+        box-shadow:2px 2px 2px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        border-radius:4px;
+        text-shadow:none;
+        font-size:12px;
+        color: #fff;
+        line-height: 15px;
+        background-color: #abbac3;
+        margin: 5px 10px;
+    }
+    .badge-subject {
+        display: inline-block;
+          padding: 4px 4px 4px 6px;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+    }
+    .badge-value {
+        display: inline-block;
+        padding: 4px 6px 4px 4px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+    }
+    </style>
+    <div class="footer-beian">
+        <a target="_blank" rel="nofollow" href="https://hexo.io/" title="由 Hexo 强力驱动">
+              <span class="badge-subject">Powered</span><span class="badge-value">Hexo</span>
+        </a>
+    </div>
+    <div class="footer-beian">
+        <a rel="nofollow" href="https://github.com/next-theme/hexo-theme-next" target="_blank" title="站点使用 NexT 主题">
+            <span class="badge-subject">Theme</span><span class="badge-value">NexT</span>
+        </a>
+    </div>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"log":false});</script></body>
+</html>
+<!-- 页面点击小红心 --> <script type="text/javascript" src="/js/fireworks.js"></script>
+
