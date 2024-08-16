@@ -415,25 +415,20 @@
 <p>三种排序（备份方便查询）</p>
 <p> <code>'degreeInverseLexicographic'</code>, <code>'degreeLexicographic'</code>, or <code>'lexicographic'</code> </p>
 <span id="more"></span>
-
 <ol>
-<li><strong><code>gbasis(poly)</code></strong></li>
+<li><strong><code>gbasis(poly)</code></strong> </li>
 </ol>
 <figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">syms x y</span><br><span class="line">poly = [x^<span class="number">2</span> + y^<span class="number">2</span> - <span class="number">1</span>; x - y^<span class="number">3</span>];</span><br><span class="line">G = gbasis(poly);</span><br></pre></td></tr></tbody></table></figure>
-
-<ol start="2">
-<li><strong><code>gbasis(poly, vars)</code></strong></li>
+<ol>
+<li><strong><code>gbasis(poly, vars)</code></strong> </li>
 </ol>
 <figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">syms x y z</span><br><span class="line">poly = [x^<span class="number">2</span> + y^<span class="number">2</span> - z^<span class="number">2</span>; x - y*z];</span><br><span class="line">vars = [x, y, z];</span><br><span class="line">G = gbasis(poly, vars);</span><br></pre></td></tr></tbody></table></figure>
-
-<ol start="3">
-<li><strong><code>gbasis(___, 'MonomialOrder', MonomialOrder)</code></strong></li>
+<ol>
+<li><strong><code>gbasis(___, 'MonomialOrder', MonomialOrder)</code></strong> </li>
 </ol>
 <figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">syms x y</span><br><span class="line">poly = [x^<span class="number">2</span> + y^<span class="number">2</span> - <span class="number">1</span>; x - y^<span class="number">3</span>];</span><br><span class="line">G = gbasis(poly, [x, y], <span class="string">'MonomialOrder'</span>, <span class="string">'grlex'</span>);</span><br></pre></td></tr></tbody></table></figure>
-
 <p>EXAMPLE:</p>
 <figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">syms x y z</span><br><span class="line">f1 = x^<span class="number">2</span> + y^<span class="number">2</span> - z^<span class="number">2</span>;</span><br><span class="line">f2 = x*y - <span class="number">1</span>;</span><br><span class="line">f3 = z - <span class="number">1</span>;</span><br><span class="line">polys = [f1; f2; f3];</span><br><span class="line"></span><br><span class="line"><span class="comment">% Compute the Gröbner basis</span></span><br><span class="line">G = grobner(polys, [x, y, z]);</span><br><span class="line"></span><br><span class="line"><span class="comment">% Solve the system</span></span><br><span class="line">solutions = solve(G, [x, y, z]);</span><br><span class="line"></span><br><span class="line"><span class="comment">% Display the solutions</span></span><br><span class="line">x_sol = solutions.x;</span><br><span class="line">y_sol = solutions.y;</span><br><span class="line">z_sol = solutions.z;</span><br><span class="line"></span><br><span class="line"><span class="built_in">disp</span>(<span class="string">'Solutions for x:'</span>);</span><br><span class="line"><span class="built_in">disp</span>(x_sol);</span><br><span class="line"><span class="built_in">disp</span>(<span class="string">'Solutions for y:'</span>);</span><br><span class="line"><span class="built_in">disp</span>(y_sol);</span><br><span class="line"><span class="built_in">disp</span>(<span class="string">'Solutions for z:'</span>);</span><br><span class="line"><span class="built_in">disp</span>(z_sol);</span><br></pre></td></tr></tbody></table></figure>
-
 <h3 id="1-Lexicographic-Order-lex"><a href="#1-Lexicographic-Order-lex" class="headerlink" title="1. Lexicographic Order (lex)"></a>1. <strong>Lexicographic Order (lex)</strong></h3><p><strong>Advantages:</strong></p>
 <ul>
 <li><strong>Simplicity:</strong> Easy to understand and implement. It’s straightforward because it follows a strict variable precedence, similar to dictionary order.</li>

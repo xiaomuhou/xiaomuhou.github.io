@@ -412,18 +412,14 @@
       
         <h1 id="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"><a href="#由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录" class="headerlink" title="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"></a>由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录</h1><p>昨天晚上测试运动算法包，更新中间发现系统磁盘爆满，终端terminal无法运行，启动文件节点无法启动，于今天下午解决问题，写一篇日志记录一下，顺便谈一下linux的多版本软件安装基理。</p>
 <span id="more"></span>
-
 <p>启动terminal，显示终端内存不足，导致文件无法启动，猜想原因是点击系统更新中断后产生bug文件，使得根目录爆满，这里介绍一条指令便于分析大内存位置：</p>
 <p>Traceback (most recent call last):<br>  File “/opt/ros/kinetic/_setup_util.py”, line 297, in <module><br>    sys.stdout.flush()<br>IOError: [Errno 28] No space left on device<br>Failed to run ‘“/opt/ros/kinetic/_setup_util.py” ‘: return code 1<br>Traceback (most recent call last):<br>  File “/home/xiaomu/ws_moveit/devel/_setup_util.py”, line 297, in <module><br>    sys.stdout.flush()</module></module></p>
 <p>首先 df -h 或者 df -hi查看linux总分区，寻找剩余空间不多的分区，我的是根目录显示爆满</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/dev/sda9        23G   22G     0 100% /</span><br></pre></td></tr></tbody></table></figure>
-
 <p>输入 </p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo du -h -x --max-depth=1</span><br></pre></td></tr></tbody></table></figure>
-
 <p>比如我的显示 var与usr文件爆满</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">13M	./sbin</span><br><span class="line">16K	./lost+found</span><br><span class="line">4.0K	./mnt</span><br><span class="line">4.0K	./lib64</span><br><span class="line">20M	./root</span><br><span class="line">9.9G	./var</span><br><span class="line">775M	./lib</span><br><span class="line">8.0K	./media</span><br><span class="line">4.6M	./libx32</span><br><span class="line">3.9M	./lib32</span><br><span class="line">16K	./snap</span><br><span class="line">1.2G	./opt</span><br><span class="line">16M	./etc</span><br><span class="line">9.8G	./usr</span><br><span class="line">4.0K	./srv</span><br><span class="line">60K	./tmp</span><br><span class="line">13M	./bin</span><br><span class="line">4.0K	./cdrom</span><br><span class="line">22G	.</span><br></pre></td></tr></tbody></table></figure>
-
 <p>根据信息对相应文件进行删除，小心误删重要文件</p>
 <h2 id="var文件夹"><a href="#var文件夹" class="headerlink" title="var文件夹"></a>var文件夹</h2><p>系统运行后占用硬盘内存，主要针对常态性变动文件，包括缓存、登录文件、以及某些软件运行所产生的文件等，log中放置登录文件日志</p>
 <blockquote>
@@ -434,7 +430,7 @@
 <p>/var/lock:某些设备或者是文件资源一次只能被一个应用程序所使用 ，如当系统中有一个刻录机两个人都要使用，那么需要在一个人使用的时候上锁，那么第一个人使用完毕后，第二个人才可以继续使用。</p>
 <p>/var/log:这个是登录文件放置日志的的目录。里面比较重要的文件/var/log/messages，/var/log/harry(记录登陆者信息)等。</p>
 <p>/var/run/：某些程序启动服务后，会将他们PID放置在这个目录下。</p>
-<p>—-来源—<a target="_blank" rel="noopener" href="https://www.cnblogs.com/Renyi-Fan/p/11504111.html">https://www.cnblogs.com/Renyi-Fan/p/11504111.html</a></p>
+<p>——来源—-<a target="_blank" rel="noopener" href="https://www.cnblogs.com/Renyi-Fan/p/11504111.html">https://www.cnblogs.com/Renyi-Fan/p/11504111.html</a></p>
 </blockquote>
 <p>（本次问题主要出现在这里，推测由于中断更新，导致产生了两个大的错误日志，经过上述方法，在log中发现了两个4g多的日志文件，进行了强制删除，系统恢复正常）</p>
 <p>文件分别为syslog以及kern.log，这里删除后注意重启服务</p>
@@ -443,6 +439,7 @@
 </blockquote>
 <p>至此，问题已经解决，过程中发现usr文件夹同样较大，其实没有问题，原因是因为我平时跑ros以及各种图像代码，库中安装了多个版本的软件，当初只是按照教程进行安装，却不知道为什么linux可以这样，今天知道了原因：</p>
 <h2 id="usr文件夹"><a href="#usr文件夹" class="headerlink" title="usr文件夹"></a>usr文件夹</h2><blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -450,7 +447,8 @@
 <th>为X Window System重要数据所放置的目录，之所以取名为X11R6是因为最后的X版本为第11版，且该版的第6次释出之意。</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>/usr/bin/</td>
 <td>绝大部分的用户可使用指令都放在这里。请注意到他与/bin的不同之处。(是否与开机过程有关)</td>
 </tr>
@@ -478,8 +476,10 @@
 <td>/usr/src/</td>
 <td>一般原始码建议放置到这里，src有source的意思。至于核心原始码则建议放置到/usr/src/linux/目录下。</td>
 </tr>
-</tbody></table>
-<p>—来源—<a target="_blank" rel="noopener" href="https://www.cnblogs.com/ftl1012/p/9278578.html">https://www.cnblogs.com/ftl1012/p/9278578.html</a></p>
+</tbody>
+</table>
+</div>
+<p>—-来源—-<a target="_blank" rel="noopener" href="https://www.cnblogs.com/ftl1012/p/9278578.html">https://www.cnblogs.com/ftl1012/p/9278578.html</a></p>
 </blockquote>
 <p>关于local文件夹，依据上述介绍，同理可以手动进行其余软件多版本的安装。</p>
 <p>总之，个人觉得ubuntu更新还是慎重，其次，装双系统的时候尽量空间给多一点，学会随时终端查看磁盘存储情况，根据报错解决问题，最后写一下查看磁盘的终端命令指南：</p>
@@ -491,10 +491,9 @@
 <li><strong>Size</strong>：  分区大小</li>
 <li><strong>Used</strong>： 已使用容量</li>
 <li><strong>Avail</strong>： 还可以使用的容量</li>
-<li>**Use%**： 已用百分比</li>
-<li><strong>Mounted on</strong>： 挂载点</li>
+<li><strong>Use%</strong>： 已用百分比</li>
+<li><strong>Mounted on</strong>： 挂载点　</li>
 </ul>
-<p>　</p>
 <h2 id="Linux-查看磁盘空间"><a href="#Linux-查看磁盘空间" class="headerlink" title="Linux 查看磁盘空间"></a>Linux 查看磁盘空间</h2><p>Linux 查看磁盘空间可以使用 df 和 du 命令。</p>
 <hr>
 <h2 id="df"><a href="#df" class="headerlink" title="df"></a>df</h2><p>df 以磁盘分区为单位查看文件系统，可以获取硬盘被占用了多少空间，目前还剩下多少空间等信息。</p>
@@ -505,10 +504,9 @@
 <li><strong>Size</strong>：  分区大小</li>
 <li><strong>Used</strong>： 已使用容量</li>
 <li><strong>Avail</strong>： 还可以使用的容量</li>
-<li>**Use%**： 已用百分比</li>
-<li><strong>Mounted on</strong>： 挂载点</li>
+<li><strong>Use%</strong>： 已用百分比</li>
+<li><strong>Mounted on</strong>： 挂载点　</li>
 </ul>
-<p>　</p>
 <p><strong>相关命令：</strong></p>
 <ul>
 <li>df -hl：查看磁盘剩余空间</li>
@@ -520,7 +518,6 @@
 <h2 id="du"><a href="#du" class="headerlink" title="du"></a>du</h2><p>disk usage ，查看磁盘的使用情况</p>
 <p>查看当前目录的总大小</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># du -sh</span><br></pre></td></tr></tbody></table></figure>
-
 <p>du 命令用于查看当前目录的总大小：</p>
 <ul>
 <li>-a或-all 为每个指定文件显示磁盘使用情况，或者为目录中每个文件显示各自磁盘使用情况。</li>
@@ -544,48 +541,37 @@
 </ul>
 <p>本文中用到的两个指令：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">df -h</span><br><span class="line"></span><br><span class="line">sudo du -h -x --max-depth=1</span><br></pre></td></tr></tbody></table></figure>
-
 <h2 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h2><p>以下资料来源于，转载非原创 <a target="_blank" rel="noopener" href="https://www.sysgeek.cn/ubuntu-free-up-space/">https://www.sysgeek.cn/ubuntu-free-up-space/</a></p>
 <p>1.移除不再需要的软件包</p>
 <p>如果你了解过 apt-get 或 apt 命令的详细用法，应该知道 autoremove 选项。此选项可以删除「安装某个软件包时」自动安装的依赖库和包，这些自动安装的依赖包在系统中通常是无用的，只用浪费磁盘空间。当然，autoremove 选项也可以自动删除那些系统升级过程中被取代的老旧无用 Linux 内核。</p>
 <p>这是一个自动化的傻瓜命令，可以时不时用它为 Ubuntu 系统释放一些可用硬盘空间：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt autoremove</span><br></pre></td></tr></tbody></table></figure>
-
 <h3 id="2-清理Ubuntu中的APT缓存"><a href="#2-清理Ubuntu中的APT缓存" class="headerlink" title="2. 清理Ubuntu中的APT缓存"></a>2. 清理Ubuntu中的APT缓存</h3><p>Ubuntu 使用 APT（高级软件包工具）在系统上安装、删除和管理软件，并且在软件卸载之后它还会保留先前下载和安装软件包的缓存。</p>
 <p>APT 包管理系统会将下载的 DEB 包缓存在 /var/cache/apt/archives 文件中，随着时间的推移，由于拥有大量不需要的包这个缓存目录可以增长得相当大。</p>
 <p>你可以使用以下命令查看此缓存的大小：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo du -sh /var/cache/apt</span><br></pre></td></tr></tbody></table></figure>
-
 <p>对于 APT 缓存我们有两种可选方式对其进行清理，其一为只删除过时的软件包：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt autoclean</span><br></pre></td></tr></tbody></table></figure>
-
 <p>另一种则是清理整个缓存（释放更多的磁盘空间）：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt clean</span><br></pre></td></tr></tbody></table></figure>
-
 <h3 id="3-清理缩略图缓存"><a href="#3-清理缩略图缓存" class="headerlink" title="3.清理缩略图缓存"></a>3.清理缩略图缓存</h3><p>为方便用户预览图片，Ubuntu 会自动为图片文件创建一个缩略图，用于在文件管理器中查看，而这些这些缩略图其实也是以文件形式隐藏存储在用户账户的 ~/.cache/thumbnails 目录当中。</p>
 <p>如果你是摄影爱好者或是图片收藏者，随着时间的推移，缩略图的数量将大大增加。特别需要注意的是，如果你删除了某些照片或图片，这些自动生成的缩略图缓存还是会存在于磁盘当中，而不会自动清除。</p>
 <p>你可以使用以下命令检查缩略图缓存的大小：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -sh ~/.cache/thumbnails</span><br></pre></td></tr></tbody></table></figure>
-
 <p>因此，每几个月左右清除缩略图缓存是一个很好的习惯。 最快捷的方法就是使用终端命令：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf ~/.cache/thumbnails/*</span><br></pre></td></tr></tbody></table></figure>
-
 <h3 id="4-手动删除老旧Linux内核（专业）"><a href="#4-手动删除老旧Linux内核（专业）" class="headerlink" title="4.手动删除老旧Linux内核（专业）"></a>4.手动删除老旧Linux内核（专业）</h3><p>前面介绍第 1 种方法时就提到了可以自动删除那些老旧无用的 Linux Kernel，但如果你在 Ubuntu 中曾手动安装过内核，则 apt autoremove 命令选项则不适用了。但删除不使用的旧版内核确实又可节省大量磁盘空间，所以对于手动安装的 Ubuntu 内核可以进行手动卸载。</p>
 <p>首先使用如下命令列出当前 Ubuntu 中所有已经安装的 Linux Kernel：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg --list 'linux-image*'*</span><br></pre></td></tr></tbody></table></figure>
-
 <p>删除旧版内核与删除任何其他软件包一样：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt remove linux-image-VERSION</span><br></pre></td></tr></tbody></table></figure>
-
 <h3 id="5-删除多余的孤立包（专业）"><a href="#5-删除多余的孤立包（专业）" class="headerlink" title="5. 删除多余的孤立包（专业）"></a>5. 删除多余的孤立包（专业）</h3><p>首先我们要说说什么是 Ubuntu 系统中的孤立包（也叫多余的包）：假设你安装了一个名为 myprogram 的软件包，而这个包又依赖于 mylib 库，这个库通常在安装 myprogram 时便会自动安装到系统当中。当你卸载 myprogram 应用时，mylib 库可能仍然保留在系统中。 此种情况下，mylib 就会成为一个孤立的包。</p>
 <p>gtkorphan 这款图形化应用可以可以轻松找出并删除 Ubuntu 系统中的孤立包，先使用如下终端命令进行安装：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install gtkorphan</span><br></pre></td></tr></tbody></table></figure>
-
 <p>安装好后在「多余的包」选项卡中即可对查找、删除孤立包。</p>
 <h3 id="6-卸载不必要的应用程序"><a href="#6-卸载不必要的应用程序" class="headerlink" title="6.卸载不必要的应用程序"></a>6.卸载不必要的应用程序</h3><p>相信每个人都有那么一款和几款几乎不用的游戏或应用程序存在于系统当中。不相信？去你 Ubuntu 系统查下软件列表就知道了。其实这条也不用我多说，如果你需要更多的磁盘空间，删除那些从不使用或较少使用的应用程序总是一个好方法。</p>
 <p>删除软件可以使用「Ubuntu 软件」或直接终端命令：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt remove 软件包名</span><br></pre></td></tr></tbody></table></figure>
-
 <h3 id="7-使用GUI工具释放Ubuntu空间"><a href="#7-使用GUI工具释放Ubuntu空间" class="headerlink" title="7. 使用GUI工具释放Ubuntu空间"></a>7. 使用GUI工具释放Ubuntu空间</h3><p>转载非原创 <a target="_blank" rel="noopener" href="https://www.sysgeek.cn/ubuntu-free-up-space/">https://www.sysgeek.cn/ubuntu-free-up-space/</a></p>
 
       

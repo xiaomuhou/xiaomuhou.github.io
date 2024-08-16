@@ -385,7 +385,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.6k
+                  1.5k
                 </span>
               
 
@@ -413,7 +413,7 @@
         <h1 id="ff14宏学相关"><a href="#ff14宏学相关" class="headerlink" title="ff14宏学相关"></a>ff14宏学相关</h1><p>记录一下常用宏，方便玩游戏</p>
 <p>资料来源：ff14wiki、素素</p>
 <span id="more"></span>
-
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -421,7 +421,8 @@
 <th>解释</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><t></t></td>
 <td>当前选中目标的名字</td>
 </tr>
@@ -434,7 +435,7 @@
 <td>自己的名字</td>
 </tr>
 <tr>
-<td>&lt;1~8&gt;</td>
+<td>&lt;1~8&gt;<!--1~8--></td>
 <td>队伍列表中对应编号的人的名字</td>
 </tr>
 <tr>
@@ -478,11 +479,11 @@
 <td>最近选择过“展示道具属性”的道具链接。装备上的魔晶石、签名、精炼度、耐久等全部不能正确显示，只能显示基本属性</td>
 </tr>
 <tr>
-<td>&lt;recast.技能名&gt;</td>
-<td>指定技能的剩余冷却时间，格式为–:–(分:秒)，因此不能用来作为wait的时间参数。已冷却完毕的技能会显示为–:–。只有当前职业的技能可以被正确显示，并且不能用定型文。</td>
+<td><recast.技能名></recast.技能名></td>
+<td>指定技能的剩余冷却时间，格式为—:—(分:秒)，因此不能用来作为wait的时间参数。已冷却完毕的技能会显示为—:—。只有当前职业的技能可以被正确显示，并且不能用定型文。</td>
 </tr>
 <tr>
-<td>&lt;attack1~5&gt;</td>
+<td><attack1~5></attack1~5></td>
 <td>被标记了“攻击1~5”记号的单位的名字，同理还有<bindx>，<stopx>，<cross>等。</cross></stopx></bindx></td>
 </tr>
 <tr>
@@ -505,22 +506,24 @@
 <td><e1-4></e1-4></td>
 <td>群狼盛宴专用，直接指代对方1-4号</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <ul>
-<li><p>&lt;wait.X&gt;：等同于/wait X，在发言中使用不会在发言中显示，但同一排后面的内容会消失，具体说明见下文。</p>
+<li><p><wait.x>：等同于/wait X，在发言中使用不会在发言中显示，但同一排后面的内容会消失，具体说明见下文。</wait.x></p>
 </li>
-<li><p>&lt;se.1~16&gt;：发出提示音，只在小队/团队/默语频道有效果。可以认为是指代了一个本来不能用语言描述的“声音”，会显示在发言中。</p>
+<li><p><se.1~16>：发出提示音，只在小队/团队/默语频道有效果。可以认为是指代了一个本来不能用语言描述的“声音”，会显示在发言中。</se.1~16></p>
 </li>
 </ul>
 <p>例子</p>
 <p>释放指定地面目标的能力技，这样可以省去点击地面的时间，但是有些情况下不能灵活的调整放置的地点。</p>
 <p>/ac 野战治疗阵 <t></t></p>
 <p>释放非战斗职业的技能，比如一键生产宏，一键精选宏。(生产职业所有制作、加工、观察、专家技能后wait3，松弛、其他buff技能后wait2，采集职业精选buff技能后wait1，甄别技能后wait3，若网络条件不佳，可适当延长)优先级的思想同样适用(主要针对秘诀、集中加工、审美眼等)。</p>
-<p>/ac 审美眼 &lt;wait.1&gt;<br>/ac 直觉甄别 &lt;wait.3&gt;<br>/ac 审美眼<br>/ac 聚精会神 &lt;wait.1&gt;<br>/ac 直觉甄别 &lt;wait.3&gt;<br>/ac 审美眼<br>/ac 聚精会神 &lt;wait.1&gt;<br>/ac 慎重甄别</p>
+<p>/ac 审美眼 <wait.1><br>/ac 直觉甄别 <wait.3><br>/ac 审美眼<br>/ac 聚精会神 <wait.1><br>/ac 直觉甄别 <wait.3><br>/ac 审美眼<br>/ac 聚精会神 <wait.1><br>/ac 慎重甄别</wait.1></wait.3></wait.1></wait.3></wait.1></p>
 <p>在发动技能后等待一段时间喊话提示，如无敌。</p>
-<p>/ac 神圣领域<br>/p 我已经天下无敌了！！！&lt;se.1&gt;<br>/wait 10<br>/p 停一停奶妈快爱我！！！&lt;se.2&gt;</p>
+<p>/ac 神圣领域<br>/p 我已经天下无敌了！！！<se.1><br>/wait 10<br>/p 停一停奶妈快爱我！！！<se.2></se.2></se.1></p>
 <p>[进阶向]在生产宏中打时间差，实现5仓促中任换至多一个为集中加工一类的高级功能</p>
-<p>/ac 集中加工 &lt;wait.1&gt;<br>/ac 仓促 &lt;wait.2&gt;<br>/ac 仓促 &lt;wait.1&gt;<br>/ac 集中加工 &lt;wait.1&gt;<br>/ac 仓促 &lt;wait.2&gt;<br>/ac 仓促 &lt;wait.1&gt;<br>/ac 集中加工 &lt;wait.1&gt;<br>/ac 仓促 &lt;wait.2&gt;<br>/ac 仓促 &lt;wait.1&gt;<br>/ac 集中加工 &lt;wait.1&gt;<br>/ac 仓促 &lt;wait.2&gt;<br>/ac 仓促 &lt;wait.1&gt;<br>/ac 集中加工<br>/ac 加工 &lt;wait.3&gt;</p>
+<p>/ac 集中加工 <wait.1><br>/ac 仓促 <wait.2><br>/ac 仓促 <wait.1><br>/ac 集中加工 <wait.1><br>/ac 仓促 <wait.2><br>/ac 仓促 <wait.1><br>/ac 集中加工 <wait.1><br>/ac 仓促 <wait.2><br>/ac 仓促 <wait.1><br>/ac 集中加工 <wait.1><br>/ac 仓促 <wait.2><br>/ac 仓促 <wait.1><br>/ac 集中加工<br>/ac 加工 <wait.3></wait.3></wait.1></wait.2></wait.1></wait.1></wait.2></wait.1></wait.1></wait.2></wait.1></wait.1></wait.2></wait.1></p>
 <p>文本指令</p>
 <p>对应频道及说明</p>
 <p>/s</p>

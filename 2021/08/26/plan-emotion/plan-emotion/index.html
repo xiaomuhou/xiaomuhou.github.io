@@ -389,15 +389,12 @@
 
       
         <h1 id="Ubuntu修复windows无法启动问题"><a href="#Ubuntu修复windows无法启动问题" class="headerlink" title="Ubuntu修复windows无法启动问题"></a>Ubuntu修复windows无法启动问题</h1><span id="more"></span>
-
 <p>配置：ubuntu16.04+windows8.1</p>
 <p>背景：电脑不小心被砸了一下，然后windows系统无法启动，也无法进入bios和安全模式，尝试启动Ubuntu系统，发现可以进入，Linux永远的神！！</p>
 <p>linux端进入后，发现电脑系统盘无法读取，出现挂载错误，可能windows就是因为这个问题无法启动，尝试修复，记录一下最后有效的过程：</p>
 <h5 id="1-查看系统下所有分区的挂载情况是否正常"><a href="#1-查看系统下所有分区的挂载情况是否正常" class="headerlink" title="1.查看系统下所有分区的挂载情况是否正常"></a>1.查看系统下所有分区的挂载情况是否正常</h5><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo fdisk -l </span><br></pre></td></tr></tbody></table></figure>
-
 <p>根据×号判断</p>
 <h5 id="2-修复对应分区，我显示的是-dev-sdb3"><a href="#2-修复对应分区，我显示的是-dev-sdb3" class="headerlink" title="2.修复对应分区，我显示的是/dev/sdb3"></a>2.修复对应分区，我显示的是/dev/sdb3</h5><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ntfsfix /dev/sdb3</span><br></pre></td></tr></tbody></table></figure>
-
 <p>全部修复后，windows可以正常启动</p>
 <p>以后正常更新啦…</p>
 <p>等会儿再写一个生活计划日志…</p>

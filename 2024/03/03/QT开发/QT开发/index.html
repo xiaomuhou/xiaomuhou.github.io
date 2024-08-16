@@ -81,12 +81,12 @@
 
 
 
-<meta name="description" content="# QT5开发总结  空间XX优化开发界面-2024.2.5完成提交版 功能需求: 基于控制逻辑界面跳转 调用底层计算代码并优化 几个虚拟加载进度条 多阶输入读取及判断方式  总体：上位机需求功能比较简单，调用代码由于老师提供的底层的优化算法本身存在运行问题，导致一部分协调存在bug，因此整体功能存在问题，基本数据控制功能开发完成，已提交，暂时结束。">
+<meta name="description" content="QT5开发总结空间XX优化开发界面-2024.2.5完成提交版 功能需求: 基于控制逻辑界面跳转 调用底层计算代码并优化 几个虚拟加载进度条 多阶输入读取及判断方式  总体：上位机需求功能比较简单，调用代码由于老师提供的底层的优化算法本身存在运行问题，导致一部分协调存在bug，因此整体功能存在问题，基本数据控制功能开发完成，已提交，暂时结束。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="QT开发">
 <meta property="og:url" content="http://xiaomuhou.github.io/2024/03/03/QT%E5%BC%80%E5%8F%91/QT%E5%BC%80%E5%8F%91/index.html">
 <meta property="og:site_name" content="GUO-WM-0.0">
-<meta property="og:description" content="# QT5开发总结  空间XX优化开发界面-2024.2.5完成提交版 功能需求: 基于控制逻辑界面跳转 调用底层计算代码并优化 几个虚拟加载进度条 多阶输入读取及判断方式  总体：上位机需求功能比较简单，调用代码由于老师提供的底层的优化算法本身存在运行问题，导致一部分协调存在bug，因此整体功能存在问题，基本数据控制功能开发完成，已提交，暂时结束。">
+<meta property="og:description" content="QT5开发总结空间XX优化开发界面-2024.2.5完成提交版 功能需求: 基于控制逻辑界面跳转 调用底层计算代码并优化 几个虚拟加载进度条 多阶输入读取及判断方式  总体：上位机需求功能比较简单，调用代码由于老师提供的底层的优化算法本身存在运行问题，导致一部分协调存在bug，因此整体功能存在问题，基本数据控制功能开发完成，已提交，暂时结束。">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-03-03T14:16:57.000Z">
 <meta property="article:modified_time" content="2024-03-03T14:21:28.568Z">
@@ -386,7 +386,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  689
+                  688
                 </span>
               
 
@@ -411,9 +411,8 @@
       
 
       
-        # QT5开发总结
-
-<p>空间XX优化开发界面-2024.2.5完成提交版</p>
+        <p><meta name="referrer" content="no-referrer"></p>
+<h1 id="QT5开发总结"><a href="#QT5开发总结" class="headerlink" title="QT5开发总结"></a>QT5开发总结</h1><p>空间XX优化开发界面-2024.2.5完成提交版</p>
 <h2 id="功能需求"><a href="#功能需求" class="headerlink" title="功能需求:"></a>功能需求:</h2><ul>
 <li>基于控制逻辑界面跳转</li>
 <li>调用底层计算代码并优化</li>
@@ -422,24 +421,19 @@
 </ul>
 <p>总体：上位机需求功能比较简单，调用代码由于老师提供的底层的优化算法本身存在运行问题，导致一部分协调存在bug，因此整体功能存在问题，基本数据控制功能开发完成，已提交，暂时结束。</p>
 <span id="more"></span>
-
 <p>1.跳转算法：</p>
 <p>基于py的开发逻辑与C++一致，常见的几种，这里我使用的是按键检测，几个功能就写几个子界面，比较笨，但是容易理解，示例代码如下：</p>
 <figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Ui_ST1_1 <span class="keyword">import</span> Ui_Form1_1</span><br><span class="line">self.pushButton.clicked.connect(self.popWindow) <span class="comment">#调用</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">popWindow</span>(<span class="params">self</span>):<span class="comment">#定义</span></span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        self.uiZ= Ui_Form1_1() <span class="comment">#逻辑界面</span></span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></tbody></table></figure>
-
 <p>2.底层代码调用：</p>
 <p>abaqus子程序存在bug，这部分暂缺，后续如需要继续开发，代码修正后补充。</p>
 <p>商业软件调用，写了一种基于subprocess调用外部EXE程序的方式，同样通过定义函数实现，注意一些小问题</p>
 <figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line">self.pushButton_3.clicked.connect(self.<span class="built_in">open</span>)<span class="comment">#steupUI</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">open</span>(<span class="params">self</span>):</span><br><span class="line">        subprocess.Popen(<span class="string">r"E:\Program Files\Inkscape\bin\inkscape.exe"</span>)<span class="comment">#这里注意一下python中的路径转义字符，要不就使用正斜杆，否则如上。</span></span><br><span class="line"><span class="comment">#补充一个启动文件</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.openFile)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">openFile</span>(<span class="params">self</span>):</span><br><span class="line">        directory1 = QFileDialog.getExistingDirectory(<span class="literal">None</span>, <span class="string">"启动程序"</span>,<span class="string">"./"</span>)</span><br><span class="line">        <span class="built_in">print</span>(directory1)</span><br></pre></td></tr></tbody></table></figure>
-
 <p>3.假装加载2333以及读取数据</p>
 <p>读取doublespinbox与progressbar协调，延时用法以及其余读取代码句式参照那本书，边查边记。</p>
 <figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">valu = <span class="number">1</span><span class="comment">#定义初值</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.va)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">va</span>(<span class="params">self</span>):<span class="comment">#点击执行只是循环一个功能，记住以后不要一个按钮对应多个按键，功能全部放在一起，执行顺序会有变化</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>):</span><br><span class="line">            time.sleep(<span class="number">0.09</span>)</span><br><span class="line">            self.progressBar.setProperty(<span class="string">"value"</span>, i)</span><br><span class="line">        valu=self.doubleSpinBox_4.value()<span class="comment">#读取数据句式</span></span><br><span class="line">        <span class="built_in">print</span>(valu)</span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        <span class="keyword">if</span> valu==<span class="number">1</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_3()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_31()</span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.progressBar.setProperty(<span class="string">"value"</span>, <span class="number">100</span>)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></tbody></table></figure>
-
 <p>4.图片读取流程，再次记录一下：</p>
 <p>QTcreator中构建资源库，在转成代码后进行转换运行，图片加载均通过UI端完成。</p>
 <figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pyrcc5 apprcc.qrc -o apprcc_re.py<span class="comment">#转换</span></span><br><span class="line">pyinstaller -F -W XX.py<span class="comment">#启动文件，其余控项可以看书</span></span><br></pre></td></tr></tbody></table></figure>
-
 <h2 id="后续总结："><a href="#后续总结：" class="headerlink" title="后续总结："></a>后续总结：</h2><p>希望早点把我的”雇佣兵”工资结了QAQ。</p>
 <p>那本书多看看，后续完成底层代码的协调，以及一个上位机的编写，李工那边的火星车上位机，有空的话帮他了结一下。</p>
 <p>学学特效，多看看语法书，慢慢牢固基础~</p>
@@ -630,7 +624,7 @@ src="//music.163.com/outchain/player?type=2&id=26429375&auto=1&height=66"></ifra
             
     
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82"><span class="nav-number">1.</span> <span class="nav-text">功能需求:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8E%E7%BB%AD%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">后续总结：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#QT5%E5%BC%80%E5%8F%91%E6%80%BB%E7%BB%93"><span class="nav-number">1.</span> <span class="nav-text">QT5开发总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82"><span class="nav-number">1.1.</span> <span class="nav-text">功能需求:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8E%E7%BB%AD%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="nav-number">1.2.</span> <span class="nav-text">后续总结：</span></a></li></ol></li></ol></div>
             
     
           </div>

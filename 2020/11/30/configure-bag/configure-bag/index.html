@@ -413,7 +413,6 @@
         <h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
 <p>以及补充后续图像处理相关项目内容</p>
 <span id="more"></span>
-
 <p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
 <p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
 <p>（原因后续深入了解了之后继续补充）</p>
@@ -421,12 +420,10 @@
 <p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
 <p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl -a 2&gt;/dev/null | grep '\.rp_filter'</span><br></pre></td></tr></tbody></table></figure>
-
 <p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter=0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter=0</span><br></pre></td></tr></tbody></table></figure>
-
 <p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
-<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
+<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—-（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
 <h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
 <p>（C艹记录相关）准备跟py放那篇放一起啦</p>
 <h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>

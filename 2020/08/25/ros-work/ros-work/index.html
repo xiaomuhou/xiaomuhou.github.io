@@ -392,14 +392,13 @@
 <p>(9.26添加了一些小内容)</p>
 <p>(10.12增加了一下go内容)</p>
 <span id="more"></span>
-
 <p>1.日常ROS史观</p>
 <p>2.ros框架以及松耦合的分布式通信机制（日常）</p>
 <p>3.节点-执行单元（node）</p>
 <p>节点管理器（ros master）</p>
 <p>Topic-异步通信机制（publisher/subscriber）</p>
 <p>先来后到，多对多</p>
-<p>service-同步通信机制（service/client）—request  response</p>
+<p>service-同步通信机制（service/client）—-request  response</p>
 <p>请求之后才会应答，一对多</p>
 <p>参数（parameter）</p>
 <p>典型字典</p>
@@ -414,7 +413,7 @@
 <p>日常启动turtle</p>
 <hr>
 <p>关于turtlebot</p>
-<p>——-没有作业0.0</p>
+<p>———-没有作业0.0</p>
 <p>ros常用组件与开发</p>
 <p>roslog</p>
 <h2 id="ros-moveit记录："><a href="#ros-moveit记录：" class="headerlink" title="ros_moveit记录："></a>ros_moveit记录：</h2><p>manipulator</p>
@@ -455,7 +454,7 @@
 <p>Gazebo+ros+ros_control</p>
 <p>电机闭环控制知识（待补充）</p>
 <p>Ros控制器接口</p>
-<p>Moveit规划得到轨迹，通过controller（follow joint trajectory封装成话题action）–serve（默认五次插补运算）–伺服电机得到指令—硬件端-机器人对上位机反馈（joint state controller）</p>
+<p>Moveit规划得到轨迹，通过controller（follow joint trajectory封装成话题action）—serve（默认五次插补运算）—伺服电机得到指令—硬件端-机器人对上位机反馈（joint state controller）</p>
 <p>基础编程</p>
 <p>1.连接控制需要的规划组</p>
 <p>2.设置目标位姿，关节空间或者笛卡尔空间</p>
@@ -495,30 +494,30 @@
 <p>superpoint</p>
 <p>多检测融合，包括orb、角点检测等，鲁棒性较高</p>
 <p>pointcloud 点云设计方案</p>
-<p>去除噪音、降采样、移除行人、移除地面—网格mesh化</p>
-<p>point—legoloam–点云算法，运算量比较小，点云图像投影</p>
+<p>去除噪音、降采样、移除行人、移除地面—-网格mesh化</p>
+<p>point—-legoloam—点云算法，运算量比较小，点云图像投影</p>
 <p>地图构建之后，定位</p>
 <p>EKF-扩展卡尔曼滤波器</p>
 <p>信息融合，视觉、imu惯性测量单元（测量姿态）、gps等数据源卡尔曼滤波，提高精度</p>
 <p>平面定位-amcl</p>
-<p>粒子分布、更新–全局分布–视觉重定位（辅助）–初始定位–定位置信度</p>
+<p>粒子分布、更新—全局分布—视觉重定位（辅助）—初始定位—定位置信度</p>
 <p>定位-NDT/ICP 点云算法 </p>
 <p>ndt 网格化正态分布变换</p>
 <p>icp 迭代最近点   由轨迹确定位置</p>
 <p>3.全局规划与局部规划</p>
 <p>Globalcostmap</p>
 <p>静态层、动态层、膨胀层（远离障碍物，自己加）</p>
-<p>全局规划算法–A*/Dijkstra</p>
+<p>全局规划算法—A*/Dijkstra</p>
 <p>目的是避障寻找最低能耗路径</p>
-<p>人工势场法–寻找能量最低路径</p>
+<p>人工势场法—寻找能量最低路径</p>
 <p>地图构建-势场-膨胀-全局规划算法-跟随，进行局部规划算法</p>
 <p>局部规划</p>
 <p>以机器人周围构建主要激光和点云</p>
 <p>算法-DWA（决定机器人动态效果）</p>
-<p>​	1.采样空间/运动模型</p>
-<p>​	2.代价函数</p>
-<p>​	防抖，运动平滑</p>
-<p>​	3.动态窗口仿真</p>
+<p>​    1.采样空间/运动模型</p>
+<p>​    2.代价函数</p>
+<p>​    防抖，运动平滑</p>
+<p>​    3.动态窗口仿真</p>
 <p>3.导航 move_base</p>
 <p>4.全地形导航-height map 三维  存在高度概念</p>
 <p>关于moveit计算方案</p>

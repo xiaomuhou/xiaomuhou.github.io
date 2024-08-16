@@ -415,30 +415,29 @@
 <p>[1] SIVČEV S, COLEMAN J, OMERDIĆ E, et al. Underwater manipulators: A review [J]. 2018, 163(431-50.</p>
 </blockquote>
 <p>UUV-unmanned underwater vehicles   </p>
-<p>ROV–remotely operated vehicles</p>
+<p>ROV—remotely operated vehicles</p>
 <p>AUV-autonomous underwater vehicles</p>
 <p>UVMS-Underwater Vehicle Manipulator Systems</p>
 <span id="more"></span>
-
-<p>(水下双臂–一号臂抓取固定机器人本体，二号臂执行预定作业内容)</p>
-<h2 id="常见任务："><a href="#常见任务：" class="headerlink" title="常见任务："></a>常见任务：</h2><p>1.管道检测	2.沉没物体打捞作业	 3.矿井作业 </p>
-<p>4.清洁表面作业	5.开关阀门、钻探、rope cutting 	6.线缆铺设以及维修</p>
-<p>7.清理碎片或渔网	8.生物地质采样	9.考古archaeological work</p>
+<p>(水下双臂—一号臂抓取固定机器人本体，二号臂执行预定作业内容)</p>
+<h2 id="常见任务："><a href="#常见任务：" class="headerlink" title="常见任务："></a>常见任务：</h2><p>1.管道检测    2.沉没物体打捞作业     3.矿井作业 </p>
+<p>4.清洁表面作业    5.开关阀门、钻探、rope cutting     6.线缆铺设以及维修</p>
+<p>7.清理碎片或渔网    8.生物地质采样    9.考古archaeological work</p>
 <h2 id="特殊环境材料选择（水下）"><a href="#特殊环境材料选择（水下）" class="headerlink" title="特殊环境材料选择（水下）"></a>特殊环境材料选择（水下）</h2><p>作业约束：</p>
 <p>1.the size of the workspace</p>
 <p>2.lifting capacity </p>
 <p>3.wrist torque</p>
 <p>常用金属合金，比如TI6-4、阳极氧化铝、不锈钢合金以及某些塑料（聚乙烯）</p>
-<p>–较高强度、耐腐蚀性、良好的可加工性质、减轻水中的重量以及减少执行器负担</p>
-<p>Reach–水下机械手运动链长</p>
+<p>—较高强度、耐腐蚀性、良好的可加工性质、减轻水中的重量以及减少执行器负担</p>
+<p>Reach—水下机械手运动链长</p>
 <ol>
 <li><p>水下机械手能产生的最大腕部扭矩范围8NM-250NM</p>
 </li>
 <li><p>水下机械手的载荷5kg-500kg左右</p>
 </li>
 <li><p>水下机械手的运动范围为0.5m-2.4m</p>
-<p>参数：max.nominal  最大额定值	at full extension 完全伸展  at rated speed 额定速度</p>
-<p>through envelope</p>
+<p>参数：max.nominal  最大额定值    at full extension 完全伸展  at rated speed 额定速度</p>
+<p>through envelope </p>
 </li>
 </ol>
 <h2 id="关于水下控制模型意义"><a href="#关于水下控制模型意义" class="headerlink" title="关于水下控制模型意义"></a>关于水下控制模型意义</h2><p>机械手的质量尽量占比较小，为了可以忽略或至少将动态耦合考虑为可以解决的外部干扰，通过水下机器人的动态定位，更大的重量和尺寸对水下机器人推进器系统对由动态耦合引起的干扰的鲁棒性提出了更高的要求。</p>
@@ -446,7 +445,7 @@
 <p>高自由度具有冗余性，常用于避障作业</p>
 <h2 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h2><ul>
 <li>海水驱动，缺点较多被放弃</li>
-<li>液压驱动–<ul>
+<li>液压驱动—<ul>
 <li>高负载，高效率、简单、过载保护</li>
 <li>定位精度差、容易泄露造成污染</li>
 </ul>
@@ -460,7 +459,7 @@
 <p>以上电与液压驱动均有大量研究文章，有时间挑着看看商用水下操纵器控制系统安装在ROV上的商用水下操纵器由遥操作系统控制，并且完全依赖于位于水面船只上的回路中的驾驶员/操纵员。 飞行员通过摄像头和/或声纳系统的反馈来观察场景，并同时做出有关运动的决定，并使用一些备用输入设备之一远程操作水下操纵器。 根据水下机械手的技术能力，使用不同的控制方法。</p>
 <h3 id="商业用控制系统"><a href="#商业用控制系统" class="headerlink" title="商业用控制系统"></a>商业用控制系统</h3><p>商业级别一般使用遥操作</p>
 <ul>
-<li>rate control	液压通过流量与速度控制</li>
+<li>rate control    液压通过流量与速度控制</li>
 <li>position control     位置传感器通过电位计、analog resolvers、digital optical encoders 、solid state linear position sensors</li>
 <li>force feedback  商业级应用，常用于辅助人工操作</li>
 </ul>
@@ -468,12 +467,12 @@
 <h2 id="水下理论控制模型（文章较多，研究重点）"><a href="#水下理论控制模型（文章较多，研究重点）" class="headerlink" title="水下理论控制模型（文章较多，研究重点）"></a>水下理论控制模型（文章较多，研究重点）</h2><p>manipulator作为一种多体动力学问题，控制方案包含集中控制与分散控制方案两类，此外还包括神经网络控制模型。</p>
 <p>浮力、增加的质量、耗散的阻力和升力以及外部干扰（电流、波浪等），增加了非线性与不确定性因素，使得建模控制变得更加复杂。此外<code>水动力系数</code>无法估计，因为他们会随着温度、深度、盐度等变化，当人体通过液体加速时，水体产生格外的惯性，即质量附加效应</p>
 <p>波浪、海流和潮汐导致流体加速，导致外部和运动干扰以及机械手和机器人的强烈震荡和负载，最后在机器人与机械臂之间发生强烈的运动学和动力学耦合效应</p>
-<p>分散控制–PID</p>
-<p>集中控制–非线性集中控制方案</p>
+<p>分散控制—PID</p>
+<p>集中控制—非线性集中控制方案</p>
 <ul>
 <li>多层神经网络控制器</li>
 <li>基于非回归的自适应控制器</li>
-<li>基于滑膜控制策略和动力学模型的水下机器人鲁棒轨迹跟踪控制器等等（–后续记录）</li>
+<li>基于滑膜控制策略和动力学模型的水下机器人鲁棒轨迹跟踪控制器等等（—后续记录）</li>
 </ul>
 <p>神经网络模糊控制</p>
 <p>利用模糊增益调整在不确定性和扰动下实现自适应，神经网络用于逼近水下机械手的动力学并添加前馈，补偿输入到PD模糊控制器</p>

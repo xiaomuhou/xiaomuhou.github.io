@@ -389,13 +389,11 @@
 
       
         <h1 id="SDK-ros版本代码记录"><a href="#SDK-ros版本代码记录" class="headerlink" title="SDK_ros版本代码记录"></a>SDK_ros版本代码记录</h1><span id="more"></span>
-
 <p>arm.yaml 参数记录</p>
 <p>xm540_w270</p>
 <p>  Protocol: 2<br>  Return_Delay_Time: 100   #0~254<br>  Operating_Mode: 3   #Position Control Mode<br>  Profile_Acceleration: 10  #time<br>  Profile_Velocity: 40<br>  Shutdown: 33 #00100001  Input Voltage Error/Overload Error(default) 最大负载</p>
 <p>  Protocol: 2<br>  Return_Delay_Time: 100<br>  Operating_Mode: 3<br>  Profile_Acceleration: 10<br>  Profile_Velocity: 40</p>
-<p>  #Velocity_Trajectory:</p>
-<p>  Shutdown: 33<br>  Min_Position: 625   #0~4095<br>  Max_Position: 3409<br>  Velocity_Limit: 40</p>
+<h1 id="Velocity-Trajectory"><a href="#Velocity-Trajectory" class="headerlink" title="Velocity_Trajectory:"></a>Velocity_Trajectory:</h1><p>  Shutdown: 33<br>  Min_Position: 625   #0~4095<br>  Max_Position: 3409<br>  Velocity_Limit: 40</p>
 <p>这些值将位置控制模式（联合模式）的最大和最小期望位置限制在1转（0〜4,095）的范围内。<br>因此，目标位置（116）应该配置在位置限制范围内。<br>在扩展位置控制模式和基于电流的位置控制模式中不使用这些值。</p>
 <p>  Protocol: 2</p>
 <p>  Shadow_ID: 5  #？</p>
@@ -423,7 +421,7 @@
 <p>ping：protocol2.0协议，连接dynamixel ，同read_write</p>
 <p>示例文件，初始化、参数设定与连接使能</p>
 <p>src and launch</p>
-<p>dynamixel–电机参数表，model_number ,电机型号参数以及协议选择，原代码 MX与AX</p>
+<p>dynamixel—电机参数表，model_number ,电机型号参数以及协议选择，原代码 MX与AX</p>
 <p>XM540-W150对应参数：270同</p>
 <p>​        1130: {</p>
 <p>​            “Return_Delay_Time”: ModelFlag(9, 1),</p>
@@ -452,7 +450,7 @@
 <p>将write与read定义到了类class中 </p>
 <p>功能：读取位置、转角并且转化数据，读取负载（使用protocol2.0），读取速度值并进行转化</p>
 <p>current 温度值 位置？？？待修改</p>
-<p>目标位置数值—–移动</p>
+<p>目标位置数值——-移动</p>
 
       
     </div>
@@ -634,7 +632,7 @@ src="//music.163.com/outchain/player?type=2&id=26429375&auto=1&height=66"></ifra
             
     
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SDK-ros%E7%89%88%E6%9C%AC%E4%BB%A3%E7%A0%81%E8%AE%B0%E5%BD%95"><span class="nav-number">1.</span> <span class="nav-text">SDK_ros版本代码记录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%95%E5%B1%82%E4%BB%A3%E7%A0%81-launch%E6%96%87%E4%BB%B6%EF%BC%88%E8%8A%82%E7%82%B9%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">底层代码+launch文件（节点）</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SDK-ros%E7%89%88%E6%9C%AC%E4%BB%A3%E7%A0%81%E8%AE%B0%E5%BD%95"><span class="nav-number">1.</span> <span class="nav-text">SDK_ros版本代码记录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Velocity-Trajectory"><span class="nav-number">2.</span> <span class="nav-text">Velocity_Trajectory:</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%95%E5%B1%82%E4%BB%A3%E7%A0%81-launch%E6%96%87%E4%BB%B6%EF%BC%88%E8%8A%82%E7%82%B9%EF%BC%89"><span class="nav-number">2.1.</span> <span class="nav-text">底层代码+launch文件（节点）</span></a></li></ol></li></ol></div>
             
     
           </div>
