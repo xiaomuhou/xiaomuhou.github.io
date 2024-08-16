@@ -6,7 +6,7 @@
   <link href="http://xiaomuhou.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiaomuhou.github.io/"/>
-  <updated>2024-08-12T14:00:37.787Z</updated>
+  <updated>2024-08-16T16:07:42.226Z</updated>
   <id>http://xiaomuhou.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>transformation_feel</title>
+    <link href="http://xiaomuhou.github.io/2024/08/16/transformation-feel/transformation-feel/"/>
+    <id>http://xiaomuhou.github.io/2024/08/16/transformation-feel/transformation-feel/</id>
+    <published>2024-08-16T15:10:54.000Z</published>
+    <updated>2024-08-16T16:07:42.226Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="旋转变换的一些想法记录"><a href="#旋转变换的一些想法记录" class="headerlink" title="旋转变换的一些想法记录"></a><strong>旋转变换的一些想法记录</strong></h1><p>空间一点关于任意轴旋转，点变换之间的关系以及传统坐标转换的解读</p><span id="more"></span><h2 id="旋转轴"><a href="#旋转轴" class="headerlink" title="旋转轴"></a>旋转轴</h2><p>一般说法，已知P点在B坐标系下坐标，通过旋转矩阵可以求得P点在A坐标系下的坐标<br>$$<br>{ }^A P={ }_B^A R^B P<br>$$<br>也可以理解为，P点A坐标系下的原运动点通过旋转运动得到新的点P’，均基于A坐标系，与前者的区别在于对于点意义的理解，即坐标系为主体变换与以点为主体变换，旋转矩阵则是绕某一根轴旋转theta，绕任意轴按照这个方式理解。<br>$$<br>{ }^A P^{\prime}=R(\theta)^A P<br>$$<br>绕任意轴旋转的通式推导大家都很熟悉，本质也是在求取R的过程，<br>$$<br>P^{\prime}=T \cdot R \cdot T^{-1} \cdot P<br>$$</p><p>$$<br>M=T(-x,-y,-z) \cdot R x(-\alpha) \cdot R y(\beta) \cdot R z(\theta) \cdot R y(-\beta) \cdot R x(\alpha) \cdot T(x, y, z)<br>$$</p><p>$$<br>\left[\begin{array}{cccc}<br>u^2+\left(v^2+w^2\right) \cos \theta &amp; u v(1-\cos \theta)-w \sin \theta &amp; u w(1-\cos \theta)+v \sin \theta &amp; \left(a\left(v^2+w^2\right)-u(b v+c w)\right)(1-\cos \theta)+(b w-c v) \sin \theta \<br>u v(1-\cos \theta)+w \sin \theta &amp; v^2+\left(u^2+w^2\right) \cos \theta &amp; v w(1-\cos \theta)-u \sin \theta &amp; \left(b\left(u^2+w^2\right)-v(a u+c w)\right)(1-\cos \theta)+(c u-a w) \sin \theta \<br>u w(1-\cos \theta)-v \sin \theta &amp; v w(1-\cos \theta)+u \sin \theta &amp; w^2+\left(u^2+v^2\right) \cos \theta &amp; \left(c\left(u^2+v^2\right)-w(a u+b v)\right)(1-\cos \theta)+(a v-b u) \sin \theta \<br>0 &amp; 0 &amp; 0 &amp; 1<br>\end{array}\right]<br>$$</p><p>前后的变换过程目的是将任意轴线与Z轴重合，然后恢复，保证相对基坐标系下进行变换，此时，P点表示A坐标下位置，而P‘表示A坐标系下旋转后的位置，这里附上已经验证过的matlab矩阵代码，方便使用：</p><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">RT=[u^<span class="number">2</span>+(v^<span class="number">2</span>+w^<span class="number">2</span>)*<span class="built_in">cos</span>(theta),u*v*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))-w*<span class="built_in">sin</span>(theta),u*w*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+v*<span class="built_in">sin</span>(theta),(a1*(v^<span class="number">2</span>+w^<span class="number">2</span>)-u*(b1*v+c1*w))*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+(b1*w-c1*v)*<span class="built_in">sin</span>(theta);</span><br><span class="line">    u*v*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+w*<span class="built_in">sin</span>(theta),v^<span class="number">2</span>+(u^<span class="number">2</span>+w^<span class="number">2</span>)*<span class="built_in">cos</span>(theta),v*w*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))-u*<span class="built_in">sin</span>(theta),(b1*(u^<span class="number">2</span>+w^<span class="number">2</span>)-v*(a1*u+c1*w))*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+(c1*u-a1*w)*<span class="built_in">sin</span>(theta);</span><br><span class="line">    u*w*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))-v*<span class="built_in">sin</span>(theta),v*w*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+u*<span class="built_in">sin</span>(theta),w^<span class="number">2</span>+(u^<span class="number">2</span>+v^<span class="number">2</span>)*<span class="built_in">cos</span>(theta),(c1*(u^<span class="number">2</span>+v^<span class="number">2</span>)-w*(a1*u+b1*v))*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+(a1*v-b1*u)*<span class="built_in">sin</span>(theta);</span><br><span class="line">    <span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>]</span><br></pre></td></tr></tbody></table></figure><h2 id="DH坐标及相对变换"><a href="#DH坐标及相对变换" class="headerlink" title="DH坐标及相对变换"></a>DH坐标及相对变换</h2><p>右乘的案例理解，动系指的各个阶段的坐标系，而非最终系（用词不标准，体会即可）</p><p>四面体作为一种稳定机构单元，其旋转过程中相邻旋转轴线的夹角是固定的，因此可以直接应用DH法获取各个轴系之间的运动关系，但是运动单元不然，各个轴线之间存在闭合并联支链，运动关系复杂，不能直接获取关系，应用四元数本身与直接在笛卡尔坐标系在进行变换的意义是相同的，只是表示方法不同，然后就四元数可以调用的包多一点，不需要基于原理摸代码，表示上也更为简单，但是后续的运动速度分析，存在一定问题，方案待定，需要进一步理解概念。</p><p>坐标A-B的变换，以四面体为例，两个相邻的轴线，以A系为基准，就难以寻找关系，以B系为基准，按照B系各个动坐标分阶段的变换获取关系，已知A-B,需要先平移后旋转，因此以第一阶段平移B动坐标为基础，初次平移结束，此时动B的Z轴与A的Z轴方向一致，因此按照此坐标则是沿着Z2轴正向平移，重合之后开始第二阶段的转换，该过程右乘。</p><p>总结，左乘最为常见，概念上右乘是指针对动坐标系，但是实际需要理解，针对的是A-B过程中每一次变换的动坐标系，而非最终合成B系，直接以B系进行参考，很容易糊涂，假设A-B,需要经过旋转1，平移1，旋转2，则DH关系转换中，则是以旋转1系，平移系，以及旋转2三个坐标系为基准依次右乘，其变换也是这个过程，据此可以理解转换公式，完成推导。</p><h2 id="对称变换及速度关系"><a href="#对称变换及速度关系" class="headerlink" title="对称变换及速度关系"></a>对称变换及速度关系</h2><p>待补充</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;旋转变换的一些想法记录&quot;&gt;&lt;a href=&quot;#旋转变换的一些想法记录&quot; class=&quot;headerlink&quot; title=&quot;旋转变换的一些想法记录&quot;&gt;&lt;/a&gt;&lt;strong&gt;旋转变换的一些想法记录&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;空间一点关于任意轴旋转，点变换之间的关系以及传统坐标转换的解读&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="learning" scheme="http://xiaomuhou.github.io/categories/learning/"/>
+    
+    
+    <category term="mathematic" scheme="http://xiaomuhou.github.io/tags/mathematic/"/>
+    
+  </entry>
   
   <entry>
     <title>gbasisorder</title>
@@ -421,27 +442,6 @@
     
     <category term="game" scheme="http://xiaomuhou.github.io/categories/game/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>impedance_control</title>
-    <link href="http://xiaomuhou.github.io/2021/02/03/impedance-control/impedance-control/"/>
-    <id>http://xiaomuhou.github.io/2021/02/03/impedance-control/impedance-control/</id>
-    <published>2021-02-03T02:58:44.000Z</published>
-    <updated>2021-10-08T12:00:23.164Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="阻抗相关"><a href="#阻抗相关" class="headerlink" title="阻抗相关"></a>阻抗相关</h1><p>记录部分内容</p><span id="more"></span><h2 id="人机协作"><a href="#人机协作" class="headerlink" title="人机协作"></a>人机协作</h2><p>协作定义：协作参与方具备共同目标、具备感知交流能力、协同能力</p><p>标准：安全、协作、智能</p><h2 id="交互控制-力控制"><a href="#交互控制-力控制" class="headerlink" title="交互控制-力控制"></a>交互控制-力控制</h2><h3 id="直接力控"><a href="#直接力控" class="headerlink" title="直接力控"></a>直接力控</h3><p>直接设定数值，通过反馈进行精确设定控制</p><p>1.成本高、精度差、存在噪声、干扰难以判断</p><p>2.无法确定具体所需控制数值</p><h3 id="间接控制"><a href="#间接控制" class="headerlink" title="间接控制"></a>间接控制</h3><h4 id="柔顺控制"><a href="#柔顺控制" class="headerlink" title="柔顺控制"></a>柔顺控制</h4><p>被动柔顺：通过含有弹性元件的机械设备在接触过程中体现柔顺</p><p>主动柔顺：通过控制的方式实现，越位设置，在接触过程中产生作用</p><h4 id="阻抗-导纳控制："><a href="#阻抗-导纳控制：" class="headerlink" title="阻抗/导纳控制："></a>阻抗/导纳控制：</h4><p>关节空间</p><p>笛卡尔空间：常用</p><h4 id="力-位混合控制"><a href="#力-位混合控制" class="headerlink" title="力/位混合控制"></a>力/位混合控制</h4><h2 id="关节空间阻抗控制"><a href="#关节空间阻抗控制" class="headerlink" title="关节空间阻抗控制"></a>关节空间阻抗控制</h2><p>阻尼：抵消机械震荡</p><p>弹性元件：柔顺性调整</p><p>控制理论</p><p>阻抗控制主要是控制运动与力之间的动态关系控制</p><p>实现理想阻抗控制需要满足：</p><p>1.机器人动态模型及相关参数</p><p>2.机器人关节角、关节角速度的实时反馈（传感器）</p><p>3.机器人关节力矩实时反馈（转矩传感器获得/测量驱动电机电流，通过电流关系进行计算分析）</p><p>4.机器人转矩控制</p><p>设定k值</p><p>k大–抵抗性较强</p><p>k小–柔顺性较高</p><p>k=0，随外力改变位置</p><h2 id="笛卡尔关节控制"><a href="#笛卡尔关节控制" class="headerlink" title="笛卡尔关节控制"></a>笛卡尔关节控制</h2><p>1.求解雅克比（伪）逆矩阵，以及雅克比矩阵导数矩阵</p><p>2.精确测量机器人执行器末端所受外力</p><p>3.精确的机器人运动学以及动力学模型</p><p>4.机器人关节位置及转速的测量</p><p>5.机器人关节转矩控制</p><p>姿态不要过度接近奇异点</p><p>控制机器人运动与外力之间的动态关系，使其等效为弹簧-阻尼-质量组成的二阶系统</p><p>需要条件</p><p>1.机器人动力学及运动学模型</p><p>2.关节角及角速度反馈</p><p>3.关节转矩控制</p><p>4.外力（矩）的测量（非必要）</p><p>导纳控制与阻抗控制区别</p><p>1.计算出力，控制器输入位置输出力</p><p>2.控制器输入力输出位置，机器人输入位移输出力</p><p><em>当外界环境阻抗系数高，采用阻抗控制</em></p><p><em>当外界环境阻抗系数低，采用导纳控制？？</em></p><p>导纳控制有点像变刚度控制，区分并进行理解。</p><h1 id="自适应阻抗控制"><a href="#自适应阻抗控制" class="headerlink" title="自适应阻抗控制"></a>自适应阻抗控制</h1><p>自主调整阻抗，满足环境要求</p><p>1.自主目标 阻抗系数或者运动设定</p><p>2.如何实现参数修改</p><p>基准：保证机器人稳定性</p><p>一些例子</p><p>1.根据外力反馈调整阻尼系数，预测运动意图</p><p>2.稳定性分析</p><p>3.估算人的阻抗系数</p><p>力增大-意图为该方向加速-机器人减小阻抗系数以顺应需求-减小接触力，反之亦然</p><p>思路可以换一下，外力作为负反馈进行相应调节</p><p>阻抗模型</p><p>水的阻抗模型？？？</p><p>参数辨识法</p><p>通过速度反馈调节参数进行示教学习</p><p>提高舒适跟随</p><p>根据实验进行确定稳定区域模型而非理论推导–不严谨但是更贴近实际</p><p>1.基于可操作性</p><p>2.基于阻抗控制误差</p><p>三.</p><p>1.多传感器融合，建立手臂运动中 姿态以及肌肉信号实时反馈</p><p>2.基于机电信息，建立手臂阻抗模型，并调整机器的阻抗系数</p><p>3.力/阻抗混合控制</p><p>肌肉电信号EMG使用方法</p><p>optitrack 视觉信息使用</p><p>该方案中捕捉手臂姿态的变化，根据姿态变化调整机器人阻抗系数在空间上的分布</p><p>力传感器</p><p>机械臂末端</p><p>四</p><p>1.基于视觉信息，利用高斯过程回归，在线预测人运动轨迹，评估预测不确定性</p><p>2.基于预测结果，调整机器人运动</p><p>3.利用阻抗控制跟随设定轨迹，同时改变参数大小，保证safe</p><h1 id="强化学习"><a href="#强化学习" class="headerlink" title="强化学习"></a>强化学习</h1><p>阻抗控制引入强化学习</p><p>学习力场？？？？学习一下</p><p>强化学习是机器学习的一个领域，强调如何基于换将反馈而行动，已取得最大化的预期利益。</p><p>寻找最优策略，使得价值函数最大</p><p>1.基于模型的强化学习</p><p>需要建立模型</p><p>2.基于价值函数的强化学习</p><p>根据价值调整策略</p><p>3.基于策略函数的强化学习</p><p>不依赖于模型</p><p>缺点 ：收敛慢、可能会到达危险状态、</p><p>原因：</p><p>1.建模较为困难</p><p>2.机器人可以不断优化自身行为，理论上可以得到最优解</p><p>核心;</p><p>求解问题：</p><p>1.基于价值函数</p><p>2.基于神经网络的Actor-critic算法</p><p>3.策略迭代</p><p>策略 —如何保障安全性</p><p>基于价值函数的强化学习</p><p>1.定义人机协作最优控制问题，基于Q-leaning设计自适应阻抗</p><p>2.利用人和机器人的阻抗模型及线性回归的方法估测人的示教轨迹</p><p>自适应阻抗学习时间最小，同时保证了一定时间</p><p>基于策略函数的强化学习</p><p>价值</p><p>理论完整，可以达到全局最优</p><p>实现简单，收敛较快</p><p>缺点：维数灾难，控制策略会受到函数近似误差影响</p><p>策略</p><p>不存在维数灾难</p><p>理论上只能局部最优，收敛较慢</p><p>案例分析</p><p>1.基于策略函数的强化学习算法</p><p>2.运用于机器人的自适应阻抗中，并在不同平台测试</p><p>机器人仅在任务需要时候保证高阻抗，其余保证低阻抗</p><p>目前问题：有些不可达到的点集成于学习过程中，进行处理</p><p>强化学习应用于控制理论阶段</p><p>1.机器人动力学参数辨识</p><p>2.关节摩擦力的建模和补偿</p><p>3.基于电流环或关节转矩测量外力估算</p><p>4.阻抗系数矩阵非对角元素设计</p><p>方向</p><p>1.基于多传感器多信息融合的自适应阻抗控制</p><p>2.与人工智能相关技术结合</p><p>3.基于强化学习的阻抗控制</p><ol><li>与基于模型的最优控制结合（发挥各自有点）</li><li>状态约束和稳定性分析</li><li>基于策略搜索的强化学习</li></ol>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;阻抗相关&quot;&gt;&lt;a href=&quot;#阻抗相关&quot; class=&quot;headerlink&quot; title=&quot;阻抗相关&quot;&gt;&lt;/a&gt;阻抗相关&lt;/h1&gt;&lt;p&gt;记录部分内容&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="note" scheme="http://xiaomuhou.github.io/categories/note/"/>
-    
-    
-    <category term="control" scheme="http://xiaomuhou.github.io/tags/control/"/>
     
   </entry>
   
