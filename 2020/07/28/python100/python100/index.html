@@ -88,12 +88,12 @@
 <meta property="og:site_name" content="GUO-WM-0.0">
 <meta property="og:description" content="复习基础可用于复习语法基础，内容包括我自己一些解法，以及思路较新奇的解法，对一些不常用的函数进行了注释和以及代码示例。 可以对比学习python2和python3的区别，深化理解 网站上原作者解法应用了大量表达式简化代码行数，受益良多。 （万恶的ros有些还是python2呀，我也太菜了QAQ）">
 <meta property="og:locale">
-<meta property="og:image" content="http://xiaomuhou.github.io/2020/07/28/python100/python100/life/R.jpg">
+<meta property="og:image" content="http://xiaomuhou.github.io/life/R.jpg">
 <meta property="article:published_time" content="2020-07-28T07:23:03.000Z">
 <meta property="article:modified_time" content="2020-08-19T09:10:39.961Z">
 <meta property="article:author" content="Ming">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://xiaomuhou.github.io/2020/07/28/python100/python100/life/R.jpg">
+<meta name="twitter:image" content="http://xiaomuhou.github.io/life/R.jpg">
 
 
 
@@ -575,7 +575,7 @@
 <figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">raise</span> RuntimeError(<span class="string">'something wrong'</span>)</span><br></pre></td></tr></tbody></table></figure>
 <p>implimantation of object oriented programming</p>
 <p>～～～`～～～～～～～～～～～～～～</p>
-<p><img src="/2020/07/28/python100/python100/life/R.jpg" alt="R"></p>
+<p><img src="/../life/R.jpg" alt="R"></p>
 <h5 id="try-except"><a href="#try-except" class="headerlink" title="try / except"></a>try / except</h5><p>51.编写一个函数以计算5/0并使用try / except捕获异常。</p>
 <figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">throws</span>():</span><br><span class="line">    <span class="keyword">return</span> <span class="number">5</span>/<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    throws()</span><br><span class="line"><span class="keyword">except</span> ZeroDivisionError:</span><br><span class="line">    <span class="built_in">print</span> <span class="string">"division by zero!"</span></span><br><span class="line"><span class="keyword">except</span> Exception, err:</span><br><span class="line">    <span class="built_in">print</span> <span class="string">'Caught an exception'</span></span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    <span class="built_in">print</span> <span class="string">'In finally block for cleanup'</span></span><br><span class="line">    </span><br><span class="line">python3</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">divide</span>():</span><br><span class="line">    <span class="keyword">return</span> <span class="number">5</span>/<span class="number">0</span></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    divide()</span><br><span class="line"><span class="keyword">except</span> ZeroDivisionError <span class="keyword">as</span> ze:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"Why on earth you are dividing a number by ZERO!!"</span>)</span><br><span class="line"><span class="keyword">except</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"Any other exception"</span>)</span><br></pre></td></tr></tbody></table></figure>
 <p>52.定义一个自定义异常类，该类将字符串消息作为属性。</p>
