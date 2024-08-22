@@ -1934,7 +1934,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e821ff;
+  background: #2ebaff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3240,14 +3240,14 @@ body {
   background-position: 50% 50%;
 }
 .content-wrap {
-  opacity: 0.9;
+  opacity: 0.5;
 }
 .sidebar {
-  opacity: 0.9;
+  opacity: 0.5;
 }
 .header-inner {
   background: rgba(255,255,255,0.9);
 }
 .popup {
-  opacity: 0.9;
+  opacity: 0.5;
 }
