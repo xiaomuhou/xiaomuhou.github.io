@@ -6,7 +6,7 @@
   <link href="http://xiaomuhou.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiaomuhou.github.io/"/>
-  <updated>2024-08-22T14:16:40.543Z</updated>
+  <updated>2024-09-22T15:30:37.699Z</updated>
   <id>http://xiaomuhou.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>中期-生活-随想</title>
+    <link href="http://xiaomuhou.github.io/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/"/>
+    <id>http://xiaomuhou.github.io/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/</id>
+    <published>2024-09-22T14:23:36.000Z</published>
+    <updated>2024-09-22T15:30:37.699Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="中期结束之后的随笔"><a href="#中期结束之后的随笔" class="headerlink" title="中期结束之后的随笔"></a>中期结束之后的随笔</h1><p>有些感慨，突如其来的迷茫，若有若无的思绪</p><p>浅浅记录，来日可追~</p><span id="more"></span><p>​    低效的生活总是带给人迷惘，原本希望规律的习惯可以塑造思维，长时间下来虽有些许效果，但是仍在边边角角，主题推进慢慢悠悠，思考下来还是自己遇到困难下意识逃避，不够专注，然后思维涣散，开始摸鱼，仔细想来，浪费的时间有4个月，扣除掉放假瞎溜达，也有3个月，不奢望每天都可以高效推进，但总归没有多余的时间再如此休闲了，该做的事情也应该认真的去做了,在此记录一下，略作督促。</p><h2 id="学业"><a href="#学业" class="headerlink" title="学业"></a>学业</h2><p>中期结束之后，感觉确实进度慢，主要是两个部分：</p><p>规划的动力学其实存在一些问题，早先有些想当然，当初刘老师的说的缝隙问题到今天才理解了是什么意思，有点喜剧了，看来不可以按照分段耦合的方法去做，这条路是走不通的，跟两位师兄的沟通其实也验证了这一点，但是貌似也不是完全走不下去，直接用点去链接被动变形的连续体，我做的这个东西特色还是非常明显的，走这条路的问题就是不能考虑柔性结构的反作用力，直接去建造刚体动力学模型，真正的把驱动视为干扰，不去考虑建模问题，动力学目的变成优化问题，与四面体相比优势在于维度，两侧各自出现两条连续的控制点，本质上也是封闭的曲面控制，能够提供更多的点位控制，本身也是一种方案，只是严谨的理论模型就不能去做了，里面是个大坑，容易陷进去，绕一下，这个问题目前还不需要解决，慢慢思考吧。</p><p>模型的优化问题，这个是当下急需解决与思考的一个问题，主要是球副那个部分的实际轴线问题，以及相交面位置旋转模型的细化，球借鉴一下赵师兄的球副，其余需要尽快拿出细节方案，然后adams之类的仿真需要开始，这部分近期要开始思考落实，目标是完成一套二代模型—应该是没问题的默认一个两驱动的八面体，既然李可以2P1R，那就说明两驱没问题，问题就在于细化了。</p><p>小论文，就是需要尽快投，有三个问题，一是包装，分割顶点部分需要拔高一下，目前的有点low，二是模式转换，速率比不可以那样直接去说，是有问题的，这部分需要思考改进，其实后面放个精细版本的三维模型更好，所以得同步推进。分割包装、速率说明，大概需要一周的时间吧。</p><p>软著，这个其实可以放放，抽空去写完成一下</p><h2 id="习惯"><a href="#习惯" class="headerlink" title="习惯"></a>习惯</h2><p>要认真写，上午下午晚上不能无目的的摸鱼了，这个很重要，注重一下，求其上才能得其中</p><p>安安静静的推进进度，务实一点。</p><p>论文习惯、运动习惯、学习按照往常继续就好，多多游泳去了，现在是9月22日，11月底</p><h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><p>本来就是个比较喜欢一个人呆着的人，现在这个状态也蛮好，前几天去当义工，感觉还蛮开心的，不带目的帮助陌生人体验还可以，就是自己有点质疑活动本身的意义，下次应该也不会再去了，下一步想做的事情是自驾游。</p><p>自己做这些没啥意义的事，本质还是为了让自己可以开心一点，散散心，没啥高尚的想法。</p><p>最近觉得自己做的很好的一件事情就是已经能够做到下意识的去换位思考了，不去把自己的想法强加给别人，吃饭是这样，为人做事也是这样，更成熟了一点，做一个控制欲望为0的人，大家都做自己想做的事情，不要互相干扰。</p><p>喜欢，经历之前的事情再加上这几年来的事情，感觉自己变得有点现实，权衡开始成了判断的前提，做好自己，还是去接触一下，不要封闭自己，拒绝别人也不太好，也和习惯规划有点相关，12月吧大概就这样~</p><p>大目标！算了不立flag了，踏踏实实的做好眼前的事情吧。</p><img src="/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/marry.jpg" class="">]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;中期结束之后的随笔&quot;&gt;&lt;a href=&quot;#中期结束之后的随笔&quot; class=&quot;headerlink&quot; title=&quot;中期结束之后的随笔&quot;&gt;&lt;/a&gt;中期结束之后的随笔&lt;/h1&gt;&lt;p&gt;有些感慨，突如其来的迷茫，若有若无的思绪&lt;/p&gt;
+&lt;p&gt;浅浅记录，来日可追~&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="emotion" scheme="http://xiaomuhou.github.io/categories/emotion/"/>
+    
+    
+    <category term="note" scheme="http://xiaomuhou.github.io/tags/note/"/>
+    
+  </entry>
   
   <entry>
     <title>互联网生存</title>
@@ -422,25 +444,6 @@
     <summary type="html">&lt;h1 id=&quot;Ubuntu修复windows无法启动问题&quot;&gt;&lt;a href=&quot;#Ubuntu修复windows无法启动问题&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu修复windows无法启动问题&quot;&gt;&lt;/a&gt;Ubuntu修复windows无法启动问题&lt;/h1&gt;</summary>
     
     
-    
-    
-  </entry>
-  
-  <entry>
-    <title>fluid_model</title>
-    <link href="http://xiaomuhou.github.io/2021/02/03/fluid-model/fluid-model/"/>
-    <id>http://xiaomuhou.github.io/2021/02/03/fluid-model/fluid-model/</id>
-    <published>2021-02-03T03:05:30.000Z</published>
-    <updated>2021-02-03T03:07:58.678Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="流体相关"><a href="#流体相关" class="headerlink" title="流体相关"></a>流体相关</h1><p>开个坑，后续补充</p><span id="more"></span><p>运动阻力与速度平方成正比</p><p>阻力与流体密度成正比，水中和空气中阻力系数同一量级，但是水的密度是空气的800倍</p>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;流体相关&quot;&gt;&lt;a href=&quot;#流体相关&quot; class=&quot;headerlink&quot; title=&quot;流体相关&quot;&gt;&lt;/a&gt;流体相关&lt;/h1&gt;&lt;p&gt;开个坑，后续补充&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="learning" scheme="http://xiaomuhou.github.io/categories/learning/"/>
     
     
   </entry>
