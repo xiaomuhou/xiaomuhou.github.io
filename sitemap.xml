@@ -518,6 +518,13 @@
   </url>
   
   <url>
+    <loc>http://xiaomuhou.github.io/tags/bor/</loc>
+    <lastmod>2024-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://xiaomuhou.github.io/tags/plan/</loc>
     <lastmod>2024-10-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -525,7 +532,7 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/tags/bor/</loc>
+    <loc>http://xiaomuhou.github.io/tags/movie/</loc>
     <lastmod>2024-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -546,7 +553,7 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/tags/movie/</loc>
+    <loc>http://xiaomuhou.github.io/tags/algebraic/</loc>
     <lastmod>2024-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -560,7 +567,7 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/tags/algebraic/</loc>
+    <loc>http://xiaomuhou.github.io/tags/ACADEMIC/</loc>
     <lastmod>2024-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -575,13 +582,6 @@
   
   <url>
     <loc>http://xiaomuhou.github.io/tags/formula/</loc>
-    <lastmod>2024-10-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://xiaomuhou.github.io/tags/ACADEMIC/</loc>
     <lastmod>2024-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -660,14 +660,14 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/categories/linux/</loc>
+    <loc>http://xiaomuhou.github.io/categories/project/</loc>
     <lastmod>2024-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/categories/project/</loc>
+    <loc>http://xiaomuhou.github.io/categories/linux/</loc>
     <lastmod>2024-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
