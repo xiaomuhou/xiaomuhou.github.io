@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://xiaomuhou.github.io/2024/08/16/transformation-feel/transformation-feel/</loc>
+    <loc>http://xiaomuhou.github.io/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/</loc>
     
     <lastmod>2025-01-11</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/</loc>
+    <loc>http://xiaomuhou.github.io/2024/08/16/transformation-feel/transformation-feel/</loc>
     
     <lastmod>2025-01-11</lastmod>
     
@@ -608,6 +608,13 @@
   </url>
   
   <url>
+    <loc>http://xiaomuhou.github.io/tags/ACADEMIC/</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://xiaomuhou.github.io/tags/airfact/</loc>
     <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -616,13 +623,6 @@
   
   <url>
     <loc>http://xiaomuhou.github.io/tags/formula/</loc>
-    <lastmod>2025-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://xiaomuhou.github.io/tags/ACADEMIC/</loc>
     <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -694,14 +694,14 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/categories/camera/</loc>
+    <loc>http://xiaomuhou.github.io/categories/touch-fish/</loc>
     <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/categories/touch-fish/</loc>
+    <loc>http://xiaomuhou.github.io/categories/camera/</loc>
     <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -729,14 +729,14 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/categories/logic/</loc>
+    <loc>http://xiaomuhou.github.io/categories/GPT/</loc>
     <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/categories/GPT/</loc>
+    <loc>http://xiaomuhou.github.io/categories/logic/</loc>
     <lastmod>2025-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
