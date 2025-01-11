@@ -144,8 +144,6 @@
   <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
 <!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
@@ -421,7 +419,7 @@
 <h1 id="空间曲线拟合笔记"><a href="#空间曲线拟合笔记" class="headerlink" title="空间曲线拟合笔记"></a>空间曲线拟合笔记</h1><p>渐进颜色修正与一点点origin</p>
 <p>基础信息与参数说明</p>
 <span id="more"></span>
-<h2 id="基础参数"><a href="#基础参数" class="headerlink" title="基础参数"></a>基础参数</h2><img src="/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/1727880727916.png" class="" width="1727880727916">
+<h2 id="基础参数"><a href="#基础参数" class="headerlink" title="基础参数"></a>基础参数</h2><img src="/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/1727880727916.png" class width="1727880727916">
 <p>subplot(2, 2, 1); plot(x, y);参考源文件‘</p>
 <p> patch 利用填充函数绘制渐进曲线颜色,也可以用来表示边的颜色插补</p>
 <p> ‘<strong>flat</strong>‘ - 对每个网格线段和面使用恒定颜色。 该颜色由该线段的端点或该面的角边处具有最小索引的颜色值确定。 </p>
@@ -1193,6 +1191,26 @@ src="//music.163.com/outchain/player?type=2&id=26429375&auto=1&height=66"></ifra
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
