@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>中期-生活-随想</title>
-    <url>/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/</url>
-    <content><![CDATA[<h1 id="中期结束之后的随笔"><a href="#中期结束之后的随笔" class="headerlink" title="中期结束之后的随笔"></a>中期结束之后的随笔</h1><p>有些感慨，突如其来的迷茫，若有若无的思绪</p>
-<p>浅浅记录，来日可追~</p>
-<span id="more"></span>
-<p>​    低效的生活总是带给人迷惘，原本希望规律的习惯可以塑造思维，长时间下来虽有些许效果，但是仍在边边角角，主题推进慢慢悠悠，思考下来还是自己遇到困难下意识逃避，不够专注，然后思维涣散，开始摸鱼，仔细想来，浪费的时间有4个月，扣除掉放假瞎溜达，也有3个月，不奢望每天都可以高效推进，但总归没有多余的时间再如此休闲了，该做的事情也应该认真的去做了,在此记录一下，略作督促。</p>
-<h2 id="学业"><a href="#学业" class="headerlink" title="学业"></a>学业</h2><p>中期结束之后，感觉确实进度慢，主要是两个部分：</p>
-<p>规划的动力学其实存在一些问题，早先有些想当然，当初刘老师的说的缝隙问题到今天才理解了是什么意思，有点喜剧了，看来不可以按照分段耦合的方法去做，这条路是走不通的，跟两位师兄的沟通其实也验证了这一点，但是貌似也不是完全走不下去，直接用点去链接被动变形的连续体，我做的这个东西特色还是非常明显的，走这条路的问题就是不能考虑柔性结构的反作用力，直接去建造刚体动力学模型，真正的把驱动视为干扰，不去考虑建模问题，动力学目的变成优化问题，与四面体相比优势在于维度，两侧各自出现两条连续的控制点，本质上也是封闭的曲面控制，能够提供更多的点位控制，本身也是一种方案，只是严谨的理论模型就不能去做了，里面是个大坑，容易陷进去，绕一下，这个问题目前还不需要解决，慢慢思考吧。</p>
-<p>模型的优化问题，这个是当下急需解决与思考的一个问题，主要是球副那个部分的实际轴线问题，以及相交面位置旋转模型的细化，球借鉴一下赵师兄的球副，其余需要尽快拿出细节方案，然后adams之类的仿真需要开始，这部分近期要开始思考落实，目标是完成一套二代模型—应该是没问题的默认一个两驱动的八面体，既然李可以2P1R，那就说明两驱没问题，问题就在于细化了。</p>
-<p>小论文，就是需要尽快投，有三个问题，一是包装，分割顶点部分需要拔高一下，目前的有点low，二是模式转换，速率比不可以那样直接去说，是有问题的，这部分需要思考改进，其实后面放个精细版本的三维模型更好，所以得同步推进。分割包装、速率说明，大概需要一周的时间吧。</p>
-<p>软著，这个其实可以放放，抽空去写完成一下</p>
-<h2 id="习惯"><a href="#习惯" class="headerlink" title="习惯"></a>习惯</h2><p>要认真写，上午下午晚上不能无目的的摸鱼了，这个很重要，注重一下，求其上才能得其中</p>
-<p>安安静静的推进进度，务实一点。</p>
-<p>论文习惯、运动习惯、学习按照往常继续就好，多多游泳去了，现在是9月22日，11月底</p>
-<h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><p>本来就是个比较喜欢一个人呆着的人，现在这个状态也蛮好，前几天去当义工，感觉还蛮开心的，不带目的帮助陌生人体验还可以，就是自己有点质疑活动本身的意义，下次应该也不会再去了，下一步想做的事情是自驾游。</p>
-<p>自己做这些没啥意义的事，本质还是为了让自己可以开心一点，散散心，没啥高尚的想法。</p>
-<p>最近觉得自己做的很好的一件事情就是已经能够做到下意识的去换位思考了，不去把自己的想法强加给别人，吃饭是这样，为人做事也是这样，更成熟了一点，做一个控制欲望为0的人，大家都做自己想做的事情，不要互相干扰。</p>
-<p>喜欢，经历之前的事情再加上这几年来的事情，感觉自己变得有点现实，权衡开始成了判断的前提，做好自己，还是去接触一下，不要封闭自己，拒绝别人也不太好，也和习惯规划有点相关，12月吧大概就这样~</p>
-<p>大目标！算了不立flag了，踏踏实实的做好眼前的事情吧。</p>
-<img src="/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/marry.jpg" class>]]></content>
-      <categories>
-        <category>emotion</category>
-      </categories>
-      <tags>
-        <tag>note</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>互联网生存</title>
     <url>/2024/08/21/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E5%AD%98/</url>
     <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
@@ -44,7 +16,7 @@
 <p>经常告诉自己不要因为一件事去否定别人，但是毕竟不是机器人，难免有时候情绪激动直接否定，但是一定要记住的是不要站在别人面前去刷否定的存在感，站在别人面前的那一刻就已经是个小丑了。</p>
 <p>借自己最喜欢的电视剧士兵突击做个结尾，袁朗评价吴哲：“ 我喜欢他。知道为什么吗？坚持自己的原则，充满希望和乐观。重要的是，他能跟许三多这样的兵交朋友，这一点，就不会毁于他很容易产生的优越感 ”，年轻时候觉得自己像三多，不喜欢变化，后来觉得自己像成才，有时候有点自私，再后来觉得自己还是希望成为吴哲，经常告诉自己要平常心，说实话自己是不如三多和成才的，他们有各自的强项，但我很希望成为吴哲一类的人，做一个半吊子的理想主义者，充满希望和乐观。</p>
 <p>碎碎念结束，感觉很生气就写个日记，写到这里已经完全没感觉了，人不是机器人，也可以理解。</p>
-<img src="/2024/08/21/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E5%AD%98/qq.jpg" class> 
+<img src="/2024/08/21/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E5%AD%98/qq.jpg" class=""> 
 <p>图源[<a href="https://x.com/Hitoimim/status/1807718505602797820">https://x.com/Hitoimim/status/1807718505602797820</a>]</p>
 ]]></content>
       <categories>
@@ -57,7 +29,8 @@
   <entry>
     <title>关于柔度矩阵与变形叠加法的思考记录</title>
     <url>/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h1 id="关于小变形叠加法矩阵的认识与记录"><a href="#关于小变形叠加法矩阵的认识与记录" class="headerlink" title="关于小变形叠加法矩阵的认识与记录"></a>关于小变形叠加法矩阵的认识与记录</h1><p>柔度矩阵的叠加，小变形各个输入力单独作用下节点位移的线性叠加，柔度本质是类似于K的导数，串联并联叠加时候需要注意一下：</p>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
+<h1 id="关于小变形叠加法矩阵的认识与记录"><a href="#关于小变形叠加法矩阵的认识与记录" class="headerlink" title="关于小变形叠加法矩阵的认识与记录"></a>关于小变形叠加法矩阵的认识与记录</h1><p>柔度矩阵的叠加，小变形各个输入力单独作用下节点位移的线性叠加，柔度本质是类似于K的导数，串联并联叠加时候需要注意一下：</p>
 <p>并联：</p>
 <script type="math/tex; mode=display">
 \begin{equation}
@@ -72,19 +45,19 @@
 \end{equation}</script><span id="more"></span>
 <p>柔度叠加矩阵案例说明：</p>
 <p>d_ij,j坐标受力在i坐标产生位移</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q1.png" class title="Q1">
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q1.png" class="" title="Q1">
 <p>此时F1=1,F2=0,F1作用下，两个位置的位移，其柔度矩阵含义如图，即为各点的挠度，在实际柔性铰链中，则为各个铰链位置变形经过转换矩阵在统一坐标下的表达：</p>
 <script type="math/tex; mode=display">
 x_1=F_1*d_{11} \\
 x_2=F_1*d_{21}</script><p>另一种情况，F1=0,F2=1;先列出点，其次看受力位置</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q2.png" class title="Q2">
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q2.png" class="" title="Q2">
 <script type="math/tex; mode=display">
 x_1=F_2*d_{12} \\
 x_2=F_2*d_{22}</script><p>所以，F1=1,F2=1,各自独立计算并且叠加，可以得到：</p>
 <script type="math/tex; mode=display">
 x_1=F_1d_{11}+F_2d_{12}\\
 x_2=F_2d_{22}+F_1D_{21}</script><p>有一个案例，文中直接给出了柔度的参数，这里按照材料力学补充一下推导流程，略作复习：</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q3.png" class title="Q3">
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q3.png" class="" title="Q3">
 <p>d_11=d_22=8d,d_12=d_21=7d;推导说明，假定F1=0,F2=1;</p>
 <p>以x_2为界限进行分类，挠度曲线参数分为两段</p>
 <script type="math/tex; mode=display">
@@ -126,6 +99,34 @@ m_1 & 0 \\
       </tags>
   </entry>
   <entry>
+    <title>中期-生活-随想</title>
+    <url>/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/</url>
+    <content><![CDATA[<h1 id="中期结束之后的随笔"><a href="#中期结束之后的随笔" class="headerlink" title="中期结束之后的随笔"></a>中期结束之后的随笔</h1><p>有些感慨，突如其来的迷茫，若有若无的思绪</p>
+<p>浅浅记录，来日可追~</p>
+<span id="more"></span>
+<p>​    低效的生活总是带给人迷惘，原本希望规律的习惯可以塑造思维，长时间下来虽有些许效果，但是仍在边边角角，主题推进慢慢悠悠，思考下来还是自己遇到困难下意识逃避，不够专注，然后思维涣散，开始摸鱼，仔细想来，浪费的时间有4个月，扣除掉放假瞎溜达，也有3个月，不奢望每天都可以高效推进，但总归没有多余的时间再如此休闲了，该做的事情也应该认真的去做了,在此记录一下，略作督促。</p>
+<h2 id="学业"><a href="#学业" class="headerlink" title="学业"></a>学业</h2><p>中期结束之后，感觉确实进度慢，主要是两个部分：</p>
+<p>规划的动力学其实存在一些问题，早先有些想当然，当初刘老师的说的缝隙问题到今天才理解了是什么意思，有点喜剧了，看来不可以按照分段耦合的方法去做，这条路是走不通的，跟两位师兄的沟通其实也验证了这一点，但是貌似也不是完全走不下去，直接用点去链接被动变形的连续体，我做的这个东西特色还是非常明显的，走这条路的问题就是不能考虑柔性结构的反作用力，直接去建造刚体动力学模型，真正的把驱动视为干扰，不去考虑建模问题，动力学目的变成优化问题，与四面体相比优势在于维度，两侧各自出现两条连续的控制点，本质上也是封闭的曲面控制，能够提供更多的点位控制，本身也是一种方案，只是严谨的理论模型就不能去做了，里面是个大坑，容易陷进去，绕一下，这个问题目前还不需要解决，慢慢思考吧。</p>
+<p>模型的优化问题，这个是当下急需解决与思考的一个问题，主要是球副那个部分的实际轴线问题，以及相交面位置旋转模型的细化，球借鉴一下赵师兄的球副，其余需要尽快拿出细节方案，然后adams之类的仿真需要开始，这部分近期要开始思考落实，目标是完成一套二代模型—应该是没问题的默认一个两驱动的八面体，既然李可以2P1R，那就说明两驱没问题，问题就在于细化了。</p>
+<p>小论文，就是需要尽快投，有三个问题，一是包装，分割顶点部分需要拔高一下，目前的有点low，二是模式转换，速率比不可以那样直接去说，是有问题的，这部分需要思考改进，其实后面放个精细版本的三维模型更好，所以得同步推进。分割包装、速率说明，大概需要一周的时间吧。</p>
+<p>软著，这个其实可以放放，抽空去写完成一下</p>
+<h2 id="习惯"><a href="#习惯" class="headerlink" title="习惯"></a>习惯</h2><p>要认真写，上午下午晚上不能无目的的摸鱼了，这个很重要，注重一下，求其上才能得其中</p>
+<p>安安静静的推进进度，务实一点。</p>
+<p>论文习惯、运动习惯、学习按照往常继续就好，多多游泳去了，现在是9月22日，11月底</p>
+<h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><p>本来就是个比较喜欢一个人呆着的人，现在这个状态也蛮好，前几天去当义工，感觉还蛮开心的，不带目的帮助陌生人体验还可以，就是自己有点质疑活动本身的意义，下次应该也不会再去了，下一步想做的事情是自驾游。</p>
+<p>自己做这些没啥意义的事，本质还是为了让自己可以开心一点，散散心，没啥高尚的想法。</p>
+<p>最近觉得自己做的很好的一件事情就是已经能够做到下意识的去换位思考了，不去把自己的想法强加给别人，吃饭是这样，为人做事也是这样，更成熟了一点，做一个控制欲望为0的人，大家都做自己想做的事情，不要互相干扰。</p>
+<p>喜欢，经历之前的事情再加上这几年来的事情，感觉自己变得有点现实，权衡开始成了判断的前提，做好自己，还是去接触一下，不要封闭自己，拒绝别人也不太好，也和习惯规划有点相关，12月吧大概就这样~</p>
+<p>大目标！算了不立flag了，踏踏实实的做好眼前的事情吧。</p>
+<img src="/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/marry.jpg" class="">]]></content>
+      <categories>
+        <category>emotion</category>
+      </categories>
+      <tags>
+        <tag>note</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>年终总结2024</title>
     <url>/2024/12/30/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%932024/</url>
     <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
@@ -144,7 +145,7 @@ m_1 & 0 \\
 <p>支付宝攒了一些钱了，没有什么炒股的想法，单纯觉得很麻烦，就继续放着吧，未来可能会买一些定期存存，毕业能买一辆老哥那个车了233，平时确实也没啥花销，也就游戏还有和朋友吃饭，明年要多去做一些没体验过得事情，钱重要但是也不重要，看淡一些。</p>
 <h2 id="规划"><a href="#规划" class="headerlink" title="规划"></a>规划</h2><p>工作事情要带上脑子了，简历其实改了几版了，继续慢慢修改，也要多想想自己到底想做什么，每天目标也要完成，开始就做最重要的事情，任何时候都是。</p>
 <p>要活的潇洒一点，自信一点，少纠结，拥抱未来，2025加油呀，希望大家都好，世界都好，想做事情就一定去做，今年下决心做的事情基本都成了，所以未来也是，加油！！！</p>
-<img src="/2024/12/30/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%932024/OCTAQ.png" class title="八方">]]></content>
+<img src="/2024/12/30/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%932024/OCTAQ.png" class="" title="八方">]]></content>
       <categories>
         <category>thought2024</category>
       </categories>
@@ -170,7 +171,7 @@ m_1 & 0 \\
 <p>每个人的缺点无法避免，但是可以反思克制就好，开心一点~</p>
 <p>按照安排慢慢来，12月要再完成一部分工作，年前再完成一部分，要看一些有趣的电影…</p>
 <p>放个最近感觉很好吃的川菜~</p>
-<img src="/2024/11/29/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%9420241129/delicious.jpg" class title="最近好吃的，好开心">]]></content>
+<img src="/2024/11/29/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%9420241129/delicious.jpg" class="" title="最近好吃的，好开心">]]></content>
       <categories>
         <category>feel</category>
       </categories>
@@ -185,7 +186,7 @@ m_1 & 0 \\
 <h1 id="空间曲线拟合笔记"><a href="#空间曲线拟合笔记" class="headerlink" title="空间曲线拟合笔记"></a>空间曲线拟合笔记</h1><p>渐进颜色修正与一点点origin</p>
 <p>基础信息与参数说明</p>
 <span id="more"></span>
-<h2 id="基础参数"><a href="#基础参数" class="headerlink" title="基础参数"></a>基础参数</h2><img src="/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/1727880727916.png" class width="1727880727916">
+<h2 id="基础参数"><a href="#基础参数" class="headerlink" title="基础参数"></a>基础参数</h2><img src="/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/1727880727916.png" class="" width="1727880727916">
 <p>subplot(2, 2, 1); plot(x, y);参考源文件‘</p>
 <p> patch 利用填充函数绘制渐进曲线颜色,也可以用来表示边的颜色插补</p>
 <p> ‘<strong>flat</strong>‘ - 对每个网格线段和面使用恒定颜色。 该颜色由该线段的端点或该面的角边处具有最小索引的颜色值确定。 </p>
@@ -222,13 +223,32 @@ m_1 & 0 \\
 <p>事情很多，心里总是很烦，但是缩短时间尺度，吃饭睡觉的时候还蛮开心的，跟朋友聊天的时候也很开心，想太远总是很无聊，眼前事做好就算了，填一下桌面端app的daily calendar</p>
 <p>志哥的发言还蛮有启发的，之前做的对应还是不够，认真一点；</p>
 <p>上周乱七八糟得，条理一点，少摸鱼少摸鱼，求其上得其中，其他随缘~</p>
-<img src="/2024/10/13/%E7%BC%A9%E7%9F%AD%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6/Octopath.png" class title="八方旅人">
+<img src="/2024/10/13/%E7%BC%A9%E7%9F%AD%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6/Octopath.png" class="" title="八方旅人">
 ]]></content>
       <categories>
         <category>EMO</category>
       </categories>
       <tags>
         <tag>emotion</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Q</title>
+    <url>/2024/02/26/Q/Q/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
+<h1 id="琥珀川与荻野千寻"><a href="#琥珀川与荻野千寻" class="headerlink" title="琥珀川与荻野千寻"></a>琥珀川与荻野千寻</h1><p>不乱于心，不困于情，不畏将来，不念过往。</p>
+<span id="more"></span>
+<p>看完之后脑子里立刻跳出来这句话。</p>
+<p>又看了一遍台配版的千与千寻，童年的记忆来源于此版，有些东西确实只是忘记，而不会消失，偶然间看到一些痕迹，就会瞬间回忆，不过别回头就好，不念过往。</p>
+<p>总是希望所有的一切事情按照自己的计划进行，面对未知的事情常常心怀恐惧而不愿意前进，权衡利弊之后，重要的事情可以克服，在一些小事上却常常让步，谓之不在意，其实不然，内心是在畏惧狭义上的未来，千寻初入汤屋有点这个感觉，但是随着故事的发展，千寻是做到不畏将来了，不论是给河神洗澡、给白龙和无脸怪吃河神的丸子，或者是爬梯子进入汤婆婆的房子，这些没有人给她指引，都是自己基于想法做出的选择，只要自己认为是对的，如果暂时判断不了，只要无愧于心，即使未来不可预测，脚踏实地的去做就很好，想必未来也不会后悔，不畏将来。</p>
+<p>人生的环境总在不断变化，主动接受变化就是不畏将来，主动接受就不会恐惧，千寻开始的恐惧来源于被动，被动常常引起焦虑，负面情绪随之增长，以前很喜欢袁朗说的一句话：“不太焦虑，耐得住寂寞，有很多人天天都在焦虑，怕没得到，怕寂寞，我喜欢不焦虑的人”，千寻后来是不焦虑的，慢慢的去做事本身也是一种快乐的过程。</p>
+<p>“容是别人，欲是自己”，去做一切自己想做的事情，少去思考虚无的无数可能性，不可预料的东西常常是惊喜，也是缘分。</p>
+]]></content>
+      <categories>
+        <category>feeling</category>
+      </categories>
+      <tags>
+        <tag>movie</tag>
       </tags>
   </entry>
   <entry>
@@ -288,22 +308,22 @@ m_1 & 0 \\
       </tags>
   </entry>
   <entry>
-    <title>Q</title>
-    <url>/2024/02/26/Q/Q/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
-<h1 id="琥珀川与荻野千寻"><a href="#琥珀川与荻野千寻" class="headerlink" title="琥珀川与荻野千寻"></a>琥珀川与荻野千寻</h1><p>不乱于心，不困于情，不畏将来，不念过往。</p>
+    <title>Quaternion</title>
+    <url>/2021/11/24/Quaternion/Quaternion/</url>
+    <content><![CDATA[<h1 id="万向锁问题"><a href="#万向锁问题" class="headerlink" title="万向锁问题"></a>万向锁问题</h1><h2 id="造成影响："><a href="#造成影响：" class="headerlink" title="造成影响："></a>造成影响：</h2><p>出现万向锁后会丢失自由度</p>
 <span id="more"></span>
-<p>看完之后脑子里立刻跳出来这句话。</p>
-<p>又看了一遍台配版的千与千寻，童年的记忆来源于此版，有些东西确实只是忘记，而不会消失，偶然间看到一些痕迹，就会瞬间回忆，不过别回头就好，不念过往。</p>
-<p>总是希望所有的一切事情按照自己的计划进行，面对未知的事情常常心怀恐惧而不愿意前进，权衡利弊之后，重要的事情可以克服，在一些小事上却常常让步，谓之不在意，其实不然，内心是在畏惧狭义上的未来，千寻初入汤屋有点这个感觉，但是随着故事的发展，千寻是做到不畏将来了，不论是给河神洗澡、给白龙和无脸怪吃河神的丸子，或者是爬梯子进入汤婆婆的房子，这些没有人给她指引，都是自己基于想法做出的选择，只要自己认为是对的，如果暂时判断不了，只要无愧于心，即使未来不可预测，脚踏实地的去做就很好，想必未来也不会后悔，不畏将来。</p>
-<p>人生的环境总在不断变化，主动接受变化就是不畏将来，主动接受就不会恐惧，千寻开始的恐惧来源于被动，被动常常引起焦虑，负面情绪随之增长，以前很喜欢袁朗说的一句话：“不太焦虑，耐得住寂寞，有很多人天天都在焦虑，怕没得到，怕寂寞，我喜欢不焦虑的人”，千寻后来是不焦虑的，慢慢的去做事本身也是一种快乐的过程。</p>
-<p>“容是别人，欲是自己”，去做一切自己想做的事情，少去思考虚无的无数可能性，不可预料的东西常常是惊喜，也是缘分。</p>
+<h2 id="从结构角度分析："><a href="#从结构角度分析：" class="headerlink" title="从结构角度分析："></a>从结构角度分析：</h2><p>主要原因是由于各旋转轴之间存在运动关系，即动态欧拉角，角度变化后，坐标系随之发生变化，比如万向锁结构，三个坐标轴分别可以用环结构表示，外环、中环、内环，当内环转动，即等效沿某一轴转动，内环与中、外环都存在运动关系，坐标系同时变化，就不会发生重叠现象，；当中环运动时，内环不会运动，只有外环会进行运动，那么内环所代表的坐标系可能会与外环所代表的坐标系重合，当进行动态旋转时，沿着外环与内环代表的坐标系运动，只会产生一个方向的自由度，由此发生了万向锁现象，即丢失一个自由度。</p>
+<h2 id="后续一些想法"><a href="#后续一些想法" class="headerlink" title="后续一些想法"></a>后续一些想法</h2><p>看b站评论说为什么不选取惯性坐标系作为参考运动，这样就不会出现万向锁现象了？</p>
+<p>其实这是一个概念的问题，首先需要理解欧拉角的意义，欧拉角是用来描述姿态的三个角度，包含静态、动态两种，静态欧拉角即沿着惯性坐标系进行运动，而动态欧拉角则会出现万向锁现象，动态有12种旋转方式，XYZ、XZY、XYX、XZX、YXZ、YZX、YXY、YZY、ZXY、ZYX、ZXZ、ZYZ,含有中间轴Y都存在万向锁问题。</p>
+<p>因此该问题的本质是动态欧拉角的意义是什么？</p>
+<p>基于动态坐标的欧拉角旋转，其惯性张量不随着时间改变而改变，将其进行对角化处理，即可以得到一个一组主轴和一个只含三个分量的主动惯量，动力学计算较为容易，这一部分内容可以机器人动力学模型计算案例中深入理解。</p>
+<h2 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h2><p>为了描述复杂运动以及规避一些特殊点，可以用四元数工具进行描述分析，最近正在整理旋量与四元数的并联应用分析内容，以后会写一个小总结。</p>
 ]]></content>
       <categories>
-        <category>feeling</category>
+        <category>note</category>
       </categories>
       <tags>
-        <tag>movie</tag>
+        <tag>mathematica</tag>
       </tags>
   </entry>
   <entry>
@@ -362,25 +382,6 @@ m_1 & 0 \\
       </categories>
       <tags>
         <tag>note</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Quaternion</title>
-    <url>/2021/11/24/Quaternion/Quaternion/</url>
-    <content><![CDATA[<h1 id="万向锁问题"><a href="#万向锁问题" class="headerlink" title="万向锁问题"></a>万向锁问题</h1><h2 id="造成影响："><a href="#造成影响：" class="headerlink" title="造成影响："></a>造成影响：</h2><p>出现万向锁后会丢失自由度</p>
-<span id="more"></span>
-<h2 id="从结构角度分析："><a href="#从结构角度分析：" class="headerlink" title="从结构角度分析："></a>从结构角度分析：</h2><p>主要原因是由于各旋转轴之间存在运动关系，即动态欧拉角，角度变化后，坐标系随之发生变化，比如万向锁结构，三个坐标轴分别可以用环结构表示，外环、中环、内环，当内环转动，即等效沿某一轴转动，内环与中、外环都存在运动关系，坐标系同时变化，就不会发生重叠现象，；当中环运动时，内环不会运动，只有外环会进行运动，那么内环所代表的坐标系可能会与外环所代表的坐标系重合，当进行动态旋转时，沿着外环与内环代表的坐标系运动，只会产生一个方向的自由度，由此发生了万向锁现象，即丢失一个自由度。</p>
-<h2 id="后续一些想法"><a href="#后续一些想法" class="headerlink" title="后续一些想法"></a>后续一些想法</h2><p>看b站评论说为什么不选取惯性坐标系作为参考运动，这样就不会出现万向锁现象了？</p>
-<p>其实这是一个概念的问题，首先需要理解欧拉角的意义，欧拉角是用来描述姿态的三个角度，包含静态、动态两种，静态欧拉角即沿着惯性坐标系进行运动，而动态欧拉角则会出现万向锁现象，动态有12种旋转方式，XYZ、XZY、XYX、XZX、YXZ、YZX、YXY、YZY、ZXY、ZYX、ZXZ、ZYZ,含有中间轴Y都存在万向锁问题。</p>
-<p>因此该问题的本质是动态欧拉角的意义是什么？</p>
-<p>基于动态坐标的欧拉角旋转，其惯性张量不随着时间改变而改变，将其进行对角化处理，即可以得到一个一组主轴和一个只含三个分量的主动惯量，动力学计算较为容易，这一部分内容可以机器人动力学模型计算案例中深入理解。</p>
-<h2 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h2><p>为了描述复杂运动以及规避一些特殊点，可以用四元数工具进行描述分析，最近正在整理旋量与四元数的并联应用分析内容，以后会写一个小总结。</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>mathematica</tag>
       </tags>
   </entry>
   <entry>
@@ -1020,32 +1021,6 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
-    <title>dynamixelros</title>
-    <url>/2020/07/28/dynamixelros/dynamixelros/</url>
-    <content><![CDATA[<h1 id="Dynamixel-workbench"><a href="#Dynamixel-workbench" class="headerlink" title="Dynamixel_workbench"></a>Dynamixel_workbench</h1><p>目的：解析一下workbench包以及dynamixel_motor包，复习语法以及ros基础</p>
-<span id="more"></span>
-<p>dynamixel_workbench </p>
-<p>0.dynamixel_workbench </p>
-<p>package.xml</p>
-<p>workbench 用于ros开发</p>
-<p>1.controllers  查询电机属性</p>
-<p>2.operators 控制电机</p>
-<p>3.toolbox 库</p>
-<h2 id="dynamixel-motor-python"><a href="#dynamixel-motor-python" class="headerlink" title="dynamixel_motor(python)"></a>dynamixel_motor(python)</h2><p>该软件包包含一个可配置的节点，服务和一个生成器脚本，用于启动，停止和重新启动一个或多个控制器插件。 为常见的Dynamixel电机接头定义了可重复使用的控制器类型。 可以为每个关节设置速度和扭矩。 此python软件包可由更特定的机器人控制器使用，并且所有可配置的参数都可以通过yaml文件加载。</p>
-<p>1.controllers</p>
-<p>node</p>
-<p>controller_manager:</p>
-<p>controller_spawner:</p>
-<p>2.driver</p>
-<p>该软件包为Robotis Dynamixel伺服器提供了低电平IO。 完全支持AX-12，AX-18，RX-24，RX-28，MX-28，RX-64，EX-106型号并经过测试。 定义了特定于硬件的常量，用于从Dynamixel伺服器读取信息或向其写入信息。 大多数ROS用户都不会直接使用此低级软件包。 更高级别的dynamixel_controllers和特定的机器人关节控制器使用此程序包。</p>
-<p>3.motor</p>
-<p>4.msgs</p>
-<p>整个dynamixel_motor堆栈使用的常见消息。</p>
-<p>5.tutorials</p>
-<p>dynamixel_motor堆栈的示例配置和启动文件。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>ff14宏</title>
     <url>/2021/02/03/ff14%E5%AE%8F/ff14%E5%AE%8F/</url>
     <content><![CDATA[<h1 id="ff14宏学相关"><a href="#ff14宏学相关" class="headerlink" title="ff14宏学相关"></a>ff14宏学相关</h1><p>记录一下常用宏，方便玩游戏</p>
@@ -1205,6 +1180,32 @@ m_1 & 0 \\
       </categories>
   </entry>
   <entry>
+    <title>dynamixelros</title>
+    <url>/2020/07/28/dynamixelros/dynamixelros/</url>
+    <content><![CDATA[<h1 id="Dynamixel-workbench"><a href="#Dynamixel-workbench" class="headerlink" title="Dynamixel_workbench"></a>Dynamixel_workbench</h1><p>目的：解析一下workbench包以及dynamixel_motor包，复习语法以及ros基础</p>
+<span id="more"></span>
+<p>dynamixel_workbench </p>
+<p>0.dynamixel_workbench </p>
+<p>package.xml</p>
+<p>workbench 用于ros开发</p>
+<p>1.controllers  查询电机属性</p>
+<p>2.operators 控制电机</p>
+<p>3.toolbox 库</p>
+<h2 id="dynamixel-motor-python"><a href="#dynamixel-motor-python" class="headerlink" title="dynamixel_motor(python)"></a>dynamixel_motor(python)</h2><p>该软件包包含一个可配置的节点，服务和一个生成器脚本，用于启动，停止和重新启动一个或多个控制器插件。 为常见的Dynamixel电机接头定义了可重复使用的控制器类型。 可以为每个关节设置速度和扭矩。 此python软件包可由更特定的机器人控制器使用，并且所有可配置的参数都可以通过yaml文件加载。</p>
+<p>1.controllers</p>
+<p>node</p>
+<p>controller_manager:</p>
+<p>controller_spawner:</p>
+<p>2.driver</p>
+<p>该软件包为Robotis Dynamixel伺服器提供了低电平IO。 完全支持AX-12，AX-18，RX-24，RX-28，MX-28，RX-64，EX-106型号并经过测试。 定义了特定于硬件的常量，用于从Dynamixel伺服器读取信息或向其写入信息。 大多数ROS用户都不会直接使用此低级软件包。 更高级别的dynamixel_controllers和特定的机器人关节控制器使用此程序包。</p>
+<p>3.motor</p>
+<p>4.msgs</p>
+<p>整个dynamixel_motor堆栈使用的常见消息。</p>
+<p>5.tutorials</p>
+<p>dynamixel_motor堆栈的示例配置和启动文件。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>gbasisorder</title>
     <url>/2024/08/12/gbasisorder/gbasisorder/</url>
     <content><![CDATA[<p><strong>[Groebner basis]</strong></p>
@@ -1268,18 +1269,6 @@ m_1 & 0 \\
       <tags>
         <tag>algebraic</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>fluid_model</title>
-    <url>/2021/02/03/fluid-model/fluid-model/</url>
-    <content><![CDATA[<h1 id="流体相关"><a href="#流体相关" class="headerlink" title="流体相关"></a>流体相关</h1><p>开个坑，后续补充</p>
-<span id="more"></span>
-<p>运动阻力与速度平方成正比</p>
-<p>阻力与流体密度成正比，水中和空气中阻力系数同一量级，但是水的密度是空气的800倍</p>
-]]></content>
-      <categories>
-        <category>learning</category>
-      </categories>
   </entry>
   <entry>
     <title>gcyyy</title>
@@ -1361,6 +1350,18 @@ m_1 & 0 \\
 ]]></content>
       <categories>
         <category>project</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>fluid_model</title>
+    <url>/2021/02/03/fluid-model/fluid-model/</url>
+    <content><![CDATA[<h1 id="流体相关"><a href="#流体相关" class="headerlink" title="流体相关"></a>流体相关</h1><p>开个坑，后续补充</p>
+<span id="more"></span>
+<p>运动阻力与速度平方成正比</p>
+<p>阻力与流体密度成正比，水中和空气中阻力系数同一量级，但是水的密度是空气的800倍</p>
+]]></content>
+      <categories>
+        <category>learning</category>
       </categories>
   </entry>
   <entry>
@@ -2076,32 +2077,6 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
-    <title>lifespan</title>
-    <url>/2020/11/07/lifespan/lifespan/</url>
-    <content><![CDATA[<h1 id="无常的人生-小记"><a href="#无常的人生-小记" class="headerlink" title="无常的人生-小记"></a>无常的人生-小记</h1><p>今天心情还挺复杂的，不自主的想着好多事情，不想让熟人知道，但是又想倾诉一下，所以在博客里稍微说一说，（未来不管陌生人还是熟人，或者是自己，看到这篇小记，是否会心有所感呢？）</p>
-<span id="more"></span>
-<h2 id="1-纪念一场似是而非的“感情”"><a href="#1-纪念一场似是而非的“感情”" class="headerlink" title="1.纪念一场似是而非的“感情”"></a>1.纪念一场似是而非的“感情”</h2><p>友谊和爱情终究是有差别的，这是我所笃定的，但是差别的界定，我好像又是模糊的，前些天我好像做了一些很对不起你的事情，但是我又不得不这么做。</p>
-<p>为什么我下不了决心呢，我后来自己想了想，其实不是我所谓的不懂体贴、太过“直男”，而是我觉得我们太熟悉了，虽然几乎有两年没见过，熟悉带来的于我而言就是陌生，更重要的一点是，你我都不知道这段未来的感情里掺杂了多少另外多余的东西，比如周围的环境、别人的看法，各自的兴趣爱好甚至与一些观念理想，你我都不是好多年前的那个人了。</p>
-<p>说实话，很久之前，我应该是喜欢的，不过那会不敢跟你说，也不知道你怎么想，再后来，经历了很多事情，我的想法也慢慢变了，但是终究你对我而言，和别人是不同的，这可能就是你说的差别对待感觉的来源，但是这个差别来自于很多年前，并且可能并不会更进一步，我害怕我以后会伤害你，所以我在不算开始的现在退出，我也不想去试这个模糊感是不是有未来，我总感觉有些事情应该是顺其自然的…</p>
-<p>希望你未来能找到更合适的，我会衷心的祝福，真的</p>
-<p>我们应该还是朋友吧…有些事不说还好，说了真是尴尬</p>
-<p>确定不了你的想法为什么忽然那么坚定，我也无法确定我的想法，总体来讲，就是这个原因。</p>
-<p>我会努力提高自己，当然希望你也能健健康康的快乐生活，我会帮助你，以一个好朋友的身份，不管你接不接受。没有前一段经历，或许我也不能下定决心做一件事。</p>
-<p>感觉你最近蛮开心的，那我也就放心了，希望我没有对你造成什么伤害…</p>
-<p>你可能不会看到这篇碎碎念的文章吧，毕竟我没和别人讲过这个博客，我居然能写出这么多废话…</p>
-<p>想起来又是好复杂，感觉好烦，爱情真是烦人啊，不如多看两篇文献…</p>
-<h2 id="2人生之路漫漫长"><a href="#2人生之路漫漫长" class="headerlink" title="2人生之路漫漫长"></a>2人生之路漫漫长</h2><p>未来几年的方向应该是确定了，模糊又坚定，我有自己的指标，我会努力去完成</p>
-<p>踏实一点、坚定一点、乐观一点</p>
-<h2 id="3现在"><a href="#3现在" class="headerlink" title="3现在"></a>3现在</h2><p>是不是很奇怪的顺序，确实，不过这本身就是一篇奇怪的文章，和我的现实性格一点也不搭。</p>
-<p>现在我做的应该也是踏踏实实的，把每日目标和小目标努力完成了，最近遇到点小难题，一点一点得去记录并且克服掉</p>
-<p>摸鱼虽然舒服，但是真的浪费时间，拒绝正式时间摸鱼，从我做起</p>
-<p>严格规划时间了呀啊喂！</p>
-<p>周末晚之前做一版，下周严格的把模型推导完，整理知识，克服难题</p>
-<p>人生啊—-真是漫长</p>
-<p>应该不会有人看到吧，真是尴尬…</p>
-]]></content>
-  </entry>
-  <entry>
     <title>linux_cleanfile</title>
     <url>/2020/10/20/linux-cleanfile/linux-cleanfile/</url>
     <content><![CDATA[<h1 id="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"><a href="#由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录" class="headerlink" title="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"></a>由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录</h1><p>昨天晚上测试运动算法包，更新中间发现系统磁盘爆满，终端terminal无法运行，启动文件节点无法启动，于今天下午解决问题，写一篇日志记录一下，顺便谈一下linux的多版本软件安装基理。</p>
@@ -2273,6 +2248,32 @@ m_1 & 0 \\
       </categories>
   </entry>
   <entry>
+    <title>lifespan</title>
+    <url>/2020/11/07/lifespan/lifespan/</url>
+    <content><![CDATA[<h1 id="无常的人生-小记"><a href="#无常的人生-小记" class="headerlink" title="无常的人生-小记"></a>无常的人生-小记</h1><p>今天心情还挺复杂的，不自主的想着好多事情，不想让熟人知道，但是又想倾诉一下，所以在博客里稍微说一说，（未来不管陌生人还是熟人，或者是自己，看到这篇小记，是否会心有所感呢？）</p>
+<span id="more"></span>
+<h2 id="1-纪念一场似是而非的“感情”"><a href="#1-纪念一场似是而非的“感情”" class="headerlink" title="1.纪念一场似是而非的“感情”"></a>1.纪念一场似是而非的“感情”</h2><p>友谊和爱情终究是有差别的，这是我所笃定的，但是差别的界定，我好像又是模糊的，前些天我好像做了一些很对不起你的事情，但是我又不得不这么做。</p>
+<p>为什么我下不了决心呢，我后来自己想了想，其实不是我所谓的不懂体贴、太过“直男”，而是我觉得我们太熟悉了，虽然几乎有两年没见过，熟悉带来的于我而言就是陌生，更重要的一点是，你我都不知道这段未来的感情里掺杂了多少另外多余的东西，比如周围的环境、别人的看法，各自的兴趣爱好甚至与一些观念理想，你我都不是好多年前的那个人了。</p>
+<p>说实话，很久之前，我应该是喜欢的，不过那会不敢跟你说，也不知道你怎么想，再后来，经历了很多事情，我的想法也慢慢变了，但是终究你对我而言，和别人是不同的，这可能就是你说的差别对待感觉的来源，但是这个差别来自于很多年前，并且可能并不会更进一步，我害怕我以后会伤害你，所以我在不算开始的现在退出，我也不想去试这个模糊感是不是有未来，我总感觉有些事情应该是顺其自然的…</p>
+<p>希望你未来能找到更合适的，我会衷心的祝福，真的</p>
+<p>我们应该还是朋友吧…有些事不说还好，说了真是尴尬</p>
+<p>确定不了你的想法为什么忽然那么坚定，我也无法确定我的想法，总体来讲，就是这个原因。</p>
+<p>我会努力提高自己，当然希望你也能健健康康的快乐生活，我会帮助你，以一个好朋友的身份，不管你接不接受。没有前一段经历，或许我也不能下定决心做一件事。</p>
+<p>感觉你最近蛮开心的，那我也就放心了，希望我没有对你造成什么伤害…</p>
+<p>你可能不会看到这篇碎碎念的文章吧，毕竟我没和别人讲过这个博客，我居然能写出这么多废话…</p>
+<p>想起来又是好复杂，感觉好烦，爱情真是烦人啊，不如多看两篇文献…</p>
+<h2 id="2人生之路漫漫长"><a href="#2人生之路漫漫长" class="headerlink" title="2人生之路漫漫长"></a>2人生之路漫漫长</h2><p>未来几年的方向应该是确定了，模糊又坚定，我有自己的指标，我会努力去完成</p>
+<p>踏实一点、坚定一点、乐观一点</p>
+<h2 id="3现在"><a href="#3现在" class="headerlink" title="3现在"></a>3现在</h2><p>是不是很奇怪的顺序，确实，不过这本身就是一篇奇怪的文章，和我的现实性格一点也不搭。</p>
+<p>现在我做的应该也是踏踏实实的，把每日目标和小目标努力完成了，最近遇到点小难题，一点一点得去记录并且克服掉</p>
+<p>摸鱼虽然舒服，但是真的浪费时间，拒绝正式时间摸鱼，从我做起</p>
+<p>严格规划时间了呀啊喂！</p>
+<p>周末晚之前做一版，下周严格的把模型推导完，整理知识，克服难题</p>
+<p>人生啊—-真是漫长</p>
+<p>应该不会有人看到吧，真是尴尬…</p>
+]]></content>
+  </entry>
+  <entry>
     <title>literature</title>
     <url>/2020/09/03/literature/literature/</url>
     <content><![CDATA[<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
@@ -2318,6 +2319,35 @@ m_1 & 0 \\
 <p>…用的比较少，不列了</p>
 <p>缺一部分，改天再补，回寝了～</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>logic_symbol</title>
+    <url>/2020/07/27/logic-symbol/logic-symbol/</url>
+    <content><![CDATA[<h1 id="逻辑符号"><a href="#逻辑符号" class="headerlink" title="逻辑符号"></a>逻辑符号</h1><p>这篇博文主要为了总结一下逻辑运算符号（拯救混乱记忆，雾）</p>
+<p>(下一篇是题目总结顺便复习)</p>
+<span id="more"></span>
+<p>1.逻辑结构</p>
+<p>与运算：</p>
+<p>与(&amp;&amp;)：逻辑规则是两真才真。与and等同。</p>
+<p>或运算：</p>
+<p>或(||)：逻辑规则是只有一个为真就为真。与or等同。</p>
+<p>异或：</p>
+<p>异或(^)：逻辑规则是两个不同就为真。</p>
+<p>非运算符：</p>
+<p>非(！)：逻辑规则是反转操作数的含义。与not等同。</p>
+ 
+<h2 id="电路中的符合逻辑"><a href="#电路中的符合逻辑" class="headerlink" title="电路中的符合逻辑"></a>电路中的符合逻辑</h2><p>与非：  输入只要有0，输出为1.输入全1，输出才0</p>
+<p>或非：输入只要有1，输出为0，输入全为0，输出才1</p>
+<p>与或非：复合运算</p>
+ 
+<p>电路中还存在异或与同或</p>
+<p>异或：相异则为1</p>
+<p>同或：相同则为1</p>
+<p>关于逻辑电路门，以后再说吧233</p>
+]]></content>
+      <categories>
+        <category>logic</category>
+      </categories>
   </entry>
   <entry>
     <title>manipulator_HU_learninging</title>
@@ -2399,35 +2429,6 @@ m_1 & 0 \\
 ]]></content>
       <categories>
         <category>note</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>logic_symbol</title>
-    <url>/2020/07/27/logic-symbol/logic-symbol/</url>
-    <content><![CDATA[<h1 id="逻辑符号"><a href="#逻辑符号" class="headerlink" title="逻辑符号"></a>逻辑符号</h1><p>这篇博文主要为了总结一下逻辑运算符号（拯救混乱记忆，雾）</p>
-<p>(下一篇是题目总结顺便复习)</p>
-<span id="more"></span>
-<p>1.逻辑结构</p>
-<p>与运算：</p>
-<p>与(&amp;&amp;)：逻辑规则是两真才真。与and等同。</p>
-<p>或运算：</p>
-<p>或(||)：逻辑规则是只有一个为真就为真。与or等同。</p>
-<p>异或：</p>
-<p>异或(^)：逻辑规则是两个不同就为真。</p>
-<p>非运算符：</p>
-<p>非(！)：逻辑规则是反转操作数的含义。与not等同。</p>
- 
-<h2 id="电路中的符合逻辑"><a href="#电路中的符合逻辑" class="headerlink" title="电路中的符合逻辑"></a>电路中的符合逻辑</h2><p>与非：  输入只要有0，输出为1.输入全1，输出才0</p>
-<p>或非：输入只要有1，输出为0，输入全为0，输出才1</p>
-<p>与或非：复合运算</p>
- 
-<p>电路中还存在异或与同或</p>
-<p>异或：相异则为1</p>
-<p>同或：相同则为1</p>
-<p>关于逻辑电路门，以后再说吧233</p>
-]]></content>
-      <categories>
-        <category>logic</category>
       </categories>
   </entry>
   <entry>
@@ -2540,35 +2541,27 @@ m_1 & 0 \\
       </categories>
   </entry>
   <entry>
-    <title>newnote</title>
-    <url>/2022/08/02/newnote/newnote/</url>
-    <content><![CDATA[<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>airfact</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>note</title>
-    <url>/2021/09/10/note/note/</url>
-    <content><![CDATA[<h1 id="常用的几个latex图片框架以及公式"><a href="#常用的几个latex图片框架以及公式" class="headerlink" title="常用的几个latex图片框架以及公式"></a>常用的几个latex图片框架以及公式</h1><span id="more"></span>
-<figure class="highlight latex"><table><tbody><tr><td class="code"><pre><span class="line">常用补充</span><br><span class="line"></span><br><span class="line">公式备注</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>{tabularx}{<span class="keyword">\textwidth</span>}{@{}l@{<span class="keyword">\quad</span>}r@{———}X@{}} 	 	 	</span><br><span class="line">	式中<span class="built_in">&amp;</span> <span class="built_in">$</span>C<span class="built_in">_</span>{D, i}<span class="built_in">$</span><span class="built_in">&amp;</span>表示阻力系数，数值可根据表xx查询确定 <span class="keyword">\\</span> </span><br><span class="line"><span class="keyword">\end</span>{tabularx}<span class="keyword">\vspace</span>{3.15bp}  </span><br><span class="line"></span><br><span class="line">图片备注</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>{figure}[!h]</span><br><span class="line">	<span class="keyword">\setlength</span>{<span class="keyword">\subfigcapskip</span>}{-1bp}</span><br><span class="line">	<span class="keyword">\centering</span></span><br><span class="line">	<span class="keyword">\begin</span>{minipage}{<span class="keyword">\textwidth</span>}</span><br><span class="line">		<span class="keyword">\centering</span></span><br><span class="line">		<span class="keyword">\subfigure</span>{<span class="keyword">\label</span>{a}}<span class="keyword">\addtocounter</span>{subfigure}{-2}</span><br><span class="line">		<span class="keyword">\subfigure</span>{<span class="keyword">\subfigure</span>[R=80mm]{<span class="keyword">\includegraphics</span>[width=0.25<span class="keyword">\textwidth</span>]{80}}}</span><br><span class="line">		<span class="keyword">\hspace</span>{1em}</span><br><span class="line">		<span class="keyword">\subfigure</span>{<span class="keyword">\label</span>{b}}<span class="keyword">\addtocounter</span>{subfigure}{-2}</span><br><span class="line">		<span class="keyword">\subfigure</span>{<span class="keyword">\subfigure</span>[R=90mm]{<span class="keyword">\includegraphics</span>[width=0.25<span class="keyword">\textwidth</span>]{90}}}</span><br><span class="line">		<span class="keyword">\hspace</span>{1em}</span><br><span class="line">	<span class="keyword">\end</span>{minipage}</span><br><span class="line">	<span class="keyword">\vspace</span>{0.2em}</span><br><span class="line">	<span class="keyword">\caption</span>{不同静平台半径机构条件数分布图}</span><br><span class="line"><span class="keyword">\end</span>{figure}</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>{figure}[htbp]</span><br><span class="line">	<span class="keyword">\centering</span></span><br><span class="line">	<span class="keyword">\begin</span>{minipage}[t]{0.4<span class="keyword">\textwidth</span>}</span><br><span class="line">		<span class="keyword">\centering</span></span><br><span class="line">		<span class="keyword">\includegraphics</span>[width=<span class="keyword">\textwidth</span>]{431}</span><br><span class="line">		<span class="keyword">\caption</span>{静平台坐标系}</span><br><span class="line">	<span class="keyword">\end</span>{minipage}</span><br><span class="line">	<span class="keyword">\centering</span></span><br><span class="line">	<span class="keyword">\begin</span>{minipage}[t]{0.4<span class="keyword">\textwidth</span>}</span><br><span class="line">		<span class="keyword">\centering</span></span><br><span class="line">		<span class="keyword">\includegraphics</span>[width=<span class="keyword">\textwidth</span>]{432}</span><br><span class="line">		<span class="keyword">\caption</span>{动平台坐标系}</span><br><span class="line">	<span class="keyword">\end</span>{minipage}</span><br><span class="line">	<span class="keyword">\centering</span></span><br><span class="line">	<span class="keyword">\begin</span>{minipage}[t]{0.8<span class="keyword">\textwidth</span>}</span><br><span class="line">		<span class="keyword">\centering</span></span><br><span class="line">		<span class="keyword">\includegraphics</span>[width=<span class="keyword">\textwidth</span>]{45}</span><br><span class="line">		<span class="keyword">\caption</span>{等效四面体示意图}</span><br><span class="line">	<span class="keyword">\end</span>{minipage}</span><br><span class="line"><span class="keyword">\end</span>{figure}</span><br></pre></td></tr></tbody></table></figure>
-<p>无用</p>
-<p>结构紧凑，速度响应更快，定位精度更高，刚度更高，负载支持更好，动态性能更好，功耗更低</p>
-<p>可以将辐射引起的力和力矩确定为三个新分量的总和：</p>
-<p>（1）由于周围流体的惯性而增加的质量</p>
-<p>（2）由于产生的表面波带走的能量而引起的辐射诱导的电位阻尼 。</p>
-<p>（3）由于阿基米德（重量和浮力）而恢复。</p>
+    <title>movie_fish</title>
+    <url>/2020/07/30/movie-fish/movie-fish/</url>
+    <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><span id="more"></span>
+<h1 id="V字仇杀队"><a href="#V字仇杀队" class="headerlink" title="V字仇杀队"></a>V字仇杀队</h1><p>时隔多年再次欣赏这部电影，感觉平淡了许多，不再像当初那么愤青了。</p>
+<p>世界上没有完美的事情，过于理性的审视一切，有很多好处，同时也失去了很多东西。</p>
+<p>思想是不可消亡了～</p>
+<h1 id="窃听风暴"><a href="#窃听风暴" class="headerlink" title="窃听风暴"></a>窃听风暴</h1><p>压抑的bgm，紧凑的情节</p>
+<p>断续的信息流，完整的情感线，人类本质的体现</p>
+<p>风云变换的历史，个人永远都是渺小的，滔天海浪的压迫感觉</p>
+<p>百年未有之大变局，如何在历史的洪流中生活，放弃一些无用的主义思维，守好自己所相信的底线。</p>
+<p>没有绝对的对错之分，安安静静的就好～</p>
+<h2 id="黑客帝国三矩阵革命"><a href="#黑客帝国三矩阵革命" class="headerlink" title="黑客帝国三矩阵革命"></a>黑客帝国三矩阵革命</h2><p>画面不错</p>
+<h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
+<p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
+<p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
+<p><img src="/../pictures/R.jpg" alt=""></p>
+<h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
+<p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
+<p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
+<p>（生气的时候，有一点很重要，问自己一下，有必要么？）</p>
 ]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>formula</tag>
-      </tags>
   </entry>
   <entry>
     <title>morphing_and_deformation</title>
@@ -2682,27 +2675,35 @@ m_1 & 0 \\
       </tags>
   </entry>
   <entry>
-    <title>movie_fish</title>
-    <url>/2020/07/30/movie-fish/movie-fish/</url>
-    <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><span id="more"></span>
-<h1 id="V字仇杀队"><a href="#V字仇杀队" class="headerlink" title="V字仇杀队"></a>V字仇杀队</h1><p>时隔多年再次欣赏这部电影，感觉平淡了许多，不再像当初那么愤青了。</p>
-<p>世界上没有完美的事情，过于理性的审视一切，有很多好处，同时也失去了很多东西。</p>
-<p>思想是不可消亡了～</p>
-<h1 id="窃听风暴"><a href="#窃听风暴" class="headerlink" title="窃听风暴"></a>窃听风暴</h1><p>压抑的bgm，紧凑的情节</p>
-<p>断续的信息流，完整的情感线，人类本质的体现</p>
-<p>风云变换的历史，个人永远都是渺小的，滔天海浪的压迫感觉</p>
-<p>百年未有之大变局，如何在历史的洪流中生活，放弃一些无用的主义思维，守好自己所相信的底线。</p>
-<p>没有绝对的对错之分，安安静静的就好～</p>
-<h2 id="黑客帝国三矩阵革命"><a href="#黑客帝国三矩阵革命" class="headerlink" title="黑客帝国三矩阵革命"></a>黑客帝国三矩阵革命</h2><p>画面不错</p>
-<h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
-<p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
-<p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
-<p><img src="/../pictures/R.jpg" alt></p>
-<h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
-<p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
-<p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
-<p>（生气的时候，有一点很重要，问自己一下，有必要么？）</p>
+    <title>note</title>
+    <url>/2021/09/10/note/note/</url>
+    <content><![CDATA[<h1 id="常用的几个latex图片框架以及公式"><a href="#常用的几个latex图片框架以及公式" class="headerlink" title="常用的几个latex图片框架以及公式"></a>常用的几个latex图片框架以及公式</h1><span id="more"></span>
+<figure class="highlight latex"><table><tbody><tr><td class="code"><pre><span class="line">常用补充</span><br><span class="line"></span><br><span class="line">公式备注</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>{tabularx}{<span class="keyword">\textwidth</span>}{@{}l@{<span class="keyword">\quad</span>}r@{———}X@{}} 	 	 	</span><br><span class="line">	式中<span class="built_in">&amp;</span> <span class="built_in">$</span>C<span class="built_in">_</span>{D, i}<span class="built_in">$</span><span class="built_in">&amp;</span>表示阻力系数，数值可根据表xx查询确定 <span class="keyword">\\</span> </span><br><span class="line"><span class="keyword">\end</span>{tabularx}<span class="keyword">\vspace</span>{3.15bp}  </span><br><span class="line"></span><br><span class="line">图片备注</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>{figure}[!h]</span><br><span class="line">	<span class="keyword">\setlength</span>{<span class="keyword">\subfigcapskip</span>}{-1bp}</span><br><span class="line">	<span class="keyword">\centering</span></span><br><span class="line">	<span class="keyword">\begin</span>{minipage}{<span class="keyword">\textwidth</span>}</span><br><span class="line">		<span class="keyword">\centering</span></span><br><span class="line">		<span class="keyword">\subfigure</span>{<span class="keyword">\label</span>{a}}<span class="keyword">\addtocounter</span>{subfigure}{-2}</span><br><span class="line">		<span class="keyword">\subfigure</span>{<span class="keyword">\subfigure</span>[R=80mm]{<span class="keyword">\includegraphics</span>[width=0.25<span class="keyword">\textwidth</span>]{80}}}</span><br><span class="line">		<span class="keyword">\hspace</span>{1em}</span><br><span class="line">		<span class="keyword">\subfigure</span>{<span class="keyword">\label</span>{b}}<span class="keyword">\addtocounter</span>{subfigure}{-2}</span><br><span class="line">		<span class="keyword">\subfigure</span>{<span class="keyword">\subfigure</span>[R=90mm]{<span class="keyword">\includegraphics</span>[width=0.25<span class="keyword">\textwidth</span>]{90}}}</span><br><span class="line">		<span class="keyword">\hspace</span>{1em}</span><br><span class="line">	<span class="keyword">\end</span>{minipage}</span><br><span class="line">	<span class="keyword">\vspace</span>{0.2em}</span><br><span class="line">	<span class="keyword">\caption</span>{不同静平台半径机构条件数分布图}</span><br><span class="line"><span class="keyword">\end</span>{figure}</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>{figure}[htbp]</span><br><span class="line">	<span class="keyword">\centering</span></span><br><span class="line">	<span class="keyword">\begin</span>{minipage}[t]{0.4<span class="keyword">\textwidth</span>}</span><br><span class="line">		<span class="keyword">\centering</span></span><br><span class="line">		<span class="keyword">\includegraphics</span>[width=<span class="keyword">\textwidth</span>]{431}</span><br><span class="line">		<span class="keyword">\caption</span>{静平台坐标系}</span><br><span class="line">	<span class="keyword">\end</span>{minipage}</span><br><span class="line">	<span class="keyword">\centering</span></span><br><span class="line">	<span class="keyword">\begin</span>{minipage}[t]{0.4<span class="keyword">\textwidth</span>}</span><br><span class="line">		<span class="keyword">\centering</span></span><br><span class="line">		<span class="keyword">\includegraphics</span>[width=<span class="keyword">\textwidth</span>]{432}</span><br><span class="line">		<span class="keyword">\caption</span>{动平台坐标系}</span><br><span class="line">	<span class="keyword">\end</span>{minipage}</span><br><span class="line">	<span class="keyword">\centering</span></span><br><span class="line">	<span class="keyword">\begin</span>{minipage}[t]{0.8<span class="keyword">\textwidth</span>}</span><br><span class="line">		<span class="keyword">\centering</span></span><br><span class="line">		<span class="keyword">\includegraphics</span>[width=<span class="keyword">\textwidth</span>]{45}</span><br><span class="line">		<span class="keyword">\caption</span>{等效四面体示意图}</span><br><span class="line">	<span class="keyword">\end</span>{minipage}</span><br><span class="line"><span class="keyword">\end</span>{figure}</span><br></pre></td></tr></tbody></table></figure>
+<p>无用</p>
+<p>结构紧凑，速度响应更快，定位精度更高，刚度更高，负载支持更好，动态性能更好，功耗更低</p>
+<p>可以将辐射引起的力和力矩确定为三个新分量的总和：</p>
+<p>（1）由于周围流体的惯性而增加的质量</p>
+<p>（2）由于产生的表面波带走的能量而引起的辐射诱导的电位阻尼 。</p>
+<p>（3）由于阿基米德（重量和浮力）而恢复。</p>
 ]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>formula</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>newnote</title>
+    <url>/2022/08/02/newnote/newnote/</url>
+    <content><![CDATA[<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>airfact</tag>
+      </tags>
   </entry>
   <entry>
     <title>numpy_py</title>
@@ -2781,6 +2782,45 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
+    <title>plan</title>
+    <url>/2023/01/29/plan/plan/</url>
+    <content><![CDATA[<p>2023开学随笔</p>
+<span id="more"></span>
+<p>说着要更新，但是因为各种各样的事情总是拖后，上个学期有了一些进度，但是后续仍然有很多需要落实的地方，今天顺便一起想了，生活上也有好多事情要处理，后天开学了，晚上闲来无事，大概想想~</p>
+<p>1.总的来讲，很多事进度没有严格按计划落实，还是个人惰性的问题，我自己一个人呆着的时候进度总是很慢，喜欢摸鱼，我打算严格落实目标，坚持完成。</p>
+<p>2.有句话我觉得很有用-“你的人生没有那么多观众”，我现在已经可以下意识的做的一部分，但是还是没办法完全做到，不必强求吧，太过了可能也不好，对所有事都没兴趣，终归有问题，但是对一些没意义的事情，还是要避免，不去做没意义的事情；电话 会议？2333</p>
+<p>3.开学之后是31，到元宵节，6天时间要加班把那个任务完成，最重要的一件事是每天也要坚持看英文文献，如果可以理解两个，把任务压缩到分配到每天，必须完成这些事情，然后汇报一下；这个是现阶段最最重要的事情</p>
+<p>4.之前每天坚持落实的事情，要继续坚持下去，这个细规划吧；</p>
+<p>5.生活上，过了个年胖了几斤，去了还是要规律饮食，坚持游泳，加油呀；</p>
+<p>总结一下，落实进度，不要着急，行胜于言；</p>
+<p>少说话，事情多做，多出自己的想法，多总结论文，多学习；</p>
+<p>抵制下惰性，要努力呀；</p>
+<p>有些话还想说，我觉得以后要果断一点，但前提是这半年要把目标落实了，很重要；</p>
+<p>其余的生活规划放在后半年的时间里，总之脚踏实地，慢慢推进吧；</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>airfact</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>plan_emotion</title>
+    <url>/2021/08/26/plan-emotion/plan-emotion/</url>
+    <content><![CDATA[<h1 id="Ubuntu修复windows无法启动问题"><a href="#Ubuntu修复windows无法启动问题" class="headerlink" title="Ubuntu修复windows无法启动问题"></a>Ubuntu修复windows无法启动问题</h1><span id="more"></span>
+<p>配置：ubuntu16.04+windows8.1</p>
+<p>背景：电脑不小心被砸了一下，然后windows系统无法启动，也无法进入bios和安全模式，尝试启动Ubuntu系统，发现可以进入，Linux永远的神！！</p>
+<p>linux端进入后，发现电脑系统盘无法读取，出现挂载错误，可能windows就是因为这个问题无法启动，尝试修复，记录一下最后有效的过程：</p>
+<h5 id="1-查看系统下所有分区的挂载情况是否正常"><a href="#1-查看系统下所有分区的挂载情况是否正常" class="headerlink" title="1.查看系统下所有分区的挂载情况是否正常"></a>1.查看系统下所有分区的挂载情况是否正常</h5><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">sudo fdisk -l </span><br></pre></td></tr></tbody></table></figure>
+<p>根据×号判断</p>
+<h5 id="2-修复对应分区，我显示的是-dev-sdb3"><a href="#2-修复对应分区，我显示的是-dev-sdb3" class="headerlink" title="2.修复对应分区，我显示的是/dev/sdb3"></a>2.修复对应分区，我显示的是/dev/sdb3</h5><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">sudo ntfsfix /dev/sdb3</span><br></pre></td></tr></tbody></table></figure>
+<p>全部修复后，windows可以正常启动</p>
+<p>以后正常更新啦…</p>
+<p>等会儿再写一个生活计划日志…</p>
+]]></content>
+  </entry>
+  <entry>
     <title>pybasic</title>
     <url>/2020/07/27/pybasic/pybasic/</url>
     <content><![CDATA[<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><p>方便查看，资料来源{<a href="https://github.com/fengdu78/Data-Science-Notes/blob/master/1.python-basic/Python_Basic.ipynb}">https://github.com/fengdu78/Data-Science-Notes/blob/master/1.python-basic/Python_Basic.ipynb}</a></p>
@@ -2827,230 +2867,6 @@ m_1 & 0 \\
       <categories>
         <category>基础</category>
       </categories>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2020/08/25/ros-work/ros-work/</url>
-    <content><![CDATA[<p>时隔一年，再次听胡老师的课，感受颇有不同，包括简要课程记录复习一下以及写写作业。</p>
-<p>(9.26添加了一些小内容)</p>
-<p>(10.12增加了一下go内容)</p>
-<span id="more"></span>
-<p>1.日常ROS史观</p>
-<p>2.ros框架以及松耦合的分布式通信机制（日常）</p>
-<p>3.节点-执行单元（node）</p>
-<p>节点管理器（ros master）</p>
-<p>Topic-异步通信机制（publisher/subscriber）</p>
-<p>先来后到，多对多</p>
-<p>service-同步通信机制（service/client）—-request  response</p>
-<p>请求之后才会应答，一对多</p>
-<p>参数（parameter）</p>
-<p>典型字典</p>
-<p>工作空间（workspace0</p>
-<p>src:代码空间 build:编译空间 devel:开发空间 install: 安装空间</p>
-<p>功能包（package）</p>
-<p>功能包清单（package manifest  ）（包含作者信息、许可信息等，好像一直没用过这个233）</p>
-<p>元功能包（meta packages）</p>
-<p>action通信及机制</p>
-<p>应用场景：比如抓取，一段时间的抓捕动作，在执行过程中需要连续的response</p>
-<hr>
-<p>日常启动turtle</p>
-<hr>
-<p>关于turtlebot</p>
-<p>———-没有作业0.0</p>
-<p>ros常用组件与开发</p>
-<p>roslog</p>
-<h2 id="ros-moveit记录："><a href="#ros-moveit记录：" class="headerlink" title="ros_moveit记录："></a>ros_moveit记录：</h2><p>manipulator</p>
-<p>多轴机械臂6.7+各式夹具</p>
-<p>六轴机械臂</p>
-<hr>
-<p>伺服电机（减速机，为了降低电机转速，从而增加电机扭矩）皮带、行星、谐波（成本减速器比较高）</p>
-<p>机械臂本体</p>
-<p>控制器</p>
-<p><a href="img/arm.png">成本占比图</a></p>
-<hr>
-<p>智能化处理</p>
-<p>moveit  运动学、运动规划、碰撞检测、</p>
-<p>motion planning、manipulation、inverse kinematics</p>
-<p>control、3dperception（3d视觉）、collsion碰撞检测</p>
-<p>核心节点 move_group</p>
-<p>输入输出参数</p>
-<p>move_base 话题发布-cmdvel</p>
-<p>用户interface</p>
-<p>Ros moveit</p>
-<p>自己算法可封装到plugins </p>
-<p>Moveit 可视化配置和仿真</p>
-<p>Planning scene点云栅格地图</p>
-<p>Roslaunch moveit setup assistant</p>
-<p>1.选择模型，导入urdf或者xacro，需要严格按照DH法进行建立模型，导入moveit位置姿态正常。</p>
-<p>2.设置自碰撞检测 self collsion</p>
-<p>虚拟关节 vitual joints 描述机械臂基础坐标，固定臂虚拟项不修改，若移动，需要对虚拟关节修改。</p>
-<p>3.配置规划组</p>
-<p>运动学求解算法</p>
-<p>规划失败：模型没问题，规划时间可能太短，我好像没遇到过哎</p>
-<p>规划组选择最为重要</p>
-<p>4.预定义位姿  可设置初始姿态或者某些特殊姿态  使用较多，rviz规划仿真</p>
-<p>5..设置控制器</p>
-<p>6.作者信息</p>
-<p>7.生成配置功能包，使用较少</p>
-<p>Demo.launch-rviz仿真</p>
-<p>后续工作—gazebo</p>
-<p>Gazebo+ros+ros_control</p>
-<p>电机闭环控制知识（待补充）</p>
-<p>Ros控制器接口</p>
-<p>Moveit规划得到轨迹，通过controller（follow joint trajectory封装成话题action）—serve（默认五次插补运算）—伺服电机得到指令—硬件端-机器人对上位机反馈（joint state controller）</p>
-<p>基础编程</p>
-<p>1.连接控制需要的规划组</p>
-<p>2.设置目标位姿，关节空间或者笛卡尔空间</p>
-<p>3.设置运动约束</p>
-<p>4.使用moveit规划以到达目标的轨迹</p>
-<p>5.修改轨迹</p>
-<p>5.执行规划出的轨迹</p>
-<p>约束规划</p>
-<p>点到点关节空间规划</p>
-<p>(plan,fraction) = arm.compute_cartesian_path(waypoints,0.01,0.0,True)</p>
-<p>路径列表、终端步进值、最小移动值、避障规划</p>
-<p>Fraction 0-1 小于1无法规划</p>
-<p>直线轨迹</p>
-<p>圆弧轨迹方法：微分</p>
-<p>碰撞检测</p>
-<p>直接在可视界面添加障碍物</p>
-<p>通过代码导入</p>
-<p>API 五核心</p>
-<p>抓到物体 attach</p>
-<p>Eye in hand </p>
-<p>手眼标定（内参，外参）</p>
-<p>物体识别与定位（）</p>
-<p>抓取姿态分析（）</p>
-<p>运动规划</p>
-<p>Eye to hand</p>
-<p>Eye in hand</p>
-<p>关于ros：</p>
-<p>像素坐标转换成全局空间坐标</p>
-<p>深度学习融合</p>
-<p>ROS-I 工业机械臂应用</p>
-<p>工业领域分支</p>
-<p>应用</p>
-<h2 id="ros-slam记录"><a href="#ros-slam记录" class="headerlink" title="ros_slam记录:"></a>ros_slam记录:</h2><p>1.slam-地图构建</p>
-<p>gmapping 激光方案</p>
-<p>vslam</p>
-<p>视觉方案存在问题，容易受环境光影响，工业环境常用激光，irobot使用了视觉，精度要求不高</p>
-<p>superpoint</p>
-<p>多检测融合，包括orb、角点检测等，鲁棒性较高</p>
-<p>pointcloud 点云设计方案</p>
-<p>去除噪音、降采样、移除行人、移除地面—-网格mesh化</p>
-<p>point—-legoloam—点云算法，运算量比较小，点云图像投影</p>
-<p>地图构建之后，定位</p>
-<p>EKF-扩展卡尔曼滤波器</p>
-<p>信息融合，视觉、imu惯性测量单元（测量姿态）、gps等数据源卡尔曼滤波，提高精度</p>
-<p>平面定位-amcl</p>
-<p>粒子分布、更新—全局分布—视觉重定位（辅助）—初始定位—定位置信度</p>
-<p>定位-NDT/ICP 点云算法 </p>
-<p>ndt 网格化正态分布变换</p>
-<p>icp 迭代最近点   由轨迹确定位置</p>
-<p>3.全局规划与局部规划</p>
-<p>Globalcostmap</p>
-<p>静态层、动态层、膨胀层（远离障碍物，自己加）</p>
-<p>全局规划算法—A*/Dijkstra</p>
-<p>目的是避障寻找最低能耗路径</p>
-<p>人工势场法—寻找能量最低路径</p>
-<p>地图构建-势场-膨胀-全局规划算法-跟随，进行局部规划算法</p>
-<p>局部规划</p>
-<p>以机器人周围构建主要激光和点云</p>
-<p>算法-DWA（决定机器人动态效果）</p>
-<p>​    1.采样空间/运动模型</p>
-<p>​    2.代价函数</p>
-<p>​    防抖，运动平滑</p>
-<p>​    3.动态窗口仿真</p>
-<p>3.导航 move_base</p>
-<p>4.全地形导航-height map 三维  存在高度概念</p>
-<p>关于moveit计算方案</p>
-<h2 id="ros2记录（待续）"><a href="#ros2记录（待续）" class="headerlink" title="ros2记录（待续）:"></a>ros2记录（待续）:</h2><p>Rosi核心ros1</p>
-<p>关于Ros2架构</p>
-<p>Ros2起源，目的都是为了提高软件复用率</p>
-<p>保密性不足，局域网下信息互通</p>
-<p>2014年正式提出</p>
-<p>2020.6.5 foxy fitzory</p>
-<p>架构颠覆：ros1需要master管理，ros2使用基于DDS的discovery机制</p>
-<p>Api重新设计：ros1基于2009.2之前 ros2重新设计了新的api，使用方法类似</p>
-<p>编译系统升级：ros1 rosbuild、catkin ros2 ament colcon</p>
-<h2 id="ros深度学习"><a href="#ros深度学习" class="headerlink" title="ros深度学习"></a>ros深度学习</h2><p>感知与控制</p>
-<p>感知</p>
-<p>物体分类 image</p>
-<p>目标检测 object</p>
-<p>语义分割 semantic</p>
-<p>实例分割 instance</p>
-<p>感知-cnn</p>
-<p>卷积运算 </p>
-<p>池化运算</p>
-<p>RCNN</p>
-<p>Mseg-语义分割</p>
-<p>mask-rcnn感知</p>
-<p>pointnet</p>
-<p>2.联想GPT3</p>
-<p>代码补全</p>
-<p>数据集足够多，效果足够好</p>
-<h2 id="ROS探索总结记录（体系查漏补缺）"><a href="#ROS探索总结记录（体系查漏补缺）" class="headerlink" title="ROS探索总结记录（体系查漏补缺）"></a>ROS探索总结记录（体系查漏补缺）</h2><p>package</p>
-<p>ROS 的软件以包的方式组织起来。包包含节点、ROS 依赖库、数据套、配置文件、第三方软件、或者任何<br>其他逻辑构成。包的目标是提供一种易于使用的结构以便于软件的重复使用。总得来说,ROS 的包短小精<br>干。</p>
-<p>stack</p>
-<p>堆是包的集合,它提供一个完整的功能</p>
-<p>Manifests (manifest.xml):提供关于 Package 元数据,包括它的许可信息和 Package 之间依赖关<br>系,以及语言特性信息像编译旗帜(编译优化参数)<br>。<br>Stack manifests (stack.xml):提供关于 Stack 元数据,包括它的许可信息和 Stack 之间依赖关系。</p>
-<p>1.常见的几个</p>
-<p>PR2 ：<a href="http://www.ros.org/wiki/Robots/PR2">http://www.ros.org/wiki/Robots/PR2</a></p>
-<p>Turtlebot：<a href="http://www.ros.org/wiki/Robots/TurtleBot">http://www.ros.org/wiki/Robots/TurtleBot</a></p>
-<p>Husky：<a href="http://www.ros.org/wiki/Robots/Husky">http://www.ros.org/wiki/Robots/Husky</a>  /   <a href="http://www.ros.org/wiki/Robots/Erratic">http://www.ros.org/wiki/Robots/Erratic</a></p>
-<p>轮式移动机器人</p>
-<p>手柄端口 ls /dev/input</p>
-<p>机器视觉</p>
-<p>rosrun rviz rviz</p>
-<p>关于tf细节</p>
-<p>(1) 监听 tf 变换</p>
-<p>(2) 广播 tf 变换</p>
-<p>关于无人车ros 总结</p>
-<p>轮胎</p>
-<p>纵向花纹： 低滚动阻力 防止侧滑，装向稳定性优异</p>
-<p>横向花纹：出色的驱动力和制动力，强大的牵引力</p>
-<p>纵横兼有花纹：纵纹提供向稳定性，横纹改善驱动力和制动力</p>
-<p>关于usb问题： ls /dev/ttyUSB*</p>
-<h2 id="ROSGO"><a href="#ROSGO" class="headerlink" title="ROSGO"></a>ROSGO</h2>]]></content>
-  </entry>
-  <entry>
-    <title>plan_emotion</title>
-    <url>/2021/08/26/plan-emotion/plan-emotion/</url>
-    <content><![CDATA[<h1 id="Ubuntu修复windows无法启动问题"><a href="#Ubuntu修复windows无法启动问题" class="headerlink" title="Ubuntu修复windows无法启动问题"></a>Ubuntu修复windows无法启动问题</h1><span id="more"></span>
-<p>配置：ubuntu16.04+windows8.1</p>
-<p>背景：电脑不小心被砸了一下，然后windows系统无法启动，也无法进入bios和安全模式，尝试启动Ubuntu系统，发现可以进入，Linux永远的神！！</p>
-<p>linux端进入后，发现电脑系统盘无法读取，出现挂载错误，可能windows就是因为这个问题无法启动，尝试修复，记录一下最后有效的过程：</p>
-<h5 id="1-查看系统下所有分区的挂载情况是否正常"><a href="#1-查看系统下所有分区的挂载情况是否正常" class="headerlink" title="1.查看系统下所有分区的挂载情况是否正常"></a>1.查看系统下所有分区的挂载情况是否正常</h5><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">sudo fdisk -l </span><br></pre></td></tr></tbody></table></figure>
-<p>根据×号判断</p>
-<h5 id="2-修复对应分区，我显示的是-dev-sdb3"><a href="#2-修复对应分区，我显示的是-dev-sdb3" class="headerlink" title="2.修复对应分区，我显示的是/dev/sdb3"></a>2.修复对应分区，我显示的是/dev/sdb3</h5><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">sudo ntfsfix /dev/sdb3</span><br></pre></td></tr></tbody></table></figure>
-<p>全部修复后，windows可以正常启动</p>
-<p>以后正常更新啦…</p>
-<p>等会儿再写一个生活计划日志…</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>plan</title>
-    <url>/2023/01/29/plan/plan/</url>
-    <content><![CDATA[<p>2023开学随笔</p>
-<span id="more"></span>
-<p>说着要更新，但是因为各种各样的事情总是拖后，上个学期有了一些进度，但是后续仍然有很多需要落实的地方，今天顺便一起想了，生活上也有好多事情要处理，后天开学了，晚上闲来无事，大概想想~</p>
-<p>1.总的来讲，很多事进度没有严格按计划落实，还是个人惰性的问题，我自己一个人呆着的时候进度总是很慢，喜欢摸鱼，我打算严格落实目标，坚持完成。</p>
-<p>2.有句话我觉得很有用-“你的人生没有那么多观众”，我现在已经可以下意识的做的一部分，但是还是没办法完全做到，不必强求吧，太过了可能也不好，对所有事都没兴趣，终归有问题，但是对一些没意义的事情，还是要避免，不去做没意义的事情；电话 会议？2333</p>
-<p>3.开学之后是31，到元宵节，6天时间要加班把那个任务完成，最重要的一件事是每天也要坚持看英文文献，如果可以理解两个，把任务压缩到分配到每天，必须完成这些事情，然后汇报一下；这个是现阶段最最重要的事情</p>
-<p>4.之前每天坚持落实的事情，要继续坚持下去，这个细规划吧；</p>
-<p>5.生活上，过了个年胖了几斤，去了还是要规律饮食，坚持游泳，加油呀；</p>
-<p>总结一下，落实进度，不要着急，行胜于言；</p>
-<p>少说话，事情多做，多出自己的想法，多总结论文，多学习；</p>
-<p>抵制下惰性，要努力呀；</p>
-<p>有些话还想说，我觉得以后要果断一点，但前提是这半年要把目标落实了，很重要；</p>
-<p>其余的生活规划放在后半年的时间里，总之脚踏实地，慢慢推进吧；</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>airfact</tag>
-      </tags>
   </entry>
   <entry>
     <title>python100</title>
@@ -3407,6 +3223,214 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
+    <title>ros问题总结</title>
+    <url>/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h1><span id="more"></span>
+<h2 id="缺少cmake文件，安装方式"><a href="#缺少cmake文件，安装方式" class="headerlink" title="缺少cmake文件，安装方式"></a>缺少cmake文件，安装方式</h2><p>提示 xxConfig.cmake 找不到</p>
+<p>查找上一行 …provided by “xx”</p>
+<p>补充  sudo apt-get install ros-ROS版本-xx </p>
+<p>roscore运行出错</p>
+<p>Unable to contact my own server a</p>
+<p>xiaomu@GL:~$ export ROS_HOSTNAME=localhost<br>xiaomu@GL:~$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></p>
+<p>Unable to contact my own server at [<a href="http://192.168.0.106:35623/">http://192.168.0.106:35623/</a>].</p>
+<p>This usually means that the network is not configured properly.</p>
+<p>A common cause is that the machine cannot connect to itself.  Please check<br>for errors by running:</p>
+<pre><code>ping 192.168.0.106
+</code></pre><p>For more tips, please see</p>
+<pre><code>http://www.ros.org/wiki/ROS/NetworkSetup
+</code></pre><p>修正：</p>
+<ol>
+<li>$ export ROS_HOSTNAME=localhost</li>
+<li>$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2020/08/25/ros-work/ros-work/</url>
+    <content><![CDATA[<p>时隔一年，再次听胡老师的课，感受颇有不同，包括简要课程记录复习一下以及写写作业。</p>
+<p>(9.26添加了一些小内容)</p>
+<p>(10.12增加了一下go内容)</p>
+<span id="more"></span>
+<p>1.日常ROS史观</p>
+<p>2.ros框架以及松耦合的分布式通信机制（日常）</p>
+<p>3.节点-执行单元（node）</p>
+<p>节点管理器（ros master）</p>
+<p>Topic-异步通信机制（publisher/subscriber）</p>
+<p>先来后到，多对多</p>
+<p>service-同步通信机制（service/client）—-request  response</p>
+<p>请求之后才会应答，一对多</p>
+<p>参数（parameter）</p>
+<p>典型字典</p>
+<p>工作空间（workspace0</p>
+<p>src:代码空间 build:编译空间 devel:开发空间 install: 安装空间</p>
+<p>功能包（package）</p>
+<p>功能包清单（package manifest  ）（包含作者信息、许可信息等，好像一直没用过这个233）</p>
+<p>元功能包（meta packages）</p>
+<p>action通信及机制</p>
+<p>应用场景：比如抓取，一段时间的抓捕动作，在执行过程中需要连续的response</p>
+<hr>
+<p>日常启动turtle</p>
+<hr>
+<p>关于turtlebot</p>
+<p>———-没有作业0.0</p>
+<p>ros常用组件与开发</p>
+<p>roslog</p>
+<h2 id="ros-moveit记录："><a href="#ros-moveit记录：" class="headerlink" title="ros_moveit记录："></a>ros_moveit记录：</h2><p>manipulator</p>
+<p>多轴机械臂6.7+各式夹具</p>
+<p>六轴机械臂</p>
+<hr>
+<p>伺服电机（减速机，为了降低电机转速，从而增加电机扭矩）皮带、行星、谐波（成本减速器比较高）</p>
+<p>机械臂本体</p>
+<p>控制器</p>
+<p><a href="img/arm.png">成本占比图</a></p>
+<hr>
+<p>智能化处理</p>
+<p>moveit  运动学、运动规划、碰撞检测、</p>
+<p>motion planning、manipulation、inverse kinematics</p>
+<p>control、3dperception（3d视觉）、collsion碰撞检测</p>
+<p>核心节点 move_group</p>
+<p>输入输出参数</p>
+<p>move_base 话题发布-cmdvel</p>
+<p>用户interface</p>
+<p>Ros moveit</p>
+<p>自己算法可封装到plugins </p>
+<p>Moveit 可视化配置和仿真</p>
+<p>Planning scene点云栅格地图</p>
+<p>Roslaunch moveit setup assistant</p>
+<p>1.选择模型，导入urdf或者xacro，需要严格按照DH法进行建立模型，导入moveit位置姿态正常。</p>
+<p>2.设置自碰撞检测 self collsion</p>
+<p>虚拟关节 vitual joints 描述机械臂基础坐标，固定臂虚拟项不修改，若移动，需要对虚拟关节修改。</p>
+<p>3.配置规划组</p>
+<p>运动学求解算法</p>
+<p>规划失败：模型没问题，规划时间可能太短，我好像没遇到过哎</p>
+<p>规划组选择最为重要</p>
+<p>4.预定义位姿  可设置初始姿态或者某些特殊姿态  使用较多，rviz规划仿真</p>
+<p>5..设置控制器</p>
+<p>6.作者信息</p>
+<p>7.生成配置功能包，使用较少</p>
+<p>Demo.launch-rviz仿真</p>
+<p>后续工作—gazebo</p>
+<p>Gazebo+ros+ros_control</p>
+<p>电机闭环控制知识（待补充）</p>
+<p>Ros控制器接口</p>
+<p>Moveit规划得到轨迹，通过controller（follow joint trajectory封装成话题action）—serve（默认五次插补运算）—伺服电机得到指令—硬件端-机器人对上位机反馈（joint state controller）</p>
+<p>基础编程</p>
+<p>1.连接控制需要的规划组</p>
+<p>2.设置目标位姿，关节空间或者笛卡尔空间</p>
+<p>3.设置运动约束</p>
+<p>4.使用moveit规划以到达目标的轨迹</p>
+<p>5.修改轨迹</p>
+<p>5.执行规划出的轨迹</p>
+<p>约束规划</p>
+<p>点到点关节空间规划</p>
+<p>(plan,fraction) = arm.compute_cartesian_path(waypoints,0.01,0.0,True)</p>
+<p>路径列表、终端步进值、最小移动值、避障规划</p>
+<p>Fraction 0-1 小于1无法规划</p>
+<p>直线轨迹</p>
+<p>圆弧轨迹方法：微分</p>
+<p>碰撞检测</p>
+<p>直接在可视界面添加障碍物</p>
+<p>通过代码导入</p>
+<p>API 五核心</p>
+<p>抓到物体 attach</p>
+<p>Eye in hand </p>
+<p>手眼标定（内参，外参）</p>
+<p>物体识别与定位（）</p>
+<p>抓取姿态分析（）</p>
+<p>运动规划</p>
+<p>Eye to hand</p>
+<p>Eye in hand</p>
+<p>关于ros：</p>
+<p>像素坐标转换成全局空间坐标</p>
+<p>深度学习融合</p>
+<p>ROS-I 工业机械臂应用</p>
+<p>工业领域分支</p>
+<p>应用</p>
+<h2 id="ros-slam记录"><a href="#ros-slam记录" class="headerlink" title="ros_slam记录:"></a>ros_slam记录:</h2><p>1.slam-地图构建</p>
+<p>gmapping 激光方案</p>
+<p>vslam</p>
+<p>视觉方案存在问题，容易受环境光影响，工业环境常用激光，irobot使用了视觉，精度要求不高</p>
+<p>superpoint</p>
+<p>多检测融合，包括orb、角点检测等，鲁棒性较高</p>
+<p>pointcloud 点云设计方案</p>
+<p>去除噪音、降采样、移除行人、移除地面—-网格mesh化</p>
+<p>point—-legoloam—点云算法，运算量比较小，点云图像投影</p>
+<p>地图构建之后，定位</p>
+<p>EKF-扩展卡尔曼滤波器</p>
+<p>信息融合，视觉、imu惯性测量单元（测量姿态）、gps等数据源卡尔曼滤波，提高精度</p>
+<p>平面定位-amcl</p>
+<p>粒子分布、更新—全局分布—视觉重定位（辅助）—初始定位—定位置信度</p>
+<p>定位-NDT/ICP 点云算法 </p>
+<p>ndt 网格化正态分布变换</p>
+<p>icp 迭代最近点   由轨迹确定位置</p>
+<p>3.全局规划与局部规划</p>
+<p>Globalcostmap</p>
+<p>静态层、动态层、膨胀层（远离障碍物，自己加）</p>
+<p>全局规划算法—A*/Dijkstra</p>
+<p>目的是避障寻找最低能耗路径</p>
+<p>人工势场法—寻找能量最低路径</p>
+<p>地图构建-势场-膨胀-全局规划算法-跟随，进行局部规划算法</p>
+<p>局部规划</p>
+<p>以机器人周围构建主要激光和点云</p>
+<p>算法-DWA（决定机器人动态效果）</p>
+<p>​    1.采样空间/运动模型</p>
+<p>​    2.代价函数</p>
+<p>​    防抖，运动平滑</p>
+<p>​    3.动态窗口仿真</p>
+<p>3.导航 move_base</p>
+<p>4.全地形导航-height map 三维  存在高度概念</p>
+<p>关于moveit计算方案</p>
+<h2 id="ros2记录（待续）"><a href="#ros2记录（待续）" class="headerlink" title="ros2记录（待续）:"></a>ros2记录（待续）:</h2><p>Rosi核心ros1</p>
+<p>关于Ros2架构</p>
+<p>Ros2起源，目的都是为了提高软件复用率</p>
+<p>保密性不足，局域网下信息互通</p>
+<p>2014年正式提出</p>
+<p>2020.6.5 foxy fitzory</p>
+<p>架构颠覆：ros1需要master管理，ros2使用基于DDS的discovery机制</p>
+<p>Api重新设计：ros1基于2009.2之前 ros2重新设计了新的api，使用方法类似</p>
+<p>编译系统升级：ros1 rosbuild、catkin ros2 ament colcon</p>
+<h2 id="ros深度学习"><a href="#ros深度学习" class="headerlink" title="ros深度学习"></a>ros深度学习</h2><p>感知与控制</p>
+<p>感知</p>
+<p>物体分类 image</p>
+<p>目标检测 object</p>
+<p>语义分割 semantic</p>
+<p>实例分割 instance</p>
+<p>感知-cnn</p>
+<p>卷积运算 </p>
+<p>池化运算</p>
+<p>RCNN</p>
+<p>Mseg-语义分割</p>
+<p>mask-rcnn感知</p>
+<p>pointnet</p>
+<p>2.联想GPT3</p>
+<p>代码补全</p>
+<p>数据集足够多，效果足够好</p>
+<h2 id="ROS探索总结记录（体系查漏补缺）"><a href="#ROS探索总结记录（体系查漏补缺）" class="headerlink" title="ROS探索总结记录（体系查漏补缺）"></a>ROS探索总结记录（体系查漏补缺）</h2><p>package</p>
+<p>ROS 的软件以包的方式组织起来。包包含节点、ROS 依赖库、数据套、配置文件、第三方软件、或者任何<br>其他逻辑构成。包的目标是提供一种易于使用的结构以便于软件的重复使用。总得来说,ROS 的包短小精<br>干。</p>
+<p>stack</p>
+<p>堆是包的集合,它提供一个完整的功能</p>
+<p>Manifests (manifest.xml):提供关于 Package 元数据,包括它的许可信息和 Package 之间依赖关<br>系,以及语言特性信息像编译旗帜(编译优化参数)<br>。<br>Stack manifests (stack.xml):提供关于 Stack 元数据,包括它的许可信息和 Stack 之间依赖关系。</p>
+<p>1.常见的几个</p>
+<p>PR2 ：<a href="http://www.ros.org/wiki/Robots/PR2">http://www.ros.org/wiki/Robots/PR2</a></p>
+<p>Turtlebot：<a href="http://www.ros.org/wiki/Robots/TurtleBot">http://www.ros.org/wiki/Robots/TurtleBot</a></p>
+<p>Husky：<a href="http://www.ros.org/wiki/Robots/Husky">http://www.ros.org/wiki/Robots/Husky</a>  /   <a href="http://www.ros.org/wiki/Robots/Erratic">http://www.ros.org/wiki/Robots/Erratic</a></p>
+<p>轮式移动机器人</p>
+<p>手柄端口 ls /dev/input</p>
+<p>机器视觉</p>
+<p>rosrun rviz rviz</p>
+<p>关于tf细节</p>
+<p>(1) 监听 tf 变换</p>
+<p>(2) 广播 tf 变换</p>
+<p>关于无人车ros 总结</p>
+<p>轮胎</p>
+<p>纵向花纹： 低滚动阻力 防止侧滑，装向稳定性优异</p>
+<p>横向花纹：出色的驱动力和制动力，强大的牵引力</p>
+<p>纵横兼有花纹：纵纹提供向稳定性，横纹改善驱动力和制动力</p>
+<p>关于usb问题： ls /dev/ttyUSB*</p>
+<h2 id="ROSGO"><a href="#ROSGO" class="headerlink" title="ROSGO"></a>ROSGO</h2>]]></content>
+  </entry>
+  <entry>
     <title>start2024</title>
     <url>/2024/02/19/start2024/start2024/</url>
     <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
@@ -3446,29 +3470,6 @@ m_1 & 0 \\
       <tags>
         <tag>emotion</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>ros问题总结</title>
-    <url>/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h1><span id="more"></span>
-<h2 id="缺少cmake文件，安装方式"><a href="#缺少cmake文件，安装方式" class="headerlink" title="缺少cmake文件，安装方式"></a>缺少cmake文件，安装方式</h2><p>提示 xxConfig.cmake 找不到</p>
-<p>查找上一行 …provided by “xx”</p>
-<p>补充  sudo apt-get install ros-ROS版本-xx </p>
-<p>roscore运行出错</p>
-<p>Unable to contact my own server a</p>
-<p>xiaomu@GL:~$ export ROS_HOSTNAME=localhost<br>xiaomu@GL:~$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></p>
-<p>Unable to contact my own server at [<a href="http://192.168.0.106:35623/">http://192.168.0.106:35623/</a>].</p>
-<p>This usually means that the network is not configured properly.</p>
-<p>A common cause is that the machine cannot connect to itself.  Please check<br>for errors by running:</p>
-<pre><code>ping 192.168.0.106
-</code></pre><p>For more tips, please see</p>
-<pre><code>http://www.ros.org/wiki/ROS/NetworkSetup
-</code></pre><p>修正：</p>
-<ol>
-<li>$ export ROS_HOSTNAME=localhost</li>
-<li>$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></li>
-</ol>
-]]></content>
   </entry>
   <entry>
     <title>skill</title>
@@ -3796,6 +3797,33 @@ u w(1-\cos \theta)-v \sin \theta & v w(1-\cos \theta)+u \sin \theta & w^2+\left(
 ]]></content>
   </entry>
   <entry>
+    <title>随笔II</title>
+    <url>/2024/08/05/%E9%9A%8F%E7%AC%94II/%E9%9A%8F%E7%AC%94II/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"><br>平常心平常心~</p>
+<span id="more"></span>
+<p>做事要有耐心，要对家人有耐心，要对陌生人有耐心。</p>
+<p>经常遇到自己不乐意的事情就容易表露出来，给人一种拒人千里的感觉，事后老后悔让别人不开心了，真的不太好，多点换位思考，耐心一点。</p>
+<hr>
+<p>最近事情比较多，论文写的也不太顺利，其实内容上已经没有太大问题，运动模式部分还需要看数据才能判断怎么区分维度和驱动速度的关系，得得踏踏实实的推进实质内容了，8月5日周一，这周需要一些进度完成，动力学部分在运动模式部分加入一下，曲线规划也有一部分内容，至少20号之前要有个中期初版。</p>
+<hr>
+<p>看了个医疗电视剧问心，结局还是停留在美好了，其实往后想想还是一堆问题，曾经向往真挚的情感，现在开始更多考虑现实，与一些朋友要保持距离，开开心心的聊天就行，柴米油盐才是生活的本质，人的成分也基本一致，漫长的时光会磨灭一切。</p>
+<p>护士长因为自己产检，没有及时把钱打回账户，刚看到的时候，那一瞬间有点怪人家，连带着辩护都有些讨厌，后来一想，其实是可以理解得，毕竟人家的事情更重要，比较下来这边的事情也不是很重要，后来也可以澄清，突然开始觉得自己可恶，怎么可以怪人家，现实里也是，真得多想想，耐心一点耐心一点，绕绕路等等人呗~</p>
+<p>再就是年龄问题，平时看动漫看其他电视剧，看看主角的年龄总会觉得自己真老了，佟湘玉都说自己24岁，但是看看这个剧，又感觉自己也不是很老，培养一个医学博士需要耗费相当久的时间，虽然不是学医得，但是经历也算类似，所以还是希望像剧中人一样可以选择不受牵绊的去做一些自己想做的事情，没必要一直纠结。</p>
+<p>毛晓彤确实有点甜分超标，过于可爱了属于是233</p>
+<hr>
+<ul>
+<li>[x] 其实都不太重要，还是耐心比较重要，有时候自己麻烦一点，让别人舒心，后续也会开心一点，就这样，当然是对家人、对朋友。</li>
+</ul>
+
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>EMO</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>记录</title>
     <url>/2021/01/06/%E8%AE%B0%E5%BD%95/%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<h1 id="会议记录"><a href="#会议记录" class="headerlink" title="会议记录"></a>会议记录</h1><p>学习，学习一下</p>
@@ -3858,32 +3886,5 @@ u w(1-\cos \theta)-v \sin \theta & v w(1-\cos \theta)+u \sin \theta & w^2+\left(
 <p>一对多控制</p>
 <p>emgsensor 8通道</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>随笔II</title>
-    <url>/2024/08/05/%E9%9A%8F%E7%AC%94II/%E9%9A%8F%E7%AC%94II/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"><br>平常心平常心~</p>
-<span id="more"></span>
-<p>做事要有耐心，要对家人有耐心，要对陌生人有耐心。</p>
-<p>经常遇到自己不乐意的事情就容易表露出来，给人一种拒人千里的感觉，事后老后悔让别人不开心了，真的不太好，多点换位思考，耐心一点。</p>
-<hr>
-<p>最近事情比较多，论文写的也不太顺利，其实内容上已经没有太大问题，运动模式部分还需要看数据才能判断怎么区分维度和驱动速度的关系，得得踏踏实实的推进实质内容了，8月5日周一，这周需要一些进度完成，动力学部分在运动模式部分加入一下，曲线规划也有一部分内容，至少20号之前要有个中期初版。</p>
-<hr>
-<p>看了个医疗电视剧问心，结局还是停留在美好了，其实往后想想还是一堆问题，曾经向往真挚的情感，现在开始更多考虑现实，与一些朋友要保持距离，开开心心的聊天就行，柴米油盐才是生活的本质，人的成分也基本一致，漫长的时光会磨灭一切。</p>
-<p>护士长因为自己产检，没有及时把钱打回账户，刚看到的时候，那一瞬间有点怪人家，连带着辩护都有些讨厌，后来一想，其实是可以理解得，毕竟人家的事情更重要，比较下来这边的事情也不是很重要，后来也可以澄清，突然开始觉得自己可恶，怎么可以怪人家，现实里也是，真得多想想，耐心一点耐心一点，绕绕路等等人呗~</p>
-<p>再就是年龄问题，平时看动漫看其他电视剧，看看主角的年龄总会觉得自己真老了，佟湘玉都说自己24岁，但是看看这个剧，又感觉自己也不是很老，培养一个医学博士需要耗费相当久的时间，虽然不是学医得，但是经历也算类似，所以还是希望像剧中人一样可以选择不受牵绊的去做一些自己想做的事情，没必要一直纠结。</p>
-<p>毛晓彤确实有点甜分超标，过于可爱了属于是233</p>
-<hr>
-<ul>
-<li>[x] 其实都不太重要，还是耐心比较重要，有时候自己麻烦一点，让别人舒心，后续也会开心一点，就这样，当然是对家人、对朋友。</li>
-</ul>
-
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>EMO</tag>
-      </tags>
   </entry>
 </search>
