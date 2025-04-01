@@ -6,7 +6,7 @@
   <link href="http://xiaomuhou.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiaomuhou.github.io/"/>
-  <updated>2025-01-17T14:13:49.296Z</updated>
+  <updated>2025-04-01T08:56:17.215Z</updated>
   <id>http://xiaomuhou.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>配色代码及一些记录</title>
+    <link href="http://xiaomuhou.github.io/2025/04/01/%E9%85%8D%E8%89%B2%E4%BB%A3%E7%A0%81%E5%8F%8A%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/"/>
+    <id>http://xiaomuhou.github.io/2025/04/01/%E9%85%8D%E8%89%B2%E4%BB%A3%E7%A0%81%E5%8F%8A%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/</id>
+    <published>2025-04-01T08:28:43.000Z</published>
+    <updated>2025-04-01T08:56:17.215Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="常用配色代码及想法"><a href="#常用配色代码及想法" class="headerlink" title="常用配色代码及想法"></a>常用配色代码及想法</h1><p>橙色-绿色-紫色，依次排序</p><h1 id="7A577A-紫色orientation"><a href="#7A577A-紫色orientation" class="headerlink" title="7A577A 紫色orientation"></a>7A577A 紫色orientation</h1><h1 id="D8B08C-橙色-FFCB9A亮一点点的橙色"><a href="#D8B08C-橙色-FFCB9A亮一点点的橙色" class="headerlink" title="D8B08C 橙色 #FFCB9A亮一点点的橙色"></a>D8B08C 橙色 #FFCB9A亮一点点的橙色</h1><h1 id="0F6466-绿色"><a href="#0F6466-绿色" class="headerlink" title="0F6466 绿色"></a>0F6466 绿色</h1><h1 id="38184C-紫色Media"><a href="#38184C-紫色Media" class="headerlink" title="38184C 紫色Media"></a>38184C 紫色Media</h1><p>43绿<br>23橙Median<br>宽度45，高度38 三图<br>Encountered</p><span id="more"></span><p>matlab曲线代码记录：</p><p>近期计划：</p><p>1.模型文件做完，变形做一个单元的，四个的用于RAL那篇，做个记录笔记，实验规划今晚处理一下41。</p><p>2.机加那几个U板和折弯件;</p><p>记录：</p><p>平常心，踏踏实实的做好每一步，一点一点完成，上山难</p><p>今天看到一个说法，做别人没做过的，就是意义所在，对我来讲，做到合理的解释，就算成功。</p><img src="/2025/04/01/%E9%85%8D%E8%89%B2%E4%BB%A3%E7%A0%81%E5%8F%8A%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/img105.jpg" class="" title="IMAG">]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;常用配色代码及想法&quot;&gt;&lt;a href=&quot;#常用配色代码及想法&quot; class=&quot;headerlink&quot; title=&quot;常用配色代码及想法&quot;&gt;&lt;/a&gt;常用配色代码及想法&lt;/h1&gt;&lt;p&gt;橙色-绿色-紫色，依次排序&lt;/p&gt;
+&lt;h1 id=&quot;7A577A-紫色orientation&quot;&gt;&lt;a href=&quot;#7A577A-紫色orientation&quot; class=&quot;headerlink&quot; title=&quot;7A577A 紫色orientation&quot;&gt;&lt;/a&gt;7A577A 紫色orientation&lt;/h1&gt;&lt;h1 id=&quot;D8B08C-橙色-FFCB9A亮一点点的橙色&quot;&gt;&lt;a href=&quot;#D8B08C-橙色-FFCB9A亮一点点的橙色&quot; class=&quot;headerlink&quot; title=&quot;D8B08C 橙色 #FFCB9A亮一点点的橙色&quot;&gt;&lt;/a&gt;D8B08C 橙色 #FFCB9A亮一点点的橙色&lt;/h1&gt;&lt;h1 id=&quot;0F6466-绿色&quot;&gt;&lt;a href=&quot;#0F6466-绿色&quot; class=&quot;headerlink&quot; title=&quot;0F6466 绿色&quot;&gt;&lt;/a&gt;0F6466 绿色&lt;/h1&gt;&lt;h1 id=&quot;38184C-紫色Media&quot;&gt;&lt;a href=&quot;#38184C-紫色Media&quot; class=&quot;headerlink&quot; title=&quot;38184C 紫色Media&quot;&gt;&lt;/a&gt;38184C 紫色Media&lt;/h1&gt;&lt;p&gt;43绿&lt;br&gt;23橙Median&lt;br&gt;宽度45，高度38 三图&lt;br&gt;Encountered&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="learning" scheme="http://xiaomuhou.github.io/categories/learning/"/>
+    
+    
+    <category term="note" scheme="http://xiaomuhou.github.io/tags/note/"/>
+    
+  </entry>
   
   <entry>
     <title>关于柔度矩阵与变形叠加法的思考记录</title>
@@ -440,31 +462,6 @@
     
     
     <category term="airfact" scheme="http://xiaomuhou.github.io/tags/airfact/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://xiaomuhou.github.io/2022/08/02/life/life/"/>
-    <id>http://xiaomuhou.github.io/2022/08/02/life/life/</id>
-    <published>2022-08-02T04:12:04.445Z</published>
-    <updated>2020-12-14T13:48:20.286Z</updated>
-    
-    <content type="html"><![CDATA[<p> <strong>怎么会迷上你，我在问自己</strong></p><p> <strong>我什么都能放弃，居然今天难离去</strong></p><p>我是个什么人呢？</p><p>乐观、向上、热心又冷漠</p><p>犹豫、常常忽略一些事情、讨厌很多事情</p><p>一个半吊子的理想主义者～</p><p><a href="/img/R.jpg">r</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt; &lt;strong&gt;怎么会迷上你，我在问自己&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt; &lt;strong&gt;我什么都能放弃，居然今天难离去&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我是个什么人呢？&lt;/p&gt;
-&lt;p&gt;乐观、向上、热心又冷漠&lt;/p&gt;
-&lt;p&gt;犹豫、常常忽略一些事情、讨厌很多事情&lt;/p&gt;
-</summary>
-      
-    
-    
-    
     
   </entry>
   
