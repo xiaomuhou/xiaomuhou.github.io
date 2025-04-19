@@ -6,7 +6,7 @@
   <link href="http://xiaomuhou.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiaomuhou.github.io/"/>
-  <updated>2025-04-07T16:19:33.097Z</updated>
+  <updated>2025-04-19T08:34:18.343Z</updated>
   <id>http://xiaomuhou.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Motive使用技巧记录</title>
+    <link href="http://xiaomuhou.github.io/2025/04/19/Motive%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E8%AE%B0%E5%BD%95/"/>
+    <id>http://xiaomuhou.github.io/2025/04/19/Motive%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E8%AE%B0%E5%BD%95/</id>
+    <published>2025-04-19T07:31:33.000Z</published>
+    <updated>2025-04-19T08:34:18.343Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Optitrack使用记录"><a href="#Optitrack使用记录" class="headerlink" title="Optitrack使用记录"></a>Optitrack使用记录</h1><p>1.Markset设置，手动或者自动标签</p><p>必须需要先手动记录一段数据task才能记录，然后切换到edit界面，toolbar栏中点击markerset pane，然后进行分配，</p><p>2.背景问题</p><p>toolbar位置无法实现grad off/on,新发现一个方法，在edit-application setting-grid color，设置成黑色即可消除背景。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Optitrack使用记录&quot;&gt;&lt;a href=&quot;#Optitrack使用记录&quot; class=&quot;headerlink&quot; title=&quot;Optitrack使用记录&quot;&gt;&lt;/a&gt;Optitrack使用记录&lt;/h1&gt;&lt;p&gt;1.Markset设置，手动或者自动标签&lt;/p&gt;
+&lt;</summary>
+      
+    
+    
+    
+    <category term="note" scheme="http://xiaomuhou.github.io/categories/note/"/>
+    
+    
+    <category term="note" scheme="http://xiaomuhou.github.io/tags/note/"/>
+    
+  </entry>
   
   <entry>
     <title>驱动代码备份</title>
@@ -441,27 +466,6 @@
     
     
     <category term="emotion" scheme="http://xiaomuhou.github.io/tags/emotion/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>plan</title>
-    <link href="http://xiaomuhou.github.io/2023/01/29/plan/plan/"/>
-    <id>http://xiaomuhou.github.io/2023/01/29/plan/plan/</id>
-    <published>2023-01-29T13:39:11.000Z</published>
-    <updated>2023-01-29T14:50:52.638Z</updated>
-    
-    <content type="html"><![CDATA[<p>2023开学随笔</p><span id="more"></span><p>说着要更新，但是因为各种各样的事情总是拖后，上个学期有了一些进度，但是后续仍然有很多需要落实的地方，今天顺便一起想了，生活上也有好多事情要处理，后天开学了，晚上闲来无事，大概想想~</p><p>1.总的来讲，很多事进度没有严格按计划落实，还是个人惰性的问题，我自己一个人呆着的时候进度总是很慢，喜欢摸鱼，我打算严格落实目标，坚持完成。</p><p>2.有句话我觉得很有用-“你的人生没有那么多观众”，我现在已经可以下意识的做的一部分，但是还是没办法完全做到，不必强求吧，太过了可能也不好，对所有事都没兴趣，终归有问题，但是对一些没意义的事情，还是要避免，不去做没意义的事情；电话 会议？2333</p><p>3.开学之后是31，到元宵节，6天时间要加班把那个任务完成，最重要的一件事是每天也要坚持看英文文献，如果可以理解两个，把任务压缩到分配到每天，必须完成这些事情，然后汇报一下；这个是现阶段最最重要的事情</p><p>4.之前每天坚持落实的事情，要继续坚持下去，这个细规划吧；</p><p>5.生活上，过了个年胖了几斤，去了还是要规律饮食，坚持游泳，加油呀；</p><p>总结一下，落实进度，不要着急，行胜于言；</p><p>少说话，事情多做，多出自己的想法，多总结论文，多学习；</p><p>抵制下惰性，要努力呀；</p><p>有些话还想说，我觉得以后要果断一点，但前提是这半年要把目标落实了，很重要；</p><p>其余的生活规划放在后半年的时间里，总之脚踏实地，慢慢推进吧；</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;2023开学随笔&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="note" scheme="http://xiaomuhou.github.io/categories/note/"/>
-    
-    
-    <category term="airfact" scheme="http://xiaomuhou.github.io/tags/airfact/"/>
     
   </entry>
   
