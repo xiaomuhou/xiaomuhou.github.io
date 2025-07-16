@@ -6,7 +6,7 @@
   <link href="http://xiaomuhou.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiaomuhou.github.io/"/>
-  <updated>2025-04-19T08:34:18.343Z</updated>
+  <updated>2025-07-16T14:58:57.579Z</updated>
   <id>http://xiaomuhou.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>“锁定工程相关_方案图隐去”</title>
+    <link href="http://xiaomuhou.github.io/2025/05/16/%E2%80%9C%E9%94%81%E5%AE%9A%E5%B7%A5%E7%A8%8B%E7%9B%B8%E5%85%B3-%E6%96%B9%E6%A1%88%E5%9B%BE%E9%9A%90%E5%8E%BB%E2%80%9D/"/>
+    <id>http://xiaomuhou.github.io/2025/05/16/%E2%80%9C%E9%94%81%E5%AE%9A%E5%B7%A5%E7%A8%8B%E7%9B%B8%E5%85%B3-%E6%96%B9%E6%A1%88%E5%9B%BE%E9%9A%90%E5%8E%BB%E2%80%9D/</id>
+    <published>2025-05-16T14:55:10.000Z</published>
+    <updated>2025-07-16T14:58:57.579Z</updated>
+    
+    <content type="html"><![CDATA[<p><meta name="referrer" content="no-referrer"></p><h1 id="锁定方案总结"><a href="#锁定方案总结" class="headerlink" title="锁定方案总结"></a>锁定方案总结</h1><p>删去具体方案图，方便查阅复制</p><span id="more"></span><h3 id="锁解机构"><a href="#锁解机构" class="headerlink" title="锁解机构"></a>锁解机构</h3><p>1.锁销锁定方案</p><p>（1）机构展开到位之后需要进行到位锁定，采用锁销进行锁定，在外翼尾端上下分别安装两个锁定销，在内翼对应位置设计两个锥销孔，当外翼回转将近到位时，锥销沿内翼滑到斜面进行压缩，当外翼完全展开到位后，锥销在弹簧作用下进行释放，与锥孔紧密配合，完成锁定动作，销轴中嵌入驱动器可实现重复锁解。</p><p>（2）折叠锁定机构由机架、锁销、止推销、摆杆、锁销弹簧和止推弹簧组成，如图2所示，1锁销，2机架，3摆杆，4止推销，5锁销弹簧，6止推销弹簧，7左铰链，8右铰链，其工作原理：安装构件的机架与内翼为一体加工，折叠翼未展开时，两个弹簧均提供预紧压力，使锁定机构保持静止状态。在外翼展开到位并与内翼发生碰撞前，外翼碰撞面上的触发螺钉将与右侧止推销接触，在摆杆的带动下，左侧止推销解除对锁销的约束，锁销在锁销弹簧作用下向外运动，插入铰链上的销孔内，并保持压紧状态。紧接着内外翼面发生碰撞，外翼在定位面和锁销的共同作用下紧急制动，完成锁定。为保证锁定的可靠性，锁定机构沿翼面弦向设置三组，其中两组分布在左侧铰链的两侧，另一组分布在右侧铰链的一侧。</p><p>2.花键锁定方案</p><p>折叠机构在展开钱，采用花键锁销嵌入转轴实现初始锁定，花键锁销外花键一端与丝母配合，另一端与花键导轨配合。初始状态安装座与内翼固连，花键锁销只能顺着安装座进行直线运动，无法进行转动，丝母也无法转动，机构实现初始自锁，当机构进行作动，驱动器推动推杆运动，另一端与花键锁定销接触，推动花键锁定销完成解锁操作，解锁后驱动器继续运动，推动推杆及丝杆同步运动，丝母开始旋转，外翼完成展开运动。</p><p>该方案到位锁定依然采用锁销锁定方案，在内翼上装有锁销安装座，通过弹簧压紧锁定销使之保持由内翼突出状态，在外翼上相应位置加工有与锁定销配合的锁定孔，当外翼即将展开到位时，外翼上的斜面压缩锁定销在锁销安装座孔内向后运动，此时弹簧被压缩；当外翼完全展开时，锁定销刚好与锁定孔位置对应，此时锁定销在弹簧推力作用下插入锁定孔内，实现对外翼的锁定。锁定销采用锥销设计，可保证锁定销与锁定孔在弹簧压力下可靠锁定。</p><p>3.钢球锁定方案</p><p>钢球锁定方案其原理图如图4所示，其中1为锁槽，2为钢球，3为滑块，4为弹簧，5为导向环，6为限位螺母，7为锁套筒，8为内套筒，其结构特点在于，内套筒端部加工有外螺纹，限位螺母内圈加工有内螺纹，内套筒与限位螺母通过螺纹配合，用于限制内套筒相对于锁套筒的轴向移动，该方案锁定原理是：驱动器驱动内套筒向右移动，推动钢球锁与次级套筒伸出，当运动到锁定位置时，弹簧推动滑块向右运动，外套筒中的钢球在滑块的推动下划入凹槽中，直至滑块运动到限位螺母位置停止运动，并将钢球顶紧，使钢球完成与锁槽贴合，完成钢球锁的锁紧。</p><p>4.指型解锁方案</p><p>本方案依靠指型分离夹头来实现解锁与上锁，如图4所示，一般安装于活塞杆上，通过抓紧活塞和外筒锁紧，实现锁定功能，分离夹头构造比较轻巧，但是可以承受很大的载荷，工作原理：驱动器带动指型锁向右移动，经过带有凸台的基座时，夹头被挤压从而径向张开，继续向前并顶到机构的展开位置，此时接头恰好越过凸台，后方止动环同时向左移动到指型锁的夹头，此时，夹头无法张开，外层机构被锁紧；当机构接触锁定状态时，止动环向左移动，离开夹头部，夹头重新径向张开，向左移动越过凸台，整个机构完成解锁实现回复运动，该方案可以承受较大载荷，可靠性较高。</p><p>5.电磁锁解方案</p><p>电磁锁主要由壳体、电磁线圈、动静衔铁、转轴、锁销、制动弹簧、推力弹簧构成，电磁锁的主要部分为通过弹簧复位的插入式电磁铁结构，其中动静衔铁均采用软磁材料电工纯铁。该方案可以实现转轴自动锁定和解锁功能，初始状态时，线圈通电产生电磁能，此时电磁铁产生的电磁力压缩制动弹簧，动衔铁带动锁销运动，电磁力同时克服推力弹簧和制动弹簧的预压力运动，直到脱离转轴凸台，电磁铁的气隙消除，此时制动插销运动的距离与气隙相同，转轴自由旋转，电磁锁处于解锁状态；当线圈断电时电磁力消失，动衔铁在制动弹簧的作用下反向运动，锁销在制动弹簧力的作用下反向运动，直到插入转轴凸台外部的空隙，因各个制动插销独立存在，任意时刻最少有一个制动插销插入电动轴的空隙，转轴顶部表面旋转过程中与制动插销接触，转轴碰到锁销后停止转动，此时电磁铁处于锁定状态。</p><p>6.周边桁架可逆锁定方案</p><p>周边桁架是由很多个四边形构成, 利用四边的四边不稳定性来展开, 在四边形中间加入一个斜杆, 如图所示, 通过此斜杆来控制四边形的展开与收缩。斜杆由粗细两杆组成, 细杆可以插入粗杆中, 通过穿过斜杆的钢丝绳来实现收缩与释放。自锁铰链为T型, 分别与两横杆和竖杆相连。自锁铰链的工作原理:钢丝绳穿过斜杆的斜杆接头, 通过主过线轮到相邻的斜杆。可动摆臂调整斜杆与竖杆的位置关系。横杆通过自锁接头与自锁铰链相连, 当展开到位, 即横杆与竖杆垂直, 锁定装置起作用, 锁销在弹簧的所用下插入横杆, 起到锁定的所用, 该方案采用被动锁定方式，展开通过作动过程中破坏力平衡来实现释放，到位之后锁紧，释放破坏力平衡后实现解锁。</p><p>7.凸轮-弹簧销轴锁解方案</p><p>弹簧销轴式重复锁定与释放功能机构的原理是在减速器的输出轴上安装一个封闭凸轮, 锁定销轴作为凸轮机构的从动件, 通过设计满足要求的凸轮廓线来实现锁定与释放动作。电机驱动封闭凸轮转动, 完成推程运动, 锁定销轴被顶至最大位移处远休止位置, 实现锁定;需要释放机构时, 电机驱动封闭凸轮转动, 完成回程运动, 锁定销轴回复到最小位移处近休止位置。同时,需在展开和收拢到位的位置加设到位开关, 以控制电机停转。若将封闭凸轮设计成双联凸轮, 通过锁定销轴则可实现两侧翼板的同时锁定与释放。弹簧销轴式重复锁定与释放功能机构的原理如图所示，这种结构适用于关节处的锁定与释放。</p><p>8.拉索重复锁解方案</p><p>针对绳驱折叠机构，综合1号和2号方案可以提出两类锁解方案：</p><p>（1）内能式弹性重复锁定与释放机构</p><p>拉索卷筒顺时针转动, 放开拉索, 弹性锁销进入锁定孔, 电机断电, 完成锁定动作, 被锁定机构处于工作状态;拉索卷筒逆时针转时, 卷起拉索, 将弹性销轴拉出锁定孔, 完成释放动作, 被锁定机构可进行折叠，该方案结构简单，锁定机构质量轻且刚度可调。</p><p>（2）花键式重复锁定与释放机构</p><p>拉索卷筒顺时针转动, 绳索沿滑轮组导路顺时针运动, 拉动花键依次进入花键槽内实现锁定, 被锁定体进入工作状态;若拉索卷筒逆时针转动, 绳索沿滑轮组导路逆时针运动, 拉动花键依次与花键槽依次脱离, 完全被释放后, 被锁定体可进行折叠。刚性顺序式重复锁定与释放功能机构的关键技术是如何保证花键按照次序依次进入花键槽或脱离花键槽，因此需要计算依次进入的时间差。</p><p>9.链轮驱动同步锁解方案</p><p>该方案驱动机构采用电机和谐波减速器驱动，当外翼展开到位后，弹簧销在弹簧的作用下沿母铰链的导轨进去公铰链进行锁定，控制并设计铰链孔可以使四个锁定销同时锁定。当电机反转，外翼压力下弹簧销退回母铰链中，铰链断开连接，自由度受到约束，完成回复运动，该方案中锁定销为弹性销，锁定时的冲击是柔性冲击，不会对折叠机构产生破坏。链轮驱动同步性较高，有效降低负载且速度较为平稳。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;锁定方案总结&quot;&gt;&lt;a href=&quot;#锁定方案总结&quot; class=&quot;headerlink&quot; title=&quot;锁定方案总结&quot;&gt;&lt;/a&gt;锁定方案总结&lt;/h1&gt;&lt;p&gt;删去具体方案图，方便查阅复制&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="locking" scheme="http://xiaomuhou.github.io/categories/locking/"/>
+    
+    
+    <category term="note" scheme="http://xiaomuhou.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>倍福PLC相关记录</title>
+    <link href="http://xiaomuhou.github.io/2025/05/16/%E5%80%8D%E7%A6%8FPLC%E7%9B%B8%E5%85%B3%E8%AE%B0%E5%BD%95/"/>
+    <id>http://xiaomuhou.github.io/2025/05/16/%E5%80%8D%E7%A6%8FPLC%E7%9B%B8%E5%85%B3%E8%AE%B0%E5%BD%95/</id>
+    <published>2025-05-16T14:51:34.000Z</published>
+    <updated>2025-07-16T15:34:18.346Z</updated>
+    
+    <content type="html"><![CDATA[<p><meta name="referrer" content="no-referrer"><br>关于Beckoff使用相关记录</p><p>六主轴电机-PLC底层-ADLINK驱动-QT界面</p><p> EtherCAT 主站控制 16轴伺服，PLC 控制上位逻辑 </p><p>总结几点注意事项，方便后续查阅学习</p><span id="more"></span><p>驱动模块：KL2531/2541、EL7031/7041</p><p>1.控制周期默认2ms，理论最小设置参数50微秒；</p><p>2.运动控制功能库：TcMC.Lib</p><p>3.配置电机流程</p><p>硬件扫描-配置电机(参见移动硬盘F具体文档)-设置参数后需要激活配置-调试点动</p><p>F5触发，F6停止，F8复位，F9原点</p><p>Scaling Factor=电机转一圈最终工件移动量 /编码器反馈脉冲数</p><h2 id="电机控制"><a href="#电机控制" class="headerlink" title="电机控制"></a>电机控制</h2><p>1新建-resource-library manager-additional library-加载，变量名都是Axis_ref</p><p>记录：</p><p>TwinCAT XAE Shell 中确认实时线程优先级设置为最高，并关闭多余 Windows 服务。 </p><p> 确认网卡型号支持，安装 Beckhoff 提供的驱动，启用“实时驱动支持”。 </p><p> 初始化所有重要变量；仅对需保留的变量使用 <code>RETAIN</code>，并设置电池/UPS保护断电状态。 </p><p> 适用于 ADLINK 的 DAQ/运动控制卡通信包，如 <strong>DAQPilot</strong>, <strong>MotionCreatorPro2</strong>, <strong>PCIe-8338 SDK</strong>, <strong>APS SDK</strong>, <strong>ACL</strong>, <strong>WISE-PaaS/EdgeLink SDK</strong> </p><p>变量名对应，参照火星源码，徐工帮忙写的模板，也在F移动盘。</p><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">QModbusTcpClient *modbusDevice = <span class="keyword">new</span> <span class="built_in">QModbusTcpClient</span>(<span class="keyword">this</span>);</span><br><span class="line">modbusDevice-&gt;<span class="built_in">setConnectionParameter</span>(QModbusDevice::NetworkAddressParameter, <span class="string">"192.168.0.10"</span>);</span><br><span class="line">modbusDevice-&gt;<span class="built_in">setConnectionParameter</span>(QModbusDevice::NetworkPortParameter, <span class="number">502</span>);</span><br><span class="line">modbusDevice-&gt;<span class="built_in">connectDevice</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 读取寄存器</span></span><br><span class="line"><span class="function">QModbusDataUnit <span class="title">readUnit</span><span class="params">(QModbusDataUnit::HoldingRegisters, <span class="number">0</span>, <span class="number">2</span>)</span></span>;  <span class="comment">// 从地址0读取2个寄存器</span></span><br><span class="line"><span class="keyword">auto</span> *reply = modbusDevice-&gt;<span class="built_in">sendReadRequest</span>(readUnit, <span class="number">1</span>); <span class="comment">// 1 = 从站ID</span></span><br></pre></td></tr></tbody></table></figure><p>几个头文件注意（后续补充一下）：</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;br&gt;关于Beckoff使用相关记录&lt;/p&gt;
+&lt;p&gt;六主轴电机-PLC底层-ADLINK驱动-QT界面&lt;/p&gt;
+&lt;p&gt; EtherCAT 主站控制 16轴伺服，PLC 控制上位逻辑 &lt;/p&gt;
+&lt;p&gt;总结几点注意事项，方便后续查阅学习&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="learning" scheme="http://xiaomuhou.github.io/categories/learning/"/>
+    
+    
+    <category term="note" scheme="http://xiaomuhou.github.io/tags/note/"/>
+    
+  </entry>
   
   <entry>
     <title>Motive使用技巧记录</title>
@@ -420,52 +466,6 @@
     
     
     <category term="note" scheme="http://xiaomuhou.github.io/tags/note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Q</title>
-    <link href="http://xiaomuhou.github.io/2024/02/26/Q/Q/"/>
-    <id>http://xiaomuhou.github.io/2024/02/26/Q/Q/</id>
-    <published>2024-02-26T15:11:26.000Z</published>
-    <updated>2024-02-26T15:22:24.012Z</updated>
-    
-    <content type="html"><![CDATA[<p><meta name="referrer" content="no-referrer"></p><h1 id="琥珀川与荻野千寻"><a href="#琥珀川与荻野千寻" class="headerlink" title="琥珀川与荻野千寻"></a>琥珀川与荻野千寻</h1><p>不乱于心，不困于情，不畏将来，不念过往。</p><span id="more"></span><p>看完之后脑子里立刻跳出来这句话。</p><p>又看了一遍台配版的千与千寻，童年的记忆来源于此版，有些东西确实只是忘记，而不会消失，偶然间看到一些痕迹，就会瞬间回忆，不过别回头就好，不念过往。</p><p>总是希望所有的一切事情按照自己的计划进行，面对未知的事情常常心怀恐惧而不愿意前进，权衡利弊之后，重要的事情可以克服，在一些小事上却常常让步，谓之不在意，其实不然，内心是在畏惧狭义上的未来，千寻初入汤屋有点这个感觉，但是随着故事的发展，千寻是做到不畏将来了，不论是给河神洗澡、给白龙和无脸怪吃河神的丸子，或者是爬梯子进入汤婆婆的房子，这些没有人给她指引，都是自己基于想法做出的选择，只要自己认为是对的，如果暂时判断不了，只要无愧于心，即使未来不可预测，脚踏实地的去做就很好，想必未来也不会后悔，不畏将来。</p><p>人生的环境总在不断变化，主动接受变化就是不畏将来，主动接受就不会恐惧，千寻开始的恐惧来源于被动，被动常常引起焦虑，负面情绪随之增长，以前很喜欢袁朗说的一句话：“不太焦虑，耐得住寂寞，有很多人天天都在焦虑，怕没得到，怕寂寞，我喜欢不焦虑的人”，千寻后来是不焦虑的，慢慢的去做事本身也是一种快乐的过程。</p><p>“容是别人，欲是自己”，去做一切自己想做的事情，少去思考虚无的无数可能性，不可预料的东西常常是惊喜，也是缘分。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;琥珀川与荻野千寻&quot;&gt;&lt;a href=&quot;#琥珀川与荻野千寻&quot; class=&quot;headerlink&quot; title=&quot;琥珀川与荻野千寻&quot;&gt;&lt;/a&gt;琥珀川与荻野千寻&lt;/h1&gt;&lt;p&gt;不乱于心，不困于情，不畏将来，不念过往。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="feeling" scheme="http://xiaomuhou.github.io/categories/feeling/"/>
-    
-    
-    <category term="movie" scheme="http://xiaomuhou.github.io/tags/movie/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>start2024</title>
-    <link href="http://xiaomuhou.github.io/2024/02/19/start2024/start2024/"/>
-    <id>http://xiaomuhou.github.io/2024/02/19/start2024/start2024/</id>
-    <published>2024-02-19T12:07:04.000Z</published>
-    <updated>2024-02-19T13:15:35.649Z</updated>
-    
-    <content type="html"><![CDATA[<p><meta name="referrer" content="no-referrer"></p><h1 id="又是一年春"><a href="#又是一年春" class="headerlink" title="又是一年春"></a>又是一年春</h1><p>距离上次笔记已有一年，没有做到经常写笔记，今年要改正，今天的目的是写一下总结以及对自己的要求，以及年后的一些规划，</p><p>几个指令备注一下：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n <span class="string">"学习笔记  六"</span></span><br><span class="line">hexo d</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br></pre></td></tr></tbody></table></figure><span id="more"></span><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>过去的一年其实还不错，论文项目都有进度，但是后期又有点偷懒了，开年需要向后拓展，这部分已经总结过，简单略过。</p><h2 id="预计要求"><a href="#预计要求" class="headerlink" title="预计要求"></a>预计要求</h2><p>过去的一段时间和很多人交流过，也一个人旅游过，发现自己还是有很多问题，认识自己，改正自己。</p><p>1.新的一年依然要强迫自己去做应该做的事情，见贤思齐，多多反省，心里逃避，但是还是要前进，太内向了确实不太好，应该多尝试主动与他人沟通，认识下总归没坏处。</p><p>2.新的一年接地气一点，不要太理性主义了，多多肯定别人的观点，别人的分享也要主动去看看，不要表现的不感兴趣，不要否定别人，少提意见，没有什么很俗的东西，生活就是这样，开心点，合群点。</p><p>3.与师长们相处，还是往常的态度就好，谦虚但是也要有自己的主见，这个去年大体上没有做错的地方。</p><p>4.生活上，过去的一年相对规律，新的一年依旧保持，但是之后的一段时间要去上一些强度。</p><h2 id="年后规划"><a href="#年后规划" class="headerlink" title="年后规划"></a>年后规划</h2><p>1.学业部分不用讲，按照规律坚持就行</p><p>2.拓展一下爱好，旅游拍摄和像素画，要过得开心一点</p><h2 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a>自我评价</h2><p>内心依然有一些炫耀欲，与人相处很害怕别人把希望寄托在我身上，不想承担额外的责任。。。</p><p>沧浪之水，脚踏实地一点，多多与人沟通，人还是要接地气一点，虚荣驱动理想天天飘着，实际一点，开心一点。</p><h2 id="补充一些博客修复内容："><a href="#补充一些博客修复内容：" class="headerlink" title="补充一些博客修复内容："></a>补充一些博客修复内容：</h2><p>Permission denied (publickey) 没有权限的publickey ，出现这错误一般是以下两种原因</p><p>客户端与服务端未生成 ssh key<br>客户端与服务端的ssh key不匹配<br>找到问题的原因了，解决办法也就有了，重新生成一次ssh key ，服务端也重新配置一次即可。</p><p>ssh-keygen -t rsa -C “xx@qq.com”</p><p>然后再终端下执行命令：</p><figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -v git<span class="meta">@github</span>.<span class="property">com</span></span><br></pre></td></tr></tbody></table></figure><p>最后两句会出现</p><figure class="highlight erlang"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　No more authentication methods to <span class="keyword">try</span>.  　　Permission denied (publickey).</span><br></pre></td></tr></tbody></table></figure><p>在终端再执行以下命令</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent -s </span><br></pre></td></tr></tbody></table></figure><p>接着在执行</p><figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-add ~<span class="regexp">/.ssh/i</span>d_rsa</span><br></pre></td></tr></tbody></table></figure><p>$ ssh-add ~/.ssh/id_rsa<br>出现Could not open a connection to your authentication agent.<br>这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa_name这个命令就没问题了。<br>根据路径查看文件内部的命令： Identity added: …这是ssh key文件路径的信息 </p><p> 打开你刚刚生成的id_rsa.pub，将里面的内容复制，进入你的<a href="https://so.csdn.net/so/search?q=github&amp;spm=1001.2101.3001.7020">github</a>账号，在settings下，SSH and GPG keys下new SSH key，然后将id_rsa.pub里的内容复制到Key中，完成后Add SSH Key。 设置完成后</p><h4 id="验证Key"><a href="#验证Key" class="headerlink" title="验证Key"></a>验证Key</h4><figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git<span class="meta">@github</span>.<span class="property">com</span> </span><br></pre></td></tr></tbody></table></figure><p> 提示：Hi xxx! You’ve successfully authenticated, but GitHub does not provide shell access </p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;又是一年春&quot;&gt;&lt;a href=&quot;#又是一年春&quot; class=&quot;headerlink&quot; title=&quot;又是一年春&quot;&gt;&lt;/a&gt;又是一年春&lt;/h1&gt;&lt;p&gt;距离上次笔记已有一年，没有做到经常写笔记，今年要改正，今天的目的是写一下总结以及对自己的要求，以及年后的一些规划，&lt;/p&gt;
-&lt;p&gt;几个指令备注一下：&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo n &lt;span class=&quot;string&quot;&gt;&quot;学习笔记  六&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo d&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="note" scheme="http://xiaomuhou.github.io/categories/note/"/>
-    
-    
-    <category term="emotion" scheme="http://xiaomuhou.github.io/tags/emotion/"/>
     
   </entry>
   
