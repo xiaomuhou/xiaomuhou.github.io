@@ -6,7 +6,7 @@
   <link href="http://xiaomuhou.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiaomuhou.github.io/"/>
-  <updated>2025-07-16T14:58:57.579Z</updated>
+  <updated>2025-07-16T15:38:37.222Z</updated>
   <id>http://xiaomuhou.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>倍福PLC相关记录</title>
+    <link href="http://xiaomuhou.github.io/2025/06/12/%E5%80%8D%E7%A6%8FPLC%E7%9B%B8%E5%85%B3%E8%AE%B0%E5%BD%95/"/>
+    <id>http://xiaomuhou.github.io/2025/06/12/%E5%80%8D%E7%A6%8FPLC%E7%9B%B8%E5%85%B3%E8%AE%B0%E5%BD%95/</id>
+    <published>2025-06-12T14:51:34.000Z</published>
+    <updated>2025-07-16T15:38:37.222Z</updated>
+    
+    <content type="html"><![CDATA[<p><meta name="referrer" content="no-referrer"><br>关于Beckoff使用相关记录</p><p>六主轴电机-PLC底层-ADLINK驱动-QT界面</p><p> EtherCAT 主站控制 16轴伺服，PLC 控制上位逻辑 </p><p>总结几点注意事项，方便后续查阅学习</p><span id="more"></span><p>驱动模块：KL2531/2541、EL7031/7041</p><p>1.控制周期默认2ms，理论最小设置参数50微秒；</p><p>2.运动控制功能库：TcMC.Lib</p><p>3.配置电机流程</p><p>硬件扫描-配置电机(参见移动硬盘F具体文档)-设置参数后需要激活配置-调试点动</p><p>F5触发，F6停止，F8复位，F9原点</p><p>Scaling Factor=电机转一圈最终工件移动量 /编码器反馈脉冲数</p><h2 id="电机控制"><a href="#电机控制" class="headerlink" title="电机控制"></a>电机控制</h2><p>1新建-resource-library manager-additional library-加载，变量名都是Axis_ref</p><p>记录：</p><p>TwinCAT XAE Shell 中确认实时线程优先级设置为最高，并关闭多余 Windows 服务。 </p><p> 确认网卡型号支持，安装 Beckhoff 提供的驱动，启用“实时驱动支持”。 </p><p> 初始化所有重要变量；仅对需保留的变量使用 <code>RETAIN</code>，并设置电池/UPS保护断电状态。 </p><p> 适用于 ADLINK 的 DAQ/运动控制卡通信包，如 <strong>DAQPilot</strong>, <strong>MotionCreatorPro2</strong>, <strong>PCIe-8338 SDK</strong>, <strong>APS SDK</strong>, <strong>ACL</strong>, <strong>WISE-PaaS/EdgeLink SDK</strong> </p><p>变量名对应，参照火星源码，徐工帮忙写的模板，也在F移动盘。</p><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">QModbusTcpClient *modbusDevice = <span class="keyword">new</span> <span class="built_in">QModbusTcpClient</span>(<span class="keyword">this</span>);</span><br><span class="line">modbusDevice-&gt;<span class="built_in">setConnectionParameter</span>(QModbusDevice::NetworkAddressParameter, <span class="string">"192.168.0.10"</span>);</span><br><span class="line">modbusDevice-&gt;<span class="built_in">setConnectionParameter</span>(QModbusDevice::NetworkPortParameter, <span class="number">502</span>);</span><br><span class="line">modbusDevice-&gt;<span class="built_in">connectDevice</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 读取寄存器</span></span><br><span class="line"><span class="function">QModbusDataUnit <span class="title">readUnit</span><span class="params">(QModbusDataUnit::HoldingRegisters, <span class="number">0</span>, <span class="number">2</span>)</span></span>;  <span class="comment">// 从地址0读取2个寄存器</span></span><br><span class="line"><span class="keyword">auto</span> *reply = modbusDevice-&gt;<span class="built_in">sendReadRequest</span>(readUnit, <span class="number">1</span>); <span class="comment">// 1 = 从站ID</span></span><br></pre></td></tr></tbody></table></figure><p>几个头文件注意（后续补充一下）：</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;br&gt;关于Beckoff使用相关记录&lt;/p&gt;
+&lt;p&gt;六主轴电机-PLC底层-ADLINK驱动-QT界面&lt;/p&gt;
+&lt;p&gt; EtherCAT 主站控制 16轴伺服，PLC 控制上位逻辑 &lt;/p&gt;
+&lt;p&gt;总结几点注意事项，方便后续查阅学习&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="learning" scheme="http://xiaomuhou.github.io/categories/learning/"/>
+    
+    
+    <category term="note" scheme="http://xiaomuhou.github.io/tags/note/"/>
+    
+  </entry>
   
   <entry>
     <title>“锁定工程相关_方案图隐去”</title>
@@ -32,30 +56,6 @@
     
     
     <category term="locking" scheme="http://xiaomuhou.github.io/categories/locking/"/>
-    
-    
-    <category term="note" scheme="http://xiaomuhou.github.io/tags/note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>倍福PLC相关记录</title>
-    <link href="http://xiaomuhou.github.io/2025/05/16/%E5%80%8D%E7%A6%8FPLC%E7%9B%B8%E5%85%B3%E8%AE%B0%E5%BD%95/"/>
-    <id>http://xiaomuhou.github.io/2025/05/16/%E5%80%8D%E7%A6%8FPLC%E7%9B%B8%E5%85%B3%E8%AE%B0%E5%BD%95/</id>
-    <published>2025-05-16T14:51:34.000Z</published>
-    <updated>2025-07-16T15:34:18.346Z</updated>
-    
-    <content type="html"><![CDATA[<p><meta name="referrer" content="no-referrer"><br>关于Beckoff使用相关记录</p><p>六主轴电机-PLC底层-ADLINK驱动-QT界面</p><p> EtherCAT 主站控制 16轴伺服，PLC 控制上位逻辑 </p><p>总结几点注意事项，方便后续查阅学习</p><span id="more"></span><p>驱动模块：KL2531/2541、EL7031/7041</p><p>1.控制周期默认2ms，理论最小设置参数50微秒；</p><p>2.运动控制功能库：TcMC.Lib</p><p>3.配置电机流程</p><p>硬件扫描-配置电机(参见移动硬盘F具体文档)-设置参数后需要激活配置-调试点动</p><p>F5触发，F6停止，F8复位，F9原点</p><p>Scaling Factor=电机转一圈最终工件移动量 /编码器反馈脉冲数</p><h2 id="电机控制"><a href="#电机控制" class="headerlink" title="电机控制"></a>电机控制</h2><p>1新建-resource-library manager-additional library-加载，变量名都是Axis_ref</p><p>记录：</p><p>TwinCAT XAE Shell 中确认实时线程优先级设置为最高，并关闭多余 Windows 服务。 </p><p> 确认网卡型号支持，安装 Beckhoff 提供的驱动，启用“实时驱动支持”。 </p><p> 初始化所有重要变量；仅对需保留的变量使用 <code>RETAIN</code>，并设置电池/UPS保护断电状态。 </p><p> 适用于 ADLINK 的 DAQ/运动控制卡通信包，如 <strong>DAQPilot</strong>, <strong>MotionCreatorPro2</strong>, <strong>PCIe-8338 SDK</strong>, <strong>APS SDK</strong>, <strong>ACL</strong>, <strong>WISE-PaaS/EdgeLink SDK</strong> </p><p>变量名对应，参照火星源码，徐工帮忙写的模板，也在F移动盘。</p><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">QModbusTcpClient *modbusDevice = <span class="keyword">new</span> <span class="built_in">QModbusTcpClient</span>(<span class="keyword">this</span>);</span><br><span class="line">modbusDevice-&gt;<span class="built_in">setConnectionParameter</span>(QModbusDevice::NetworkAddressParameter, <span class="string">"192.168.0.10"</span>);</span><br><span class="line">modbusDevice-&gt;<span class="built_in">setConnectionParameter</span>(QModbusDevice::NetworkPortParameter, <span class="number">502</span>);</span><br><span class="line">modbusDevice-&gt;<span class="built_in">connectDevice</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 读取寄存器</span></span><br><span class="line"><span class="function">QModbusDataUnit <span class="title">readUnit</span><span class="params">(QModbusDataUnit::HoldingRegisters, <span class="number">0</span>, <span class="number">2</span>)</span></span>;  <span class="comment">// 从地址0读取2个寄存器</span></span><br><span class="line"><span class="keyword">auto</span> *reply = modbusDevice-&gt;<span class="built_in">sendReadRequest</span>(readUnit, <span class="number">1</span>); <span class="comment">// 1 = 从站ID</span></span><br></pre></td></tr></tbody></table></figure><p>几个头文件注意（后续补充一下）：</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;br&gt;关于Beckoff使用相关记录&lt;/p&gt;
-&lt;p&gt;六主轴电机-PLC底层-ADLINK驱动-QT界面&lt;/p&gt;
-&lt;p&gt; EtherCAT 主站控制 16轴伺服，PLC 控制上位逻辑 &lt;/p&gt;
-&lt;p&gt;总结几点注意事项，方便后续查阅学习&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="learning" scheme="http://xiaomuhou.github.io/categories/learning/"/>
     
     
     <category term="note" scheme="http://xiaomuhou.github.io/tags/note/"/>
