@@ -6,7 +6,7 @@
   <link href="http://xiaomuhou.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiaomuhou.github.io/"/>
-  <updated>2025-07-16T15:38:37.222Z</updated>
+  <updated>2025-08-17T15:08:49.246Z</updated>
   <id>http://xiaomuhou.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一些记录</title>
+    <link href="http://xiaomuhou.github.io/2025/08/17/%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/"/>
+    <id>http://xiaomuhou.github.io/2025/08/17/%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/</id>
+    <published>2025-08-17T12:34:26.000Z</published>
+    <updated>2025-08-17T15:08:49.246Z</updated>
+    
+    <content type="html"><![CDATA[<p><meta name="referrer" content="no-referrer"></p><h1 id="8月随笔"><a href="#8月随笔" class="headerlink" title="8月随笔"></a>8月随笔</h1><p>记录一些想法以及最近的生活， 目的反思并且加速落实后面的一些计划</p><span id="more"></span><p>7.8月乱七八糟得事情做了好多，然后有些进度也耽误下来了，今天是8.17日，8月底应当完成一个阶段，到年底还有3个月，虽然眼下做的东西还是不够明确，认真一点点推进吧，别摸鱼了。</p><p>工作暂时先这样吧，再找就是要求比较高的那个所了，现在这个其实也还行，就是还需要去问问同学那个科室问题。</p><p>关键任务得坚持下去，朋友讲得对，坚持硬抗下去，总能完工。</p><p>明天8.18开始要认真干活了。</p><p>关于自己，自律一点吧。</p><hr><p>未来我要做什么人呢，想安逸一点，但是也想再拼一拼，先做好眼下的事情吧。</p><p>踏实一点，踏实一点，一点点来。</p><hr><p>关于自己要注意的问题：</p><ul><li>不要逃避社交活动</li><li>要对身边的人有耐心，特别是关心自己的人</li><li>不要刻意特立独行</li><li>要记得自己的初心</li><li>做人做事要有格局，别生气，别生气</li><li>不要假装努力，假不假自己知道</li><li>要对自己保持自信</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;8月随笔&quot;&gt;&lt;a href=&quot;#8月随笔&quot; class=&quot;headerlink&quot; title=&quot;8月随笔&quot;&gt;&lt;/a&gt;8月随笔&lt;/h1&gt;&lt;p&gt;记录一些想法以及最近的生活， 目的反思并且加速落实后面的一些计划&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="life" scheme="http://xiaomuhou.github.io/categories/life/"/>
+    
+    
+    <category term="note" scheme="http://xiaomuhou.github.io/tags/note/"/>
+    
+  </entry>
   
   <entry>
     <title>倍福PLC相关记录</title>
@@ -437,35 +459,6 @@
     
     
     <category term="emo" scheme="http://xiaomuhou.github.io/tags/emo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>QT开发</title>
-    <link href="http://xiaomuhou.github.io/2024/03/03/QT%E5%BC%80%E5%8F%91/QT%E5%BC%80%E5%8F%91/"/>
-    <id>http://xiaomuhou.github.io/2024/03/03/QT%E5%BC%80%E5%8F%91/QT%E5%BC%80%E5%8F%91/</id>
-    <published>2024-03-03T14:16:57.000Z</published>
-    <updated>2024-03-03T14:21:28.568Z</updated>
-    
-    <content type="html"><![CDATA[<p><meta name="referrer" content="no-referrer"></p><h1 id="QT5开发总结"><a href="#QT5开发总结" class="headerlink" title="QT5开发总结"></a>QT5开发总结</h1><p>空间XX优化开发界面-2024.2.5完成提交版</p><h2 id="功能需求"><a href="#功能需求" class="headerlink" title="功能需求:"></a>功能需求:</h2><ul><li>基于控制逻辑界面跳转</li><li>调用底层计算代码并优化</li><li>几个虚拟加载进度条</li><li>多阶输入读取及判断方式</li></ul><p>总体：上位机需求功能比较简单，调用代码由于老师提供的底层的优化算法本身存在运行问题，导致一部分协调存在bug，因此整体功能存在问题，基本数据控制功能开发完成，已提交，暂时结束。</p><span id="more"></span><p>1.跳转算法：</p><p>基于py的开发逻辑与C++一致，常见的几种，这里我使用的是按键检测，几个功能就写几个子界面，比较笨，但是容易理解，示例代码如下：</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> Ui_ST1_1 <span class="keyword">import</span> Ui_Form1_1</span><br><span class="line">self.pushButton.clicked.connect(self.popWindow) <span class="comment">#调用</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">popWindow</span>(<span class="params">self</span>):<span class="comment">#定义</span></span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        self.uiZ= Ui_Form1_1() <span class="comment">#逻辑界面</span></span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></tbody></table></figure><p>2.底层代码调用：</p><p>abaqus子程序存在bug，这部分暂缺，后续如需要继续开发，代码修正后补充。</p><p>商业软件调用，写了一种基于subprocess调用外部EXE程序的方式，同样通过定义函数实现，注意一些小问题</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line">self.pushButton_3.clicked.connect(self.<span class="built_in">open</span>)<span class="comment">#steupUI</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">open</span>(<span class="params">self</span>):</span><br><span class="line">        subprocess.Popen(<span class="string">r"E:\Program Files\Inkscape\bin\inkscape.exe"</span>)<span class="comment">#这里注意一下python中的路径转义字符，要不就使用正斜杆，否则如上。</span></span><br><span class="line"><span class="comment">#补充一个启动文件</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.openFile)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">openFile</span>(<span class="params">self</span>):</span><br><span class="line">        directory1 = QFileDialog.getExistingDirectory(<span class="literal">None</span>, <span class="string">"启动程序"</span>,<span class="string">"./"</span>)</span><br><span class="line">        <span class="built_in">print</span>(directory1)</span><br></pre></td></tr></tbody></table></figure><p>3.假装加载2333以及读取数据</p><p>读取doublespinbox与progressbar协调，延时用法以及其余读取代码句式参照那本书，边查边记。</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">valu = <span class="number">1</span><span class="comment">#定义初值</span></span><br><span class="line">self.pushButton_2.clicked.connect(self.va)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">va</span>(<span class="params">self</span>):<span class="comment">#点击执行只是循环一个功能，记住以后不要一个按钮对应多个按键，功能全部放在一起，执行顺序会有变化</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>):</span><br><span class="line">            time.sleep(<span class="number">0.09</span>)</span><br><span class="line">            self.progressBar.setProperty(<span class="string">"value"</span>, i)</span><br><span class="line">        valu=self.doubleSpinBox_4.value()<span class="comment">#读取数据句式</span></span><br><span class="line">        <span class="built_in">print</span>(valu)</span><br><span class="line">        self.formZ=QtWidgets.QWidget()</span><br><span class="line">        <span class="keyword">if</span> valu==<span class="number">1</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_3()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.uiZ= Ui_Form2_31()</span><br><span class="line">        self.uiZ.setupUi(self.formZ)</span><br><span class="line">        self.progressBar.setProperty(<span class="string">"value"</span>, <span class="number">100</span>)</span><br><span class="line">        self.formZ.show()</span><br></pre></td></tr></tbody></table></figure><p>4.图片读取流程，再次记录一下：</p><p>QTcreator中构建资源库，在转成代码后进行转换运行，图片加载均通过UI端完成。</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pyrcc5 apprcc.qrc -o apprcc_re.py<span class="comment">#转换</span></span><br><span class="line">pyinstaller -F -W XX.py<span class="comment">#启动文件，其余控项可以看书</span></span><br></pre></td></tr></tbody></table></figure><h2 id="后续总结："><a href="#后续总结：" class="headerlink" title="后续总结："></a>后续总结：</h2><p>希望早点把我的”雇佣兵”工资结了QAQ。</p><p>那本书多看看，后续完成底层代码的协调，以及一个上位机的编写，李工那边的火星车上位机，有空的话帮他了结一下。</p><p>学学特效，多看看语法书，慢慢牢固基础~</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;QT5开发总结&quot;&gt;&lt;a href=&quot;#QT5开发总结&quot; class=&quot;headerlink&quot; title=&quot;QT5开发总结&quot;&gt;&lt;/a&gt;QT5开发总结&lt;/h1&gt;&lt;p&gt;空间XX优化开发界面-2024.2.5完成提交版&lt;/p&gt;
-&lt;h2 id=&quot;功能需求&quot;&gt;&lt;a href=&quot;#功能需求&quot; class=&quot;headerlink&quot; title=&quot;功能需求:&quot;&gt;&lt;/a&gt;功能需求:&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;基于控制逻辑界面跳转&lt;/li&gt;
-&lt;li&gt;调用底层计算代码并优化&lt;/li&gt;
-&lt;li&gt;几个虚拟加载进度条&lt;/li&gt;
-&lt;li&gt;多阶输入读取及判断方式&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;总体：上位机需求功能比较简单，调用代码由于老师提供的底层的优化算法本身存在运行问题，导致一部分协调存在bug，因此整体功能存在问题，基本数据控制功能开发完成，已提交，暂时结束。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="note" scheme="http://xiaomuhou.github.io/categories/note/"/>
-    
-    
-    <category term="note" scheme="http://xiaomuhou.github.io/tags/note/"/>
     
   </entry>
   
