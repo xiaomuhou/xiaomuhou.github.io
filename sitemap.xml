@@ -594,13 +594,6 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/tags/%E6%9F%94%E6%80%A7%E9%93%B0%E9%93%BE/</loc>
-    <lastmod>2025-11-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://xiaomuhou.github.io/tags/emotion/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -609,6 +602,13 @@
   
   <url>
     <loc>http://xiaomuhou.github.io/tags/life/</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xiaomuhou.github.io/tags/%E6%9F%94%E6%80%A7%E9%93%B0%E9%93%BE/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -629,6 +629,13 @@
   </url>
   
   <url>
+    <loc>http://xiaomuhou.github.io/tags/plan/</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://xiaomuhou.github.io/tags/bor/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -637,13 +644,6 @@
   
   <url>
     <loc>http://xiaomuhou.github.io/tags/movie/</loc>
-    <lastmod>2025-11-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://xiaomuhou.github.io/tags/plan/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -678,14 +678,14 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/tags/formula/</loc>
+    <loc>http://xiaomuhou.github.io/tags/airfact/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/tags/airfact/</loc>
+    <loc>http://xiaomuhou.github.io/tags/formula/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -799,13 +799,6 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/categories/linux/</loc>
-    <lastmod>2025-11-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://xiaomuhou.github.io/categories/logic/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -814,6 +807,13 @@
   
   <url>
     <loc>http://xiaomuhou.github.io/categories/GPT/</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xiaomuhou.github.io/categories/linux/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
