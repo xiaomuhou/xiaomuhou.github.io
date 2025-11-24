@@ -87,34 +87,6 @@
       </tags>
   </entry>
   <entry>
-    <title>中期-生活-随想</title>
-    <url>/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/</url>
-    <content><![CDATA[<h1 id="中期结束之后的随笔"><a href="#中期结束之后的随笔" class="headerlink" title="中期结束之后的随笔"></a>中期结束之后的随笔</h1><p>有些感慨，突如其来的迷茫，若有若无的思绪</p>
-<p>浅浅记录，来日可追~</p>
-<span id="more"></span>
-<p>​    低效的生活总是带给人迷惘，原本希望规律的习惯可以塑造思维，长时间下来虽有些许效果，但是仍在边边角角，主题推进慢慢悠悠，思考下来还是自己遇到困难下意识逃避，不够专注，然后思维涣散，开始摸鱼，仔细想来，浪费的时间有4个月，扣除掉放假瞎溜达，也有3个月，不奢望每天都可以高效推进，但总归没有多余的时间再如此休闲了，该做的事情也应该认真的去做了,在此记录一下，略作督促。</p>
-<h2 id="学业"><a href="#学业" class="headerlink" title="学业"></a>学业</h2><p>中期结束之后，感觉确实进度慢，主要是两个部分：</p>
-<p>规划的动力学其实存在一些问题，早先有些想当然，当初刘老师的说的缝隙问题到今天才理解了是什么意思，有点喜剧了，看来不可以按照分段耦合的方法去做，这条路是走不通的，跟两位师兄的沟通其实也验证了这一点，但是貌似也不是完全走不下去，直接用点去链接被动变形的连续体，我做的这个东西特色还是非常明显的，走这条路的问题就是不能考虑柔性结构的反作用力，直接去建造刚体动力学模型，真正的把驱动视为干扰，不去考虑建模问题，动力学目的变成优化问题，与四面体相比优势在于维度，两侧各自出现两条连续的控制点，本质上也是封闭的曲面控制，能够提供更多的点位控制，本身也是一种方案，只是严谨的理论模型就不能去做了，里面是个大坑，容易陷进去，绕一下，这个问题目前还不需要解决，慢慢思考吧。</p>
-<p>模型的优化问题，这个是当下急需解决与思考的一个问题，主要是球副那个部分的实际轴线问题，以及相交面位置旋转模型的细化，球借鉴一下赵师兄的球副，其余需要尽快拿出细节方案，然后adams之类的仿真需要开始，这部分近期要开始思考落实，目标是完成一套二代模型—应该是没问题的默认一个两驱动的八面体，既然李可以2P1R，那就说明两驱没问题，问题就在于细化了。</p>
-<p>小论文，就是需要尽快投，有三个问题，一是包装，分割顶点部分需要拔高一下，目前的有点low，二是模式转换，速率比不可以那样直接去说，是有问题的，这部分需要思考改进，其实后面放个精细版本的三维模型更好，所以得同步推进。分割包装、速率说明，大概需要一周的时间吧。</p>
-<p>软著，这个其实可以放放，抽空去写完成一下</p>
-<h2 id="习惯"><a href="#习惯" class="headerlink" title="习惯"></a>习惯</h2><p>要认真写，上午下午晚上不能无目的的摸鱼了，这个很重要，注重一下，求其上才能得其中</p>
-<p>安安静静的推进进度，务实一点。</p>
-<p>论文习惯、运动习惯、学习按照往常继续就好，多多游泳去了，现在是9月22日，11月底</p>
-<h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><p>本来就是个比较喜欢一个人呆着的人，现在这个状态也蛮好，前几天去当义工，感觉还蛮开心的，不带目的帮助陌生人体验还可以，就是自己有点质疑活动本身的意义，下次应该也不会再去了，下一步想做的事情是自驾游。</p>
-<p>自己做这些没啥意义的事，本质还是为了让自己可以开心一点，散散心，没啥高尚的想法。</p>
-<p>最近觉得自己做的很好的一件事情就是已经能够做到下意识的去换位思考了，不去把自己的想法强加给别人，吃饭是这样，为人做事也是这样，更成熟了一点，做一个控制欲望为0的人，大家都做自己想做的事情，不要互相干扰。</p>
-<p>喜欢，经历之前的事情再加上这几年来的事情，感觉自己变得有点现实，权衡开始成了判断的前提，做好自己，还是去接触一下，不要封闭自己，拒绝别人也不太好，也和习惯规划有点相关，12月吧大概就这样~</p>
-<p>大目标！算了不立flag了，踏踏实实的做好眼前的事情吧。</p>
-<img src="/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/marry.jpg" class="">]]></content>
-      <categories>
-        <category>emotion</category>
-      </categories>
-      <tags>
-        <tag>note</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>互联网生存</title>
     <url>/2024/08/21/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E5%AD%98/</url>
     <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
@@ -130,7 +102,7 @@
 <p>经常告诉自己不要因为一件事去否定别人，但是毕竟不是机器人，难免有时候情绪激动直接否定，但是一定要记住的是不要站在别人面前去刷否定的存在感，站在别人面前的那一刻就已经是个小丑了。</p>
 <p>借自己最喜欢的电视剧士兵突击做个结尾，袁朗评价吴哲：“ 我喜欢他。知道为什么吗？坚持自己的原则，充满希望和乐观。重要的是，他能跟许三多这样的兵交朋友，这一点，就不会毁于他很容易产生的优越感 ”，年轻时候觉得自己像三多，不喜欢变化，后来觉得自己像成才，有时候有点自私，再后来觉得自己还是希望成为吴哲，经常告诉自己要平常心，说实话自己是不如三多和成才的，他们有各自的强项，但我很希望成为吴哲一类的人，做一个半吊子的理想主义者，充满希望和乐观。</p>
 <p>碎碎念结束，感觉很生气就写个日记，写到这里已经完全没感觉了，人不是机器人，也可以理解。</p>
-<img src="/2024/08/21/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E5%AD%98/qq.jpg" class=""> 
+<img src="/2024/08/21/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E5%AD%98/qq.jpg" class> 
 <p>图源[<a href="https://x.com/Hitoimim/status/1807718505602797820">https://x.com/Hitoimim/status/1807718505602797820</a>]</p>
 ]]></content>
       <categories>
@@ -138,6 +110,75 @@
       </categories>
       <tags>
         <tag>emotion</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于柔度矩阵与变形叠加法的思考记录</title>
+    <url>/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
+<h1 id="关于小变形叠加法矩阵的认识与记录"><a href="#关于小变形叠加法矩阵的认识与记录" class="headerlink" title="关于小变形叠加法矩阵的认识与记录"></a>关于小变形叠加法矩阵的认识与记录</h1><p>柔度矩阵的叠加，小变形各个输入力单独作用下节点位移的线性叠加，柔度本质是类似于K的倒数，串联并联叠加时候需要注意一下：叠加形式保持一致,多自由度系统柔度矩阵中详细推导。</p>
+<p>并联：</p>
+<script type="math/tex; mode=display">
+\begin{equation}\frac{1}{k}=\frac{1}{k_1}+\frac{1}{k_2} \\\frac{1}{d}=\frac{1}{d_1}+\frac{1}{d_2} \end{equation}</script><p>串联</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+{k}={k_1}+{k_2} \\
+{d}={d_1}+{d_2} \\
+\end{equation}</script><span id="more"></span>
+<p>柔度叠加矩阵案例说明：</p>
+<p>d_ij,j坐标受力在i坐标产生位移</p>
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q1.png" class title="Q1">
+<p>此时F1=1,F2=0,F1作用下，两个位置的位移，其柔度矩阵含义如图，即为各点的挠度，在实际柔性铰链中，则为各个铰链位置变形经过转换矩阵在统一坐标下的表达：</p>
+<script type="math/tex; mode=display">
+x_1=F_1*d_{11} \\
+x_2=F_1*d_{21}</script><p>另一种情况，F1=0,F2=1;先列出点，其次看受力位置</p>
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q2.png" class title="Q2">
+<script type="math/tex; mode=display">
+x_1=F_2*d_{12} \\
+x_2=F_2*d_{22}</script><p>所以，F1=1,F2=1,各自独立计算并且叠加，可以得到：</p>
+<script type="math/tex; mode=display">
+x_1=F_1d_{11}+F_2d_{12}\\
+x_2=F_2d_{22}+F_1D_{21}</script><p>有一个案例，文中直接给出了柔度的参数，这里按照材料力学补充一下推导流程，略作复习：</p>
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q3.png" class title="Q3">
+<p>d_11=d_22=8d,d_12=d_21=7d;推导说明，假定F1=0,F2=1;</p>
+<p>以x_2为界限进行分类，挠度曲线参数分为两段</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+w_1=\frac{F x}{18 E I}\left[\frac{8}{9}l^2-x^2\right] \\
+w_2=\frac{F}{18 E I}\left[3(x-\frac{2}{3}l)^3+\frac{8}{9}l^2x-x^3\right]
+\end{equation}</script><p>可以计算，当仅有F2,输入时候，两点挠度为：</p>
+<p>第一段中：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+w_1=\frac{F}{18 E I}\left[\frac{7}{27}l^3\right] \\
+w_2=\frac{F}{18 E I}\left[\frac{8}{27}l^3\right] 
+\end{equation}</script><p>第二段利用第二个公式计算可以得到上述挠度，所以柔度矩阵参数给定过程如上，另外，求取各点挠度过程中，按照节点分割计算，并不需要全部柔度矩阵，类似与B点按照分割后段进行计算，基础概念需要理解。</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+\left[\begin{array}{l}
+x_1 \\
+x_2
+\end{array}\right]=\left[\begin{array}{ll}
+8 d & 7 d \\
+7 d & 8 d
+\end{array}\right]\left(\left[\begin{array}{l}
+F_1 \\
+F_2
+\end{array}\right]-\left[\begin{array}{cc}
+m_1 & 0 \\
+0 & m_2
+\end{array}\right]\left[\begin{array}{l}
+\ddot{x}_1 \\
+\ddot{x}_2
+\end{array}\right]\right)
+\end{equation}</script><h2 id="待补充："><a href="#待补充：" class="headerlink" title="待补充："></a>待补充：</h2><p>两级放大柔度矩阵的左边转换关系，代码验证后补充</p>
+<p>角度关系，感觉是直接静力学求解的，然后放在具体工况下面计算。</p>
+]]></content>
+      <categories>
+        <category>learning</category>
+      </categories>
+      <tags>
+        <tag>柔性铰链</tag>
       </tags>
   </entry>
   <entry>
@@ -191,7 +232,7 @@
 <p>支付宝攒了一些钱了，没有什么炒股的想法，单纯觉得很麻烦，就继续放着吧，未来可能会买一些定期存存，毕业能买一辆老哥那个车了233，平时确实也没啥花销，也就游戏还有和朋友吃饭，明年要多去做一些没体验过得事情，钱重要但是也不重要，看淡一些。</p>
 <h2 id="规划"><a href="#规划" class="headerlink" title="规划"></a>规划</h2><p>工作事情要带上脑子了，简历其实改了几版了，继续慢慢修改，也要多想想自己到底想做什么，每天目标也要完成，开始就做最重要的事情，任何时候都是。</p>
 <p>要活的潇洒一点，自信一点，少纠结，拥抱未来，2025加油呀，希望大家都好，世界都好，想做事情就一定去做，今年下决心做的事情基本都成了，所以未来也是，加油！！！</p>
-<img src="/2024/12/30/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%932024/OCTAQ.png" class="" title="八方">]]></content>
+<img src="/2024/12/30/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%932024/OCTAQ.png" class title="八方">]]></content>
       <categories>
         <category>thought2024</category>
       </categories>
@@ -200,72 +241,31 @@
       </tags>
   </entry>
   <entry>
-    <title>关于柔度矩阵与变形叠加法的思考记录</title>
-    <url>/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
-<h1 id="关于小变形叠加法矩阵的认识与记录"><a href="#关于小变形叠加法矩阵的认识与记录" class="headerlink" title="关于小变形叠加法矩阵的认识与记录"></a>关于小变形叠加法矩阵的认识与记录</h1><p>柔度矩阵的叠加，小变形各个输入力单独作用下节点位移的线性叠加，柔度本质是类似于K的倒数，串联并联叠加时候需要注意一下：叠加形式保持一致,多自由度系统柔度矩阵中详细推导。</p>
-<p>并联：</p>
-<script type="math/tex; mode=display">
-\begin{equation}\frac{1}{k}=\frac{1}{k_1}+\frac{1}{k_2} \\\frac{1}{d}=\frac{1}{d_1}+\frac{1}{d_2} \end{equation}</script><p>串联</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-{k}={k_1}+{k_2} \\
-{d}={d_1}+{d_2} \\
-\end{equation}</script><span id="more"></span>
-<p>柔度叠加矩阵案例说明：</p>
-<p>d_ij,j坐标受力在i坐标产生位移</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q1.png" class="" title="Q1">
-<p>此时F1=1,F2=0,F1作用下，两个位置的位移，其柔度矩阵含义如图，即为各点的挠度，在实际柔性铰链中，则为各个铰链位置变形经过转换矩阵在统一坐标下的表达：</p>
-<script type="math/tex; mode=display">
-x_1=F_1*d_{11} \\
-x_2=F_1*d_{21}</script><p>另一种情况，F1=0,F2=1;先列出点，其次看受力位置</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q2.png" class="" title="Q2">
-<script type="math/tex; mode=display">
-x_1=F_2*d_{12} \\
-x_2=F_2*d_{22}</script><p>所以，F1=1,F2=1,各自独立计算并且叠加，可以得到：</p>
-<script type="math/tex; mode=display">
-x_1=F_1d_{11}+F_2d_{12}\\
-x_2=F_2d_{22}+F_1D_{21}</script><p>有一个案例，文中直接给出了柔度的参数，这里按照材料力学补充一下推导流程，略作复习：</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q3.png" class="" title="Q3">
-<p>d_11=d_22=8d,d_12=d_21=7d;推导说明，假定F1=0,F2=1;</p>
-<p>以x_2为界限进行分类，挠度曲线参数分为两段</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-w_1=\frac{F x}{18 E I}\left[\frac{8}{9}l^2-x^2\right] \\
-w_2=\frac{F}{18 E I}\left[3(x-\frac{2}{3}l)^3+\frac{8}{9}l^2x-x^3\right]
-\end{equation}</script><p>可以计算，当仅有F2,输入时候，两点挠度为：</p>
-<p>第一段中：</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-w_1=\frac{F}{18 E I}\left[\frac{7}{27}l^3\right] \\
-w_2=\frac{F}{18 E I}\left[\frac{8}{27}l^3\right] 
-\end{equation}</script><p>第二段利用第二个公式计算可以得到上述挠度，所以柔度矩阵参数给定过程如上，另外，求取各点挠度过程中，按照节点分割计算，并不需要全部柔度矩阵，类似与B点按照分割后段进行计算，基础概念需要理解。</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-\left[\begin{array}{l}
-x_1 \\
-x_2
-\end{array}\right]=\left[\begin{array}{ll}
-8 d & 7 d \\
-7 d & 8 d
-\end{array}\right]\left(\left[\begin{array}{l}
-F_1 \\
-F_2
-\end{array}\right]-\left[\begin{array}{cc}
-m_1 & 0 \\
-0 & m_2
-\end{array}\right]\left[\begin{array}{l}
-\ddot{x}_1 \\
-\ddot{x}_2
-\end{array}\right]\right)
-\end{equation}</script><h2 id="待补充："><a href="#待补充：" class="headerlink" title="待补充："></a>待补充：</h2><p>两级放大柔度矩阵的左边转换关系，代码验证后补充</p>
-<p>角度关系，感觉是直接静力学求解的，然后放在具体工况下面计算。</p>
-]]></content>
+    <title>中期-生活-随想</title>
+    <url>/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/</url>
+    <content><![CDATA[<h1 id="中期结束之后的随笔"><a href="#中期结束之后的随笔" class="headerlink" title="中期结束之后的随笔"></a>中期结束之后的随笔</h1><p>有些感慨，突如其来的迷茫，若有若无的思绪</p>
+<p>浅浅记录，来日可追~</p>
+<span id="more"></span>
+<p>​    低效的生活总是带给人迷惘，原本希望规律的习惯可以塑造思维，长时间下来虽有些许效果，但是仍在边边角角，主题推进慢慢悠悠，思考下来还是自己遇到困难下意识逃避，不够专注，然后思维涣散，开始摸鱼，仔细想来，浪费的时间有4个月，扣除掉放假瞎溜达，也有3个月，不奢望每天都可以高效推进，但总归没有多余的时间再如此休闲了，该做的事情也应该认真的去做了,在此记录一下，略作督促。</p>
+<h2 id="学业"><a href="#学业" class="headerlink" title="学业"></a>学业</h2><p>中期结束之后，感觉确实进度慢，主要是两个部分：</p>
+<p>规划的动力学其实存在一些问题，早先有些想当然，当初刘老师的说的缝隙问题到今天才理解了是什么意思，有点喜剧了，看来不可以按照分段耦合的方法去做，这条路是走不通的，跟两位师兄的沟通其实也验证了这一点，但是貌似也不是完全走不下去，直接用点去链接被动变形的连续体，我做的这个东西特色还是非常明显的，走这条路的问题就是不能考虑柔性结构的反作用力，直接去建造刚体动力学模型，真正的把驱动视为干扰，不去考虑建模问题，动力学目的变成优化问题，与四面体相比优势在于维度，两侧各自出现两条连续的控制点，本质上也是封闭的曲面控制，能够提供更多的点位控制，本身也是一种方案，只是严谨的理论模型就不能去做了，里面是个大坑，容易陷进去，绕一下，这个问题目前还不需要解决，慢慢思考吧。</p>
+<p>模型的优化问题，这个是当下急需解决与思考的一个问题，主要是球副那个部分的实际轴线问题，以及相交面位置旋转模型的细化，球借鉴一下赵师兄的球副，其余需要尽快拿出细节方案，然后adams之类的仿真需要开始，这部分近期要开始思考落实，目标是完成一套二代模型—应该是没问题的默认一个两驱动的八面体，既然李可以2P1R，那就说明两驱没问题，问题就在于细化了。</p>
+<p>小论文，就是需要尽快投，有三个问题，一是包装，分割顶点部分需要拔高一下，目前的有点low，二是模式转换，速率比不可以那样直接去说，是有问题的，这部分需要思考改进，其实后面放个精细版本的三维模型更好，所以得同步推进。分割包装、速率说明，大概需要一周的时间吧。</p>
+<p>软著，这个其实可以放放，抽空去写完成一下</p>
+<h2 id="习惯"><a href="#习惯" class="headerlink" title="习惯"></a>习惯</h2><p>要认真写，上午下午晚上不能无目的的摸鱼了，这个很重要，注重一下，求其上才能得其中</p>
+<p>安安静静的推进进度，务实一点。</p>
+<p>论文习惯、运动习惯、学习按照往常继续就好，多多游泳去了，现在是9月22日，11月底</p>
+<h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><p>本来就是个比较喜欢一个人呆着的人，现在这个状态也蛮好，前几天去当义工，感觉还蛮开心的，不带目的帮助陌生人体验还可以，就是自己有点质疑活动本身的意义，下次应该也不会再去了，下一步想做的事情是自驾游。</p>
+<p>自己做这些没啥意义的事，本质还是为了让自己可以开心一点，散散心，没啥高尚的想法。</p>
+<p>最近觉得自己做的很好的一件事情就是已经能够做到下意识的去换位思考了，不去把自己的想法强加给别人，吃饭是这样，为人做事也是这样，更成熟了一点，做一个控制欲望为0的人，大家都做自己想做的事情，不要互相干扰。</p>
+<p>喜欢，经历之前的事情再加上这几年来的事情，感觉自己变得有点现实，权衡开始成了判断的前提，做好自己，还是去接触一下，不要封闭自己，拒绝别人也不太好，也和习惯规划有点相关，12月吧大概就这样~</p>
+<p>大目标！算了不立flag了，踏踏实实的做好眼前的事情吧。</p>
+<img src="/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/marry.jpg" class>]]></content>
       <categories>
-        <category>learning</category>
+        <category>emotion</category>
       </categories>
       <tags>
-        <tag>柔性铰链</tag>
+        <tag>note</tag>
       </tags>
   </entry>
   <entry>
@@ -286,7 +286,7 @@ m_1 & 0 \\
 <p>每个人的缺点无法避免，但是可以反思克制就好，开心一点~</p>
 <p>按照安排慢慢来，12月要再完成一部分工作，年前再完成一部分，要看一些有趣的电影…</p>
 <p>放个最近感觉很好吃的川菜~</p>
-<img src="/2024/11/29/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%9420241129/delicious.jpg" class="" title="最近好吃的，好开心">]]></content>
+<img src="/2024/11/29/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%9420241129/delicious.jpg" class title="最近好吃的，好开心">]]></content>
       <categories>
         <category>feel</category>
       </categories>
@@ -301,7 +301,7 @@ m_1 & 0 \\
 <h1 id="空间曲线拟合笔记"><a href="#空间曲线拟合笔记" class="headerlink" title="空间曲线拟合笔记"></a>空间曲线拟合笔记</h1><p>渐进颜色修正与一点点origin</p>
 <p>基础信息与参数说明</p>
 <span id="more"></span>
-<h2 id="基础参数"><a href="#基础参数" class="headerlink" title="基础参数"></a>基础参数</h2><img src="/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/1727880727916.png" class="" width="1727880727916">
+<h2 id="基础参数"><a href="#基础参数" class="headerlink" title="基础参数"></a>基础参数</h2><img src="/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/1727880727916.png" class width="1727880727916">
 <p>subplot(2, 2, 1); plot(x, y);参考源文件‘</p>
 <p> patch 利用填充函数绘制渐进曲线颜色,也可以用来表示边的颜色插补</p>
 <p> ‘<strong>flat</strong>‘ - 对每个网格线段和面使用恒定颜色。 该颜色由该线段的端点或该面的角边处具有最小索引的颜色值确定。 </p>
@@ -338,7 +338,7 @@ m_1 & 0 \\
 <p>事情很多，心里总是很烦，但是缩短时间尺度，吃饭睡觉的时候还蛮开心的，跟朋友聊天的时候也很开心，想太远总是很无聊，眼前事做好就算了，填一下桌面端app的daily calendar</p>
 <p>志哥的发言还蛮有启发的，之前做的对应还是不够，认真一点；</p>
 <p>上周乱七八糟得，条理一点，少摸鱼少摸鱼，求其上得其中，其他随缘~</p>
-<img src="/2024/10/13/%E7%BC%A9%E7%9F%AD%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6/Octopath.png" class="" title="八方旅人">
+<img src="/2024/10/13/%E7%BC%A9%E7%9F%AD%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6/Octopath.png" class title="八方旅人">
 ]]></content>
       <categories>
         <category>EMO</category>
@@ -360,7 +360,7 @@ m_1 & 0 \\
 <p>记录：</p>
 <p>平常心，踏踏实实的做好每一步，一点一点完成，上山难</p>
 <p>今天看到一个说法，做别人没做过的，就是意义所在，对我来讲，做到合理的解释，就算成功。</p>
-<img src="/2025/04/01/%E9%85%8D%E8%89%B2%E4%BB%A3%E7%A0%81%E5%8F%8A%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/img105.jpg" class="" title="IMAG">]]></content>
+<img src="/2025/04/01/%E9%85%8D%E8%89%B2%E4%BB%A3%E7%A0%81%E5%8F%8A%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/img105.jpg" class title="IMAG">]]></content>
       <categories>
         <category>learning</category>
       </categories>
@@ -383,7 +383,7 @@ m_1 & 0 \\
 <p>人本身是很复杂的，不要因为一两件事否定一个人，但是有些人也确实没必要交往，面上过去就行，虽然最近被恶心了几次，但是我只是觉得很好笑，把我喊过去说自己知道的一件事，是准备看我的反应嘛，对我来讲，只要不触及我的底线，我一般也不会反抗，也不怎么在意。确实保持一个游离的关系蛮好，哪些是好朋友，我自己心里有判断。</p>
 <p>作为一个半吊子理性主义者，我做事情很多时候是看感觉的，所谓没啥坏处，未来有益的事情，我不开心就不会去做，得不得罪人，我也不在乎，最讨厌那种虚伪的人，说话弯弯绕，直接点大家都坦荡，但是话说回来，家家有本难念的经吧，以后做事，也要多想想。</p>
 <p>自己还是太在意别人的看法，虽然已经克制了很多，但是人的本性总是难以克服，多多提醒，注意一下，多余的动作真的没必要。</p>
-<h2 id="加油加油，多坚持一下！"><a href="#加油加油，多坚持一下！" class="headerlink" title="加油加油，多坚持一下！"></a>加油加油，多坚持一下！</h2><img src="/2025/11/24/%E9%9A%8F%E7%AC%94%E5%8A%A0%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/A1.jpg" class="" title="A1">]]></content>
+<h2 id="加油加油，多坚持一下！"><a href="#加油加油，多坚持一下！" class="headerlink" title="加油加油，多坚持一下！"></a>加油加油，多坚持一下！</h2><img src="/2025/11/24/%E9%9A%8F%E7%AC%94%E5%8A%A0%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/A1.jpg" class title="A1">]]></content>
       <categories>
         <category>emotion</category>
       </categories>
@@ -436,6 +436,25 @@ m_1 & 0 \\
 <h2 id="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"><a href="#未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人" class="headerlink" title="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"></a>未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人</h2>]]></content>
       <tags>
         <tag>plan</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Q</title>
+    <url>/2024/02/26/Q/Q/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
+<h1 id="琥珀川与荻野千寻"><a href="#琥珀川与荻野千寻" class="headerlink" title="琥珀川与荻野千寻"></a>琥珀川与荻野千寻</h1><p>不乱于心，不困于情，不畏将来，不念过往。</p>
+<span id="more"></span>
+<p>看完之后脑子里立刻跳出来这句话。</p>
+<p>又看了一遍台配版的千与千寻，童年的记忆来源于此版，有些东西确实只是忘记，而不会消失，偶然间看到一些痕迹，就会瞬间回忆，不过别回头就好，不念过往。</p>
+<p>总是希望所有的一切事情按照自己的计划进行，面对未知的事情常常心怀恐惧而不愿意前进，权衡利弊之后，重要的事情可以克服，在一些小事上却常常让步，谓之不在意，其实不然，内心是在畏惧狭义上的未来，千寻初入汤屋有点这个感觉，但是随着故事的发展，千寻是做到不畏将来了，不论是给河神洗澡、给白龙和无脸怪吃河神的丸子，或者是爬梯子进入汤婆婆的房子，这些没有人给她指引，都是自己基于想法做出的选择，只要自己认为是对的，如果暂时判断不了，只要无愧于心，即使未来不可预测，脚踏实地的去做就很好，想必未来也不会后悔，不畏将来。</p>
+<p>人生的环境总在不断变化，主动接受变化就是不畏将来，主动接受就不会恐惧，千寻开始的恐惧来源于被动，被动常常引起焦虑，负面情绪随之增长，以前很喜欢袁朗说的一句话：“不太焦虑，耐得住寂寞，有很多人天天都在焦虑，怕没得到，怕寂寞，我喜欢不焦虑的人”，千寻后来是不焦虑的，慢慢的去做事本身也是一种快乐的过程。</p>
+<p>“容是别人，欲是自己”，去做一切自己想做的事情，少去思考虚无的无数可能性，不可预料的东西常常是惊喜，也是缘分。</p>
+]]></content>
+      <categories>
+        <category>feeling</category>
+      </categories>
+      <tags>
+        <tag>movie</tag>
       </tags>
   </entry>
   <entry>
@@ -495,25 +514,6 @@ m_1 & 0 \\
       </tags>
   </entry>
   <entry>
-    <title>Q</title>
-    <url>/2024/02/26/Q/Q/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
-<h1 id="琥珀川与荻野千寻"><a href="#琥珀川与荻野千寻" class="headerlink" title="琥珀川与荻野千寻"></a>琥珀川与荻野千寻</h1><p>不乱于心，不困于情，不畏将来，不念过往。</p>
-<span id="more"></span>
-<p>看完之后脑子里立刻跳出来这句话。</p>
-<p>又看了一遍台配版的千与千寻，童年的记忆来源于此版，有些东西确实只是忘记，而不会消失，偶然间看到一些痕迹，就会瞬间回忆，不过别回头就好，不念过往。</p>
-<p>总是希望所有的一切事情按照自己的计划进行，面对未知的事情常常心怀恐惧而不愿意前进，权衡利弊之后，重要的事情可以克服，在一些小事上却常常让步，谓之不在意，其实不然，内心是在畏惧狭义上的未来，千寻初入汤屋有点这个感觉，但是随着故事的发展，千寻是做到不畏将来了，不论是给河神洗澡、给白龙和无脸怪吃河神的丸子，或者是爬梯子进入汤婆婆的房子，这些没有人给她指引，都是自己基于想法做出的选择，只要自己认为是对的，如果暂时判断不了，只要无愧于心，即使未来不可预测，脚踏实地的去做就很好，想必未来也不会后悔，不畏将来。</p>
-<p>人生的环境总在不断变化，主动接受变化就是不畏将来，主动接受就不会恐惧，千寻开始的恐惧来源于被动，被动常常引起焦虑，负面情绪随之增长，以前很喜欢袁朗说的一句话：“不太焦虑，耐得住寂寞，有很多人天天都在焦虑，怕没得到，怕寂寞，我喜欢不焦虑的人”，千寻后来是不焦虑的，慢慢的去做事本身也是一种快乐的过程。</p>
-<p>“容是别人，欲是自己”，去做一切自己想做的事情，少去思考虚无的无数可能性，不可预料的东西常常是惊喜，也是缘分。</p>
-]]></content>
-      <categories>
-        <category>feeling</category>
-      </categories>
-      <tags>
-        <tag>movie</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>QT开发</title>
     <url>/2024/03/03/QT%E5%BC%80%E5%8F%91/QT%E5%BC%80%E5%8F%91/</url>
     <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
@@ -567,25 +567,6 @@ m_1 & 0 \\
       </categories>
       <tags>
         <tag>mathematica</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Silence</title>
-    <url>/2024/03/20/Silence/Silence/</url>
-    <content><![CDATA[<p>沉默的大多数决定一切，当然也可能一点不重要</p>
-<span id="more"></span>
-<p>之前很喜欢一个民谣歌手，从崖边跌落开始入坑，最后听的是茶酒伴，再然后就听的少了许多，可能是因为随着年龄增长，越来越喜欢怀旧，容易留恋过去，导致对于新鲜的事物接受度越来越低，新出的歌听起来总是没什么感觉，看到歌手各种各样“叛逆”动态，心里想想开心就好，自己没啥资格留下对别人的评论，于是就沉默下来，每个人都是为自己活着，确实是自己开心就好。</p>
-<p>不幸的是，现实里却常常事与愿违，面对上位压迫，往往还是会做出妥协，面对下位请求，则是做自己，这样的做法是否是真的做自己呢？印象里有一次评论区说一句喜欢过去的借我，春花发出近乎切割这首歌的言论，但是后来雷军转发，还是转的歌手原版本，春花也会出来营业，不知道那时候心里作何想法。</p>
-<p>无意贬低任何人，只是在描述自己看到的一切，毕竟自己也是个俗人，在面对不影响自己太大利益的问题前，我会做到保持自我，开心就好，但是面对不可抵抗的问题，我也常常妥协，只是常常会思考，这个百分比占到多少才能算开心就好，坦然接受不纯粹，是不是也算？</p>
-<p>过去几年发生的很多事情改变了我很多对于这个世界的看法，依据不同的标准，就会做出不同的判断，以生死或者身边亲人朋友庞大的利益关系作为标准，沉默的大多数就不能被忽视，除非狠得下心放弃一切，所以最终大家都会成为俗人，只是没有被逼到那个程度（战争年代保有信仰的先辈是真的值得敬佩），这也是当今各种制度能够运行的基础，天下乌鸦一般黑，哪有绝对的是非对错，如果有，那只能是数学，但是这个世界又没有完全独立运转的事物，常常都是混杂在一起，所有常说难得糊涂，没有绝对的邪恶，只有正义的偏离。</p>
-<p>言归正传，借用之前自己一句评论，朴树的歌能让我从难过变得平和，而春花的歌让我从平和到更加平和，未来依然会喜欢他们，但是也很好奇未来会是什么样子，毕竟很多老牌歌手几十年了还是被粉丝要求唱同一首歌，很喜欢观察完全不同生活的变化轨迹。</p>
-<p>沉默、沉默，既要真实也要沉默，不带功利心的做一些事，人生才能持续下去…</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>emo</tag>
       </tags>
   </entry>
   <entry>
@@ -1133,28 +1114,32 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
-    <title>configure_bag</title>
-    <url>/2020/11/30/configure-bag/configure-bag/</url>
-    <content><![CDATA[<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
-<p>以及补充后续图像处理相关项目内容</p>
+    <title>Silence</title>
+    <url>/2024/03/20/Silence/Silence/</url>
+    <content><![CDATA[<p>沉默的大多数决定一切，当然也可能一点不重要</p>
 <span id="more"></span>
-<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
-<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
-<p>（原因后续深入了解了之后继续补充）</p>
-<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
-<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
-<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;/dev/null | grep '\.rp_filter'</span><br></pre></td></tr></tbody></table></figure>
-<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter=0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter=0</span><br></pre></td></tr></tbody></table></figure>
-<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
-<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—-（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
-<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
-<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
-<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
+<p>之前很喜欢一个民谣歌手，从崖边跌落开始入坑，最后听的是茶酒伴，再然后就听的少了许多，可能是因为随着年龄增长，越来越喜欢怀旧，容易留恋过去，导致对于新鲜的事物接受度越来越低，新出的歌听起来总是没什么感觉，看到歌手各种各样“叛逆”动态，心里想想开心就好，自己没啥资格留下对别人的评论，于是就沉默下来，每个人都是为自己活着，确实是自己开心就好。</p>
+<p>不幸的是，现实里却常常事与愿违，面对上位压迫，往往还是会做出妥协，面对下位请求，则是做自己，这样的做法是否是真的做自己呢？印象里有一次评论区说一句喜欢过去的借我，春花发出近乎切割这首歌的言论，但是后来雷军转发，还是转的歌手原版本，春花也会出来营业，不知道那时候心里作何想法。</p>
+<p>无意贬低任何人，只是在描述自己看到的一切，毕竟自己也是个俗人，在面对不影响自己太大利益的问题前，我会做到保持自我，开心就好，但是面对不可抵抗的问题，我也常常妥协，只是常常会思考，这个百分比占到多少才能算开心就好，坦然接受不纯粹，是不是也算？</p>
+<p>过去几年发生的很多事情改变了我很多对于这个世界的看法，依据不同的标准，就会做出不同的判断，以生死或者身边亲人朋友庞大的利益关系作为标准，沉默的大多数就不能被忽视，除非狠得下心放弃一切，所以最终大家都会成为俗人，只是没有被逼到那个程度（战争年代保有信仰的先辈是真的值得敬佩），这也是当今各种制度能够运行的基础，天下乌鸦一般黑，哪有绝对的是非对错，如果有，那只能是数学，但是这个世界又没有完全独立运转的事物，常常都是混杂在一起，所有常说难得糊涂，没有绝对的邪恶，只有正义的偏离。</p>
+<p>言归正传，借用之前自己一句评论，朴树的歌能让我从难过变得平和，而春花的歌让我从平和到更加平和，未来依然会喜欢他们，但是也很好奇未来会是什么样子，毕竟很多老牌歌手几十年了还是被粉丝要求唱同一首歌，很喜欢观察完全不同生活的变化轨迹。</p>
+<p>沉默、沉默，既要真实也要沉默，不带功利心的做一些事，人生才能持续下去…</p>
 ]]></content>
       <categories>
-        <category>camera</category>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>emo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>daliy_life</title>
+    <url>/2020/08/17/daliy-life/daliy-life/</url>
+    <content><![CDATA[<h1 id="处事之则，日常所想"><a href="#处事之则，日常所想" class="headerlink" title="处事之则，日常所想"></a>处事之则，日常所想</h1><p>搭模型的时候，听了听电视剧琅琊榜的电台，听到景睿的台词，有点感触，为人处世就应该这样，清清爽爽，潇洒一生。</p>
+<p>不为蝇营狗苟之事，不对他人做过分之求，一切唯心而已。</p>
+<h4 id="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"><a href="#“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。" class="headerlink" title="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"></a>“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。</h4><h4 id="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"><a href="#我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。" class="headerlink" title="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"></a>我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。</h4><h4 id="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"><a href="#若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也" class="headerlink" title="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"></a>若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也</h4><h4 id="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"><a href="#没有责任要以我为先，以我为重。无论我如何希望也不能强求。" class="headerlink" title="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"></a>没有责任要以我为先，以我为重。无论我如何希望也不能强求。</h4><h4 id="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"><a href="#我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也" class="headerlink" title="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"></a>我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也</h4><h4 id="没有什么可后悔的。”"><a href="#没有什么可后悔的。”" class="headerlink" title="没有什么可后悔的。”"></a>没有什么可后悔的。”</h4>]]></content>
+      <categories>
+        <category>touch_fish</category>
       </categories>
   </entry>
   <entry>
@@ -1182,16 +1167,6 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
-    <title>daliy_life</title>
-    <url>/2020/08/17/daliy-life/daliy-life/</url>
-    <content><![CDATA[<h1 id="处事之则，日常所想"><a href="#处事之则，日常所想" class="headerlink" title="处事之则，日常所想"></a>处事之则，日常所想</h1><p>搭模型的时候，听了听电视剧琅琊榜的电台，听到景睿的台词，有点感触，为人处世就应该这样，清清爽爽，潇洒一生。</p>
-<p>不为蝇营狗苟之事，不对他人做过分之求，一切唯心而已。</p>
-<h4 id="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"><a href="#“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。" class="headerlink" title="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"></a>“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。</h4><h4 id="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"><a href="#我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。" class="headerlink" title="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"></a>我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。</h4><h4 id="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"><a href="#若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也" class="headerlink" title="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"></a>若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也</h4><h4 id="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"><a href="#没有责任要以我为先，以我为重。无论我如何希望也不能强求。" class="headerlink" title="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"></a>没有责任要以我为先，以我为重。无论我如何希望也不能强求。</h4><h4 id="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"><a href="#我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也" class="headerlink" title="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"></a>我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也</h4><h4 id="没有什么可后悔的。”"><a href="#没有什么可后悔的。”" class="headerlink" title="没有什么可后悔的。”"></a>没有什么可后悔的。”</h4>]]></content>
-      <categories>
-        <category>touch_fish</category>
-      </categories>
-  </entry>
-  <entry>
     <title>delta_ros</title>
     <url>/2020/09/11/delta-ros/delta-ros/</url>
     <content><![CDATA[<p>记录delta算法</p>
@@ -1204,6 +1179,31 @@ m_1 & 0 \\
 <p><a href="https://github.com/manuelilg?tab=repositories">https://github.com/manuelilg?tab=repositories</a></p>
 <p>学习一下</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>configure_bag</title>
+    <url>/2020/11/30/configure-bag/configure-bag/</url>
+    <content><![CDATA[<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
+<p>以及补充后续图像处理相关项目内容</p>
+<span id="more"></span>
+<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
+<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
+<p>（原因后续深入了解了之后继续补充）</p>
+<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
+<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
+<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;/dev/null | grep '\.rp_filter'</span><br></pre></td></tr></tbody></table></figure>
+<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter=0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter=0</span><br></pre></td></tr></tbody></table></figure>
+<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
+<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—-（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
+<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
+<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
+<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
+]]></content>
+      <categories>
+        <category>camera</category>
+      </categories>
   </entry>
   <entry>
     <title>dynamixelros</title>
@@ -1230,71 +1230,6 @@ m_1 & 0 \\
 <p>5.tutorials</p>
 <p>dynamixel_motor堆栈的示例配置和启动文件。</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>gbasisorder</title>
-    <url>/2024/08/12/gbasisorder/gbasisorder/</url>
-    <content><![CDATA[<p><strong>[Groebner basis]</strong></p>
-<p>三种排序（备份方便查询）</p>
-<p> <code>'degreeInverseLexicographic'</code>, <code>'degreeLexicographic'</code>, or <code>'lexicographic'</code> </p>
-<span id="more"></span>
-<ol>
-<li><strong><code>gbasis(poly)</code></strong> </li>
-</ol>
-<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">syms x y</span><br><span class="line">poly = [x^<span class="number">2</span> + y^<span class="number">2</span> - <span class="number">1</span>; x - y^<span class="number">3</span>];</span><br><span class="line">G = gbasis(poly);</span><br></pre></td></tr></tbody></table></figure>
-<ol>
-<li><strong><code>gbasis(poly, vars)</code></strong> </li>
-</ol>
-<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">syms x y z</span><br><span class="line">poly = [x^<span class="number">2</span> + y^<span class="number">2</span> - z^<span class="number">2</span>; x - y*z];</span><br><span class="line">vars = [x, y, z];</span><br><span class="line">G = gbasis(poly, vars);</span><br></pre></td></tr></tbody></table></figure>
-<ol>
-<li><strong><code>gbasis(___, 'MonomialOrder', MonomialOrder)</code></strong> </li>
-</ol>
-<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">syms x y</span><br><span class="line">poly = [x^<span class="number">2</span> + y^<span class="number">2</span> - <span class="number">1</span>; x - y^<span class="number">3</span>];</span><br><span class="line">G = gbasis(poly, [x, y], <span class="string">'MonomialOrder'</span>, <span class="string">'grlex'</span>);</span><br></pre></td></tr></tbody></table></figure>
-<p>EXAMPLE:</p>
-<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">syms x y z</span><br><span class="line">f1 = x^<span class="number">2</span> + y^<span class="number">2</span> - z^<span class="number">2</span>;</span><br><span class="line">f2 = x*y - <span class="number">1</span>;</span><br><span class="line">f3 = z - <span class="number">1</span>;</span><br><span class="line">polys = [f1; f2; f3];</span><br><span class="line"></span><br><span class="line"><span class="comment">% Compute the Gröbner basis</span></span><br><span class="line">G = grobner(polys, [x, y, z]);</span><br><span class="line"></span><br><span class="line"><span class="comment">% Solve the system</span></span><br><span class="line">solutions = solve(G, [x, y, z]);</span><br><span class="line"></span><br><span class="line"><span class="comment">% Display the solutions</span></span><br><span class="line">x_sol = solutions.x;</span><br><span class="line">y_sol = solutions.y;</span><br><span class="line">z_sol = solutions.z;</span><br><span class="line"></span><br><span class="line"><span class="built_in">disp</span>(<span class="string">'Solutions for x:'</span>);</span><br><span class="line"><span class="built_in">disp</span>(x_sol);</span><br><span class="line"><span class="built_in">disp</span>(<span class="string">'Solutions for y:'</span>);</span><br><span class="line"><span class="built_in">disp</span>(y_sol);</span><br><span class="line"><span class="built_in">disp</span>(<span class="string">'Solutions for z:'</span>);</span><br><span class="line"><span class="built_in">disp</span>(z_sol);</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="1-Lexicographic-Order-lex"><a href="#1-Lexicographic-Order-lex" class="headerlink" title="1. Lexicographic Order (lex)"></a>1. <strong>Lexicographic Order (lex)</strong></h3><p><strong>Advantages:</strong></p>
-<ul>
-<li><strong>Simplicity:</strong> Easy to understand and implement. It’s straightforward because it follows a strict variable precedence, similar to dictionary order.</li>
-<li><strong>Algorithm Efficiency:</strong> Often used in algorithms where the precedence of variables is crucial, such as in Gröbner basis computations where the structure of the ideal is dependent on the variable ordering.</li>
-<li><strong>Predictability:</strong> Provides consistent results that can be easier to predict and verify, especially in systems where variable ordering is well-defined.</li>
-</ul>
-<p><strong>Applications:</strong></p>
-<ul>
-<li>Preferred in problems where the order of variables has a natural hierarchy or importance, such as certain optimization problems or algorithms where variable prioritization is essential.</li>
-</ul>
-<h3 id="2-Graded-Lexicographic-Order-grlex"><a href="#2-Graded-Lexicographic-Order-grlex" class="headerlink" title="2. Graded Lexicographic Order (grlex)"></a>2. <strong>Graded Lexicographic Order (grlex)</strong></h3><p><strong>Advantages:</strong></p>
-<ul>
-<li><strong>Degree Consideration:</strong> First organizes monomials by their total degree, which is useful in contexts where the degree of the polynomial plays a significant role.</li>
-<li><strong>Balanced Comparison:</strong> Within monomials of the same total degree, it applies lexicographic ordering, which can provide a balance between degree and variable precedence.</li>
-<li><strong>Ideal Theory:</strong> Commonly used in algebraic geometry and commutative algebra to handle polynomial ideals where total degree matters.</li>
-</ul>
-<p><strong>Applications:</strong></p>
-<ul>
-<li>Useful in Gröbner basis computations where maintaining a balance between total degree and variable order helps in simplifying polynomial systems, especially when dealing with polynomial equations where the degree of terms influences the structure.</li>
-</ul>
-<h3 id="3-Graded-Reverse-Lexicographic-Order-grevlex"><a href="#3-Graded-Reverse-Lexicographic-Order-grevlex" class="headerlink" title="3. Graded Reverse Lexicographic Order (grevlex)"></a>3. <strong>Graded Reverse Lexicographic Order (grevlex)</strong></h3><p><strong>Advantages:</strong></p>
-<ul>
-<li><strong>Focus on Degree and Last Variables:</strong> Organizes monomials by total degree first, but within the same degree, it compares starting from the last variable, which can be useful in certain algebraic computations.</li>
-<li><strong>Efficient Simplification:</strong> Often leads to more efficient simplifications in polynomial systems where last variables are less significant, and can simplify Gröbner basis computations by focusing on more “significant” terms first.</li>
-<li><strong>Algebraic Variety:</strong> Provides a different perspective in solving polynomial systems, which can be advantageous in specific algebraic contexts or when dealing with varieties in algebraic geometry.</li>
-</ul>
-<p><strong>Applications:</strong></p>
-<ul>
-<li>Preferred in cases where polynomial systems or geometric problems benefit from handling terms with less importance first, such as certain types of algebraic geometry problems or when working with varieties where polynomial terms’ significance changes based on their position.</li>
-</ul>
-<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><ul>
-<li><strong>Lexicographic Order (lex):</strong> Simplifies understanding and implementation; predictable results.</li>
-<li><strong>Graded Lexicographic Order (grlex):</strong> Balances degree and variable ordering; useful for polynomial systems where degree is significant.</li>
-<li><strong>Graded Reverse Lexicographic Order (grevlex):</strong> Focuses on degree first and then the last variables; efficient in simplifying systems where less significant terms are processed earlier.</li>
-</ul>
-<p>单论solve计算效率，化简之后的计算公式效率提高大概30%，删去分析 Gröbner 基阶次的内容。</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>algebraic</tag>
-      </tags>
   </entry>
   <entry>
     <title>ff14宏</title>
@@ -1466,6 +1401,71 @@ m_1 & 0 \\
       <categories>
         <category>learning</category>
       </categories>
+  </entry>
+  <entry>
+    <title>gbasisorder</title>
+    <url>/2024/08/12/gbasisorder/gbasisorder/</url>
+    <content><![CDATA[<p><strong>[Groebner basis]</strong></p>
+<p>三种排序（备份方便查询）</p>
+<p> <code>'degreeInverseLexicographic'</code>, <code>'degreeLexicographic'</code>, or <code>'lexicographic'</code> </p>
+<span id="more"></span>
+<ol>
+<li><strong><code>gbasis(poly)</code></strong> </li>
+</ol>
+<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">syms x y</span><br><span class="line">poly = [x^<span class="number">2</span> + y^<span class="number">2</span> - <span class="number">1</span>; x - y^<span class="number">3</span>];</span><br><span class="line">G = gbasis(poly);</span><br></pre></td></tr></tbody></table></figure>
+<ol>
+<li><strong><code>gbasis(poly, vars)</code></strong> </li>
+</ol>
+<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">syms x y z</span><br><span class="line">poly = [x^<span class="number">2</span> + y^<span class="number">2</span> - z^<span class="number">2</span>; x - y*z];</span><br><span class="line">vars = [x, y, z];</span><br><span class="line">G = gbasis(poly, vars);</span><br></pre></td></tr></tbody></table></figure>
+<ol>
+<li><strong><code>gbasis(___, 'MonomialOrder', MonomialOrder)</code></strong> </li>
+</ol>
+<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">syms x y</span><br><span class="line">poly = [x^<span class="number">2</span> + y^<span class="number">2</span> - <span class="number">1</span>; x - y^<span class="number">3</span>];</span><br><span class="line">G = gbasis(poly, [x, y], <span class="string">'MonomialOrder'</span>, <span class="string">'grlex'</span>);</span><br></pre></td></tr></tbody></table></figure>
+<p>EXAMPLE:</p>
+<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">syms x y z</span><br><span class="line">f1 = x^<span class="number">2</span> + y^<span class="number">2</span> - z^<span class="number">2</span>;</span><br><span class="line">f2 = x*y - <span class="number">1</span>;</span><br><span class="line">f3 = z - <span class="number">1</span>;</span><br><span class="line">polys = [f1; f2; f3];</span><br><span class="line"></span><br><span class="line"><span class="comment">% Compute the Gröbner basis</span></span><br><span class="line">G = grobner(polys, [x, y, z]);</span><br><span class="line"></span><br><span class="line"><span class="comment">% Solve the system</span></span><br><span class="line">solutions = solve(G, [x, y, z]);</span><br><span class="line"></span><br><span class="line"><span class="comment">% Display the solutions</span></span><br><span class="line">x_sol = solutions.x;</span><br><span class="line">y_sol = solutions.y;</span><br><span class="line">z_sol = solutions.z;</span><br><span class="line"></span><br><span class="line"><span class="built_in">disp</span>(<span class="string">'Solutions for x:'</span>);</span><br><span class="line"><span class="built_in">disp</span>(x_sol);</span><br><span class="line"><span class="built_in">disp</span>(<span class="string">'Solutions for y:'</span>);</span><br><span class="line"><span class="built_in">disp</span>(y_sol);</span><br><span class="line"><span class="built_in">disp</span>(<span class="string">'Solutions for z:'</span>);</span><br><span class="line"><span class="built_in">disp</span>(z_sol);</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="1-Lexicographic-Order-lex"><a href="#1-Lexicographic-Order-lex" class="headerlink" title="1. Lexicographic Order (lex)"></a>1. <strong>Lexicographic Order (lex)</strong></h3><p><strong>Advantages:</strong></p>
+<ul>
+<li><strong>Simplicity:</strong> Easy to understand and implement. It’s straightforward because it follows a strict variable precedence, similar to dictionary order.</li>
+<li><strong>Algorithm Efficiency:</strong> Often used in algorithms where the precedence of variables is crucial, such as in Gröbner basis computations where the structure of the ideal is dependent on the variable ordering.</li>
+<li><strong>Predictability:</strong> Provides consistent results that can be easier to predict and verify, especially in systems where variable ordering is well-defined.</li>
+</ul>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Preferred in problems where the order of variables has a natural hierarchy or importance, such as certain optimization problems or algorithms where variable prioritization is essential.</li>
+</ul>
+<h3 id="2-Graded-Lexicographic-Order-grlex"><a href="#2-Graded-Lexicographic-Order-grlex" class="headerlink" title="2. Graded Lexicographic Order (grlex)"></a>2. <strong>Graded Lexicographic Order (grlex)</strong></h3><p><strong>Advantages:</strong></p>
+<ul>
+<li><strong>Degree Consideration:</strong> First organizes monomials by their total degree, which is useful in contexts where the degree of the polynomial plays a significant role.</li>
+<li><strong>Balanced Comparison:</strong> Within monomials of the same total degree, it applies lexicographic ordering, which can provide a balance between degree and variable precedence.</li>
+<li><strong>Ideal Theory:</strong> Commonly used in algebraic geometry and commutative algebra to handle polynomial ideals where total degree matters.</li>
+</ul>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Useful in Gröbner basis computations where maintaining a balance between total degree and variable order helps in simplifying polynomial systems, especially when dealing with polynomial equations where the degree of terms influences the structure.</li>
+</ul>
+<h3 id="3-Graded-Reverse-Lexicographic-Order-grevlex"><a href="#3-Graded-Reverse-Lexicographic-Order-grevlex" class="headerlink" title="3. Graded Reverse Lexicographic Order (grevlex)"></a>3. <strong>Graded Reverse Lexicographic Order (grevlex)</strong></h3><p><strong>Advantages:</strong></p>
+<ul>
+<li><strong>Focus on Degree and Last Variables:</strong> Organizes monomials by total degree first, but within the same degree, it compares starting from the last variable, which can be useful in certain algebraic computations.</li>
+<li><strong>Efficient Simplification:</strong> Often leads to more efficient simplifications in polynomial systems where last variables are less significant, and can simplify Gröbner basis computations by focusing on more “significant” terms first.</li>
+<li><strong>Algebraic Variety:</strong> Provides a different perspective in solving polynomial systems, which can be advantageous in specific algebraic contexts or when dealing with varieties in algebraic geometry.</li>
+</ul>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Preferred in cases where polynomial systems or geometric problems benefit from handling terms with less importance first, such as certain types of algebraic geometry problems or when working with varieties where polynomial terms’ significance changes based on their position.</li>
+</ul>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><ul>
+<li><strong>Lexicographic Order (lex):</strong> Simplifies understanding and implementation; predictable results.</li>
+<li><strong>Graded Lexicographic Order (grlex):</strong> Balances degree and variable ordering; useful for polynomial systems where degree is significant.</li>
+<li><strong>Graded Reverse Lexicographic Order (grevlex):</strong> Focuses on degree first and then the last variables; efficient in simplifying systems where less significant terms are processed earlier.</li>
+</ul>
+<p>单论solve计算效率，化简之后的计算公式效率提高大概30%，删去分析 Gröbner 基阶次的内容。</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>algebraic</tag>
+      </tags>
   </entry>
   <entry>
     <title>gcyyy</title>
@@ -1683,18 +1683,6 @@ m_1 & 0 \\
       <tags>
         <tag>control</tag>
       </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2022/08/02/life/life/</url>
-    <content><![CDATA[<p> <strong>怎么会迷上你，我在问自己</strong></p>
-<p> <strong>我什么都能放弃，居然今天难离去</strong></p>
-<p>我是个什么人呢？</p>
-<p>乐观、向上、热心又冷漠</p>
-<p>犹豫、常常忽略一些事情、讨厌很多事情</p>
-<p>一个半吊子的理想主义者～</p>
-<p><a href="/img/R.jpg">r</a></p>
-]]></content>
   </entry>
   <entry>
     <title>latex_note</title>
@@ -2288,417 +2276,16 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
-    <title>literature</title>
-    <url>/2020/09/03/literature/literature/</url>
-    <content><![CDATA[<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
-<p>abstract    consult    discussion   method   result</p>
-<p>review</p>
-<span id="more"></span>
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
-<p>摘要分层</p>
-<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
-<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
-<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
-<p>2.indicative abstract</p>
-<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
-<p>3.extended abstract</p>
-<p> thesis   dissertation</p>
-<p>4.structured abstract</p>
-<p>5.conference abstract</p>
-<p>6.graphical abstract</p>
-<p>7.executive summary</p>
-<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
-<ol>
-<li>Introduction  </li>
-<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
-<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
-</ol>
-<p>分层</p>
-<p>1.review of the present study</p>
-<p>2.consolidating ofthe results</p>
-<p>3.stating limitations and possible research directions</p>
-<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
-<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
-<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
-</ol>
-<p>分层</p>
-<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
-<p>一些特点 linguistic features</p>
-<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
-<p>Method classification</p>
-<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
-<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
-<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
-<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
-<p>…用的比较少，不列了</p>
-<p>缺一部分，改天再补，回寝了～</p>
+    <title></title>
+    <url>/2022/08/02/life/life/</url>
+    <content><![CDATA[<p> <strong>怎么会迷上你，我在问自己</strong></p>
+<p> <strong>我什么都能放弃，居然今天难离去</strong></p>
+<p>我是个什么人呢？</p>
+<p>乐观、向上、热心又冷漠</p>
+<p>犹豫、常常忽略一些事情、讨厌很多事情</p>
+<p>一个半吊子的理想主义者～</p>
+<p><a href="/img/R.jpg">r</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>manipulator_HU_learninging</title>
-    <url>/2020/10/12/manipulator-HU-learninging/manipulator-HU-learninging/</url>
-    <content><![CDATA[<h1 id="记录一套开发流程，没啥意义"><a href="#记录一套开发流程，没啥意义" class="headerlink" title="记录一套开发流程，没啥意义"></a>记录一套开发流程，没啥意义</h1><p>后续可看，ppt要好好做</p>
-<span id="more"></span>
-<p>1.基本理论</p>
-<p>2.开发</p>
-<p>ISO</p>
-<ol>
-<li>机器人动作机构具有类似于人或其他生物体的某些器官（肢体、感受等）的功能；、</li>
-<li>机器人具有通用性，工作种类多样，动作程序灵活易变；</li>
-<li>机器人具有不同程度的智能性，比如记忆、感知、推理、决策、学习等；</li>
-<li>机器人具有独立性、完整的机器人系统在工作中不可以依赖于人的干预。</li>
-</ol>
-<p>驱动系统</p>
-<ul>
-<li>电源子系统</li>
-<li>电机驱动系统—控制信号-电信号</li>
-<li>传感器</li>
-</ul>
-<p>内部传感器</p>
-<ul>
-<li>机器人里程计</li>
-<li>惯性测量单元IMU</li>
-</ul>
-<p>控制系统</p>
-<p>PC—人机交互（SLAM、导航、图像识别、语音识别）</p>
-<p>TCP/UDP</p>
-<p>硬件系统：控制、传感器数据采集、驱动系统通信、外设连接</p>
-<p>外部传感器</p>
-<ul>
-<li>外部摄像头、Kinect</li>
-<li>激光雷达</li>
-</ul>
-<p>移动机器人-常见</p>
-<p>机器人架构可参考（ppt制作，针对特种环境的通信干扰分析）</p>
-<p>云机器人架构思想：</p>
-<ul>
-<li>全局云：全局数据存储、共享和交互</li>
-<li>本地云：密集型计算的机器人应用服务</li>
-<li>机器人：面向用户的终端服务单元</li>
-</ul>
-<p>优点：局部网络占优</p>
-<ul>
-<li>本地云数据共享更加灵活、快捷</li>
-<li>数据保存与本地服务器，更加安全、可靠</li>
-<li>服务于多种机器人</li>
-</ul>
-<p>整理常见机械臂：</p>
-<ul>
-<li>UR机械臂，安全度高、编程简单、灵活度高，负载10-18kg，工作半径85-130cm。</li>
-<li></li>
-</ul>
-<p>控制框架架构+系统架构+云系统架构</p>
-<h2 id="开发具体流程分析与记录（代码分析）："><a href="#开发具体流程分析与记录（代码分析）：" class="headerlink" title="开发具体流程分析与记录（代码分析）："></a>开发具体流程分析与记录（代码分析）：</h2><p>1.常见基础</p>
-<p>2.manipulator_moveit</p>
-<p>3.moveit+gazebo 仿真系统搭建</p>
-<p>ros_control 为开发者提供的机器人控制中间件，包含一系列控制器接口、传动器接口、硬件接口、控制器工具箱</p>
-<p>包括有速度控制、位置控制、力控制</p>
-<p>关节位置控制器：PID 具体参照arm包 yaml文件或者gazebo_control内yaml文件</p>
-<p>加载控制器，加载conrollers关节参数，加载publisher参数节点，三部分，关节矩阵变换</p>
-<p>moveit与gazebo rviz 联合仿真</p>
-<p>编程接口</p>
-<p>moveit_commander python接口</p>
-<p>1.连接控制需要的规划组 2.设置目标位姿 3.设置运动约束 4.使用moveit！规划一条到达目标的轨迹</p>
-<p>5.修改轨迹 6.执行规划出的轨迹</p>
-<p>启动moveit包-moveit_config,程序中给出目标位置以及执行器位置信息，软件自动规划最优路径</p>
-<p>编程—-针对规划组编写，设置目标位置参数，臂则设置位置信息，数组导入，完成机械臂规划</p>
-<p>工作空间运动规划—轨迹规划(关键代码参数)</p>
-<p>创建规划组的控制对象</p>
-<p>获取机器人终端LINK名称</p>
-<p>设置目标位姿对应的参考坐标系和起始、终止位姿</p>
-<p>完成规划并控制机械臂完成运动</p>
-<p>运动限制约束设置</p>
-<p>运动学插件问题KDL，插件选用以及<code>二次开发</code>问题</p>
-<p>抓取与放置，attach与un，避障规划</p>
-<p>代码分析与移植待补充～～</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>logic_symbol</title>
-    <url>/2020/07/27/logic-symbol/logic-symbol/</url>
-    <content><![CDATA[<h1 id="逻辑符号"><a href="#逻辑符号" class="headerlink" title="逻辑符号"></a>逻辑符号</h1><p>这篇博文主要为了总结一下逻辑运算符号（拯救混乱记忆，雾）</p>
-<p>(下一篇是题目总结顺便复习)</p>
-<span id="more"></span>
-<p>1.逻辑结构</p>
-<p>与运算：</p>
-<p>与(&amp;&amp;)：逻辑规则是两真才真。与and等同。</p>
-<p>或运算：</p>
-<p>或(||)：逻辑规则是只有一个为真就为真。与or等同。</p>
-<p>异或：</p>
-<p>异或(^)：逻辑规则是两个不同就为真。</p>
-<p>非运算符：</p>
-<p>非(！)：逻辑规则是反转操作数的含义。与not等同。</p>
- 
-<h2 id="电路中的符合逻辑"><a href="#电路中的符合逻辑" class="headerlink" title="电路中的符合逻辑"></a>电路中的符合逻辑</h2><p>与非：  输入只要有0，输出为1.输入全1，输出才0</p>
-<p>或非：输入只要有1，输出为0，输入全为0，输出才1</p>
-<p>与或非：复合运算</p>
- 
-<p>电路中还存在异或与同或</p>
-<p>异或：相异则为1</p>
-<p>同或：相同则为1</p>
-<p>关于逻辑电路门，以后再说吧233</p>
-]]></content>
-      <categories>
-        <category>logic</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>manipulator_review</title>
-    <url>/2020/10/02/manipulator-review/manipulator-review/</url>
-    <content><![CDATA[<h1 id="综述笔记-manipulator-review-underwater-system已补充结束"><a href="#综述笔记-manipulator-review-underwater-system已补充结束" class="headerlink" title="综述笔记-manipulator_review(underwater)-(system已补充结束)"></a>综述笔记-manipulator_review(underwater)-(system已补充结束)</h1><p>一篇综述[1]的总体方向笔记，非文献整理。</p>
-<blockquote>
-<p>[1] SIVČEV S, COLEMAN J, OMERDIĆ E, et al. Underwater manipulators: A review [J]. 2018, 163(431-50.</p>
-</blockquote>
-<p>UUV-unmanned underwater vehicles   </p>
-<p>ROV—remotely operated vehicles</p>
-<p>AUV-autonomous underwater vehicles</p>
-<p>UVMS-Underwater Vehicle Manipulator Systems</p>
-<span id="more"></span>
-<p>(水下双臂—一号臂抓取固定机器人本体，二号臂执行预定作业内容)</p>
-<h2 id="常见任务："><a href="#常见任务：" class="headerlink" title="常见任务："></a>常见任务：</h2><p>1.管道检测    2.沉没物体打捞作业     3.矿井作业 </p>
-<p>4.清洁表面作业    5.开关阀门、钻探、rope cutting     6.线缆铺设以及维修</p>
-<p>7.清理碎片或渔网    8.生物地质采样    9.考古archaeological work</p>
-<h2 id="特殊环境材料选择（水下）"><a href="#特殊环境材料选择（水下）" class="headerlink" title="特殊环境材料选择（水下）"></a>特殊环境材料选择（水下）</h2><p>作业约束：</p>
-<p>1.the size of the workspace</p>
-<p>2.lifting capacity </p>
-<p>3.wrist torque</p>
-<p>常用金属合金，比如TI6-4、阳极氧化铝、不锈钢合金以及某些塑料（聚乙烯）</p>
-<p>—较高强度、耐腐蚀性、良好的可加工性质、减轻水中的重量以及减少执行器负担</p>
-<p>Reach—水下机械手运动链长</p>
-<ol>
-<li><p>水下机械手能产生的最大腕部扭矩范围8NM-250NM</p>
-</li>
-<li><p>水下机械手的载荷5kg-500kg左右</p>
-</li>
-<li><p>水下机械手的运动范围为0.5m-2.4m</p>
-<p>参数：max.nominal  最大额定值    at full extension 完全伸展  at rated speed 额定速度</p>
-<p>through envelope </p>
-</li>
-</ol>
-<h2 id="关于水下控制模型意义"><a href="#关于水下控制模型意义" class="headerlink" title="关于水下控制模型意义"></a>关于水下控制模型意义</h2><p>机械手的质量尽量占比较小，为了可以忽略或至少将动态耦合考虑为可以解决的外部干扰，通过水下机器人的动态定位，更大的重量和尺寸对水下机器人推进器系统对由动态耦合引起的干扰的鲁棒性提出了更高的要求。</p>
-<h2 id="机械爪"><a href="#机械爪" class="headerlink" title="机械爪"></a>机械爪</h2><p>通常设计三到六个自由度，三个自由度可以到达任意位置，六个自由度可以实现末端执行器的任意位置和方向</p>
-<p>高自由度具有冗余性，常用于避障作业</p>
-<h2 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h2><ul>
-<li>海水驱动，缺点较多被放弃</li>
-<li>液压驱动—<ul>
-<li>高负载，高效率、简单、过载保护</li>
-<li>定位精度差、容易泄露造成污染</li>
-</ul>
-</li>
-<li>电驱动<ul>
-<li>电动用于商业较少，难以满足工业速度、可靠性、强度或力量要求</li>
-</ul>
-</li>
-<li>电液混合驱动</li>
-</ul>
-<p>以上电与液压驱动均有大量研究文章，有时间挑着看看商用水下操纵器控制系统安装在ROV上的商用水下操纵器由遥操作系统控制，并且完全依赖于位于水面船只上的回路中的驾驶员/操纵员。 飞行员通过摄像头和/或声纳系统的反馈来观察场景，并同时做出有关运动的决定，并使用一些备用输入设备之一远程操作水下操纵器。 根据水下机械手的技术能力，使用不同的控制方法。</p>
-<h3 id="商业用控制系统"><a href="#商业用控制系统" class="headerlink" title="商业用控制系统"></a>商业用控制系统</h3><p>商业级别一般使用遥操作</p>
-<ul>
-<li>rate control    液压通过流量与速度控制</li>
-<li>position control     位置传感器通过电位计、analog resolvers、digital optical encoders 、solid state linear position sensors</li>
-<li>force feedback  商业级应用，常用于辅助人工操作</li>
-</ul>
-<p>gripper control</p>
-<h2 id="水下理论控制模型（文章较多，研究重点）"><a href="#水下理论控制模型（文章较多，研究重点）" class="headerlink" title="水下理论控制模型（文章较多，研究重点）"></a>水下理论控制模型（文章较多，研究重点）</h2><p>manipulator作为一种多体动力学问题，控制方案包含集中控制与分散控制方案两类，此外还包括神经网络控制模型。</p>
-<p>浮力、增加的质量、耗散的阻力和升力以及外部干扰（电流、波浪等），增加了非线性与不确定性因素，使得建模控制变得更加复杂。此外<code>水动力系数</code>无法估计，因为他们会随着温度、深度、盐度等变化，当人体通过液体加速时，水体产生格外的惯性，即质量附加效应</p>
-<p>波浪、海流和潮汐导致流体加速，导致外部和运动干扰以及机械手和机器人的强烈震荡和负载，最后在机器人与机械臂之间发生强烈的运动学和动力学耦合效应</p>
-<p>分散控制—PID</p>
-<p>集中控制—非线性集中控制方案</p>
-<ul>
-<li>多层神经网络控制器</li>
-<li>基于非回归的自适应控制器</li>
-<li>基于滑膜控制策略和动力学模型的水下机器人鲁棒轨迹跟踪控制器等等（—后续记录）</li>
-</ul>
-<p>神经网络模糊控制</p>
-<p>利用模糊增益调整在不确定性和扰动下实现自适应，神经网络用于逼近水下机械手的动力学并添加前馈，补偿输入到PD模糊控制器</p>
-<h2 id="运动控制探讨（高级控制）"><a href="#运动控制探讨（高级控制）" class="headerlink" title="运动控制探讨（高级控制）"></a>运动控制探讨（高级控制）</h2><p>传统：水下航行器与机械臂是分开协调的，因此将整个系统视为两个独立系统。</p>
-<p>特殊环境下的耦合需要采用高级控制方案</p>
-<p>针对耦合动力问题进行探讨（方案细节见技术综述笔记，个人认为这里可以进行改进研究）</p>
-<p>有一种不错的思路，控制重心而非机器人具体姿态</p>
-<p>整体系统控制-基于鲁棒的自适应控制方案</p>
-<p>反馈、前馈控制器（方案细节见技术综述笔记）</p>
-<p><strong>总体而言，水下控制模型主要处理的就是由于水下特殊环境引起的干扰以及特殊环境下的运动耦合</strong></p>
-<h2 id="运动控制与规划（路径规划与轨迹规划"><a href="#运动控制与规划（路径规划与轨迹规划" class="headerlink" title="运动控制与规划（路径规划与轨迹规划"></a>运动控制与规划（路径规划与轨迹规划</h2><p>-笛卡尔遥操作方案</p>
-<p>这里注意一下2013年沈阳自动化所提出的六自由度水下机械臂控制策略</p>
-<p>2018年的碰撞检测算法</p>
-<p>触觉交互</p>
-<p>冗余解析度</p>
-<p>通过不同次要目标解决冗余分辨率，避免关节限制、奇异性、高关节速度，将末端执行器保持在机载摄像头视线范围 内，将阻力最小化</p>
-<h2 id="理想与实际"><a href="#理想与实际" class="headerlink" title="理想与实际"></a>理想与实际</h2><p>大多基于关节空间设定点进行工作，但是需要位置、速度和加速度的详细信息反馈跟踪</p>
-<p>电动具有高效率优势</p>
-<h2 id="Force-control"><a href="#Force-control" class="headerlink" title="Force control"></a>Force control</h2><p>关于被动与主动顺应性控制、阻抗控制和混合阻抗控制，这里注意一下1996年的针对水下环境的混合力位控制的方案</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>问题：高质量的传感器与驱动器组成机器人系统，但是控制系统能力不足，可建议讲工业制造中使用的机器人手臂伺服控制只是引入水下环境。</p>
-<p>低精度、低重复性、低控制环路频率</p>
-<p>控制算法本身存在问题，缺乏与实际的结合与改进</p>
-<p>这里注意下国外实验室的一个项目（细节见技术笔记）</p>
-<p>提出了两种思路</p>
-<ul>
-<li>将车辆导航与定位数据用于机械手控制，补偿运动误差系统</li>
-<li>从机械角度出发，一种稳定器（从末端执行器角度考虑）</li>
-</ul>
-<p>目的：简化操作</p>
-<p>总而言之，文章一直在说一个问题，就是关于高级控制方案落地的问题，个人觉得很类似理论控制的现状，不过嘛，人人都有自己的目的想法，就这样吧。</p>
-<h2 id="后续会补充一篇系统综述"><a href="#后续会补充一篇系统综述" class="headerlink" title="后续会补充一篇系统综述"></a>后续会补充一篇系统综述</h2><p>机器人系统-深入了解水下机器人技术、产品和应用</p>
-<p>ROV深海采矿作业</p>
-<p>AUV-长期运行能力、深水深处返回数据的能力</p>
-<p>水下声学定位系统</p>
-<p>悬停方向的AUV，悬停运动由于同时使用水平推进器和垂直推进器完成</p>
-<p>水下滑翔机</p>
-<p>始于军事，拓展为海上油气等等，比如海上搜索和救援、海洋学等</p>
-<p>未来展望</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>movie_fish</title>
-    <url>/2020/07/30/movie-fish/movie-fish/</url>
-    <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><span id="more"></span>
-<h1 id="V字仇杀队"><a href="#V字仇杀队" class="headerlink" title="V字仇杀队"></a>V字仇杀队</h1><p>时隔多年再次欣赏这部电影，感觉平淡了许多，不再像当初那么愤青了。</p>
-<p>世界上没有完美的事情，过于理性的审视一切，有很多好处，同时也失去了很多东西。</p>
-<p>思想是不可消亡了～</p>
-<h1 id="窃听风暴"><a href="#窃听风暴" class="headerlink" title="窃听风暴"></a>窃听风暴</h1><p>压抑的bgm，紧凑的情节</p>
-<p>断续的信息流，完整的情感线，人类本质的体现</p>
-<p>风云变换的历史，个人永远都是渺小的，滔天海浪的压迫感觉</p>
-<p>百年未有之大变局，如何在历史的洪流中生活，放弃一些无用的主义思维，守好自己所相信的底线。</p>
-<p>没有绝对的对错之分，安安静静的就好～</p>
-<h2 id="黑客帝国三矩阵革命"><a href="#黑客帝国三矩阵革命" class="headerlink" title="黑客帝国三矩阵革命"></a>黑客帝国三矩阵革命</h2><p>画面不错</p>
-<h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
-<p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
-<p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
-<p><img src="/../pictures/R.jpg" alt=""></p>
-<h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
-<p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
-<p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
-<p>（生气的时候，有一点很重要，问自己一下，有必要么？）</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>morphing_and_deformation</title>
-    <url>/2024/07/05/morphing-and-deformation/morphing-and-deformation/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"><br><strong>morphing与deformation区别</strong></p>
-<span id="more"></span>
-<h3 id="Shape-Morphing"><a href="#Shape-Morphing" class="headerlink" title="Shape Morphing"></a>Shape Morphing</h3><ul>
-<li><strong>Context</strong>: Shape morphing is typically discussed in areas where objects or materials are designed to change shape in a controlled, intentional, and often reversible manner.</li>
-<li><strong>Applications</strong>:<ul>
-<li><strong>Computer Graphics and Animation</strong>: Smooth transitions between different shapes or forms, often used in character animations or special effects.</li>
-<li><strong>Aerospace Engineering</strong>: Wings or other components that change shape to optimize performance under different conditions.</li>
-<li><strong>Robotics</strong>: Soft robots that can change shape to navigate through different environments.</li>
-<li><strong>Smart Materials</strong>: Materials that can change their shape in response to stimuli (e.g., temperature, light, electric fields).</li>
-</ul>
-</li>
-<li><strong>Example</strong>: “The development of shape morphing structures can lead to more efficient and adaptable aircraft designs.”</li>
-</ul>
-<h3 id="Shape-Deformation"><a href="#Shape-Deformation" class="headerlink" title="Shape Deformation"></a>Shape Deformation</h3><ul>
-<li><strong>Context</strong>: Shape deformation is a broader term that encompasses any change in shape, whether it is controlled or due to external forces. It includes both elastic (reversible) and plastic (permanent) deformations.</li>
-<li><strong>Applications</strong>:<ul>
-<li><strong>Physics and Mechanics</strong>: Studying how materials deform under various forces and conditions (e.g., tension, compression, shear).</li>
-<li><strong>Materials Science</strong>: Understanding how different materials respond to stress and strain.</li>
-<li><strong>Engineering</strong>: Designing structures and components that can withstand deformations without failing.</li>
-<li><strong>Biology</strong>: Examining how biological tissues deform under pressure or during movement.</li>
-</ul>
-</li>
-<li><strong>Example</strong>: “The research analyzes the shape deformation of metal alloys under high stress to improve their performance in structural applications.”</li>
-</ul>
-<h3 id="Academic-and-Idiomatic-Use"><a href="#Academic-and-Idiomatic-Use" class="headerlink" title="Academic and Idiomatic Use"></a>Academic and Idiomatic Use</h3><ul>
-<li><strong>Shape Morphing</strong>:<ul>
-<li>More specific and often used in advanced or niche fields.</li>
-<li>Conveys a sense of smooth and intentional transformation.</li>
-<li>Less common in general academic literature but highly relevant in fields like aerospace, robotics, and smart materials.</li>
-</ul>
-</li>
-<li><strong>Shape Deformation</strong>:<ul>
-<li>More general and widely applicable across many scientific and engineering disciplines.</li>
-<li>Includes both controlled and uncontrolled changes in shape.</li>
-<li>More commonly found in academic papers, textbooks, and research articles across a broad range of subjects.</li>
-</ul>
-</li>
-</ul>
-<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><ul>
-<li><strong>Shape Morphing</strong>: Best used when discussing specific, controlled, and often reversible shape changes in specialized contexts.</li>
-<li><strong>Shape Deformation</strong>: More suitable for general discussions about changes in shape, whether controlled or due to external forces, across a wide range of scientific and engineering disciplines.</li>
-</ul>
-<h3 id="Key-Differences"><a href="#Key-Differences" class="headerlink" title="Key Differences"></a>Key Differences</h3><ul>
-<li><p>Influence</p>
-<p> often implies a more subtle or indirect impact, potentially over time.</p>
-<ul>
-<li>Example: “Her advice influenced my career path over the years.”</li>
-</ul>
-</li>
-<li><p>Affect</p>
-<p> generally denotes a direct and immediate impact.</p>
-<ul>
-<li>Example: “The sudden change in temperature affected the crops.”</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p>老黄采访记录：</p>
-<p>played the game,not the score</p>
-<p>just do your best,go to school,take the right classes,do your best,do you homework,</p>
-<p>dedicate your self to be a good student,</p>
-<p>that  grades will take care of itself,</p>
-<p>if you go backwards,and you teach children just focus on the grades,</p>
-<p>they’ll take easier classes,</p>
-<p>ther’ll focus on just doing well in class and test but not learning and they might learn the wrong thing.</p>
-<p>they might take less risk,they might challenge themselves less</p>
-<p>i would prefer that our company challenges itself more,</p>
-<p>this discover unknown things, do things that no one else has ever done before,</p>
-<p>and be willing to fail, and be willing to learn along the way.,rather than i want you to deliver growth,growth,growth…growth margin,growth margin or whatever results.</p>
-<p>you cannot control those things. don’t worry about those things.</p>
-<p>and so i created a system called early indicators of future success.</p>
-<p>don’t worry about future sucess, worry about the early indicators of future success.</p>
-<p>and what are some of the things of early indicators ,you decide for yourself? </p>
-<p>what are the early indicatos that your believe will lead to future success.</p>
-<p>and that’s why our company focus on that.</p>
-<p>we don’t let somebody else decide for us.</p>
-<p>what’s the definition of success.as we thought we created ourselves.</p>
-<p>and that’s why the company has to go create those indicators on work</p>
-<p>don’t worry about anything else</p>
-<p>and the results will take care of yourself</p>
-<p>“Analyse” and “analysis” have the same grammatical roles and meanings as “analyze” and “analysis,” respectively, but with a difference in spelling. “Analyse” is the British English spelling, while “analyze” is the American English spelling. Both terms are used to describe the process of examining something in detail and the result of that process.<br>Analyse<br>Part of Speech: Verb<br>Definition: To examine something methodically and in detail, typically in order to explain and interpret it.<br>Usage:<br>Action: “Analyse” describes the action of examining and breaking down information into components to understand it better.<br>Examples:”Scientists analyse data to draw conclusions.”<br>“We need to analyse the results of the experiment.”<br>Analysis<br>Part of Speech: Noun<br>Definition: The detailed examination of the elements or structure of something.<br>Usage:<br>Result: “Analysis” refers to the process or the result of analysing something.<br>Examples:”The analysis revealed important insights.”<br>“Her analysis of the market trends was thorough and detailed.”<br>Key Differences<br>Spelling:<br>Analyse: British English spelling of the verb.<br>Analyze: American English spelling of the verb.<br>Analysis: The spelling of the noun remains the same in both British and American English.<br>Function:<br>Analyse/Analyze: Describes the act or process of examining something.<br>Analysis: Refers to the outcome or result of the examination process.<br>Grammatical Role:<br>Analyse/Analyze: Verb, used to describe an action.<br>Analysis: Noun, used to describe a thing or concept.<br>Context:<br>Analyse/Analyze: Used when talking about performing the action of examining.Example: “They will analyse the financial statements.” (British English)<br>Example: “They will analyze the financial statements.” (American English)<br>Analysis: Used when referring to the completed work or the process of examination.Example: “The financial analysis was very insightful.”<br>Examples in Sentences<br>Analyse (British English):<br>“Before making a decision, it’s important to analyse all the available information.”<br>“The software can analys</p>
-<hr>
-<p>乱七八糟转载</p>
-<p>不太过分就尽量忍让，开心就好。</p>
-<p>  <em>家人、朋友和重要的人要放在优先位置。少数亲密朋友胜过一百个普通朋友。不要与老朋友失联。</em> </p>
-<p>  <em>做让你快乐的事，不要做让你不快乐的事。不要和满是负能量的人联系。</em> </p>
-<p> <em>努力工作，但不要错过生活。成为专业领域的顶尖，找到自己的生产力系统，<strong>不要害怕冒险。</strong></em> </p>
-<p> <em>赚钱比花钱有趣，但在朋友、新体验、节省时间、旅行和事业上花的钱不要吝啬。</em> </p>
-<p> <em>不要受人摆布。人们可以变得强大，自信与傲慢有区别，目标是前者</em>。 -表面听话，骨子里全是叛逆。。。</p>
-<p> <em>为自己设定每天、每年和每十年的清晰目标</em>。 -有点难，每天比较重要。</p>
-<p> <em>勇敢追求你想要的。如果你认为不做某事会后悔，那就去做。遗憾通常来自于没做的事</em> </p>
-<p> <em>尽力帮助别人，对陌生人友好，即使在没人注意没有回报的时刻也要友好</em>。 -无目的的帮助别人确实会很开心</p>
-<p> <em>要贪婪地学习。 - 经常尝试新事物：做新事物能让时间过得慢些，增加幸福感，保持生活有趣，还能防止思维僵化。每年在生活和工作中都要尝试一些重大、新颖、有挑战的事情。</em> </p>
-<p>  <em>学会原谅：要学会原谅他人。</em> -这个确实，只要不是太过分，影响小，能退一步就退一步，心里过去自己也能舒服。毕竟不能指望每个人十全十美。</p>
-<p> <em>不过分追求地位：地位没有真实价值维持不了多久，而且会让人感到空虚。</em> 平等就行，所谓年纪辈分都是没意义的垃圾；</p>
-<p> <em>感恩和正确看待问题：学会感恩，不要过多抱怨，不要嫉妒别人的成功。有些人可能会嫉妒你的成功，你得学会忽略这些声音。</em> 走自己的路，平常心就是这样</p>
-<p> <em>做行动派：做一个行动派，而不是只会空谈的人。</em> 低头，很难呀</p>
-<p> <em>冷静思考：行动前先冷静思考几秒。如果你很愤怒，那就多思考几分钟。</em> </p>
-<p> <em>不妄下定论：不要轻易对他人妄下定论，你可能永远无法完全了解他们的全部故事，要学会设身处地为他人着想。</em>  体会人的复杂，慎重决定</p>
-<p> <em>不要轻易说‘很难’，不为失败找借口，只为成功找方法.</em>  尝试</p>
-]]></content>
-      <categories>
-        <category>GPT</category>
-      </categories>
-      <tags>
-        <tag>ACADEMIC</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>newnote</title>
-    <url>/2022/08/02/newnote/newnote/</url>
-    <content><![CDATA[<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>airfact</tag>
-      </tags>
   </entry>
   <entry>
     <title>linux_cleanfile</title>
@@ -2872,6 +2459,419 @@ m_1 & 0 \\
       </categories>
   </entry>
   <entry>
+    <title>literature</title>
+    <url>/2020/09/03/literature/literature/</url>
+    <content><![CDATA[<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
+<p>abstract    consult    discussion   method   result</p>
+<p>review</p>
+<span id="more"></span>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
+<p>摘要分层</p>
+<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
+<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
+<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
+<p>2.indicative abstract</p>
+<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
+<p>3.extended abstract</p>
+<p> thesis   dissertation</p>
+<p>4.structured abstract</p>
+<p>5.conference abstract</p>
+<p>6.graphical abstract</p>
+<p>7.executive summary</p>
+<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
+<ol>
+<li>Introduction  </li>
+<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
+<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
+</ol>
+<p>分层</p>
+<p>1.review of the present study</p>
+<p>2.consolidating ofthe results</p>
+<p>3.stating limitations and possible research directions</p>
+<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
+<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
+</ol>
+<p>分层</p>
+<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
+<p>一些特点 linguistic features</p>
+<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
+<p>Method classification</p>
+<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
+<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
+<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
+<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
+<p>…用的比较少，不列了</p>
+<p>缺一部分，改天再补，回寝了～</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>logic_symbol</title>
+    <url>/2020/07/27/logic-symbol/logic-symbol/</url>
+    <content><![CDATA[<h1 id="逻辑符号"><a href="#逻辑符号" class="headerlink" title="逻辑符号"></a>逻辑符号</h1><p>这篇博文主要为了总结一下逻辑运算符号（拯救混乱记忆，雾）</p>
+<p>(下一篇是题目总结顺便复习)</p>
+<span id="more"></span>
+<p>1.逻辑结构</p>
+<p>与运算：</p>
+<p>与(&amp;&amp;)：逻辑规则是两真才真。与and等同。</p>
+<p>或运算：</p>
+<p>或(||)：逻辑规则是只有一个为真就为真。与or等同。</p>
+<p>异或：</p>
+<p>异或(^)：逻辑规则是两个不同就为真。</p>
+<p>非运算符：</p>
+<p>非(！)：逻辑规则是反转操作数的含义。与not等同。</p>
+ 
+<h2 id="电路中的符合逻辑"><a href="#电路中的符合逻辑" class="headerlink" title="电路中的符合逻辑"></a>电路中的符合逻辑</h2><p>与非：  输入只要有0，输出为1.输入全1，输出才0</p>
+<p>或非：输入只要有1，输出为0，输入全为0，输出才1</p>
+<p>与或非：复合运算</p>
+ 
+<p>电路中还存在异或与同或</p>
+<p>异或：相异则为1</p>
+<p>同或：相同则为1</p>
+<p>关于逻辑电路门，以后再说吧233</p>
+]]></content>
+      <categories>
+        <category>logic</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>manipulator_HU_learninging</title>
+    <url>/2020/10/12/manipulator-HU-learninging/manipulator-HU-learninging/</url>
+    <content><![CDATA[<h1 id="记录一套开发流程，没啥意义"><a href="#记录一套开发流程，没啥意义" class="headerlink" title="记录一套开发流程，没啥意义"></a>记录一套开发流程，没啥意义</h1><p>后续可看，ppt要好好做</p>
+<span id="more"></span>
+<p>1.基本理论</p>
+<p>2.开发</p>
+<p>ISO</p>
+<ol>
+<li>机器人动作机构具有类似于人或其他生物体的某些器官（肢体、感受等）的功能；、</li>
+<li>机器人具有通用性，工作种类多样，动作程序灵活易变；</li>
+<li>机器人具有不同程度的智能性，比如记忆、感知、推理、决策、学习等；</li>
+<li>机器人具有独立性、完整的机器人系统在工作中不可以依赖于人的干预。</li>
+</ol>
+<p>驱动系统</p>
+<ul>
+<li>电源子系统</li>
+<li>电机驱动系统—控制信号-电信号</li>
+<li>传感器</li>
+</ul>
+<p>内部传感器</p>
+<ul>
+<li>机器人里程计</li>
+<li>惯性测量单元IMU</li>
+</ul>
+<p>控制系统</p>
+<p>PC—人机交互（SLAM、导航、图像识别、语音识别）</p>
+<p>TCP/UDP</p>
+<p>硬件系统：控制、传感器数据采集、驱动系统通信、外设连接</p>
+<p>外部传感器</p>
+<ul>
+<li>外部摄像头、Kinect</li>
+<li>激光雷达</li>
+</ul>
+<p>移动机器人-常见</p>
+<p>机器人架构可参考（ppt制作，针对特种环境的通信干扰分析）</p>
+<p>云机器人架构思想：</p>
+<ul>
+<li>全局云：全局数据存储、共享和交互</li>
+<li>本地云：密集型计算的机器人应用服务</li>
+<li>机器人：面向用户的终端服务单元</li>
+</ul>
+<p>优点：局部网络占优</p>
+<ul>
+<li>本地云数据共享更加灵活、快捷</li>
+<li>数据保存与本地服务器，更加安全、可靠</li>
+<li>服务于多种机器人</li>
+</ul>
+<p>整理常见机械臂：</p>
+<ul>
+<li>UR机械臂，安全度高、编程简单、灵活度高，负载10-18kg，工作半径85-130cm。</li>
+<li></li>
+</ul>
+<p>控制框架架构+系统架构+云系统架构</p>
+<h2 id="开发具体流程分析与记录（代码分析）："><a href="#开发具体流程分析与记录（代码分析）：" class="headerlink" title="开发具体流程分析与记录（代码分析）："></a>开发具体流程分析与记录（代码分析）：</h2><p>1.常见基础</p>
+<p>2.manipulator_moveit</p>
+<p>3.moveit+gazebo 仿真系统搭建</p>
+<p>ros_control 为开发者提供的机器人控制中间件，包含一系列控制器接口、传动器接口、硬件接口、控制器工具箱</p>
+<p>包括有速度控制、位置控制、力控制</p>
+<p>关节位置控制器：PID 具体参照arm包 yaml文件或者gazebo_control内yaml文件</p>
+<p>加载控制器，加载conrollers关节参数，加载publisher参数节点，三部分，关节矩阵变换</p>
+<p>moveit与gazebo rviz 联合仿真</p>
+<p>编程接口</p>
+<p>moveit_commander python接口</p>
+<p>1.连接控制需要的规划组 2.设置目标位姿 3.设置运动约束 4.使用moveit！规划一条到达目标的轨迹</p>
+<p>5.修改轨迹 6.执行规划出的轨迹</p>
+<p>启动moveit包-moveit_config,程序中给出目标位置以及执行器位置信息，软件自动规划最优路径</p>
+<p>编程—-针对规划组编写，设置目标位置参数，臂则设置位置信息，数组导入，完成机械臂规划</p>
+<p>工作空间运动规划—轨迹规划(关键代码参数)</p>
+<p>创建规划组的控制对象</p>
+<p>获取机器人终端LINK名称</p>
+<p>设置目标位姿对应的参考坐标系和起始、终止位姿</p>
+<p>完成规划并控制机械臂完成运动</p>
+<p>运动限制约束设置</p>
+<p>运动学插件问题KDL，插件选用以及<code>二次开发</code>问题</p>
+<p>抓取与放置，attach与un，避障规划</p>
+<p>代码分析与移植待补充～～</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>manipulator_review</title>
+    <url>/2020/10/02/manipulator-review/manipulator-review/</url>
+    <content><![CDATA[<h1 id="综述笔记-manipulator-review-underwater-system已补充结束"><a href="#综述笔记-manipulator-review-underwater-system已补充结束" class="headerlink" title="综述笔记-manipulator_review(underwater)-(system已补充结束)"></a>综述笔记-manipulator_review(underwater)-(system已补充结束)</h1><p>一篇综述[1]的总体方向笔记，非文献整理。</p>
+<blockquote>
+<p>[1] SIVČEV S, COLEMAN J, OMERDIĆ E, et al. Underwater manipulators: A review [J]. 2018, 163(431-50.</p>
+</blockquote>
+<p>UUV-unmanned underwater vehicles   </p>
+<p>ROV—remotely operated vehicles</p>
+<p>AUV-autonomous underwater vehicles</p>
+<p>UVMS-Underwater Vehicle Manipulator Systems</p>
+<span id="more"></span>
+<p>(水下双臂—一号臂抓取固定机器人本体，二号臂执行预定作业内容)</p>
+<h2 id="常见任务："><a href="#常见任务：" class="headerlink" title="常见任务："></a>常见任务：</h2><p>1.管道检测    2.沉没物体打捞作业     3.矿井作业 </p>
+<p>4.清洁表面作业    5.开关阀门、钻探、rope cutting     6.线缆铺设以及维修</p>
+<p>7.清理碎片或渔网    8.生物地质采样    9.考古archaeological work</p>
+<h2 id="特殊环境材料选择（水下）"><a href="#特殊环境材料选择（水下）" class="headerlink" title="特殊环境材料选择（水下）"></a>特殊环境材料选择（水下）</h2><p>作业约束：</p>
+<p>1.the size of the workspace</p>
+<p>2.lifting capacity </p>
+<p>3.wrist torque</p>
+<p>常用金属合金，比如TI6-4、阳极氧化铝、不锈钢合金以及某些塑料（聚乙烯）</p>
+<p>—较高强度、耐腐蚀性、良好的可加工性质、减轻水中的重量以及减少执行器负担</p>
+<p>Reach—水下机械手运动链长</p>
+<ol>
+<li><p>水下机械手能产生的最大腕部扭矩范围8NM-250NM</p>
+</li>
+<li><p>水下机械手的载荷5kg-500kg左右</p>
+</li>
+<li><p>水下机械手的运动范围为0.5m-2.4m</p>
+<p>参数：max.nominal  最大额定值    at full extension 完全伸展  at rated speed 额定速度</p>
+<p>through envelope </p>
+</li>
+</ol>
+<h2 id="关于水下控制模型意义"><a href="#关于水下控制模型意义" class="headerlink" title="关于水下控制模型意义"></a>关于水下控制模型意义</h2><p>机械手的质量尽量占比较小，为了可以忽略或至少将动态耦合考虑为可以解决的外部干扰，通过水下机器人的动态定位，更大的重量和尺寸对水下机器人推进器系统对由动态耦合引起的干扰的鲁棒性提出了更高的要求。</p>
+<h2 id="机械爪"><a href="#机械爪" class="headerlink" title="机械爪"></a>机械爪</h2><p>通常设计三到六个自由度，三个自由度可以到达任意位置，六个自由度可以实现末端执行器的任意位置和方向</p>
+<p>高自由度具有冗余性，常用于避障作业</p>
+<h2 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h2><ul>
+<li>海水驱动，缺点较多被放弃</li>
+<li>液压驱动—<ul>
+<li>高负载，高效率、简单、过载保护</li>
+<li>定位精度差、容易泄露造成污染</li>
+</ul>
+</li>
+<li>电驱动<ul>
+<li>电动用于商业较少，难以满足工业速度、可靠性、强度或力量要求</li>
+</ul>
+</li>
+<li>电液混合驱动</li>
+</ul>
+<p>以上电与液压驱动均有大量研究文章，有时间挑着看看商用水下操纵器控制系统安装在ROV上的商用水下操纵器由遥操作系统控制，并且完全依赖于位于水面船只上的回路中的驾驶员/操纵员。 飞行员通过摄像头和/或声纳系统的反馈来观察场景，并同时做出有关运动的决定，并使用一些备用输入设备之一远程操作水下操纵器。 根据水下机械手的技术能力，使用不同的控制方法。</p>
+<h3 id="商业用控制系统"><a href="#商业用控制系统" class="headerlink" title="商业用控制系统"></a>商业用控制系统</h3><p>商业级别一般使用遥操作</p>
+<ul>
+<li>rate control    液压通过流量与速度控制</li>
+<li>position control     位置传感器通过电位计、analog resolvers、digital optical encoders 、solid state linear position sensors</li>
+<li>force feedback  商业级应用，常用于辅助人工操作</li>
+</ul>
+<p>gripper control</p>
+<h2 id="水下理论控制模型（文章较多，研究重点）"><a href="#水下理论控制模型（文章较多，研究重点）" class="headerlink" title="水下理论控制模型（文章较多，研究重点）"></a>水下理论控制模型（文章较多，研究重点）</h2><p>manipulator作为一种多体动力学问题，控制方案包含集中控制与分散控制方案两类，此外还包括神经网络控制模型。</p>
+<p>浮力、增加的质量、耗散的阻力和升力以及外部干扰（电流、波浪等），增加了非线性与不确定性因素，使得建模控制变得更加复杂。此外<code>水动力系数</code>无法估计，因为他们会随着温度、深度、盐度等变化，当人体通过液体加速时，水体产生格外的惯性，即质量附加效应</p>
+<p>波浪、海流和潮汐导致流体加速，导致外部和运动干扰以及机械手和机器人的强烈震荡和负载，最后在机器人与机械臂之间发生强烈的运动学和动力学耦合效应</p>
+<p>分散控制—PID</p>
+<p>集中控制—非线性集中控制方案</p>
+<ul>
+<li>多层神经网络控制器</li>
+<li>基于非回归的自适应控制器</li>
+<li>基于滑膜控制策略和动力学模型的水下机器人鲁棒轨迹跟踪控制器等等（—后续记录）</li>
+</ul>
+<p>神经网络模糊控制</p>
+<p>利用模糊增益调整在不确定性和扰动下实现自适应，神经网络用于逼近水下机械手的动力学并添加前馈，补偿输入到PD模糊控制器</p>
+<h2 id="运动控制探讨（高级控制）"><a href="#运动控制探讨（高级控制）" class="headerlink" title="运动控制探讨（高级控制）"></a>运动控制探讨（高级控制）</h2><p>传统：水下航行器与机械臂是分开协调的，因此将整个系统视为两个独立系统。</p>
+<p>特殊环境下的耦合需要采用高级控制方案</p>
+<p>针对耦合动力问题进行探讨（方案细节见技术综述笔记，个人认为这里可以进行改进研究）</p>
+<p>有一种不错的思路，控制重心而非机器人具体姿态</p>
+<p>整体系统控制-基于鲁棒的自适应控制方案</p>
+<p>反馈、前馈控制器（方案细节见技术综述笔记）</p>
+<p><strong>总体而言，水下控制模型主要处理的就是由于水下特殊环境引起的干扰以及特殊环境下的运动耦合</strong></p>
+<h2 id="运动控制与规划（路径规划与轨迹规划"><a href="#运动控制与规划（路径规划与轨迹规划" class="headerlink" title="运动控制与规划（路径规划与轨迹规划"></a>运动控制与规划（路径规划与轨迹规划</h2><p>-笛卡尔遥操作方案</p>
+<p>这里注意一下2013年沈阳自动化所提出的六自由度水下机械臂控制策略</p>
+<p>2018年的碰撞检测算法</p>
+<p>触觉交互</p>
+<p>冗余解析度</p>
+<p>通过不同次要目标解决冗余分辨率，避免关节限制、奇异性、高关节速度，将末端执行器保持在机载摄像头视线范围 内，将阻力最小化</p>
+<h2 id="理想与实际"><a href="#理想与实际" class="headerlink" title="理想与实际"></a>理想与实际</h2><p>大多基于关节空间设定点进行工作，但是需要位置、速度和加速度的详细信息反馈跟踪</p>
+<p>电动具有高效率优势</p>
+<h2 id="Force-control"><a href="#Force-control" class="headerlink" title="Force control"></a>Force control</h2><p>关于被动与主动顺应性控制、阻抗控制和混合阻抗控制，这里注意一下1996年的针对水下环境的混合力位控制的方案</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>问题：高质量的传感器与驱动器组成机器人系统，但是控制系统能力不足，可建议讲工业制造中使用的机器人手臂伺服控制只是引入水下环境。</p>
+<p>低精度、低重复性、低控制环路频率</p>
+<p>控制算法本身存在问题，缺乏与实际的结合与改进</p>
+<p>这里注意下国外实验室的一个项目（细节见技术笔记）</p>
+<p>提出了两种思路</p>
+<ul>
+<li>将车辆导航与定位数据用于机械手控制，补偿运动误差系统</li>
+<li>从机械角度出发，一种稳定器（从末端执行器角度考虑）</li>
+</ul>
+<p>目的：简化操作</p>
+<p>总而言之，文章一直在说一个问题，就是关于高级控制方案落地的问题，个人觉得很类似理论控制的现状，不过嘛，人人都有自己的目的想法，就这样吧。</p>
+<h2 id="后续会补充一篇系统综述"><a href="#后续会补充一篇系统综述" class="headerlink" title="后续会补充一篇系统综述"></a>后续会补充一篇系统综述</h2><p>机器人系统-深入了解水下机器人技术、产品和应用</p>
+<p>ROV深海采矿作业</p>
+<p>AUV-长期运行能力、深水深处返回数据的能力</p>
+<p>水下声学定位系统</p>
+<p>悬停方向的AUV，悬停运动由于同时使用水平推进器和垂直推进器完成</p>
+<p>水下滑翔机</p>
+<p>始于军事，拓展为海上油气等等，比如海上搜索和救援、海洋学等</p>
+<p>未来展望</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>movie_fish</title>
+    <url>/2020/07/30/movie-fish/movie-fish/</url>
+    <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><span id="more"></span>
+<h1 id="V字仇杀队"><a href="#V字仇杀队" class="headerlink" title="V字仇杀队"></a>V字仇杀队</h1><p>时隔多年再次欣赏这部电影，感觉平淡了许多，不再像当初那么愤青了。</p>
+<p>世界上没有完美的事情，过于理性的审视一切，有很多好处，同时也失去了很多东西。</p>
+<p>思想是不可消亡了～</p>
+<h1 id="窃听风暴"><a href="#窃听风暴" class="headerlink" title="窃听风暴"></a>窃听风暴</h1><p>压抑的bgm，紧凑的情节</p>
+<p>断续的信息流，完整的情感线，人类本质的体现</p>
+<p>风云变换的历史，个人永远都是渺小的，滔天海浪的压迫感觉</p>
+<p>百年未有之大变局，如何在历史的洪流中生活，放弃一些无用的主义思维，守好自己所相信的底线。</p>
+<p>没有绝对的对错之分，安安静静的就好～</p>
+<h2 id="黑客帝国三矩阵革命"><a href="#黑客帝国三矩阵革命" class="headerlink" title="黑客帝国三矩阵革命"></a>黑客帝国三矩阵革命</h2><p>画面不错</p>
+<h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
+<p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
+<p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
+<p><img src="/../pictures/R.jpg" alt></p>
+<h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
+<p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
+<p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
+<p>（生气的时候，有一点很重要，问自己一下，有必要么？）</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>newnote</title>
+    <url>/2022/08/02/newnote/newnote/</url>
+    <content><![CDATA[<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>airfact</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>morphing_and_deformation</title>
+    <url>/2024/07/05/morphing-and-deformation/morphing-and-deformation/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"><br><strong>morphing与deformation区别</strong></p>
+<span id="more"></span>
+<h3 id="Shape-Morphing"><a href="#Shape-Morphing" class="headerlink" title="Shape Morphing"></a>Shape Morphing</h3><ul>
+<li><strong>Context</strong>: Shape morphing is typically discussed in areas where objects or materials are designed to change shape in a controlled, intentional, and often reversible manner.</li>
+<li><strong>Applications</strong>:<ul>
+<li><strong>Computer Graphics and Animation</strong>: Smooth transitions between different shapes or forms, often used in character animations or special effects.</li>
+<li><strong>Aerospace Engineering</strong>: Wings or other components that change shape to optimize performance under different conditions.</li>
+<li><strong>Robotics</strong>: Soft robots that can change shape to navigate through different environments.</li>
+<li><strong>Smart Materials</strong>: Materials that can change their shape in response to stimuli (e.g., temperature, light, electric fields).</li>
+</ul>
+</li>
+<li><strong>Example</strong>: “The development of shape morphing structures can lead to more efficient and adaptable aircraft designs.”</li>
+</ul>
+<h3 id="Shape-Deformation"><a href="#Shape-Deformation" class="headerlink" title="Shape Deformation"></a>Shape Deformation</h3><ul>
+<li><strong>Context</strong>: Shape deformation is a broader term that encompasses any change in shape, whether it is controlled or due to external forces. It includes both elastic (reversible) and plastic (permanent) deformations.</li>
+<li><strong>Applications</strong>:<ul>
+<li><strong>Physics and Mechanics</strong>: Studying how materials deform under various forces and conditions (e.g., tension, compression, shear).</li>
+<li><strong>Materials Science</strong>: Understanding how different materials respond to stress and strain.</li>
+<li><strong>Engineering</strong>: Designing structures and components that can withstand deformations without failing.</li>
+<li><strong>Biology</strong>: Examining how biological tissues deform under pressure or during movement.</li>
+</ul>
+</li>
+<li><strong>Example</strong>: “The research analyzes the shape deformation of metal alloys under high stress to improve their performance in structural applications.”</li>
+</ul>
+<h3 id="Academic-and-Idiomatic-Use"><a href="#Academic-and-Idiomatic-Use" class="headerlink" title="Academic and Idiomatic Use"></a>Academic and Idiomatic Use</h3><ul>
+<li><strong>Shape Morphing</strong>:<ul>
+<li>More specific and often used in advanced or niche fields.</li>
+<li>Conveys a sense of smooth and intentional transformation.</li>
+<li>Less common in general academic literature but highly relevant in fields like aerospace, robotics, and smart materials.</li>
+</ul>
+</li>
+<li><strong>Shape Deformation</strong>:<ul>
+<li>More general and widely applicable across many scientific and engineering disciplines.</li>
+<li>Includes both controlled and uncontrolled changes in shape.</li>
+<li>More commonly found in academic papers, textbooks, and research articles across a broad range of subjects.</li>
+</ul>
+</li>
+</ul>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><ul>
+<li><strong>Shape Morphing</strong>: Best used when discussing specific, controlled, and often reversible shape changes in specialized contexts.</li>
+<li><strong>Shape Deformation</strong>: More suitable for general discussions about changes in shape, whether controlled or due to external forces, across a wide range of scientific and engineering disciplines.</li>
+</ul>
+<h3 id="Key-Differences"><a href="#Key-Differences" class="headerlink" title="Key Differences"></a>Key Differences</h3><ul>
+<li><p>Influence</p>
+<p> often implies a more subtle or indirect impact, potentially over time.</p>
+<ul>
+<li>Example: “Her advice influenced my career path over the years.”</li>
+</ul>
+</li>
+<li><p>Affect</p>
+<p> generally denotes a direct and immediate impact.</p>
+<ul>
+<li>Example: “The sudden change in temperature affected the crops.”</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>老黄采访记录：</p>
+<p>played the game,not the score</p>
+<p>just do your best,go to school,take the right classes,do your best,do you homework,</p>
+<p>dedicate your self to be a good student,</p>
+<p>that  grades will take care of itself,</p>
+<p>if you go backwards,and you teach children just focus on the grades,</p>
+<p>they’ll take easier classes,</p>
+<p>ther’ll focus on just doing well in class and test but not learning and they might learn the wrong thing.</p>
+<p>they might take less risk,they might challenge themselves less</p>
+<p>i would prefer that our company challenges itself more,</p>
+<p>this discover unknown things, do things that no one else has ever done before,</p>
+<p>and be willing to fail, and be willing to learn along the way.,rather than i want you to deliver growth,growth,growth…growth margin,growth margin or whatever results.</p>
+<p>you cannot control those things. don’t worry about those things.</p>
+<p>and so i created a system called early indicators of future success.</p>
+<p>don’t worry about future sucess, worry about the early indicators of future success.</p>
+<p>and what are some of the things of early indicators ,you decide for yourself? </p>
+<p>what are the early indicatos that your believe will lead to future success.</p>
+<p>and that’s why our company focus on that.</p>
+<p>we don’t let somebody else decide for us.</p>
+<p>what’s the definition of success.as we thought we created ourselves.</p>
+<p>and that’s why the company has to go create those indicators on work</p>
+<p>don’t worry about anything else</p>
+<p>and the results will take care of yourself</p>
+<p>“Analyse” and “analysis” have the same grammatical roles and meanings as “analyze” and “analysis,” respectively, but with a difference in spelling. “Analyse” is the British English spelling, while “analyze” is the American English spelling. Both terms are used to describe the process of examining something in detail and the result of that process.<br>Analyse<br>Part of Speech: Verb<br>Definition: To examine something methodically and in detail, typically in order to explain and interpret it.<br>Usage:<br>Action: “Analyse” describes the action of examining and breaking down information into components to understand it better.<br>Examples:”Scientists analyse data to draw conclusions.”<br>“We need to analyse the results of the experiment.”<br>Analysis<br>Part of Speech: Noun<br>Definition: The detailed examination of the elements or structure of something.<br>Usage:<br>Result: “Analysis” refers to the process or the result of analysing something.<br>Examples:”The analysis revealed important insights.”<br>“Her analysis of the market trends was thorough and detailed.”<br>Key Differences<br>Spelling:<br>Analyse: British English spelling of the verb.<br>Analyze: American English spelling of the verb.<br>Analysis: The spelling of the noun remains the same in both British and American English.<br>Function:<br>Analyse/Analyze: Describes the act or process of examining something.<br>Analysis: Refers to the outcome or result of the examination process.<br>Grammatical Role:<br>Analyse/Analyze: Verb, used to describe an action.<br>Analysis: Noun, used to describe a thing or concept.<br>Context:<br>Analyse/Analyze: Used when talking about performing the action of examining.Example: “They will analyse the financial statements.” (British English)<br>Example: “They will analyze the financial statements.” (American English)<br>Analysis: Used when referring to the completed work or the process of examination.Example: “The financial analysis was very insightful.”<br>Examples in Sentences<br>Analyse (British English):<br>“Before making a decision, it’s important to analyse all the available information.”<br>“The software can analys</p>
+<hr>
+<p>乱七八糟转载</p>
+<p>不太过分就尽量忍让，开心就好。</p>
+<p>  <em>家人、朋友和重要的人要放在优先位置。少数亲密朋友胜过一百个普通朋友。不要与老朋友失联。</em> </p>
+<p>  <em>做让你快乐的事，不要做让你不快乐的事。不要和满是负能量的人联系。</em> </p>
+<p> <em>努力工作，但不要错过生活。成为专业领域的顶尖，找到自己的生产力系统，<strong>不要害怕冒险。</strong></em> </p>
+<p> <em>赚钱比花钱有趣，但在朋友、新体验、节省时间、旅行和事业上花的钱不要吝啬。</em> </p>
+<p> <em>不要受人摆布。人们可以变得强大，自信与傲慢有区别，目标是前者</em>。 -表面听话，骨子里全是叛逆。。。</p>
+<p> <em>为自己设定每天、每年和每十年的清晰目标</em>。 -有点难，每天比较重要。</p>
+<p> <em>勇敢追求你想要的。如果你认为不做某事会后悔，那就去做。遗憾通常来自于没做的事</em> </p>
+<p> <em>尽力帮助别人，对陌生人友好，即使在没人注意没有回报的时刻也要友好</em>。 -无目的的帮助别人确实会很开心</p>
+<p> <em>要贪婪地学习。 - 经常尝试新事物：做新事物能让时间过得慢些，增加幸福感，保持生活有趣，还能防止思维僵化。每年在生活和工作中都要尝试一些重大、新颖、有挑战的事情。</em> </p>
+<p>  <em>学会原谅：要学会原谅他人。</em> -这个确实，只要不是太过分，影响小，能退一步就退一步，心里过去自己也能舒服。毕竟不能指望每个人十全十美。</p>
+<p> <em>不过分追求地位：地位没有真实价值维持不了多久，而且会让人感到空虚。</em> 平等就行，所谓年纪辈分都是没意义的垃圾；</p>
+<p> <em>感恩和正确看待问题：学会感恩，不要过多抱怨，不要嫉妒别人的成功。有些人可能会嫉妒你的成功，你得学会忽略这些声音。</em> 走自己的路，平常心就是这样</p>
+<p> <em>做行动派：做一个行动派，而不是只会空谈的人。</em> 低头，很难呀</p>
+<p> <em>冷静思考：行动前先冷静思考几秒。如果你很愤怒，那就多思考几分钟。</em> </p>
+<p> <em>不妄下定论：不要轻易对他人妄下定论，你可能永远无法完全了解他们的全部故事，要学会设身处地为他人着想。</em>  体会人的复杂，慎重决定</p>
+<p> <em>不要轻易说‘很难’，不为失败找借口，只为成功找方法.</em>  尝试</p>
+]]></content>
+      <categories>
+        <category>GPT</category>
+      </categories>
+      <tags>
+        <tag>ACADEMIC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>note</title>
     <url>/2021/09/10/note/note/</url>
     <content><![CDATA[<h1 id="常用的几个latex图片框架以及公式"><a href="#常用的几个latex图片框架以及公式" class="headerlink" title="常用的几个latex图片框架以及公式"></a>常用的几个latex图片框架以及公式</h1><span id="more"></span>
@@ -3004,54 +3004,6 @@ m_1 & 0 \\
 <p>以后正常更新啦…</p>
 <p>等会儿再写一个生活计划日志…</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>pybasic</title>
-    <url>/2020/07/27/pybasic/pybasic/</url>
-    <content><![CDATA[<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><p>方便查看，资料来源{<a href="https://github.com/fengdu78/Data-Science-Notes/blob/master/1.python-basic/Python_Basic.ipynb}">https://github.com/fengdu78/Data-Science-Notes/blob/master/1.python-basic/Python_Basic.ipynb}</a></p>
-<p>2020.09.26 添加了python新内容，包括之后的进阶记录会在这里更新。</p>
-<span id="more"></span>
-<p>1.数据类型</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">print</span> (<span class="string">'hello world!'</span>)</span><br><span class="line">c = <span class="string">'It is a "dog"!'</span></span><br><span class="line"><span class="built_in">print</span> (c)</span><br><span class="line">c1= <span class="string">"It's a dog!"</span></span><br><span class="line"><span class="built_in">print</span> (c1)</span><br><span class="line">c2 = <span class="string">"""hello</span></span><br><span class="line"><span class="string">world</span></span><br><span class="line"><span class="string">!"""</span></span><br><span class="line"><span class="built_in">print</span> (c2)</span><br></pre></td></tr></tbody></table></figure>
-<p>转义字符</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">print</span> (<span class="string">'It\'s a dog!'</span>)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">"hello world!\nhello Python!"</span>)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">'\\\t\\'</span>)</span><br></pre></td></tr></tbody></table></figure>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">print</span> (<span class="string">r'\\\t\\'</span>) <span class="comment">#原样输出引号内字符串可以使用在引号前加r</span></span><br><span class="line">s = <span class="string">'Python'</span></span><br><span class="line"><span class="built_in">print</span>( <span class="string">'Py'</span> <span class="keyword">in</span> s)</span><br><span class="line"><span class="built_in">print</span>( <span class="string">'py'</span> <span class="keyword">in</span> s) <span class="comment">#切片</span></span><br><span class="line"><span class="built_in">print</span> (s[<span class="number">2</span>])</span><br><span class="line"><span class="built_in">print</span> (s[<span class="number">1</span>:<span class="number">4</span>])</span><br></pre></td></tr></tbody></table></figure>
-<p>字符串连接与格式化输出</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">word1 = <span class="string">'"hello"'</span></span><br><span class="line">word2 = <span class="string">'"world"'</span></span><br><span class="line">sentence = word1.strip(<span class="string">'"'</span>) + <span class="string">' '</span> + word2.strip(<span class="string">'"'</span>) + <span class="string">'!'</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>( <span class="string">'The first word is %s, and the second word is %s'</span> %(word1, word2))</span><br><span class="line"><span class="built_in">print</span> (sentence)</span><br></pre></td></tr></tbody></table></figure>
-<p>1.2整点与浮点数</p>
-<p>Python可以处理任意大小的整数，当然包括负整数，在程序中的表示方法和数学上的写法一模一样</p>
-<p>%余数  /取整</p>
-<p>浮点数</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="number">0b1111</span> </span><br><span class="line"><span class="number">0xff</span></span><br><span class="line"><span class="number">1.2e-5</span></span><br></pre></td></tr></tbody></table></figure>
-<p>运算：</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span> (math.log(math.e)) <span class="comment"># 更多运算可查阅文档</span></span><br></pre></td></tr></tbody></table></figure>
-<p>布尔值</p>
-<p>1.4日期与时间</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line">now = time.strptime(<span class="string">'2019-08-20'</span>, <span class="string">'%Y-%m-%d'</span>)</span><br><span class="line"><span class="built_in">print</span> (now)</span><br><span class="line">time.strftime(<span class="string">'%Y-%m-%d'</span>, now) <span class="comment">#2019-08-20</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line">someDay = datetime.date(<span class="number">1999</span>,<span class="number">2</span>,<span class="number">10</span>)</span><br><span class="line">anotherDay = datetime.date(<span class="number">1999</span>,<span class="number">2</span>,<span class="number">15</span>)</span><br><span class="line">deltaDay = anotherDay - someDay</span><br><span class="line">deltaDay.days</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-<p align="left">
-  <img width="400" src="/1.jpg">
-</p>
-
-
-
-<h2 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h2><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">type</span>(<span class="literal">None</span>) <span class="comment">#NoneType</span></span><br><span class="line"><span class="built_in">type</span>(<span class="number">1.0</span>) <span class="comment">#float</span></span><br><span class="line"><span class="built_in">type</span>(<span class="literal">True</span>) <span class="comment"># True</span></span><br><span class="line">s=<span class="string">"NoneType"</span></span><br><span class="line"><span class="built_in">type</span>(s) <span class="comment">#str</span></span><br><span class="line"><span class="comment">#类型转化</span></span><br><span class="line"><span class="built_in">str</span>(<span class="number">10086</span>) <span class="comment">#‘10086’</span></span><br><span class="line"><span class="built_in">float</span>(<span class="number">10086</span>) <span class="comment">#10086.0</span></span><br><span class="line"><span class="built_in">int</span>(<span class="string">'10086'</span>) <span class="comment">#10086</span></span><br><span class="line"><span class="built_in">complex</span>(<span class="number">10086</span>) <span class="comment">#(10086+0j)</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="数据结构基础"><a href="#数据结构基础" class="headerlink" title="数据结构基础"></a>数据结构基础</h3><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">mylist= [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">print</span> (mylist)</span><br><span class="line"><span class="comment"># 索引从0开始，含左不含右</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[4]='</span>, mylist[<span class="number">4</span>]) <span class="comment">#4</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[-4]='</span>, mylist[-<span class="number">4</span>]) <span class="comment">#2</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[0:4]='</span>, mylist[<span class="number">0</span>:<span class="number">4</span>]) <span class="comment">#0,1,2,3</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[:4]='</span>, mylist[:<span class="number">4</span>])<span class="comment">#0,1,2,3</span></span><br><span class="line"><span class="built_in">print</span>( <span class="string">'[4:]='</span>, mylist[<span class="number">4</span>:])<span class="comment">#4,5  ！</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[0:4:2]='</span>, mylist[<span class="number">0</span>:<span class="number">4</span>:<span class="number">2</span>]) <span class="comment">#0,2</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[-5:-1:]='</span>, mylist[-<span class="number">5</span>:-<span class="number">1</span>:]) <span class="comment">#1,2,3,4</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[-2::-1]='</span>, mylist[-<span class="number">2</span>::-<span class="number">1</span>])<span class="comment">#4,3,2,1,0  #good</span></span><br><span class="line"></span><br><span class="line">mylist[<span class="number">3</span>] = <span class="string">"小月"</span></span><br><span class="line"><span class="built_in">print</span> (mylist[<span class="number">3</span>])</span><br><span class="line"></span><br><span class="line">mylist[<span class="number">5</span>]=<span class="string">"小楠"</span></span><br><span class="line"><span class="built_in">print</span> (mylist[<span class="number">5</span>])</span><br><span class="line"></span><br><span class="line">mylist[<span class="number">5</span>]=<span class="number">19978</span></span><br><span class="line"><span class="built_in">print</span> (mylist[<span class="number">5</span>])</span><br><span class="line"><span class="comment">#插入</span></span><br><span class="line"></span><br><span class="line">mylist.append(<span class="string">'han'</span>) <span class="comment"># 添加到尾部</span></span><br><span class="line">mylist.extend([<span class="string">'long'</span>, <span class="string">'wan'</span>])</span><br><span class="line"><span class="built_in">print</span> (mylist)</span><br><span class="line">scores = [<span class="number">90</span>, <span class="number">80</span>, <span class="number">75</span>, <span class="number">66</span>]</span><br><span class="line">mylist.insert(<span class="number">1</span>, scores) <span class="comment"># 添加到指定位置</span></span><br><span class="line">mylist</span><br></pre></td></tr></tbody></table></figure>
-<p>删除元素</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">print</span> (mylist.pop(<span class="number">1</span>)) <span class="comment"># 该函数返回被弹出的元素，不传入参数则删除最后一个元素</span></span><br><span class="line"><span class="built_in">print</span> (mylist)</span><br><span class="line"><span class="built_in">print</span>( <span class="string">'wan'</span> <span class="keyword">in</span> mylist)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">'han'</span> <span class="keyword">not</span> <span class="keyword">in</span> mylist) <span class="comment">#常见简单判断</span></span><br><span class="line">mylist.count(<span class="string">'wan'</span>) <span class="comment">#计算元素个数</span></span><br><span class="line">mylist.index(<span class="string">'wan'</span>) <span class="comment">#查询位数</span></span><br><span class="line"><span class="comment">#列表</span></span><br><span class="line"><span class="built_in">print</span> (<span class="built_in">range</span>(<span class="number">10</span>))</span><br><span class="line"><span class="built_in">print</span> (<span class="built_in">range</span>(-<span class="number">5</span>, <span class="number">5</span>))</span><br><span class="line"><span class="built_in">print</span> (<span class="built_in">range</span>(-<span class="number">10</span>, <span class="number">10</span>, <span class="number">2</span>))</span><br><span class="line"><span class="built_in">print</span> (<span class="built_in">range</span>(<span class="number">16</span>, <span class="number">10</span>, -<span class="number">1</span>)) <span class="comment">#【】</span></span><br></pre></td></tr></tbody></table></figure>
-<h4 id="元组tuple"><a href="#元组tuple" class="headerlink" title="元组tuple"></a>元组tuple</h4><p>元组类似列表，元组里面的元素也是进行索引计算。列表里面的元素的值可以修改，而元组里面的元素的值不能修改，只能读取。元组的符号是()。</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">studentsTuple = (<span class="string">"ming"</span>, <span class="string">"jun"</span>, <span class="string">"qiang"</span>, <span class="string">"wu"</span>, scores)</span><br><span class="line">studentsTuple</span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    studentsTuple[<span class="number">1</span>] = <span class="string">'fu'</span></span><br><span class="line"><span class="keyword">except</span> TypeError:</span><br><span class="line">    <span class="built_in">print</span> (<span class="string">'TypeError'</span>)  <span class="comment">#程序常用格式try</span></span><br><span class="line"><span class="built_in">len</span>(studentsTuple) <span class="comment">#元组不可操作</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-<h4 id="集合set"><a href="#集合set" class="headerlink" title="集合set"></a>集合set</h4><p>Python中集合主要有两个功能，一个功能是进行集合操作，另一个功能是消除重复元素。 集合的格式是：set()，其中()内可以是列表、字典或字符串，因为字符串是以列表的形式存储的</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">studentsSet = <span class="built_in">set</span>(mylist)</span><br><span class="line"><span class="built_in">print</span> (studentsSet)</span><br><span class="line"></span><br><span class="line">studentsSet.add(<span class="string">'xu'</span>)</span><br><span class="line"><span class="built_in">print</span> (studentsSet) <span class="comment">#乱序</span></span><br><span class="line"></span><br><span class="line">studentsSet.remove(<span class="string">'xu'</span>)</span><br><span class="line"><span class="built_in">print</span> (studentsSet)</span><br><span class="line"></span><br><span class="line">a = <span class="built_in">set</span>(<span class="string">"abcnmaaaaggsng"</span>)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">'a='</span>, a) <span class="comment">#a= {'n', 'g', 'm', 'c', 's', 'b', 'a'}</span></span><br><span class="line">b = <span class="built_in">set</span>(<span class="string">"cdfm"</span>)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">'b='</span>, b) <span class="comment">#b= {'f', 'm', 'd', 'c'}</span></span><br><span class="line">’‘’集合运算‘’‘</span><br><span class="line"></span><br><span class="line"><span class="comment">#交集</span></span><br><span class="line">x = a &amp; b </span><br><span class="line"><span class="built_in">print</span>( <span class="string">'x='</span>, x)</span><br><span class="line"><span class="comment">#并集</span></span><br><span class="line">y = a | b</span><br><span class="line"><span class="built_in">print</span> (<span class="string">'y='</span>, y)</span><br><span class="line"><span class="comment">#差集</span></span><br><span class="line">z = a - b</span><br><span class="line"><span class="built_in">print</span>( <span class="string">'z='</span>, z)</span><br><span class="line"><span class="comment">#去除重复元素</span></span><br><span class="line">new = <span class="built_in">set</span>(a)</span><br><span class="line"><span class="built_in">print</span>( z)</span><br></pre></td></tr></tbody></table></figure>
-<h4 id="字典dict"><a href="#字典dict" class="headerlink" title="字典dict"></a>字典dict</h4><p>Python中的字典dict也叫做关联数组，用大括号{}括起来，在其他语言中也称为map，使用键-值（key-value）存储，具有极快的查找速度，其中key不能重复。</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">k = {<span class="string">"name"</span>:<span class="string">"weiwei"</span>, <span class="string">"home"</span>:<span class="string">"guilin"</span>}</span><br><span class="line"><span class="built_in">print</span> (k[<span class="string">"home"</span>])</span><br><span class="line"><span class="built_in">print</span>( k.keys())</span><br><span class="line"><span class="built_in">print</span>( k.values())</span><br><span class="line">k[<span class="string">"like"</span>] = <span class="string">"music"</span></span><br><span class="line">k[<span class="string">'name'</span>] = <span class="string">'guangzhou'</span></span><br><span class="line"><span class="built_in">print</span> (k) <span class="comment">#添加</span></span><br><span class="line">k.get(<span class="string">'edu'</span>, -<span class="number">1</span>) <span class="comment"># 通过dict提供的get方法，如果key不存在，可以返回None，或者自己指定的value</span></span><br><span class="line">k.pop(<span class="string">'like'</span>)</span><br><span class="line"><span class="built_in">print</span> (k) <span class="comment">#删除元素</span></span><br></pre></td></tr></tbody></table></figure>
-<h4 id="数据结构转换（0-0）"><a href="#数据结构转换（0-0）" class="headerlink" title="数据结构转换（0.0）"></a>数据结构转换（0.0）</h4><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">type</span>(mylist) <span class="comment">#list</span></span><br><span class="line"><span class="built_in">tuple</span>(mylist)</span><br><span class="line"><span class="built_in">list</span>(k) <span class="comment">#['name', 'home']</span></span><br><span class="line">zl = <span class="built_in">zip</span>((<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>), [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]) <span class="comment"># zip可以将列表、元组、集合、字典‘缝合’起来</span></span><br><span class="line"><span class="built_in">print</span> (zl)</span><br><span class="line"><span class="built_in">print</span> (<span class="built_in">dict</span>(zl))  <span class="comment">#获得了新知识，猫猫头.jpg</span></span><br><span class="line"><span class="comment">#&lt;zip object at 0x00000135BEAF2A88&gt;</span></span><br><span class="line"><span class="comment">#{'A': 1, 'B': 2, 'C': 3}</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="python-控制流"><a href="#python-控制流" class="headerlink" title="python 控制流"></a>python 控制流</h3><p>在Python中通常的情况下程序的执行是从上往下执行的，而某些时候我们为了改变程序的执行顺序，使用控制流语句控制程序执行方式。Python中有三种控制流类型：顺序结构、分支结构、循环结构。</p>
-<p>另外，Python可以使用分号”;”分隔语句，但一般是使用换行来分隔；语句块不用大括号”{}”，而使用缩进（可以使用四个空格）来表示</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">s = <span class="string">'7'</span></span><br><span class="line">num = <span class="built_in">int</span>(s) <span class="comment"># 一般不使用这种分隔方式</span></span><br><span class="line">num -= <span class="number">1</span> <span class="comment"># num = num - 1 </span></span><br><span class="line">num *= <span class="number">6</span> <span class="comment"># num = num * 6</span></span><br><span class="line"><span class="built_in">print</span> (num) <span class="comment">#顺序结构</span></span><br><span class="line"></span><br><span class="line"><span class="string">'''分支结构if'''</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="待补充"><a href="#待补充" class="headerlink" title="待补充"></a>待补充</h3>]]></content>
-      <categories>
-        <category>基础</category>
-      </categories>
   </entry>
   <entry>
     <title>reading_note1</title>
@@ -3408,175 +3360,52 @@ m_1 & 0 \\
 <h4 id="python-集合运算"><a href="#python-集合运算" class="headerlink" title="python 集合运算"></a>python 集合运算</h4><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 在对集合做运算时，不会影响原来的集合，而是返回一个运算结果</span></span><br><span class="line"><span class="comment"># 创建两个集合</span></span><br><span class="line">s = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>}</span><br><span class="line">s2 = {<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>}</span><br><span class="line"></span><br><span class="line"><span class="comment"># &amp; 交集运算</span></span><br><span class="line">result = s &amp; s2 <span class="comment"># {3, 4, 5}</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># | 并集运算</span></span><br><span class="line">result = s | s2 <span class="comment"># {1,2,3,4,5,6,7}</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># - 差集</span></span><br><span class="line">result = s - s2 <span class="comment"># {1, 2}</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ^ 异或集 获取只在一个集合中出现的元素</span></span><br><span class="line">result = s ^ s2 <span class="comment"># {1, 2, 6, 7}</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># &lt;= 检查一个集合是否是另一个集合的子集</span></span><br><span class="line"><span class="comment"># 如果a集合中的元素全部都在b集合中出现，那么a集合就是b集合的子集，b集合是a集合超集</span></span><br><span class="line">a = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>}</span><br><span class="line">b = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>}</span><br><span class="line"></span><br><span class="line">result = a &lt;= b <span class="comment"># True</span></span><br><span class="line">result = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} &lt;= {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} <span class="comment"># True</span></span><br><span class="line">result = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>} &lt;= {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} <span class="comment"># False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># &lt; 检查一个集合是否是另一个集合的真子集</span></span><br><span class="line"><span class="comment"># 如果超集b中含有子集a中所有元素，并且b中还有a中没有的元素，则b就是a的真超集，a是b的真子集</span></span><br><span class="line">result = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} &lt; {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} <span class="comment"># False</span></span><br><span class="line">result = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} &lt; {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>} <span class="comment"># True</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># &gt;= 检查一个集合是否是另一个的超集</span></span><br><span class="line"><span class="comment"># &gt; 检查一个集合是否是另一个的真超集</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">'result ='</span>,result)</span><br></pre></td></tr></tbody></table></figure>]]></content>
   </entry>
   <entry>
-    <title>skill</title>
-    <url>/2024/03/20/skill/skill/</url>
-    <content><![CDATA[<h1 id="EVERYDAY速查总结"><a href="#EVERYDAY速查总结" class="headerlink" title="EVERYDAY速查总结"></a>EVERYDAY速查总结</h1><p>一些小技巧总结，方便补充查阅</p>
+    <title>pybasic</title>
+    <url>/2020/07/27/pybasic/pybasic/</url>
+    <content><![CDATA[<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><p>方便查看，资料来源{<a href="https://github.com/fengdu78/Data-Science-Notes/blob/master/1.python-basic/Python_Basic.ipynb}">https://github.com/fengdu78/Data-Science-Notes/blob/master/1.python-basic/Python_Basic.ipynb}</a></p>
+<p>2020.09.26 添加了python新内容，包括之后的进阶记录会在这里更新。</p>
 <span id="more"></span>
-<h2 id="罗马数字："><a href="#罗马数字：" class="headerlink" title="罗马数字："></a>罗马数字：</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>羅馬字</th>
-<th>數字</th>
-<th>羅馬字</th>
-<th>數字</th>
-<th>羅馬字</th>
-<th>數字</th>
-<th>羅馬字</th>
-<th>數字</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>I</td>
-<td>1</td>
-<td>XI</td>
-<td>11</td>
-<td>XXI</td>
-<td>21</td>
-<td>C</td>
-<td>100</td>
-</tr>
-<tr>
-<td>II</td>
-<td>2</td>
-<td>XII</td>
-<td>12</td>
-<td>XXIX</td>
-<td>29</td>
-<td>CI</td>
-<td>101</td>
-</tr>
-<tr>
-<td>III</td>
-<td>3</td>
-<td>XIII</td>
-<td>13</td>
-<td>XXX</td>
-<td>30</td>
-<td>CC</td>
-<td>200</td>
-</tr>
-<tr>
-<td>IV</td>
-<td>4</td>
-<td>XIV</td>
-<td>14</td>
-<td>XL</td>
-<td>40</td>
-<td>D</td>
-<td>500</td>
-</tr>
-<tr>
-<td>V</td>
-<td>5</td>
-<td>XV</td>
-<td>15</td>
-<td>XLVIII</td>
-<td>48</td>
-<td>DC</td>
-<td>600</td>
-</tr>
-<tr>
-<td>VI</td>
-<td>6</td>
-<td>XVI</td>
-<td>16</td>
-<td>IL</td>
-<td>49</td>
-<td>CM</td>
-<td>900</td>
-</tr>
-<tr>
-<td>VII</td>
-<td>7</td>
-<td>XVII</td>
-<td>17</td>
-<td>L</td>
-<td>50</td>
-<td>M</td>
-<td>1000</td>
-</tr>
-<tr>
-<td>VIII</td>
-<td>8</td>
-<td>XVIII</td>
-<td>18</td>
-<td>LX</td>
-<td>60</td>
-<td>MDCLXVI</td>
-<td>1666</td>
-</tr>
-<tr>
-<td>IX</td>
-<td>9</td>
-<td>XIX</td>
-<td>19</td>
-<td>XC</td>
-<td>90</td>
-<td>MCMLXX</td>
-<td>1970</td>
-</tr>
-<tr>
-<td>X</td>
-<td>10</td>
-<td>XX</td>
-<td>20</td>
-<td>XCVIII</td>
-<td>98</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="刚度矩阵提取："><a href="#刚度矩阵提取：" class="headerlink" title="刚度矩阵提取："></a>刚度矩阵提取：</h2><ul>
-<li>WB打开不显示： view-reset windows layout，显示前变形状态图</li>
-<li>二力杆节点显示：搜索preference-勾选numbers nodes</li>
-</ul>
-<p>workb提取设置及流程：</p>
-<ol>
-<li>软件中生成 point-genernate-line来自点-截面建立</li>
-<li>mesh sizing-生成修改节点数量</li>
-<li>输出结果中设置：求解方法solution-solver type-direct，analysis data-delete 非必要结构-no</li>
-</ol>
-<p>导入APDL:</p>
-<ol>
-<li>analysis setting-advanced-:求解方法去掉分布式</li>
-<li>读取-component-mechanical APDL模块-插入solution 更新</li>
-<li>APDL read查看模态</li>
-<li>file-list-binary-matrix-sys/mech/.ful文件选择stifness matrix，读取参数-转成txt</li>
-<li>导入matlab文件转码(目前存在问题是，空间结构系统中自动生成的节点与理论节点数量有一定误差，这个后续解决来再补充，应该暂时不会再用到这个东西了)</li>
-</ol>
-<h2 id="PS图片绘制设置-像"><a href="#PS图片绘制设置-像" class="headerlink" title="PS图片绘制设置(像)"></a>PS图片绘制设置(像)</h2><p>图片无损方法：图像大小-重新取样/邻近(赢边缘)宽高</p>
-<p>变形方法：</p>
-<ol>
-<li>滤镜液化 大小自定，压力25</li>
-<li>冻结蒙版，压力100，眼睛下</li>
-<li>转化成智能对象</li>
-<li>视频帧转</li>
-</ol>
-<p>像素前置设置</p>
-<ol>
-<li>6464自订-拉入图片-窗口排列-双联垂直</li>
-<li>视图-显示-像素网格</li>
-<li>文件-存储为png 新建画布10，编辑-首选项-常规(邻近，非像素恢复 C+T放大)</li>
-</ol>
-<h2 id="视频剪辑"><a href="#视频剪辑" class="headerlink" title="视频剪辑"></a>视频剪辑</h2><ol>
-<li>右键导入视频可以拆分轨道</li>
-<li>去黑边方式-按住Crtl可以不锁定宽高比</li>
-<li>缩略图全显示：选项-首选项-视频</li>
-<li>Crtl+G时间点</li>
-<li>反转-创建子剪辑</li>
-<li>shift 工具多机位</li>
-<li>先放大局部-导出视频-重新导入放大</li>
-<li>抠图-视频色键</li>
-<li>运动字幕-使用字幕与文字-文本后图标添加动画-出现关键帧</li>
-<li>导出倍速视频：crtl按住视频边线：左加速右减速，直接拖边线不可以，只会恢复切片或者重复切片。</li>
-</ol>
-<h2 id="MATLAB"><a href="#MATLAB" class="headerlink" title="MATLAB"></a>MATLAB</h2><ol>
-<li>三维矢量图解组失败，一般是由于三维矢量图无法通过图窗复制-导出设置-渲染-printers对钩-应用复制图窗</li>
-</ol>
-]]></content>
+<p>1.数据类型</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">print</span> (<span class="string">'hello world!'</span>)</span><br><span class="line">c = <span class="string">'It is a "dog"!'</span></span><br><span class="line"><span class="built_in">print</span> (c)</span><br><span class="line">c1= <span class="string">"It's a dog!"</span></span><br><span class="line"><span class="built_in">print</span> (c1)</span><br><span class="line">c2 = <span class="string">"""hello</span></span><br><span class="line"><span class="string">world</span></span><br><span class="line"><span class="string">!"""</span></span><br><span class="line"><span class="built_in">print</span> (c2)</span><br></pre></td></tr></tbody></table></figure>
+<p>转义字符</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">print</span> (<span class="string">'It\'s a dog!'</span>)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">"hello world!\nhello Python!"</span>)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">'\\\t\\'</span>)</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">print</span> (<span class="string">r'\\\t\\'</span>) <span class="comment">#原样输出引号内字符串可以使用在引号前加r</span></span><br><span class="line">s = <span class="string">'Python'</span></span><br><span class="line"><span class="built_in">print</span>( <span class="string">'Py'</span> <span class="keyword">in</span> s)</span><br><span class="line"><span class="built_in">print</span>( <span class="string">'py'</span> <span class="keyword">in</span> s) <span class="comment">#切片</span></span><br><span class="line"><span class="built_in">print</span> (s[<span class="number">2</span>])</span><br><span class="line"><span class="built_in">print</span> (s[<span class="number">1</span>:<span class="number">4</span>])</span><br></pre></td></tr></tbody></table></figure>
+<p>字符串连接与格式化输出</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">word1 = <span class="string">'"hello"'</span></span><br><span class="line">word2 = <span class="string">'"world"'</span></span><br><span class="line">sentence = word1.strip(<span class="string">'"'</span>) + <span class="string">' '</span> + word2.strip(<span class="string">'"'</span>) + <span class="string">'!'</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>( <span class="string">'The first word is %s, and the second word is %s'</span> %(word1, word2))</span><br><span class="line"><span class="built_in">print</span> (sentence)</span><br></pre></td></tr></tbody></table></figure>
+<p>1.2整点与浮点数</p>
+<p>Python可以处理任意大小的整数，当然包括负整数，在程序中的表示方法和数学上的写法一模一样</p>
+<p>%余数  /取整</p>
+<p>浮点数</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="number">0b1111</span> </span><br><span class="line"><span class="number">0xff</span></span><br><span class="line"><span class="number">1.2e-5</span></span><br></pre></td></tr></tbody></table></figure>
+<p>运算：</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span> (math.log(math.e)) <span class="comment"># 更多运算可查阅文档</span></span><br></pre></td></tr></tbody></table></figure>
+<p>布尔值</p>
+<p>1.4日期与时间</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line">now = time.strptime(<span class="string">'2019-08-20'</span>, <span class="string">'%Y-%m-%d'</span>)</span><br><span class="line"><span class="built_in">print</span> (now)</span><br><span class="line">time.strftime(<span class="string">'%Y-%m-%d'</span>, now) <span class="comment">#2019-08-20</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line">someDay = datetime.date(<span class="number">1999</span>,<span class="number">2</span>,<span class="number">10</span>)</span><br><span class="line">anotherDay = datetime.date(<span class="number">1999</span>,<span class="number">2</span>,<span class="number">15</span>)</span><br><span class="line">deltaDay = anotherDay - someDay</span><br><span class="line">deltaDay.days</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<p align="left">
+  <img width="400" src="/1.jpg">
+</p>
+
+
+
+<h2 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h2><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">type</span>(<span class="literal">None</span>) <span class="comment">#NoneType</span></span><br><span class="line"><span class="built_in">type</span>(<span class="number">1.0</span>) <span class="comment">#float</span></span><br><span class="line"><span class="built_in">type</span>(<span class="literal">True</span>) <span class="comment"># True</span></span><br><span class="line">s=<span class="string">"NoneType"</span></span><br><span class="line"><span class="built_in">type</span>(s) <span class="comment">#str</span></span><br><span class="line"><span class="comment">#类型转化</span></span><br><span class="line"><span class="built_in">str</span>(<span class="number">10086</span>) <span class="comment">#‘10086’</span></span><br><span class="line"><span class="built_in">float</span>(<span class="number">10086</span>) <span class="comment">#10086.0</span></span><br><span class="line"><span class="built_in">int</span>(<span class="string">'10086'</span>) <span class="comment">#10086</span></span><br><span class="line"><span class="built_in">complex</span>(<span class="number">10086</span>) <span class="comment">#(10086+0j)</span></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="数据结构基础"><a href="#数据结构基础" class="headerlink" title="数据结构基础"></a>数据结构基础</h3><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">mylist= [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">print</span> (mylist)</span><br><span class="line"><span class="comment"># 索引从0开始，含左不含右</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[4]='</span>, mylist[<span class="number">4</span>]) <span class="comment">#4</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[-4]='</span>, mylist[-<span class="number">4</span>]) <span class="comment">#2</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[0:4]='</span>, mylist[<span class="number">0</span>:<span class="number">4</span>]) <span class="comment">#0,1,2,3</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[:4]='</span>, mylist[:<span class="number">4</span>])<span class="comment">#0,1,2,3</span></span><br><span class="line"><span class="built_in">print</span>( <span class="string">'[4:]='</span>, mylist[<span class="number">4</span>:])<span class="comment">#4,5  ！</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[0:4:2]='</span>, mylist[<span class="number">0</span>:<span class="number">4</span>:<span class="number">2</span>]) <span class="comment">#0,2</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[-5:-1:]='</span>, mylist[-<span class="number">5</span>:-<span class="number">1</span>:]) <span class="comment">#1,2,3,4</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">'[-2::-1]='</span>, mylist[-<span class="number">2</span>::-<span class="number">1</span>])<span class="comment">#4,3,2,1,0  #good</span></span><br><span class="line"></span><br><span class="line">mylist[<span class="number">3</span>] = <span class="string">"小月"</span></span><br><span class="line"><span class="built_in">print</span> (mylist[<span class="number">3</span>])</span><br><span class="line"></span><br><span class="line">mylist[<span class="number">5</span>]=<span class="string">"小楠"</span></span><br><span class="line"><span class="built_in">print</span> (mylist[<span class="number">5</span>])</span><br><span class="line"></span><br><span class="line">mylist[<span class="number">5</span>]=<span class="number">19978</span></span><br><span class="line"><span class="built_in">print</span> (mylist[<span class="number">5</span>])</span><br><span class="line"><span class="comment">#插入</span></span><br><span class="line"></span><br><span class="line">mylist.append(<span class="string">'han'</span>) <span class="comment"># 添加到尾部</span></span><br><span class="line">mylist.extend([<span class="string">'long'</span>, <span class="string">'wan'</span>])</span><br><span class="line"><span class="built_in">print</span> (mylist)</span><br><span class="line">scores = [<span class="number">90</span>, <span class="number">80</span>, <span class="number">75</span>, <span class="number">66</span>]</span><br><span class="line">mylist.insert(<span class="number">1</span>, scores) <span class="comment"># 添加到指定位置</span></span><br><span class="line">mylist</span><br></pre></td></tr></tbody></table></figure>
+<p>删除元素</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">print</span> (mylist.pop(<span class="number">1</span>)) <span class="comment"># 该函数返回被弹出的元素，不传入参数则删除最后一个元素</span></span><br><span class="line"><span class="built_in">print</span> (mylist)</span><br><span class="line"><span class="built_in">print</span>( <span class="string">'wan'</span> <span class="keyword">in</span> mylist)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">'han'</span> <span class="keyword">not</span> <span class="keyword">in</span> mylist) <span class="comment">#常见简单判断</span></span><br><span class="line">mylist.count(<span class="string">'wan'</span>) <span class="comment">#计算元素个数</span></span><br><span class="line">mylist.index(<span class="string">'wan'</span>) <span class="comment">#查询位数</span></span><br><span class="line"><span class="comment">#列表</span></span><br><span class="line"><span class="built_in">print</span> (<span class="built_in">range</span>(<span class="number">10</span>))</span><br><span class="line"><span class="built_in">print</span> (<span class="built_in">range</span>(-<span class="number">5</span>, <span class="number">5</span>))</span><br><span class="line"><span class="built_in">print</span> (<span class="built_in">range</span>(-<span class="number">10</span>, <span class="number">10</span>, <span class="number">2</span>))</span><br><span class="line"><span class="built_in">print</span> (<span class="built_in">range</span>(<span class="number">16</span>, <span class="number">10</span>, -<span class="number">1</span>)) <span class="comment">#【】</span></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="元组tuple"><a href="#元组tuple" class="headerlink" title="元组tuple"></a>元组tuple</h4><p>元组类似列表，元组里面的元素也是进行索引计算。列表里面的元素的值可以修改，而元组里面的元素的值不能修改，只能读取。元组的符号是()。</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">studentsTuple = (<span class="string">"ming"</span>, <span class="string">"jun"</span>, <span class="string">"qiang"</span>, <span class="string">"wu"</span>, scores)</span><br><span class="line">studentsTuple</span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    studentsTuple[<span class="number">1</span>] = <span class="string">'fu'</span></span><br><span class="line"><span class="keyword">except</span> TypeError:</span><br><span class="line">    <span class="built_in">print</span> (<span class="string">'TypeError'</span>)  <span class="comment">#程序常用格式try</span></span><br><span class="line"><span class="built_in">len</span>(studentsTuple) <span class="comment">#元组不可操作</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="集合set"><a href="#集合set" class="headerlink" title="集合set"></a>集合set</h4><p>Python中集合主要有两个功能，一个功能是进行集合操作，另一个功能是消除重复元素。 集合的格式是：set()，其中()内可以是列表、字典或字符串，因为字符串是以列表的形式存储的</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">studentsSet = <span class="built_in">set</span>(mylist)</span><br><span class="line"><span class="built_in">print</span> (studentsSet)</span><br><span class="line"></span><br><span class="line">studentsSet.add(<span class="string">'xu'</span>)</span><br><span class="line"><span class="built_in">print</span> (studentsSet) <span class="comment">#乱序</span></span><br><span class="line"></span><br><span class="line">studentsSet.remove(<span class="string">'xu'</span>)</span><br><span class="line"><span class="built_in">print</span> (studentsSet)</span><br><span class="line"></span><br><span class="line">a = <span class="built_in">set</span>(<span class="string">"abcnmaaaaggsng"</span>)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">'a='</span>, a) <span class="comment">#a= {'n', 'g', 'm', 'c', 's', 'b', 'a'}</span></span><br><span class="line">b = <span class="built_in">set</span>(<span class="string">"cdfm"</span>)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">'b='</span>, b) <span class="comment">#b= {'f', 'm', 'd', 'c'}</span></span><br><span class="line">’‘’集合运算‘’‘</span><br><span class="line"></span><br><span class="line"><span class="comment">#交集</span></span><br><span class="line">x = a &amp; b </span><br><span class="line"><span class="built_in">print</span>( <span class="string">'x='</span>, x)</span><br><span class="line"><span class="comment">#并集</span></span><br><span class="line">y = a | b</span><br><span class="line"><span class="built_in">print</span> (<span class="string">'y='</span>, y)</span><br><span class="line"><span class="comment">#差集</span></span><br><span class="line">z = a - b</span><br><span class="line"><span class="built_in">print</span>( <span class="string">'z='</span>, z)</span><br><span class="line"><span class="comment">#去除重复元素</span></span><br><span class="line">new = <span class="built_in">set</span>(a)</span><br><span class="line"><span class="built_in">print</span>( z)</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="字典dict"><a href="#字典dict" class="headerlink" title="字典dict"></a>字典dict</h4><p>Python中的字典dict也叫做关联数组，用大括号{}括起来，在其他语言中也称为map，使用键-值（key-value）存储，具有极快的查找速度，其中key不能重复。</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">k = {<span class="string">"name"</span>:<span class="string">"weiwei"</span>, <span class="string">"home"</span>:<span class="string">"guilin"</span>}</span><br><span class="line"><span class="built_in">print</span> (k[<span class="string">"home"</span>])</span><br><span class="line"><span class="built_in">print</span>( k.keys())</span><br><span class="line"><span class="built_in">print</span>( k.values())</span><br><span class="line">k[<span class="string">"like"</span>] = <span class="string">"music"</span></span><br><span class="line">k[<span class="string">'name'</span>] = <span class="string">'guangzhou'</span></span><br><span class="line"><span class="built_in">print</span> (k) <span class="comment">#添加</span></span><br><span class="line">k.get(<span class="string">'edu'</span>, -<span class="number">1</span>) <span class="comment"># 通过dict提供的get方法，如果key不存在，可以返回None，或者自己指定的value</span></span><br><span class="line">k.pop(<span class="string">'like'</span>)</span><br><span class="line"><span class="built_in">print</span> (k) <span class="comment">#删除元素</span></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="数据结构转换（0-0）"><a href="#数据结构转换（0-0）" class="headerlink" title="数据结构转换（0.0）"></a>数据结构转换（0.0）</h4><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">type</span>(mylist) <span class="comment">#list</span></span><br><span class="line"><span class="built_in">tuple</span>(mylist)</span><br><span class="line"><span class="built_in">list</span>(k) <span class="comment">#['name', 'home']</span></span><br><span class="line">zl = <span class="built_in">zip</span>((<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>), [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]) <span class="comment"># zip可以将列表、元组、集合、字典‘缝合’起来</span></span><br><span class="line"><span class="built_in">print</span> (zl)</span><br><span class="line"><span class="built_in">print</span> (<span class="built_in">dict</span>(zl))  <span class="comment">#获得了新知识，猫猫头.jpg</span></span><br><span class="line"><span class="comment">#&lt;zip object at 0x00000135BEAF2A88&gt;</span></span><br><span class="line"><span class="comment">#{'A': 1, 'B': 2, 'C': 3}</span></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="python-控制流"><a href="#python-控制流" class="headerlink" title="python 控制流"></a>python 控制流</h3><p>在Python中通常的情况下程序的执行是从上往下执行的，而某些时候我们为了改变程序的执行顺序，使用控制流语句控制程序执行方式。Python中有三种控制流类型：顺序结构、分支结构、循环结构。</p>
+<p>另外，Python可以使用分号”;”分隔语句，但一般是使用换行来分隔；语句块不用大括号”{}”，而使用缩进（可以使用四个空格）来表示</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">s = <span class="string">'7'</span></span><br><span class="line">num = <span class="built_in">int</span>(s) <span class="comment"># 一般不使用这种分隔方式</span></span><br><span class="line">num -= <span class="number">1</span> <span class="comment"># num = num - 1 </span></span><br><span class="line">num *= <span class="number">6</span> <span class="comment"># num = num * 6</span></span><br><span class="line"><span class="built_in">print</span> (num) <span class="comment">#顺序结构</span></span><br><span class="line"></span><br><span class="line"><span class="string">'''分支结构if'''</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="待补充"><a href="#待补充" class="headerlink" title="待补充"></a>待补充</h3>]]></content>
+      <categories>
+        <category>基础</category>
+      </categories>
   </entry>
   <entry>
     <title></title>
@@ -3787,6 +3616,177 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
+    <title>skill</title>
+    <url>/2024/03/20/skill/skill/</url>
+    <content><![CDATA[<h1 id="EVERYDAY速查总结"><a href="#EVERYDAY速查总结" class="headerlink" title="EVERYDAY速查总结"></a>EVERYDAY速查总结</h1><p>一些小技巧总结，方便补充查阅</p>
+<span id="more"></span>
+<h2 id="罗马数字："><a href="#罗马数字：" class="headerlink" title="罗马数字："></a>罗马数字：</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>羅馬字</th>
+<th>數字</th>
+<th>羅馬字</th>
+<th>數字</th>
+<th>羅馬字</th>
+<th>數字</th>
+<th>羅馬字</th>
+<th>數字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>1</td>
+<td>XI</td>
+<td>11</td>
+<td>XXI</td>
+<td>21</td>
+<td>C</td>
+<td>100</td>
+</tr>
+<tr>
+<td>II</td>
+<td>2</td>
+<td>XII</td>
+<td>12</td>
+<td>XXIX</td>
+<td>29</td>
+<td>CI</td>
+<td>101</td>
+</tr>
+<tr>
+<td>III</td>
+<td>3</td>
+<td>XIII</td>
+<td>13</td>
+<td>XXX</td>
+<td>30</td>
+<td>CC</td>
+<td>200</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>4</td>
+<td>XIV</td>
+<td>14</td>
+<td>XL</td>
+<td>40</td>
+<td>D</td>
+<td>500</td>
+</tr>
+<tr>
+<td>V</td>
+<td>5</td>
+<td>XV</td>
+<td>15</td>
+<td>XLVIII</td>
+<td>48</td>
+<td>DC</td>
+<td>600</td>
+</tr>
+<tr>
+<td>VI</td>
+<td>6</td>
+<td>XVI</td>
+<td>16</td>
+<td>IL</td>
+<td>49</td>
+<td>CM</td>
+<td>900</td>
+</tr>
+<tr>
+<td>VII</td>
+<td>7</td>
+<td>XVII</td>
+<td>17</td>
+<td>L</td>
+<td>50</td>
+<td>M</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>VIII</td>
+<td>8</td>
+<td>XVIII</td>
+<td>18</td>
+<td>LX</td>
+<td>60</td>
+<td>MDCLXVI</td>
+<td>1666</td>
+</tr>
+<tr>
+<td>IX</td>
+<td>9</td>
+<td>XIX</td>
+<td>19</td>
+<td>XC</td>
+<td>90</td>
+<td>MCMLXX</td>
+<td>1970</td>
+</tr>
+<tr>
+<td>X</td>
+<td>10</td>
+<td>XX</td>
+<td>20</td>
+<td>XCVIII</td>
+<td>98</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="刚度矩阵提取："><a href="#刚度矩阵提取：" class="headerlink" title="刚度矩阵提取："></a>刚度矩阵提取：</h2><ul>
+<li>WB打开不显示： view-reset windows layout，显示前变形状态图</li>
+<li>二力杆节点显示：搜索preference-勾选numbers nodes</li>
+</ul>
+<p>workb提取设置及流程：</p>
+<ol>
+<li>软件中生成 point-genernate-line来自点-截面建立</li>
+<li>mesh sizing-生成修改节点数量</li>
+<li>输出结果中设置：求解方法solution-solver type-direct，analysis data-delete 非必要结构-no</li>
+</ol>
+<p>导入APDL:</p>
+<ol>
+<li>analysis setting-advanced-:求解方法去掉分布式</li>
+<li>读取-component-mechanical APDL模块-插入solution 更新</li>
+<li>APDL read查看模态</li>
+<li>file-list-binary-matrix-sys/mech/.ful文件选择stifness matrix，读取参数-转成txt</li>
+<li>导入matlab文件转码(目前存在问题是，空间结构系统中自动生成的节点与理论节点数量有一定误差，这个后续解决来再补充，应该暂时不会再用到这个东西了)</li>
+</ol>
+<h2 id="PS图片绘制设置-像"><a href="#PS图片绘制设置-像" class="headerlink" title="PS图片绘制设置(像)"></a>PS图片绘制设置(像)</h2><p>图片无损方法：图像大小-重新取样/邻近(赢边缘)宽高</p>
+<p>变形方法：</p>
+<ol>
+<li>滤镜液化 大小自定，压力25</li>
+<li>冻结蒙版，压力100，眼睛下</li>
+<li>转化成智能对象</li>
+<li>视频帧转</li>
+</ol>
+<p>像素前置设置</p>
+<ol>
+<li>6464自订-拉入图片-窗口排列-双联垂直</li>
+<li>视图-显示-像素网格</li>
+<li>文件-存储为png 新建画布10，编辑-首选项-常规(邻近，非像素恢复 C+T放大)</li>
+</ol>
+<h2 id="视频剪辑"><a href="#视频剪辑" class="headerlink" title="视频剪辑"></a>视频剪辑</h2><ol>
+<li>右键导入视频可以拆分轨道</li>
+<li>去黑边方式-按住Crtl可以不锁定宽高比</li>
+<li>缩略图全显示：选项-首选项-视频</li>
+<li>Crtl+G时间点</li>
+<li>反转-创建子剪辑</li>
+<li>shift 工具多机位</li>
+<li>先放大局部-导出视频-重新导入放大</li>
+<li>抠图-视频色键</li>
+<li>运动字幕-使用字幕与文字-文本后图标添加动画-出现关键帧</li>
+<li>导出倍速视频：crtl按住视频边线：左加速右减速，直接拖边线不可以，只会恢复切片或者重复切片。</li>
+</ol>
+<h2 id="MATLAB"><a href="#MATLAB" class="headerlink" title="MATLAB"></a>MATLAB</h2><ol>
+<li>三维矢量图解组失败，一般是由于三维矢量图无法通过图窗复制-导出设置-渲染-printers对钩-应用复制图窗</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
     <title>start2024</title>
     <url>/2024/02/19/start2024/start2024/</url>
     <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
@@ -3883,6 +3883,33 @@ u w(1-\cos \theta)-v \sin \theta & v w(1-\cos \theta)+u \sin \theta & w^2+\left(
       </categories>
       <tags>
         <tag>emotion</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>随笔II</title>
+    <url>/2024/08/05/%E9%9A%8F%E7%AC%94II/%E9%9A%8F%E7%AC%94II/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"><br>平常心平常心~</p>
+<span id="more"></span>
+<p>做事要有耐心，要对家人有耐心，要对陌生人有耐心。</p>
+<p>经常遇到自己不乐意的事情就容易表露出来，给人一种拒人千里的感觉，事后老后悔让别人不开心了，真的不太好，多点换位思考，耐心一点。</p>
+<hr>
+<p>最近事情比较多，论文写的也不太顺利，其实内容上已经没有太大问题，运动模式部分还需要看数据才能判断怎么区分维度和驱动速度的关系，得得踏踏实实的推进实质内容了，8月5日周一，这周需要一些进度完成，动力学部分在运动模式部分加入一下，曲线规划也有一部分内容，至少20号之前要有个中期初版。</p>
+<hr>
+<p>看了个医疗电视剧问心，结局还是停留在美好了，其实往后想想还是一堆问题，曾经向往真挚的情感，现在开始更多考虑现实，与一些朋友要保持距离，开开心心的聊天就行，柴米油盐才是生活的本质，人的成分也基本一致，漫长的时光会磨灭一切。</p>
+<p>护士长因为自己产检，没有及时把钱打回账户，刚看到的时候，那一瞬间有点怪人家，连带着辩护都有些讨厌，后来一想，其实是可以理解得，毕竟人家的事情更重要，比较下来这边的事情也不是很重要，后来也可以澄清，突然开始觉得自己可恶，怎么可以怪人家，现实里也是，真得多想想，耐心一点耐心一点，绕绕路等等人呗~</p>
+<p>再就是年龄问题，平时看动漫看其他电视剧，看看主角的年龄总会觉得自己真老了，佟湘玉都说自己24岁，但是看看这个剧，又感觉自己也不是很老，培养一个医学博士需要耗费相当久的时间，虽然不是学医得，但是经历也算类似，所以还是希望像剧中人一样可以选择不受牵绊的去做一些自己想做的事情，没必要一直纠结。</p>
+<p>毛晓彤确实有点甜分超标，过于可爱了属于是233</p>
+<hr>
+<ul>
+<li>[x] 其实都不太重要，还是耐心比较重要，有时候自己麻烦一点，让别人舒心，后续也会开心一点，就这样，当然是对家人、对朋友。</li>
+</ul>
+
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>EMO</tag>
       </tags>
   </entry>
   <entry>
@@ -4044,32 +4071,5 @@ u w(1-\cos \theta)-v \sin \theta & v w(1-\cos \theta)+u \sin \theta & w^2+\left(
 <p>一对多控制</p>
 <p>emgsensor 8通道</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>随笔II</title>
-    <url>/2024/08/05/%E9%9A%8F%E7%AC%94II/%E9%9A%8F%E7%AC%94II/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"><br>平常心平常心~</p>
-<span id="more"></span>
-<p>做事要有耐心，要对家人有耐心，要对陌生人有耐心。</p>
-<p>经常遇到自己不乐意的事情就容易表露出来，给人一种拒人千里的感觉，事后老后悔让别人不开心了，真的不太好，多点换位思考，耐心一点。</p>
-<hr>
-<p>最近事情比较多，论文写的也不太顺利，其实内容上已经没有太大问题，运动模式部分还需要看数据才能判断怎么区分维度和驱动速度的关系，得得踏踏实实的推进实质内容了，8月5日周一，这周需要一些进度完成，动力学部分在运动模式部分加入一下，曲线规划也有一部分内容，至少20号之前要有个中期初版。</p>
-<hr>
-<p>看了个医疗电视剧问心，结局还是停留在美好了，其实往后想想还是一堆问题，曾经向往真挚的情感，现在开始更多考虑现实，与一些朋友要保持距离，开开心心的聊天就行，柴米油盐才是生活的本质，人的成分也基本一致，漫长的时光会磨灭一切。</p>
-<p>护士长因为自己产检，没有及时把钱打回账户，刚看到的时候，那一瞬间有点怪人家，连带着辩护都有些讨厌，后来一想，其实是可以理解得，毕竟人家的事情更重要，比较下来这边的事情也不是很重要，后来也可以澄清，突然开始觉得自己可恶，怎么可以怪人家，现实里也是，真得多想想，耐心一点耐心一点，绕绕路等等人呗~</p>
-<p>再就是年龄问题，平时看动漫看其他电视剧，看看主角的年龄总会觉得自己真老了，佟湘玉都说自己24岁，但是看看这个剧，又感觉自己也不是很老，培养一个医学博士需要耗费相当久的时间，虽然不是学医得，但是经历也算类似，所以还是希望像剧中人一样可以选择不受牵绊的去做一些自己想做的事情，没必要一直纠结。</p>
-<p>毛晓彤确实有点甜分超标，过于可爱了属于是233</p>
-<hr>
-<ul>
-<li>[x] 其实都不太重要，还是耐心比较重要，有时候自己麻烦一点，让别人舒心，后续也会开心一点，就这样，当然是对家人、对朋友。</li>
-</ul>
-
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>EMO</tag>
-      </tags>
   </entry>
 </search>
