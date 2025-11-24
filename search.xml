@@ -106,7 +106,7 @@
 <p>最近觉得自己做的很好的一件事情就是已经能够做到下意识的去换位思考了，不去把自己的想法强加给别人，吃饭是这样，为人做事也是这样，更成熟了一点，做一个控制欲望为0的人，大家都做自己想做的事情，不要互相干扰。</p>
 <p>喜欢，经历之前的事情再加上这几年来的事情，感觉自己变得有点现实，权衡开始成了判断的前提，做好自己，还是去接触一下，不要封闭自己，拒绝别人也不太好，也和习惯规划有点相关，12月吧大概就这样~</p>
 <p>大目标！算了不立flag了，踏踏实实的做好眼前的事情吧。</p>
-<img src="/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/marry.jpg" class="">]]></content>
+<img src="/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/marry.jpg" class>]]></content>
       <categories>
         <category>emotion</category>
       </categories>
@@ -130,7 +130,7 @@
 <p>经常告诉自己不要因为一件事去否定别人，但是毕竟不是机器人，难免有时候情绪激动直接否定，但是一定要记住的是不要站在别人面前去刷否定的存在感，站在别人面前的那一刻就已经是个小丑了。</p>
 <p>借自己最喜欢的电视剧士兵突击做个结尾，袁朗评价吴哲：“ 我喜欢他。知道为什么吗？坚持自己的原则，充满希望和乐观。重要的是，他能跟许三多这样的兵交朋友，这一点，就不会毁于他很容易产生的优越感 ”，年轻时候觉得自己像三多，不喜欢变化，后来觉得自己像成才，有时候有点自私，再后来觉得自己还是希望成为吴哲，经常告诉自己要平常心，说实话自己是不如三多和成才的，他们有各自的强项，但我很希望成为吴哲一类的人，做一个半吊子的理想主义者，充满希望和乐观。</p>
 <p>碎碎念结束，感觉很生气就写个日记，写到这里已经完全没感觉了，人不是机器人，也可以理解。</p>
-<img src="/2024/08/21/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E5%AD%98/qq.jpg" class=""> 
+<img src="/2024/08/21/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E5%AD%98/qq.jpg" class> 
 <p>图源[<a href="https://x.com/Hitoimim/status/1807718505602797820">https://x.com/Hitoimim/status/1807718505602797820</a>]</p>
 ]]></content>
       <categories>
@@ -173,6 +173,75 @@
       </tags>
   </entry>
   <entry>
+    <title>关于柔度矩阵与变形叠加法的思考记录</title>
+    <url>/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
+<h1 id="关于小变形叠加法矩阵的认识与记录"><a href="#关于小变形叠加法矩阵的认识与记录" class="headerlink" title="关于小变形叠加法矩阵的认识与记录"></a>关于小变形叠加法矩阵的认识与记录</h1><p>柔度矩阵的叠加，小变形各个输入力单独作用下节点位移的线性叠加，柔度本质是类似于K的倒数，串联并联叠加时候需要注意一下：叠加形式保持一致,多自由度系统柔度矩阵中详细推导。</p>
+<p>并联：</p>
+<script type="math/tex; mode=display">
+\begin{equation}\frac{1}{k}=\frac{1}{k_1}+\frac{1}{k_2} \\\frac{1}{d}=\frac{1}{d_1}+\frac{1}{d_2} \end{equation}</script><p>串联</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+{k}={k_1}+{k_2} \\
+{d}={d_1}+{d_2} \\
+\end{equation}</script><span id="more"></span>
+<p>柔度叠加矩阵案例说明：</p>
+<p>d_ij,j坐标受力在i坐标产生位移</p>
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q1.png" class title="Q1">
+<p>此时F1=1,F2=0,F1作用下，两个位置的位移，其柔度矩阵含义如图，即为各点的挠度，在实际柔性铰链中，则为各个铰链位置变形经过转换矩阵在统一坐标下的表达：</p>
+<script type="math/tex; mode=display">
+x_1=F_1*d_{11} \\
+x_2=F_1*d_{21}</script><p>另一种情况，F1=0,F2=1;先列出点，其次看受力位置</p>
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q2.png" class title="Q2">
+<script type="math/tex; mode=display">
+x_1=F_2*d_{12} \\
+x_2=F_2*d_{22}</script><p>所以，F1=1,F2=1,各自独立计算并且叠加，可以得到：</p>
+<script type="math/tex; mode=display">
+x_1=F_1d_{11}+F_2d_{12}\\
+x_2=F_2d_{22}+F_1D_{21}</script><p>有一个案例，文中直接给出了柔度的参数，这里按照材料力学补充一下推导流程，略作复习：</p>
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q3.png" class title="Q3">
+<p>d_11=d_22=8d,d_12=d_21=7d;推导说明，假定F1=0,F2=1;</p>
+<p>以x_2为界限进行分类，挠度曲线参数分为两段</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+w_1=\frac{F x}{18 E I}\left[\frac{8}{9}l^2-x^2\right] \\
+w_2=\frac{F}{18 E I}\left[3(x-\frac{2}{3}l)^3+\frac{8}{9}l^2x-x^3\right]
+\end{equation}</script><p>可以计算，当仅有F2,输入时候，两点挠度为：</p>
+<p>第一段中：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+w_1=\frac{F}{18 E I}\left[\frac{7}{27}l^3\right] \\
+w_2=\frac{F}{18 E I}\left[\frac{8}{27}l^3\right] 
+\end{equation}</script><p>第二段利用第二个公式计算可以得到上述挠度，所以柔度矩阵参数给定过程如上，另外，求取各点挠度过程中，按照节点分割计算，并不需要全部柔度矩阵，类似与B点按照分割后段进行计算，基础概念需要理解。</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+\left[\begin{array}{l}
+x_1 \\
+x_2
+\end{array}\right]=\left[\begin{array}{ll}
+8 d & 7 d \\
+7 d & 8 d
+\end{array}\right]\left(\left[\begin{array}{l}
+F_1 \\
+F_2
+\end{array}\right]-\left[\begin{array}{cc}
+m_1 & 0 \\
+0 & m_2
+\end{array}\right]\left[\begin{array}{l}
+\ddot{x}_1 \\
+\ddot{x}_2
+\end{array}\right]\right)
+\end{equation}</script><h2 id="待补充："><a href="#待补充：" class="headerlink" title="待补充："></a>待补充：</h2><p>两级放大柔度矩阵的左边转换关系，代码验证后补充</p>
+<p>角度关系，感觉是直接静力学求解的，然后放在具体工况下面计算。</p>
+]]></content>
+      <categories>
+        <category>learning</category>
+      </categories>
+      <tags>
+        <tag>柔性铰链</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>年终总结2024</title>
     <url>/2024/12/30/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%932024/</url>
     <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
@@ -191,7 +260,7 @@
 <p>支付宝攒了一些钱了，没有什么炒股的想法，单纯觉得很麻烦，就继续放着吧，未来可能会买一些定期存存，毕业能买一辆老哥那个车了233，平时确实也没啥花销，也就游戏还有和朋友吃饭，明年要多去做一些没体验过得事情，钱重要但是也不重要，看淡一些。</p>
 <h2 id="规划"><a href="#规划" class="headerlink" title="规划"></a>规划</h2><p>工作事情要带上脑子了，简历其实改了几版了，继续慢慢修改，也要多想想自己到底想做什么，每天目标也要完成，开始就做最重要的事情，任何时候都是。</p>
 <p>要活的潇洒一点，自信一点，少纠结，拥抱未来，2025加油呀，希望大家都好，世界都好，想做事情就一定去做，今年下决心做的事情基本都成了，所以未来也是，加油！！！</p>
-<img src="/2024/12/30/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%932024/OCTAQ.png" class="" title="八方">]]></content>
+<img src="/2024/12/30/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%932024/OCTAQ.png" class title="八方">]]></content>
       <categories>
         <category>thought2024</category>
       </categories>
@@ -217,7 +286,7 @@
 <p>每个人的缺点无法避免，但是可以反思克制就好，开心一点~</p>
 <p>按照安排慢慢来，12月要再完成一部分工作，年前再完成一部分，要看一些有趣的电影…</p>
 <p>放个最近感觉很好吃的川菜~</p>
-<img src="/2024/11/29/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%9420241129/delicious.jpg" class="" title="最近好吃的，好开心">]]></content>
+<img src="/2024/11/29/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%9420241129/delicious.jpg" class title="最近好吃的，好开心">]]></content>
       <categories>
         <category>feel</category>
       </categories>
@@ -232,7 +301,7 @@
 <h1 id="空间曲线拟合笔记"><a href="#空间曲线拟合笔记" class="headerlink" title="空间曲线拟合笔记"></a>空间曲线拟合笔记</h1><p>渐进颜色修正与一点点origin</p>
 <p>基础信息与参数说明</p>
 <span id="more"></span>
-<h2 id="基础参数"><a href="#基础参数" class="headerlink" title="基础参数"></a>基础参数</h2><img src="/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/1727880727916.png" class="" width="1727880727916">
+<h2 id="基础参数"><a href="#基础参数" class="headerlink" title="基础参数"></a>基础参数</h2><img src="/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/1727880727916.png" class width="1727880727916">
 <p>subplot(2, 2, 1); plot(x, y);参考源文件‘</p>
 <p> patch 利用填充函数绘制渐进曲线颜色,也可以用来表示边的颜色插补</p>
 <p> ‘<strong>flat</strong>‘ - 对每个网格线段和面使用恒定颜色。 该颜色由该线段的端点或该面的角边处具有最小索引的颜色值确定。 </p>
@@ -269,7 +338,7 @@
 <p>事情很多，心里总是很烦，但是缩短时间尺度，吃饭睡觉的时候还蛮开心的，跟朋友聊天的时候也很开心，想太远总是很无聊，眼前事做好就算了，填一下桌面端app的daily calendar</p>
 <p>志哥的发言还蛮有启发的，之前做的对应还是不够，认真一点；</p>
 <p>上周乱七八糟得，条理一点，少摸鱼少摸鱼，求其上得其中，其他随缘~</p>
-<img src="/2024/10/13/%E7%BC%A9%E7%9F%AD%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6/Octopath.png" class="" title="八方旅人">
+<img src="/2024/10/13/%E7%BC%A9%E7%9F%AD%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6/Octopath.png" class title="八方旅人">
 ]]></content>
       <categories>
         <category>EMO</category>
@@ -291,7 +360,7 @@
 <p>记录：</p>
 <p>平常心，踏踏实实的做好每一步，一点一点完成，上山难</p>
 <p>今天看到一个说法，做别人没做过的，就是意义所在，对我来讲，做到合理的解释，就算成功。</p>
-<img src="/2025/04/01/%E9%85%8D%E8%89%B2%E4%BB%A3%E7%A0%81%E5%8F%8A%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/img105.jpg" class="" title="IMAG">]]></content>
+<img src="/2025/04/01/%E9%85%8D%E8%89%B2%E4%BB%A3%E7%A0%81%E5%8F%8A%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/img105.jpg" class title="IMAG">]]></content>
       <categories>
         <category>learning</category>
       </categories>
@@ -314,7 +383,7 @@
 <p>人本身是很复杂的，不要因为一两件事否定一个人，但是有些人也确实没必要交往，面上过去就行，虽然最近被恶心了几次，但是我只是觉得很好笑，把我喊过去说自己知道的一件事，是准备看我的反应嘛，对我来讲，只要不触及我的底线，我一般也不会反抗，也不怎么在意。确实保持一个游离的关系蛮好，哪些是好朋友，我自己心里有判断。</p>
 <p>作为一个半吊子理性主义者，我做事情很多时候是看感觉的，所谓没啥坏处，未来有益的事情，我不开心就不会去做，得不得罪人，我也不在乎，最讨厌那种虚伪的人，说话弯弯绕，直接点大家都坦荡，但是话说回来，家家有本难念的经吧，以后做事，也要多想想。</p>
 <p>自己还是太在意别人的看法，虽然已经克制了很多，但是人的本性总是难以克服，多多提醒，注意一下，多余的动作真的没必要。</p>
-<h2 id="加油加油，多坚持一下！"><a href="#加油加油，多坚持一下！" class="headerlink" title="加油加油，多坚持一下！"></a>加油加油，多坚持一下！</h2><img src="/2025/11/24/%E9%9A%8F%E7%AC%94%E5%8A%A0%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/A1.jpg" class="" title="A1">]]></content>
+<h2 id="加油加油，多坚持一下！"><a href="#加油加油，多坚持一下！" class="headerlink" title="加油加油，多坚持一下！"></a>加油加油，多坚持一下！</h2><img src="/2025/11/24/%E9%9A%8F%E7%AC%94%E5%8A%A0%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/A1.jpg" class title="A1">]]></content>
       <categories>
         <category>emotion</category>
       </categories>
@@ -346,27 +415,6 @@
       </categories>
       <tags>
         <tag>note</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DOC_exercise</title>
-    <url>/2021/08/29/DOC-exercise/DOC-exercise/</url>
-    <content><![CDATA[<h1 id="随笔加一些更新计划"><a href="#随笔加一些更新计划" class="headerlink" title="随笔加一些更新计划"></a>随笔加一些更新计划</h1><p>人生不长，总归还是想做一些有意义的事情——-这是一切的出发点</p>
-<span id="more"></span>
-<h2 id="更新计划"><a href="#更新计划" class="headerlink" title="更新计划"></a>更新计划</h2><p>之后会更新一些视频与博客，博客文案，视频过程，在记录的同时巩固自己，希望可以帮助到一些朋友，要更新一些硬货，2333</p>
-<p>1.专业相关内容的研究，根据情况落实</p>
-<p>2.ROS、模拟软件以及一些算法记录过程</p>
-<p>3.游戏历史考据，比方说最近想得是重装的怪物史，总不可能是凭空出现的，回忆下过去，开拓下视野。</p>
-<p>4.文学方面的内容，提高一下，没想好更新什么，以后慢慢来</p>
-<h2 id="一些需要时刻记住的事情"><a href="#一些需要时刻记住的事情" class="headerlink" title="一些需要时刻记住的事情"></a>一些需要时刻记住的事情</h2><p>行甚于言，很重要的一点；</p>
-<p>前段时间总是自我怀疑，希望不要忘记自己的初心，我还是有一些优点的，踏踏实实的做事就好；</p>
-<p>操千曲而后晓声，观千剑而后识器，大量且规律的积累是以后必须做到的；</p>
-<p><strong>要努力提高英语呀，坚持日积月累；</strong></p>
-<p>拓展视野，坚实基础；保持信心，提高自己；</p>
-<p>去做一些更好玩的事情，记住自己的初心，坚持下去（已经确确实实是个成年人了，以后要更成熟一点）</p>
-<h2 id="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"><a href="#未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人" class="headerlink" title="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"></a>未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人</h2>]]></content>
-      <tags>
-        <tag>plan</tag>
       </tags>
   </entry>
   <entry>
@@ -426,6 +474,25 @@
       </tags>
   </entry>
   <entry>
+    <title>Q</title>
+    <url>/2024/02/26/Q/Q/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
+<h1 id="琥珀川与荻野千寻"><a href="#琥珀川与荻野千寻" class="headerlink" title="琥珀川与荻野千寻"></a>琥珀川与荻野千寻</h1><p>不乱于心，不困于情，不畏将来，不念过往。</p>
+<span id="more"></span>
+<p>看完之后脑子里立刻跳出来这句话。</p>
+<p>又看了一遍台配版的千与千寻，童年的记忆来源于此版，有些东西确实只是忘记，而不会消失，偶然间看到一些痕迹，就会瞬间回忆，不过别回头就好，不念过往。</p>
+<p>总是希望所有的一切事情按照自己的计划进行，面对未知的事情常常心怀恐惧而不愿意前进，权衡利弊之后，重要的事情可以克服，在一些小事上却常常让步，谓之不在意，其实不然，内心是在畏惧狭义上的未来，千寻初入汤屋有点这个感觉，但是随着故事的发展，千寻是做到不畏将来了，不论是给河神洗澡、给白龙和无脸怪吃河神的丸子，或者是爬梯子进入汤婆婆的房子，这些没有人给她指引，都是自己基于想法做出的选择，只要自己认为是对的，如果暂时判断不了，只要无愧于心，即使未来不可预测，脚踏实地的去做就很好，想必未来也不会后悔，不畏将来。</p>
+<p>人生的环境总在不断变化，主动接受变化就是不畏将来，主动接受就不会恐惧，千寻开始的恐惧来源于被动，被动常常引起焦虑，负面情绪随之增长，以前很喜欢袁朗说的一句话：“不太焦虑，耐得住寂寞，有很多人天天都在焦虑，怕没得到，怕寂寞，我喜欢不焦虑的人”，千寻后来是不焦虑的，慢慢的去做事本身也是一种快乐的过程。</p>
+<p>“容是别人，欲是自己”，去做一切自己想做的事情，少去思考虚无的无数可能性，不可预料的东西常常是惊喜，也是缘分。</p>
+]]></content>
+      <categories>
+        <category>feeling</category>
+      </categories>
+      <tags>
+        <tag>movie</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>QT开发</title>
     <url>/2024/03/03/QT%E5%BC%80%E5%8F%91/QT%E5%BC%80%E5%8F%91/</url>
     <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
@@ -463,22 +530,22 @@
       </tags>
   </entry>
   <entry>
-    <title>Q</title>
-    <url>/2024/02/26/Q/Q/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
-<h1 id="琥珀川与荻野千寻"><a href="#琥珀川与荻野千寻" class="headerlink" title="琥珀川与荻野千寻"></a>琥珀川与荻野千寻</h1><p>不乱于心，不困于情，不畏将来，不念过往。</p>
+    <title>Quaternion</title>
+    <url>/2021/11/24/Quaternion/Quaternion/</url>
+    <content><![CDATA[<h1 id="万向锁问题"><a href="#万向锁问题" class="headerlink" title="万向锁问题"></a>万向锁问题</h1><h2 id="造成影响："><a href="#造成影响：" class="headerlink" title="造成影响："></a>造成影响：</h2><p>出现万向锁后会丢失自由度</p>
 <span id="more"></span>
-<p>看完之后脑子里立刻跳出来这句话。</p>
-<p>又看了一遍台配版的千与千寻，童年的记忆来源于此版，有些东西确实只是忘记，而不会消失，偶然间看到一些痕迹，就会瞬间回忆，不过别回头就好，不念过往。</p>
-<p>总是希望所有的一切事情按照自己的计划进行，面对未知的事情常常心怀恐惧而不愿意前进，权衡利弊之后，重要的事情可以克服，在一些小事上却常常让步，谓之不在意，其实不然，内心是在畏惧狭义上的未来，千寻初入汤屋有点这个感觉，但是随着故事的发展，千寻是做到不畏将来了，不论是给河神洗澡、给白龙和无脸怪吃河神的丸子，或者是爬梯子进入汤婆婆的房子，这些没有人给她指引，都是自己基于想法做出的选择，只要自己认为是对的，如果暂时判断不了，只要无愧于心，即使未来不可预测，脚踏实地的去做就很好，想必未来也不会后悔，不畏将来。</p>
-<p>人生的环境总在不断变化，主动接受变化就是不畏将来，主动接受就不会恐惧，千寻开始的恐惧来源于被动，被动常常引起焦虑，负面情绪随之增长，以前很喜欢袁朗说的一句话：“不太焦虑，耐得住寂寞，有很多人天天都在焦虑，怕没得到，怕寂寞，我喜欢不焦虑的人”，千寻后来是不焦虑的，慢慢的去做事本身也是一种快乐的过程。</p>
-<p>“容是别人，欲是自己”，去做一切自己想做的事情，少去思考虚无的无数可能性，不可预料的东西常常是惊喜，也是缘分。</p>
+<h2 id="从结构角度分析："><a href="#从结构角度分析：" class="headerlink" title="从结构角度分析："></a>从结构角度分析：</h2><p>主要原因是由于各旋转轴之间存在运动关系，即动态欧拉角，角度变化后，坐标系随之发生变化，比如万向锁结构，三个坐标轴分别可以用环结构表示，外环、中环、内环，当内环转动，即等效沿某一轴转动，内环与中、外环都存在运动关系，坐标系同时变化，就不会发生重叠现象，；当中环运动时，内环不会运动，只有外环会进行运动，那么内环所代表的坐标系可能会与外环所代表的坐标系重合，当进行动态旋转时，沿着外环与内环代表的坐标系运动，只会产生一个方向的自由度，由此发生了万向锁现象，即丢失一个自由度。</p>
+<h2 id="后续一些想法"><a href="#后续一些想法" class="headerlink" title="后续一些想法"></a>后续一些想法</h2><p>看b站评论说为什么不选取惯性坐标系作为参考运动，这样就不会出现万向锁现象了？</p>
+<p>其实这是一个概念的问题，首先需要理解欧拉角的意义，欧拉角是用来描述姿态的三个角度，包含静态、动态两种，静态欧拉角即沿着惯性坐标系进行运动，而动态欧拉角则会出现万向锁现象，动态有12种旋转方式，XYZ、XZY、XYX、XZX、YXZ、YZX、YXY、YZY、ZXY、ZYX、ZXZ、ZYZ,含有中间轴Y都存在万向锁问题。</p>
+<p>因此该问题的本质是动态欧拉角的意义是什么？</p>
+<p>基于动态坐标的欧拉角旋转，其惯性张量不随着时间改变而改变，将其进行对角化处理，即可以得到一个一组主轴和一个只含三个分量的主动惯量，动力学计算较为容易，这一部分内容可以机器人动力学模型计算案例中深入理解。</p>
+<h2 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h2><p>为了描述复杂运动以及规避一些特殊点，可以用四元数工具进行描述分析，最近正在整理旋量与四元数的并联应用分析内容，以后会写一个小总结。</p>
 ]]></content>
       <categories>
-        <category>feeling</category>
+        <category>note</category>
       </categories>
       <tags>
-        <tag>movie</tag>
+        <tag>mathematica</tag>
       </tags>
   </entry>
   <entry>
@@ -550,6 +617,25 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Silence</title>
+    <url>/2024/03/20/Silence/Silence/</url>
+    <content><![CDATA[<p>沉默的大多数决定一切，当然也可能一点不重要</p>
+<span id="more"></span>
+<p>之前很喜欢一个民谣歌手，从崖边跌落开始入坑，最后听的是茶酒伴，再然后就听的少了许多，可能是因为随着年龄增长，越来越喜欢怀旧，容易留恋过去，导致对于新鲜的事物接受度越来越低，新出的歌听起来总是没什么感觉，看到歌手各种各样“叛逆”动态，心里想想开心就好，自己没啥资格留下对别人的评论，于是就沉默下来，每个人都是为自己活着，确实是自己开心就好。</p>
+<p>不幸的是，现实里却常常事与愿违，面对上位压迫，往往还是会做出妥协，面对下位请求，则是做自己，这样的做法是否是真的做自己呢？印象里有一次评论区说一句喜欢过去的借我，春花发出近乎切割这首歌的言论，但是后来雷军转发，还是转的歌手原版本，春花也会出来营业，不知道那时候心里作何想法。</p>
+<p>无意贬低任何人，只是在描述自己看到的一切，毕竟自己也是个俗人，在面对不影响自己太大利益的问题前，我会做到保持自我，开心就好，但是面对不可抵抗的问题，我也常常妥协，只是常常会思考，这个百分比占到多少才能算开心就好，坦然接受不纯粹，是不是也算？</p>
+<p>过去几年发生的很多事情改变了我很多对于这个世界的看法，依据不同的标准，就会做出不同的判断，以生死或者身边亲人朋友庞大的利益关系作为标准，沉默的大多数就不能被忽视，除非狠得下心放弃一切，所以最终大家都会成为俗人，只是没有被逼到那个程度（战争年代保有信仰的先辈是真的值得敬佩），这也是当今各种制度能够运行的基础，天下乌鸦一般黑，哪有绝对的是非对错，如果有，那只能是数学，但是这个世界又没有完全独立运转的事物，常常都是混杂在一起，所有常说难得糊涂，没有绝对的邪恶，只有正义的偏离。</p>
+<p>言归正传，借用之前自己一句评论，朴树的歌能让我从难过变得平和，而春花的歌让我从平和到更加平和，未来依然会喜欢他们，但是也很好奇未来会是什么样子，毕竟很多老牌歌手几十年了还是被粉丝要求唱同一首歌，很喜欢观察完全不同生活的变化轨迹。</p>
+<p>沉默、沉默，既要真实也要沉默，不带功利心的做一些事，人生才能持续下去…</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>emo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>configure_bag</title>
     <url>/2020/11/30/configure-bag/configure-bag/</url>
     <content><![CDATA[<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
@@ -572,147 +658,6 @@
 ]]></content>
       <categories>
         <category>camera</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Silence</title>
-    <url>/2024/03/20/Silence/Silence/</url>
-    <content><![CDATA[<p>沉默的大多数决定一切，当然也可能一点不重要</p>
-<span id="more"></span>
-<p>之前很喜欢一个民谣歌手，从崖边跌落开始入坑，最后听的是茶酒伴，再然后就听的少了许多，可能是因为随着年龄增长，越来越喜欢怀旧，容易留恋过去，导致对于新鲜的事物接受度越来越低，新出的歌听起来总是没什么感觉，看到歌手各种各样“叛逆”动态，心里想想开心就好，自己没啥资格留下对别人的评论，于是就沉默下来，每个人都是为自己活着，确实是自己开心就好。</p>
-<p>不幸的是，现实里却常常事与愿违，面对上位压迫，往往还是会做出妥协，面对下位请求，则是做自己，这样的做法是否是真的做自己呢？印象里有一次评论区说一句喜欢过去的借我，春花发出近乎切割这首歌的言论，但是后来雷军转发，还是转的歌手原版本，春花也会出来营业，不知道那时候心里作何想法。</p>
-<p>无意贬低任何人，只是在描述自己看到的一切，毕竟自己也是个俗人，在面对不影响自己太大利益的问题前，我会做到保持自我，开心就好，但是面对不可抵抗的问题，我也常常妥协，只是常常会思考，这个百分比占到多少才能算开心就好，坦然接受不纯粹，是不是也算？</p>
-<p>过去几年发生的很多事情改变了我很多对于这个世界的看法，依据不同的标准，就会做出不同的判断，以生死或者身边亲人朋友庞大的利益关系作为标准，沉默的大多数就不能被忽视，除非狠得下心放弃一切，所以最终大家都会成为俗人，只是没有被逼到那个程度（战争年代保有信仰的先辈是真的值得敬佩），这也是当今各种制度能够运行的基础，天下乌鸦一般黑，哪有绝对的是非对错，如果有，那只能是数学，但是这个世界又没有完全独立运转的事物，常常都是混杂在一起，所有常说难得糊涂，没有绝对的邪恶，只有正义的偏离。</p>
-<p>言归正传，借用之前自己一句评论，朴树的歌能让我从难过变得平和，而春花的歌让我从平和到更加平和，未来依然会喜欢他们，但是也很好奇未来会是什么样子，毕竟很多老牌歌手几十年了还是被粉丝要求唱同一首歌，很喜欢观察完全不同生活的变化轨迹。</p>
-<p>沉默、沉默，既要真实也要沉默，不带功利心的做一些事，人生才能持续下去…</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>emo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Quaternion</title>
-    <url>/2021/11/24/Quaternion/Quaternion/</url>
-    <content><![CDATA[<h1 id="万向锁问题"><a href="#万向锁问题" class="headerlink" title="万向锁问题"></a>万向锁问题</h1><h2 id="造成影响："><a href="#造成影响：" class="headerlink" title="造成影响："></a>造成影响：</h2><p>出现万向锁后会丢失自由度</p>
-<span id="more"></span>
-<h2 id="从结构角度分析："><a href="#从结构角度分析：" class="headerlink" title="从结构角度分析："></a>从结构角度分析：</h2><p>主要原因是由于各旋转轴之间存在运动关系，即动态欧拉角，角度变化后，坐标系随之发生变化，比如万向锁结构，三个坐标轴分别可以用环结构表示，外环、中环、内环，当内环转动，即等效沿某一轴转动，内环与中、外环都存在运动关系，坐标系同时变化，就不会发生重叠现象，；当中环运动时，内环不会运动，只有外环会进行运动，那么内环所代表的坐标系可能会与外环所代表的坐标系重合，当进行动态旋转时，沿着外环与内环代表的坐标系运动，只会产生一个方向的自由度，由此发生了万向锁现象，即丢失一个自由度。</p>
-<h2 id="后续一些想法"><a href="#后续一些想法" class="headerlink" title="后续一些想法"></a>后续一些想法</h2><p>看b站评论说为什么不选取惯性坐标系作为参考运动，这样就不会出现万向锁现象了？</p>
-<p>其实这是一个概念的问题，首先需要理解欧拉角的意义，欧拉角是用来描述姿态的三个角度，包含静态、动态两种，静态欧拉角即沿着惯性坐标系进行运动，而动态欧拉角则会出现万向锁现象，动态有12种旋转方式，XYZ、XZY、XYX、XZX、YXZ、YZX、YXY、YZY、ZXY、ZYX、ZXZ、ZYZ,含有中间轴Y都存在万向锁问题。</p>
-<p>因此该问题的本质是动态欧拉角的意义是什么？</p>
-<p>基于动态坐标的欧拉角旋转，其惯性张量不随着时间改变而改变，将其进行对角化处理，即可以得到一个一组主轴和一个只含三个分量的主动惯量，动力学计算较为容易，这一部分内容可以机器人动力学模型计算案例中深入理解。</p>
-<h2 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h2><p>为了描述复杂运动以及规避一些特殊点，可以用四元数工具进行描述分析，最近正在整理旋量与四元数的并联应用分析内容，以后会写一个小总结。</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>mathematica</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于柔度矩阵与变形叠加法的思考记录</title>
-    <url>/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
-<h1 id="关于小变形叠加法矩阵的认识与记录"><a href="#关于小变形叠加法矩阵的认识与记录" class="headerlink" title="关于小变形叠加法矩阵的认识与记录"></a>关于小变形叠加法矩阵的认识与记录</h1><p>柔度矩阵的叠加，小变形各个输入力单独作用下节点位移的线性叠加，柔度本质是类似于K的倒数，串联并联叠加时候需要注意一下：叠加形式保持一致,多自由度系统柔度矩阵中详细推导。</p>
-<p>并联：</p>
-<script type="math/tex; mode=display">
-\begin{equation}\frac{1}{k}=\frac{1}{k_1}+\frac{1}{k_2} \\\frac{1}{d}=\frac{1}{d_1}+\frac{1}{d_2} \end{equation}</script><p>串联</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-{k}={k_1}+{k_2} \\
-{d}={d_1}+{d_2} \\
-\end{equation}</script><span id="more"></span>
-<p>柔度叠加矩阵案例说明：</p>
-<p>d_ij,j坐标受力在i坐标产生位移</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q1.png" class="" title="Q1">
-<p>此时F1=1,F2=0,F1作用下，两个位置的位移，其柔度矩阵含义如图，即为各点的挠度，在实际柔性铰链中，则为各个铰链位置变形经过转换矩阵在统一坐标下的表达：</p>
-<script type="math/tex; mode=display">
-x_1=F_1*d_{11} \\
-x_2=F_1*d_{21}</script><p>另一种情况，F1=0,F2=1;先列出点，其次看受力位置</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q2.png" class="" title="Q2">
-<script type="math/tex; mode=display">
-x_1=F_2*d_{12} \\
-x_2=F_2*d_{22}</script><p>所以，F1=1,F2=1,各自独立计算并且叠加，可以得到：</p>
-<script type="math/tex; mode=display">
-x_1=F_1d_{11}+F_2d_{12}\\
-x_2=F_2d_{22}+F_1D_{21}</script><p>有一个案例，文中直接给出了柔度的参数，这里按照材料力学补充一下推导流程，略作复习：</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q3.png" class="" title="Q3">
-<p>d_11=d_22=8d,d_12=d_21=7d;推导说明，假定F1=0,F2=1;</p>
-<p>以x_2为界限进行分类，挠度曲线参数分为两段</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-w_1=\frac{F x}{18 E I}\left[\frac{8}{9}l^2-x^2\right] \\
-w_2=\frac{F}{18 E I}\left[3(x-\frac{2}{3}l)^3+\frac{8}{9}l^2x-x^3\right]
-\end{equation}</script><p>可以计算，当仅有F2,输入时候，两点挠度为：</p>
-<p>第一段中：</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-w_1=\frac{F}{18 E I}\left[\frac{7}{27}l^3\right] \\
-w_2=\frac{F}{18 E I}\left[\frac{8}{27}l^3\right] 
-\end{equation}</script><p>第二段利用第二个公式计算可以得到上述挠度，所以柔度矩阵参数给定过程如上，另外，求取各点挠度过程中，按照节点分割计算，并不需要全部柔度矩阵，类似与B点按照分割后段进行计算，基础概念需要理解。</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-\left[\begin{array}{l}
-x_1 \\
-x_2
-\end{array}\right]=\left[\begin{array}{ll}
-8 d & 7 d \\
-7 d & 8 d
-\end{array}\right]\left(\left[\begin{array}{l}
-F_1 \\
-F_2
-\end{array}\right]-\left[\begin{array}{cc}
-m_1 & 0 \\
-0 & m_2
-\end{array}\right]\left[\begin{array}{l}
-\ddot{x}_1 \\
-\ddot{x}_2
-\end{array}\right]\right)
-\end{equation}</script><h2 id="待补充："><a href="#待补充：" class="headerlink" title="待补充："></a>待补充：</h2><p>两级放大柔度矩阵的左边转换关系，代码验证后补充</p>
-<p>角度关系，感觉是直接静力学求解的，然后放在具体工况下面计算。</p>
-]]></content>
-      <categories>
-        <category>learning</category>
-      </categories>
-      <tags>
-        <tag>柔性铰链</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>delta_matlab</title>
-    <url>/2020/08/13/delta-matlab/delta-matlab/</url>
-    <content><![CDATA[<h1 id="Delta正逆解（matlab）"><a href="#Delta正逆解（matlab）" class="headerlink" title="Delta正逆解（matlab）"></a>Delta正逆解（matlab）</h1><p>课题里用到一部分关于delta底座的结构，所以进行了相应的理论推导及运动空间求解，工具是万能的matlab，这里记录一下。</p>
-<p>记录内容：目前精度、推导问题、相关文献…</p>
-<span id="more"></span>
-<p>初步代码正逆解精度：</p>
-<p>电机转角误差在0.1度左右，坐标误差在毫米个位数级别，感觉没有特别精确，师兄那套复杂并联都小数点后三位级别了，但是我目前想不到对算法进行优化的方式，不过先搁置吧，先去做绳驱那部分的机构，最后再回来优化。</p>
-<p>推导来源：</p>
-<p>正解理论依据我看的是工大03年赵杰老师的一篇期刊，应用平移几何进行简化，用向量实现对于动平台中心点运动状态的描述</p>
-<p>（这里有个小问题，看期刊的时候，几何向量中求解垂直向量时，期刊里的公式是错的（也有可能03年就是错误公式？？？），哈哈哈，这里我换了一种平移方式，构成多面体进行解析）</p>
-<p>逆解理论来源是16年黄师兄的硕士毕业论文，借鉴了一下他的单几何方式，组成方程组进行求解，这个方式得出的结果精度也比较高。</p>
-<p>误差主要来源于正解，现在不知为什么，以后待解决。</p>
-<p>以下是代码主体，参数不放了</p>
-<p>正解：</p>
-<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[Z]</span> = <span class="title">FK3</span><span class="params">(a1,a2,a3)</span></span></span><br><span class="line">R</span><br><span class="line">r</span><br><span class="line">Lac</span><br><span class="line">Lbc</span><br><span class="line">theta1 = a1*<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">theta2 = a2*<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">theta3 = a3*<span class="built_in">pi</span>/<span class="number">180</span>;*</span><br><span class="line"></span><br><span class="line">beta1=(<span class="number">1</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta2=(<span class="number">2</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta3=(<span class="number">3</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>; </span><br><span class="line"></span><br><span class="line">OA1=R*[<span class="built_in">cos</span>(beta1);<span class="built_in">sin</span>(beta1);<span class="number">0</span>];</span><br><span class="line">OA2=R*[<span class="built_in">cos</span>(beta2);<span class="built_in">sin</span>(beta2);<span class="number">0</span>];</span><br><span class="line">OA3=R*[<span class="built_in">cos</span>(beta3);<span class="built_in">sin</span>(beta3);<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">OE1=R*[(R-r+Lac*<span class="built_in">cos</span>(theta1))*<span class="built_in">cos</span>(beta1);(R-r+Lac*<span class="built_in">cos</span>(theta1))*<span class="built_in">sin</span>(beta1);-Lac*<span class="built_in">sin</span>(theta1)];</span><br><span class="line">OE2=R*[(R-r+Lac*<span class="built_in">cos</span>(theta2))*<span class="built_in">cos</span>(beta2);(R-r+Lac*<span class="built_in">cos</span>(theta2))*<span class="built_in">sin</span>(beta2);-Lac*<span class="built_in">sin</span>(theta2)];</span><br><span class="line">OE3=R*[(R-r+Lac*<span class="built_in">cos</span>(theta3))*<span class="built_in">cos</span>(beta3);(R-r+Lac*<span class="built_in">cos</span>(theta3))*<span class="built_in">sin</span>(beta3);-Lac*<span class="built_in">sin</span>(theta3)];</span><br><span class="line">OG=<span class="number">0.5</span>*(OE1+OE2);</span><br><span class="line">E1E2=OE2-OE1;</span><br><span class="line">E2E3=OE3-OE2;</span><br><span class="line">E3E1=OE1-OE3;</span><br><span class="line">a=norm(E1E2); </span><br><span class="line">b=norm(E2E3);</span><br><span class="line">c=norm(E3E1);</span><br><span class="line"></span><br><span class="line">p=(a+b+c)/<span class="number">2</span>;</span><br><span class="line">s=<span class="built_in">sqrt</span>(p*(p-a)*(p-b)*(p-c));</span><br><span class="line"><span class="comment">%E1E2E3 </span></span><br><span class="line">d=(a*b*c)/(<span class="number">4</span>*s);</span><br><span class="line">f=(d^<span class="number">2</span><span class="number">-0.25</span>*a^<span class="number">2</span>);</span><br><span class="line"><span class="keyword">if</span> f&gt;=<span class="number">0</span> #这里进行筛选，开始出现复数结果还很奇怪<span class="number">233</span>，这个可以解决</span><br><span class="line">    f1=<span class="built_in">sqrt</span>(f);</span><br><span class="line">    n_GF1=<span class="built_in">cross</span>(<span class="built_in">cross</span>(E2E3,E3E1),E1E2);</span><br><span class="line">    g=norm(n_GF1);</span><br><span class="line">    n_GF = n_GF1/g;</span><br><span class="line">    GF= n_GF*f1;n_FP1=<span class="built_in">cross</span>(E1E2,E2E3);</span><br><span class="line">h=norm(n_FP1);</span><br><span class="line">n_FP=n_FP1/h;</span><br><span class="line"><span class="comment">%FP  |FP|</span></span><br><span class="line"><span class="built_in">i</span>=<span class="built_in">sqrt</span>(Lbc^<span class="number">2</span>-d^<span class="number">2</span>);</span><br><span class="line">FP = n_FP*<span class="built_in">i</span>;</span><br><span class="line">OP=<span class="number">0.5</span>*(OE1+OE2)+GF+FP;</span><br><span class="line">S=OP;</span><br><span class="line"></span><br><span class="line"> e1=[<span class="number">1</span>;<span class="number">0</span>;<span class="number">0</span>];</span><br><span class="line"> e2=[<span class="number">0</span>;<span class="number">1</span>;<span class="number">0</span>];</span><br><span class="line"> e3=[<span class="number">0</span>;<span class="number">0</span>;<span class="number">1</span>];</span><br><span class="line"> x=S'*e1;</span><br><span class="line"> y=S'*e2;</span><br><span class="line"> z=S'*e3;</span><br><span class="line">Ponit=[x,y,z]</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">disp</span>(<span class="string">'空间外'</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></tbody></table></figure>
-<p>逆解代码：</p>
-<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[thetas]</span> = <span class="title">IK3</span><span class="params">(x,y,z)</span></span></span><br><span class="line">R   </span><br><span class="line">r</span><br><span class="line">Lac  </span><br><span class="line">Lbc </span><br><span class="line">p=[x;y;z];</span><br><span class="line">beta1=(<span class="number">1</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta2=(<span class="number">2</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta3=(<span class="number">3</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>; </span><br><span class="line"><span class="comment">%OP=OA+AC+CB+BP</span></span><br><span class="line"><span class="comment">%OP-OA+PB-Lac*n_AC=Lbc_n_CB</span></span><br><span class="line"><span class="comment">% N_AC1=[cos(beta1)cos(theta1)];</span></span><br><span class="line">r1=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta1)*(x+(r-R)*<span class="built_in">cos</span>(beta1))+<span class="built_in">sin</span>(beta1)*(y+(r-R)*<span class="built_in">sin</span>(beta1)));</span><br><span class="line">r2=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta2)*(x+(r-R)*<span class="built_in">cos</span>(beta2))+<span class="built_in">sin</span>(beta2)*(y+(r-R)*<span class="built_in">sin</span>(beta2)));</span><br><span class="line">r3=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta3)*(x+(r-R)*<span class="built_in">cos</span>(beta3))+<span class="built_in">sin</span>(beta3)*(y+(r-R)*<span class="built_in">sin</span>(beta3)));</span><br><span class="line">s1=<span class="number">2</span>*Lac*z;</span><br><span class="line">s2=<span class="number">2</span>*Lac*z;</span><br><span class="line">s3=<span class="number">2</span>*Lac*z;</span><br><span class="line">t1=(x+(r-R)*<span class="built_in">cos</span>(beta1))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta1))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line">t2=(x+(r-R)*<span class="built_in">cos</span>(beta2))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta2))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line">t3=(x+(r-R)*<span class="built_in">cos</span>(beta3))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta3))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line"><span class="comment">%rcostheta+ssintheta+t=0;</span></span><br><span class="line"><span class="keyword">if</span> t1-r1==<span class="number">0</span></span><br><span class="line">    theta1=<span class="number">2</span>*<span class="built_in">atan</span>((-r1-t1)/(<span class="number">2</span>*s1));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta1=<span class="number">2</span>*<span class="built_in">atan</span>((-s1-<span class="built_in">sqrt</span>(r1^<span class="number">2</span>+s1^<span class="number">2</span>-t1^<span class="number">2</span>))/(t1-r1));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">if</span> t2-r2==<span class="number">0</span></span><br><span class="line">    theta2=<span class="number">2</span>*<span class="built_in">atan</span>((-r2-t2)/(<span class="number">2</span>*s2));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta2=<span class="number">2</span>*<span class="built_in">atan</span>((-s2-<span class="built_in">sqrt</span>(r2^<span class="number">2</span>+s2^<span class="number">2</span>-t2^<span class="number">2</span>))/(t2-r2));</span><br><span class="line"><span class="keyword">end</span>    </span><br><span class="line"><span class="keyword">if</span> t3-r3==<span class="number">0</span></span><br><span class="line">    theta3=<span class="number">2</span>*<span class="built_in">atan</span>((-r3-t3)/(<span class="number">2</span>*s3));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta3=<span class="number">2</span>*<span class="built_in">atan</span>((-s3-<span class="built_in">sqrt</span>(r3^<span class="number">2</span>+s3^<span class="number">2</span>-t3^<span class="number">2</span>))/(t3-r3));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">thetas=[theta1;theta2;theta3]*<span class="number">180</span>/<span class="built_in">pi</span>;</span><br></pre></td></tr></tbody></table></figure>
-<p>（待优化）</p>
-<p>关于8组逆解的问题，这套方案已经进行了排除。</p>
-<p>奇异位置分析内容（待补充）。</p>
-<p>接下来写雅各比速度推导，后续还会补充控制方案，伸缩机构可能会写一篇，看设计的情况了。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>daliy_life</title>
-    <url>/2020/08/17/daliy-life/daliy-life/</url>
-    <content><![CDATA[<h1 id="处事之则，日常所想"><a href="#处事之则，日常所想" class="headerlink" title="处事之则，日常所想"></a>处事之则，日常所想</h1><p>搭模型的时候，听了听电视剧琅琊榜的电台，听到景睿的台词，有点感触，为人处世就应该这样，清清爽爽，潇洒一生。</p>
-<p>不为蝇营狗苟之事，不对他人做过分之求，一切唯心而已。</p>
-<h4 id="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"><a href="#“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。" class="headerlink" title="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"></a>“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。</h4><h4 id="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"><a href="#我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。" class="headerlink" title="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"></a>我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。</h4><h4 id="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"><a href="#若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也" class="headerlink" title="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"></a>若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也</h4><h4 id="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"><a href="#没有责任要以我为先，以我为重。无论我如何希望也不能强求。" class="headerlink" title="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"></a>没有责任要以我为先，以我为重。无论我如何希望也不能强求。</h4><h4 id="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"><a href="#我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也" class="headerlink" title="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"></a>我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也</h4><h4 id="没有什么可后悔的。”"><a href="#没有什么可后悔的。”" class="headerlink" title="没有什么可后悔的。”"></a>没有什么可后悔的。”</h4>]]></content>
-      <categories>
-        <category>touch_fish</category>
       </categories>
   </entry>
   <entry>
@@ -1192,6 +1137,40 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
+    <title>daliy_life</title>
+    <url>/2020/08/17/daliy-life/daliy-life/</url>
+    <content><![CDATA[<h1 id="处事之则，日常所想"><a href="#处事之则，日常所想" class="headerlink" title="处事之则，日常所想"></a>处事之则，日常所想</h1><p>搭模型的时候，听了听电视剧琅琊榜的电台，听到景睿的台词，有点感触，为人处世就应该这样，清清爽爽，潇洒一生。</p>
+<p>不为蝇营狗苟之事，不对他人做过分之求，一切唯心而已。</p>
+<h4 id="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"><a href="#“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。" class="headerlink" title="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"></a>“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。</h4><h4 id="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"><a href="#我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。" class="headerlink" title="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"></a>我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。</h4><h4 id="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"><a href="#若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也" class="headerlink" title="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"></a>若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也</h4><h4 id="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"><a href="#没有责任要以我为先，以我为重。无论我如何希望也不能强求。" class="headerlink" title="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"></a>没有责任要以我为先，以我为重。无论我如何希望也不能强求。</h4><h4 id="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"><a href="#我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也" class="headerlink" title="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"></a>我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也</h4><h4 id="没有什么可后悔的。”"><a href="#没有什么可后悔的。”" class="headerlink" title="没有什么可后悔的。”"></a>没有什么可后悔的。”</h4>]]></content>
+      <categories>
+        <category>touch_fish</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>delta_matlab</title>
+    <url>/2020/08/13/delta-matlab/delta-matlab/</url>
+    <content><![CDATA[<h1 id="Delta正逆解（matlab）"><a href="#Delta正逆解（matlab）" class="headerlink" title="Delta正逆解（matlab）"></a>Delta正逆解（matlab）</h1><p>课题里用到一部分关于delta底座的结构，所以进行了相应的理论推导及运动空间求解，工具是万能的matlab，这里记录一下。</p>
+<p>记录内容：目前精度、推导问题、相关文献…</p>
+<span id="more"></span>
+<p>初步代码正逆解精度：</p>
+<p>电机转角误差在0.1度左右，坐标误差在毫米个位数级别，感觉没有特别精确，师兄那套复杂并联都小数点后三位级别了，但是我目前想不到对算法进行优化的方式，不过先搁置吧，先去做绳驱那部分的机构，最后再回来优化。</p>
+<p>推导来源：</p>
+<p>正解理论依据我看的是工大03年赵杰老师的一篇期刊，应用平移几何进行简化，用向量实现对于动平台中心点运动状态的描述</p>
+<p>（这里有个小问题，看期刊的时候，几何向量中求解垂直向量时，期刊里的公式是错的（也有可能03年就是错误公式？？？），哈哈哈，这里我换了一种平移方式，构成多面体进行解析）</p>
+<p>逆解理论来源是16年黄师兄的硕士毕业论文，借鉴了一下他的单几何方式，组成方程组进行求解，这个方式得出的结果精度也比较高。</p>
+<p>误差主要来源于正解，现在不知为什么，以后待解决。</p>
+<p>以下是代码主体，参数不放了</p>
+<p>正解：</p>
+<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[Z]</span> = <span class="title">FK3</span><span class="params">(a1,a2,a3)</span></span></span><br><span class="line">R</span><br><span class="line">r</span><br><span class="line">Lac</span><br><span class="line">Lbc</span><br><span class="line">theta1 = a1*<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">theta2 = a2*<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">theta3 = a3*<span class="built_in">pi</span>/<span class="number">180</span>;*</span><br><span class="line"></span><br><span class="line">beta1=(<span class="number">1</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta2=(<span class="number">2</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta3=(<span class="number">3</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>; </span><br><span class="line"></span><br><span class="line">OA1=R*[<span class="built_in">cos</span>(beta1);<span class="built_in">sin</span>(beta1);<span class="number">0</span>];</span><br><span class="line">OA2=R*[<span class="built_in">cos</span>(beta2);<span class="built_in">sin</span>(beta2);<span class="number">0</span>];</span><br><span class="line">OA3=R*[<span class="built_in">cos</span>(beta3);<span class="built_in">sin</span>(beta3);<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">OE1=R*[(R-r+Lac*<span class="built_in">cos</span>(theta1))*<span class="built_in">cos</span>(beta1);(R-r+Lac*<span class="built_in">cos</span>(theta1))*<span class="built_in">sin</span>(beta1);-Lac*<span class="built_in">sin</span>(theta1)];</span><br><span class="line">OE2=R*[(R-r+Lac*<span class="built_in">cos</span>(theta2))*<span class="built_in">cos</span>(beta2);(R-r+Lac*<span class="built_in">cos</span>(theta2))*<span class="built_in">sin</span>(beta2);-Lac*<span class="built_in">sin</span>(theta2)];</span><br><span class="line">OE3=R*[(R-r+Lac*<span class="built_in">cos</span>(theta3))*<span class="built_in">cos</span>(beta3);(R-r+Lac*<span class="built_in">cos</span>(theta3))*<span class="built_in">sin</span>(beta3);-Lac*<span class="built_in">sin</span>(theta3)];</span><br><span class="line">OG=<span class="number">0.5</span>*(OE1+OE2);</span><br><span class="line">E1E2=OE2-OE1;</span><br><span class="line">E2E3=OE3-OE2;</span><br><span class="line">E3E1=OE1-OE3;</span><br><span class="line">a=norm(E1E2); </span><br><span class="line">b=norm(E2E3);</span><br><span class="line">c=norm(E3E1);</span><br><span class="line"></span><br><span class="line">p=(a+b+c)/<span class="number">2</span>;</span><br><span class="line">s=<span class="built_in">sqrt</span>(p*(p-a)*(p-b)*(p-c));</span><br><span class="line"><span class="comment">%E1E2E3 </span></span><br><span class="line">d=(a*b*c)/(<span class="number">4</span>*s);</span><br><span class="line">f=(d^<span class="number">2</span><span class="number">-0.25</span>*a^<span class="number">2</span>);</span><br><span class="line"><span class="keyword">if</span> f&gt;=<span class="number">0</span> #这里进行筛选，开始出现复数结果还很奇怪<span class="number">233</span>，这个可以解决</span><br><span class="line">    f1=<span class="built_in">sqrt</span>(f);</span><br><span class="line">    n_GF1=<span class="built_in">cross</span>(<span class="built_in">cross</span>(E2E3,E3E1),E1E2);</span><br><span class="line">    g=norm(n_GF1);</span><br><span class="line">    n_GF = n_GF1/g;</span><br><span class="line">    GF= n_GF*f1;n_FP1=<span class="built_in">cross</span>(E1E2,E2E3);</span><br><span class="line">h=norm(n_FP1);</span><br><span class="line">n_FP=n_FP1/h;</span><br><span class="line"><span class="comment">%FP  |FP|</span></span><br><span class="line"><span class="built_in">i</span>=<span class="built_in">sqrt</span>(Lbc^<span class="number">2</span>-d^<span class="number">2</span>);</span><br><span class="line">FP = n_FP*<span class="built_in">i</span>;</span><br><span class="line">OP=<span class="number">0.5</span>*(OE1+OE2)+GF+FP;</span><br><span class="line">S=OP;</span><br><span class="line"></span><br><span class="line"> e1=[<span class="number">1</span>;<span class="number">0</span>;<span class="number">0</span>];</span><br><span class="line"> e2=[<span class="number">0</span>;<span class="number">1</span>;<span class="number">0</span>];</span><br><span class="line"> e3=[<span class="number">0</span>;<span class="number">0</span>;<span class="number">1</span>];</span><br><span class="line"> x=S'*e1;</span><br><span class="line"> y=S'*e2;</span><br><span class="line"> z=S'*e3;</span><br><span class="line">Ponit=[x,y,z]</span><br><span class="line"><span class="keyword">else</span> <span class="built_in">disp</span>(<span class="string">'空间外'</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></tbody></table></figure>
+<p>逆解代码：</p>
+<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[thetas]</span> = <span class="title">IK3</span><span class="params">(x,y,z)</span></span></span><br><span class="line">R   </span><br><span class="line">r</span><br><span class="line">Lac  </span><br><span class="line">Lbc </span><br><span class="line">p=[x;y;z];</span><br><span class="line">beta1=(<span class="number">1</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta2=(<span class="number">2</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>;</span><br><span class="line">beta3=(<span class="number">3</span><span class="number">-1</span>)*<span class="number">2</span>*<span class="built_in">pi</span>/<span class="number">3</span>; </span><br><span class="line"><span class="comment">%OP=OA+AC+CB+BP</span></span><br><span class="line"><span class="comment">%OP-OA+PB-Lac*n_AC=Lbc_n_CB</span></span><br><span class="line"><span class="comment">% N_AC1=[cos(beta1)cos(theta1)];</span></span><br><span class="line">r1=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta1)*(x+(r-R)*<span class="built_in">cos</span>(beta1))+<span class="built_in">sin</span>(beta1)*(y+(r-R)*<span class="built_in">sin</span>(beta1)));</span><br><span class="line">r2=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta2)*(x+(r-R)*<span class="built_in">cos</span>(beta2))+<span class="built_in">sin</span>(beta2)*(y+(r-R)*<span class="built_in">sin</span>(beta2)));</span><br><span class="line">r3=<span class="number">-2</span>*Lac*(<span class="built_in">cos</span>(beta3)*(x+(r-R)*<span class="built_in">cos</span>(beta3))+<span class="built_in">sin</span>(beta3)*(y+(r-R)*<span class="built_in">sin</span>(beta3)));</span><br><span class="line">s1=<span class="number">2</span>*Lac*z;</span><br><span class="line">s2=<span class="number">2</span>*Lac*z;</span><br><span class="line">s3=<span class="number">2</span>*Lac*z;</span><br><span class="line">t1=(x+(r-R)*<span class="built_in">cos</span>(beta1))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta1))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line">t2=(x+(r-R)*<span class="built_in">cos</span>(beta2))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta2))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line">t3=(x+(r-R)*<span class="built_in">cos</span>(beta3))^<span class="number">2</span>+(y+(r-R)*<span class="built_in">sin</span>(beta3))^<span class="number">2</span>+z^<span class="number">2</span>+Lac^<span class="number">2</span>-Lbc^<span class="number">2</span>;</span><br><span class="line"><span class="comment">%rcostheta+ssintheta+t=0;</span></span><br><span class="line"><span class="keyword">if</span> t1-r1==<span class="number">0</span></span><br><span class="line">    theta1=<span class="number">2</span>*<span class="built_in">atan</span>((-r1-t1)/(<span class="number">2</span>*s1));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta1=<span class="number">2</span>*<span class="built_in">atan</span>((-s1-<span class="built_in">sqrt</span>(r1^<span class="number">2</span>+s1^<span class="number">2</span>-t1^<span class="number">2</span>))/(t1-r1));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">if</span> t2-r2==<span class="number">0</span></span><br><span class="line">    theta2=<span class="number">2</span>*<span class="built_in">atan</span>((-r2-t2)/(<span class="number">2</span>*s2));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta2=<span class="number">2</span>*<span class="built_in">atan</span>((-s2-<span class="built_in">sqrt</span>(r2^<span class="number">2</span>+s2^<span class="number">2</span>-t2^<span class="number">2</span>))/(t2-r2));</span><br><span class="line"><span class="keyword">end</span>    </span><br><span class="line"><span class="keyword">if</span> t3-r3==<span class="number">0</span></span><br><span class="line">    theta3=<span class="number">2</span>*<span class="built_in">atan</span>((-r3-t3)/(<span class="number">2</span>*s3));</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    theta3=<span class="number">2</span>*<span class="built_in">atan</span>((-s3-<span class="built_in">sqrt</span>(r3^<span class="number">2</span>+s3^<span class="number">2</span>-t3^<span class="number">2</span>))/(t3-r3));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">thetas=[theta1;theta2;theta3]*<span class="number">180</span>/<span class="built_in">pi</span>;</span><br></pre></td></tr></tbody></table></figure>
+<p>（待优化）</p>
+<p>关于8组逆解的问题，这套方案已经进行了排除。</p>
+<p>奇异位置分析内容（待补充）。</p>
+<p>接下来写雅各比速度推导，后续还会补充控制方案，伸缩机构可能会写一篇，看设计的情况了。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>delta_ros</title>
     <url>/2020/09/11/delta-ros/delta-ros/</url>
     <content><![CDATA[<p>记录delta算法</p>
@@ -1466,88 +1445,6 @@ m_1 & 0 \\
       <tags>
         <tag>algebraic</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>gcyyy</title>
-    <url>/2021/09/10/gcyyy/gcyyy/</url>
-    <content><![CDATA[<h1 id="并联机构弹性动力学建模与振动主动控制论文"><a href="#并联机构弹性动力学建模与振动主动控制论文" class="headerlink" title="并联机构弹性动力学建模与振动主动控制论文"></a>并联机构弹性动力学建模与振动主动控制论文</h1><p>2021.9.8</p>
-<h4 id="并联机器人高维运动规划研究—刚柔耦合"><a href="#并联机器人高维运动规划研究—刚柔耦合" class="headerlink" title="并联机器人高维运动规划研究—刚柔耦合"></a>并联机器人高维运动规划研究—刚柔耦合</h4><p>非线性力学—————-形变+运动规划————非线性数学模型—————-弹性运动规划算法</p>
-<p>无碰撞未超过运动规划极限—自由位形</p>
-<p>（缺少论文整理部分）</p>
-<span id="more"></span>
-<p><strong>特殊规划-路径无奇异且路径具备刚度与精度</strong></p>
-<p>弹性路径数学模型—内力与内力矩微分方程传递性，作用于整条路径，外部不具有传递性，只发生于作用点。</p>
-<p>本构模型—-激励与响应的关系</p>
-<p>路径形变控制机理</p>
-<p>子任务内容：耦合作用机理、弹性运动模型、运动控制反解模型</p>
-<p><strong>联合运动</strong>：动舵/直接力复合控制的难点在于如何有效、快速地融合气动舵的连续输出与直接力的离散输出。传统的优化融合策略需在每个控制周期内求解最优分配问题，这将消耗大量的机载计算资源。</p>
-<p>问题：非线性弹性动力模型建立不够清晰</p>
-<p>来源：TUOsd_cjm</p>
-<p>动力模型过程清晰，验证存在一定疑问</p>
-<p>3RRR构型</p>
-<p>柔性机器人-造价低、操作速度快、驱动力小、能耗低、良好的机动性能、安全性高</p>
-<p>关键词：并联、刚柔耦合动力学、振动抑制</p>
-<p>杆件关节变形能</p>
-<p>柔性机器人动力学方程—多自由度偏微分方程—有限维常微分方程近似替代</p>
-<p>连续系统离散化处理—-假设模态法AMM、有限元方法FEM、集中参数法IPM。</p>
-<p>记录一下小概念</p>
-<p><strong>动力学方程</strong>：研究力和位移或力矩和转角的关系</p>
-<ol>
-<li>获得描述广义坐标随时间变化的闭环方程——-牛顿拉格朗日</li>
-<li>给定广义坐标后，需要给系统多大的广义力，可以实现预期的广义坐标轨迹———-牛顿欧拉</li>
-</ol>
-<p>动力学建模方法：笛卡尔坐标、关节坐标、动力学样条法、波方法，李群李代数。</p>
-<p>柔性机器人振动控制：</p>
-<p>被动控制：</p>
-<ul>
-<li>优化构件截面参数及几何参数</li>
-<li>复合材料替代金属材料</li>
-<li>阻尼处理构件—减振</li>
-</ul>
-<p>主动控制：</p>
-<ul>
-<li>传感器与作动器</li>
-<li>设计多个可控原动件的受控机构</li>
-<li>基于动力模型的控制系统</li>
-</ul>
-<p>压电陶瓷片</p>
-<p>压电陶瓷驱动器相关应用：压电驱动器绑定在弹性结构表面或嵌入压层复合材料中Edward</p>
-<p>柔性机器人研究包含毂-两结构、柔性两杆和四杆机构，对于柔性并联研究较少。</p>
-<p>质量、运动轨迹导致各关节驱动力矩和能耗差别很大</p>
-<h2 id="柔性机器人动力学特性分析内容"><a href="#柔性机器人动力学特性分析内容" class="headerlink" title="柔性机器人动力学特性分析内容"></a>柔性机器人动力学特性分析内容</h2><p>频率特性分析、灵敏度分析、模态分析、动应力分析</p>
-<p>系统弹性振动主要有低阶模态决定，固有频率越低，系统刚度越小，越容易振动</p>
-<p>两步法：KED假设弹性变形位移是小的，忽略弹性变形对于刚体运动的影响，建立系统刚体动力学方程，将运动学变量带入弹性变形运动动力学方程。</p>
-<p>一步法：考虑刚体运动与弹性变形运动耦合，更精确的模型求解方法</p>
-<h2 id="力热固耦合弹性动力学（一致温度）"><a href="#力热固耦合弹性动力学（一致温度）" class="headerlink" title="力热固耦合弹性动力学（一致温度）"></a>力热固耦合弹性动力学（一致温度）</h2><p>基于有限元方法和Hamilton原理</p>
-<p>建立单元弹性动力学模型，假设热载荷导致机构产生的变形量与应力导致的变形线性且各向同性，建立联立应变方程。</p>
-<p>基于ANSYS瞬态动力学仿真，计算了主动关节和被动关节没有热载荷和多种温度下最大等效应力图</p>
-<p>记录了多地温度变化曲线，测量连杆最大等效应力随时间的变化关系</p>
-<p><strong>结论：</strong>温度变化，最大等效应力保持周期性上升；气温不变，最大等效应力保持周期性稳定。</p>
-<p>温度高低不是决定因素，温差大小决定应力变化</p>
-<p>柔性并联机器人的动态性能不仅与温度该改变量大小和材料的温度膨胀系数有关，而且与温度变化曲线也密切相关。</p>
-<p><em>文章通过气象台的温度数据，导入CFD软件中，进行瞬态动力学分析，得到应力变化图，进而分析温度关系</em>，还是没能给出一个直接的解析式呀，复杂机构的耦合动力学模型建模还是一个难解。</p>
-<h2 id="弹性动力学的动力钢化问题"><a href="#弹性动力学的动力钢化问题" class="headerlink" title="弹性动力学的动力钢化问题"></a>弹性动力学的动力钢化问题</h2><p>高速、高加速柔性并联机器人是否存在动力钢化现象。</p>
-<p>单元—系统   </p>
-<p>一阶近似耦合模型FOAC:包含名义运动相关的<em>动力刚度项</em></p>
-<p>传统混合坐标建模方法 ZOAC：无法很好的反应系统的动力学性能，假设轴向与横向变形位移解耦。适用于并联机构</p>
-<p>无论系统运动速度、加速度多大，系统刚度项对系统动力学特性影响微小。</p>
-<p>执行机构动力学模型建立结束，基于模型的振动控制</p>
-<h2 id="主动振动控制研究"><a href="#主动振动控制研究" class="headerlink" title="主动振动控制研究"></a>主动振动控制研究</h2><p>控制目的：抑制并联机器人柔性连杆的残余振动，保证动平台精确地到达给定的位姿。</p>
-<p>PZT压电驱动器作用机理：给驱动器施加电压信号，PZT驱动器产生应变，在驱动器两端，这种应变将在梁单元对应的位置上引起剪切变形</p>
-<p>通过驱动器对梁单元施加外力矩</p>
-<p>控制器优化方向-能量优化，在更低的控制电压下可以取得更好的控制效果。一对PZT控制效果优于一片。</p>
-<p>控制内容后续完善</p>
-<p><strong>结论：</strong>单独控制柔性杆时，可以抑制自身的弹性振动，无法控制其他两柔性杆振动，当三根杆同时振动时，各柔性杆的弹性振动都能得到很好的抑制。</p>
-<p>平台质量和运动轨迹对驱动能耗有直接影响。——-</p>
-<p><em>轻量化设计以及轨迹规划内容，不过这篇文章感觉这部分写不了啥论文</em></p>
-<p>建立并联机器人刚柔耦合非线性动力学方程</p>
-<p><em>构件弹性变形与刚体运动之间互相耦合影响</em></p>
-<p><strong>感觉压电陶瓷驱动器抑振是文章最重要的点。</strong></p>
-<p>文章方向整理：</p>
-]]></content>
-      <categories>
-        <category>project</category>
-      </categories>
   </entry>
   <entry>
     <title>impedance_control</title>
@@ -2250,6 +2147,109 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
+    <title>gcyyy</title>
+    <url>/2021/09/10/gcyyy/gcyyy/</url>
+    <content><![CDATA[<h1 id="并联机构弹性动力学建模与振动主动控制论文"><a href="#并联机构弹性动力学建模与振动主动控制论文" class="headerlink" title="并联机构弹性动力学建模与振动主动控制论文"></a>并联机构弹性动力学建模与振动主动控制论文</h1><p>2021.9.8</p>
+<h4 id="并联机器人高维运动规划研究—刚柔耦合"><a href="#并联机器人高维运动规划研究—刚柔耦合" class="headerlink" title="并联机器人高维运动规划研究—刚柔耦合"></a>并联机器人高维运动规划研究—刚柔耦合</h4><p>非线性力学—————-形变+运动规划————非线性数学模型—————-弹性运动规划算法</p>
+<p>无碰撞未超过运动规划极限—自由位形</p>
+<p>（缺少论文整理部分）</p>
+<span id="more"></span>
+<p><strong>特殊规划-路径无奇异且路径具备刚度与精度</strong></p>
+<p>弹性路径数学模型—内力与内力矩微分方程传递性，作用于整条路径，外部不具有传递性，只发生于作用点。</p>
+<p>本构模型—-激励与响应的关系</p>
+<p>路径形变控制机理</p>
+<p>子任务内容：耦合作用机理、弹性运动模型、运动控制反解模型</p>
+<p><strong>联合运动</strong>：动舵/直接力复合控制的难点在于如何有效、快速地融合气动舵的连续输出与直接力的离散输出。传统的优化融合策略需在每个控制周期内求解最优分配问题，这将消耗大量的机载计算资源。</p>
+<p>问题：非线性弹性动力模型建立不够清晰</p>
+<p>来源：TUOsd_cjm</p>
+<p>动力模型过程清晰，验证存在一定疑问</p>
+<p>3RRR构型</p>
+<p>柔性机器人-造价低、操作速度快、驱动力小、能耗低、良好的机动性能、安全性高</p>
+<p>关键词：并联、刚柔耦合动力学、振动抑制</p>
+<p>杆件关节变形能</p>
+<p>柔性机器人动力学方程—多自由度偏微分方程—有限维常微分方程近似替代</p>
+<p>连续系统离散化处理—-假设模态法AMM、有限元方法FEM、集中参数法IPM。</p>
+<p>记录一下小概念</p>
+<p><strong>动力学方程</strong>：研究力和位移或力矩和转角的关系</p>
+<ol>
+<li>获得描述广义坐标随时间变化的闭环方程——-牛顿拉格朗日</li>
+<li>给定广义坐标后，需要给系统多大的广义力，可以实现预期的广义坐标轨迹———-牛顿欧拉</li>
+</ol>
+<p>动力学建模方法：笛卡尔坐标、关节坐标、动力学样条法、波方法，李群李代数。</p>
+<p>柔性机器人振动控制：</p>
+<p>被动控制：</p>
+<ul>
+<li>优化构件截面参数及几何参数</li>
+<li>复合材料替代金属材料</li>
+<li>阻尼处理构件—减振</li>
+</ul>
+<p>主动控制：</p>
+<ul>
+<li>传感器与作动器</li>
+<li>设计多个可控原动件的受控机构</li>
+<li>基于动力模型的控制系统</li>
+</ul>
+<p>压电陶瓷片</p>
+<p>压电陶瓷驱动器相关应用：压电驱动器绑定在弹性结构表面或嵌入压层复合材料中Edward</p>
+<p>柔性机器人研究包含毂-两结构、柔性两杆和四杆机构，对于柔性并联研究较少。</p>
+<p>质量、运动轨迹导致各关节驱动力矩和能耗差别很大</p>
+<h2 id="柔性机器人动力学特性分析内容"><a href="#柔性机器人动力学特性分析内容" class="headerlink" title="柔性机器人动力学特性分析内容"></a>柔性机器人动力学特性分析内容</h2><p>频率特性分析、灵敏度分析、模态分析、动应力分析</p>
+<p>系统弹性振动主要有低阶模态决定，固有频率越低，系统刚度越小，越容易振动</p>
+<p>两步法：KED假设弹性变形位移是小的，忽略弹性变形对于刚体运动的影响，建立系统刚体动力学方程，将运动学变量带入弹性变形运动动力学方程。</p>
+<p>一步法：考虑刚体运动与弹性变形运动耦合，更精确的模型求解方法</p>
+<h2 id="力热固耦合弹性动力学（一致温度）"><a href="#力热固耦合弹性动力学（一致温度）" class="headerlink" title="力热固耦合弹性动力学（一致温度）"></a>力热固耦合弹性动力学（一致温度）</h2><p>基于有限元方法和Hamilton原理</p>
+<p>建立单元弹性动力学模型，假设热载荷导致机构产生的变形量与应力导致的变形线性且各向同性，建立联立应变方程。</p>
+<p>基于ANSYS瞬态动力学仿真，计算了主动关节和被动关节没有热载荷和多种温度下最大等效应力图</p>
+<p>记录了多地温度变化曲线，测量连杆最大等效应力随时间的变化关系</p>
+<p><strong>结论：</strong>温度变化，最大等效应力保持周期性上升；气温不变，最大等效应力保持周期性稳定。</p>
+<p>温度高低不是决定因素，温差大小决定应力变化</p>
+<p>柔性并联机器人的动态性能不仅与温度该改变量大小和材料的温度膨胀系数有关，而且与温度变化曲线也密切相关。</p>
+<p><em>文章通过气象台的温度数据，导入CFD软件中，进行瞬态动力学分析，得到应力变化图，进而分析温度关系</em>，还是没能给出一个直接的解析式呀，复杂机构的耦合动力学模型建模还是一个难解。</p>
+<h2 id="弹性动力学的动力钢化问题"><a href="#弹性动力学的动力钢化问题" class="headerlink" title="弹性动力学的动力钢化问题"></a>弹性动力学的动力钢化问题</h2><p>高速、高加速柔性并联机器人是否存在动力钢化现象。</p>
+<p>单元—系统   </p>
+<p>一阶近似耦合模型FOAC:包含名义运动相关的<em>动力刚度项</em></p>
+<p>传统混合坐标建模方法 ZOAC：无法很好的反应系统的动力学性能，假设轴向与横向变形位移解耦。适用于并联机构</p>
+<p>无论系统运动速度、加速度多大，系统刚度项对系统动力学特性影响微小。</p>
+<p>执行机构动力学模型建立结束，基于模型的振动控制</p>
+<h2 id="主动振动控制研究"><a href="#主动振动控制研究" class="headerlink" title="主动振动控制研究"></a>主动振动控制研究</h2><p>控制目的：抑制并联机器人柔性连杆的残余振动，保证动平台精确地到达给定的位姿。</p>
+<p>PZT压电驱动器作用机理：给驱动器施加电压信号，PZT驱动器产生应变，在驱动器两端，这种应变将在梁单元对应的位置上引起剪切变形</p>
+<p>通过驱动器对梁单元施加外力矩</p>
+<p>控制器优化方向-能量优化，在更低的控制电压下可以取得更好的控制效果。一对PZT控制效果优于一片。</p>
+<p>控制内容后续完善</p>
+<p><strong>结论：</strong>单独控制柔性杆时，可以抑制自身的弹性振动，无法控制其他两柔性杆振动，当三根杆同时振动时，各柔性杆的弹性振动都能得到很好的抑制。</p>
+<p>平台质量和运动轨迹对驱动能耗有直接影响。——-</p>
+<p><em>轻量化设计以及轨迹规划内容，不过这篇文章感觉这部分写不了啥论文</em></p>
+<p>建立并联机器人刚柔耦合非线性动力学方程</p>
+<p><em>构件弹性变形与刚体运动之间互相耦合影响</em></p>
+<p><strong>感觉压电陶瓷驱动器抑振是文章最重要的点。</strong></p>
+<p>文章方向整理：</p>
+]]></content>
+      <categories>
+        <category>project</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>DOC_exercise</title>
+    <url>/2021/08/29/DOC-exercise/DOC-exercise/</url>
+    <content><![CDATA[<h1 id="随笔加一些更新计划"><a href="#随笔加一些更新计划" class="headerlink" title="随笔加一些更新计划"></a>随笔加一些更新计划</h1><p>人生不长，总归还是想做一些有意义的事情——-这是一切的出发点</p>
+<span id="more"></span>
+<h2 id="更新计划"><a href="#更新计划" class="headerlink" title="更新计划"></a>更新计划</h2><p>之后会更新一些视频与博客，博客文案，视频过程，在记录的同时巩固自己，希望可以帮助到一些朋友，要更新一些硬货，2333</p>
+<p>1.专业相关内容的研究，根据情况落实</p>
+<p>2.ROS、模拟软件以及一些算法记录过程</p>
+<p>3.游戏历史考据，比方说最近想得是重装的怪物史，总不可能是凭空出现的，回忆下过去，开拓下视野。</p>
+<p>4.文学方面的内容，提高一下，没想好更新什么，以后慢慢来</p>
+<h2 id="一些需要时刻记住的事情"><a href="#一些需要时刻记住的事情" class="headerlink" title="一些需要时刻记住的事情"></a>一些需要时刻记住的事情</h2><p>行甚于言，很重要的一点；</p>
+<p>前段时间总是自我怀疑，希望不要忘记自己的初心，我还是有一些优点的，踏踏实实的做事就好；</p>
+<p>操千曲而后晓声，观千剑而后识器，大量且规律的积累是以后必须做到的；</p>
+<p><strong>要努力提高英语呀，坚持日积月累；</strong></p>
+<p>拓展视野，坚实基础；保持信心，提高自己；</p>
+<p>去做一些更好玩的事情，记住自己的初心，坚持下去（已经确确实实是个成年人了，以后要更成熟一点）</p>
+<h2 id="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"><a href="#未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人" class="headerlink" title="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"></a>未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人</h2>]]></content>
+      <tags>
+        <tag>plan</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>/2022/08/02/life/life/</url>
     <content><![CDATA[<p> <strong>怎么会迷上你，我在问自己</strong></p>
@@ -2285,6 +2285,53 @@ m_1 & 0 \\
 <p>周末晚之前做一版，下周严格的把模型推导完，整理知识，克服难题</p>
 <p>人生啊—-真是漫长</p>
 <p>应该不会有人看到吧，真是尴尬…</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>literature</title>
+    <url>/2020/09/03/literature/literature/</url>
+    <content><![CDATA[<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
+<p>abstract    consult    discussion   method   result</p>
+<p>review</p>
+<span id="more"></span>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
+<p>摘要分层</p>
+<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
+<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
+<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
+<p>2.indicative abstract</p>
+<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
+<p>3.extended abstract</p>
+<p> thesis   dissertation</p>
+<p>4.structured abstract</p>
+<p>5.conference abstract</p>
+<p>6.graphical abstract</p>
+<p>7.executive summary</p>
+<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
+<ol>
+<li>Introduction  </li>
+<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
+<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
+</ol>
+<p>分层</p>
+<p>1.review of the present study</p>
+<p>2.consolidating ofthe results</p>
+<p>3.stating limitations and possible research directions</p>
+<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
+<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
+</ol>
+<p>分层</p>
+<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
+<p>一些特点 linguistic features</p>
+<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
+<p>Method classification</p>
+<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
+<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
+<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
+<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
+<p>…用的比较少，不列了</p>
+<p>缺一部分，改天再补，回寝了～</p>
 ]]></content>
   </entry>
   <entry>
@@ -2459,53 +2506,6 @@ m_1 & 0 \\
       </categories>
   </entry>
   <entry>
-    <title>literature</title>
-    <url>/2020/09/03/literature/literature/</url>
-    <content><![CDATA[<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
-<p>abstract    consult    discussion   method   result</p>
-<p>review</p>
-<span id="more"></span>
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
-<p>摘要分层</p>
-<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
-<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
-<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
-<p>2.indicative abstract</p>
-<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
-<p>3.extended abstract</p>
-<p> thesis   dissertation</p>
-<p>4.structured abstract</p>
-<p>5.conference abstract</p>
-<p>6.graphical abstract</p>
-<p>7.executive summary</p>
-<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
-<ol>
-<li>Introduction  </li>
-<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
-<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
-</ol>
-<p>分层</p>
-<p>1.review of the present study</p>
-<p>2.consolidating ofthe results</p>
-<p>3.stating limitations and possible research directions</p>
-<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
-<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
-<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
-</ol>
-<p>分层</p>
-<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
-<p>一些特点 linguistic features</p>
-<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
-<p>Method classification</p>
-<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
-<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
-<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
-<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
-<p>…用的比较少，不列了</p>
-<p>缺一部分，改天再补，回寝了～</p>
-]]></content>
-  </entry>
-  <entry>
     <title>logic_symbol</title>
     <url>/2020/07/27/logic-symbol/logic-symbol/</url>
     <content><![CDATA[<h1 id="逻辑符号"><a href="#逻辑符号" class="headerlink" title="逻辑符号"></a>逻辑符号</h1><p>这篇博文主要为了总结一下逻辑运算符号（拯救混乱记忆，雾）</p>
@@ -2611,6 +2611,115 @@ m_1 & 0 \\
 <p>运动学插件问题KDL，插件选用以及<code>二次开发</code>问题</p>
 <p>抓取与放置，attach与un，避障规划</p>
 <p>代码分析与移植待补充～～</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>manipulator_review</title>
+    <url>/2020/10/02/manipulator-review/manipulator-review/</url>
+    <content><![CDATA[<h1 id="综述笔记-manipulator-review-underwater-system已补充结束"><a href="#综述笔记-manipulator-review-underwater-system已补充结束" class="headerlink" title="综述笔记-manipulator_review(underwater)-(system已补充结束)"></a>综述笔记-manipulator_review(underwater)-(system已补充结束)</h1><p>一篇综述[1]的总体方向笔记，非文献整理。</p>
+<blockquote>
+<p>[1] SIVČEV S, COLEMAN J, OMERDIĆ E, et al. Underwater manipulators: A review [J]. 2018, 163(431-50.</p>
+</blockquote>
+<p>UUV-unmanned underwater vehicles   </p>
+<p>ROV—remotely operated vehicles</p>
+<p>AUV-autonomous underwater vehicles</p>
+<p>UVMS-Underwater Vehicle Manipulator Systems</p>
+<span id="more"></span>
+<p>(水下双臂—一号臂抓取固定机器人本体，二号臂执行预定作业内容)</p>
+<h2 id="常见任务："><a href="#常见任务：" class="headerlink" title="常见任务："></a>常见任务：</h2><p>1.管道检测    2.沉没物体打捞作业     3.矿井作业 </p>
+<p>4.清洁表面作业    5.开关阀门、钻探、rope cutting     6.线缆铺设以及维修</p>
+<p>7.清理碎片或渔网    8.生物地质采样    9.考古archaeological work</p>
+<h2 id="特殊环境材料选择（水下）"><a href="#特殊环境材料选择（水下）" class="headerlink" title="特殊环境材料选择（水下）"></a>特殊环境材料选择（水下）</h2><p>作业约束：</p>
+<p>1.the size of the workspace</p>
+<p>2.lifting capacity </p>
+<p>3.wrist torque</p>
+<p>常用金属合金，比如TI6-4、阳极氧化铝、不锈钢合金以及某些塑料（聚乙烯）</p>
+<p>—较高强度、耐腐蚀性、良好的可加工性质、减轻水中的重量以及减少执行器负担</p>
+<p>Reach—水下机械手运动链长</p>
+<ol>
+<li><p>水下机械手能产生的最大腕部扭矩范围8NM-250NM</p>
+</li>
+<li><p>水下机械手的载荷5kg-500kg左右</p>
+</li>
+<li><p>水下机械手的运动范围为0.5m-2.4m</p>
+<p>参数：max.nominal  最大额定值    at full extension 完全伸展  at rated speed 额定速度</p>
+<p>through envelope </p>
+</li>
+</ol>
+<h2 id="关于水下控制模型意义"><a href="#关于水下控制模型意义" class="headerlink" title="关于水下控制模型意义"></a>关于水下控制模型意义</h2><p>机械手的质量尽量占比较小，为了可以忽略或至少将动态耦合考虑为可以解决的外部干扰，通过水下机器人的动态定位，更大的重量和尺寸对水下机器人推进器系统对由动态耦合引起的干扰的鲁棒性提出了更高的要求。</p>
+<h2 id="机械爪"><a href="#机械爪" class="headerlink" title="机械爪"></a>机械爪</h2><p>通常设计三到六个自由度，三个自由度可以到达任意位置，六个自由度可以实现末端执行器的任意位置和方向</p>
+<p>高自由度具有冗余性，常用于避障作业</p>
+<h2 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h2><ul>
+<li>海水驱动，缺点较多被放弃</li>
+<li>液压驱动—<ul>
+<li>高负载，高效率、简单、过载保护</li>
+<li>定位精度差、容易泄露造成污染</li>
+</ul>
+</li>
+<li>电驱动<ul>
+<li>电动用于商业较少，难以满足工业速度、可靠性、强度或力量要求</li>
+</ul>
+</li>
+<li>电液混合驱动</li>
+</ul>
+<p>以上电与液压驱动均有大量研究文章，有时间挑着看看商用水下操纵器控制系统安装在ROV上的商用水下操纵器由遥操作系统控制，并且完全依赖于位于水面船只上的回路中的驾驶员/操纵员。 飞行员通过摄像头和/或声纳系统的反馈来观察场景，并同时做出有关运动的决定，并使用一些备用输入设备之一远程操作水下操纵器。 根据水下机械手的技术能力，使用不同的控制方法。</p>
+<h3 id="商业用控制系统"><a href="#商业用控制系统" class="headerlink" title="商业用控制系统"></a>商业用控制系统</h3><p>商业级别一般使用遥操作</p>
+<ul>
+<li>rate control    液压通过流量与速度控制</li>
+<li>position control     位置传感器通过电位计、analog resolvers、digital optical encoders 、solid state linear position sensors</li>
+<li>force feedback  商业级应用，常用于辅助人工操作</li>
+</ul>
+<p>gripper control</p>
+<h2 id="水下理论控制模型（文章较多，研究重点）"><a href="#水下理论控制模型（文章较多，研究重点）" class="headerlink" title="水下理论控制模型（文章较多，研究重点）"></a>水下理论控制模型（文章较多，研究重点）</h2><p>manipulator作为一种多体动力学问题，控制方案包含集中控制与分散控制方案两类，此外还包括神经网络控制模型。</p>
+<p>浮力、增加的质量、耗散的阻力和升力以及外部干扰（电流、波浪等），增加了非线性与不确定性因素，使得建模控制变得更加复杂。此外<code>水动力系数</code>无法估计，因为他们会随着温度、深度、盐度等变化，当人体通过液体加速时，水体产生格外的惯性，即质量附加效应</p>
+<p>波浪、海流和潮汐导致流体加速，导致外部和运动干扰以及机械手和机器人的强烈震荡和负载，最后在机器人与机械臂之间发生强烈的运动学和动力学耦合效应</p>
+<p>分散控制—PID</p>
+<p>集中控制—非线性集中控制方案</p>
+<ul>
+<li>多层神经网络控制器</li>
+<li>基于非回归的自适应控制器</li>
+<li>基于滑膜控制策略和动力学模型的水下机器人鲁棒轨迹跟踪控制器等等（—后续记录）</li>
+</ul>
+<p>神经网络模糊控制</p>
+<p>利用模糊增益调整在不确定性和扰动下实现自适应，神经网络用于逼近水下机械手的动力学并添加前馈，补偿输入到PD模糊控制器</p>
+<h2 id="运动控制探讨（高级控制）"><a href="#运动控制探讨（高级控制）" class="headerlink" title="运动控制探讨（高级控制）"></a>运动控制探讨（高级控制）</h2><p>传统：水下航行器与机械臂是分开协调的，因此将整个系统视为两个独立系统。</p>
+<p>特殊环境下的耦合需要采用高级控制方案</p>
+<p>针对耦合动力问题进行探讨（方案细节见技术综述笔记，个人认为这里可以进行改进研究）</p>
+<p>有一种不错的思路，控制重心而非机器人具体姿态</p>
+<p>整体系统控制-基于鲁棒的自适应控制方案</p>
+<p>反馈、前馈控制器（方案细节见技术综述笔记）</p>
+<p><strong>总体而言，水下控制模型主要处理的就是由于水下特殊环境引起的干扰以及特殊环境下的运动耦合</strong></p>
+<h2 id="运动控制与规划（路径规划与轨迹规划"><a href="#运动控制与规划（路径规划与轨迹规划" class="headerlink" title="运动控制与规划（路径规划与轨迹规划"></a>运动控制与规划（路径规划与轨迹规划</h2><p>-笛卡尔遥操作方案</p>
+<p>这里注意一下2013年沈阳自动化所提出的六自由度水下机械臂控制策略</p>
+<p>2018年的碰撞检测算法</p>
+<p>触觉交互</p>
+<p>冗余解析度</p>
+<p>通过不同次要目标解决冗余分辨率，避免关节限制、奇异性、高关节速度，将末端执行器保持在机载摄像头视线范围 内，将阻力最小化</p>
+<h2 id="理想与实际"><a href="#理想与实际" class="headerlink" title="理想与实际"></a>理想与实际</h2><p>大多基于关节空间设定点进行工作，但是需要位置、速度和加速度的详细信息反馈跟踪</p>
+<p>电动具有高效率优势</p>
+<h2 id="Force-control"><a href="#Force-control" class="headerlink" title="Force control"></a>Force control</h2><p>关于被动与主动顺应性控制、阻抗控制和混合阻抗控制，这里注意一下1996年的针对水下环境的混合力位控制的方案</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>问题：高质量的传感器与驱动器组成机器人系统，但是控制系统能力不足，可建议讲工业制造中使用的机器人手臂伺服控制只是引入水下环境。</p>
+<p>低精度、低重复性、低控制环路频率</p>
+<p>控制算法本身存在问题，缺乏与实际的结合与改进</p>
+<p>这里注意下国外实验室的一个项目（细节见技术笔记）</p>
+<p>提出了两种思路</p>
+<ul>
+<li>将车辆导航与定位数据用于机械手控制，补偿运动误差系统</li>
+<li>从机械角度出发，一种稳定器（从末端执行器角度考虑）</li>
+</ul>
+<p>目的：简化操作</p>
+<p>总而言之，文章一直在说一个问题，就是关于高级控制方案落地的问题，个人觉得很类似理论控制的现状，不过嘛，人人都有自己的目的想法，就这样吧。</p>
+<h2 id="后续会补充一篇系统综述"><a href="#后续会补充一篇系统综述" class="headerlink" title="后续会补充一篇系统综述"></a>后续会补充一篇系统综述</h2><p>机器人系统-深入了解水下机器人技术、产品和应用</p>
+<p>ROV深海采矿作业</p>
+<p>AUV-长期运行能力、深水深处返回数据的能力</p>
+<p>水下声学定位系统</p>
+<p>悬停方向的AUV，悬停运动由于同时使用水平推进器和垂直推进器完成</p>
+<p>水下滑翔机</p>
+<p>始于军事，拓展为海上油气等等，比如海上搜索和救援、海洋学等</p>
+<p>未来展望</p>
 ]]></content>
       <categories>
         <category>note</category>
@@ -2728,115 +2837,6 @@ m_1 & 0 \\
       </tags>
   </entry>
   <entry>
-    <title>manipulator_review</title>
-    <url>/2020/10/02/manipulator-review/manipulator-review/</url>
-    <content><![CDATA[<h1 id="综述笔记-manipulator-review-underwater-system已补充结束"><a href="#综述笔记-manipulator-review-underwater-system已补充结束" class="headerlink" title="综述笔记-manipulator_review(underwater)-(system已补充结束)"></a>综述笔记-manipulator_review(underwater)-(system已补充结束)</h1><p>一篇综述[1]的总体方向笔记，非文献整理。</p>
-<blockquote>
-<p>[1] SIVČEV S, COLEMAN J, OMERDIĆ E, et al. Underwater manipulators: A review [J]. 2018, 163(431-50.</p>
-</blockquote>
-<p>UUV-unmanned underwater vehicles   </p>
-<p>ROV—remotely operated vehicles</p>
-<p>AUV-autonomous underwater vehicles</p>
-<p>UVMS-Underwater Vehicle Manipulator Systems</p>
-<span id="more"></span>
-<p>(水下双臂—一号臂抓取固定机器人本体，二号臂执行预定作业内容)</p>
-<h2 id="常见任务："><a href="#常见任务：" class="headerlink" title="常见任务："></a>常见任务：</h2><p>1.管道检测    2.沉没物体打捞作业     3.矿井作业 </p>
-<p>4.清洁表面作业    5.开关阀门、钻探、rope cutting     6.线缆铺设以及维修</p>
-<p>7.清理碎片或渔网    8.生物地质采样    9.考古archaeological work</p>
-<h2 id="特殊环境材料选择（水下）"><a href="#特殊环境材料选择（水下）" class="headerlink" title="特殊环境材料选择（水下）"></a>特殊环境材料选择（水下）</h2><p>作业约束：</p>
-<p>1.the size of the workspace</p>
-<p>2.lifting capacity </p>
-<p>3.wrist torque</p>
-<p>常用金属合金，比如TI6-4、阳极氧化铝、不锈钢合金以及某些塑料（聚乙烯）</p>
-<p>—较高强度、耐腐蚀性、良好的可加工性质、减轻水中的重量以及减少执行器负担</p>
-<p>Reach—水下机械手运动链长</p>
-<ol>
-<li><p>水下机械手能产生的最大腕部扭矩范围8NM-250NM</p>
-</li>
-<li><p>水下机械手的载荷5kg-500kg左右</p>
-</li>
-<li><p>水下机械手的运动范围为0.5m-2.4m</p>
-<p>参数：max.nominal  最大额定值    at full extension 完全伸展  at rated speed 额定速度</p>
-<p>through envelope </p>
-</li>
-</ol>
-<h2 id="关于水下控制模型意义"><a href="#关于水下控制模型意义" class="headerlink" title="关于水下控制模型意义"></a>关于水下控制模型意义</h2><p>机械手的质量尽量占比较小，为了可以忽略或至少将动态耦合考虑为可以解决的外部干扰，通过水下机器人的动态定位，更大的重量和尺寸对水下机器人推进器系统对由动态耦合引起的干扰的鲁棒性提出了更高的要求。</p>
-<h2 id="机械爪"><a href="#机械爪" class="headerlink" title="机械爪"></a>机械爪</h2><p>通常设计三到六个自由度，三个自由度可以到达任意位置，六个自由度可以实现末端执行器的任意位置和方向</p>
-<p>高自由度具有冗余性，常用于避障作业</p>
-<h2 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h2><ul>
-<li>海水驱动，缺点较多被放弃</li>
-<li>液压驱动—<ul>
-<li>高负载，高效率、简单、过载保护</li>
-<li>定位精度差、容易泄露造成污染</li>
-</ul>
-</li>
-<li>电驱动<ul>
-<li>电动用于商业较少，难以满足工业速度、可靠性、强度或力量要求</li>
-</ul>
-</li>
-<li>电液混合驱动</li>
-</ul>
-<p>以上电与液压驱动均有大量研究文章，有时间挑着看看商用水下操纵器控制系统安装在ROV上的商用水下操纵器由遥操作系统控制，并且完全依赖于位于水面船只上的回路中的驾驶员/操纵员。 飞行员通过摄像头和/或声纳系统的反馈来观察场景，并同时做出有关运动的决定，并使用一些备用输入设备之一远程操作水下操纵器。 根据水下机械手的技术能力，使用不同的控制方法。</p>
-<h3 id="商业用控制系统"><a href="#商业用控制系统" class="headerlink" title="商业用控制系统"></a>商业用控制系统</h3><p>商业级别一般使用遥操作</p>
-<ul>
-<li>rate control    液压通过流量与速度控制</li>
-<li>position control     位置传感器通过电位计、analog resolvers、digital optical encoders 、solid state linear position sensors</li>
-<li>force feedback  商业级应用，常用于辅助人工操作</li>
-</ul>
-<p>gripper control</p>
-<h2 id="水下理论控制模型（文章较多，研究重点）"><a href="#水下理论控制模型（文章较多，研究重点）" class="headerlink" title="水下理论控制模型（文章较多，研究重点）"></a>水下理论控制模型（文章较多，研究重点）</h2><p>manipulator作为一种多体动力学问题，控制方案包含集中控制与分散控制方案两类，此外还包括神经网络控制模型。</p>
-<p>浮力、增加的质量、耗散的阻力和升力以及外部干扰（电流、波浪等），增加了非线性与不确定性因素，使得建模控制变得更加复杂。此外<code>水动力系数</code>无法估计，因为他们会随着温度、深度、盐度等变化，当人体通过液体加速时，水体产生格外的惯性，即质量附加效应</p>
-<p>波浪、海流和潮汐导致流体加速，导致外部和运动干扰以及机械手和机器人的强烈震荡和负载，最后在机器人与机械臂之间发生强烈的运动学和动力学耦合效应</p>
-<p>分散控制—PID</p>
-<p>集中控制—非线性集中控制方案</p>
-<ul>
-<li>多层神经网络控制器</li>
-<li>基于非回归的自适应控制器</li>
-<li>基于滑膜控制策略和动力学模型的水下机器人鲁棒轨迹跟踪控制器等等（—后续记录）</li>
-</ul>
-<p>神经网络模糊控制</p>
-<p>利用模糊增益调整在不确定性和扰动下实现自适应，神经网络用于逼近水下机械手的动力学并添加前馈，补偿输入到PD模糊控制器</p>
-<h2 id="运动控制探讨（高级控制）"><a href="#运动控制探讨（高级控制）" class="headerlink" title="运动控制探讨（高级控制）"></a>运动控制探讨（高级控制）</h2><p>传统：水下航行器与机械臂是分开协调的，因此将整个系统视为两个独立系统。</p>
-<p>特殊环境下的耦合需要采用高级控制方案</p>
-<p>针对耦合动力问题进行探讨（方案细节见技术综述笔记，个人认为这里可以进行改进研究）</p>
-<p>有一种不错的思路，控制重心而非机器人具体姿态</p>
-<p>整体系统控制-基于鲁棒的自适应控制方案</p>
-<p>反馈、前馈控制器（方案细节见技术综述笔记）</p>
-<p><strong>总体而言，水下控制模型主要处理的就是由于水下特殊环境引起的干扰以及特殊环境下的运动耦合</strong></p>
-<h2 id="运动控制与规划（路径规划与轨迹规划"><a href="#运动控制与规划（路径规划与轨迹规划" class="headerlink" title="运动控制与规划（路径规划与轨迹规划"></a>运动控制与规划（路径规划与轨迹规划</h2><p>-笛卡尔遥操作方案</p>
-<p>这里注意一下2013年沈阳自动化所提出的六自由度水下机械臂控制策略</p>
-<p>2018年的碰撞检测算法</p>
-<p>触觉交互</p>
-<p>冗余解析度</p>
-<p>通过不同次要目标解决冗余分辨率，避免关节限制、奇异性、高关节速度，将末端执行器保持在机载摄像头视线范围 内，将阻力最小化</p>
-<h2 id="理想与实际"><a href="#理想与实际" class="headerlink" title="理想与实际"></a>理想与实际</h2><p>大多基于关节空间设定点进行工作，但是需要位置、速度和加速度的详细信息反馈跟踪</p>
-<p>电动具有高效率优势</p>
-<h2 id="Force-control"><a href="#Force-control" class="headerlink" title="Force control"></a>Force control</h2><p>关于被动与主动顺应性控制、阻抗控制和混合阻抗控制，这里注意一下1996年的针对水下环境的混合力位控制的方案</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>问题：高质量的传感器与驱动器组成机器人系统，但是控制系统能力不足，可建议讲工业制造中使用的机器人手臂伺服控制只是引入水下环境。</p>
-<p>低精度、低重复性、低控制环路频率</p>
-<p>控制算法本身存在问题，缺乏与实际的结合与改进</p>
-<p>这里注意下国外实验室的一个项目（细节见技术笔记）</p>
-<p>提出了两种思路</p>
-<ul>
-<li>将车辆导航与定位数据用于机械手控制，补偿运动误差系统</li>
-<li>从机械角度出发，一种稳定器（从末端执行器角度考虑）</li>
-</ul>
-<p>目的：简化操作</p>
-<p>总而言之，文章一直在说一个问题，就是关于高级控制方案落地的问题，个人觉得很类似理论控制的现状，不过嘛，人人都有自己的目的想法，就这样吧。</p>
-<h2 id="后续会补充一篇系统综述"><a href="#后续会补充一篇系统综述" class="headerlink" title="后续会补充一篇系统综述"></a>后续会补充一篇系统综述</h2><p>机器人系统-深入了解水下机器人技术、产品和应用</p>
-<p>ROV深海采矿作业</p>
-<p>AUV-长期运行能力、深水深处返回数据的能力</p>
-<p>水下声学定位系统</p>
-<p>悬停方向的AUV，悬停运动由于同时使用水平推进器和垂直推进器完成</p>
-<p>水下滑翔机</p>
-<p>始于军事，拓展为海上油气等等，比如海上搜索和救援、海洋学等</p>
-<p>未来展望</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-  </entry>
-  <entry>
     <title>movie_fish</title>
     <url>/2020/07/30/movie-fish/movie-fish/</url>
     <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><span id="more"></span>
@@ -2852,7 +2852,7 @@ m_1 & 0 \\
 <h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
 <p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
 <p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
-<p><img src="/../pictures/R.jpg" alt=""></p>
+<p><img src="/../pictures/R.jpg" alt></p>
 <h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
 <p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
 <p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
@@ -2967,6 +2967,21 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
+    <title>plan_emotion</title>
+    <url>/2021/08/26/plan-emotion/plan-emotion/</url>
+    <content><![CDATA[<h1 id="Ubuntu修复windows无法启动问题"><a href="#Ubuntu修复windows无法启动问题" class="headerlink" title="Ubuntu修复windows无法启动问题"></a>Ubuntu修复windows无法启动问题</h1><span id="more"></span>
+<p>配置：ubuntu16.04+windows8.1</p>
+<p>背景：电脑不小心被砸了一下，然后windows系统无法启动，也无法进入bios和安全模式，尝试启动Ubuntu系统，发现可以进入，Linux永远的神！！</p>
+<p>linux端进入后，发现电脑系统盘无法读取，出现挂载错误，可能windows就是因为这个问题无法启动，尝试修复，记录一下最后有效的过程：</p>
+<h5 id="1-查看系统下所有分区的挂载情况是否正常"><a href="#1-查看系统下所有分区的挂载情况是否正常" class="headerlink" title="1.查看系统下所有分区的挂载情况是否正常"></a>1.查看系统下所有分区的挂载情况是否正常</h5><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">sudo fdisk -l </span><br></pre></td></tr></tbody></table></figure>
+<p>根据×号判断</p>
+<h5 id="2-修复对应分区，我显示的是-dev-sdb3"><a href="#2-修复对应分区，我显示的是-dev-sdb3" class="headerlink" title="2.修复对应分区，我显示的是/dev/sdb3"></a>2.修复对应分区，我显示的是/dev/sdb3</h5><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">sudo ntfsfix /dev/sdb3</span><br></pre></td></tr></tbody></table></figure>
+<p>全部修复后，windows可以正常启动</p>
+<p>以后正常更新啦…</p>
+<p>等会儿再写一个生活计划日志…</p>
+]]></content>
+  </entry>
+  <entry>
     <title>plan</title>
     <url>/2023/01/29/plan/plan/</url>
     <content><![CDATA[<p>2023开学随笔</p>
@@ -2989,21 +3004,6 @@ m_1 & 0 \\
       <tags>
         <tag>airfact</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>plan_emotion</title>
-    <url>/2021/08/26/plan-emotion/plan-emotion/</url>
-    <content><![CDATA[<h1 id="Ubuntu修复windows无法启动问题"><a href="#Ubuntu修复windows无法启动问题" class="headerlink" title="Ubuntu修复windows无法启动问题"></a>Ubuntu修复windows无法启动问题</h1><span id="more"></span>
-<p>配置：ubuntu16.04+windows8.1</p>
-<p>背景：电脑不小心被砸了一下，然后windows系统无法启动，也无法进入bios和安全模式，尝试启动Ubuntu系统，发现可以进入，Linux永远的神！！</p>
-<p>linux端进入后，发现电脑系统盘无法读取，出现挂载错误，可能windows就是因为这个问题无法启动，尝试修复，记录一下最后有效的过程：</p>
-<h5 id="1-查看系统下所有分区的挂载情况是否正常"><a href="#1-查看系统下所有分区的挂载情况是否正常" class="headerlink" title="1.查看系统下所有分区的挂载情况是否正常"></a>1.查看系统下所有分区的挂载情况是否正常</h5><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">sudo fdisk -l </span><br></pre></td></tr></tbody></table></figure>
-<p>根据×号判断</p>
-<h5 id="2-修复对应分区，我显示的是-dev-sdb3"><a href="#2-修复对应分区，我显示的是-dev-sdb3" class="headerlink" title="2.修复对应分区，我显示的是/dev/sdb3"></a>2.修复对应分区，我显示的是/dev/sdb3</h5><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">sudo ntfsfix /dev/sdb3</span><br></pre></td></tr></tbody></table></figure>
-<p>全部修复后，windows可以正常启动</p>
-<p>以后正常更新啦…</p>
-<p>等会儿再写一个生活计划日志…</p>
-]]></content>
   </entry>
   <entry>
     <title>pybasic</title>
@@ -3408,6 +3408,29 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
+    <title>ros问题总结</title>
+    <url>/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h1><span id="more"></span>
+<h2 id="缺少cmake文件，安装方式"><a href="#缺少cmake文件，安装方式" class="headerlink" title="缺少cmake文件，安装方式"></a>缺少cmake文件，安装方式</h2><p>提示 xxConfig.cmake 找不到</p>
+<p>查找上一行 …provided by “xx”</p>
+<p>补充  sudo apt-get install ros-ROS版本-xx </p>
+<p>roscore运行出错</p>
+<p>Unable to contact my own server a</p>
+<p>xiaomu@GL:~$ export ROS_HOSTNAME=localhost<br>xiaomu@GL:~$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></p>
+<p>Unable to contact my own server at [<a href="http://192.168.0.106:35623/">http://192.168.0.106:35623/</a>].</p>
+<p>This usually means that the network is not configured properly.</p>
+<p>A common cause is that the machine cannot connect to itself.  Please check<br>for errors by running:</p>
+<pre><code>ping 192.168.0.106
+</code></pre><p>For more tips, please see</p>
+<pre><code>http://www.ros.org/wiki/ROS/NetworkSetup
+</code></pre><p>修正：</p>
+<ol>
+<li>$ export ROS_HOSTNAME=localhost</li>
+<li>$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
     <title></title>
     <url>/2020/08/25/ros-work/ros-work/</url>
     <content><![CDATA[<p>时隔一年，再次听胡老师的课，感受颇有不同，包括简要课程记录复习一下以及写写作业。</p>
@@ -3593,70 +3616,6 @@ m_1 & 0 \\
 <h2 id="ROSGO"><a href="#ROSGO" class="headerlink" title="ROSGO"></a>ROSGO</h2>]]></content>
   </entry>
   <entry>
-    <title>ros问题总结</title>
-    <url>/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h1><span id="more"></span>
-<h2 id="缺少cmake文件，安装方式"><a href="#缺少cmake文件，安装方式" class="headerlink" title="缺少cmake文件，安装方式"></a>缺少cmake文件，安装方式</h2><p>提示 xxConfig.cmake 找不到</p>
-<p>查找上一行 …provided by “xx”</p>
-<p>补充  sudo apt-get install ros-ROS版本-xx </p>
-<p>roscore运行出错</p>
-<p>Unable to contact my own server a</p>
-<p>xiaomu@GL:~$ export ROS_HOSTNAME=localhost<br>xiaomu@GL:~$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></p>
-<p>Unable to contact my own server at [<a href="http://192.168.0.106:35623/">http://192.168.0.106:35623/</a>].</p>
-<p>This usually means that the network is not configured properly.</p>
-<p>A common cause is that the machine cannot connect to itself.  Please check<br>for errors by running:</p>
-<pre><code>ping 192.168.0.106
-</code></pre><p>For more tips, please see</p>
-<pre><code>http://www.ros.org/wiki/ROS/NetworkSetup
-</code></pre><p>修正：</p>
-<ol>
-<li>$ export ROS_HOSTNAME=localhost</li>
-<li>$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></li>
-</ol>
-]]></content>
-  </entry>
-  <entry>
-    <title>start2024</title>
-    <url>/2024/02/19/start2024/start2024/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
-<h1 id="又是一年春"><a href="#又是一年春" class="headerlink" title="又是一年春"></a>又是一年春</h1><p>距离上次笔记已有一年，没有做到经常写笔记，今年要改正，今天的目的是写一下总结以及对自己的要求，以及年后的一些规划，</p>
-<p>几个指令备注一下：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo n <span class="string">"学习笔记  六"</span></span><br><span class="line">hexo d</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br></pre></td></tr></tbody></table></figure>
-<span id="more"></span>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>过去的一年其实还不错，论文项目都有进度，但是后期又有点偷懒了，开年需要向后拓展，这部分已经总结过，简单略过。</p>
-<h2 id="预计要求"><a href="#预计要求" class="headerlink" title="预计要求"></a>预计要求</h2><p>过去的一段时间和很多人交流过，也一个人旅游过，发现自己还是有很多问题，认识自己，改正自己。</p>
-<p>1.新的一年依然要强迫自己去做应该做的事情，见贤思齐，多多反省，心里逃避，但是还是要前进，太内向了确实不太好，应该多尝试主动与他人沟通，认识下总归没坏处。</p>
-<p>2.新的一年接地气一点，不要太理性主义了，多多肯定别人的观点，别人的分享也要主动去看看，不要表现的不感兴趣，不要否定别人，少提意见，没有什么很俗的东西，生活就是这样，开心点，合群点。</p>
-<p>3.与师长们相处，还是往常的态度就好，谦虚但是也要有自己的主见，这个去年大体上没有做错的地方。</p>
-<p>4.生活上，过去的一年相对规律，新的一年依旧保持，但是之后的一段时间要去上一些强度。</p>
-<h2 id="年后规划"><a href="#年后规划" class="headerlink" title="年后规划"></a>年后规划</h2><p>1.学业部分不用讲，按照规律坚持就行</p>
-<p>2.拓展一下爱好，旅游拍摄和像素画，要过得开心一点</p>
-<h2 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a>自我评价</h2><p>内心依然有一些炫耀欲，与人相处很害怕别人把希望寄托在我身上，不想承担额外的责任。。。</p>
-<p>沧浪之水，脚踏实地一点，多多与人沟通，人还是要接地气一点，虚荣驱动理想天天飘着，实际一点，开心一点。</p>
-<h2 id="补充一些博客修复内容："><a href="#补充一些博客修复内容：" class="headerlink" title="补充一些博客修复内容："></a>补充一些博客修复内容：</h2><p>Permission denied (publickey) 没有权限的publickey ，出现这错误一般是以下两种原因</p>
-<p>客户端与服务端未生成 ssh key<br>客户端与服务端的ssh key不匹配<br>找到问题的原因了，解决办法也就有了，重新生成一次ssh key ，服务端也重新配置一次即可。</p>
-<p>ssh-keygen -t rsa -C “xx@qq.com”</p>
-<p>然后再终端下执行命令：</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="code"><pre><span class="line">ssh -v git<span class="meta">@github</span>.<span class="property">com</span></span><br></pre></td></tr></tbody></table></figure>
-<p>最后两句会出现</p>
-<figure class="highlight erlang"><table><tbody><tr><td class="code"><pre><span class="line">　　No more authentication methods to <span class="keyword">try</span>.  　　Permission denied (publickey).</span><br></pre></td></tr></tbody></table></figure>
-<p>在终端再执行以下命令</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">ssh-agent -s </span><br></pre></td></tr></tbody></table></figure>
-<p>接着在执行</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="code"><pre><span class="line">ssh-add ~<span class="regexp">/.ssh/i</span>d_rsa</span><br></pre></td></tr></tbody></table></figure>
-<p>$ ssh-add ~/.ssh/id_rsa<br>出现Could not open a connection to your authentication agent.<br>这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa_name这个命令就没问题了。<br>根据路径查看文件内部的命令： Identity added: …这是ssh key文件路径的信息 </p>
-<p> 打开你刚刚生成的id_rsa.pub，将里面的内容复制，进入你的<a href="https://so.csdn.net/so/search?q=github&amp;spm=1001.2101.3001.7020">github</a>账号，在settings下，SSH and GPG keys下new SSH key，然后将id_rsa.pub里的内容复制到Key中，完成后Add SSH Key。 设置完成后</p>
-<h4 id="验证Key"><a href="#验证Key" class="headerlink" title="验证Key"></a>验证Key</h4><figure class="highlight typescript"><table><tbody><tr><td class="code"><pre><span class="line">ssh -T git<span class="meta">@github</span>.<span class="property">com</span> </span><br></pre></td></tr></tbody></table></figure>
-<p> 提示：Hi xxx! You’ve successfully authenticated, but GitHub does not provide shell access </p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>emotion</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>skill</title>
     <url>/2024/03/20/skill/skill/</url>
     <content><![CDATA[<h1 id="EVERYDAY速查总结"><a href="#EVERYDAY速查总结" class="headerlink" title="EVERYDAY速查总结"></a>EVERYDAY速查总结</h1><p>一些小技巧总结，方便补充查阅</p>
@@ -3826,6 +3785,47 @@ m_1 & 0 \\
 <li>三维矢量图解组失败，一般是由于三维矢量图无法通过图窗复制-导出设置-渲染-printers对钩-应用复制图窗</li>
 </ol>
 ]]></content>
+  </entry>
+  <entry>
+    <title>start2024</title>
+    <url>/2024/02/19/start2024/start2024/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
+<h1 id="又是一年春"><a href="#又是一年春" class="headerlink" title="又是一年春"></a>又是一年春</h1><p>距离上次笔记已有一年，没有做到经常写笔记，今年要改正，今天的目的是写一下总结以及对自己的要求，以及年后的一些规划，</p>
+<p>几个指令备注一下：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo n <span class="string">"学习笔记  六"</span></span><br><span class="line">hexo d</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br></pre></td></tr></tbody></table></figure>
+<span id="more"></span>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>过去的一年其实还不错，论文项目都有进度，但是后期又有点偷懒了，开年需要向后拓展，这部分已经总结过，简单略过。</p>
+<h2 id="预计要求"><a href="#预计要求" class="headerlink" title="预计要求"></a>预计要求</h2><p>过去的一段时间和很多人交流过，也一个人旅游过，发现自己还是有很多问题，认识自己，改正自己。</p>
+<p>1.新的一年依然要强迫自己去做应该做的事情，见贤思齐，多多反省，心里逃避，但是还是要前进，太内向了确实不太好，应该多尝试主动与他人沟通，认识下总归没坏处。</p>
+<p>2.新的一年接地气一点，不要太理性主义了，多多肯定别人的观点，别人的分享也要主动去看看，不要表现的不感兴趣，不要否定别人，少提意见，没有什么很俗的东西，生活就是这样，开心点，合群点。</p>
+<p>3.与师长们相处，还是往常的态度就好，谦虚但是也要有自己的主见，这个去年大体上没有做错的地方。</p>
+<p>4.生活上，过去的一年相对规律，新的一年依旧保持，但是之后的一段时间要去上一些强度。</p>
+<h2 id="年后规划"><a href="#年后规划" class="headerlink" title="年后规划"></a>年后规划</h2><p>1.学业部分不用讲，按照规律坚持就行</p>
+<p>2.拓展一下爱好，旅游拍摄和像素画，要过得开心一点</p>
+<h2 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a>自我评价</h2><p>内心依然有一些炫耀欲，与人相处很害怕别人把希望寄托在我身上，不想承担额外的责任。。。</p>
+<p>沧浪之水，脚踏实地一点，多多与人沟通，人还是要接地气一点，虚荣驱动理想天天飘着，实际一点，开心一点。</p>
+<h2 id="补充一些博客修复内容："><a href="#补充一些博客修复内容：" class="headerlink" title="补充一些博客修复内容："></a>补充一些博客修复内容：</h2><p>Permission denied (publickey) 没有权限的publickey ，出现这错误一般是以下两种原因</p>
+<p>客户端与服务端未生成 ssh key<br>客户端与服务端的ssh key不匹配<br>找到问题的原因了，解决办法也就有了，重新生成一次ssh key ，服务端也重新配置一次即可。</p>
+<p>ssh-keygen -t rsa -C “xx@qq.com”</p>
+<p>然后再终端下执行命令：</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="code"><pre><span class="line">ssh -v git<span class="meta">@github</span>.<span class="property">com</span></span><br></pre></td></tr></tbody></table></figure>
+<p>最后两句会出现</p>
+<figure class="highlight erlang"><table><tbody><tr><td class="code"><pre><span class="line">　　No more authentication methods to <span class="keyword">try</span>.  　　Permission denied (publickey).</span><br></pre></td></tr></tbody></table></figure>
+<p>在终端再执行以下命令</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">ssh-agent -s </span><br></pre></td></tr></tbody></table></figure>
+<p>接着在执行</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="code"><pre><span class="line">ssh-add ~<span class="regexp">/.ssh/i</span>d_rsa</span><br></pre></td></tr></tbody></table></figure>
+<p>$ ssh-add ~/.ssh/id_rsa<br>出现Could not open a connection to your authentication agent.<br>这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa_name这个命令就没问题了。<br>根据路径查看文件内部的命令： Identity added: …这是ssh key文件路径的信息 </p>
+<p> 打开你刚刚生成的id_rsa.pub，将里面的内容复制，进入你的<a href="https://so.csdn.net/so/search?q=github&amp;spm=1001.2101.3001.7020">github</a>账号，在settings下，SSH and GPG keys下new SSH key，然后将id_rsa.pub里的内容复制到Key中，完成后Add SSH Key。 设置完成后</p>
+<h4 id="验证Key"><a href="#验证Key" class="headerlink" title="验证Key"></a>验证Key</h4><figure class="highlight typescript"><table><tbody><tr><td class="code"><pre><span class="line">ssh -T git<span class="meta">@github</span>.<span class="property">com</span> </span><br></pre></td></tr></tbody></table></figure>
+<p> 提示：Hi xxx! You’ve successfully authenticated, but GitHub does not provide shell access </p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>emotion</tag>
+      </tags>
   </entry>
   <entry>
     <title>transformation_feel</title>
