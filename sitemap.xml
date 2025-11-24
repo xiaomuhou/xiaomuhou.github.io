@@ -615,6 +615,13 @@
   </url>
   
   <url>
+    <loc>http://xiaomuhou.github.io/tags/learning/</loc>
+    <lastmod>2025-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://xiaomuhou.github.io/tags/emo/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -622,7 +629,7 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/tags/learning/</loc>
+    <loc>http://xiaomuhou.github.io/tags/plan/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -664,7 +671,7 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/tags/plan/</loc>
+    <loc>http://xiaomuhou.github.io/tags/airfact/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -672,13 +679,6 @@
   
   <url>
     <loc>http://xiaomuhou.github.io/tags/ACADEMIC/</loc>
-    <lastmod>2025-11-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://xiaomuhou.github.io/tags/airfact/</loc>
     <lastmod>2025-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

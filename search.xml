@@ -106,7 +106,7 @@
 <p>最近觉得自己做的很好的一件事情就是已经能够做到下意识的去换位思考了，不去把自己的想法强加给别人，吃饭是这样，为人做事也是这样，更成熟了一点，做一个控制欲望为0的人，大家都做自己想做的事情，不要互相干扰。</p>
 <p>喜欢，经历之前的事情再加上这几年来的事情，感觉自己变得有点现实，权衡开始成了判断的前提，做好自己，还是去接触一下，不要封闭自己，拒绝别人也不太好，也和习惯规划有点相关，12月吧大概就这样~</p>
 <p>大目标！算了不立flag了，踏踏实实的做好眼前的事情吧。</p>
-<img src="/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/marry.jpg" class>]]></content>
+<img src="/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/marry.jpg" class="">]]></content>
       <categories>
         <category>emotion</category>
       </categories>
@@ -130,7 +130,7 @@
 <p>经常告诉自己不要因为一件事去否定别人，但是毕竟不是机器人，难免有时候情绪激动直接否定，但是一定要记住的是不要站在别人面前去刷否定的存在感，站在别人面前的那一刻就已经是个小丑了。</p>
 <p>借自己最喜欢的电视剧士兵突击做个结尾，袁朗评价吴哲：“ 我喜欢他。知道为什么吗？坚持自己的原则，充满希望和乐观。重要的是，他能跟许三多这样的兵交朋友，这一点，就不会毁于他很容易产生的优越感 ”，年轻时候觉得自己像三多，不喜欢变化，后来觉得自己像成才，有时候有点自私，再后来觉得自己还是希望成为吴哲，经常告诉自己要平常心，说实话自己是不如三多和成才的，他们有各自的强项，但我很希望成为吴哲一类的人，做一个半吊子的理想主义者，充满希望和乐观。</p>
 <p>碎碎念结束，感觉很生气就写个日记，写到这里已经完全没感觉了，人不是机器人，也可以理解。</p>
-<img src="/2024/08/21/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E5%AD%98/qq.jpg" class> 
+<img src="/2024/08/21/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E5%AD%98/qq.jpg" class=""> 
 <p>图源[<a href="https://x.com/Hitoimim/status/1807718505602797820">https://x.com/Hitoimim/status/1807718505602797820</a>]</p>
 ]]></content>
       <categories>
@@ -187,19 +187,19 @@
 \end{equation}</script><span id="more"></span>
 <p>柔度叠加矩阵案例说明：</p>
 <p>d_ij,j坐标受力在i坐标产生位移</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q1.png" class title="Q1">
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q1.png" class="" title="Q1">
 <p>此时F1=1,F2=0,F1作用下，两个位置的位移，其柔度矩阵含义如图，即为各点的挠度，在实际柔性铰链中，则为各个铰链位置变形经过转换矩阵在统一坐标下的表达：</p>
 <script type="math/tex; mode=display">
 x_1=F_1*d_{11} \\
 x_2=F_1*d_{21}</script><p>另一种情况，F1=0,F2=1;先列出点，其次看受力位置</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q2.png" class title="Q2">
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q2.png" class="" title="Q2">
 <script type="math/tex; mode=display">
 x_1=F_2*d_{12} \\
 x_2=F_2*d_{22}</script><p>所以，F1=1,F2=1,各自独立计算并且叠加，可以得到：</p>
 <script type="math/tex; mode=display">
 x_1=F_1d_{11}+F_2d_{12}\\
 x_2=F_2d_{22}+F_1D_{21}</script><p>有一个案例，文中直接给出了柔度的参数，这里按照材料力学补充一下推导流程，略作复习：</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q3.png" class title="Q3">
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q3.png" class="" title="Q3">
 <p>d_11=d_22=8d,d_12=d_21=7d;推导说明，假定F1=0,F2=1;</p>
 <p>以x_2为界限进行分类，挠度曲线参数分为两段</p>
 <script type="math/tex; mode=display">
@@ -260,12 +260,38 @@ m_1 & 0 \\
 <p>支付宝攒了一些钱了，没有什么炒股的想法，单纯觉得很麻烦，就继续放着吧，未来可能会买一些定期存存，毕业能买一辆老哥那个车了233，平时确实也没啥花销，也就游戏还有和朋友吃饭，明年要多去做一些没体验过得事情，钱重要但是也不重要，看淡一些。</p>
 <h2 id="规划"><a href="#规划" class="headerlink" title="规划"></a>规划</h2><p>工作事情要带上脑子了，简历其实改了几版了，继续慢慢修改，也要多想想自己到底想做什么，每天目标也要完成，开始就做最重要的事情，任何时候都是。</p>
 <p>要活的潇洒一点，自信一点，少纠结，拥抱未来，2025加油呀，希望大家都好，世界都好，想做事情就一定去做，今年下决心做的事情基本都成了，所以未来也是，加油！！！</p>
-<img src="/2024/12/30/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%932024/OCTAQ.png" class title="八方">]]></content>
+<img src="/2024/12/30/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%932024/OCTAQ.png" class="" title="八方">]]></content>
       <categories>
         <category>thought2024</category>
       </categories>
       <tags>
         <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>空间渐进曲线Matlab</title>
+    <url>/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
+<h1 id="空间曲线拟合笔记"><a href="#空间曲线拟合笔记" class="headerlink" title="空间曲线拟合笔记"></a>空间曲线拟合笔记</h1><p>渐进颜色修正与一点点origin</p>
+<p>基础信息与参数说明</p>
+<span id="more"></span>
+<h2 id="基础参数"><a href="#基础参数" class="headerlink" title="基础参数"></a>基础参数</h2><img src="/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/1727880727916.png" class="" width="1727880727916">
+<p>subplot(2, 2, 1); plot(x, y);参考源文件‘</p>
+<p> patch 利用填充函数绘制渐进曲线颜色,也可以用来表示边的颜色插补</p>
+<p> ‘<strong>flat</strong>‘ - 对每个网格线段和面使用恒定颜色。 该颜色由该线段的端点或该面的角边处具有最小索引的颜色值确定。 </p>
+<p>‘<strong>interp</strong>‘ - 对每个线段和面使用插补着色。 </p>
+<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">patch(x,y,z,<span class="string">'edgecolor'</span>,<span class="string">'flat'</span>,<span class="string">'facecolor'</span>,<span class="string">'none'</span>,<span class="string">'MarkerFaceColor'</span>,<span class="string">'flat'</span>,<span class="string">'LineWidth'</span>,<span class="number">2</span>) <span class="comment">%会导致封闭连接</span></span><br><span class="line">patch([x NaN],[y NaN,[z NaN],<span class="string">'edgecolor'</span>,<span class="string">'flat'</span>,<span class="string">'facecolor'</span>,<span class="string">'none'</span>,<span class="string">'MarkerFaceColor'</span>,<span class="string">'flat'</span>,<span class="string">'LineWidth'</span>,<span class="number">2</span>)</span><br><span class="line">view(<span class="number">3</span>)</span><br><span class="line">grid on; </span><br><span class="line">colorbar</span><br><span class="line"><span class="comment">%官方文档</span></span><br><span class="line"><span class="built_in">figure</span></span><br><span class="line">patch(x,y,c,<span class="string">'EdgeColor'</span>,<span class="string">'interp'</span>,<span class="string">'Marker'</span>,<span class="string">'o'</span>,<span class="string">'MarkerFaceColor'</span>,<span class="string">'flat'</span>);</span><br><span class="line">colorbar;</span><br></pre></td></tr></tbody></table></figure>
+<p>Fill</p>
+<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">p=fill3(x,y,z,<span class="string">'r'</span>)</span><br><span class="line">p.FaceAlpha = <span class="number">0.5</span>;</span><br></pre></td></tr></tbody></table></figure>
+<p><code>FaceAlpha</code> — 面透明度 1 (默认) | 范围 <code>[0,1]</code> 中的标量 | <code>'flat'</code> | <code>'interp'</code></p>
+<p>EdgeColor<code>— 边颜色</code>[0 0 0]<code>(默认) |</code>‘none’<code>|</code>‘flat’<code>|</code>‘interp’<code>| RGB 三元组 | 十六进制颜色代码 |</code>‘r’<code>|</code>‘g’<code>|</code>‘b’` | …代码</p>
+<h2 id="代码补充（假期后整理现阶段代码）"><a href="#代码补充（假期后整理现阶段代码）" class="headerlink" title="代码补充（假期后整理现阶段代码）"></a>代码补充（假期后整理现阶段代码）</h2><p>代填</p>
+<h1 id="origin补充"><a href="#origin补充" class="headerlink" title="origin补充"></a>origin补充</h1>]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
       </tags>
   </entry>
   <entry>
@@ -286,38 +312,12 @@ m_1 & 0 \\
 <p>每个人的缺点无法避免，但是可以反思克制就好，开心一点~</p>
 <p>按照安排慢慢来，12月要再完成一部分工作，年前再完成一部分，要看一些有趣的电影…</p>
 <p>放个最近感觉很好吃的川菜~</p>
-<img src="/2024/11/29/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%9420241129/delicious.jpg" class title="最近好吃的，好开心">]]></content>
+<img src="/2024/11/29/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%9420241129/delicious.jpg" class="" title="最近好吃的，好开心">]]></content>
       <categories>
         <category>feel</category>
       </categories>
       <tags>
         <tag>emo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>空间渐进曲线Matlab</title>
-    <url>/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
-<h1 id="空间曲线拟合笔记"><a href="#空间曲线拟合笔记" class="headerlink" title="空间曲线拟合笔记"></a>空间曲线拟合笔记</h1><p>渐进颜色修正与一点点origin</p>
-<p>基础信息与参数说明</p>
-<span id="more"></span>
-<h2 id="基础参数"><a href="#基础参数" class="headerlink" title="基础参数"></a>基础参数</h2><img src="/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/1727880727916.png" class width="1727880727916">
-<p>subplot(2, 2, 1); plot(x, y);参考源文件‘</p>
-<p> patch 利用填充函数绘制渐进曲线颜色,也可以用来表示边的颜色插补</p>
-<p> ‘<strong>flat</strong>‘ - 对每个网格线段和面使用恒定颜色。 该颜色由该线段的端点或该面的角边处具有最小索引的颜色值确定。 </p>
-<p>‘<strong>interp</strong>‘ - 对每个线段和面使用插补着色。 </p>
-<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">patch(x,y,z,<span class="string">'edgecolor'</span>,<span class="string">'flat'</span>,<span class="string">'facecolor'</span>,<span class="string">'none'</span>,<span class="string">'MarkerFaceColor'</span>,<span class="string">'flat'</span>,<span class="string">'LineWidth'</span>,<span class="number">2</span>) <span class="comment">%会导致封闭连接</span></span><br><span class="line">patch([x NaN],[y NaN,[z NaN],<span class="string">'edgecolor'</span>,<span class="string">'flat'</span>,<span class="string">'facecolor'</span>,<span class="string">'none'</span>,<span class="string">'MarkerFaceColor'</span>,<span class="string">'flat'</span>,<span class="string">'LineWidth'</span>,<span class="number">2</span>)</span><br><span class="line">view(<span class="number">3</span>)</span><br><span class="line">grid on; </span><br><span class="line">colorbar</span><br><span class="line"><span class="comment">%官方文档</span></span><br><span class="line"><span class="built_in">figure</span></span><br><span class="line">patch(x,y,c,<span class="string">'EdgeColor'</span>,<span class="string">'interp'</span>,<span class="string">'Marker'</span>,<span class="string">'o'</span>,<span class="string">'MarkerFaceColor'</span>,<span class="string">'flat'</span>);</span><br><span class="line">colorbar;</span><br></pre></td></tr></tbody></table></figure>
-<p>Fill</p>
-<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">p=fill3(x,y,z,<span class="string">'r'</span>)</span><br><span class="line">p.FaceAlpha = <span class="number">0.5</span>;</span><br></pre></td></tr></tbody></table></figure>
-<p><code>FaceAlpha</code> — 面透明度 1 (默认) | 范围 <code>[0,1]</code> 中的标量 | <code>'flat'</code> | <code>'interp'</code></p>
-<p>EdgeColor<code>— 边颜色</code>[0 0 0]<code>(默认) |</code>‘none’<code>|</code>‘flat’<code>|</code>‘interp’<code>| RGB 三元组 | 十六进制颜色代码 |</code>‘r’<code>|</code>‘g’<code>|</code>‘b’` | …代码</p>
-<h2 id="代码补充（假期后整理现阶段代码）"><a href="#代码补充（假期后整理现阶段代码）" class="headerlink" title="代码补充（假期后整理现阶段代码）"></a>代码补充（假期后整理现阶段代码）</h2><p>代填</p>
-<h1 id="origin补充"><a href="#origin补充" class="headerlink" title="origin补充"></a>origin补充</h1>]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>learning</tag>
       </tags>
   </entry>
   <entry>
@@ -338,7 +338,7 @@ m_1 & 0 \\
 <p>事情很多，心里总是很烦，但是缩短时间尺度，吃饭睡觉的时候还蛮开心的，跟朋友聊天的时候也很开心，想太远总是很无聊，眼前事做好就算了，填一下桌面端app的daily calendar</p>
 <p>志哥的发言还蛮有启发的，之前做的对应还是不够，认真一点；</p>
 <p>上周乱七八糟得，条理一点，少摸鱼少摸鱼，求其上得其中，其他随缘~</p>
-<img src="/2024/10/13/%E7%BC%A9%E7%9F%AD%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6/Octopath.png" class title="八方旅人">
+<img src="/2024/10/13/%E7%BC%A9%E7%9F%AD%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6/Octopath.png" class="" title="八方旅人">
 ]]></content>
       <categories>
         <category>EMO</category>
@@ -360,7 +360,7 @@ m_1 & 0 \\
 <p>记录：</p>
 <p>平常心，踏踏实实的做好每一步，一点一点完成，上山难</p>
 <p>今天看到一个说法，做别人没做过的，就是意义所在，对我来讲，做到合理的解释，就算成功。</p>
-<img src="/2025/04/01/%E9%85%8D%E8%89%B2%E4%BB%A3%E7%A0%81%E5%8F%8A%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/img105.jpg" class title="IMAG">]]></content>
+<img src="/2025/04/01/%E9%85%8D%E8%89%B2%E4%BB%A3%E7%A0%81%E5%8F%8A%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/img105.jpg" class="" title="IMAG">]]></content>
       <categories>
         <category>learning</category>
       </categories>
@@ -383,7 +383,7 @@ m_1 & 0 \\
 <p>人本身是很复杂的，不要因为一两件事否定一个人，但是有些人也确实没必要交往，面上过去就行，虽然最近被恶心了几次，但是我只是觉得很好笑，把我喊过去说自己知道的一件事，是准备看我的反应嘛，对我来讲，只要不触及我的底线，我一般也不会反抗，也不怎么在意。确实保持一个游离的关系蛮好，哪些是好朋友，我自己心里有判断。</p>
 <p>作为一个半吊子理性主义者，我做事情很多时候是看感觉的，所谓没啥坏处，未来有益的事情，我不开心就不会去做，得不得罪人，我也不在乎，最讨厌那种虚伪的人，说话弯弯绕，直接点大家都坦荡，但是话说回来，家家有本难念的经吧，以后做事，也要多想想。</p>
 <p>自己还是太在意别人的看法，虽然已经克制了很多，但是人的本性总是难以克服，多多提醒，注意一下，多余的动作真的没必要。</p>
-<h2 id="加油加油，多坚持一下！"><a href="#加油加油，多坚持一下！" class="headerlink" title="加油加油，多坚持一下！"></a>加油加油，多坚持一下！</h2><img src="/2025/11/24/%E9%9A%8F%E7%AC%94%E5%8A%A0%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/A1.jpg" class title="A1">]]></content>
+<h2 id="加油加油，多坚持一下！"><a href="#加油加油，多坚持一下！" class="headerlink" title="加油加油，多坚持一下！"></a>加油加油，多坚持一下！</h2><img src="/2025/11/24/%E9%9A%8F%E7%AC%94%E5%8A%A0%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/A1.jpg" class="" title="A1">]]></content>
       <categories>
         <category>emotion</category>
       </categories>
@@ -415,6 +415,27 @@ m_1 & 0 \\
       </categories>
       <tags>
         <tag>note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DOC_exercise</title>
+    <url>/2021/08/29/DOC-exercise/DOC-exercise/</url>
+    <content><![CDATA[<h1 id="随笔加一些更新计划"><a href="#随笔加一些更新计划" class="headerlink" title="随笔加一些更新计划"></a>随笔加一些更新计划</h1><p>人生不长，总归还是想做一些有意义的事情——-这是一切的出发点</p>
+<span id="more"></span>
+<h2 id="更新计划"><a href="#更新计划" class="headerlink" title="更新计划"></a>更新计划</h2><p>之后会更新一些视频与博客，博客文案，视频过程，在记录的同时巩固自己，希望可以帮助到一些朋友，要更新一些硬货，2333</p>
+<p>1.专业相关内容的研究，根据情况落实</p>
+<p>2.ROS、模拟软件以及一些算法记录过程</p>
+<p>3.游戏历史考据，比方说最近想得是重装的怪物史，总不可能是凭空出现的，回忆下过去，开拓下视野。</p>
+<p>4.文学方面的内容，提高一下，没想好更新什么，以后慢慢来</p>
+<h2 id="一些需要时刻记住的事情"><a href="#一些需要时刻记住的事情" class="headerlink" title="一些需要时刻记住的事情"></a>一些需要时刻记住的事情</h2><p>行甚于言，很重要的一点；</p>
+<p>前段时间总是自我怀疑，希望不要忘记自己的初心，我还是有一些优点的，踏踏实实的做事就好；</p>
+<p>操千曲而后晓声，观千剑而后识器，大量且规律的积累是以后必须做到的；</p>
+<p><strong>要努力提高英语呀，坚持日积月累；</strong></p>
+<p>拓展视野，坚实基础；保持信心，提高自己；</p>
+<p>去做一些更好玩的事情，记住自己的初心，坚持下去（已经确确实实是个成年人了，以后要更成熟一点）</p>
+<h2 id="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"><a href="#未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人" class="headerlink" title="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"></a>未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人</h2>]]></content>
+      <tags>
+        <tag>plan</tag>
       </tags>
   </entry>
   <entry>
@@ -474,25 +495,6 @@ m_1 & 0 \\
       </tags>
   </entry>
   <entry>
-    <title>Q</title>
-    <url>/2024/02/26/Q/Q/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
-<h1 id="琥珀川与荻野千寻"><a href="#琥珀川与荻野千寻" class="headerlink" title="琥珀川与荻野千寻"></a>琥珀川与荻野千寻</h1><p>不乱于心，不困于情，不畏将来，不念过往。</p>
-<span id="more"></span>
-<p>看完之后脑子里立刻跳出来这句话。</p>
-<p>又看了一遍台配版的千与千寻，童年的记忆来源于此版，有些东西确实只是忘记，而不会消失，偶然间看到一些痕迹，就会瞬间回忆，不过别回头就好，不念过往。</p>
-<p>总是希望所有的一切事情按照自己的计划进行，面对未知的事情常常心怀恐惧而不愿意前进，权衡利弊之后，重要的事情可以克服，在一些小事上却常常让步，谓之不在意，其实不然，内心是在畏惧狭义上的未来，千寻初入汤屋有点这个感觉，但是随着故事的发展，千寻是做到不畏将来了，不论是给河神洗澡、给白龙和无脸怪吃河神的丸子，或者是爬梯子进入汤婆婆的房子，这些没有人给她指引，都是自己基于想法做出的选择，只要自己认为是对的，如果暂时判断不了，只要无愧于心，即使未来不可预测，脚踏实地的去做就很好，想必未来也不会后悔，不畏将来。</p>
-<p>人生的环境总在不断变化，主动接受变化就是不畏将来，主动接受就不会恐惧，千寻开始的恐惧来源于被动，被动常常引起焦虑，负面情绪随之增长，以前很喜欢袁朗说的一句话：“不太焦虑，耐得住寂寞，有很多人天天都在焦虑，怕没得到，怕寂寞，我喜欢不焦虑的人”，千寻后来是不焦虑的，慢慢的去做事本身也是一种快乐的过程。</p>
-<p>“容是别人，欲是自己”，去做一切自己想做的事情，少去思考虚无的无数可能性，不可预料的东西常常是惊喜，也是缘分。</p>
-]]></content>
-      <categories>
-        <category>feeling</category>
-      </categories>
-      <tags>
-        <tag>movie</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>QT开发</title>
     <url>/2024/03/03/QT%E5%BC%80%E5%8F%91/QT%E5%BC%80%E5%8F%91/</url>
     <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
@@ -527,6 +529,25 @@ m_1 & 0 \\
       </categories>
       <tags>
         <tag>note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Q</title>
+    <url>/2024/02/26/Q/Q/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
+<h1 id="琥珀川与荻野千寻"><a href="#琥珀川与荻野千寻" class="headerlink" title="琥珀川与荻野千寻"></a>琥珀川与荻野千寻</h1><p>不乱于心，不困于情，不畏将来，不念过往。</p>
+<span id="more"></span>
+<p>看完之后脑子里立刻跳出来这句话。</p>
+<p>又看了一遍台配版的千与千寻，童年的记忆来源于此版，有些东西确实只是忘记，而不会消失，偶然间看到一些痕迹，就会瞬间回忆，不过别回头就好，不念过往。</p>
+<p>总是希望所有的一切事情按照自己的计划进行，面对未知的事情常常心怀恐惧而不愿意前进，权衡利弊之后，重要的事情可以克服，在一些小事上却常常让步，谓之不在意，其实不然，内心是在畏惧狭义上的未来，千寻初入汤屋有点这个感觉，但是随着故事的发展，千寻是做到不畏将来了，不论是给河神洗澡、给白龙和无脸怪吃河神的丸子，或者是爬梯子进入汤婆婆的房子，这些没有人给她指引，都是自己基于想法做出的选择，只要自己认为是对的，如果暂时判断不了，只要无愧于心，即使未来不可预测，脚踏实地的去做就很好，想必未来也不会后悔，不畏将来。</p>
+<p>人生的环境总在不断变化，主动接受变化就是不畏将来，主动接受就不会恐惧，千寻开始的恐惧来源于被动，被动常常引起焦虑，负面情绪随之增长，以前很喜欢袁朗说的一句话：“不太焦虑，耐得住寂寞，有很多人天天都在焦虑，怕没得到，怕寂寞，我喜欢不焦虑的人”，千寻后来是不焦虑的，慢慢的去做事本身也是一种快乐的过程。</p>
+<p>“容是别人，欲是自己”，去做一切自己想做的事情，少去思考虚无的无数可能性，不可预料的东西常常是惊喜，也是缘分。</p>
+]]></content>
+      <categories>
+        <category>feeling</category>
+      </categories>
+      <tags>
+        <tag>movie</tag>
       </tags>
   </entry>
   <entry>
@@ -634,31 +655,6 @@ m_1 & 0 \\
       <tags>
         <tag>emo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>configure_bag</title>
-    <url>/2020/11/30/configure-bag/configure-bag/</url>
-    <content><![CDATA[<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
-<p>以及补充后续图像处理相关项目内容</p>
-<span id="more"></span>
-<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
-<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
-<p>（原因后续深入了解了之后继续补充）</p>
-<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
-<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
-<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;/dev/null | grep '\.rp_filter'</span><br></pre></td></tr></tbody></table></figure>
-<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter=0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter=0</span><br></pre></td></tr></tbody></table></figure>
-<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
-<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—-（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
-<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
-<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
-<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
-]]></content>
-      <categories>
-        <category>camera</category>
-      </categories>
   </entry>
   <entry>
     <title>c++_qt_note</title>
@@ -1137,6 +1133,31 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
+    <title>configure_bag</title>
+    <url>/2020/11/30/configure-bag/configure-bag/</url>
+    <content><![CDATA[<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
+<p>以及补充后续图像处理相关项目内容</p>
+<span id="more"></span>
+<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
+<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
+<p>（原因后续深入了解了之后继续补充）</p>
+<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
+<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
+<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;/dev/null | grep '\.rp_filter'</span><br></pre></td></tr></tbody></table></figure>
+<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter=0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter=0</span><br></pre></td></tr></tbody></table></figure>
+<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
+<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—-（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
+<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
+<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
+<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
+]]></content>
+      <categories>
+        <category>camera</category>
+      </categories>
+  </entry>
+  <entry>
     <title>daliy_life</title>
     <url>/2020/08/17/daliy-life/daliy-life/</url>
     <content><![CDATA[<h1 id="处事之则，日常所想"><a href="#处事之则，日常所想" class="headerlink" title="处事之则，日常所想"></a>处事之则，日常所想</h1><p>搭模型的时候，听了听电视剧琅琊榜的电台，听到景睿的台词，有点感触，为人处世就应该这样，清清爽爽，潇洒一生。</p>
@@ -1145,6 +1166,20 @@ m_1 & 0 \\
       <categories>
         <category>touch_fish</category>
       </categories>
+  </entry>
+  <entry>
+    <title>delta_ros</title>
+    <url>/2020/09/11/delta-ros/delta-ros/</url>
+    <content><![CDATA[<p>记录delta算法</p>
+<p>（1）实现了Delta型机器人的正逆运动学及其速度空间变换，见DeltaRobotKinematics类<br>（2）实现了关节空间和直线轨迹的运动规划，能够设置加减速因子，见DeltaRobotMotionPlanning类<br>（3）实现了Delta机器人的位置控制和速度控制，见DeltaRobotControl类</p>
+<p><a href="https://github.com/zhonghang1187151422/Mini-delta-robot.git">https://github.com/zhonghang1187151422/Mini-delta-robot.git</a></p>
+<p><a href="https://github.com/manuelilg/eeduro_delta.git">https://github.com/manuelilg/eeduro_delta.git</a></p>
+<p><a href="https://github.com/RemcoKuijpers/delta_robot_simulation.git">https://github.com/RemcoKuijpers/delta_robot_simulation.git</a></p>
+<p><a href="https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo">https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo</a></p>
+<p>关于ros2的delta运动规划</p>
+<p><a href="https://github.com/manuelilg?tab=repositories">https://github.com/manuelilg?tab=repositories</a></p>
+<p>学习一下</p>
+]]></content>
   </entry>
   <entry>
     <title>delta_matlab</title>
@@ -1168,20 +1203,6 @@ m_1 & 0 \\
 <p>关于8组逆解的问题，这套方案已经进行了排除。</p>
 <p>奇异位置分析内容（待补充）。</p>
 <p>接下来写雅各比速度推导，后续还会补充控制方案，伸缩机构可能会写一篇，看设计的情况了。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>delta_ros</title>
-    <url>/2020/09/11/delta-ros/delta-ros/</url>
-    <content><![CDATA[<p>记录delta算法</p>
-<p>（1）实现了Delta型机器人的正逆运动学及其速度空间变换，见DeltaRobotKinematics类<br>（2）实现了关节空间和直线轨迹的运动规划，能够设置加减速因子，见DeltaRobotMotionPlanning类<br>（3）实现了Delta机器人的位置控制和速度控制，见DeltaRobotControl类</p>
-<p><a href="https://github.com/zhonghang1187151422/Mini-delta-robot.git">https://github.com/zhonghang1187151422/Mini-delta-robot.git</a></p>
-<p><a href="https://github.com/manuelilg/eeduro_delta.git">https://github.com/manuelilg/eeduro_delta.git</a></p>
-<p><a href="https://github.com/RemcoKuijpers/delta_robot_simulation.git">https://github.com/RemcoKuijpers/delta_robot_simulation.git</a></p>
-<p><a href="https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo">https://github.com/AutoRoboCulture/delta-robot-simulation-gazebo</a></p>
-<p>关于ros2的delta运动规划</p>
-<p><a href="https://github.com/manuelilg?tab=repositories">https://github.com/manuelilg?tab=repositories</a></p>
-<p>学习一下</p>
 ]]></content>
   </entry>
   <entry>
@@ -1445,6 +1466,88 @@ m_1 & 0 \\
       <tags>
         <tag>algebraic</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>gcyyy</title>
+    <url>/2021/09/10/gcyyy/gcyyy/</url>
+    <content><![CDATA[<h1 id="并联机构弹性动力学建模与振动主动控制论文"><a href="#并联机构弹性动力学建模与振动主动控制论文" class="headerlink" title="并联机构弹性动力学建模与振动主动控制论文"></a>并联机构弹性动力学建模与振动主动控制论文</h1><p>2021.9.8</p>
+<h4 id="并联机器人高维运动规划研究—刚柔耦合"><a href="#并联机器人高维运动规划研究—刚柔耦合" class="headerlink" title="并联机器人高维运动规划研究—刚柔耦合"></a>并联机器人高维运动规划研究—刚柔耦合</h4><p>非线性力学—————-形变+运动规划————非线性数学模型—————-弹性运动规划算法</p>
+<p>无碰撞未超过运动规划极限—自由位形</p>
+<p>（缺少论文整理部分）</p>
+<span id="more"></span>
+<p><strong>特殊规划-路径无奇异且路径具备刚度与精度</strong></p>
+<p>弹性路径数学模型—内力与内力矩微分方程传递性，作用于整条路径，外部不具有传递性，只发生于作用点。</p>
+<p>本构模型—-激励与响应的关系</p>
+<p>路径形变控制机理</p>
+<p>子任务内容：耦合作用机理、弹性运动模型、运动控制反解模型</p>
+<p><strong>联合运动</strong>：动舵/直接力复合控制的难点在于如何有效、快速地融合气动舵的连续输出与直接力的离散输出。传统的优化融合策略需在每个控制周期内求解最优分配问题，这将消耗大量的机载计算资源。</p>
+<p>问题：非线性弹性动力模型建立不够清晰</p>
+<p>来源：TUOsd_cjm</p>
+<p>动力模型过程清晰，验证存在一定疑问</p>
+<p>3RRR构型</p>
+<p>柔性机器人-造价低、操作速度快、驱动力小、能耗低、良好的机动性能、安全性高</p>
+<p>关键词：并联、刚柔耦合动力学、振动抑制</p>
+<p>杆件关节变形能</p>
+<p>柔性机器人动力学方程—多自由度偏微分方程—有限维常微分方程近似替代</p>
+<p>连续系统离散化处理—-假设模态法AMM、有限元方法FEM、集中参数法IPM。</p>
+<p>记录一下小概念</p>
+<p><strong>动力学方程</strong>：研究力和位移或力矩和转角的关系</p>
+<ol>
+<li>获得描述广义坐标随时间变化的闭环方程——-牛顿拉格朗日</li>
+<li>给定广义坐标后，需要给系统多大的广义力，可以实现预期的广义坐标轨迹———-牛顿欧拉</li>
+</ol>
+<p>动力学建模方法：笛卡尔坐标、关节坐标、动力学样条法、波方法，李群李代数。</p>
+<p>柔性机器人振动控制：</p>
+<p>被动控制：</p>
+<ul>
+<li>优化构件截面参数及几何参数</li>
+<li>复合材料替代金属材料</li>
+<li>阻尼处理构件—减振</li>
+</ul>
+<p>主动控制：</p>
+<ul>
+<li>传感器与作动器</li>
+<li>设计多个可控原动件的受控机构</li>
+<li>基于动力模型的控制系统</li>
+</ul>
+<p>压电陶瓷片</p>
+<p>压电陶瓷驱动器相关应用：压电驱动器绑定在弹性结构表面或嵌入压层复合材料中Edward</p>
+<p>柔性机器人研究包含毂-两结构、柔性两杆和四杆机构，对于柔性并联研究较少。</p>
+<p>质量、运动轨迹导致各关节驱动力矩和能耗差别很大</p>
+<h2 id="柔性机器人动力学特性分析内容"><a href="#柔性机器人动力学特性分析内容" class="headerlink" title="柔性机器人动力学特性分析内容"></a>柔性机器人动力学特性分析内容</h2><p>频率特性分析、灵敏度分析、模态分析、动应力分析</p>
+<p>系统弹性振动主要有低阶模态决定，固有频率越低，系统刚度越小，越容易振动</p>
+<p>两步法：KED假设弹性变形位移是小的，忽略弹性变形对于刚体运动的影响，建立系统刚体动力学方程，将运动学变量带入弹性变形运动动力学方程。</p>
+<p>一步法：考虑刚体运动与弹性变形运动耦合，更精确的模型求解方法</p>
+<h2 id="力热固耦合弹性动力学（一致温度）"><a href="#力热固耦合弹性动力学（一致温度）" class="headerlink" title="力热固耦合弹性动力学（一致温度）"></a>力热固耦合弹性动力学（一致温度）</h2><p>基于有限元方法和Hamilton原理</p>
+<p>建立单元弹性动力学模型，假设热载荷导致机构产生的变形量与应力导致的变形线性且各向同性，建立联立应变方程。</p>
+<p>基于ANSYS瞬态动力学仿真，计算了主动关节和被动关节没有热载荷和多种温度下最大等效应力图</p>
+<p>记录了多地温度变化曲线，测量连杆最大等效应力随时间的变化关系</p>
+<p><strong>结论：</strong>温度变化，最大等效应力保持周期性上升；气温不变，最大等效应力保持周期性稳定。</p>
+<p>温度高低不是决定因素，温差大小决定应力变化</p>
+<p>柔性并联机器人的动态性能不仅与温度该改变量大小和材料的温度膨胀系数有关，而且与温度变化曲线也密切相关。</p>
+<p><em>文章通过气象台的温度数据，导入CFD软件中，进行瞬态动力学分析，得到应力变化图，进而分析温度关系</em>，还是没能给出一个直接的解析式呀，复杂机构的耦合动力学模型建模还是一个难解。</p>
+<h2 id="弹性动力学的动力钢化问题"><a href="#弹性动力学的动力钢化问题" class="headerlink" title="弹性动力学的动力钢化问题"></a>弹性动力学的动力钢化问题</h2><p>高速、高加速柔性并联机器人是否存在动力钢化现象。</p>
+<p>单元—系统   </p>
+<p>一阶近似耦合模型FOAC:包含名义运动相关的<em>动力刚度项</em></p>
+<p>传统混合坐标建模方法 ZOAC：无法很好的反应系统的动力学性能，假设轴向与横向变形位移解耦。适用于并联机构</p>
+<p>无论系统运动速度、加速度多大，系统刚度项对系统动力学特性影响微小。</p>
+<p>执行机构动力学模型建立结束，基于模型的振动控制</p>
+<h2 id="主动振动控制研究"><a href="#主动振动控制研究" class="headerlink" title="主动振动控制研究"></a>主动振动控制研究</h2><p>控制目的：抑制并联机器人柔性连杆的残余振动，保证动平台精确地到达给定的位姿。</p>
+<p>PZT压电驱动器作用机理：给驱动器施加电压信号，PZT驱动器产生应变，在驱动器两端，这种应变将在梁单元对应的位置上引起剪切变形</p>
+<p>通过驱动器对梁单元施加外力矩</p>
+<p>控制器优化方向-能量优化，在更低的控制电压下可以取得更好的控制效果。一对PZT控制效果优于一片。</p>
+<p>控制内容后续完善</p>
+<p><strong>结论：</strong>单独控制柔性杆时，可以抑制自身的弹性振动，无法控制其他两柔性杆振动，当三根杆同时振动时，各柔性杆的弹性振动都能得到很好的抑制。</p>
+<p>平台质量和运动轨迹对驱动能耗有直接影响。——-</p>
+<p><em>轻量化设计以及轨迹规划内容，不过这篇文章感觉这部分写不了啥论文</em></p>
+<p>建立并联机器人刚柔耦合非线性动力学方程</p>
+<p><em>构件弹性变形与刚体运动之间互相耦合影响</em></p>
+<p><strong>感觉压电陶瓷驱动器抑振是文章最重要的点。</strong></p>
+<p>文章方向整理：</p>
+]]></content>
+      <categories>
+        <category>project</category>
+      </categories>
   </entry>
   <entry>
     <title>impedance_control</title>
@@ -2147,109 +2250,6 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
-    <title>gcyyy</title>
-    <url>/2021/09/10/gcyyy/gcyyy/</url>
-    <content><![CDATA[<h1 id="并联机构弹性动力学建模与振动主动控制论文"><a href="#并联机构弹性动力学建模与振动主动控制论文" class="headerlink" title="并联机构弹性动力学建模与振动主动控制论文"></a>并联机构弹性动力学建模与振动主动控制论文</h1><p>2021.9.8</p>
-<h4 id="并联机器人高维运动规划研究—刚柔耦合"><a href="#并联机器人高维运动规划研究—刚柔耦合" class="headerlink" title="并联机器人高维运动规划研究—刚柔耦合"></a>并联机器人高维运动规划研究—刚柔耦合</h4><p>非线性力学—————-形变+运动规划————非线性数学模型—————-弹性运动规划算法</p>
-<p>无碰撞未超过运动规划极限—自由位形</p>
-<p>（缺少论文整理部分）</p>
-<span id="more"></span>
-<p><strong>特殊规划-路径无奇异且路径具备刚度与精度</strong></p>
-<p>弹性路径数学模型—内力与内力矩微分方程传递性，作用于整条路径，外部不具有传递性，只发生于作用点。</p>
-<p>本构模型—-激励与响应的关系</p>
-<p>路径形变控制机理</p>
-<p>子任务内容：耦合作用机理、弹性运动模型、运动控制反解模型</p>
-<p><strong>联合运动</strong>：动舵/直接力复合控制的难点在于如何有效、快速地融合气动舵的连续输出与直接力的离散输出。传统的优化融合策略需在每个控制周期内求解最优分配问题，这将消耗大量的机载计算资源。</p>
-<p>问题：非线性弹性动力模型建立不够清晰</p>
-<p>来源：TUOsd_cjm</p>
-<p>动力模型过程清晰，验证存在一定疑问</p>
-<p>3RRR构型</p>
-<p>柔性机器人-造价低、操作速度快、驱动力小、能耗低、良好的机动性能、安全性高</p>
-<p>关键词：并联、刚柔耦合动力学、振动抑制</p>
-<p>杆件关节变形能</p>
-<p>柔性机器人动力学方程—多自由度偏微分方程—有限维常微分方程近似替代</p>
-<p>连续系统离散化处理—-假设模态法AMM、有限元方法FEM、集中参数法IPM。</p>
-<p>记录一下小概念</p>
-<p><strong>动力学方程</strong>：研究力和位移或力矩和转角的关系</p>
-<ol>
-<li>获得描述广义坐标随时间变化的闭环方程——-牛顿拉格朗日</li>
-<li>给定广义坐标后，需要给系统多大的广义力，可以实现预期的广义坐标轨迹———-牛顿欧拉</li>
-</ol>
-<p>动力学建模方法：笛卡尔坐标、关节坐标、动力学样条法、波方法，李群李代数。</p>
-<p>柔性机器人振动控制：</p>
-<p>被动控制：</p>
-<ul>
-<li>优化构件截面参数及几何参数</li>
-<li>复合材料替代金属材料</li>
-<li>阻尼处理构件—减振</li>
-</ul>
-<p>主动控制：</p>
-<ul>
-<li>传感器与作动器</li>
-<li>设计多个可控原动件的受控机构</li>
-<li>基于动力模型的控制系统</li>
-</ul>
-<p>压电陶瓷片</p>
-<p>压电陶瓷驱动器相关应用：压电驱动器绑定在弹性结构表面或嵌入压层复合材料中Edward</p>
-<p>柔性机器人研究包含毂-两结构、柔性两杆和四杆机构，对于柔性并联研究较少。</p>
-<p>质量、运动轨迹导致各关节驱动力矩和能耗差别很大</p>
-<h2 id="柔性机器人动力学特性分析内容"><a href="#柔性机器人动力学特性分析内容" class="headerlink" title="柔性机器人动力学特性分析内容"></a>柔性机器人动力学特性分析内容</h2><p>频率特性分析、灵敏度分析、模态分析、动应力分析</p>
-<p>系统弹性振动主要有低阶模态决定，固有频率越低，系统刚度越小，越容易振动</p>
-<p>两步法：KED假设弹性变形位移是小的，忽略弹性变形对于刚体运动的影响，建立系统刚体动力学方程，将运动学变量带入弹性变形运动动力学方程。</p>
-<p>一步法：考虑刚体运动与弹性变形运动耦合，更精确的模型求解方法</p>
-<h2 id="力热固耦合弹性动力学（一致温度）"><a href="#力热固耦合弹性动力学（一致温度）" class="headerlink" title="力热固耦合弹性动力学（一致温度）"></a>力热固耦合弹性动力学（一致温度）</h2><p>基于有限元方法和Hamilton原理</p>
-<p>建立单元弹性动力学模型，假设热载荷导致机构产生的变形量与应力导致的变形线性且各向同性，建立联立应变方程。</p>
-<p>基于ANSYS瞬态动力学仿真，计算了主动关节和被动关节没有热载荷和多种温度下最大等效应力图</p>
-<p>记录了多地温度变化曲线，测量连杆最大等效应力随时间的变化关系</p>
-<p><strong>结论：</strong>温度变化，最大等效应力保持周期性上升；气温不变，最大等效应力保持周期性稳定。</p>
-<p>温度高低不是决定因素，温差大小决定应力变化</p>
-<p>柔性并联机器人的动态性能不仅与温度该改变量大小和材料的温度膨胀系数有关，而且与温度变化曲线也密切相关。</p>
-<p><em>文章通过气象台的温度数据，导入CFD软件中，进行瞬态动力学分析，得到应力变化图，进而分析温度关系</em>，还是没能给出一个直接的解析式呀，复杂机构的耦合动力学模型建模还是一个难解。</p>
-<h2 id="弹性动力学的动力钢化问题"><a href="#弹性动力学的动力钢化问题" class="headerlink" title="弹性动力学的动力钢化问题"></a>弹性动力学的动力钢化问题</h2><p>高速、高加速柔性并联机器人是否存在动力钢化现象。</p>
-<p>单元—系统   </p>
-<p>一阶近似耦合模型FOAC:包含名义运动相关的<em>动力刚度项</em></p>
-<p>传统混合坐标建模方法 ZOAC：无法很好的反应系统的动力学性能，假设轴向与横向变形位移解耦。适用于并联机构</p>
-<p>无论系统运动速度、加速度多大，系统刚度项对系统动力学特性影响微小。</p>
-<p>执行机构动力学模型建立结束，基于模型的振动控制</p>
-<h2 id="主动振动控制研究"><a href="#主动振动控制研究" class="headerlink" title="主动振动控制研究"></a>主动振动控制研究</h2><p>控制目的：抑制并联机器人柔性连杆的残余振动，保证动平台精确地到达给定的位姿。</p>
-<p>PZT压电驱动器作用机理：给驱动器施加电压信号，PZT驱动器产生应变，在驱动器两端，这种应变将在梁单元对应的位置上引起剪切变形</p>
-<p>通过驱动器对梁单元施加外力矩</p>
-<p>控制器优化方向-能量优化，在更低的控制电压下可以取得更好的控制效果。一对PZT控制效果优于一片。</p>
-<p>控制内容后续完善</p>
-<p><strong>结论：</strong>单独控制柔性杆时，可以抑制自身的弹性振动，无法控制其他两柔性杆振动，当三根杆同时振动时，各柔性杆的弹性振动都能得到很好的抑制。</p>
-<p>平台质量和运动轨迹对驱动能耗有直接影响。——-</p>
-<p><em>轻量化设计以及轨迹规划内容，不过这篇文章感觉这部分写不了啥论文</em></p>
-<p>建立并联机器人刚柔耦合非线性动力学方程</p>
-<p><em>构件弹性变形与刚体运动之间互相耦合影响</em></p>
-<p><strong>感觉压电陶瓷驱动器抑振是文章最重要的点。</strong></p>
-<p>文章方向整理：</p>
-]]></content>
-      <categories>
-        <category>project</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>DOC_exercise</title>
-    <url>/2021/08/29/DOC-exercise/DOC-exercise/</url>
-    <content><![CDATA[<h1 id="随笔加一些更新计划"><a href="#随笔加一些更新计划" class="headerlink" title="随笔加一些更新计划"></a>随笔加一些更新计划</h1><p>人生不长，总归还是想做一些有意义的事情——-这是一切的出发点</p>
-<span id="more"></span>
-<h2 id="更新计划"><a href="#更新计划" class="headerlink" title="更新计划"></a>更新计划</h2><p>之后会更新一些视频与博客，博客文案，视频过程，在记录的同时巩固自己，希望可以帮助到一些朋友，要更新一些硬货，2333</p>
-<p>1.专业相关内容的研究，根据情况落实</p>
-<p>2.ROS、模拟软件以及一些算法记录过程</p>
-<p>3.游戏历史考据，比方说最近想得是重装的怪物史，总不可能是凭空出现的，回忆下过去，开拓下视野。</p>
-<p>4.文学方面的内容，提高一下，没想好更新什么，以后慢慢来</p>
-<h2 id="一些需要时刻记住的事情"><a href="#一些需要时刻记住的事情" class="headerlink" title="一些需要时刻记住的事情"></a>一些需要时刻记住的事情</h2><p>行甚于言，很重要的一点；</p>
-<p>前段时间总是自我怀疑，希望不要忘记自己的初心，我还是有一些优点的，踏踏实实的做事就好；</p>
-<p>操千曲而后晓声，观千剑而后识器，大量且规律的积累是以后必须做到的；</p>
-<p><strong>要努力提高英语呀，坚持日积月累；</strong></p>
-<p>拓展视野，坚实基础；保持信心，提高自己；</p>
-<p>去做一些更好玩的事情，记住自己的初心，坚持下去（已经确确实实是个成年人了，以后要更成熟一点）</p>
-<h2 id="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"><a href="#未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人" class="headerlink" title="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"></a>未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人</h2>]]></content>
-      <tags>
-        <tag>plan</tag>
-      </tags>
-  </entry>
-  <entry>
     <title></title>
     <url>/2022/08/02/life/life/</url>
     <content><![CDATA[<p> <strong>怎么会迷上你，我在问自己</strong></p>
@@ -2259,79 +2259,6 @@ m_1 & 0 \\
 <p>犹豫、常常忽略一些事情、讨厌很多事情</p>
 <p>一个半吊子的理想主义者～</p>
 <p><a href="/img/R.jpg">r</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>lifespan</title>
-    <url>/2020/11/07/lifespan/lifespan/</url>
-    <content><![CDATA[<h1 id="无常的人生-小记"><a href="#无常的人生-小记" class="headerlink" title="无常的人生-小记"></a>无常的人生-小记</h1><p>今天心情还挺复杂的，不自主的想着好多事情，不想让熟人知道，但是又想倾诉一下，所以在博客里稍微说一说，（未来不管陌生人还是熟人，或者是自己，看到这篇小记，是否会心有所感呢？）</p>
-<span id="more"></span>
-<h2 id="1-纪念一场似是而非的“感情”"><a href="#1-纪念一场似是而非的“感情”" class="headerlink" title="1.纪念一场似是而非的“感情”"></a>1.纪念一场似是而非的“感情”</h2><p>友谊和爱情终究是有差别的，这是我所笃定的，但是差别的界定，我好像又是模糊的，前些天我好像做了一些很对不起你的事情，但是我又不得不这么做。</p>
-<p>为什么我下不了决心呢，我后来自己想了想，其实不是我所谓的不懂体贴、太过“直男”，而是我觉得我们太熟悉了，虽然几乎有两年没见过，熟悉带来的于我而言就是陌生，更重要的一点是，你我都不知道这段未来的感情里掺杂了多少另外多余的东西，比如周围的环境、别人的看法，各自的兴趣爱好甚至与一些观念理想，你我都不是好多年前的那个人了。</p>
-<p>说实话，很久之前，我应该是喜欢的，不过那会不敢跟你说，也不知道你怎么想，再后来，经历了很多事情，我的想法也慢慢变了，但是终究你对我而言，和别人是不同的，这可能就是你说的差别对待感觉的来源，但是这个差别来自于很多年前，并且可能并不会更进一步，我害怕我以后会伤害你，所以我在不算开始的现在退出，我也不想去试这个模糊感是不是有未来，我总感觉有些事情应该是顺其自然的…</p>
-<p>希望你未来能找到更合适的，我会衷心的祝福，真的</p>
-<p>我们应该还是朋友吧…有些事不说还好，说了真是尴尬</p>
-<p>确定不了你的想法为什么忽然那么坚定，我也无法确定我的想法，总体来讲，就是这个原因。</p>
-<p>我会努力提高自己，当然希望你也能健健康康的快乐生活，我会帮助你，以一个好朋友的身份，不管你接不接受。没有前一段经历，或许我也不能下定决心做一件事。</p>
-<p>感觉你最近蛮开心的，那我也就放心了，希望我没有对你造成什么伤害…</p>
-<p>你可能不会看到这篇碎碎念的文章吧，毕竟我没和别人讲过这个博客，我居然能写出这么多废话…</p>
-<p>想起来又是好复杂，感觉好烦，爱情真是烦人啊，不如多看两篇文献…</p>
-<h2 id="2人生之路漫漫长"><a href="#2人生之路漫漫长" class="headerlink" title="2人生之路漫漫长"></a>2人生之路漫漫长</h2><p>未来几年的方向应该是确定了，模糊又坚定，我有自己的指标，我会努力去完成</p>
-<p>踏实一点、坚定一点、乐观一点</p>
-<h2 id="3现在"><a href="#3现在" class="headerlink" title="3现在"></a>3现在</h2><p>是不是很奇怪的顺序，确实，不过这本身就是一篇奇怪的文章，和我的现实性格一点也不搭。</p>
-<p>现在我做的应该也是踏踏实实的，把每日目标和小目标努力完成了，最近遇到点小难题，一点一点得去记录并且克服掉</p>
-<p>摸鱼虽然舒服，但是真的浪费时间，拒绝正式时间摸鱼，从我做起</p>
-<p>严格规划时间了呀啊喂！</p>
-<p>周末晚之前做一版，下周严格的把模型推导完，整理知识，克服难题</p>
-<p>人生啊—-真是漫长</p>
-<p>应该不会有人看到吧，真是尴尬…</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>literature</title>
-    <url>/2020/09/03/literature/literature/</url>
-    <content><![CDATA[<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
-<p>abstract    consult    discussion   method   result</p>
-<p>review</p>
-<span id="more"></span>
-<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
-<p>摘要分层</p>
-<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
-<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
-<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
-<p>2.indicative abstract</p>
-<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
-<p>3.extended abstract</p>
-<p> thesis   dissertation</p>
-<p>4.structured abstract</p>
-<p>5.conference abstract</p>
-<p>6.graphical abstract</p>
-<p>7.executive summary</p>
-<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
-<ol>
-<li>Introduction  </li>
-<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
-<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
-</ol>
-<p>分层</p>
-<p>1.review of the present study</p>
-<p>2.consolidating ofthe results</p>
-<p>3.stating limitations and possible research directions</p>
-<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
-<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
-<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
-</ol>
-<p>分层</p>
-<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
-<p>一些特点 linguistic features</p>
-<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
-<p>Method classification</p>
-<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
-<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
-<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
-<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
-<p>…用的比较少，不列了</p>
-<p>缺一部分，改天再补，回寝了～</p>
 ]]></content>
   </entry>
   <entry>
@@ -2504,6 +2431,79 @@ m_1 & 0 \\
       <categories>
         <category>linux</category>
       </categories>
+  </entry>
+  <entry>
+    <title>lifespan</title>
+    <url>/2020/11/07/lifespan/lifespan/</url>
+    <content><![CDATA[<h1 id="无常的人生-小记"><a href="#无常的人生-小记" class="headerlink" title="无常的人生-小记"></a>无常的人生-小记</h1><p>今天心情还挺复杂的，不自主的想着好多事情，不想让熟人知道，但是又想倾诉一下，所以在博客里稍微说一说，（未来不管陌生人还是熟人，或者是自己，看到这篇小记，是否会心有所感呢？）</p>
+<span id="more"></span>
+<h2 id="1-纪念一场似是而非的“感情”"><a href="#1-纪念一场似是而非的“感情”" class="headerlink" title="1.纪念一场似是而非的“感情”"></a>1.纪念一场似是而非的“感情”</h2><p>友谊和爱情终究是有差别的，这是我所笃定的，但是差别的界定，我好像又是模糊的，前些天我好像做了一些很对不起你的事情，但是我又不得不这么做。</p>
+<p>为什么我下不了决心呢，我后来自己想了想，其实不是我所谓的不懂体贴、太过“直男”，而是我觉得我们太熟悉了，虽然几乎有两年没见过，熟悉带来的于我而言就是陌生，更重要的一点是，你我都不知道这段未来的感情里掺杂了多少另外多余的东西，比如周围的环境、别人的看法，各自的兴趣爱好甚至与一些观念理想，你我都不是好多年前的那个人了。</p>
+<p>说实话，很久之前，我应该是喜欢的，不过那会不敢跟你说，也不知道你怎么想，再后来，经历了很多事情，我的想法也慢慢变了，但是终究你对我而言，和别人是不同的，这可能就是你说的差别对待感觉的来源，但是这个差别来自于很多年前，并且可能并不会更进一步，我害怕我以后会伤害你，所以我在不算开始的现在退出，我也不想去试这个模糊感是不是有未来，我总感觉有些事情应该是顺其自然的…</p>
+<p>希望你未来能找到更合适的，我会衷心的祝福，真的</p>
+<p>我们应该还是朋友吧…有些事不说还好，说了真是尴尬</p>
+<p>确定不了你的想法为什么忽然那么坚定，我也无法确定我的想法，总体来讲，就是这个原因。</p>
+<p>我会努力提高自己，当然希望你也能健健康康的快乐生活，我会帮助你，以一个好朋友的身份，不管你接不接受。没有前一段经历，或许我也不能下定决心做一件事。</p>
+<p>感觉你最近蛮开心的，那我也就放心了，希望我没有对你造成什么伤害…</p>
+<p>你可能不会看到这篇碎碎念的文章吧，毕竟我没和别人讲过这个博客，我居然能写出这么多废话…</p>
+<p>想起来又是好复杂，感觉好烦，爱情真是烦人啊，不如多看两篇文献…</p>
+<h2 id="2人生之路漫漫长"><a href="#2人生之路漫漫长" class="headerlink" title="2人生之路漫漫长"></a>2人生之路漫漫长</h2><p>未来几年的方向应该是确定了，模糊又坚定，我有自己的指标，我会努力去完成</p>
+<p>踏实一点、坚定一点、乐观一点</p>
+<h2 id="3现在"><a href="#3现在" class="headerlink" title="3现在"></a>3现在</h2><p>是不是很奇怪的顺序，确实，不过这本身就是一篇奇怪的文章，和我的现实性格一点也不搭。</p>
+<p>现在我做的应该也是踏踏实实的，把每日目标和小目标努力完成了，最近遇到点小难题，一点一点得去记录并且克服掉</p>
+<p>摸鱼虽然舒服，但是真的浪费时间，拒绝正式时间摸鱼，从我做起</p>
+<p>严格规划时间了呀啊喂！</p>
+<p>周末晚之前做一版，下周严格的把模型推导完，整理知识，克服难题</p>
+<p>人生啊—-真是漫长</p>
+<p>应该不会有人看到吧，真是尴尬…</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>literature</title>
+    <url>/2020/09/03/literature/literature/</url>
+    <content><![CDATA[<h1 id="复习科技文献结构内容"><a href="#复习科技文献结构内容" class="headerlink" title="复习科技文献结构内容"></a>复习科技文献结构内容</h1><p>大量阅读英文期刊还是需要短时间提取有效内容，复习一下论文规则，提提速，有点忘记了</p>
+<p>abstract    consult    discussion   method   result</p>
+<p>review</p>
+<span id="more"></span>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>​    An abstract is a brief summary of the key points of a research article, thesis, review, report, proposal,<br>conference proceeding, or any in-depth analysis of a particular subject. Positioned at the beginning of a paper, the abstract is usually “the first thing that individuals read and, as such, decide whether to continue reading. It is also what is most accessed by search engines and researchers conducting their own literature reviews”</p>
+<p>摘要分层</p>
+<p>1.background 2.problem 3. method 4.results 5.conclusion</p>
+<p>sense：比较通用，可以回忆一下自己写过的毕业论文，摘要部分基本就是这个结构，先介绍简要背景，提出其中要解决的问题，我们用了什么方案去解决，结果如何，得出了什么结论，最后论文结尾加展望，这里没有。</p>
+<h2 id="Types-of-abstracts"><a href="#Types-of-abstracts" class="headerlink" title="Types of abstracts"></a>Types of abstracts</h2><p>1.information abstract</p>
+<p>2.indicative abstract</p>
+<p>常用于 theoretical papers    review articles  commentary articles  conference proceedings</p>
+<p>3.extended abstract</p>
+<p> thesis   dissertation</p>
+<p>4.structured abstract</p>
+<p>5.conference abstract</p>
+<p>6.graphical abstract</p>
+<p>7.executive summary</p>
+<h2 id="The-Disscussion-Section"><a href="#The-Disscussion-Section" class="headerlink" title="The Disscussion Section"></a>The Disscussion Section</h2><p>difference</p>
+<ol>
+<li>Introduction  </li>
+<li>The discussion section of a research paper is:<br>• To interpret the results of research<br>• To analyze and discuss the results<br>• To answer the questions proposed in the study<br>• To draw conclusions from the findings of the study</li>
+<li>The discussion section is featured of<br>• following the results section<br>• calling attention to something not directly apparent<br>from the table, chart or graph<br>• analyzing data to support the thesis of the research<br>question<br>• relating to what is discussed in the introduction section</li>
+</ol>
+<p>分层</p>
+<p>1.review of the present study</p>
+<p>2.consolidating ofthe results</p>
+<p>3.stating limitations and possible research directions</p>
+<p>同样可以回忆一下，先对全文总结，其次阐述自己的实验结果，最后说一下自己项目的局限性以及未来努力方向</p>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><ol>
+<li>Components of the method section<br>• Research design<br>• Materials<br>• Procedure<br>• Data collection<br>• Data analysis</li>
+</ol>
+<p>分层</p>
+<p>Move 1: WHEN the study was carried out<br>Move 2: WHERE the study was carried out<br>Move 3: WHAT materials, techniques, samples, data,approaches, theoretical frameworks were used in the<br>study<br>Move 4: HOW the study was carried out<br>Move 5: WHAT procedures were used</p>
+<p>一些特点 linguistic features</p>
+<p>• using the third person<br>• passive voice<br>• past tense<br>• complete sentences<br>• objective<br>• concise</p>
+<p>Method classification</p>
+<p>1) Logical methods:<br>Inductive<br>Deductive<br>Analogical<br>Analytical</p>
+<p>2) Empirical methods<br>Observational<br>Experimental<br>Measuring<br>statistical</p>
+<p>3) Mathematical methods:<br>Mathematical<br>Simulative<br>Idealized<br>Hypothetical</p>
+<p>Based on purposes<br>• Basic research<br>• Applied research<br>• Developmental research</p>
+<p>…用的比较少，不列了</p>
+<p>缺一部分，改天再补，回寝了～</p>
+]]></content>
   </entry>
   <entry>
     <title>logic_symbol</title>
@@ -2726,6 +2726,41 @@ m_1 & 0 \\
       </categories>
   </entry>
   <entry>
+    <title>newnote</title>
+    <url>/2022/08/02/newnote/newnote/</url>
+    <content><![CDATA[<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>airfact</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>movie_fish</title>
+    <url>/2020/07/30/movie-fish/movie-fish/</url>
+    <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><span id="more"></span>
+<h1 id="V字仇杀队"><a href="#V字仇杀队" class="headerlink" title="V字仇杀队"></a>V字仇杀队</h1><p>时隔多年再次欣赏这部电影，感觉平淡了许多，不再像当初那么愤青了。</p>
+<p>世界上没有完美的事情，过于理性的审视一切，有很多好处，同时也失去了很多东西。</p>
+<p>思想是不可消亡了～</p>
+<h1 id="窃听风暴"><a href="#窃听风暴" class="headerlink" title="窃听风暴"></a>窃听风暴</h1><p>压抑的bgm，紧凑的情节</p>
+<p>断续的信息流，完整的情感线，人类本质的体现</p>
+<p>风云变换的历史，个人永远都是渺小的，滔天海浪的压迫感觉</p>
+<p>百年未有之大变局，如何在历史的洪流中生活，放弃一些无用的主义思维，守好自己所相信的底线。</p>
+<p>没有绝对的对错之分，安安静静的就好～</p>
+<h2 id="黑客帝国三矩阵革命"><a href="#黑客帝国三矩阵革命" class="headerlink" title="黑客帝国三矩阵革命"></a>黑客帝国三矩阵革命</h2><p>画面不错</p>
+<h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
+<p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
+<p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
+<p><img src="/../pictures/R.jpg" alt=""></p>
+<h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
+<p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
+<p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
+<p>（生气的时候，有一点很重要，问自己一下，有必要么？）</p>
+]]></content>
+  </entry>
+  <entry>
     <title>morphing_and_deformation</title>
     <url>/2024/07/05/morphing-and-deformation/morphing-and-deformation/</url>
     <content><![CDATA[<p><meta name="referrer" content="no-referrer"><br><strong>morphing与deformation区别</strong></p>
@@ -2834,41 +2869,6 @@ m_1 & 0 \\
       </categories>
       <tags>
         <tag>ACADEMIC</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>movie_fish</title>
-    <url>/2020/07/30/movie-fish/movie-fish/</url>
-    <content><![CDATA[<h1 id="观影清单来源（b站木鱼水心）"><a href="#观影清单来源（b站木鱼水心）" class="headerlink" title="观影清单来源（b站木鱼水心）"></a>观影清单来源（b站木鱼水心）</h1><span id="more"></span>
-<h1 id="V字仇杀队"><a href="#V字仇杀队" class="headerlink" title="V字仇杀队"></a>V字仇杀队</h1><p>时隔多年再次欣赏这部电影，感觉平淡了许多，不再像当初那么愤青了。</p>
-<p>世界上没有完美的事情，过于理性的审视一切，有很多好处，同时也失去了很多东西。</p>
-<p>思想是不可消亡了～</p>
-<h1 id="窃听风暴"><a href="#窃听风暴" class="headerlink" title="窃听风暴"></a>窃听风暴</h1><p>压抑的bgm，紧凑的情节</p>
-<p>断续的信息流，完整的情感线，人类本质的体现</p>
-<p>风云变换的历史，个人永远都是渺小的，滔天海浪的压迫感觉</p>
-<p>百年未有之大变局，如何在历史的洪流中生活，放弃一些无用的主义思维，守好自己所相信的底线。</p>
-<p>没有绝对的对错之分，安安静静的就好～</p>
-<h2 id="黑客帝国三矩阵革命"><a href="#黑客帝国三矩阵革命" class="headerlink" title="黑客帝国三矩阵革命"></a>黑客帝国三矩阵革命</h2><p>画面不错</p>
-<h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
-<p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
-<p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
-<p><img src="/../pictures/R.jpg" alt></p>
-<h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
-<p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
-<p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
-<p>（生气的时候，有一点很重要，问自己一下，有必要么？）</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>newnote</title>
-    <url>/2022/08/02/newnote/newnote/</url>
-    <content><![CDATA[<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>airfact</tag>
       </tags>
   </entry>
   <entry>
@@ -2982,30 +2982,6 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
-    <title>plan</title>
-    <url>/2023/01/29/plan/plan/</url>
-    <content><![CDATA[<p>2023开学随笔</p>
-<span id="more"></span>
-<p>说着要更新，但是因为各种各样的事情总是拖后，上个学期有了一些进度，但是后续仍然有很多需要落实的地方，今天顺便一起想了，生活上也有好多事情要处理，后天开学了，晚上闲来无事，大概想想~</p>
-<p>1.总的来讲，很多事进度没有严格按计划落实，还是个人惰性的问题，我自己一个人呆着的时候进度总是很慢，喜欢摸鱼，我打算严格落实目标，坚持完成。</p>
-<p>2.有句话我觉得很有用-“你的人生没有那么多观众”，我现在已经可以下意识的做的一部分，但是还是没办法完全做到，不必强求吧，太过了可能也不好，对所有事都没兴趣，终归有问题，但是对一些没意义的事情，还是要避免，不去做没意义的事情；电话 会议？2333</p>
-<p>3.开学之后是31，到元宵节，6天时间要加班把那个任务完成，最重要的一件事是每天也要坚持看英文文献，如果可以理解两个，把任务压缩到分配到每天，必须完成这些事情，然后汇报一下；这个是现阶段最最重要的事情</p>
-<p>4.之前每天坚持落实的事情，要继续坚持下去，这个细规划吧；</p>
-<p>5.生活上，过了个年胖了几斤，去了还是要规律饮食，坚持游泳，加油呀；</p>
-<p>总结一下，落实进度，不要着急，行胜于言；</p>
-<p>少说话，事情多做，多出自己的想法，多总结论文，多学习；</p>
-<p>抵制下惰性，要努力呀；</p>
-<p>有些话还想说，我觉得以后要果断一点，但前提是这半年要把目标落实了，很重要；</p>
-<p>其余的生活规划放在后半年的时间里，总之脚踏实地，慢慢推进吧；</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>airfact</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>pybasic</title>
     <url>/2020/07/27/pybasic/pybasic/</url>
     <content><![CDATA[<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><p>方便查看，资料来源{<a href="https://github.com/fengdu78/Data-Science-Notes/blob/master/1.python-basic/Python_Basic.ipynb}">https://github.com/fengdu78/Data-Science-Notes/blob/master/1.python-basic/Python_Basic.ipynb}</a></p>
@@ -3052,6 +3028,76 @@ m_1 & 0 \\
       <categories>
         <category>基础</category>
       </categories>
+  </entry>
+  <entry>
+    <title>plan</title>
+    <url>/2023/01/29/plan/plan/</url>
+    <content><![CDATA[<p>2023开学随笔</p>
+<span id="more"></span>
+<p>说着要更新，但是因为各种各样的事情总是拖后，上个学期有了一些进度，但是后续仍然有很多需要落实的地方，今天顺便一起想了，生活上也有好多事情要处理，后天开学了，晚上闲来无事，大概想想~</p>
+<p>1.总的来讲，很多事进度没有严格按计划落实，还是个人惰性的问题，我自己一个人呆着的时候进度总是很慢，喜欢摸鱼，我打算严格落实目标，坚持完成。</p>
+<p>2.有句话我觉得很有用-“你的人生没有那么多观众”，我现在已经可以下意识的做的一部分，但是还是没办法完全做到，不必强求吧，太过了可能也不好，对所有事都没兴趣，终归有问题，但是对一些没意义的事情，还是要避免，不去做没意义的事情；电话 会议？2333</p>
+<p>3.开学之后是31，到元宵节，6天时间要加班把那个任务完成，最重要的一件事是每天也要坚持看英文文献，如果可以理解两个，把任务压缩到分配到每天，必须完成这些事情，然后汇报一下；这个是现阶段最最重要的事情</p>
+<p>4.之前每天坚持落实的事情，要继续坚持下去，这个细规划吧；</p>
+<p>5.生活上，过了个年胖了几斤，去了还是要规律饮食，坚持游泳，加油呀；</p>
+<p>总结一下，落实进度，不要着急，行胜于言；</p>
+<p>少说话，事情多做，多出自己的想法，多总结论文，多学习；</p>
+<p>抵制下惰性，要努力呀；</p>
+<p>有些话还想说，我觉得以后要果断一点，但前提是这半年要把目标落实了，很重要；</p>
+<p>其余的生活规划放在后半年的时间里，总之脚踏实地，慢慢推进吧；</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>airfact</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>reading_note1</title>
+    <url>/2020/11/02/reading-note1/reading-note1/</url>
+    <content><![CDATA[<h1 id="并联机构优化阅读笔记1"><a href="#并联机构优化阅读笔记1" class="headerlink" title="并联机构优化阅读笔记1"></a>并联机构优化阅读笔记1</h1><p>A new method for optimum design of parallel manipulator based on kinematics and dynamics</p>
+<p>并联机械臂优化设计</p>
+<p>（不太规范，慢慢进步）（推导及公式说明latex 写完后会补充）</p>
+<span id="more"></span>
+<p>综合考虑机构运动学与动力学特性，一种优化机构尺寸参数的方案，可以用于提高并联机器人动态性能</p>
+<p><strong>Abstract</strong> </p>
+<p>This paper presents a new method for the optimum design of parallel manipulators by taking both the kinematics and dynamic characteristics into account. The optimum design of a 3-DOF 4-RRR planar parallel manipulator with actuation redundancy is investigated to demonstrate the method. The kinematic performance indices such as the conditioning index, the velocity index, and workspace area are analyzed.<br>Further, the dynamic dexterity, which is used to evaluate the dynamic characteristics, is investigated. The corresponding atlases are represented graphically in the established design space. Based on these atlases, the geometrical parameters without dimension are determined. Then the optimum dimension parameters are achieved based on the optimum non-dimensional result. By using the method proposed in this paper, the designer can obtain the optimum result with respect to both kinematic performance indices and dynamic performance indices. Since the dynamic performance is considered in the process of optimum design by using the method proposed in this paper, it is expected to realize the high dynamics of parallel manipulators.</p>
+<p><strong>Introduction</strong></p>
+<p>Parallel manipulators have attracted much attention in both industry and academia because of their conceptual potentials in high motion dynamics and accuracy combined with high structural rigidity due to their closed kinematic loops. However, there is a gap between the expectation and practical application of parallel manipulators in the machine tool/robot sectors [1, 2]. One of the reasons is that their potentially desirable high dynamics can not be realized since the dynamic characteristics are not considered in the optimal design phase and only are considered in the modelbased control after the prototype is built. Since the prototype is fabricated, the improvement of dynamic characteristics is limited even if model-based control is used. If the dynamic characteristics can also be involved in the process of the optimum design before the prototype is built, the dynamic performance will be improved. Thus, it is helpful to realize the high motion dynamics.</p>
+<p>并联机构实际应用动态效果一般，原因在于优化设计阶段未考虑动态特性，模型完成后，控制就会受限于模型本身，动态特性无法实现，如果在优化设计时考虑到动态特性，整体效果会得到改善。</p>
+<p>Optimal kinematic design is an important subject in designing a parallel manipulator. No matter how simple the parallel manipulator is, the optimum design is always challenging. Many efforts have been contributed to this issue [3–7]. These approaches can be classified into two kinds: one is based on the performance indices and the other is based on the performance atlases. The methods based on the performance indices are traditional ones, implemented in the commercial software MATLAB based on an established object function. If the design criterion number is increased, the procedure will be more complicated. The method based on the performance atlases can give designers a global and visual information on with what kind of link lengths the mechanism can have a good or best performance. However, the dynamic performance is usually neglected.</p>
+<p>最优设计局限性，未考虑动态特性</p>
+<p>Some researchers attempt to study the dynamic performance by defining some dynamic performance indices. Conventionally, dynamic manipulability ellipsoid (DME) [8, 9] and generalized inertia ellipsoid (GIE) [10] were used as performance indices to evaluate the dynamic manipulability of a robot manipulator.<br>Besides, some other measures for evaluating dynamic manipulability have been proposed. Graettinger and Krogh [11] introduced acceleration radius. Hashimoto [12] used the harmonic mean of the square singular values matrix to evaluate the dynamic manipulability.Li et al. [13] presented the smallest singular value of inertia matrix of a manipulator as the evaluation index when the manipulability in the hardest direction was considered. However, almost all of these contributions concentrated on the analysis and evaluation of the dynamic characteristics, and are not used for the optimum design to improve the dynamic performance.Although Asada [14] draw the GIE on a computer display and aid the design by visualizing the dynamic behavior, it is difficult to obtain an optimum design result.</p>
+<p>关于动态性能指标集中指标，注意一下文中提到的文献13中惯性矩阵最小奇异值优化方式，简单优化方式</p>
+<p>动态指标优化方式与问题</p>
+<p>The goal of this paper is to present a new method to take the dynamic characteristics of parallel manipulators into account in the process of optimum design.Based on the performance atlases, both the kinematics and dynamics of a 3-DOF 4-RRR planar parallel manipulator with actuation redundancy are involved.The kinematic performance indices such as the conditioning index, the velocity index, and workspace area are analyzed. Further, the dynamic dexterity of the manipulator is investigated. The corresponding atlases are represented graphically in the established design space. Based on these atlases, the geometrical parameters without dimension are determined. Then the optimum dimensional parameters are achieved based on the optimum nondimensional result. By using the method proposed in this paper, the designer can obtain the optimum result with respect to both kinematic performance indices and dynamic performance indices.</p>
+<p>目标：基于performance atlase 性能图谱优化分析</p>
+<h2 id="运动学分析"><a href="#运动学分析" class="headerlink" title="运动学分析"></a>运动学分析</h2><p>Inverse kinematics 常规闭链解法，不记录了，大同小异</p>
+<p>Velcocity equation 求解jacobian </p>
+<p>这里方法类似于向量推导，从表达过程看，与通过那篇向量几何范数方式推导的硕士论文（郭-）结果一致，之前看那篇方法没有引用相关文献，可能方法出自这里……</p>
+<h2 id="运动学性能指标及图谱"><a href="#运动学性能指标及图谱" class="headerlink" title="运动学性能指标及图谱"></a>运动学性能指标及图谱</h2><p>推导补充（latex写好会放过来）</p>
+<h2 id="全局性能指标与图谱"><a href="#全局性能指标与图谱" class="headerlink" title="全局性能指标与图谱"></a>全局性能指标与图谱</h2><p>The condition number is regarded as the local performance index for evaluating the velocity, accuracy, and rigidity mapping characteristics between the joint variables and the moving platform. The condition number κ is defined as <em>1 ≤ κ = σ 2 ≤∞ σ 1</em> where σ 1 and σ 2 are the minimum and maximum singular values of the Jacobian matrix associated with a given posture.<br>条件数可用于评估关节变量、平台速度、精度、刚度局部性能指标。</p>
+<h2 id="全局速度指标与图谱"><a href="#全局速度指标与图谱" class="headerlink" title="全局速度指标与图谱"></a>全局速度指标与图谱</h2><p>输出速度作为并联机械臂的重要指标，速度性能越好，最小速度越大。</p>
+<h2 id="动力学推导（虚功原理）"><a href="#动力学推导（虚功原理）" class="headerlink" title="动力学推导（虚功原理）"></a>动力学推导（虚功原理）</h2><p>常规推导方式，不作记录</p>
+<p>基于图谱的优化设计</p>
+<p>通过线性规划，给出了一个可行区域</p>
+<p>这里注意数学理论上最优与工程最优区别，实际工程上需要从实际出发，在可行域内选择合适尺寸参数。</p>
+<p>基于运动学优化设计</p>
+<p>工作空间、调节指数以及输出速度</p>
+<p>基于运动学与动力学的优化设计</p>
+<p>优化过程：</p>
+<p>1.根据运动学性能指标划定规划域</p>
+<p>2.根据动态性能指标确定另一个最佳区域，该区域为1子集</p>
+<p>3.确定机械臂参数</p>
+<p>4.基于逆运动学模型确定系统输入角度范围</p>
+<p>5.确定系统机构质量</p>
+<p>In order to investigate the performance of the designed manipulator, the condition number of Jacobian matrix and the distribution of κ D are given, as shown in Figs. 9 and 10. One may see that the condition number distribution and the distribution of κ D are symmetrical and the mechanism has the desired condition performance with η &gt; 0.11 and dynamic manipulability with η̄ D &gt; 0.05. In the center, the condition number of Jacobian matrix has the maximum value 0.33, and κ D = 0.12. It means that the 4-RRR manipulator has a better kinematic dexterity and dynamic manipulability in the center.</p>
+<p>中心位置雅克比矩阵考虑</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>本文是一种综合考虑运动学与动态性能的优化方案，通过无量纲参数获取杆件尺寸。</p>
+<p>目标操作器具备理想的运动学和动态性能。</p>
+<p>（推导分析后续补充）</p>
+]]></content>
   </entry>
   <entry>
     <title>python100</title>
@@ -3362,73 +3408,420 @@ m_1 & 0 \\
 <h4 id="python-集合运算"><a href="#python-集合运算" class="headerlink" title="python 集合运算"></a>python 集合运算</h4><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 在对集合做运算时，不会影响原来的集合，而是返回一个运算结果</span></span><br><span class="line"><span class="comment"># 创建两个集合</span></span><br><span class="line">s = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>}</span><br><span class="line">s2 = {<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>}</span><br><span class="line"></span><br><span class="line"><span class="comment"># &amp; 交集运算</span></span><br><span class="line">result = s &amp; s2 <span class="comment"># {3, 4, 5}</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># | 并集运算</span></span><br><span class="line">result = s | s2 <span class="comment"># {1,2,3,4,5,6,7}</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># - 差集</span></span><br><span class="line">result = s - s2 <span class="comment"># {1, 2}</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ^ 异或集 获取只在一个集合中出现的元素</span></span><br><span class="line">result = s ^ s2 <span class="comment"># {1, 2, 6, 7}</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># &lt;= 检查一个集合是否是另一个集合的子集</span></span><br><span class="line"><span class="comment"># 如果a集合中的元素全部都在b集合中出现，那么a集合就是b集合的子集，b集合是a集合超集</span></span><br><span class="line">a = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>}</span><br><span class="line">b = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>}</span><br><span class="line"></span><br><span class="line">result = a &lt;= b <span class="comment"># True</span></span><br><span class="line">result = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} &lt;= {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} <span class="comment"># True</span></span><br><span class="line">result = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>} &lt;= {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} <span class="comment"># False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># &lt; 检查一个集合是否是另一个集合的真子集</span></span><br><span class="line"><span class="comment"># 如果超集b中含有子集a中所有元素，并且b中还有a中没有的元素，则b就是a的真超集，a是b的真子集</span></span><br><span class="line">result = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} &lt; {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} <span class="comment"># False</span></span><br><span class="line">result = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} &lt; {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>} <span class="comment"># True</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># &gt;= 检查一个集合是否是另一个的超集</span></span><br><span class="line"><span class="comment"># &gt; 检查一个集合是否是另一个的真超集</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">'result ='</span>,result)</span><br></pre></td></tr></tbody></table></figure>]]></content>
   </entry>
   <entry>
-    <title>reading_note1</title>
-    <url>/2020/11/02/reading-note1/reading-note1/</url>
-    <content><![CDATA[<h1 id="并联机构优化阅读笔记1"><a href="#并联机构优化阅读笔记1" class="headerlink" title="并联机构优化阅读笔记1"></a>并联机构优化阅读笔记1</h1><p>A new method for optimum design of parallel manipulator based on kinematics and dynamics</p>
-<p>并联机械臂优化设计</p>
-<p>（不太规范，慢慢进步）（推导及公式说明latex 写完后会补充）</p>
+    <title>skill</title>
+    <url>/2024/03/20/skill/skill/</url>
+    <content><![CDATA[<h1 id="EVERYDAY速查总结"><a href="#EVERYDAY速查总结" class="headerlink" title="EVERYDAY速查总结"></a>EVERYDAY速查总结</h1><p>一些小技巧总结，方便补充查阅</p>
 <span id="more"></span>
-<p>综合考虑机构运动学与动力学特性，一种优化机构尺寸参数的方案，可以用于提高并联机器人动态性能</p>
-<p><strong>Abstract</strong> </p>
-<p>This paper presents a new method for the optimum design of parallel manipulators by taking both the kinematics and dynamic characteristics into account. The optimum design of a 3-DOF 4-RRR planar parallel manipulator with actuation redundancy is investigated to demonstrate the method. The kinematic performance indices such as the conditioning index, the velocity index, and workspace area are analyzed.<br>Further, the dynamic dexterity, which is used to evaluate the dynamic characteristics, is investigated. The corresponding atlases are represented graphically in the established design space. Based on these atlases, the geometrical parameters without dimension are determined. Then the optimum dimension parameters are achieved based on the optimum non-dimensional result. By using the method proposed in this paper, the designer can obtain the optimum result with respect to both kinematic performance indices and dynamic performance indices. Since the dynamic performance is considered in the process of optimum design by using the method proposed in this paper, it is expected to realize the high dynamics of parallel manipulators.</p>
-<p><strong>Introduction</strong></p>
-<p>Parallel manipulators have attracted much attention in both industry and academia because of their conceptual potentials in high motion dynamics and accuracy combined with high structural rigidity due to their closed kinematic loops. However, there is a gap between the expectation and practical application of parallel manipulators in the machine tool/robot sectors [1, 2]. One of the reasons is that their potentially desirable high dynamics can not be realized since the dynamic characteristics are not considered in the optimal design phase and only are considered in the modelbased control after the prototype is built. Since the prototype is fabricated, the improvement of dynamic characteristics is limited even if model-based control is used. If the dynamic characteristics can also be involved in the process of the optimum design before the prototype is built, the dynamic performance will be improved. Thus, it is helpful to realize the high motion dynamics.</p>
-<p>并联机构实际应用动态效果一般，原因在于优化设计阶段未考虑动态特性，模型完成后，控制就会受限于模型本身，动态特性无法实现，如果在优化设计时考虑到动态特性，整体效果会得到改善。</p>
-<p>Optimal kinematic design is an important subject in designing a parallel manipulator. No matter how simple the parallel manipulator is, the optimum design is always challenging. Many efforts have been contributed to this issue [3–7]. These approaches can be classified into two kinds: one is based on the performance indices and the other is based on the performance atlases. The methods based on the performance indices are traditional ones, implemented in the commercial software MATLAB based on an established object function. If the design criterion number is increased, the procedure will be more complicated. The method based on the performance atlases can give designers a global and visual information on with what kind of link lengths the mechanism can have a good or best performance. However, the dynamic performance is usually neglected.</p>
-<p>最优设计局限性，未考虑动态特性</p>
-<p>Some researchers attempt to study the dynamic performance by defining some dynamic performance indices. Conventionally, dynamic manipulability ellipsoid (DME) [8, 9] and generalized inertia ellipsoid (GIE) [10] were used as performance indices to evaluate the dynamic manipulability of a robot manipulator.<br>Besides, some other measures for evaluating dynamic manipulability have been proposed. Graettinger and Krogh [11] introduced acceleration radius. Hashimoto [12] used the harmonic mean of the square singular values matrix to evaluate the dynamic manipulability.Li et al. [13] presented the smallest singular value of inertia matrix of a manipulator as the evaluation index when the manipulability in the hardest direction was considered. However, almost all of these contributions concentrated on the analysis and evaluation of the dynamic characteristics, and are not used for the optimum design to improve the dynamic performance.Although Asada [14] draw the GIE on a computer display and aid the design by visualizing the dynamic behavior, it is difficult to obtain an optimum design result.</p>
-<p>关于动态性能指标集中指标，注意一下文中提到的文献13中惯性矩阵最小奇异值优化方式，简单优化方式</p>
-<p>动态指标优化方式与问题</p>
-<p>The goal of this paper is to present a new method to take the dynamic characteristics of parallel manipulators into account in the process of optimum design.Based on the performance atlases, both the kinematics and dynamics of a 3-DOF 4-RRR planar parallel manipulator with actuation redundancy are involved.The kinematic performance indices such as the conditioning index, the velocity index, and workspace area are analyzed. Further, the dynamic dexterity of the manipulator is investigated. The corresponding atlases are represented graphically in the established design space. Based on these atlases, the geometrical parameters without dimension are determined. Then the optimum dimensional parameters are achieved based on the optimum nondimensional result. By using the method proposed in this paper, the designer can obtain the optimum result with respect to both kinematic performance indices and dynamic performance indices.</p>
-<p>目标：基于performance atlase 性能图谱优化分析</p>
-<h2 id="运动学分析"><a href="#运动学分析" class="headerlink" title="运动学分析"></a>运动学分析</h2><p>Inverse kinematics 常规闭链解法，不记录了，大同小异</p>
-<p>Velcocity equation 求解jacobian </p>
-<p>这里方法类似于向量推导，从表达过程看，与通过那篇向量几何范数方式推导的硕士论文（郭-）结果一致，之前看那篇方法没有引用相关文献，可能方法出自这里……</p>
-<h2 id="运动学性能指标及图谱"><a href="#运动学性能指标及图谱" class="headerlink" title="运动学性能指标及图谱"></a>运动学性能指标及图谱</h2><p>推导补充（latex写好会放过来）</p>
-<h2 id="全局性能指标与图谱"><a href="#全局性能指标与图谱" class="headerlink" title="全局性能指标与图谱"></a>全局性能指标与图谱</h2><p>The condition number is regarded as the local performance index for evaluating the velocity, accuracy, and rigidity mapping characteristics between the joint variables and the moving platform. The condition number κ is defined as <em>1 ≤ κ = σ 2 ≤∞ σ 1</em> where σ 1 and σ 2 are the minimum and maximum singular values of the Jacobian matrix associated with a given posture.<br>条件数可用于评估关节变量、平台速度、精度、刚度局部性能指标。</p>
-<h2 id="全局速度指标与图谱"><a href="#全局速度指标与图谱" class="headerlink" title="全局速度指标与图谱"></a>全局速度指标与图谱</h2><p>输出速度作为并联机械臂的重要指标，速度性能越好，最小速度越大。</p>
-<h2 id="动力学推导（虚功原理）"><a href="#动力学推导（虚功原理）" class="headerlink" title="动力学推导（虚功原理）"></a>动力学推导（虚功原理）</h2><p>常规推导方式，不作记录</p>
-<p>基于图谱的优化设计</p>
-<p>通过线性规划，给出了一个可行区域</p>
-<p>这里注意数学理论上最优与工程最优区别，实际工程上需要从实际出发，在可行域内选择合适尺寸参数。</p>
-<p>基于运动学优化设计</p>
-<p>工作空间、调节指数以及输出速度</p>
-<p>基于运动学与动力学的优化设计</p>
-<p>优化过程：</p>
-<p>1.根据运动学性能指标划定规划域</p>
-<p>2.根据动态性能指标确定另一个最佳区域，该区域为1子集</p>
-<p>3.确定机械臂参数</p>
-<p>4.基于逆运动学模型确定系统输入角度范围</p>
-<p>5.确定系统机构质量</p>
-<p>In order to investigate the performance of the designed manipulator, the condition number of Jacobian matrix and the distribution of κ D are given, as shown in Figs. 9 and 10. One may see that the condition number distribution and the distribution of κ D are symmetrical and the mechanism has the desired condition performance with η &gt; 0.11 and dynamic manipulability with η̄ D &gt; 0.05. In the center, the condition number of Jacobian matrix has the maximum value 0.33, and κ D = 0.12. It means that the 4-RRR manipulator has a better kinematic dexterity and dynamic manipulability in the center.</p>
-<p>中心位置雅克比矩阵考虑</p>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>本文是一种综合考虑运动学与动态性能的优化方案，通过无量纲参数获取杆件尺寸。</p>
-<p>目标操作器具备理想的运动学和动态性能。</p>
-<p>（推导分析后续补充）</p>
+<h2 id="罗马数字："><a href="#罗马数字：" class="headerlink" title="罗马数字："></a>罗马数字：</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>羅馬字</th>
+<th>數字</th>
+<th>羅馬字</th>
+<th>數字</th>
+<th>羅馬字</th>
+<th>數字</th>
+<th>羅馬字</th>
+<th>數字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>1</td>
+<td>XI</td>
+<td>11</td>
+<td>XXI</td>
+<td>21</td>
+<td>C</td>
+<td>100</td>
+</tr>
+<tr>
+<td>II</td>
+<td>2</td>
+<td>XII</td>
+<td>12</td>
+<td>XXIX</td>
+<td>29</td>
+<td>CI</td>
+<td>101</td>
+</tr>
+<tr>
+<td>III</td>
+<td>3</td>
+<td>XIII</td>
+<td>13</td>
+<td>XXX</td>
+<td>30</td>
+<td>CC</td>
+<td>200</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>4</td>
+<td>XIV</td>
+<td>14</td>
+<td>XL</td>
+<td>40</td>
+<td>D</td>
+<td>500</td>
+</tr>
+<tr>
+<td>V</td>
+<td>5</td>
+<td>XV</td>
+<td>15</td>
+<td>XLVIII</td>
+<td>48</td>
+<td>DC</td>
+<td>600</td>
+</tr>
+<tr>
+<td>VI</td>
+<td>6</td>
+<td>XVI</td>
+<td>16</td>
+<td>IL</td>
+<td>49</td>
+<td>CM</td>
+<td>900</td>
+</tr>
+<tr>
+<td>VII</td>
+<td>7</td>
+<td>XVII</td>
+<td>17</td>
+<td>L</td>
+<td>50</td>
+<td>M</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>VIII</td>
+<td>8</td>
+<td>XVIII</td>
+<td>18</td>
+<td>LX</td>
+<td>60</td>
+<td>MDCLXVI</td>
+<td>1666</td>
+</tr>
+<tr>
+<td>IX</td>
+<td>9</td>
+<td>XIX</td>
+<td>19</td>
+<td>XC</td>
+<td>90</td>
+<td>MCMLXX</td>
+<td>1970</td>
+</tr>
+<tr>
+<td>X</td>
+<td>10</td>
+<td>XX</td>
+<td>20</td>
+<td>XCVIII</td>
+<td>98</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="刚度矩阵提取："><a href="#刚度矩阵提取：" class="headerlink" title="刚度矩阵提取："></a>刚度矩阵提取：</h2><ul>
+<li>WB打开不显示： view-reset windows layout，显示前变形状态图</li>
+<li>二力杆节点显示：搜索preference-勾选numbers nodes</li>
+</ul>
+<p>workb提取设置及流程：</p>
+<ol>
+<li>软件中生成 point-genernate-line来自点-截面建立</li>
+<li>mesh sizing-生成修改节点数量</li>
+<li>输出结果中设置：求解方法solution-solver type-direct，analysis data-delete 非必要结构-no</li>
+</ol>
+<p>导入APDL:</p>
+<ol>
+<li>analysis setting-advanced-:求解方法去掉分布式</li>
+<li>读取-component-mechanical APDL模块-插入solution 更新</li>
+<li>APDL read查看模态</li>
+<li>file-list-binary-matrix-sys/mech/.ful文件选择stifness matrix，读取参数-转成txt</li>
+<li>导入matlab文件转码(目前存在问题是，空间结构系统中自动生成的节点与理论节点数量有一定误差，这个后续解决来再补充，应该暂时不会再用到这个东西了)</li>
+</ol>
+<h2 id="PS图片绘制设置-像"><a href="#PS图片绘制设置-像" class="headerlink" title="PS图片绘制设置(像)"></a>PS图片绘制设置(像)</h2><p>图片无损方法：图像大小-重新取样/邻近(赢边缘)宽高</p>
+<p>变形方法：</p>
+<ol>
+<li>滤镜液化 大小自定，压力25</li>
+<li>冻结蒙版，压力100，眼睛下</li>
+<li>转化成智能对象</li>
+<li>视频帧转</li>
+</ol>
+<p>像素前置设置</p>
+<ol>
+<li>6464自订-拉入图片-窗口排列-双联垂直</li>
+<li>视图-显示-像素网格</li>
+<li>文件-存储为png 新建画布10，编辑-首选项-常规(邻近，非像素恢复 C+T放大)</li>
+</ol>
+<h2 id="视频剪辑"><a href="#视频剪辑" class="headerlink" title="视频剪辑"></a>视频剪辑</h2><ol>
+<li>右键导入视频可以拆分轨道</li>
+<li>去黑边方式-按住Crtl可以不锁定宽高比</li>
+<li>缩略图全显示：选项-首选项-视频</li>
+<li>Crtl+G时间点</li>
+<li>反转-创建子剪辑</li>
+<li>shift 工具多机位</li>
+<li>先放大局部-导出视频-重新导入放大</li>
+<li>抠图-视频色键</li>
+<li>运动字幕-使用字幕与文字-文本后图标添加动画-出现关键帧</li>
+<li>导出倍速视频：crtl按住视频边线：左加速右减速，直接拖边线不可以，只会恢复切片或者重复切片。</li>
+</ol>
+<h2 id="MATLAB"><a href="#MATLAB" class="headerlink" title="MATLAB"></a>MATLAB</h2><ol>
+<li>三维矢量图解组失败，一般是由于三维矢量图无法通过图窗复制-导出设置-渲染-printers对钩-应用复制图窗</li>
+</ol>
 ]]></content>
   </entry>
   <entry>
-    <title>ros问题总结</title>
-    <url>/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h1><span id="more"></span>
-<h2 id="缺少cmake文件，安装方式"><a href="#缺少cmake文件，安装方式" class="headerlink" title="缺少cmake文件，安装方式"></a>缺少cmake文件，安装方式</h2><p>提示 xxConfig.cmake 找不到</p>
-<p>查找上一行 …provided by “xx”</p>
-<p>补充  sudo apt-get install ros-ROS版本-xx </p>
-<p>roscore运行出错</p>
-<p>Unable to contact my own server a</p>
-<p>xiaomu@GL:~$ export ROS_HOSTNAME=localhost<br>xiaomu@GL:~$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></p>
-<p>Unable to contact my own server at [<a href="http://192.168.0.106:35623/">http://192.168.0.106:35623/</a>].</p>
-<p>This usually means that the network is not configured properly.</p>
-<p>A common cause is that the machine cannot connect to itself.  Please check<br>for errors by running:</p>
-<pre><code>ping 192.168.0.106
-</code></pre><p>For more tips, please see</p>
-<pre><code>http://www.ros.org/wiki/ROS/NetworkSetup
-</code></pre><p>修正：</p>
-<ol>
-<li>$ export ROS_HOSTNAME=localhost</li>
-<li>$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></li>
-</ol>
+    <title>心情随笔</title>
+    <url>/2024/05/15/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/</url>
+    <content><![CDATA[<h1 id="心情随笔，胡思乱想"><a href="#心情随笔，胡思乱想" class="headerlink" title="心情随笔，胡思乱想"></a>心情随笔，胡思乱想</h1><p>胡乱笔记，想到什么记什么。</p>
+<span id="more"></span>
+<h2 id="无效预演"><a href="#无效预演" class="headerlink" title="无效预演"></a>无效预演</h2><p>最近发现一个不自主的问题，脑子里总是喜欢为不熟悉的事情做预演，但是其实是往往没啥作用，徒劳心力；</p>
+<p>以KE为例，要注意区分用功复习与无效预演的差别，面对来临的安排，最好的做法就是只要没有必须拒绝的理由，就去接受，兵来将挡水来土掩，是一种从容的态度，之前二也是感觉很麻烦，但是结束之后又有一个还算完美的结局，所以接下来的事情，就继续下去；</p>
+<h2 id="间隙性分心："><a href="#间隙性分心：" class="headerlink" title="间隙性分心："></a>间隙性分心：</h2><p>常常无法保持持续的专注力，上一次高效工作还是因为有个明确DDL的时候，反思一下，问题主要在于两个：</p>
+<p>第一是目标比较模糊，虽然知道要去做哪个内容，但是缺少的内容不够明确，比方说已知需要看完那两篇博士论文，整理之前收集的SMM背景,目的是吸收方法，找一些新的分析工具，坐标转换想利用四元数，简洁表述，但是第一步还有问题，正无问题，逆所需要的信息、流程不明确，这是目前急需解决的问题，整理完论文应该就会有结果，周五之前需要结束。</p>
+<p>第二没有完全切断干扰源，luna的视频给了我很大的启发，没有严格的限制就不会有强大的动力去切断干扰，自我设限催眠一下，是一个不错的手段，半执行状态已经能感受到方法的有效性，通过限制增加动力就可以。</p>
+<p>第三短期目标的设置，按照工作量设定目标而非时间阶段非常有效，结合二去执行，受到限制，专注一点。</p>
+<h2 id="对短视频的思考："><a href="#对短视频的思考：" class="headerlink" title="对短视频的思考："></a>对短视频的思考：</h2><p>前几天看了油管上chenlily的新视频，没想到也在为短视频的问题困扰，对我而言，短视频（不以时间长短作为区分，内容含量上的短）其实无所谓，因为我平时也不会去看，我讨厌那些没头没尾的创作内容，持续性的刺激多巴胺，我认为是一种非常下作的创作方法，但是人生就是这样，兜里请揣满人民币，叛逆之前也需要让别人先看到你。</p>
+<p>C之前就表达过为了生存和播放量必须开始制作，其实我能理解，也以为她已经想通了，感觉那还蛮好的，没想到停更了那么久，新视频依然还是在为这个事情困扰，真的是个很纯粹的人了，如果是我的话，以此为生，可能会去双线并行，坚持长vlog的制作，虽然更耗心力，但是这样会有更加长远的好处，观众盘会更加稳定，风评也会越来越好；短视频不会耗费太多精力，那就继续乘着风口挣钱，不要把两类视频的播放量混在一起思考，当成赚钱的工具就行，兴趣当成工作固然幸运，但是大多不得行，做人百分比这个问题真的是个永恒的话题。</p>
+<p>乱七八糟的想法在这里依次补充：</p>
+<p>20240514：用到或者有了明确的想法再去做。</p>
+<p>想得太多会不会活得很累？</p>
 ]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>emotion</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>爬虫记录_bro</title>
+    <url>/2020/12/05/%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95-bro/%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95-bro/</url>
+    <content><![CDATA[<h1 id="爬虫记录"><a href="#爬虫记录" class="headerlink" title="爬虫记录"></a>爬虫记录</h1><p>出于兴趣跟着一个本科的老学长学学这个方向，顺便做个记录，方便查看</p>
+<p>（超级超级基础）</p>
+<p>持续更新…</p>
+<span id="more"></span>
+<p>一些脚本</p>
+<p>油猴插件:<a href="https://www.tampermonkey.net/">https://www.tampermonkey.net/</a><br>脚本:<a href="https://greasyfork.org/zh-CN">https://greasyfork.org/zh-CN</a></p>
+<p>插件入门级别爬虫-webscraper</p>
+<h2 id="单页抓取例子"><a href="#单页抓取例子" class="headerlink" title="单页抓取例子"></a>单页抓取例子</h2><h3 id="选择抓取的对象相关"><a href="#选择抓取的对象相关" class="headerlink" title="选择抓取的对象相关"></a>选择抓取的对象相关</h3><p>打开目标页面-webscraper-create new sitemap—设置相关参数</p>
+<p>抓取开始-根据参数进行填写</p>
+<p>select选取目标-dowload-运行（记得勾选multiple）</p>
+<h3 id="启动设置的脚本过程"><a href="#启动设置的脚本过程" class="headerlink" title="启动设置的脚本过程"></a>启动设置的脚本过程</h3><p>启动-sitemapdouban-scrape-设置时间（根据网速）</p>
+<h3 id="导出过程"><a href="#导出过程" class="headerlink" title="导出过程"></a>导出过程</h3><p>sitemap-export excel文件操作 cav</p>
+<h3 id="过程总结"><a href="#过程总结" class="headerlink" title="过程总结"></a>过程总结</h3><p>1.打开webscraper</p>
+<p>2.创建sitemap</p>
+<p>3.设置selector（根据爬去类型进行分析计算）</p>
+<p>4.启动程序并保存数据</p>
+<p>例子测试，爬一下我自己的博客内容<a href="{/file/title.csv">文件</a>—测试成功</p>
+<p>代码—编写脚本文件</p>
+<p>下一部分是网页开发知识相关—css与html(明晚更新)</p>
+<p>（小事情—【】+（）)</p>
+<h4 id="css-html相关"><a href="#css-html相关" class="headerlink" title="css html相关"></a>css html相关</h4><p>html 超文本标记语言</p>
+<p>css javascript</p>
+<p>css-设置各种字体大小</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>first(runoob.com)<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="selector-tag">body</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">background-color</span>:<span class="number">#d0e4fe</span>;</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">h1</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">color</span>:orange;</span></span><br><span class="line"><span class="language-css">	<span class="attribute">text-align</span>:center;</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">p</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">font-family</span>:<span class="string">"Times New Roman"</span>;</span></span><br><span class="line"><span class="language-css">	<span class="attribute">font-size</span>:<span class="number">20px</span>;</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">h4</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">background-color</span>:red;</span></span><br><span class="line"><span class="language-css">	<span class="attribute">text-align</span>:center;</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">a</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">color</span>: red</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">h4</span> <span class="selector-tag">b</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">color</span>: blue</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>简单测试一下!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是WM的个人博客。<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"www.xiaomuh.cn"</span>&gt;</span>小牧网站<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>笔记相关<span class="tag">&lt;<span class="name">b</span> <span class="attr">href</span>=<span class="string">"www.google.cn/"</span>&gt;</span>搜索学习<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<p>elements-</p>
+<h2 id="选择多列信息"><a href="#选择多列信息" class="headerlink" title="选择多列信息"></a>选择多列信息</h2><p>常规方式-第二类爬取不勾选mutiply</p>
+<p>sitemap_new</p>
+<p>选择元素的原因是，提供一个较为精确的基准，方便多列爬取而不发生错误排列。</p>
+<p>elements 元素选择器  —li class</p>
+<p>选择按钮—之后在下方查看各个参数信息</p>
+<p><strong>整体—格式改变—选择elements—multiply</strong></p>
+<p>进入从分支选择-txt格式文件</p>
+<p>对齐—第一个选择作为基准-其余不勾选multiply可以自动对齐</p>
+<p>尝试爬取论文</p>
+<p>graph查看节点分布</p>
+<h2 id="翻页功能"><a href="#翻页功能" class="headerlink" title="翻页功能"></a>翻页功能</h2><p>根据翻页链接比较区别</p>
+<p>url链接页数格式修改</p>
+<p><strong>页数[1-n],可进行选择页数遍历</strong>(尝试抓取liu博的机器人文章内容)如下</p>
+<p>对于？后面的条件参数可以忽略(测试一下)</p>
+<p>文件-zhuhuyys.csv完成</p>
+<p>TH—缺乏隔多页处理方法，简介只能表面列表，针对不规则链接如何进行分析应用</p>
+<h2 id="等差翻页方式"><a href="#等差翻页方式" class="headerlink" title="等差翻页方式"></a>等差翻页方式</h2><p>比如豆瓣差值页数差值为25</p>
+<p>[0-225:25] </p>
+<p>关于常见网站翻页方式</p>
+<p>翻页</p>
+<h2 id="滚动形式网页怎么抓取"><a href="#滚动形式网页怎么抓取" class="headerlink" title="滚动形式网页怎么抓取"></a>滚动形式网页怎么抓取</h2><h3 id="1-制作-Sitemap"><a href="#1-制作-Sitemap" class="headerlink" title="1.制作 Sitemap"></a>1.制作 Sitemap</h3><p>刚开始我们要先创建一个 container，包含要抓取的三类数据，为了实现滚动到底加载数据的功能，我们把 <strong>container 的 Type 选为 <code>Element scroll down</code></strong>，就是滚动到网页底部加载数据的意思。</p>
+<p><strong>元素名后加个 <code>nth-of-type(-n+100)</code></strong>，暂时只抓取前 100 条数据。注意加：</p>
+<p><strong>以上是重点</strong> </p>
+<p>然后我们保存 container 这个节点，并在这个节点下选择要抓取的三个数据类型。</p>
+<p>首先是标题，我们取名为 title，选择的元素名为 <code>[itemprop='zhihu:question'] a</code>：</p>
+<p>然后是答题人名字 name 与 赞同数 like，选择的元素名分别为 <code>#Popover10-toggle a</code> 和 <code>button.VoteButton--up</code>：</p>
+<p>尝试爬取readhub滚动网页相关内容</p>
+<p>p父话题   由单体选择不要总体选了再父话题，容易出错。无法选择到单个框位置，就先选标题再通过p选框，在选择整体。</p>
+<p>完成</p>
+<h3 id="翻页-滚动型混合界面"><a href="#翻页-滚动型混合界面" class="headerlink" title="翻页 滚动型混合界面"></a>翻页 滚动型混合界面</h3><p>滚动型页面收集方式基本类似，</p>
+<p>sitemap-type</p>
+<p>微博混合型抓取马前卒新闻页面尝试</p>
+<p>翻页寻找规律</p>
+<p>马微博是混合型</p>
+<p><a href="https://weibo.com/u/6534413254">https://weibo.com/u/6534413254</a></p>
+<p><a href="https://weibo.com/u/6534413254?is_search=0&amp;visible=0&amp;is_all=1&amp;is_tag=0&amp;profile_ftype=1&amp;page=2#feedtop">https://weibo.com/u/6534413254?is_search=0&amp;visible=0&amp;is_all=1&amp;is_tag=0&amp;profile_ftype=1&amp;page=2#feedtop</a></p>
+<p><a href="https://weibo.com/u/6534413254?is_search=0&amp;visible=0&amp;is_all=1&amp;is_tag=0&amp;profile_ftype=1&amp;page=3#feedtop">https://weibo.com/u/6534413254?is_search=0&amp;visible=0&amp;is_all=1&amp;is_tag=0&amp;profile_ftype=1&amp;page=3#feedtop</a></p>
+<p>可以发现规律</p>
+<p>需要限定数量就选择 <strong><code>nth-of-type(-n+100)</code></strong></p>
+<p>修改界面 edit metadata 修改爬取到页数</p>
+<p>作业：没有规律网页如何翻页爬取</p>
+<p>提示：element click 点击爬取</p>
+<h2 id="点击爬取-无规则翻页"><a href="#点击爬取-无规则翻页" class="headerlink" title="点击爬取-无规则翻页"></a>点击爬取-无规则翻页</h2><p>element click</p>
+<p>click selector</p>
+<p>选择 css  selector</p>
+<p> 选择多个项目，完成</p>
+<p>思考：这个可以应用于所有翻页型网页，无论有没有规则。</p>
+<p>作为书签 选择link类型</p>
+<p>测试—知乎yys</p>
+<p>emmm</p>
+<p>文章太少嘞，换个师兄，知名劝退师兄2333</p>
+<p>内容太多了</p>
+<p>思考：如何爬取详细信息—-界面信息内容较少，无法获得有效信息</p>
+<p>解决方式 下一节</p>
+<h2 id="爬取子页面具体信息"><a href="#爬取子页面具体信息" class="headerlink" title="爬取子页面具体信息"></a>爬取子页面具体信息</h2><p>sitemap</p>
+<p>子内容选择link，点击目标链接</p>
+<p>切换目标页面，重新在同一项目中操作，选择内容进行操作</p>
+<p>测试 YYS文章，尝试加入翻页功能</p>
+<p>测试完成 保存于硬盘</p>
+<h2 id="爬取图片文件"><a href="#爬取图片文件" class="headerlink" title="爬取图片文件"></a>爬取图片文件</h2><p>目标网页</p>
+<p>类型选择图片image</p>
+<p>点击链接可以显示图片</p>
+<h2 id="一些法律小知识"><a href="#一些法律小知识" class="headerlink" title="一些法律小知识"></a>一些法律小知识</h2><p>数据不可商业化活动</p>
+<p>UTS相关规定</p>
+<p>robots.txt</p>
+<p>软件爬虫告一段落，目前为止，较为简单，算是学学新东西，下一阶段顺便复习一下语法基础。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>transformation_feel</title>
+    <url>/2024/08/16/transformation-feel/transformation-feel/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
+<h1 id="旋转变换的一些想法记录"><a href="#旋转变换的一些想法记录" class="headerlink" title="旋转变换的一些想法记录"></a><strong>旋转变换的一些想法记录</strong></h1><p>空间一点关于任意轴旋转，点变换之间的关系以及传统坐标转换的解读</p>
+<span id="more"></span>
+<h2 id="旋转轴"><a href="#旋转轴" class="headerlink" title="旋转轴"></a>旋转轴</h2><p>一般说法，已知P点在B坐标系下坐标，通过旋转矩阵可以求得P点在A坐标系下的坐标</p>
+<script type="math/tex; mode=display">
+{ }^A P={ }_B^A R^B P</script><p>也可以理解为，P点A坐标系下的原运动点通过旋转运动得到新的点P’，均基于A坐标系，与前者的区别在于对于点意义的理解，即坐标系为主体变换与以点为主体变换，旋转矩阵则是绕某一根轴旋转theta，绕任意轴按照这个方式理解。</p>
+<script type="math/tex; mode=display">
+{ }^A P^{\prime}=R(\theta)^A P</script><p>绕任意轴旋转的通式推导大家都很熟悉，本质也是在求取R的过程，</p>
+<script type="math/tex; mode=display">
+P^{\prime}=T \cdot R \cdot T^{-1} \cdot P</script><script type="math/tex; mode=display">
+M=T(-x,-y,-z) \cdot R x(-\alpha) \cdot R y(\beta) \cdot R z(\theta) \cdot R y(-\beta) \cdot R x(\alpha) \cdot T(x, y, z)</script><script type="math/tex; mode=display">
+\left[\begin{array}{cccc}
+u^2+\left(v^2+w^2\right) \cos \theta & u v(1-\cos \theta)-w \sin \theta & u w(1-\cos \theta)+v \sin \theta & \left(a\left(v^2+w^2\right)-u(b v+c w)\right)(1-\cos \theta)+(b w-c v) \sin \theta \\
+u v(1-\cos \theta)+w \sin \theta & v^2+\left(u^2+w^2\right) \cos \theta & v w(1-\cos \theta)-u \sin \theta & \left(b\left(u^2+w^2\right)-v(a u+c w)\right)(1-\cos \theta)+(c u-a w) \sin \theta \\
+u w(1-\cos \theta)-v \sin \theta & v w(1-\cos \theta)+u \sin \theta & w^2+\left(u^2+v^2\right) \cos \theta & \left(c\left(u^2+v^2\right)-w(a u+b v)\right)(1-\cos \theta)+(a v-b u) \sin \theta \\
+0 & 0 & 0 & 1
+\end{array}\right]</script><p>前后的变换过程目的是将任意轴线与Z轴重合，然后恢复，保证相对基坐标系下进行变换，此时，P点表示A坐标下位置，而P‘表示A坐标系下旋转后的位置，这里附上已经验证过的matlab矩阵代码，方便使用：</p>
+<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">RT=[u^<span class="number">2</span>+(v^<span class="number">2</span>+w^<span class="number">2</span>)*<span class="built_in">cos</span>(theta),u*v*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))-w*<span class="built_in">sin</span>(theta),u*w*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+v*<span class="built_in">sin</span>(theta),(a1*(v^<span class="number">2</span>+w^<span class="number">2</span>)-u*(b1*v+c1*w))*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+(b1*w-c1*v)*<span class="built_in">sin</span>(theta);</span><br><span class="line">    u*v*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+w*<span class="built_in">sin</span>(theta),v^<span class="number">2</span>+(u^<span class="number">2</span>+w^<span class="number">2</span>)*<span class="built_in">cos</span>(theta),v*w*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))-u*<span class="built_in">sin</span>(theta),(b1*(u^<span class="number">2</span>+w^<span class="number">2</span>)-v*(a1*u+c1*w))*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+(c1*u-a1*w)*<span class="built_in">sin</span>(theta);</span><br><span class="line">    u*w*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))-v*<span class="built_in">sin</span>(theta),v*w*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+u*<span class="built_in">sin</span>(theta),w^<span class="number">2</span>+(u^<span class="number">2</span>+v^<span class="number">2</span>)*<span class="built_in">cos</span>(theta),(c1*(u^<span class="number">2</span>+v^<span class="number">2</span>)-w*(a1*u+b1*v))*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+(a1*v-b1*u)*<span class="built_in">sin</span>(theta);</span><br><span class="line">    <span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>]</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="DH坐标及相对变换"><a href="#DH坐标及相对变换" class="headerlink" title="DH坐标及相对变换"></a>DH坐标及相对变换</h2><p>右乘的案例理解，动系指的各个阶段的坐标系，而非最终系（用词不标准，体会即可）</p>
+<p>四面体作为一种稳定机构单元，其旋转过程中相邻旋转轴线的夹角是固定的，因此可以直接应用DH法获取各个轴系之间的运动关系，但是运动单元不然，各个轴线之间存在闭合并联支链，运动关系复杂，不能直接获取关系，应用四元数本身与直接在笛卡尔坐标系在进行变换的意义是相同的，只是表示方法不同，然后就四元数可以调用的包多一点，不需要基于原理摸代码，表示上也更为简单，但是后续的运动速度分析，存在一定问题，方案待定，需要进一步理解概念。</p>
+<p>坐标A-B的变换，以四面体为例，两个相邻的轴线，以A系为基准，就难以寻找关系，以B系为基准，按照B系各个动坐标分阶段的变换获取关系，已知A-B,需要先平移后旋转，因此以第一阶段平移B动坐标为基础，初次平移结束，此时动B的Z轴与A的Z轴方向一致，因此按照此坐标则是沿着Z2轴正向平移，重合之后开始第二阶段的转换，该过程右乘。</p>
+<p>总结，左乘最为常见，概念上右乘是指针对动坐标系，但是实际需要理解，针对的是A-B过程中每一次变换的动坐标系，而非最终合成B系，直接以B系进行参考，很容易糊涂，假设A-B,需要经过旋转1，平移1，旋转2，则DH关系转换中，则是以旋转1系，平移系，以及旋转2三个坐标系为基准依次右乘，其变换也是这个过程，据此可以理解转换公式，完成推导。</p>
+<h2 id="对称变换及速度关系"><a href="#对称变换及速度关系" class="headerlink" title="对称变换及速度关系"></a>对称变换及速度关系</h2><p>待补充</p>
+]]></content>
+      <categories>
+        <category>learning</category>
+      </categories>
+      <tags>
+        <tag>mathematic</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录</title>
+    <url>/2021/01/06/%E8%AE%B0%E5%BD%95/%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h1 id="会议记录"><a href="#会议记录" class="headerlink" title="会议记录"></a>会议记录</h1><p>学习，学习一下</p>
+<span id="more"></span>
+<p> human-like，行为传递</p>
+<p>接触性作业—需要涉及force control</p>
+<p>阻抗控制</p>
+<p>刚度无法直接测量—机电信号与刚度信号</p>
+<p>类人控制从两方面思考</p>
+<p>1.控制器 </p>
+<p>2.操作</p>
+<p>敲钉子—固定位置，但是又不可以握紧，松一点反而方便操作</p>
+<p>对刚度矩阵进行操作，控制</p>
+<p>接触力与刚度</p>
+<hr>
+<p>刚度不变，改变接触力；接触力基本不变改变刚度</p>
+<hr>
+<p>控制模型（学习模型）</p>
+<p>对干扰方向增加刚度，其余方向保持柔顺，</p>
+<p>变刚度控制—保证精确控制</p>
+<p>其余应用：</p>
+<p>人机协同领域：根据人力改变刚度，比如锯木头案例</p>
+<p>机器人与环境交互</p>
+<p><strong>一项思考，针对水阻力进行变刚度控制，是否能实现精确位置控制，抵抗阻力呢，可以尝试··</strong></p>
+<p>2011文章</p>
+<p>分布于力场中的机构，运动，未知力场（流体力场？）保证机器人进行直线运动，进行轨迹规划，可以借鉴，论文</p>
+<p>如何分析力场？神经网络学习力场</p>
+<p>增量学习法控制器，是机械臂沿直线运动，学习之后进行目标运动</p>
+<p>示教学习</p>
+<p>c.yang ieee tll 2018</p>
+<p>泛化—分割</p>
+<p>大多考虑运动控制，考虑力控制，才能实现精确作业</p>
+<p>通过机械脉冲，测量刚度</p>
+<p>基于IMUs和ARM model测量</p>
+<p>力、刚度stiffness、位置控制</p>
+<h2 id="遥操作相关"><a href="#遥操作相关" class="headerlink" title="遥操作相关"></a>遥操作相关</h2><p>特殊环境通信？？</p>
+<p>避障—机器人建模</p>
+<p>了解一下  MYO armhand</p>
+<p>双臂操作 控制小车</p>
+<p>利用操作杆 控制小车</p>
+<p>优点：手环只有视觉效果，这里是否可以应用于目前手机厂商的手环产品上呢？可以尝试一下</p>
+<p>操作杆：可以有力反馈</p>
+<p>虚拟环境力反馈，模仿了人类的视角作业</p>
+<p>12.30 — 20.30</p>
+<p>增量学习-鲁棒项</p>
+<p>希望实现全局稳定—当运动范围过大时，加入鲁棒项进行回收。</p>
+<p>学习外界环境</p>
+<p>力场，不考虑机构本身，利用机构本身控制模型去学习外场，这样是否可以在动力模型不引入外阻力项，仅仅通过外刚度变化控制，实现对于未知力场学习后，进行精确轨迹路线的规划。</p>
+<p>示教学习是一个良好的方向</p>
+<p>云服务应用于示教学习，案例共享。</p>
+<p>组装工序</p>
+<p>LQR线性模型学习人体阻抗模型</p>
+<p>保持本身—外部环境隔开-学习外部环境</p>
+<p>机电信号测量刚度—-匹配刚度矩阵—</p>
+<p>长时间泛化 误差累积和噪声累积</p>
+<p>RBF神经网络学习</p>
+<p>扩大范围，进行控制覆盖，建立地图。</p>
+<p>神经网络用于提高性能，优化</p>
+<p>稳定利用传统控制方法进行稳定</p>
+<p>一对多控制</p>
+<p>emgsensor 8通道</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>随笔II</title>
+    <url>/2024/08/05/%E9%9A%8F%E7%AC%94II/%E9%9A%8F%E7%AC%94II/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"><br>平常心平常心~</p>
+<span id="more"></span>
+<p>做事要有耐心，要对家人有耐心，要对陌生人有耐心。</p>
+<p>经常遇到自己不乐意的事情就容易表露出来，给人一种拒人千里的感觉，事后老后悔让别人不开心了，真的不太好，多点换位思考，耐心一点。</p>
+<hr>
+<p>最近事情比较多，论文写的也不太顺利，其实内容上已经没有太大问题，运动模式部分还需要看数据才能判断怎么区分维度和驱动速度的关系，得得踏踏实实的推进实质内容了，8月5日周一，这周需要一些进度完成，动力学部分在运动模式部分加入一下，曲线规划也有一部分内容，至少20号之前要有个中期初版。</p>
+<hr>
+<p>看了个医疗电视剧问心，结局还是停留在美好了，其实往后想想还是一堆问题，曾经向往真挚的情感，现在开始更多考虑现实，与一些朋友要保持距离，开开心心的聊天就行，柴米油盐才是生活的本质，人的成分也基本一致，漫长的时光会磨灭一切。</p>
+<p>护士长因为自己产检，没有及时把钱打回账户，刚看到的时候，那一瞬间有点怪人家，连带着辩护都有些讨厌，后来一想，其实是可以理解得，毕竟人家的事情更重要，比较下来这边的事情也不是很重要，后来也可以澄清，突然开始觉得自己可恶，怎么可以怪人家，现实里也是，真得多想想，耐心一点耐心一点，绕绕路等等人呗~</p>
+<p>再就是年龄问题，平时看动漫看其他电视剧，看看主角的年龄总会觉得自己真老了，佟湘玉都说自己24岁，但是看看这个剧，又感觉自己也不是很老，培养一个医学博士需要耗费相当久的时间，虽然不是学医得，但是经历也算类似，所以还是希望像剧中人一样可以选择不受牵绊的去做一些自己想做的事情，没必要一直纠结。</p>
+<p>毛晓彤确实有点甜分超标，过于可爱了属于是233</p>
+<hr>
+<ul>
+<li>[x] 其实都不太重要，还是耐心比较重要，有时候自己麻烦一点，让别人舒心，后续也会开心一点，就这样，当然是对家人、对朋友。</li>
+</ul>
+
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>EMO</tag>
+      </tags>
   </entry>
   <entry>
     <title></title>
@@ -3616,173 +4009,25 @@ m_1 & 0 \\
 <h2 id="ROSGO"><a href="#ROSGO" class="headerlink" title="ROSGO"></a>ROSGO</h2>]]></content>
   </entry>
   <entry>
-    <title>skill</title>
-    <url>/2024/03/20/skill/skill/</url>
-    <content><![CDATA[<h1 id="EVERYDAY速查总结"><a href="#EVERYDAY速查总结" class="headerlink" title="EVERYDAY速查总结"></a>EVERYDAY速查总结</h1><p>一些小技巧总结，方便补充查阅</p>
-<span id="more"></span>
-<h2 id="罗马数字："><a href="#罗马数字：" class="headerlink" title="罗马数字："></a>罗马数字：</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>羅馬字</th>
-<th>數字</th>
-<th>羅馬字</th>
-<th>數字</th>
-<th>羅馬字</th>
-<th>數字</th>
-<th>羅馬字</th>
-<th>數字</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>I</td>
-<td>1</td>
-<td>XI</td>
-<td>11</td>
-<td>XXI</td>
-<td>21</td>
-<td>C</td>
-<td>100</td>
-</tr>
-<tr>
-<td>II</td>
-<td>2</td>
-<td>XII</td>
-<td>12</td>
-<td>XXIX</td>
-<td>29</td>
-<td>CI</td>
-<td>101</td>
-</tr>
-<tr>
-<td>III</td>
-<td>3</td>
-<td>XIII</td>
-<td>13</td>
-<td>XXX</td>
-<td>30</td>
-<td>CC</td>
-<td>200</td>
-</tr>
-<tr>
-<td>IV</td>
-<td>4</td>
-<td>XIV</td>
-<td>14</td>
-<td>XL</td>
-<td>40</td>
-<td>D</td>
-<td>500</td>
-</tr>
-<tr>
-<td>V</td>
-<td>5</td>
-<td>XV</td>
-<td>15</td>
-<td>XLVIII</td>
-<td>48</td>
-<td>DC</td>
-<td>600</td>
-</tr>
-<tr>
-<td>VI</td>
-<td>6</td>
-<td>XVI</td>
-<td>16</td>
-<td>IL</td>
-<td>49</td>
-<td>CM</td>
-<td>900</td>
-</tr>
-<tr>
-<td>VII</td>
-<td>7</td>
-<td>XVII</td>
-<td>17</td>
-<td>L</td>
-<td>50</td>
-<td>M</td>
-<td>1000</td>
-</tr>
-<tr>
-<td>VIII</td>
-<td>8</td>
-<td>XVIII</td>
-<td>18</td>
-<td>LX</td>
-<td>60</td>
-<td>MDCLXVI</td>
-<td>1666</td>
-</tr>
-<tr>
-<td>IX</td>
-<td>9</td>
-<td>XIX</td>
-<td>19</td>
-<td>XC</td>
-<td>90</td>
-<td>MCMLXX</td>
-<td>1970</td>
-</tr>
-<tr>
-<td>X</td>
-<td>10</td>
-<td>XX</td>
-<td>20</td>
-<td>XCVIII</td>
-<td>98</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="刚度矩阵提取："><a href="#刚度矩阵提取：" class="headerlink" title="刚度矩阵提取："></a>刚度矩阵提取：</h2><ul>
-<li>WB打开不显示： view-reset windows layout，显示前变形状态图</li>
-<li>二力杆节点显示：搜索preference-勾选numbers nodes</li>
-</ul>
-<p>workb提取设置及流程：</p>
+    <title>ros问题总结</title>
+    <url>/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h1><span id="more"></span>
+<h2 id="缺少cmake文件，安装方式"><a href="#缺少cmake文件，安装方式" class="headerlink" title="缺少cmake文件，安装方式"></a>缺少cmake文件，安装方式</h2><p>提示 xxConfig.cmake 找不到</p>
+<p>查找上一行 …provided by “xx”</p>
+<p>补充  sudo apt-get install ros-ROS版本-xx </p>
+<p>roscore运行出错</p>
+<p>Unable to contact my own server a</p>
+<p>xiaomu@GL:~$ export ROS_HOSTNAME=localhost<br>xiaomu@GL:~$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></p>
+<p>Unable to contact my own server at [<a href="http://192.168.0.106:35623/">http://192.168.0.106:35623/</a>].</p>
+<p>This usually means that the network is not configured properly.</p>
+<p>A common cause is that the machine cannot connect to itself.  Please check<br>for errors by running:</p>
+<pre><code>ping 192.168.0.106
+</code></pre><p>For more tips, please see</p>
+<pre><code>http://www.ros.org/wiki/ROS/NetworkSetup
+</code></pre><p>修正：</p>
 <ol>
-<li>软件中生成 point-genernate-line来自点-截面建立</li>
-<li>mesh sizing-生成修改节点数量</li>
-<li>输出结果中设置：求解方法solution-solver type-direct，analysis data-delete 非必要结构-no</li>
-</ol>
-<p>导入APDL:</p>
-<ol>
-<li>analysis setting-advanced-:求解方法去掉分布式</li>
-<li>读取-component-mechanical APDL模块-插入solution 更新</li>
-<li>APDL read查看模态</li>
-<li>file-list-binary-matrix-sys/mech/.ful文件选择stifness matrix，读取参数-转成txt</li>
-<li>导入matlab文件转码(目前存在问题是，空间结构系统中自动生成的节点与理论节点数量有一定误差，这个后续解决来再补充，应该暂时不会再用到这个东西了)</li>
-</ol>
-<h2 id="PS图片绘制设置-像"><a href="#PS图片绘制设置-像" class="headerlink" title="PS图片绘制设置(像)"></a>PS图片绘制设置(像)</h2><p>图片无损方法：图像大小-重新取样/邻近(赢边缘)宽高</p>
-<p>变形方法：</p>
-<ol>
-<li>滤镜液化 大小自定，压力25</li>
-<li>冻结蒙版，压力100，眼睛下</li>
-<li>转化成智能对象</li>
-<li>视频帧转</li>
-</ol>
-<p>像素前置设置</p>
-<ol>
-<li>6464自订-拉入图片-窗口排列-双联垂直</li>
-<li>视图-显示-像素网格</li>
-<li>文件-存储为png 新建画布10，编辑-首选项-常规(邻近，非像素恢复 C+T放大)</li>
-</ol>
-<h2 id="视频剪辑"><a href="#视频剪辑" class="headerlink" title="视频剪辑"></a>视频剪辑</h2><ol>
-<li>右键导入视频可以拆分轨道</li>
-<li>去黑边方式-按住Crtl可以不锁定宽高比</li>
-<li>缩略图全显示：选项-首选项-视频</li>
-<li>Crtl+G时间点</li>
-<li>反转-创建子剪辑</li>
-<li>shift 工具多机位</li>
-<li>先放大局部-导出视频-重新导入放大</li>
-<li>抠图-视频色键</li>
-<li>运动字幕-使用字幕与文字-文本后图标添加动画-出现关键帧</li>
-<li>导出倍速视频：crtl按住视频边线：左加速右减速，直接拖边线不可以，只会恢复切片或者重复切片。</li>
-</ol>
-<h2 id="MATLAB"><a href="#MATLAB" class="headerlink" title="MATLAB"></a>MATLAB</h2><ol>
-<li>三维矢量图解组失败，一般是由于三维矢量图无法通过图窗复制-导出设置-渲染-printers对钩-应用复制图窗</li>
+<li>$ export ROS_HOSTNAME=localhost</li>
+<li>$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></li>
 </ol>
 ]]></content>
   </entry>
@@ -3825,251 +4070,6 @@ m_1 & 0 \\
       </categories>
       <tags>
         <tag>emotion</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>transformation_feel</title>
-    <url>/2024/08/16/transformation-feel/transformation-feel/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
-<h1 id="旋转变换的一些想法记录"><a href="#旋转变换的一些想法记录" class="headerlink" title="旋转变换的一些想法记录"></a><strong>旋转变换的一些想法记录</strong></h1><p>空间一点关于任意轴旋转，点变换之间的关系以及传统坐标转换的解读</p>
-<span id="more"></span>
-<h2 id="旋转轴"><a href="#旋转轴" class="headerlink" title="旋转轴"></a>旋转轴</h2><p>一般说法，已知P点在B坐标系下坐标，通过旋转矩阵可以求得P点在A坐标系下的坐标</p>
-<script type="math/tex; mode=display">
-{ }^A P={ }_B^A R^B P</script><p>也可以理解为，P点A坐标系下的原运动点通过旋转运动得到新的点P’，均基于A坐标系，与前者的区别在于对于点意义的理解，即坐标系为主体变换与以点为主体变换，旋转矩阵则是绕某一根轴旋转theta，绕任意轴按照这个方式理解。</p>
-<script type="math/tex; mode=display">
-{ }^A P^{\prime}=R(\theta)^A P</script><p>绕任意轴旋转的通式推导大家都很熟悉，本质也是在求取R的过程，</p>
-<script type="math/tex; mode=display">
-P^{\prime}=T \cdot R \cdot T^{-1} \cdot P</script><script type="math/tex; mode=display">
-M=T(-x,-y,-z) \cdot R x(-\alpha) \cdot R y(\beta) \cdot R z(\theta) \cdot R y(-\beta) \cdot R x(\alpha) \cdot T(x, y, z)</script><script type="math/tex; mode=display">
-\left[\begin{array}{cccc}
-u^2+\left(v^2+w^2\right) \cos \theta & u v(1-\cos \theta)-w \sin \theta & u w(1-\cos \theta)+v \sin \theta & \left(a\left(v^2+w^2\right)-u(b v+c w)\right)(1-\cos \theta)+(b w-c v) \sin \theta \\
-u v(1-\cos \theta)+w \sin \theta & v^2+\left(u^2+w^2\right) \cos \theta & v w(1-\cos \theta)-u \sin \theta & \left(b\left(u^2+w^2\right)-v(a u+c w)\right)(1-\cos \theta)+(c u-a w) \sin \theta \\
-u w(1-\cos \theta)-v \sin \theta & v w(1-\cos \theta)+u \sin \theta & w^2+\left(u^2+v^2\right) \cos \theta & \left(c\left(u^2+v^2\right)-w(a u+b v)\right)(1-\cos \theta)+(a v-b u) \sin \theta \\
-0 & 0 & 0 & 1
-\end{array}\right]</script><p>前后的变换过程目的是将任意轴线与Z轴重合，然后恢复，保证相对基坐标系下进行变换，此时，P点表示A坐标下位置，而P‘表示A坐标系下旋转后的位置，这里附上已经验证过的matlab矩阵代码，方便使用：</p>
-<figure class="highlight matlab"><table><tbody><tr><td class="code"><pre><span class="line">RT=[u^<span class="number">2</span>+(v^<span class="number">2</span>+w^<span class="number">2</span>)*<span class="built_in">cos</span>(theta),u*v*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))-w*<span class="built_in">sin</span>(theta),u*w*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+v*<span class="built_in">sin</span>(theta),(a1*(v^<span class="number">2</span>+w^<span class="number">2</span>)-u*(b1*v+c1*w))*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+(b1*w-c1*v)*<span class="built_in">sin</span>(theta);</span><br><span class="line">    u*v*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+w*<span class="built_in">sin</span>(theta),v^<span class="number">2</span>+(u^<span class="number">2</span>+w^<span class="number">2</span>)*<span class="built_in">cos</span>(theta),v*w*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))-u*<span class="built_in">sin</span>(theta),(b1*(u^<span class="number">2</span>+w^<span class="number">2</span>)-v*(a1*u+c1*w))*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+(c1*u-a1*w)*<span class="built_in">sin</span>(theta);</span><br><span class="line">    u*w*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))-v*<span class="built_in">sin</span>(theta),v*w*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+u*<span class="built_in">sin</span>(theta),w^<span class="number">2</span>+(u^<span class="number">2</span>+v^<span class="number">2</span>)*<span class="built_in">cos</span>(theta),(c1*(u^<span class="number">2</span>+v^<span class="number">2</span>)-w*(a1*u+b1*v))*(<span class="number">1</span>-<span class="built_in">cos</span>(theta))+(a1*v-b1*u)*<span class="built_in">sin</span>(theta);</span><br><span class="line">    <span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>]</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="DH坐标及相对变换"><a href="#DH坐标及相对变换" class="headerlink" title="DH坐标及相对变换"></a>DH坐标及相对变换</h2><p>右乘的案例理解，动系指的各个阶段的坐标系，而非最终系（用词不标准，体会即可）</p>
-<p>四面体作为一种稳定机构单元，其旋转过程中相邻旋转轴线的夹角是固定的，因此可以直接应用DH法获取各个轴系之间的运动关系，但是运动单元不然，各个轴线之间存在闭合并联支链，运动关系复杂，不能直接获取关系，应用四元数本身与直接在笛卡尔坐标系在进行变换的意义是相同的，只是表示方法不同，然后就四元数可以调用的包多一点，不需要基于原理摸代码，表示上也更为简单，但是后续的运动速度分析，存在一定问题，方案待定，需要进一步理解概念。</p>
-<p>坐标A-B的变换，以四面体为例，两个相邻的轴线，以A系为基准，就难以寻找关系，以B系为基准，按照B系各个动坐标分阶段的变换获取关系，已知A-B,需要先平移后旋转，因此以第一阶段平移B动坐标为基础，初次平移结束，此时动B的Z轴与A的Z轴方向一致，因此按照此坐标则是沿着Z2轴正向平移，重合之后开始第二阶段的转换，该过程右乘。</p>
-<p>总结，左乘最为常见，概念上右乘是指针对动坐标系，但是实际需要理解，针对的是A-B过程中每一次变换的动坐标系，而非最终合成B系，直接以B系进行参考，很容易糊涂，假设A-B,需要经过旋转1，平移1，旋转2，则DH关系转换中，则是以旋转1系，平移系，以及旋转2三个坐标系为基准依次右乘，其变换也是这个过程，据此可以理解转换公式，完成推导。</p>
-<h2 id="对称变换及速度关系"><a href="#对称变换及速度关系" class="headerlink" title="对称变换及速度关系"></a>对称变换及速度关系</h2><p>待补充</p>
-]]></content>
-      <categories>
-        <category>learning</category>
-      </categories>
-      <tags>
-        <tag>mathematic</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>心情随笔</title>
-    <url>/2024/05/15/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/</url>
-    <content><![CDATA[<h1 id="心情随笔，胡思乱想"><a href="#心情随笔，胡思乱想" class="headerlink" title="心情随笔，胡思乱想"></a>心情随笔，胡思乱想</h1><p>胡乱笔记，想到什么记什么。</p>
-<span id="more"></span>
-<h2 id="无效预演"><a href="#无效预演" class="headerlink" title="无效预演"></a>无效预演</h2><p>最近发现一个不自主的问题，脑子里总是喜欢为不熟悉的事情做预演，但是其实是往往没啥作用，徒劳心力；</p>
-<p>以KE为例，要注意区分用功复习与无效预演的差别，面对来临的安排，最好的做法就是只要没有必须拒绝的理由，就去接受，兵来将挡水来土掩，是一种从容的态度，之前二也是感觉很麻烦，但是结束之后又有一个还算完美的结局，所以接下来的事情，就继续下去；</p>
-<h2 id="间隙性分心："><a href="#间隙性分心：" class="headerlink" title="间隙性分心："></a>间隙性分心：</h2><p>常常无法保持持续的专注力，上一次高效工作还是因为有个明确DDL的时候，反思一下，问题主要在于两个：</p>
-<p>第一是目标比较模糊，虽然知道要去做哪个内容，但是缺少的内容不够明确，比方说已知需要看完那两篇博士论文，整理之前收集的SMM背景,目的是吸收方法，找一些新的分析工具，坐标转换想利用四元数，简洁表述，但是第一步还有问题，正无问题，逆所需要的信息、流程不明确，这是目前急需解决的问题，整理完论文应该就会有结果，周五之前需要结束。</p>
-<p>第二没有完全切断干扰源，luna的视频给了我很大的启发，没有严格的限制就不会有强大的动力去切断干扰，自我设限催眠一下，是一个不错的手段，半执行状态已经能感受到方法的有效性，通过限制增加动力就可以。</p>
-<p>第三短期目标的设置，按照工作量设定目标而非时间阶段非常有效，结合二去执行，受到限制，专注一点。</p>
-<h2 id="对短视频的思考："><a href="#对短视频的思考：" class="headerlink" title="对短视频的思考："></a>对短视频的思考：</h2><p>前几天看了油管上chenlily的新视频，没想到也在为短视频的问题困扰，对我而言，短视频（不以时间长短作为区分，内容含量上的短）其实无所谓，因为我平时也不会去看，我讨厌那些没头没尾的创作内容，持续性的刺激多巴胺，我认为是一种非常下作的创作方法，但是人生就是这样，兜里请揣满人民币，叛逆之前也需要让别人先看到你。</p>
-<p>C之前就表达过为了生存和播放量必须开始制作，其实我能理解，也以为她已经想通了，感觉那还蛮好的，没想到停更了那么久，新视频依然还是在为这个事情困扰，真的是个很纯粹的人了，如果是我的话，以此为生，可能会去双线并行，坚持长vlog的制作，虽然更耗心力，但是这样会有更加长远的好处，观众盘会更加稳定，风评也会越来越好；短视频不会耗费太多精力，那就继续乘着风口挣钱，不要把两类视频的播放量混在一起思考，当成赚钱的工具就行，兴趣当成工作固然幸运，但是大多不得行，做人百分比这个问题真的是个永恒的话题。</p>
-<p>乱七八糟的想法在这里依次补充：</p>
-<p>20240514：用到或者有了明确的想法再去做。</p>
-<p>想得太多会不会活得很累？</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>emotion</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>爬虫记录_bro</title>
-    <url>/2020/12/05/%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95-bro/%E7%88%AC%E8%99%AB%E8%AE%B0%E5%BD%95-bro/</url>
-    <content><![CDATA[<h1 id="爬虫记录"><a href="#爬虫记录" class="headerlink" title="爬虫记录"></a>爬虫记录</h1><p>出于兴趣跟着一个本科的老学长学学这个方向，顺便做个记录，方便查看</p>
-<p>（超级超级基础）</p>
-<p>持续更新…</p>
-<span id="more"></span>
-<p>一些脚本</p>
-<p>油猴插件:<a href="https://www.tampermonkey.net/">https://www.tampermonkey.net/</a><br>脚本:<a href="https://greasyfork.org/zh-CN">https://greasyfork.org/zh-CN</a></p>
-<p>插件入门级别爬虫-webscraper</p>
-<h2 id="单页抓取例子"><a href="#单页抓取例子" class="headerlink" title="单页抓取例子"></a>单页抓取例子</h2><h3 id="选择抓取的对象相关"><a href="#选择抓取的对象相关" class="headerlink" title="选择抓取的对象相关"></a>选择抓取的对象相关</h3><p>打开目标页面-webscraper-create new sitemap—设置相关参数</p>
-<p>抓取开始-根据参数进行填写</p>
-<p>select选取目标-dowload-运行（记得勾选multiple）</p>
-<h3 id="启动设置的脚本过程"><a href="#启动设置的脚本过程" class="headerlink" title="启动设置的脚本过程"></a>启动设置的脚本过程</h3><p>启动-sitemapdouban-scrape-设置时间（根据网速）</p>
-<h3 id="导出过程"><a href="#导出过程" class="headerlink" title="导出过程"></a>导出过程</h3><p>sitemap-export excel文件操作 cav</p>
-<h3 id="过程总结"><a href="#过程总结" class="headerlink" title="过程总结"></a>过程总结</h3><p>1.打开webscraper</p>
-<p>2.创建sitemap</p>
-<p>3.设置selector（根据爬去类型进行分析计算）</p>
-<p>4.启动程序并保存数据</p>
-<p>例子测试，爬一下我自己的博客内容<a href="{/file/title.csv">文件</a>—测试成功</p>
-<p>代码—编写脚本文件</p>
-<p>下一部分是网页开发知识相关—css与html(明晚更新)</p>
-<p>（小事情—【】+（）)</p>
-<h4 id="css-html相关"><a href="#css-html相关" class="headerlink" title="css html相关"></a>css html相关</h4><p>html 超文本标记语言</p>
-<p>css javascript</p>
-<p>css-设置各种字体大小</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>first(runoob.com)<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="selector-tag">body</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">background-color</span>:<span class="number">#d0e4fe</span>;</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">h1</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">color</span>:orange;</span></span><br><span class="line"><span class="language-css">	<span class="attribute">text-align</span>:center;</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">p</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">font-family</span>:<span class="string">"Times New Roman"</span>;</span></span><br><span class="line"><span class="language-css">	<span class="attribute">font-size</span>:<span class="number">20px</span>;</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">h4</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">background-color</span>:red;</span></span><br><span class="line"><span class="language-css">	<span class="attribute">text-align</span>:center;</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">a</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">color</span>: red</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"><span class="selector-tag">h4</span> <span class="selector-tag">b</span></span></span><br><span class="line"><span class="language-css">{</span></span><br><span class="line"><span class="language-css">	<span class="attribute">color</span>: blue</span></span><br><span class="line"><span class="language-css">}</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>简单测试一下!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是WM的个人博客。<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"www.xiaomuh.cn"</span>&gt;</span>小牧网站<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>笔记相关<span class="tag">&lt;<span class="name">b</span> <span class="attr">href</span>=<span class="string">"www.google.cn/"</span>&gt;</span>搜索学习<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-<p>elements-</p>
-<h2 id="选择多列信息"><a href="#选择多列信息" class="headerlink" title="选择多列信息"></a>选择多列信息</h2><p>常规方式-第二类爬取不勾选mutiply</p>
-<p>sitemap_new</p>
-<p>选择元素的原因是，提供一个较为精确的基准，方便多列爬取而不发生错误排列。</p>
-<p>elements 元素选择器  —li class</p>
-<p>选择按钮—之后在下方查看各个参数信息</p>
-<p><strong>整体—格式改变—选择elements—multiply</strong></p>
-<p>进入从分支选择-txt格式文件</p>
-<p>对齐—第一个选择作为基准-其余不勾选multiply可以自动对齐</p>
-<p>尝试爬取论文</p>
-<p>graph查看节点分布</p>
-<h2 id="翻页功能"><a href="#翻页功能" class="headerlink" title="翻页功能"></a>翻页功能</h2><p>根据翻页链接比较区别</p>
-<p>url链接页数格式修改</p>
-<p><strong>页数[1-n],可进行选择页数遍历</strong>(尝试抓取liu博的机器人文章内容)如下</p>
-<p>对于？后面的条件参数可以忽略(测试一下)</p>
-<p>文件-zhuhuyys.csv完成</p>
-<p>TH—缺乏隔多页处理方法，简介只能表面列表，针对不规则链接如何进行分析应用</p>
-<h2 id="等差翻页方式"><a href="#等差翻页方式" class="headerlink" title="等差翻页方式"></a>等差翻页方式</h2><p>比如豆瓣差值页数差值为25</p>
-<p>[0-225:25] </p>
-<p>关于常见网站翻页方式</p>
-<p>翻页</p>
-<h2 id="滚动形式网页怎么抓取"><a href="#滚动形式网页怎么抓取" class="headerlink" title="滚动形式网页怎么抓取"></a>滚动形式网页怎么抓取</h2><h3 id="1-制作-Sitemap"><a href="#1-制作-Sitemap" class="headerlink" title="1.制作 Sitemap"></a>1.制作 Sitemap</h3><p>刚开始我们要先创建一个 container，包含要抓取的三类数据，为了实现滚动到底加载数据的功能，我们把 <strong>container 的 Type 选为 <code>Element scroll down</code></strong>，就是滚动到网页底部加载数据的意思。</p>
-<p><strong>元素名后加个 <code>nth-of-type(-n+100)</code></strong>，暂时只抓取前 100 条数据。注意加：</p>
-<p><strong>以上是重点</strong> </p>
-<p>然后我们保存 container 这个节点，并在这个节点下选择要抓取的三个数据类型。</p>
-<p>首先是标题，我们取名为 title，选择的元素名为 <code>[itemprop='zhihu:question'] a</code>：</p>
-<p>然后是答题人名字 name 与 赞同数 like，选择的元素名分别为 <code>#Popover10-toggle a</code> 和 <code>button.VoteButton--up</code>：</p>
-<p>尝试爬取readhub滚动网页相关内容</p>
-<p>p父话题   由单体选择不要总体选了再父话题，容易出错。无法选择到单个框位置，就先选标题再通过p选框，在选择整体。</p>
-<p>完成</p>
-<h3 id="翻页-滚动型混合界面"><a href="#翻页-滚动型混合界面" class="headerlink" title="翻页 滚动型混合界面"></a>翻页 滚动型混合界面</h3><p>滚动型页面收集方式基本类似，</p>
-<p>sitemap-type</p>
-<p>微博混合型抓取马前卒新闻页面尝试</p>
-<p>翻页寻找规律</p>
-<p>马微博是混合型</p>
-<p><a href="https://weibo.com/u/6534413254">https://weibo.com/u/6534413254</a></p>
-<p><a href="https://weibo.com/u/6534413254?is_search=0&amp;visible=0&amp;is_all=1&amp;is_tag=0&amp;profile_ftype=1&amp;page=2#feedtop">https://weibo.com/u/6534413254?is_search=0&amp;visible=0&amp;is_all=1&amp;is_tag=0&amp;profile_ftype=1&amp;page=2#feedtop</a></p>
-<p><a href="https://weibo.com/u/6534413254?is_search=0&amp;visible=0&amp;is_all=1&amp;is_tag=0&amp;profile_ftype=1&amp;page=3#feedtop">https://weibo.com/u/6534413254?is_search=0&amp;visible=0&amp;is_all=1&amp;is_tag=0&amp;profile_ftype=1&amp;page=3#feedtop</a></p>
-<p>可以发现规律</p>
-<p>需要限定数量就选择 <strong><code>nth-of-type(-n+100)</code></strong></p>
-<p>修改界面 edit metadata 修改爬取到页数</p>
-<p>作业：没有规律网页如何翻页爬取</p>
-<p>提示：element click 点击爬取</p>
-<h2 id="点击爬取-无规则翻页"><a href="#点击爬取-无规则翻页" class="headerlink" title="点击爬取-无规则翻页"></a>点击爬取-无规则翻页</h2><p>element click</p>
-<p>click selector</p>
-<p>选择 css  selector</p>
-<p> 选择多个项目，完成</p>
-<p>思考：这个可以应用于所有翻页型网页，无论有没有规则。</p>
-<p>作为书签 选择link类型</p>
-<p>测试—知乎yys</p>
-<p>emmm</p>
-<p>文章太少嘞，换个师兄，知名劝退师兄2333</p>
-<p>内容太多了</p>
-<p>思考：如何爬取详细信息—-界面信息内容较少，无法获得有效信息</p>
-<p>解决方式 下一节</p>
-<h2 id="爬取子页面具体信息"><a href="#爬取子页面具体信息" class="headerlink" title="爬取子页面具体信息"></a>爬取子页面具体信息</h2><p>sitemap</p>
-<p>子内容选择link，点击目标链接</p>
-<p>切换目标页面，重新在同一项目中操作，选择内容进行操作</p>
-<p>测试 YYS文章，尝试加入翻页功能</p>
-<p>测试完成 保存于硬盘</p>
-<h2 id="爬取图片文件"><a href="#爬取图片文件" class="headerlink" title="爬取图片文件"></a>爬取图片文件</h2><p>目标网页</p>
-<p>类型选择图片image</p>
-<p>点击链接可以显示图片</p>
-<h2 id="一些法律小知识"><a href="#一些法律小知识" class="headerlink" title="一些法律小知识"></a>一些法律小知识</h2><p>数据不可商业化活动</p>
-<p>UTS相关规定</p>
-<p>robots.txt</p>
-<p>软件爬虫告一段落，目前为止，较为简单，算是学学新东西，下一阶段顺便复习一下语法基础。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>记录</title>
-    <url>/2021/01/06/%E8%AE%B0%E5%BD%95/%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h1 id="会议记录"><a href="#会议记录" class="headerlink" title="会议记录"></a>会议记录</h1><p>学习，学习一下</p>
-<span id="more"></span>
-<p> human-like，行为传递</p>
-<p>接触性作业—需要涉及force control</p>
-<p>阻抗控制</p>
-<p>刚度无法直接测量—机电信号与刚度信号</p>
-<p>类人控制从两方面思考</p>
-<p>1.控制器 </p>
-<p>2.操作</p>
-<p>敲钉子—固定位置，但是又不可以握紧，松一点反而方便操作</p>
-<p>对刚度矩阵进行操作，控制</p>
-<p>接触力与刚度</p>
-<hr>
-<p>刚度不变，改变接触力；接触力基本不变改变刚度</p>
-<hr>
-<p>控制模型（学习模型）</p>
-<p>对干扰方向增加刚度，其余方向保持柔顺，</p>
-<p>变刚度控制—保证精确控制</p>
-<p>其余应用：</p>
-<p>人机协同领域：根据人力改变刚度，比如锯木头案例</p>
-<p>机器人与环境交互</p>
-<p><strong>一项思考，针对水阻力进行变刚度控制，是否能实现精确位置控制，抵抗阻力呢，可以尝试··</strong></p>
-<p>2011文章</p>
-<p>分布于力场中的机构，运动，未知力场（流体力场？）保证机器人进行直线运动，进行轨迹规划，可以借鉴，论文</p>
-<p>如何分析力场？神经网络学习力场</p>
-<p>增量学习法控制器，是机械臂沿直线运动，学习之后进行目标运动</p>
-<p>示教学习</p>
-<p>c.yang ieee tll 2018</p>
-<p>泛化—分割</p>
-<p>大多考虑运动控制，考虑力控制，才能实现精确作业</p>
-<p>通过机械脉冲，测量刚度</p>
-<p>基于IMUs和ARM model测量</p>
-<p>力、刚度stiffness、位置控制</p>
-<h2 id="遥操作相关"><a href="#遥操作相关" class="headerlink" title="遥操作相关"></a>遥操作相关</h2><p>特殊环境通信？？</p>
-<p>避障—机器人建模</p>
-<p>了解一下  MYO armhand</p>
-<p>双臂操作 控制小车</p>
-<p>利用操作杆 控制小车</p>
-<p>优点：手环只有视觉效果，这里是否可以应用于目前手机厂商的手环产品上呢？可以尝试一下</p>
-<p>操作杆：可以有力反馈</p>
-<p>虚拟环境力反馈，模仿了人类的视角作业</p>
-<p>12.30 — 20.30</p>
-<p>增量学习-鲁棒项</p>
-<p>希望实现全局稳定—当运动范围过大时，加入鲁棒项进行回收。</p>
-<p>学习外界环境</p>
-<p>力场，不考虑机构本身，利用机构本身控制模型去学习外场，这样是否可以在动力模型不引入外阻力项，仅仅通过外刚度变化控制，实现对于未知力场学习后，进行精确轨迹路线的规划。</p>
-<p>示教学习是一个良好的方向</p>
-<p>云服务应用于示教学习，案例共享。</p>
-<p>组装工序</p>
-<p>LQR线性模型学习人体阻抗模型</p>
-<p>保持本身—外部环境隔开-学习外部环境</p>
-<p>机电信号测量刚度—-匹配刚度矩阵—</p>
-<p>长时间泛化 误差累积和噪声累积</p>
-<p>RBF神经网络学习</p>
-<p>扩大范围，进行控制覆盖，建立地图。</p>
-<p>神经网络用于提高性能，优化</p>
-<p>稳定利用传统控制方法进行稳定</p>
-<p>一对多控制</p>
-<p>emgsensor 8通道</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>随笔II</title>
-    <url>/2024/08/05/%E9%9A%8F%E7%AC%94II/%E9%9A%8F%E7%AC%94II/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"><br>平常心平常心~</p>
-<span id="more"></span>
-<p>做事要有耐心，要对家人有耐心，要对陌生人有耐心。</p>
-<p>经常遇到自己不乐意的事情就容易表露出来，给人一种拒人千里的感觉，事后老后悔让别人不开心了，真的不太好，多点换位思考，耐心一点。</p>
-<hr>
-<p>最近事情比较多，论文写的也不太顺利，其实内容上已经没有太大问题，运动模式部分还需要看数据才能判断怎么区分维度和驱动速度的关系，得得踏踏实实的推进实质内容了，8月5日周一，这周需要一些进度完成，动力学部分在运动模式部分加入一下，曲线规划也有一部分内容，至少20号之前要有个中期初版。</p>
-<hr>
-<p>看了个医疗电视剧问心，结局还是停留在美好了，其实往后想想还是一堆问题，曾经向往真挚的情感，现在开始更多考虑现实，与一些朋友要保持距离，开开心心的聊天就行，柴米油盐才是生活的本质，人的成分也基本一致，漫长的时光会磨灭一切。</p>
-<p>护士长因为自己产检，没有及时把钱打回账户，刚看到的时候，那一瞬间有点怪人家，连带着辩护都有些讨厌，后来一想，其实是可以理解得，毕竟人家的事情更重要，比较下来这边的事情也不是很重要，后来也可以澄清，突然开始觉得自己可恶，怎么可以怪人家，现实里也是，真得多想想，耐心一点耐心一点，绕绕路等等人呗~</p>
-<p>再就是年龄问题，平时看动漫看其他电视剧，看看主角的年龄总会觉得自己真老了，佟湘玉都说自己24岁，但是看看这个剧，又感觉自己也不是很老，培养一个医学博士需要耗费相当久的时间，虽然不是学医得，但是经历也算类似，所以还是希望像剧中人一样可以选择不受牵绊的去做一些自己想做的事情，没必要一直纠结。</p>
-<p>毛晓彤确实有点甜分超标，过于可爱了属于是233</p>
-<hr>
-<ul>
-<li>[x] 其实都不太重要，还是耐心比较重要，有时候自己麻烦一点，让别人舒心，后续也会开心一点，就这样，当然是对家人、对朋友。</li>
-</ul>
-
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>EMO</tag>
       </tags>
   </entry>
 </search>
