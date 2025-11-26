@@ -106,7 +106,7 @@
 <p>最近觉得自己做的很好的一件事情就是已经能够做到下意识的去换位思考了，不去把自己的想法强加给别人，吃饭是这样，为人做事也是这样，更成熟了一点，做一个控制欲望为0的人，大家都做自己想做的事情，不要互相干扰。</p>
 <p>喜欢，经历之前的事情再加上这几年来的事情，感觉自己变得有点现实，权衡开始成了判断的前提，做好自己，还是去接触一下，不要封闭自己，拒绝别人也不太好，也和习惯规划有点相关，12月吧大概就这样~</p>
 <p>大目标！算了不立flag了，踏踏实实的做好眼前的事情吧。</p>
-<img src="/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/marry.jpg" class>]]></content>
+<img src="/2024/09/22/%E4%B8%AD%E6%9C%9F-%E7%94%9F%E6%B4%BB-%E9%9A%8F%E6%83%B3/marry.jpg" class="">]]></content>
       <categories>
         <category>emotion</category>
       </categories>
@@ -130,7 +130,7 @@
 <p>经常告诉自己不要因为一件事去否定别人，但是毕竟不是机器人，难免有时候情绪激动直接否定，但是一定要记住的是不要站在别人面前去刷否定的存在感，站在别人面前的那一刻就已经是个小丑了。</p>
 <p>借自己最喜欢的电视剧士兵突击做个结尾，袁朗评价吴哲：“ 我喜欢他。知道为什么吗？坚持自己的原则，充满希望和乐观。重要的是，他能跟许三多这样的兵交朋友，这一点，就不会毁于他很容易产生的优越感 ”，年轻时候觉得自己像三多，不喜欢变化，后来觉得自己像成才，有时候有点自私，再后来觉得自己还是希望成为吴哲，经常告诉自己要平常心，说实话自己是不如三多和成才的，他们有各自的强项，但我很希望成为吴哲一类的人，做一个半吊子的理想主义者，充满希望和乐观。</p>
 <p>碎碎念结束，感觉很生气就写个日记，写到这里已经完全没感觉了，人不是机器人，也可以理解。</p>
-<img src="/2024/08/21/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E5%AD%98/qq.jpg" class> 
+<img src="/2024/08/21/%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E5%AD%98/qq.jpg" class=""> 
 <p>图源[<a href="https://x.com/Hitoimim/status/1807718505602797820">https://x.com/Hitoimim/status/1807718505602797820</a>]</p>
 ]]></content>
       <categories>
@@ -187,19 +187,19 @@
 \end{equation}</script><span id="more"></span>
 <p>柔度叠加矩阵案例说明：</p>
 <p>d_ij,j坐标受力在i坐标产生位移</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q1.png" class title="Q1">
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q1.png" class="" title="Q1">
 <p>此时F1=1,F2=0,F1作用下，两个位置的位移，其柔度矩阵含义如图，即为各点的挠度，在实际柔性铰链中，则为各个铰链位置变形经过转换矩阵在统一坐标下的表达：</p>
 <script type="math/tex; mode=display">
 x_1=F_1*d_{11} \\
 x_2=F_1*d_{21}</script><p>另一种情况，F1=0,F2=1;先列出点，其次看受力位置</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q2.png" class title="Q2">
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q2.png" class="" title="Q2">
 <script type="math/tex; mode=display">
 x_1=F_2*d_{12} \\
 x_2=F_2*d_{22}</script><p>所以，F1=1,F2=1,各自独立计算并且叠加，可以得到：</p>
 <script type="math/tex; mode=display">
 x_1=F_1d_{11}+F_2d_{12}\\
 x_2=F_2d_{22}+F_1D_{21}</script><p>有一个案例，文中直接给出了柔度的参数，这里按照材料力学补充一下推导流程，略作复习：</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q3.png" class title="Q3">
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q3.png" class="" title="Q3">
 <p>d_11=d_22=8d,d_12=d_21=7d;推导说明，假定F1=0,F2=1;</p>
 <p>以x_2为界限进行分类，挠度曲线参数分为两段</p>
 <script type="math/tex; mode=display">
@@ -260,7 +260,7 @@ m_1 & 0 \\
 <p>支付宝攒了一些钱了，没有什么炒股的想法，单纯觉得很麻烦，就继续放着吧，未来可能会买一些定期存存，毕业能买一辆老哥那个车了233，平时确实也没啥花销，也就游戏还有和朋友吃饭，明年要多去做一些没体验过得事情，钱重要但是也不重要，看淡一些。</p>
 <h2 id="规划"><a href="#规划" class="headerlink" title="规划"></a>规划</h2><p>工作事情要带上脑子了，简历其实改了几版了，继续慢慢修改，也要多想想自己到底想做什么，每天目标也要完成，开始就做最重要的事情，任何时候都是。</p>
 <p>要活的潇洒一点，自信一点，少纠结，拥抱未来，2025加油呀，希望大家都好，世界都好，想做事情就一定去做，今年下决心做的事情基本都成了，所以未来也是，加油！！！</p>
-<img src="/2024/12/30/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%932024/OCTAQ.png" class title="八方">]]></content>
+<img src="/2024/12/30/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%932024/OCTAQ.png" class="" title="八方">]]></content>
       <categories>
         <category>thought2024</category>
       </categories>
@@ -286,7 +286,7 @@ m_1 & 0 \\
 <p>每个人的缺点无法避免，但是可以反思克制就好，开心一点~</p>
 <p>按照安排慢慢来，12月要再完成一部分工作，年前再完成一部分，要看一些有趣的电影…</p>
 <p>放个最近感觉很好吃的川菜~</p>
-<img src="/2024/11/29/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%9420241129/delicious.jpg" class title="最近好吃的，好开心">]]></content>
+<img src="/2024/11/29/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%9420241129/delicious.jpg" class="" title="最近好吃的，好开心">]]></content>
       <categories>
         <category>feel</category>
       </categories>
@@ -301,7 +301,7 @@ m_1 & 0 \\
 <h1 id="空间曲线拟合笔记"><a href="#空间曲线拟合笔记" class="headerlink" title="空间曲线拟合笔记"></a>空间曲线拟合笔记</h1><p>渐进颜色修正与一点点origin</p>
 <p>基础信息与参数说明</p>
 <span id="more"></span>
-<h2 id="基础参数"><a href="#基础参数" class="headerlink" title="基础参数"></a>基础参数</h2><img src="/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/1727880727916.png" class width="1727880727916">
+<h2 id="基础参数"><a href="#基础参数" class="headerlink" title="基础参数"></a>基础参数</h2><img src="/2024/10/02/%E7%A9%BA%E9%97%B4%E6%B8%90%E8%BF%9B%E6%9B%B2%E7%BA%BFMatlab/1727880727916.png" class="" width="1727880727916">
 <p>subplot(2, 2, 1); plot(x, y);参考源文件‘</p>
 <p> patch 利用填充函数绘制渐进曲线颜色,也可以用来表示边的颜色插补</p>
 <p> ‘<strong>flat</strong>‘ - 对每个网格线段和面使用恒定颜色。 该颜色由该线段的端点或该面的角边处具有最小索引的颜色值确定。 </p>
@@ -338,7 +338,7 @@ m_1 & 0 \\
 <p>事情很多，心里总是很烦，但是缩短时间尺度，吃饭睡觉的时候还蛮开心的，跟朋友聊天的时候也很开心，想太远总是很无聊，眼前事做好就算了，填一下桌面端app的daily calendar</p>
 <p>志哥的发言还蛮有启发的，之前做的对应还是不够，认真一点；</p>
 <p>上周乱七八糟得，条理一点，少摸鱼少摸鱼，求其上得其中，其他随缘~</p>
-<img src="/2024/10/13/%E7%BC%A9%E7%9F%AD%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6/Octopath.png" class title="八方旅人">
+<img src="/2024/10/13/%E7%BC%A9%E7%9F%AD%E6%97%B6%E9%97%B4%E5%B0%BA%E5%BA%A6/Octopath.png" class="" title="八方旅人">
 ]]></content>
       <categories>
         <category>EMO</category>
@@ -360,7 +360,7 @@ m_1 & 0 \\
 <p>记录：</p>
 <p>平常心，踏踏实实的做好每一步，一点一点完成，上山难</p>
 <p>今天看到一个说法，做别人没做过的，就是意义所在，对我来讲，做到合理的解释，就算成功。</p>
-<img src="/2025/04/01/%E9%85%8D%E8%89%B2%E4%BB%A3%E7%A0%81%E5%8F%8A%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/img105.jpg" class title="IMAG">]]></content>
+<img src="/2025/04/01/%E9%85%8D%E8%89%B2%E4%BB%A3%E7%A0%81%E5%8F%8A%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/img105.jpg" class="" title="IMAG">]]></content>
       <categories>
         <category>learning</category>
       </categories>
@@ -383,7 +383,7 @@ m_1 & 0 \\
 <p>人本身是很复杂的，不要因为一两件事否定一个人，但是有些人也确实没必要交往，面上过去就行，虽然最近被恶心了几次，但是我只是觉得很好笑，把我喊过去说自己知道的一件事，是准备看我的反应嘛，对我来讲，只要不触及我的底线，我一般也不会反抗，也不怎么在意。确实保持一个游离的关系蛮好，哪些是好朋友，我自己心里有判断。</p>
 <p>作为一个半吊子理性主义者，我做事情很多时候是看感觉的，所谓没啥坏处，未来有益的事情，我不开心就不会去做，得不得罪人，我也不在乎，最讨厌那种虚伪的人，说话弯弯绕，直接点大家都坦荡，但是话说回来，家家有本难念的经吧，以后做事，也要多想想。</p>
 <p>自己还是太在意别人的看法，虽然已经克制了很多，但是人的本性总是难以克服，多多提醒，注意一下，多余的动作真的没必要。</p>
-<h2 id="加油加油，多坚持一下！"><a href="#加油加油，多坚持一下！" class="headerlink" title="加油加油，多坚持一下！"></a>加油加油，多坚持一下！</h2><img src="/2025/11/24/%E9%9A%8F%E7%AC%94%E5%8A%A0%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/A1.jpg" class title="A1">]]></content>
+<h2 id="加油加油，多坚持一下！"><a href="#加油加油，多坚持一下！" class="headerlink" title="加油加油，多坚持一下！"></a>加油加油，多坚持一下！</h2><img src="/2025/11/24/%E9%9A%8F%E7%AC%94%E5%8A%A0%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/A1.jpg" class="" title="A1">]]></content>
       <categories>
         <category>emotion</category>
       </categories>
@@ -392,24 +392,29 @@ m_1 & 0 \\
       </tags>
   </entry>
   <entry>
-    <title>DOC_exercise</title>
-    <url>/2021/08/29/DOC-exercise/DOC-exercise/</url>
-    <content><![CDATA[<h1 id="随笔加一些更新计划"><a href="#随笔加一些更新计划" class="headerlink" title="随笔加一些更新计划"></a>随笔加一些更新计划</h1><p>人生不长，总归还是想做一些有意义的事情——-这是一切的出发点</p>
+    <title>驱动代码备份</title>
+    <url>/2025/04/08/%E9%A9%B1%E5%8A%A8%E4%BB%A3%E7%A0%81%E5%A4%87%E4%BB%BD/</url>
+    <content><![CDATA[<p>备份，方便修改复制</p>
 <span id="more"></span>
-<h2 id="更新计划"><a href="#更新计划" class="headerlink" title="更新计划"></a>更新计划</h2><p>之后会更新一些视频与博客，博客文案，视频过程，在记录的同时巩固自己，希望可以帮助到一些朋友，要更新一些硬货，2333</p>
-<p>1.专业相关内容的研究，根据情况落实</p>
-<p>2.ROS、模拟软件以及一些算法记录过程</p>
-<p>3.游戏历史考据，比方说最近想得是重装的怪物史，总不可能是凭空出现的，回忆下过去，开拓下视野。</p>
-<p>4.文学方面的内容，提高一下，没想好更新什么，以后慢慢来</p>
-<h2 id="一些需要时刻记住的事情"><a href="#一些需要时刻记住的事情" class="headerlink" title="一些需要时刻记住的事情"></a>一些需要时刻记住的事情</h2><p>行甚于言，很重要的一点；</p>
-<p>前段时间总是自我怀疑，希望不要忘记自己的初心，我还是有一些优点的，踏踏实实的做事就好；</p>
-<p>操千曲而后晓声，观千剑而后识器，大量且规律的积累是以后必须做到的；</p>
-<p><strong>要努力提高英语呀，坚持日积月累；</strong></p>
-<p>拓展视野，坚实基础；保持信心，提高自己；</p>
-<p>去做一些更好玩的事情，记住自己的初心，坚持下去（已经确确实实是个成年人了，以后要更成熟一点）</p>
-<h2 id="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"><a href="#未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人" class="headerlink" title="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"></a>未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人</h2>]]></content>
+<p>12</p>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 控制 7 个电机的继电器引脚（高电平触发）</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> motorPins[<span class="number">7</span>] = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>};</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">setup</span><span class="params">()</span> {</span><br><span class="line">  <span class="comment">// 初始化每个继电器引脚为输出</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++) {</span><br><span class="line">    pinMode(motorPins[i], OUTPUT);</span><br><span class="line">    digitalWrite(motorPins[i], LOW); <span class="comment">// 初始状态全关闭（低电平）</span></span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 启动所有电机</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++) {</span><br><span class="line">    digitalWrite(motorPins[i], HIGH);  <span class="comment">// 高电平触发，继电器闭合</span></span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  delay(<span class="number">12500</span>); <span class="comment">// 所有电机运行 12.5 秒</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 关闭所有电机</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++) {</span><br><span class="line">    digitalWrite(motorPins[i], LOW);  <span class="comment">// 断开继电器</span></span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">loop</span><span class="params">()</span> {</span><br><span class="line">  <span class="comment">// 不再重复执行</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>伸缩模式：</p>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> motorPins[<span class="number">5</span>] = {<span class="number">1</span>，<span class="number">2</span>，<span class="number">4</span>，<span class="number">5</span>，<span class="number">6</span>};</span><br><span class="line"><span class="type">void</span> <span class="title function_">setup</span><span class="params">()</span> {</span><br><span class="line">  <span class="comment">// 初始化每个继电器引脚为输出</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) {</span><br><span class="line">    pinMode(motorPins[i], OUTPUT);</span><br><span class="line">    digitalWrite(motorPins[i], LOW); <span class="comment">// 初始状态全关闭（低电平）</span></span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 启动所有电机</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) {</span><br><span class="line">    digitalWrite(motorPins[i], HIGH);  <span class="comment">// 高电平触发，继电器闭合</span></span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  delay(<span class="number">12500</span>); <span class="comment">// 所有电机运行 12.5 秒 100/4=25s</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 关闭所有电机</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) {</span><br><span class="line">    digitalWrite(motorPins[i], LOW);  <span class="comment">// 断开继电器</span></span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">loop</span><span class="params">()</span> {</span><br><span class="line">  <span class="comment">// 不再重复执行</span></span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<p>弯曲模式</p>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> motorPins[<span class="number">3</span>] = {<span class="number">2</span>，<span class="number">4</span>，<span class="number">6</span>};</span><br><span class="line"><span class="type">void</span> <span class="title function_">setup</span><span class="params">()</span> {</span><br><span class="line">  <span class="comment">// 初始化每个继电器引脚为输出</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) {</span><br><span class="line">    pinMode(motorPins[i], OUTPUT);</span><br><span class="line">    digitalWrite(motorPins[i], LOW); <span class="comment">// 初始状态全关闭（低电平）</span></span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 启动所有电机</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) {</span><br><span class="line">    digitalWrite(motorPins[i], HIGH);  <span class="comment">// 高电平触发，继电器闭合</span></span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  delay(<span class="number">12500</span>); <span class="comment">// 所有电机运行 12.5 秒 100/4=25s</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 关闭所有电机</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) {</span><br><span class="line">    digitalWrite(motorPins[i], LOW);  <span class="comment">// 断开继电器</span></span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">loop</span><span class="params">()</span> {</span><br><span class="line">  <span class="comment">// 不再重复执行</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>多电机控制1，2，3，4，5，6，7</p>
+<p>伸缩模式：25000，25000，0，25000，25000，25000，0</p>
+<p>上弯模式：0,12500,0,50,0,12500,0 //注意调换电机  2电机反向 4反向</p>
+<p>下弯模式：0,12500,0,50,0,12500,0 </p>
+<p>后掠模式：0,7500,0,12250,0,7500,0  // 正向 正向</p>
+<p>前掠模式：0,12500,0,10250,0,12500,0   // 反向 反向</p>
+<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> motorPins[<span class="number">7</span>] = {<span class="number">1</span>，<span class="number">2</span>，<span class="number">3</span>，<span class="number">4</span>，<span class="number">5</span>，<span class="number">6</span>，<span class="number">7</span>}; <span class="comment">// 继电器引脚</span></span><br><span class="line"><span class="type">const</span> <span class="type">unsigned</span> <span class="type">long</span> motorDurations[<span class="number">7</span>] = {</span><br><span class="line">  <span class="number">12000</span>, <span class="number">25000</span>, <span class="number">8000</span>, <span class="number">18000</span>, <span class="number">15000</span>, <span class="number">3000</span>, <span class="number">10000</span>  <span class="comment">// 每个电机的运行时间（毫秒）</span></span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="type">bool</span> motorStopped[<span class="number">7</span>] = {<span class="literal">false</span>, <span class="literal">false</span>, <span class="literal">false</span>, <span class="literal">false</span>, <span class="literal">false</span>, <span class="literal">false</span>, <span class="literal">false</span>};</span><br><span class="line"><span class="type">unsigned</span> <span class="type">long</span> startTime;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">setup</span><span class="params">()</span> {</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++) {</span><br><span class="line">    pinMode(motorPins[i], OUTPUT);</span><br><span class="line">    digitalWrite(motorPins[i], HIGH); <span class="comment">// 同时开启所有继电器（高电平触发）</span></span><br><span class="line">  }</span><br><span class="line">  startTime = millis();</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">loop</span><span class="params">()</span> {</span><br><span class="line">  <span class="type">unsigned</span> <span class="type">long</span> currentTime = millis();</span><br><span class="line">  <span class="type">unsigned</span> <span class="type">long</span> elapsed = currentTime - startTime;</span><br><span class="line"></span><br><span class="line">  <span class="type">bool</span> allStopped = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++) {</span><br><span class="line">    <span class="keyword">if</span> (!motorStopped[i]) {</span><br><span class="line">      allStopped = <span class="literal">false</span>;</span><br><span class="line">      <span class="keyword">if</span> (elapsed &gt;= motorDurations[i]) {</span><br><span class="line">        digitalWrite(motorPins[i], LOW);  <span class="comment">// 关闭继电器</span></span><br><span class="line">        motorStopped[i] = <span class="literal">true</span>;</span><br><span class="line">      }</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (allStopped) {</span><br><span class="line">    <span class="comment">// 所有电机都停了，永远停止 loop</span></span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>);</span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
       <tags>
-        <tag>plan</tag>
+        <tag>note</tag>
       </tags>
   </entry>
   <entry>
@@ -525,32 +530,6 @@ m_1 & 0 \\
       </tags>
   </entry>
   <entry>
-    <title>驱动代码备份</title>
-    <url>/2025/04/08/%E9%A9%B1%E5%8A%A8%E4%BB%A3%E7%A0%81%E5%A4%87%E4%BB%BD/</url>
-    <content><![CDATA[<p>备份，方便修改复制</p>
-<span id="more"></span>
-<p>12</p>
-<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">// 控制 7 个电机的继电器引脚（高电平触发）</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> motorPins[<span class="number">7</span>] = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>};</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">setup</span><span class="params">()</span> {</span><br><span class="line">  <span class="comment">// 初始化每个继电器引脚为输出</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++) {</span><br><span class="line">    pinMode(motorPins[i], OUTPUT);</span><br><span class="line">    digitalWrite(motorPins[i], LOW); <span class="comment">// 初始状态全关闭（低电平）</span></span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 启动所有电机</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++) {</span><br><span class="line">    digitalWrite(motorPins[i], HIGH);  <span class="comment">// 高电平触发，继电器闭合</span></span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  delay(<span class="number">12500</span>); <span class="comment">// 所有电机运行 12.5 秒</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 关闭所有电机</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++) {</span><br><span class="line">    digitalWrite(motorPins[i], LOW);  <span class="comment">// 断开继电器</span></span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">loop</span><span class="params">()</span> {</span><br><span class="line">  <span class="comment">// 不再重复执行</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>伸缩模式：</p>
-<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> motorPins[<span class="number">5</span>] = {<span class="number">1</span>，<span class="number">2</span>，<span class="number">4</span>，<span class="number">5</span>，<span class="number">6</span>};</span><br><span class="line"><span class="type">void</span> <span class="title function_">setup</span><span class="params">()</span> {</span><br><span class="line">  <span class="comment">// 初始化每个继电器引脚为输出</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) {</span><br><span class="line">    pinMode(motorPins[i], OUTPUT);</span><br><span class="line">    digitalWrite(motorPins[i], LOW); <span class="comment">// 初始状态全关闭（低电平）</span></span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 启动所有电机</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) {</span><br><span class="line">    digitalWrite(motorPins[i], HIGH);  <span class="comment">// 高电平触发，继电器闭合</span></span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  delay(<span class="number">12500</span>); <span class="comment">// 所有电机运行 12.5 秒 100/4=25s</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 关闭所有电机</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) {</span><br><span class="line">    digitalWrite(motorPins[i], LOW);  <span class="comment">// 断开继电器</span></span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">loop</span><span class="params">()</span> {</span><br><span class="line">  <span class="comment">// 不再重复执行</span></span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-<p>弯曲模式</p>
-<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> motorPins[<span class="number">3</span>] = {<span class="number">2</span>，<span class="number">4</span>，<span class="number">6</span>};</span><br><span class="line"><span class="type">void</span> <span class="title function_">setup</span><span class="params">()</span> {</span><br><span class="line">  <span class="comment">// 初始化每个继电器引脚为输出</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) {</span><br><span class="line">    pinMode(motorPins[i], OUTPUT);</span><br><span class="line">    digitalWrite(motorPins[i], LOW); <span class="comment">// 初始状态全关闭（低电平）</span></span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 启动所有电机</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) {</span><br><span class="line">    digitalWrite(motorPins[i], HIGH);  <span class="comment">// 高电平触发，继电器闭合</span></span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  delay(<span class="number">12500</span>); <span class="comment">// 所有电机运行 12.5 秒 100/4=25s</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// 关闭所有电机</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) {</span><br><span class="line">    digitalWrite(motorPins[i], LOW);  <span class="comment">// 断开继电器</span></span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">loop</span><span class="params">()</span> {</span><br><span class="line">  <span class="comment">// 不再重复执行</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>多电机控制1，2，3，4，5，6，7</p>
-<p>伸缩模式：25000，25000，0，25000，25000，25000，0</p>
-<p>上弯模式：0,12500,0,50,0,12500,0 //注意调换电机  2电机反向 4反向</p>
-<p>下弯模式：0,12500,0,50,0,12500,0 </p>
-<p>后掠模式：0,7500,0,12250,0,7500,0  // 正向 正向</p>
-<p>前掠模式：0,12500,0,10250,0,12500,0   // 反向 反向</p>
-<figure class="highlight c"><table><tbody><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> motorPins[<span class="number">7</span>] = {<span class="number">1</span>，<span class="number">2</span>，<span class="number">3</span>，<span class="number">4</span>，<span class="number">5</span>，<span class="number">6</span>，<span class="number">7</span>}; <span class="comment">// 继电器引脚</span></span><br><span class="line"><span class="type">const</span> <span class="type">unsigned</span> <span class="type">long</span> motorDurations[<span class="number">7</span>] = {</span><br><span class="line">  <span class="number">12000</span>, <span class="number">25000</span>, <span class="number">8000</span>, <span class="number">18000</span>, <span class="number">15000</span>, <span class="number">3000</span>, <span class="number">10000</span>  <span class="comment">// 每个电机的运行时间（毫秒）</span></span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="type">bool</span> motorStopped[<span class="number">7</span>] = {<span class="literal">false</span>, <span class="literal">false</span>, <span class="literal">false</span>, <span class="literal">false</span>, <span class="literal">false</span>, <span class="literal">false</span>, <span class="literal">false</span>};</span><br><span class="line"><span class="type">unsigned</span> <span class="type">long</span> startTime;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">setup</span><span class="params">()</span> {</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++) {</span><br><span class="line">    pinMode(motorPins[i], OUTPUT);</span><br><span class="line">    digitalWrite(motorPins[i], HIGH); <span class="comment">// 同时开启所有继电器（高电平触发）</span></span><br><span class="line">  }</span><br><span class="line">  startTime = millis();</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">loop</span><span class="params">()</span> {</span><br><span class="line">  <span class="type">unsigned</span> <span class="type">long</span> currentTime = millis();</span><br><span class="line">  <span class="type">unsigned</span> <span class="type">long</span> elapsed = currentTime - startTime;</span><br><span class="line"></span><br><span class="line">  <span class="type">bool</span> allStopped = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++) {</span><br><span class="line">    <span class="keyword">if</span> (!motorStopped[i]) {</span><br><span class="line">      allStopped = <span class="literal">false</span>;</span><br><span class="line">      <span class="keyword">if</span> (elapsed &gt;= motorDurations[i]) {</span><br><span class="line">        digitalWrite(motorPins[i], LOW);  <span class="comment">// 关闭继电器</span></span><br><span class="line">        motorStopped[i] = <span class="literal">true</span>;</span><br><span class="line">      }</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (allStopped) {</span><br><span class="line">    <span class="comment">// 所有电机都停了，永远停止 loop</span></span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>);</span><br><span class="line">  }</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>note</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Quaternion</title>
     <url>/2021/11/24/Quaternion/Quaternion/</url>
     <content><![CDATA[<h1 id="万向锁问题"><a href="#万向锁问题" class="headerlink" title="万向锁问题"></a>万向锁问题</h1><h2 id="造成影响："><a href="#造成影响：" class="headerlink" title="造成影响："></a>造成影响：</h2><p>出现万向锁后会丢失自由度</p>
@@ -567,6 +546,46 @@ m_1 & 0 \\
       </categories>
       <tags>
         <tag>mathematica</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Silence</title>
+    <url>/2024/03/20/Silence/Silence/</url>
+    <content><![CDATA[<p>沉默的大多数决定一切，当然也可能一点不重要</p>
+<span id="more"></span>
+<p>之前很喜欢一个民谣歌手，从崖边跌落开始入坑，最后听的是茶酒伴，再然后就听的少了许多，可能是因为随着年龄增长，越来越喜欢怀旧，容易留恋过去，导致对于新鲜的事物接受度越来越低，新出的歌听起来总是没什么感觉，看到歌手各种各样“叛逆”动态，心里想想开心就好，自己没啥资格留下对别人的评论，于是就沉默下来，每个人都是为自己活着，确实是自己开心就好。</p>
+<p>不幸的是，现实里却常常事与愿违，面对上位压迫，往往还是会做出妥协，面对下位请求，则是做自己，这样的做法是否是真的做自己呢？印象里有一次评论区说一句喜欢过去的借我，春花发出近乎切割这首歌的言论，但是后来雷军转发，还是转的歌手原版本，春花也会出来营业，不知道那时候心里作何想法。</p>
+<p>无意贬低任何人，只是在描述自己看到的一切，毕竟自己也是个俗人，在面对不影响自己太大利益的问题前，我会做到保持自我，开心就好，但是面对不可抵抗的问题，我也常常妥协，只是常常会思考，这个百分比占到多少才能算开心就好，坦然接受不纯粹，是不是也算？</p>
+<p>过去几年发生的很多事情改变了我很多对于这个世界的看法，依据不同的标准，就会做出不同的判断，以生死或者身边亲人朋友庞大的利益关系作为标准，沉默的大多数就不能被忽视，除非狠得下心放弃一切，所以最终大家都会成为俗人，只是没有被逼到那个程度（战争年代保有信仰的先辈是真的值得敬佩），这也是当今各种制度能够运行的基础，天下乌鸦一般黑，哪有绝对的是非对错，如果有，那只能是数学，但是这个世界又没有完全独立运转的事物，常常都是混杂在一起，所有常说难得糊涂，没有绝对的邪恶，只有正义的偏离。</p>
+<p>言归正传，借用之前自己一句评论，朴树的歌能让我从难过变得平和，而春花的歌让我从平和到更加平和，未来依然会喜欢他们，但是也很好奇未来会是什么样子，毕竟很多老牌歌手几十年了还是被粉丝要求唱同一首歌，很喜欢观察完全不同生活的变化轨迹。</p>
+<p>沉默、沉默，既要真实也要沉默，不带功利心的做一些事，人生才能持续下去…</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>emo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DOC_exercise</title>
+    <url>/2021/08/29/DOC-exercise/DOC-exercise/</url>
+    <content><![CDATA[<h1 id="随笔加一些更新计划"><a href="#随笔加一些更新计划" class="headerlink" title="随笔加一些更新计划"></a>随笔加一些更新计划</h1><p>人生不长，总归还是想做一些有意义的事情——-这是一切的出发点</p>
+<span id="more"></span>
+<h2 id="更新计划"><a href="#更新计划" class="headerlink" title="更新计划"></a>更新计划</h2><p>之后会更新一些视频与博客，博客文案，视频过程，在记录的同时巩固自己，希望可以帮助到一些朋友，要更新一些硬货，2333</p>
+<p>1.专业相关内容的研究，根据情况落实</p>
+<p>2.ROS、模拟软件以及一些算法记录过程</p>
+<p>3.游戏历史考据，比方说最近想得是重装的怪物史，总不可能是凭空出现的，回忆下过去，开拓下视野。</p>
+<p>4.文学方面的内容，提高一下，没想好更新什么，以后慢慢来</p>
+<h2 id="一些需要时刻记住的事情"><a href="#一些需要时刻记住的事情" class="headerlink" title="一些需要时刻记住的事情"></a>一些需要时刻记住的事情</h2><p>行甚于言，很重要的一点；</p>
+<p>前段时间总是自我怀疑，希望不要忘记自己的初心，我还是有一些优点的，踏踏实实的做事就好；</p>
+<p>操千曲而后晓声，观千剑而后识器，大量且规律的积累是以后必须做到的；</p>
+<p><strong>要努力提高英语呀，坚持日积月累；</strong></p>
+<p>拓展视野，坚实基础；保持信心，提高自己；</p>
+<p>去做一些更好玩的事情，记住自己的初心，坚持下去（已经确确实实是个成年人了，以后要更成熟一点）</p>
+<h2 id="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"><a href="#未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人" class="headerlink" title="未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人"></a>未来很精彩，坚持自己，去看看更大的世界，变成一个更好的人</h2>]]></content>
+      <tags>
+        <tag>plan</tag>
       </tags>
   </entry>
   <entry>
@@ -636,50 +655,6 @@ m_1 & 0 \\
 <p>current 温度值 位置？？？待修改</p>
 <p>目标位置数值——-移动</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Silence</title>
-    <url>/2024/03/20/Silence/Silence/</url>
-    <content><![CDATA[<p>沉默的大多数决定一切，当然也可能一点不重要</p>
-<span id="more"></span>
-<p>之前很喜欢一个民谣歌手，从崖边跌落开始入坑，最后听的是茶酒伴，再然后就听的少了许多，可能是因为随着年龄增长，越来越喜欢怀旧，容易留恋过去，导致对于新鲜的事物接受度越来越低，新出的歌听起来总是没什么感觉，看到歌手各种各样“叛逆”动态，心里想想开心就好，自己没啥资格留下对别人的评论，于是就沉默下来，每个人都是为自己活着，确实是自己开心就好。</p>
-<p>不幸的是，现实里却常常事与愿违，面对上位压迫，往往还是会做出妥协，面对下位请求，则是做自己，这样的做法是否是真的做自己呢？印象里有一次评论区说一句喜欢过去的借我，春花发出近乎切割这首歌的言论，但是后来雷军转发，还是转的歌手原版本，春花也会出来营业，不知道那时候心里作何想法。</p>
-<p>无意贬低任何人，只是在描述自己看到的一切，毕竟自己也是个俗人，在面对不影响自己太大利益的问题前，我会做到保持自我，开心就好，但是面对不可抵抗的问题，我也常常妥协，只是常常会思考，这个百分比占到多少才能算开心就好，坦然接受不纯粹，是不是也算？</p>
-<p>过去几年发生的很多事情改变了我很多对于这个世界的看法，依据不同的标准，就会做出不同的判断，以生死或者身边亲人朋友庞大的利益关系作为标准，沉默的大多数就不能被忽视，除非狠得下心放弃一切，所以最终大家都会成为俗人，只是没有被逼到那个程度（战争年代保有信仰的先辈是真的值得敬佩），这也是当今各种制度能够运行的基础，天下乌鸦一般黑，哪有绝对的是非对错，如果有，那只能是数学，但是这个世界又没有完全独立运转的事物，常常都是混杂在一起，所有常说难得糊涂，没有绝对的邪恶，只有正义的偏离。</p>
-<p>言归正传，借用之前自己一句评论，朴树的歌能让我从难过变得平和，而春花的歌让我从平和到更加平和，未来依然会喜欢他们，但是也很好奇未来会是什么样子，毕竟很多老牌歌手几十年了还是被粉丝要求唱同一首歌，很喜欢观察完全不同生活的变化轨迹。</p>
-<p>沉默、沉默，既要真实也要沉默，不带功利心的做一些事，人生才能持续下去…</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>emo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>configure_bag</title>
-    <url>/2020/11/30/configure-bag/configure-bag/</url>
-    <content><![CDATA[<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
-<p>以及补充后续图像处理相关项目内容</p>
-<span id="more"></span>
-<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
-<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
-<p>（原因后续深入了解了之后继续补充）</p>
-<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
-<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
-<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;/dev/null | grep '\.rp_filter'</span><br></pre></td></tr></tbody></table></figure>
-<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter=0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter=0</span><br></pre></td></tr></tbody></table></figure>
-<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
-<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—-（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
-<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
-<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
-<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
-]]></content>
-      <categories>
-        <category>camera</category>
-      </categories>
   </entry>
   <entry>
     <title>c++_qt_note</title>
@@ -1165,6 +1140,31 @@ m_1 & 0 \\
 <h4 id="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"><a href="#“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。" class="headerlink" title="“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。"></a>“曾经因为你这么做，非常难过。可是我毕竟已经，不再是一个自以为是的孩子了。</h4><h4 id="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"><a href="#我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。" class="headerlink" title="我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。"></a>我明白了，凡是人总有取舍，你取了你认为重要的东西，舍弃了我，这只是你的选择而已。</h4><h4 id="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"><a href="#若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也" class="headerlink" title="若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也"></a>若是我，因为没有被选择，就心生怨恨，那这世间，岂不是有太多不可原谅之处，毕竟谁也</h4><h4 id="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"><a href="#没有责任要以我为先，以我为重。无论我如何希望也不能强求。" class="headerlink" title="没有责任要以我为先，以我为重。无论我如何希望也不能强求。"></a>没有责任要以我为先，以我为重。无论我如何希望也不能强求。</h4><h4 id="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"><a href="#我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也" class="headerlink" title="我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也"></a>我之所以这么待你，是因为我愿意，若能以此换回同样的诚心，固然可喜，若是没有，我也</h4><h4 id="没有什么可后悔的。”"><a href="#没有什么可后悔的。”" class="headerlink" title="没有什么可后悔的。”"></a>没有什么可后悔的。”</h4>]]></content>
       <categories>
         <category>touch_fish</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>configure_bag</title>
+    <url>/2020/11/30/configure-bag/configure-bag/</url>
+    <content><![CDATA[<h1 id="摄像头调参二三"><a href="#摄像头调参二三" class="headerlink" title="摄像头调参二三"></a>摄像头调参二三</h1><p>包含补充QT上位机编写、ip配置的一点疑问（后续解决后会补充）、</p>
+<p>以及补充后续图像处理相关项目内容</p>
+<span id="more"></span>
+<p>摄像头通过IP配置实现连接是一种比较常见的方式，但是实际过程中发现并不是随便设置IP，并将摄像头配置成对应静态ip就能实现通信。</p>
+<p>比如今天下午选用网卡设置了多组IP，有的无法检测信息，有的检测到了但是无法识别图像传输界面，最后选择了一组跟本机其余无线网卡类似的一组ip，即前六位一致，目前为止，通信效果良好。推测是每个电脑IP设置具有一定规则，不能随便去设置，至少保证前六位一致。</p>
+<p>（原因后续深入了解了之后继续补充）</p>
+<p>1.基于TCP/IP通信协议，IP设置与传感器本身并无关系，设置一个符合本机电脑规则的IP地址，再据此自动设置或者将传感器设置为静态地址，手动调节，一般就可以实现通信。</p>
+<p>2.关于Linux 中的反向过滤技术处理，将默认数值设置为0即可，具体程序如下</p>
+<p>在确定相机连接正常的情况下,可通过以下命令查看反向过滤功能是否开启:</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">sysctl -a 2&gt;/dev/null | grep '\.rp_filter'</span><br></pre></td></tr></tbody></table></figure>
+<p>根据网卡类别，将摄像机使用的网卡参数值设置为0.，相关操作如下</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">sudo sysctl net.ipv4.conf.all.rp_filter=0</span><br><span class="line">sudo sysctl net.ipv4.conf.占用网卡名字.rp_filter=0</span><br></pre></td></tr></tbody></table></figure>
+<p>目前为止，几张网卡就能同时处理几个传感器，为了降低硬件使用率，可以通过工业路由器将传感器信息集成之后，进行统一处理</p>
+<p>（有个问题在于，无线通信是否可靠？ 5G、6G路由器的核心技术又是什么，帮忙干活的时候跟工程师仔细去了解一下）—-（关于一个应用拓展  基于DSP的二代通信技术，之后深入了解了会做一次记录，挖个坑～）</p>
+<h2 id="QT上位机"><a href="#QT上位机" class="headerlink" title="QT上位机"></a>QT上位机</h2><p>这里两周内会补充有关火星车图像处理上位机编写的架构和底层代码分析记录</p>
+<p>（C艹记录相关）准备跟py放那篇放一起啦</p>
+<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>针对高帧率视频图像进行实时分析相关内容，以后会记录一下老师的项目，学习为主。</p>
+]]></content>
+      <categories>
+        <category>camera</category>
       </categories>
   </entry>
   <entry>
@@ -1683,18 +1683,6 @@ m_1 & 0 \\
       <tags>
         <tag>control</tag>
       </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2022/08/02/life/life/</url>
-    <content><![CDATA[<p> <strong>怎么会迷上你，我在问自己</strong></p>
-<p> <strong>我什么都能放弃，居然今天难离去</strong></p>
-<p>我是个什么人呢？</p>
-<p>乐观、向上、热心又冷漠</p>
-<p>犹豫、常常忽略一些事情、讨厌很多事情</p>
-<p>一个半吊子的理想主义者～</p>
-<p><a href="/img/R.jpg">r</a></p>
-]]></content>
   </entry>
   <entry>
     <title>latex_note</title>
@@ -2288,6 +2276,18 @@ m_1 & 0 \\
 ]]></content>
   </entry>
   <entry>
+    <title></title>
+    <url>/2022/08/02/life/life/</url>
+    <content><![CDATA[<p> <strong>怎么会迷上你，我在问自己</strong></p>
+<p> <strong>我什么都能放弃，居然今天难离去</strong></p>
+<p>我是个什么人呢？</p>
+<p>乐观、向上、热心又冷漠</p>
+<p>犹豫、常常忽略一些事情、讨厌很多事情</p>
+<p>一个半吊子的理想主义者～</p>
+<p><a href="/img/R.jpg">r</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>linux_cleanfile</title>
     <url>/2020/10/20/linux-cleanfile/linux-cleanfile/</url>
     <content><![CDATA[<h1 id="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"><a href="#由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录" class="headerlink" title="由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录"></a>由Linux-bug文件清理以及删除想到的linux多版本软件安装想法理解记录</h1><p>昨天晚上测试运动算法包，更新中间发现系统磁盘爆满，终端terminal无法运行，启动文件节点无法启动，于今天下午解决问题，写一篇日志记录一下，顺便谈一下linux的多版本软件安装基理。</p>
@@ -2535,88 +2535,6 @@ m_1 & 0 \\
       </categories>
   </entry>
   <entry>
-    <title>manipulator_HU_learninging</title>
-    <url>/2020/10/12/manipulator-HU-learninging/manipulator-HU-learninging/</url>
-    <content><![CDATA[<h1 id="记录一套开发流程，没啥意义"><a href="#记录一套开发流程，没啥意义" class="headerlink" title="记录一套开发流程，没啥意义"></a>记录一套开发流程，没啥意义</h1><p>后续可看，ppt要好好做</p>
-<span id="more"></span>
-<p>1.基本理论</p>
-<p>2.开发</p>
-<p>ISO</p>
-<ol>
-<li>机器人动作机构具有类似于人或其他生物体的某些器官（肢体、感受等）的功能；、</li>
-<li>机器人具有通用性，工作种类多样，动作程序灵活易变；</li>
-<li>机器人具有不同程度的智能性，比如记忆、感知、推理、决策、学习等；</li>
-<li>机器人具有独立性、完整的机器人系统在工作中不可以依赖于人的干预。</li>
-</ol>
-<p>驱动系统</p>
-<ul>
-<li>电源子系统</li>
-<li>电机驱动系统—控制信号-电信号</li>
-<li>传感器</li>
-</ul>
-<p>内部传感器</p>
-<ul>
-<li>机器人里程计</li>
-<li>惯性测量单元IMU</li>
-</ul>
-<p>控制系统</p>
-<p>PC—人机交互（SLAM、导航、图像识别、语音识别）</p>
-<p>TCP/UDP</p>
-<p>硬件系统：控制、传感器数据采集、驱动系统通信、外设连接</p>
-<p>外部传感器</p>
-<ul>
-<li>外部摄像头、Kinect</li>
-<li>激光雷达</li>
-</ul>
-<p>移动机器人-常见</p>
-<p>机器人架构可参考（ppt制作，针对特种环境的通信干扰分析）</p>
-<p>云机器人架构思想：</p>
-<ul>
-<li>全局云：全局数据存储、共享和交互</li>
-<li>本地云：密集型计算的机器人应用服务</li>
-<li>机器人：面向用户的终端服务单元</li>
-</ul>
-<p>优点：局部网络占优</p>
-<ul>
-<li>本地云数据共享更加灵活、快捷</li>
-<li>数据保存与本地服务器，更加安全、可靠</li>
-<li>服务于多种机器人</li>
-</ul>
-<p>整理常见机械臂：</p>
-<ul>
-<li>UR机械臂，安全度高、编程简单、灵活度高，负载10-18kg，工作半径85-130cm。</li>
-<li></li>
-</ul>
-<p>控制框架架构+系统架构+云系统架构</p>
-<h2 id="开发具体流程分析与记录（代码分析）："><a href="#开发具体流程分析与记录（代码分析）：" class="headerlink" title="开发具体流程分析与记录（代码分析）："></a>开发具体流程分析与记录（代码分析）：</h2><p>1.常见基础</p>
-<p>2.manipulator_moveit</p>
-<p>3.moveit+gazebo 仿真系统搭建</p>
-<p>ros_control 为开发者提供的机器人控制中间件，包含一系列控制器接口、传动器接口、硬件接口、控制器工具箱</p>
-<p>包括有速度控制、位置控制、力控制</p>
-<p>关节位置控制器：PID 具体参照arm包 yaml文件或者gazebo_control内yaml文件</p>
-<p>加载控制器，加载conrollers关节参数，加载publisher参数节点，三部分，关节矩阵变换</p>
-<p>moveit与gazebo rviz 联合仿真</p>
-<p>编程接口</p>
-<p>moveit_commander python接口</p>
-<p>1.连接控制需要的规划组 2.设置目标位姿 3.设置运动约束 4.使用moveit！规划一条到达目标的轨迹</p>
-<p>5.修改轨迹 6.执行规划出的轨迹</p>
-<p>启动moveit包-moveit_config,程序中给出目标位置以及执行器位置信息，软件自动规划最优路径</p>
-<p>编程—-针对规划组编写，设置目标位置参数，臂则设置位置信息，数组导入，完成机械臂规划</p>
-<p>工作空间运动规划—轨迹规划(关键代码参数)</p>
-<p>创建规划组的控制对象</p>
-<p>获取机器人终端LINK名称</p>
-<p>设置目标位姿对应的参考坐标系和起始、终止位姿</p>
-<p>完成规划并控制机械臂完成运动</p>
-<p>运动限制约束设置</p>
-<p>运动学插件问题KDL，插件选用以及<code>二次开发</code>问题</p>
-<p>抓取与放置，attach与un，避障规划</p>
-<p>代码分析与移植待补充～～</p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-  </entry>
-  <entry>
     <title>manipulator_review</title>
     <url>/2020/10/02/manipulator-review/manipulator-review/</url>
     <content><![CDATA[<h1 id="综述笔记-manipulator-review-underwater-system已补充结束"><a href="#综述笔记-manipulator-review-underwater-system已补充结束" class="headerlink" title="综述笔记-manipulator_review(underwater)-(system已补充结束)"></a>综述笔记-manipulator_review(underwater)-(system已补充结束)</h1><p>一篇综述[1]的总体方向笔记，非文献整理。</p>
@@ -2720,6 +2638,88 @@ m_1 & 0 \\
 <p>水下滑翔机</p>
 <p>始于军事，拓展为海上油气等等，比如海上搜索和救援、海洋学等</p>
 <p>未来展望</p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>manipulator_HU_learninging</title>
+    <url>/2020/10/12/manipulator-HU-learninging/manipulator-HU-learninging/</url>
+    <content><![CDATA[<h1 id="记录一套开发流程，没啥意义"><a href="#记录一套开发流程，没啥意义" class="headerlink" title="记录一套开发流程，没啥意义"></a>记录一套开发流程，没啥意义</h1><p>后续可看，ppt要好好做</p>
+<span id="more"></span>
+<p>1.基本理论</p>
+<p>2.开发</p>
+<p>ISO</p>
+<ol>
+<li>机器人动作机构具有类似于人或其他生物体的某些器官（肢体、感受等）的功能；、</li>
+<li>机器人具有通用性，工作种类多样，动作程序灵活易变；</li>
+<li>机器人具有不同程度的智能性，比如记忆、感知、推理、决策、学习等；</li>
+<li>机器人具有独立性、完整的机器人系统在工作中不可以依赖于人的干预。</li>
+</ol>
+<p>驱动系统</p>
+<ul>
+<li>电源子系统</li>
+<li>电机驱动系统—控制信号-电信号</li>
+<li>传感器</li>
+</ul>
+<p>内部传感器</p>
+<ul>
+<li>机器人里程计</li>
+<li>惯性测量单元IMU</li>
+</ul>
+<p>控制系统</p>
+<p>PC—人机交互（SLAM、导航、图像识别、语音识别）</p>
+<p>TCP/UDP</p>
+<p>硬件系统：控制、传感器数据采集、驱动系统通信、外设连接</p>
+<p>外部传感器</p>
+<ul>
+<li>外部摄像头、Kinect</li>
+<li>激光雷达</li>
+</ul>
+<p>移动机器人-常见</p>
+<p>机器人架构可参考（ppt制作，针对特种环境的通信干扰分析）</p>
+<p>云机器人架构思想：</p>
+<ul>
+<li>全局云：全局数据存储、共享和交互</li>
+<li>本地云：密集型计算的机器人应用服务</li>
+<li>机器人：面向用户的终端服务单元</li>
+</ul>
+<p>优点：局部网络占优</p>
+<ul>
+<li>本地云数据共享更加灵活、快捷</li>
+<li>数据保存与本地服务器，更加安全、可靠</li>
+<li>服务于多种机器人</li>
+</ul>
+<p>整理常见机械臂：</p>
+<ul>
+<li>UR机械臂，安全度高、编程简单、灵活度高，负载10-18kg，工作半径85-130cm。</li>
+<li></li>
+</ul>
+<p>控制框架架构+系统架构+云系统架构</p>
+<h2 id="开发具体流程分析与记录（代码分析）："><a href="#开发具体流程分析与记录（代码分析）：" class="headerlink" title="开发具体流程分析与记录（代码分析）："></a>开发具体流程分析与记录（代码分析）：</h2><p>1.常见基础</p>
+<p>2.manipulator_moveit</p>
+<p>3.moveit+gazebo 仿真系统搭建</p>
+<p>ros_control 为开发者提供的机器人控制中间件，包含一系列控制器接口、传动器接口、硬件接口、控制器工具箱</p>
+<p>包括有速度控制、位置控制、力控制</p>
+<p>关节位置控制器：PID 具体参照arm包 yaml文件或者gazebo_control内yaml文件</p>
+<p>加载控制器，加载conrollers关节参数，加载publisher参数节点，三部分，关节矩阵变换</p>
+<p>moveit与gazebo rviz 联合仿真</p>
+<p>编程接口</p>
+<p>moveit_commander python接口</p>
+<p>1.连接控制需要的规划组 2.设置目标位姿 3.设置运动约束 4.使用moveit！规划一条到达目标的轨迹</p>
+<p>5.修改轨迹 6.执行规划出的轨迹</p>
+<p>启动moveit包-moveit_config,程序中给出目标位置以及执行器位置信息，软件自动规划最优路径</p>
+<p>编程—-针对规划组编写，设置目标位置参数，臂则设置位置信息，数组导入，完成机械臂规划</p>
+<p>工作空间运动规划—轨迹规划(关键代码参数)</p>
+<p>创建规划组的控制对象</p>
+<p>获取机器人终端LINK名称</p>
+<p>设置目标位姿对应的参考坐标系和起始、终止位姿</p>
+<p>完成规划并控制机械臂完成运动</p>
+<p>运动限制约束设置</p>
+<p>运动学插件问题KDL，插件选用以及<code>二次开发</code>问题</p>
+<p>抓取与放置，attach与un，避障规划</p>
+<p>代码分析与移植待补充～～</p>
 ]]></content>
       <categories>
         <category>note</category>
@@ -2852,12 +2852,24 @@ m_1 & 0 \\
 <h2 id="银翼杀手"><a href="#银翼杀手" class="headerlink" title="银翼杀手"></a>银翼杀手</h2><p>套路一般，画面不错</p>
 <p>I’ve seen things you people wouldn’t  believe.Attack ships on fire off the shoulder of Orion.I’ve watched  c-beams glitter in the dark near the Tannhauser Gate.All those …  moments will be lost in time, like tears…in rain.Time to die. </p>
 <p> 我见过你们人类绝对无法置信的事物，我目睹了战船在猎户星座的端沿起火燃烧，我看着C射线在唐怀瑟之门附近的黑暗中闪耀，所有这些时刻，终将随时间消逝，一如眼泪消失在雨中。</p>
-<p><img src="/../pictures/R.jpg" alt></p>
+<p><img src="/../pictures/R.jpg" alt=""></p>
 <h2 id="不可触碰"><a href="#不可触碰" class="headerlink" title="不可触碰"></a>不可触碰</h2><p>（跨越隔阂，消除歧视，单纯的友谊真是最美好的事情）</p>
 <p>（如果所谓的不平等是由自己的观点创造产生的，那么当你感觉或者想认为某件事或者某个人低等时，其实你自己已经立于深渊）</p>
 <p>（没有绝对的平等，也没有绝对的不平等，特别是偏见所创造的不平等）</p>
 <p>（生气的时候，有一点很重要，问自己一下，有必要么？）</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>newnote</title>
+    <url>/2022/08/02/newnote/newnote/</url>
+    <content><![CDATA[<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
+<span id="more"></span>]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>airfact</tag>
+      </tags>
   </entry>
   <entry>
     <title>note</title>
@@ -2876,18 +2888,6 @@ m_1 & 0 \\
       </categories>
       <tags>
         <tag>formula</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>newnote</title>
-    <url>/2022/08/02/newnote/newnote/</url>
-    <content><![CDATA[<p>又要重新开始更新啦，人生很难，总要继续，接下来会好好在这个无人知晓的角落记录我的人生，加油</p>
-<span id="more"></span>]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>airfact</tag>
       </tags>
   </entry>
   <entry>
@@ -3052,6 +3052,472 @@ m_1 & 0 \\
       <categories>
         <category>基础</category>
       </categories>
+  </entry>
+  <entry>
+    <title>reading_note1</title>
+    <url>/2020/11/02/reading-note1/reading-note1/</url>
+    <content><![CDATA[<h1 id="并联机构优化阅读笔记1"><a href="#并联机构优化阅读笔记1" class="headerlink" title="并联机构优化阅读笔记1"></a>并联机构优化阅读笔记1</h1><p>A new method for optimum design of parallel manipulator based on kinematics and dynamics</p>
+<p>并联机械臂优化设计</p>
+<p>（不太规范，慢慢进步）（推导及公式说明latex 写完后会补充）</p>
+<span id="more"></span>
+<p>综合考虑机构运动学与动力学特性，一种优化机构尺寸参数的方案，可以用于提高并联机器人动态性能</p>
+<p><strong>Abstract</strong> </p>
+<p>This paper presents a new method for the optimum design of parallel manipulators by taking both the kinematics and dynamic characteristics into account. The optimum design of a 3-DOF 4-RRR planar parallel manipulator with actuation redundancy is investigated to demonstrate the method. The kinematic performance indices such as the conditioning index, the velocity index, and workspace area are analyzed.<br>Further, the dynamic dexterity, which is used to evaluate the dynamic characteristics, is investigated. The corresponding atlases are represented graphically in the established design space. Based on these atlases, the geometrical parameters without dimension are determined. Then the optimum dimension parameters are achieved based on the optimum non-dimensional result. By using the method proposed in this paper, the designer can obtain the optimum result with respect to both kinematic performance indices and dynamic performance indices. Since the dynamic performance is considered in the process of optimum design by using the method proposed in this paper, it is expected to realize the high dynamics of parallel manipulators.</p>
+<p><strong>Introduction</strong></p>
+<p>Parallel manipulators have attracted much attention in both industry and academia because of their conceptual potentials in high motion dynamics and accuracy combined with high structural rigidity due to their closed kinematic loops. However, there is a gap between the expectation and practical application of parallel manipulators in the machine tool/robot sectors [1, 2]. One of the reasons is that their potentially desirable high dynamics can not be realized since the dynamic characteristics are not considered in the optimal design phase and only are considered in the modelbased control after the prototype is built. Since the prototype is fabricated, the improvement of dynamic characteristics is limited even if model-based control is used. If the dynamic characteristics can also be involved in the process of the optimum design before the prototype is built, the dynamic performance will be improved. Thus, it is helpful to realize the high motion dynamics.</p>
+<p>并联机构实际应用动态效果一般，原因在于优化设计阶段未考虑动态特性，模型完成后，控制就会受限于模型本身，动态特性无法实现，如果在优化设计时考虑到动态特性，整体效果会得到改善。</p>
+<p>Optimal kinematic design is an important subject in designing a parallel manipulator. No matter how simple the parallel manipulator is, the optimum design is always challenging. Many efforts have been contributed to this issue [3–7]. These approaches can be classified into two kinds: one is based on the performance indices and the other is based on the performance atlases. The methods based on the performance indices are traditional ones, implemented in the commercial software MATLAB based on an established object function. If the design criterion number is increased, the procedure will be more complicated. The method based on the performance atlases can give designers a global and visual information on with what kind of link lengths the mechanism can have a good or best performance. However, the dynamic performance is usually neglected.</p>
+<p>最优设计局限性，未考虑动态特性</p>
+<p>Some researchers attempt to study the dynamic performance by defining some dynamic performance indices. Conventionally, dynamic manipulability ellipsoid (DME) [8, 9] and generalized inertia ellipsoid (GIE) [10] were used as performance indices to evaluate the dynamic manipulability of a robot manipulator.<br>Besides, some other measures for evaluating dynamic manipulability have been proposed. Graettinger and Krogh [11] introduced acceleration radius. Hashimoto [12] used the harmonic mean of the square singular values matrix to evaluate the dynamic manipulability.Li et al. [13] presented the smallest singular value of inertia matrix of a manipulator as the evaluation index when the manipulability in the hardest direction was considered. However, almost all of these contributions concentrated on the analysis and evaluation of the dynamic characteristics, and are not used for the optimum design to improve the dynamic performance.Although Asada [14] draw the GIE on a computer display and aid the design by visualizing the dynamic behavior, it is difficult to obtain an optimum design result.</p>
+<p>关于动态性能指标集中指标，注意一下文中提到的文献13中惯性矩阵最小奇异值优化方式，简单优化方式</p>
+<p>动态指标优化方式与问题</p>
+<p>The goal of this paper is to present a new method to take the dynamic characteristics of parallel manipulators into account in the process of optimum design.Based on the performance atlases, both the kinematics and dynamics of a 3-DOF 4-RRR planar parallel manipulator with actuation redundancy are involved.The kinematic performance indices such as the conditioning index, the velocity index, and workspace area are analyzed. Further, the dynamic dexterity of the manipulator is investigated. The corresponding atlases are represented graphically in the established design space. Based on these atlases, the geometrical parameters without dimension are determined. Then the optimum dimensional parameters are achieved based on the optimum nondimensional result. By using the method proposed in this paper, the designer can obtain the optimum result with respect to both kinematic performance indices and dynamic performance indices.</p>
+<p>目标：基于performance atlase 性能图谱优化分析</p>
+<h2 id="运动学分析"><a href="#运动学分析" class="headerlink" title="运动学分析"></a>运动学分析</h2><p>Inverse kinematics 常规闭链解法，不记录了，大同小异</p>
+<p>Velcocity equation 求解jacobian </p>
+<p>这里方法类似于向量推导，从表达过程看，与通过那篇向量几何范数方式推导的硕士论文（郭-）结果一致，之前看那篇方法没有引用相关文献，可能方法出自这里……</p>
+<h2 id="运动学性能指标及图谱"><a href="#运动学性能指标及图谱" class="headerlink" title="运动学性能指标及图谱"></a>运动学性能指标及图谱</h2><p>推导补充（latex写好会放过来）</p>
+<h2 id="全局性能指标与图谱"><a href="#全局性能指标与图谱" class="headerlink" title="全局性能指标与图谱"></a>全局性能指标与图谱</h2><p>The condition number is regarded as the local performance index for evaluating the velocity, accuracy, and rigidity mapping characteristics between the joint variables and the moving platform. The condition number κ is defined as <em>1 ≤ κ = σ 2 ≤∞ σ 1</em> where σ 1 and σ 2 are the minimum and maximum singular values of the Jacobian matrix associated with a given posture.<br>条件数可用于评估关节变量、平台速度、精度、刚度局部性能指标。</p>
+<h2 id="全局速度指标与图谱"><a href="#全局速度指标与图谱" class="headerlink" title="全局速度指标与图谱"></a>全局速度指标与图谱</h2><p>输出速度作为并联机械臂的重要指标，速度性能越好，最小速度越大。</p>
+<h2 id="动力学推导（虚功原理）"><a href="#动力学推导（虚功原理）" class="headerlink" title="动力学推导（虚功原理）"></a>动力学推导（虚功原理）</h2><p>常规推导方式，不作记录</p>
+<p>基于图谱的优化设计</p>
+<p>通过线性规划，给出了一个可行区域</p>
+<p>这里注意数学理论上最优与工程最优区别，实际工程上需要从实际出发，在可行域内选择合适尺寸参数。</p>
+<p>基于运动学优化设计</p>
+<p>工作空间、调节指数以及输出速度</p>
+<p>基于运动学与动力学的优化设计</p>
+<p>优化过程：</p>
+<p>1.根据运动学性能指标划定规划域</p>
+<p>2.根据动态性能指标确定另一个最佳区域，该区域为1子集</p>
+<p>3.确定机械臂参数</p>
+<p>4.基于逆运动学模型确定系统输入角度范围</p>
+<p>5.确定系统机构质量</p>
+<p>In order to investigate the performance of the designed manipulator, the condition number of Jacobian matrix and the distribution of κ D are given, as shown in Figs. 9 and 10. One may see that the condition number distribution and the distribution of κ D are symmetrical and the mechanism has the desired condition performance with η &gt; 0.11 and dynamic manipulability with η̄ D &gt; 0.05. In the center, the condition number of Jacobian matrix has the maximum value 0.33, and κ D = 0.12. It means that the 4-RRR manipulator has a better kinematic dexterity and dynamic manipulability in the center.</p>
+<p>中心位置雅克比矩阵考虑</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>本文是一种综合考虑运动学与动态性能的优化方案，通过无量纲参数获取杆件尺寸。</p>
+<p>目标操作器具备理想的运动学和动态性能。</p>
+<p>（推导分析后续补充）</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2020/08/25/ros-work/ros-work/</url>
+    <content><![CDATA[<p>时隔一年，再次听胡老师的课，感受颇有不同，包括简要课程记录复习一下以及写写作业。</p>
+<p>(9.26添加了一些小内容)</p>
+<p>(10.12增加了一下go内容)</p>
+<span id="more"></span>
+<p>1.日常ROS史观</p>
+<p>2.ros框架以及松耦合的分布式通信机制（日常）</p>
+<p>3.节点-执行单元（node）</p>
+<p>节点管理器（ros master）</p>
+<p>Topic-异步通信机制（publisher/subscriber）</p>
+<p>先来后到，多对多</p>
+<p>service-同步通信机制（service/client）—-request  response</p>
+<p>请求之后才会应答，一对多</p>
+<p>参数（parameter）</p>
+<p>典型字典</p>
+<p>工作空间（workspace0</p>
+<p>src:代码空间 build:编译空间 devel:开发空间 install: 安装空间</p>
+<p>功能包（package）</p>
+<p>功能包清单（package manifest  ）（包含作者信息、许可信息等，好像一直没用过这个233）</p>
+<p>元功能包（meta packages）</p>
+<p>action通信及机制</p>
+<p>应用场景：比如抓取，一段时间的抓捕动作，在执行过程中需要连续的response</p>
+<hr>
+<p>日常启动turtle</p>
+<hr>
+<p>关于turtlebot</p>
+<p>———-没有作业0.0</p>
+<p>ros常用组件与开发</p>
+<p>roslog</p>
+<h2 id="ros-moveit记录："><a href="#ros-moveit记录：" class="headerlink" title="ros_moveit记录："></a>ros_moveit记录：</h2><p>manipulator</p>
+<p>多轴机械臂6.7+各式夹具</p>
+<p>六轴机械臂</p>
+<hr>
+<p>伺服电机（减速机，为了降低电机转速，从而增加电机扭矩）皮带、行星、谐波（成本减速器比较高）</p>
+<p>机械臂本体</p>
+<p>控制器</p>
+<p><a href="img/arm.png">成本占比图</a></p>
+<hr>
+<p>智能化处理</p>
+<p>moveit  运动学、运动规划、碰撞检测、</p>
+<p>motion planning、manipulation、inverse kinematics</p>
+<p>control、3dperception（3d视觉）、collsion碰撞检测</p>
+<p>核心节点 move_group</p>
+<p>输入输出参数</p>
+<p>move_base 话题发布-cmdvel</p>
+<p>用户interface</p>
+<p>Ros moveit</p>
+<p>自己算法可封装到plugins </p>
+<p>Moveit 可视化配置和仿真</p>
+<p>Planning scene点云栅格地图</p>
+<p>Roslaunch moveit setup assistant</p>
+<p>1.选择模型，导入urdf或者xacro，需要严格按照DH法进行建立模型，导入moveit位置姿态正常。</p>
+<p>2.设置自碰撞检测 self collsion</p>
+<p>虚拟关节 vitual joints 描述机械臂基础坐标，固定臂虚拟项不修改，若移动，需要对虚拟关节修改。</p>
+<p>3.配置规划组</p>
+<p>运动学求解算法</p>
+<p>规划失败：模型没问题，规划时间可能太短，我好像没遇到过哎</p>
+<p>规划组选择最为重要</p>
+<p>4.预定义位姿  可设置初始姿态或者某些特殊姿态  使用较多，rviz规划仿真</p>
+<p>5..设置控制器</p>
+<p>6.作者信息</p>
+<p>7.生成配置功能包，使用较少</p>
+<p>Demo.launch-rviz仿真</p>
+<p>后续工作—gazebo</p>
+<p>Gazebo+ros+ros_control</p>
+<p>电机闭环控制知识（待补充）</p>
+<p>Ros控制器接口</p>
+<p>Moveit规划得到轨迹，通过controller（follow joint trajectory封装成话题action）—serve（默认五次插补运算）—伺服电机得到指令—硬件端-机器人对上位机反馈（joint state controller）</p>
+<p>基础编程</p>
+<p>1.连接控制需要的规划组</p>
+<p>2.设置目标位姿，关节空间或者笛卡尔空间</p>
+<p>3.设置运动约束</p>
+<p>4.使用moveit规划以到达目标的轨迹</p>
+<p>5.修改轨迹</p>
+<p>5.执行规划出的轨迹</p>
+<p>约束规划</p>
+<p>点到点关节空间规划</p>
+<p>(plan,fraction) = arm.compute_cartesian_path(waypoints,0.01,0.0,True)</p>
+<p>路径列表、终端步进值、最小移动值、避障规划</p>
+<p>Fraction 0-1 小于1无法规划</p>
+<p>直线轨迹</p>
+<p>圆弧轨迹方法：微分</p>
+<p>碰撞检测</p>
+<p>直接在可视界面添加障碍物</p>
+<p>通过代码导入</p>
+<p>API 五核心</p>
+<p>抓到物体 attach</p>
+<p>Eye in hand </p>
+<p>手眼标定（内参，外参）</p>
+<p>物体识别与定位（）</p>
+<p>抓取姿态分析（）</p>
+<p>运动规划</p>
+<p>Eye to hand</p>
+<p>Eye in hand</p>
+<p>关于ros：</p>
+<p>像素坐标转换成全局空间坐标</p>
+<p>深度学习融合</p>
+<p>ROS-I 工业机械臂应用</p>
+<p>工业领域分支</p>
+<p>应用</p>
+<h2 id="ros-slam记录"><a href="#ros-slam记录" class="headerlink" title="ros_slam记录:"></a>ros_slam记录:</h2><p>1.slam-地图构建</p>
+<p>gmapping 激光方案</p>
+<p>vslam</p>
+<p>视觉方案存在问题，容易受环境光影响，工业环境常用激光，irobot使用了视觉，精度要求不高</p>
+<p>superpoint</p>
+<p>多检测融合，包括orb、角点检测等，鲁棒性较高</p>
+<p>pointcloud 点云设计方案</p>
+<p>去除噪音、降采样、移除行人、移除地面—-网格mesh化</p>
+<p>point—-legoloam—点云算法，运算量比较小，点云图像投影</p>
+<p>地图构建之后，定位</p>
+<p>EKF-扩展卡尔曼滤波器</p>
+<p>信息融合，视觉、imu惯性测量单元（测量姿态）、gps等数据源卡尔曼滤波，提高精度</p>
+<p>平面定位-amcl</p>
+<p>粒子分布、更新—全局分布—视觉重定位（辅助）—初始定位—定位置信度</p>
+<p>定位-NDT/ICP 点云算法 </p>
+<p>ndt 网格化正态分布变换</p>
+<p>icp 迭代最近点   由轨迹确定位置</p>
+<p>3.全局规划与局部规划</p>
+<p>Globalcostmap</p>
+<p>静态层、动态层、膨胀层（远离障碍物，自己加）</p>
+<p>全局规划算法—A*/Dijkstra</p>
+<p>目的是避障寻找最低能耗路径</p>
+<p>人工势场法—寻找能量最低路径</p>
+<p>地图构建-势场-膨胀-全局规划算法-跟随，进行局部规划算法</p>
+<p>局部规划</p>
+<p>以机器人周围构建主要激光和点云</p>
+<p>算法-DWA（决定机器人动态效果）</p>
+<p>​    1.采样空间/运动模型</p>
+<p>​    2.代价函数</p>
+<p>​    防抖，运动平滑</p>
+<p>​    3.动态窗口仿真</p>
+<p>3.导航 move_base</p>
+<p>4.全地形导航-height map 三维  存在高度概念</p>
+<p>关于moveit计算方案</p>
+<h2 id="ros2记录（待续）"><a href="#ros2记录（待续）" class="headerlink" title="ros2记录（待续）:"></a>ros2记录（待续）:</h2><p>Rosi核心ros1</p>
+<p>关于Ros2架构</p>
+<p>Ros2起源，目的都是为了提高软件复用率</p>
+<p>保密性不足，局域网下信息互通</p>
+<p>2014年正式提出</p>
+<p>2020.6.5 foxy fitzory</p>
+<p>架构颠覆：ros1需要master管理，ros2使用基于DDS的discovery机制</p>
+<p>Api重新设计：ros1基于2009.2之前 ros2重新设计了新的api，使用方法类似</p>
+<p>编译系统升级：ros1 rosbuild、catkin ros2 ament colcon</p>
+<h2 id="ros深度学习"><a href="#ros深度学习" class="headerlink" title="ros深度学习"></a>ros深度学习</h2><p>感知与控制</p>
+<p>感知</p>
+<p>物体分类 image</p>
+<p>目标检测 object</p>
+<p>语义分割 semantic</p>
+<p>实例分割 instance</p>
+<p>感知-cnn</p>
+<p>卷积运算 </p>
+<p>池化运算</p>
+<p>RCNN</p>
+<p>Mseg-语义分割</p>
+<p>mask-rcnn感知</p>
+<p>pointnet</p>
+<p>2.联想GPT3</p>
+<p>代码补全</p>
+<p>数据集足够多，效果足够好</p>
+<h2 id="ROS探索总结记录（体系查漏补缺）"><a href="#ROS探索总结记录（体系查漏补缺）" class="headerlink" title="ROS探索总结记录（体系查漏补缺）"></a>ROS探索总结记录（体系查漏补缺）</h2><p>package</p>
+<p>ROS 的软件以包的方式组织起来。包包含节点、ROS 依赖库、数据套、配置文件、第三方软件、或者任何<br>其他逻辑构成。包的目标是提供一种易于使用的结构以便于软件的重复使用。总得来说,ROS 的包短小精<br>干。</p>
+<p>stack</p>
+<p>堆是包的集合,它提供一个完整的功能</p>
+<p>Manifests (manifest.xml):提供关于 Package 元数据,包括它的许可信息和 Package 之间依赖关<br>系,以及语言特性信息像编译旗帜(编译优化参数)<br>。<br>Stack manifests (stack.xml):提供关于 Stack 元数据,包括它的许可信息和 Stack 之间依赖关系。</p>
+<p>1.常见的几个</p>
+<p>PR2 ：<a href="http://www.ros.org/wiki/Robots/PR2">http://www.ros.org/wiki/Robots/PR2</a></p>
+<p>Turtlebot：<a href="http://www.ros.org/wiki/Robots/TurtleBot">http://www.ros.org/wiki/Robots/TurtleBot</a></p>
+<p>Husky：<a href="http://www.ros.org/wiki/Robots/Husky">http://www.ros.org/wiki/Robots/Husky</a>  /   <a href="http://www.ros.org/wiki/Robots/Erratic">http://www.ros.org/wiki/Robots/Erratic</a></p>
+<p>轮式移动机器人</p>
+<p>手柄端口 ls /dev/input</p>
+<p>机器视觉</p>
+<p>rosrun rviz rviz</p>
+<p>关于tf细节</p>
+<p>(1) 监听 tf 变换</p>
+<p>(2) 广播 tf 变换</p>
+<p>关于无人车ros 总结</p>
+<p>轮胎</p>
+<p>纵向花纹： 低滚动阻力 防止侧滑，装向稳定性优异</p>
+<p>横向花纹：出色的驱动力和制动力，强大的牵引力</p>
+<p>纵横兼有花纹：纵纹提供向稳定性，横纹改善驱动力和制动力</p>
+<p>关于usb问题： ls /dev/ttyUSB*</p>
+<h2 id="ROSGO"><a href="#ROSGO" class="headerlink" title="ROSGO"></a>ROSGO</h2>]]></content>
+  </entry>
+  <entry>
+    <title>ros问题总结</title>
+    <url>/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h1><span id="more"></span>
+<h2 id="缺少cmake文件，安装方式"><a href="#缺少cmake文件，安装方式" class="headerlink" title="缺少cmake文件，安装方式"></a>缺少cmake文件，安装方式</h2><p>提示 xxConfig.cmake 找不到</p>
+<p>查找上一行 …provided by “xx”</p>
+<p>补充  sudo apt-get install ros-ROS版本-xx </p>
+<p>roscore运行出错</p>
+<p>Unable to contact my own server a</p>
+<p>xiaomu@GL:~$ export ROS_HOSTNAME=localhost<br>xiaomu@GL:~$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></p>
+<p>Unable to contact my own server at [<a href="http://192.168.0.106:35623/">http://192.168.0.106:35623/</a>].</p>
+<p>This usually means that the network is not configured properly.</p>
+<p>A common cause is that the machine cannot connect to itself.  Please check<br>for errors by running:</p>
+<pre><code>ping 192.168.0.106
+</code></pre><p>For more tips, please see</p>
+<pre><code>http://www.ros.org/wiki/ROS/NetworkSetup
+</code></pre><p>修正：</p>
+<ol>
+<li>$ export ROS_HOSTNAME=localhost</li>
+<li>$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>skill</title>
+    <url>/2024/03/20/skill/skill/</url>
+    <content><![CDATA[<h1 id="EVERYDAY速查总结"><a href="#EVERYDAY速查总结" class="headerlink" title="EVERYDAY速查总结"></a>EVERYDAY速查总结</h1><p>一些小技巧总结，方便补充查阅</p>
+<span id="more"></span>
+<h2 id="罗马数字："><a href="#罗马数字：" class="headerlink" title="罗马数字："></a>罗马数字：</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>羅馬字</th>
+<th>數字</th>
+<th>羅馬字</th>
+<th>數字</th>
+<th>羅馬字</th>
+<th>數字</th>
+<th>羅馬字</th>
+<th>數字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>1</td>
+<td>XI</td>
+<td>11</td>
+<td>XXI</td>
+<td>21</td>
+<td>C</td>
+<td>100</td>
+</tr>
+<tr>
+<td>II</td>
+<td>2</td>
+<td>XII</td>
+<td>12</td>
+<td>XXIX</td>
+<td>29</td>
+<td>CI</td>
+<td>101</td>
+</tr>
+<tr>
+<td>III</td>
+<td>3</td>
+<td>XIII</td>
+<td>13</td>
+<td>XXX</td>
+<td>30</td>
+<td>CC</td>
+<td>200</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>4</td>
+<td>XIV</td>
+<td>14</td>
+<td>XL</td>
+<td>40</td>
+<td>D</td>
+<td>500</td>
+</tr>
+<tr>
+<td>V</td>
+<td>5</td>
+<td>XV</td>
+<td>15</td>
+<td>XLVIII</td>
+<td>48</td>
+<td>DC</td>
+<td>600</td>
+</tr>
+<tr>
+<td>VI</td>
+<td>6</td>
+<td>XVI</td>
+<td>16</td>
+<td>IL</td>
+<td>49</td>
+<td>CM</td>
+<td>900</td>
+</tr>
+<tr>
+<td>VII</td>
+<td>7</td>
+<td>XVII</td>
+<td>17</td>
+<td>L</td>
+<td>50</td>
+<td>M</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>VIII</td>
+<td>8</td>
+<td>XVIII</td>
+<td>18</td>
+<td>LX</td>
+<td>60</td>
+<td>MDCLXVI</td>
+<td>1666</td>
+</tr>
+<tr>
+<td>IX</td>
+<td>9</td>
+<td>XIX</td>
+<td>19</td>
+<td>XC</td>
+<td>90</td>
+<td>MCMLXX</td>
+<td>1970</td>
+</tr>
+<tr>
+<td>X</td>
+<td>10</td>
+<td>XX</td>
+<td>20</td>
+<td>XCVIII</td>
+<td>98</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="刚度矩阵提取："><a href="#刚度矩阵提取：" class="headerlink" title="刚度矩阵提取："></a>刚度矩阵提取：</h2><ul>
+<li>WB打开不显示： view-reset windows layout，显示前变形状态图</li>
+<li>二力杆节点显示：搜索preference-勾选numbers nodes</li>
+</ul>
+<p>workb提取设置及流程：</p>
+<ol>
+<li>软件中生成 point-genernate-line来自点-截面建立</li>
+<li>mesh sizing-生成修改节点数量</li>
+<li>输出结果中设置：求解方法solution-solver type-direct，analysis data-delete 非必要结构-no</li>
+</ol>
+<p>导入APDL:</p>
+<ol>
+<li>analysis setting-advanced-:求解方法去掉分布式</li>
+<li>读取-component-mechanical APDL模块-插入solution 更新</li>
+<li>APDL read查看模态</li>
+<li>file-list-binary-matrix-sys/mech/.ful文件选择stifness matrix，读取参数-转成txt</li>
+<li>导入matlab文件转码(目前存在问题是，空间结构系统中自动生成的节点与理论节点数量有一定误差，这个后续解决来再补充，应该暂时不会再用到这个东西了)</li>
+</ol>
+<h2 id="PS图片绘制设置-像"><a href="#PS图片绘制设置-像" class="headerlink" title="PS图片绘制设置(像)"></a>PS图片绘制设置(像)</h2><p>图片无损方法：图像大小-重新取样/邻近(赢边缘)宽高</p>
+<p>变形方法：</p>
+<ol>
+<li>滤镜液化 大小自定，压力25</li>
+<li>冻结蒙版，压力100，眼睛下</li>
+<li>转化成智能对象</li>
+<li>视频帧转</li>
+</ol>
+<p>像素前置设置</p>
+<ol>
+<li>6464自订-拉入图片-窗口排列-双联垂直</li>
+<li>视图-显示-像素网格</li>
+<li>文件-存储为png 新建画布10，编辑-首选项-常规(邻近，非像素恢复 C+T放大)</li>
+</ol>
+<h2 id="视频剪辑"><a href="#视频剪辑" class="headerlink" title="视频剪辑"></a>视频剪辑</h2><ol>
+<li>右键导入视频可以拆分轨道</li>
+<li>去黑边方式-按住Crtl可以不锁定宽高比</li>
+<li>缩略图全显示：选项-首选项-视频</li>
+<li>Crtl+G时间点</li>
+<li>反转-创建子剪辑</li>
+<li>shift 工具多机位</li>
+<li>先放大局部-导出视频-重新导入放大</li>
+<li>抠图-视频色键</li>
+<li>运动字幕-使用字幕与文字-文本后图标添加动画-出现关键帧</li>
+<li>导出倍速视频：crtl按住视频边线：左加速右减速，直接拖边线不可以，只会恢复切片或者重复切片。</li>
+</ol>
+<h2 id="MATLAB"><a href="#MATLAB" class="headerlink" title="MATLAB"></a>MATLAB</h2><ol>
+<li>三维矢量图解组失败，一般是由于三维矢量图无法通过图窗复制-导出设置-渲染-printers对钩-应用复制图窗</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>start2024</title>
+    <url>/2024/02/19/start2024/start2024/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
+<h1 id="又是一年春"><a href="#又是一年春" class="headerlink" title="又是一年春"></a>又是一年春</h1><p>距离上次笔记已有一年，没有做到经常写笔记，今年要改正，今天的目的是写一下总结以及对自己的要求，以及年后的一些规划，</p>
+<p>几个指令备注一下：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo n <span class="string">"学习笔记  六"</span></span><br><span class="line">hexo d</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br></pre></td></tr></tbody></table></figure>
+<span id="more"></span>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>过去的一年其实还不错，论文项目都有进度，但是后期又有点偷懒了，开年需要向后拓展，这部分已经总结过，简单略过。</p>
+<h2 id="预计要求"><a href="#预计要求" class="headerlink" title="预计要求"></a>预计要求</h2><p>过去的一段时间和很多人交流过，也一个人旅游过，发现自己还是有很多问题，认识自己，改正自己。</p>
+<p>1.新的一年依然要强迫自己去做应该做的事情，见贤思齐，多多反省，心里逃避，但是还是要前进，太内向了确实不太好，应该多尝试主动与他人沟通，认识下总归没坏处。</p>
+<p>2.新的一年接地气一点，不要太理性主义了，多多肯定别人的观点，别人的分享也要主动去看看，不要表现的不感兴趣，不要否定别人，少提意见，没有什么很俗的东西，生活就是这样，开心点，合群点。</p>
+<p>3.与师长们相处，还是往常的态度就好，谦虚但是也要有自己的主见，这个去年大体上没有做错的地方。</p>
+<p>4.生活上，过去的一年相对规律，新的一年依旧保持，但是之后的一段时间要去上一些强度。</p>
+<h2 id="年后规划"><a href="#年后规划" class="headerlink" title="年后规划"></a>年后规划</h2><p>1.学业部分不用讲，按照规律坚持就行</p>
+<p>2.拓展一下爱好，旅游拍摄和像素画，要过得开心一点</p>
+<h2 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a>自我评价</h2><p>内心依然有一些炫耀欲，与人相处很害怕别人把希望寄托在我身上，不想承担额外的责任。。。</p>
+<p>沧浪之水，脚踏实地一点，多多与人沟通，人还是要接地气一点，虚荣驱动理想天天飘着，实际一点，开心一点。</p>
+<h2 id="补充一些博客修复内容："><a href="#补充一些博客修复内容：" class="headerlink" title="补充一些博客修复内容："></a>补充一些博客修复内容：</h2><p>Permission denied (publickey) 没有权限的publickey ，出现这错误一般是以下两种原因</p>
+<p>客户端与服务端未生成 ssh key<br>客户端与服务端的ssh key不匹配<br>找到问题的原因了，解决办法也就有了，重新生成一次ssh key ，服务端也重新配置一次即可。</p>
+<p>ssh-keygen -t rsa -C “xx@qq.com”</p>
+<p>然后再终端下执行命令：</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="code"><pre><span class="line">ssh -v git<span class="meta">@github</span>.<span class="property">com</span></span><br></pre></td></tr></tbody></table></figure>
+<p>最后两句会出现</p>
+<figure class="highlight erlang"><table><tbody><tr><td class="code"><pre><span class="line">　　No more authentication methods to <span class="keyword">try</span>.  　　Permission denied (publickey).</span><br></pre></td></tr></tbody></table></figure>
+<p>在终端再执行以下命令</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">ssh-agent -s </span><br></pre></td></tr></tbody></table></figure>
+<p>接着在执行</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="code"><pre><span class="line">ssh-add ~<span class="regexp">/.ssh/i</span>d_rsa</span><br></pre></td></tr></tbody></table></figure>
+<p>$ ssh-add ~/.ssh/id_rsa<br>出现Could not open a connection to your authentication agent.<br>这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa_name这个命令就没问题了。<br>根据路径查看文件内部的命令： Identity added: …这是ssh key文件路径的信息 </p>
+<p> 打开你刚刚生成的id_rsa.pub，将里面的内容复制，进入你的<a href="https://so.csdn.net/so/search?q=github&amp;spm=1001.2101.3001.7020">github</a>账号，在settings下，SSH and GPG keys下new SSH key，然后将id_rsa.pub里的内容复制到Key中，完成后Add SSH Key。 设置完成后</p>
+<h4 id="验证Key"><a href="#验证Key" class="headerlink" title="验证Key"></a>验证Key</h4><figure class="highlight typescript"><table><tbody><tr><td class="code"><pre><span class="line">ssh -T git<span class="meta">@github</span>.<span class="property">com</span> </span><br></pre></td></tr></tbody></table></figure>
+<p> 提示：Hi xxx! You’ve successfully authenticated, but GitHub does not provide shell access </p>
+]]></content>
+      <categories>
+        <category>note</category>
+      </categories>
+      <tags>
+        <tag>emotion</tag>
+      </tags>
   </entry>
   <entry>
     <title>python100</title>
@@ -3362,472 +3828,6 @@ m_1 & 0 \\
 <h4 id="python-集合运算"><a href="#python-集合运算" class="headerlink" title="python 集合运算"></a>python 集合运算</h4><figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># 在对集合做运算时，不会影响原来的集合，而是返回一个运算结果</span></span><br><span class="line"><span class="comment"># 创建两个集合</span></span><br><span class="line">s = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>}</span><br><span class="line">s2 = {<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>}</span><br><span class="line"></span><br><span class="line"><span class="comment"># &amp; 交集运算</span></span><br><span class="line">result = s &amp; s2 <span class="comment"># {3, 4, 5}</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># | 并集运算</span></span><br><span class="line">result = s | s2 <span class="comment"># {1,2,3,4,5,6,7}</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># - 差集</span></span><br><span class="line">result = s - s2 <span class="comment"># {1, 2}</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ^ 异或集 获取只在一个集合中出现的元素</span></span><br><span class="line">result = s ^ s2 <span class="comment"># {1, 2, 6, 7}</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># &lt;= 检查一个集合是否是另一个集合的子集</span></span><br><span class="line"><span class="comment"># 如果a集合中的元素全部都在b集合中出现，那么a集合就是b集合的子集，b集合是a集合超集</span></span><br><span class="line">a = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>}</span><br><span class="line">b = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>}</span><br><span class="line"></span><br><span class="line">result = a &lt;= b <span class="comment"># True</span></span><br><span class="line">result = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} &lt;= {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} <span class="comment"># True</span></span><br><span class="line">result = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>} &lt;= {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} <span class="comment"># False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># &lt; 检查一个集合是否是另一个集合的真子集</span></span><br><span class="line"><span class="comment"># 如果超集b中含有子集a中所有元素，并且b中还有a中没有的元素，则b就是a的真超集，a是b的真子集</span></span><br><span class="line">result = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} &lt; {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} <span class="comment"># False</span></span><br><span class="line">result = {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>} &lt; {<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>} <span class="comment"># True</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># &gt;= 检查一个集合是否是另一个的超集</span></span><br><span class="line"><span class="comment"># &gt; 检查一个集合是否是另一个的真超集</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">'result ='</span>,result)</span><br></pre></td></tr></tbody></table></figure>]]></content>
   </entry>
   <entry>
-    <title>reading_note1</title>
-    <url>/2020/11/02/reading-note1/reading-note1/</url>
-    <content><![CDATA[<h1 id="并联机构优化阅读笔记1"><a href="#并联机构优化阅读笔记1" class="headerlink" title="并联机构优化阅读笔记1"></a>并联机构优化阅读笔记1</h1><p>A new method for optimum design of parallel manipulator based on kinematics and dynamics</p>
-<p>并联机械臂优化设计</p>
-<p>（不太规范，慢慢进步）（推导及公式说明latex 写完后会补充）</p>
-<span id="more"></span>
-<p>综合考虑机构运动学与动力学特性，一种优化机构尺寸参数的方案，可以用于提高并联机器人动态性能</p>
-<p><strong>Abstract</strong> </p>
-<p>This paper presents a new method for the optimum design of parallel manipulators by taking both the kinematics and dynamic characteristics into account. The optimum design of a 3-DOF 4-RRR planar parallel manipulator with actuation redundancy is investigated to demonstrate the method. The kinematic performance indices such as the conditioning index, the velocity index, and workspace area are analyzed.<br>Further, the dynamic dexterity, which is used to evaluate the dynamic characteristics, is investigated. The corresponding atlases are represented graphically in the established design space. Based on these atlases, the geometrical parameters without dimension are determined. Then the optimum dimension parameters are achieved based on the optimum non-dimensional result. By using the method proposed in this paper, the designer can obtain the optimum result with respect to both kinematic performance indices and dynamic performance indices. Since the dynamic performance is considered in the process of optimum design by using the method proposed in this paper, it is expected to realize the high dynamics of parallel manipulators.</p>
-<p><strong>Introduction</strong></p>
-<p>Parallel manipulators have attracted much attention in both industry and academia because of their conceptual potentials in high motion dynamics and accuracy combined with high structural rigidity due to their closed kinematic loops. However, there is a gap between the expectation and practical application of parallel manipulators in the machine tool/robot sectors [1, 2]. One of the reasons is that their potentially desirable high dynamics can not be realized since the dynamic characteristics are not considered in the optimal design phase and only are considered in the modelbased control after the prototype is built. Since the prototype is fabricated, the improvement of dynamic characteristics is limited even if model-based control is used. If the dynamic characteristics can also be involved in the process of the optimum design before the prototype is built, the dynamic performance will be improved. Thus, it is helpful to realize the high motion dynamics.</p>
-<p>并联机构实际应用动态效果一般，原因在于优化设计阶段未考虑动态特性，模型完成后，控制就会受限于模型本身，动态特性无法实现，如果在优化设计时考虑到动态特性，整体效果会得到改善。</p>
-<p>Optimal kinematic design is an important subject in designing a parallel manipulator. No matter how simple the parallel manipulator is, the optimum design is always challenging. Many efforts have been contributed to this issue [3–7]. These approaches can be classified into two kinds: one is based on the performance indices and the other is based on the performance atlases. The methods based on the performance indices are traditional ones, implemented in the commercial software MATLAB based on an established object function. If the design criterion number is increased, the procedure will be more complicated. The method based on the performance atlases can give designers a global and visual information on with what kind of link lengths the mechanism can have a good or best performance. However, the dynamic performance is usually neglected.</p>
-<p>最优设计局限性，未考虑动态特性</p>
-<p>Some researchers attempt to study the dynamic performance by defining some dynamic performance indices. Conventionally, dynamic manipulability ellipsoid (DME) [8, 9] and generalized inertia ellipsoid (GIE) [10] were used as performance indices to evaluate the dynamic manipulability of a robot manipulator.<br>Besides, some other measures for evaluating dynamic manipulability have been proposed. Graettinger and Krogh [11] introduced acceleration radius. Hashimoto [12] used the harmonic mean of the square singular values matrix to evaluate the dynamic manipulability.Li et al. [13] presented the smallest singular value of inertia matrix of a manipulator as the evaluation index when the manipulability in the hardest direction was considered. However, almost all of these contributions concentrated on the analysis and evaluation of the dynamic characteristics, and are not used for the optimum design to improve the dynamic performance.Although Asada [14] draw the GIE on a computer display and aid the design by visualizing the dynamic behavior, it is difficult to obtain an optimum design result.</p>
-<p>关于动态性能指标集中指标，注意一下文中提到的文献13中惯性矩阵最小奇异值优化方式，简单优化方式</p>
-<p>动态指标优化方式与问题</p>
-<p>The goal of this paper is to present a new method to take the dynamic characteristics of parallel manipulators into account in the process of optimum design.Based on the performance atlases, both the kinematics and dynamics of a 3-DOF 4-RRR planar parallel manipulator with actuation redundancy are involved.The kinematic performance indices such as the conditioning index, the velocity index, and workspace area are analyzed. Further, the dynamic dexterity of the manipulator is investigated. The corresponding atlases are represented graphically in the established design space. Based on these atlases, the geometrical parameters without dimension are determined. Then the optimum dimensional parameters are achieved based on the optimum nondimensional result. By using the method proposed in this paper, the designer can obtain the optimum result with respect to both kinematic performance indices and dynamic performance indices.</p>
-<p>目标：基于performance atlase 性能图谱优化分析</p>
-<h2 id="运动学分析"><a href="#运动学分析" class="headerlink" title="运动学分析"></a>运动学分析</h2><p>Inverse kinematics 常规闭链解法，不记录了，大同小异</p>
-<p>Velcocity equation 求解jacobian </p>
-<p>这里方法类似于向量推导，从表达过程看，与通过那篇向量几何范数方式推导的硕士论文（郭-）结果一致，之前看那篇方法没有引用相关文献，可能方法出自这里……</p>
-<h2 id="运动学性能指标及图谱"><a href="#运动学性能指标及图谱" class="headerlink" title="运动学性能指标及图谱"></a>运动学性能指标及图谱</h2><p>推导补充（latex写好会放过来）</p>
-<h2 id="全局性能指标与图谱"><a href="#全局性能指标与图谱" class="headerlink" title="全局性能指标与图谱"></a>全局性能指标与图谱</h2><p>The condition number is regarded as the local performance index for evaluating the velocity, accuracy, and rigidity mapping characteristics between the joint variables and the moving platform. The condition number κ is defined as <em>1 ≤ κ = σ 2 ≤∞ σ 1</em> where σ 1 and σ 2 are the minimum and maximum singular values of the Jacobian matrix associated with a given posture.<br>条件数可用于评估关节变量、平台速度、精度、刚度局部性能指标。</p>
-<h2 id="全局速度指标与图谱"><a href="#全局速度指标与图谱" class="headerlink" title="全局速度指标与图谱"></a>全局速度指标与图谱</h2><p>输出速度作为并联机械臂的重要指标，速度性能越好，最小速度越大。</p>
-<h2 id="动力学推导（虚功原理）"><a href="#动力学推导（虚功原理）" class="headerlink" title="动力学推导（虚功原理）"></a>动力学推导（虚功原理）</h2><p>常规推导方式，不作记录</p>
-<p>基于图谱的优化设计</p>
-<p>通过线性规划，给出了一个可行区域</p>
-<p>这里注意数学理论上最优与工程最优区别，实际工程上需要从实际出发，在可行域内选择合适尺寸参数。</p>
-<p>基于运动学优化设计</p>
-<p>工作空间、调节指数以及输出速度</p>
-<p>基于运动学与动力学的优化设计</p>
-<p>优化过程：</p>
-<p>1.根据运动学性能指标划定规划域</p>
-<p>2.根据动态性能指标确定另一个最佳区域，该区域为1子集</p>
-<p>3.确定机械臂参数</p>
-<p>4.基于逆运动学模型确定系统输入角度范围</p>
-<p>5.确定系统机构质量</p>
-<p>In order to investigate the performance of the designed manipulator, the condition number of Jacobian matrix and the distribution of κ D are given, as shown in Figs. 9 and 10. One may see that the condition number distribution and the distribution of κ D are symmetrical and the mechanism has the desired condition performance with η &gt; 0.11 and dynamic manipulability with η̄ D &gt; 0.05. In the center, the condition number of Jacobian matrix has the maximum value 0.33, and κ D = 0.12. It means that the 4-RRR manipulator has a better kinematic dexterity and dynamic manipulability in the center.</p>
-<p>中心位置雅克比矩阵考虑</p>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>本文是一种综合考虑运动学与动态性能的优化方案，通过无量纲参数获取杆件尺寸。</p>
-<p>目标操作器具备理想的运动学和动态性能。</p>
-<p>（推导分析后续补充）</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>ros问题总结</title>
-    <url>/2021/01/05/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/ros%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h1><span id="more"></span>
-<h2 id="缺少cmake文件，安装方式"><a href="#缺少cmake文件，安装方式" class="headerlink" title="缺少cmake文件，安装方式"></a>缺少cmake文件，安装方式</h2><p>提示 xxConfig.cmake 找不到</p>
-<p>查找上一行 …provided by “xx”</p>
-<p>补充  sudo apt-get install ros-ROS版本-xx </p>
-<p>roscore运行出错</p>
-<p>Unable to contact my own server a</p>
-<p>xiaomu@GL:~$ export ROS_HOSTNAME=localhost<br>xiaomu@GL:~$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></p>
-<p>Unable to contact my own server at [<a href="http://192.168.0.106:35623/">http://192.168.0.106:35623/</a>].</p>
-<p>This usually means that the network is not configured properly.</p>
-<p>A common cause is that the machine cannot connect to itself.  Please check<br>for errors by running:</p>
-<pre><code>ping 192.168.0.106
-</code></pre><p>For more tips, please see</p>
-<pre><code>http://www.ros.org/wiki/ROS/NetworkSetup
-</code></pre><p>修正：</p>
-<ol>
-<li>$ export ROS_HOSTNAME=localhost</li>
-<li>$ export ROS_MASTER_URI=<a href="http://localhost:11311">http://localhost:11311</a></li>
-</ol>
-]]></content>
-  </entry>
-  <entry>
-    <title>skill</title>
-    <url>/2024/03/20/skill/skill/</url>
-    <content><![CDATA[<h1 id="EVERYDAY速查总结"><a href="#EVERYDAY速查总结" class="headerlink" title="EVERYDAY速查总结"></a>EVERYDAY速查总结</h1><p>一些小技巧总结，方便补充查阅</p>
-<span id="more"></span>
-<h2 id="罗马数字："><a href="#罗马数字：" class="headerlink" title="罗马数字："></a>罗马数字：</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>羅馬字</th>
-<th>數字</th>
-<th>羅馬字</th>
-<th>數字</th>
-<th>羅馬字</th>
-<th>數字</th>
-<th>羅馬字</th>
-<th>數字</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>I</td>
-<td>1</td>
-<td>XI</td>
-<td>11</td>
-<td>XXI</td>
-<td>21</td>
-<td>C</td>
-<td>100</td>
-</tr>
-<tr>
-<td>II</td>
-<td>2</td>
-<td>XII</td>
-<td>12</td>
-<td>XXIX</td>
-<td>29</td>
-<td>CI</td>
-<td>101</td>
-</tr>
-<tr>
-<td>III</td>
-<td>3</td>
-<td>XIII</td>
-<td>13</td>
-<td>XXX</td>
-<td>30</td>
-<td>CC</td>
-<td>200</td>
-</tr>
-<tr>
-<td>IV</td>
-<td>4</td>
-<td>XIV</td>
-<td>14</td>
-<td>XL</td>
-<td>40</td>
-<td>D</td>
-<td>500</td>
-</tr>
-<tr>
-<td>V</td>
-<td>5</td>
-<td>XV</td>
-<td>15</td>
-<td>XLVIII</td>
-<td>48</td>
-<td>DC</td>
-<td>600</td>
-</tr>
-<tr>
-<td>VI</td>
-<td>6</td>
-<td>XVI</td>
-<td>16</td>
-<td>IL</td>
-<td>49</td>
-<td>CM</td>
-<td>900</td>
-</tr>
-<tr>
-<td>VII</td>
-<td>7</td>
-<td>XVII</td>
-<td>17</td>
-<td>L</td>
-<td>50</td>
-<td>M</td>
-<td>1000</td>
-</tr>
-<tr>
-<td>VIII</td>
-<td>8</td>
-<td>XVIII</td>
-<td>18</td>
-<td>LX</td>
-<td>60</td>
-<td>MDCLXVI</td>
-<td>1666</td>
-</tr>
-<tr>
-<td>IX</td>
-<td>9</td>
-<td>XIX</td>
-<td>19</td>
-<td>XC</td>
-<td>90</td>
-<td>MCMLXX</td>
-<td>1970</td>
-</tr>
-<tr>
-<td>X</td>
-<td>10</td>
-<td>XX</td>
-<td>20</td>
-<td>XCVIII</td>
-<td>98</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="刚度矩阵提取："><a href="#刚度矩阵提取：" class="headerlink" title="刚度矩阵提取："></a>刚度矩阵提取：</h2><ul>
-<li>WB打开不显示： view-reset windows layout，显示前变形状态图</li>
-<li>二力杆节点显示：搜索preference-勾选numbers nodes</li>
-</ul>
-<p>workb提取设置及流程：</p>
-<ol>
-<li>软件中生成 point-genernate-line来自点-截面建立</li>
-<li>mesh sizing-生成修改节点数量</li>
-<li>输出结果中设置：求解方法solution-solver type-direct，analysis data-delete 非必要结构-no</li>
-</ol>
-<p>导入APDL:</p>
-<ol>
-<li>analysis setting-advanced-:求解方法去掉分布式</li>
-<li>读取-component-mechanical APDL模块-插入solution 更新</li>
-<li>APDL read查看模态</li>
-<li>file-list-binary-matrix-sys/mech/.ful文件选择stifness matrix，读取参数-转成txt</li>
-<li>导入matlab文件转码(目前存在问题是，空间结构系统中自动生成的节点与理论节点数量有一定误差，这个后续解决来再补充，应该暂时不会再用到这个东西了)</li>
-</ol>
-<h2 id="PS图片绘制设置-像"><a href="#PS图片绘制设置-像" class="headerlink" title="PS图片绘制设置(像)"></a>PS图片绘制设置(像)</h2><p>图片无损方法：图像大小-重新取样/邻近(赢边缘)宽高</p>
-<p>变形方法：</p>
-<ol>
-<li>滤镜液化 大小自定，压力25</li>
-<li>冻结蒙版，压力100，眼睛下</li>
-<li>转化成智能对象</li>
-<li>视频帧转</li>
-</ol>
-<p>像素前置设置</p>
-<ol>
-<li>6464自订-拉入图片-窗口排列-双联垂直</li>
-<li>视图-显示-像素网格</li>
-<li>文件-存储为png 新建画布10，编辑-首选项-常规(邻近，非像素恢复 C+T放大)</li>
-</ol>
-<h2 id="视频剪辑"><a href="#视频剪辑" class="headerlink" title="视频剪辑"></a>视频剪辑</h2><ol>
-<li>右键导入视频可以拆分轨道</li>
-<li>去黑边方式-按住Crtl可以不锁定宽高比</li>
-<li>缩略图全显示：选项-首选项-视频</li>
-<li>Crtl+G时间点</li>
-<li>反转-创建子剪辑</li>
-<li>shift 工具多机位</li>
-<li>先放大局部-导出视频-重新导入放大</li>
-<li>抠图-视频色键</li>
-<li>运动字幕-使用字幕与文字-文本后图标添加动画-出现关键帧</li>
-<li>导出倍速视频：crtl按住视频边线：左加速右减速，直接拖边线不可以，只会恢复切片或者重复切片。</li>
-</ol>
-<h2 id="MATLAB"><a href="#MATLAB" class="headerlink" title="MATLAB"></a>MATLAB</h2><ol>
-<li>三维矢量图解组失败，一般是由于三维矢量图无法通过图窗复制-导出设置-渲染-printers对钩-应用复制图窗</li>
-</ol>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2020/08/25/ros-work/ros-work/</url>
-    <content><![CDATA[<p>时隔一年，再次听胡老师的课，感受颇有不同，包括简要课程记录复习一下以及写写作业。</p>
-<p>(9.26添加了一些小内容)</p>
-<p>(10.12增加了一下go内容)</p>
-<span id="more"></span>
-<p>1.日常ROS史观</p>
-<p>2.ros框架以及松耦合的分布式通信机制（日常）</p>
-<p>3.节点-执行单元（node）</p>
-<p>节点管理器（ros master）</p>
-<p>Topic-异步通信机制（publisher/subscriber）</p>
-<p>先来后到，多对多</p>
-<p>service-同步通信机制（service/client）—-request  response</p>
-<p>请求之后才会应答，一对多</p>
-<p>参数（parameter）</p>
-<p>典型字典</p>
-<p>工作空间（workspace0</p>
-<p>src:代码空间 build:编译空间 devel:开发空间 install: 安装空间</p>
-<p>功能包（package）</p>
-<p>功能包清单（package manifest  ）（包含作者信息、许可信息等，好像一直没用过这个233）</p>
-<p>元功能包（meta packages）</p>
-<p>action通信及机制</p>
-<p>应用场景：比如抓取，一段时间的抓捕动作，在执行过程中需要连续的response</p>
-<hr>
-<p>日常启动turtle</p>
-<hr>
-<p>关于turtlebot</p>
-<p>———-没有作业0.0</p>
-<p>ros常用组件与开发</p>
-<p>roslog</p>
-<h2 id="ros-moveit记录："><a href="#ros-moveit记录：" class="headerlink" title="ros_moveit记录："></a>ros_moveit记录：</h2><p>manipulator</p>
-<p>多轴机械臂6.7+各式夹具</p>
-<p>六轴机械臂</p>
-<hr>
-<p>伺服电机（减速机，为了降低电机转速，从而增加电机扭矩）皮带、行星、谐波（成本减速器比较高）</p>
-<p>机械臂本体</p>
-<p>控制器</p>
-<p><a href="img/arm.png">成本占比图</a></p>
-<hr>
-<p>智能化处理</p>
-<p>moveit  运动学、运动规划、碰撞检测、</p>
-<p>motion planning、manipulation、inverse kinematics</p>
-<p>control、3dperception（3d视觉）、collsion碰撞检测</p>
-<p>核心节点 move_group</p>
-<p>输入输出参数</p>
-<p>move_base 话题发布-cmdvel</p>
-<p>用户interface</p>
-<p>Ros moveit</p>
-<p>自己算法可封装到plugins </p>
-<p>Moveit 可视化配置和仿真</p>
-<p>Planning scene点云栅格地图</p>
-<p>Roslaunch moveit setup assistant</p>
-<p>1.选择模型，导入urdf或者xacro，需要严格按照DH法进行建立模型，导入moveit位置姿态正常。</p>
-<p>2.设置自碰撞检测 self collsion</p>
-<p>虚拟关节 vitual joints 描述机械臂基础坐标，固定臂虚拟项不修改，若移动，需要对虚拟关节修改。</p>
-<p>3.配置规划组</p>
-<p>运动学求解算法</p>
-<p>规划失败：模型没问题，规划时间可能太短，我好像没遇到过哎</p>
-<p>规划组选择最为重要</p>
-<p>4.预定义位姿  可设置初始姿态或者某些特殊姿态  使用较多，rviz规划仿真</p>
-<p>5..设置控制器</p>
-<p>6.作者信息</p>
-<p>7.生成配置功能包，使用较少</p>
-<p>Demo.launch-rviz仿真</p>
-<p>后续工作—gazebo</p>
-<p>Gazebo+ros+ros_control</p>
-<p>电机闭环控制知识（待补充）</p>
-<p>Ros控制器接口</p>
-<p>Moveit规划得到轨迹，通过controller（follow joint trajectory封装成话题action）—serve（默认五次插补运算）—伺服电机得到指令—硬件端-机器人对上位机反馈（joint state controller）</p>
-<p>基础编程</p>
-<p>1.连接控制需要的规划组</p>
-<p>2.设置目标位姿，关节空间或者笛卡尔空间</p>
-<p>3.设置运动约束</p>
-<p>4.使用moveit规划以到达目标的轨迹</p>
-<p>5.修改轨迹</p>
-<p>5.执行规划出的轨迹</p>
-<p>约束规划</p>
-<p>点到点关节空间规划</p>
-<p>(plan,fraction) = arm.compute_cartesian_path(waypoints,0.01,0.0,True)</p>
-<p>路径列表、终端步进值、最小移动值、避障规划</p>
-<p>Fraction 0-1 小于1无法规划</p>
-<p>直线轨迹</p>
-<p>圆弧轨迹方法：微分</p>
-<p>碰撞检测</p>
-<p>直接在可视界面添加障碍物</p>
-<p>通过代码导入</p>
-<p>API 五核心</p>
-<p>抓到物体 attach</p>
-<p>Eye in hand </p>
-<p>手眼标定（内参，外参）</p>
-<p>物体识别与定位（）</p>
-<p>抓取姿态分析（）</p>
-<p>运动规划</p>
-<p>Eye to hand</p>
-<p>Eye in hand</p>
-<p>关于ros：</p>
-<p>像素坐标转换成全局空间坐标</p>
-<p>深度学习融合</p>
-<p>ROS-I 工业机械臂应用</p>
-<p>工业领域分支</p>
-<p>应用</p>
-<h2 id="ros-slam记录"><a href="#ros-slam记录" class="headerlink" title="ros_slam记录:"></a>ros_slam记录:</h2><p>1.slam-地图构建</p>
-<p>gmapping 激光方案</p>
-<p>vslam</p>
-<p>视觉方案存在问题，容易受环境光影响，工业环境常用激光，irobot使用了视觉，精度要求不高</p>
-<p>superpoint</p>
-<p>多检测融合，包括orb、角点检测等，鲁棒性较高</p>
-<p>pointcloud 点云设计方案</p>
-<p>去除噪音、降采样、移除行人、移除地面—-网格mesh化</p>
-<p>point—-legoloam—点云算法，运算量比较小，点云图像投影</p>
-<p>地图构建之后，定位</p>
-<p>EKF-扩展卡尔曼滤波器</p>
-<p>信息融合，视觉、imu惯性测量单元（测量姿态）、gps等数据源卡尔曼滤波，提高精度</p>
-<p>平面定位-amcl</p>
-<p>粒子分布、更新—全局分布—视觉重定位（辅助）—初始定位—定位置信度</p>
-<p>定位-NDT/ICP 点云算法 </p>
-<p>ndt 网格化正态分布变换</p>
-<p>icp 迭代最近点   由轨迹确定位置</p>
-<p>3.全局规划与局部规划</p>
-<p>Globalcostmap</p>
-<p>静态层、动态层、膨胀层（远离障碍物，自己加）</p>
-<p>全局规划算法—A*/Dijkstra</p>
-<p>目的是避障寻找最低能耗路径</p>
-<p>人工势场法—寻找能量最低路径</p>
-<p>地图构建-势场-膨胀-全局规划算法-跟随，进行局部规划算法</p>
-<p>局部规划</p>
-<p>以机器人周围构建主要激光和点云</p>
-<p>算法-DWA（决定机器人动态效果）</p>
-<p>​    1.采样空间/运动模型</p>
-<p>​    2.代价函数</p>
-<p>​    防抖，运动平滑</p>
-<p>​    3.动态窗口仿真</p>
-<p>3.导航 move_base</p>
-<p>4.全地形导航-height map 三维  存在高度概念</p>
-<p>关于moveit计算方案</p>
-<h2 id="ros2记录（待续）"><a href="#ros2记录（待续）" class="headerlink" title="ros2记录（待续）:"></a>ros2记录（待续）:</h2><p>Rosi核心ros1</p>
-<p>关于Ros2架构</p>
-<p>Ros2起源，目的都是为了提高软件复用率</p>
-<p>保密性不足，局域网下信息互通</p>
-<p>2014年正式提出</p>
-<p>2020.6.5 foxy fitzory</p>
-<p>架构颠覆：ros1需要master管理，ros2使用基于DDS的discovery机制</p>
-<p>Api重新设计：ros1基于2009.2之前 ros2重新设计了新的api，使用方法类似</p>
-<p>编译系统升级：ros1 rosbuild、catkin ros2 ament colcon</p>
-<h2 id="ros深度学习"><a href="#ros深度学习" class="headerlink" title="ros深度学习"></a>ros深度学习</h2><p>感知与控制</p>
-<p>感知</p>
-<p>物体分类 image</p>
-<p>目标检测 object</p>
-<p>语义分割 semantic</p>
-<p>实例分割 instance</p>
-<p>感知-cnn</p>
-<p>卷积运算 </p>
-<p>池化运算</p>
-<p>RCNN</p>
-<p>Mseg-语义分割</p>
-<p>mask-rcnn感知</p>
-<p>pointnet</p>
-<p>2.联想GPT3</p>
-<p>代码补全</p>
-<p>数据集足够多，效果足够好</p>
-<h2 id="ROS探索总结记录（体系查漏补缺）"><a href="#ROS探索总结记录（体系查漏补缺）" class="headerlink" title="ROS探索总结记录（体系查漏补缺）"></a>ROS探索总结记录（体系查漏补缺）</h2><p>package</p>
-<p>ROS 的软件以包的方式组织起来。包包含节点、ROS 依赖库、数据套、配置文件、第三方软件、或者任何<br>其他逻辑构成。包的目标是提供一种易于使用的结构以便于软件的重复使用。总得来说,ROS 的包短小精<br>干。</p>
-<p>stack</p>
-<p>堆是包的集合,它提供一个完整的功能</p>
-<p>Manifests (manifest.xml):提供关于 Package 元数据,包括它的许可信息和 Package 之间依赖关<br>系,以及语言特性信息像编译旗帜(编译优化参数)<br>。<br>Stack manifests (stack.xml):提供关于 Stack 元数据,包括它的许可信息和 Stack 之间依赖关系。</p>
-<p>1.常见的几个</p>
-<p>PR2 ：<a href="http://www.ros.org/wiki/Robots/PR2">http://www.ros.org/wiki/Robots/PR2</a></p>
-<p>Turtlebot：<a href="http://www.ros.org/wiki/Robots/TurtleBot">http://www.ros.org/wiki/Robots/TurtleBot</a></p>
-<p>Husky：<a href="http://www.ros.org/wiki/Robots/Husky">http://www.ros.org/wiki/Robots/Husky</a>  /   <a href="http://www.ros.org/wiki/Robots/Erratic">http://www.ros.org/wiki/Robots/Erratic</a></p>
-<p>轮式移动机器人</p>
-<p>手柄端口 ls /dev/input</p>
-<p>机器视觉</p>
-<p>rosrun rviz rviz</p>
-<p>关于tf细节</p>
-<p>(1) 监听 tf 变换</p>
-<p>(2) 广播 tf 变换</p>
-<p>关于无人车ros 总结</p>
-<p>轮胎</p>
-<p>纵向花纹： 低滚动阻力 防止侧滑，装向稳定性优异</p>
-<p>横向花纹：出色的驱动力和制动力，强大的牵引力</p>
-<p>纵横兼有花纹：纵纹提供向稳定性，横纹改善驱动力和制动力</p>
-<p>关于usb问题： ls /dev/ttyUSB*</p>
-<h2 id="ROSGO"><a href="#ROSGO" class="headerlink" title="ROSGO"></a>ROSGO</h2>]]></content>
-  </entry>
-  <entry>
-    <title>start2024</title>
-    <url>/2024/02/19/start2024/start2024/</url>
-    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
-<h1 id="又是一年春"><a href="#又是一年春" class="headerlink" title="又是一年春"></a>又是一年春</h1><p>距离上次笔记已有一年，没有做到经常写笔记，今年要改正，今天的目的是写一下总结以及对自己的要求，以及年后的一些规划，</p>
-<p>几个指令备注一下：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">hexo n <span class="string">"学习笔记  六"</span></span><br><span class="line">hexo d</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br></pre></td></tr></tbody></table></figure>
-<span id="more"></span>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>过去的一年其实还不错，论文项目都有进度，但是后期又有点偷懒了，开年需要向后拓展，这部分已经总结过，简单略过。</p>
-<h2 id="预计要求"><a href="#预计要求" class="headerlink" title="预计要求"></a>预计要求</h2><p>过去的一段时间和很多人交流过，也一个人旅游过，发现自己还是有很多问题，认识自己，改正自己。</p>
-<p>1.新的一年依然要强迫自己去做应该做的事情，见贤思齐，多多反省，心里逃避，但是还是要前进，太内向了确实不太好，应该多尝试主动与他人沟通，认识下总归没坏处。</p>
-<p>2.新的一年接地气一点，不要太理性主义了，多多肯定别人的观点，别人的分享也要主动去看看，不要表现的不感兴趣，不要否定别人，少提意见，没有什么很俗的东西，生活就是这样，开心点，合群点。</p>
-<p>3.与师长们相处，还是往常的态度就好，谦虚但是也要有自己的主见，这个去年大体上没有做错的地方。</p>
-<p>4.生活上，过去的一年相对规律，新的一年依旧保持，但是之后的一段时间要去上一些强度。</p>
-<h2 id="年后规划"><a href="#年后规划" class="headerlink" title="年后规划"></a>年后规划</h2><p>1.学业部分不用讲，按照规律坚持就行</p>
-<p>2.拓展一下爱好，旅游拍摄和像素画，要过得开心一点</p>
-<h2 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a>自我评价</h2><p>内心依然有一些炫耀欲，与人相处很害怕别人把希望寄托在我身上，不想承担额外的责任。。。</p>
-<p>沧浪之水，脚踏实地一点，多多与人沟通，人还是要接地气一点，虚荣驱动理想天天飘着，实际一点，开心一点。</p>
-<h2 id="补充一些博客修复内容："><a href="#补充一些博客修复内容：" class="headerlink" title="补充一些博客修复内容："></a>补充一些博客修复内容：</h2><p>Permission denied (publickey) 没有权限的publickey ，出现这错误一般是以下两种原因</p>
-<p>客户端与服务端未生成 ssh key<br>客户端与服务端的ssh key不匹配<br>找到问题的原因了，解决办法也就有了，重新生成一次ssh key ，服务端也重新配置一次即可。</p>
-<p>ssh-keygen -t rsa -C “xx@qq.com”</p>
-<p>然后再终端下执行命令：</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="code"><pre><span class="line">ssh -v git<span class="meta">@github</span>.<span class="property">com</span></span><br></pre></td></tr></tbody></table></figure>
-<p>最后两句会出现</p>
-<figure class="highlight erlang"><table><tbody><tr><td class="code"><pre><span class="line">　　No more authentication methods to <span class="keyword">try</span>.  　　Permission denied (publickey).</span><br></pre></td></tr></tbody></table></figure>
-<p>在终端再执行以下命令</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">ssh-agent -s </span><br></pre></td></tr></tbody></table></figure>
-<p>接着在执行</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="code"><pre><span class="line">ssh-add ~<span class="regexp">/.ssh/i</span>d_rsa</span><br></pre></td></tr></tbody></table></figure>
-<p>$ ssh-add ~/.ssh/id_rsa<br>出现Could not open a connection to your authentication agent.<br>这时可以使用：ssh-agent bash 命令，然后再次使用ssh-add ~/.ssh/id_rsa_name这个命令就没问题了。<br>根据路径查看文件内部的命令： Identity added: …这是ssh key文件路径的信息 </p>
-<p> 打开你刚刚生成的id_rsa.pub，将里面的内容复制，进入你的<a href="https://so.csdn.net/so/search?q=github&amp;spm=1001.2101.3001.7020">github</a>账号，在settings下，SSH and GPG keys下new SSH key，然后将id_rsa.pub里的内容复制到Key中，完成后Add SSH Key。 设置完成后</p>
-<h4 id="验证Key"><a href="#验证Key" class="headerlink" title="验证Key"></a>验证Key</h4><figure class="highlight typescript"><table><tbody><tr><td class="code"><pre><span class="line">ssh -T git<span class="meta">@github</span>.<span class="property">com</span> </span><br></pre></td></tr></tbody></table></figure>
-<p> 提示：Hi xxx! You’ve successfully authenticated, but GitHub does not provide shell access </p>
-]]></content>
-      <categories>
-        <category>note</category>
-      </categories>
-      <tags>
-        <tag>emotion</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>transformation_feel</title>
     <url>/2024/08/16/transformation-feel/transformation-feel/</url>
     <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
@@ -3884,6 +3884,70 @@ u w(1-\cos \theta)-v \sin \theta & v w(1-\cos \theta)+u \sin \theta & w^2+\left(
       <tags>
         <tag>emotion</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>记录</title>
+    <url>/2021/01/06/%E8%AE%B0%E5%BD%95/%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h1 id="会议记录"><a href="#会议记录" class="headerlink" title="会议记录"></a>会议记录</h1><p>学习，学习一下</p>
+<span id="more"></span>
+<p> human-like，行为传递</p>
+<p>接触性作业—需要涉及force control</p>
+<p>阻抗控制</p>
+<p>刚度无法直接测量—机电信号与刚度信号</p>
+<p>类人控制从两方面思考</p>
+<p>1.控制器 </p>
+<p>2.操作</p>
+<p>敲钉子—固定位置，但是又不可以握紧，松一点反而方便操作</p>
+<p>对刚度矩阵进行操作，控制</p>
+<p>接触力与刚度</p>
+<hr>
+<p>刚度不变，改变接触力；接触力基本不变改变刚度</p>
+<hr>
+<p>控制模型（学习模型）</p>
+<p>对干扰方向增加刚度，其余方向保持柔顺，</p>
+<p>变刚度控制—保证精确控制</p>
+<p>其余应用：</p>
+<p>人机协同领域：根据人力改变刚度，比如锯木头案例</p>
+<p>机器人与环境交互</p>
+<p><strong>一项思考，针对水阻力进行变刚度控制，是否能实现精确位置控制，抵抗阻力呢，可以尝试··</strong></p>
+<p>2011文章</p>
+<p>分布于力场中的机构，运动，未知力场（流体力场？）保证机器人进行直线运动，进行轨迹规划，可以借鉴，论文</p>
+<p>如何分析力场？神经网络学习力场</p>
+<p>增量学习法控制器，是机械臂沿直线运动，学习之后进行目标运动</p>
+<p>示教学习</p>
+<p>c.yang ieee tll 2018</p>
+<p>泛化—分割</p>
+<p>大多考虑运动控制，考虑力控制，才能实现精确作业</p>
+<p>通过机械脉冲，测量刚度</p>
+<p>基于IMUs和ARM model测量</p>
+<p>力、刚度stiffness、位置控制</p>
+<h2 id="遥操作相关"><a href="#遥操作相关" class="headerlink" title="遥操作相关"></a>遥操作相关</h2><p>特殊环境通信？？</p>
+<p>避障—机器人建模</p>
+<p>了解一下  MYO armhand</p>
+<p>双臂操作 控制小车</p>
+<p>利用操作杆 控制小车</p>
+<p>优点：手环只有视觉效果，这里是否可以应用于目前手机厂商的手环产品上呢？可以尝试一下</p>
+<p>操作杆：可以有力反馈</p>
+<p>虚拟环境力反馈，模仿了人类的视角作业</p>
+<p>12.30 — 20.30</p>
+<p>增量学习-鲁棒项</p>
+<p>希望实现全局稳定—当运动范围过大时，加入鲁棒项进行回收。</p>
+<p>学习外界环境</p>
+<p>力场，不考虑机构本身，利用机构本身控制模型去学习外场，这样是否可以在动力模型不引入外阻力项，仅仅通过外刚度变化控制，实现对于未知力场学习后，进行精确轨迹路线的规划。</p>
+<p>示教学习是一个良好的方向</p>
+<p>云服务应用于示教学习，案例共享。</p>
+<p>组装工序</p>
+<p>LQR线性模型学习人体阻抗模型</p>
+<p>保持本身—外部环境隔开-学习外部环境</p>
+<p>机电信号测量刚度—-匹配刚度矩阵—</p>
+<p>长时间泛化 误差累积和噪声累积</p>
+<p>RBF神经网络学习</p>
+<p>扩大范围，进行控制覆盖，建立地图。</p>
+<p>神经网络用于提高性能，优化</p>
+<p>稳定利用传统控制方法进行稳定</p>
+<p>一对多控制</p>
+<p>emgsensor 8通道</p>
+]]></content>
   </entry>
   <entry>
     <title>爬虫记录_bro</title>
@@ -3979,70 +4043,6 @@ u w(1-\cos \theta)-v \sin \theta & v w(1-\cos \theta)+u \sin \theta & w^2+\left(
 <p>UTS相关规定</p>
 <p>robots.txt</p>
 <p>软件爬虫告一段落，目前为止，较为简单，算是学学新东西，下一阶段顺便复习一下语法基础。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>记录</title>
-    <url>/2021/01/06/%E8%AE%B0%E5%BD%95/%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h1 id="会议记录"><a href="#会议记录" class="headerlink" title="会议记录"></a>会议记录</h1><p>学习，学习一下</p>
-<span id="more"></span>
-<p> human-like，行为传递</p>
-<p>接触性作业—需要涉及force control</p>
-<p>阻抗控制</p>
-<p>刚度无法直接测量—机电信号与刚度信号</p>
-<p>类人控制从两方面思考</p>
-<p>1.控制器 </p>
-<p>2.操作</p>
-<p>敲钉子—固定位置，但是又不可以握紧，松一点反而方便操作</p>
-<p>对刚度矩阵进行操作，控制</p>
-<p>接触力与刚度</p>
-<hr>
-<p>刚度不变，改变接触力；接触力基本不变改变刚度</p>
-<hr>
-<p>控制模型（学习模型）</p>
-<p>对干扰方向增加刚度，其余方向保持柔顺，</p>
-<p>变刚度控制—保证精确控制</p>
-<p>其余应用：</p>
-<p>人机协同领域：根据人力改变刚度，比如锯木头案例</p>
-<p>机器人与环境交互</p>
-<p><strong>一项思考，针对水阻力进行变刚度控制，是否能实现精确位置控制，抵抗阻力呢，可以尝试··</strong></p>
-<p>2011文章</p>
-<p>分布于力场中的机构，运动，未知力场（流体力场？）保证机器人进行直线运动，进行轨迹规划，可以借鉴，论文</p>
-<p>如何分析力场？神经网络学习力场</p>
-<p>增量学习法控制器，是机械臂沿直线运动，学习之后进行目标运动</p>
-<p>示教学习</p>
-<p>c.yang ieee tll 2018</p>
-<p>泛化—分割</p>
-<p>大多考虑运动控制，考虑力控制，才能实现精确作业</p>
-<p>通过机械脉冲，测量刚度</p>
-<p>基于IMUs和ARM model测量</p>
-<p>力、刚度stiffness、位置控制</p>
-<h2 id="遥操作相关"><a href="#遥操作相关" class="headerlink" title="遥操作相关"></a>遥操作相关</h2><p>特殊环境通信？？</p>
-<p>避障—机器人建模</p>
-<p>了解一下  MYO armhand</p>
-<p>双臂操作 控制小车</p>
-<p>利用操作杆 控制小车</p>
-<p>优点：手环只有视觉效果，这里是否可以应用于目前手机厂商的手环产品上呢？可以尝试一下</p>
-<p>操作杆：可以有力反馈</p>
-<p>虚拟环境力反馈，模仿了人类的视角作业</p>
-<p>12.30 — 20.30</p>
-<p>增量学习-鲁棒项</p>
-<p>希望实现全局稳定—当运动范围过大时，加入鲁棒项进行回收。</p>
-<p>学习外界环境</p>
-<p>力场，不考虑机构本身，利用机构本身控制模型去学习外场，这样是否可以在动力模型不引入外阻力项，仅仅通过外刚度变化控制，实现对于未知力场学习后，进行精确轨迹路线的规划。</p>
-<p>示教学习是一个良好的方向</p>
-<p>云服务应用于示教学习，案例共享。</p>
-<p>组装工序</p>
-<p>LQR线性模型学习人体阻抗模型</p>
-<p>保持本身—外部环境隔开-学习外部环境</p>
-<p>机电信号测量刚度—-匹配刚度矩阵—</p>
-<p>长时间泛化 误差累积和噪声累积</p>
-<p>RBF神经网络学习</p>
-<p>扩大范围，进行控制覆盖，建立地图。</p>
-<p>神经网络用于提高性能，优化</p>
-<p>稳定利用传统控制方法进行稳定</p>
-<p>一对多控制</p>
-<p>emgsensor 8通道</p>
 ]]></content>
   </entry>
   <entry>
