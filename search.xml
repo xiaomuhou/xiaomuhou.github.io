@@ -4136,4 +4136,36 @@ u w(1-\cos \theta)-v \sin \theta & v w(1-\cos \theta)+u \sin \theta & w^2+\left(
         <tag>EMO</tag>
       </tags>
   </entry>
+  <entry>
+    <title>常用排版技巧</title>
+    <url>/2026/01/25/%E5%B8%B8%E7%94%A8%E6%8E%92%E7%89%88%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<p>总结点最近常用的技巧，方便复制</p>
+<span id="more"></span>
+<h1 id="关于配色："><a href="#关于配色：" class="headerlink" title="关于配色："></a>关于配色：</h1><p>[0.0588235294117647 0.392156862745098 0.4]绿色，</p>
+<p>[1 0.796078431372549 0.603921568627451]橙色，</p>
+<p>[0.219607843137255 0.0941176470588235 0.298039215686275]紫色</p>
+<p>图片处理规程：visio-导入空白word-word内部操作转成pdf-另存取消辅助功能文档结构标记</p>
+<p>要求：坐标图的坐标线均用细实线，粗细不得超过图中曲线；有数字标注的坐标图，必须注明坐标单位。边框用1，曲线看情况</p>
+<p>关于visio，输入宽度，不通过鼠标锁定纵横比方法：开发工具-形状设计-保护-纵横比即可实现</p>
+<p>关于论文之后要注意的几个尺寸问题规定：双图并排 宽度68-71，建议70；高度不太重要，小于75效果略好</p>
+]]></content>
+      <tags>
+        <tag>note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>静刚度锁定的一些想法记录</title>
+    <url>/2025/12/27/%E9%9D%99%E5%88%9A%E5%BA%A6%E9%94%81%E5%AE%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
+<h1 id="静刚度与锁定之间的关系"><a href="#静刚度与锁定之间的关系" class="headerlink" title="静刚度与锁定之间的关系"></a>静刚度与锁定之间的关系</h1><p>补充一些些基本知识</p>
+<span id="more"></span>
+<p>有点多不在这写了，已完成—121</p>
+]]></content>
+      <categories>
+        <category>thesis</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
 </search>

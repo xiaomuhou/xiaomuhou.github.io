@@ -6,7 +6,7 @@
   <link href="http://xiaomuhou.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiaomuhou.github.io/"/>
-  <updated>2025-12-22T15:40:01.449Z</updated>
+  <updated>2026-01-24T16:22:34.002Z</updated>
   <id>http://xiaomuhou.github.io/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用排版技巧</title>
+    <link href="http://xiaomuhou.github.io/2026/01/25/%E5%B8%B8%E7%94%A8%E6%8E%92%E7%89%88%E6%8A%80%E5%B7%A7/"/>
+    <id>http://xiaomuhou.github.io/2026/01/25/%E5%B8%B8%E7%94%A8%E6%8E%92%E7%89%88%E6%8A%80%E5%B7%A7/</id>
+    <published>2026-01-24T16:20:53.000Z</published>
+    <updated>2026-01-24T16:22:34.002Z</updated>
+    
+    <content type="html"><![CDATA[<p>总结点最近常用的技巧，方便复制</p><span id="more"></span><h1 id="关于配色："><a href="#关于配色：" class="headerlink" title="关于配色："></a>关于配色：</h1><p>[0.0588235294117647 0.392156862745098 0.4]绿色，</p><p>[1 0.796078431372549 0.603921568627451]橙色，</p><p>[0.219607843137255 0.0941176470588235 0.298039215686275]紫色</p><p>图片处理规程：visio-导入空白word-word内部操作转成pdf-另存取消辅助功能文档结构标记</p><p>要求：坐标图的坐标线均用细实线，粗细不得超过图中曲线；有数字标注的坐标图，必须注明坐标单位。边框用1，曲线看情况</p><p>关于visio，输入宽度，不通过鼠标锁定纵横比方法：开发工具-形状设计-保护-纵横比即可实现</p><p>关于论文之后要注意的几个尺寸问题规定：双图并排 宽度68-71，建议70；高度不太重要，小于75效果略好</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;总结点最近常用的技巧，方便复制&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="note" scheme="http://xiaomuhou.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>静刚度锁定的一些想法记录</title>
+    <link href="http://xiaomuhou.github.io/2025/12/27/%E9%9D%99%E5%88%9A%E5%BA%A6%E9%94%81%E5%AE%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95%E8%AE%B0%E5%BD%95/"/>
+    <id>http://xiaomuhou.github.io/2025/12/27/%E9%9D%99%E5%88%9A%E5%BA%A6%E9%94%81%E5%AE%9A%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95%E8%AE%B0%E5%BD%95/</id>
+    <published>2025-12-27T12:40:34.000Z</published>
+    <updated>2026-01-24T16:20:21.334Z</updated>
+    
+    <content type="html"><![CDATA[<p><meta name="referrer" content="no-referrer"></p><h1 id="静刚度与锁定之间的关系"><a href="#静刚度与锁定之间的关系" class="headerlink" title="静刚度与锁定之间的关系"></a>静刚度与锁定之间的关系</h1><p>补充一些些基本知识</p><span id="more"></span><p>有点多不在这写了，已完成—121</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;静刚度与锁定之间的关系&quot;&gt;&lt;a href=&quot;#静刚度与锁定之间的关系&quot; class=&quot;headerlink&quot; title=&quot;静刚度与锁定之间的关系&quot;&gt;&lt;/a&gt;静刚度与锁定之间的关系&lt;/h1&gt;&lt;p&gt;补充一些些基本知识&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="thesis" scheme="http://xiaomuhou.github.io/categories/thesis/"/>
+    
+    
+    <category term="learning" scheme="http://xiaomuhou.github.io/tags/learning/"/>
+    
+  </entry>
   
   <entry>
     <title>SPaccumulation</title>
@@ -421,48 +462,6 @@
     
     
     <category term="EMO" scheme="http://xiaomuhou.github.io/tags/EMO/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>morphing_and_deformation</title>
-    <link href="http://xiaomuhou.github.io/2024/07/05/morphing-and-deformation/morphing-and-deformation/"/>
-    <id>http://xiaomuhou.github.io/2024/07/05/morphing-and-deformation/morphing-and-deformation/</id>
-    <published>2024-07-05T14:24:59.000Z</published>
-    <updated>2024-08-12T13:45:51.461Z</updated>
-    
-    <content type="html"><![CDATA[<p><meta name="referrer" content="no-referrer"><br><strong>morphing与deformation区别</strong></p><span id="more"></span><h3 id="Shape-Morphing"><a href="#Shape-Morphing" class="headerlink" title="Shape Morphing"></a>Shape Morphing</h3><ul><li><strong>Context</strong>: Shape morphing is typically discussed in areas where objects or materials are designed to change shape in a controlled, intentional, and often reversible manner.</li><li><strong>Applications</strong>:<ul><li><strong>Computer Graphics and Animation</strong>: Smooth transitions between different shapes or forms, often used in character animations or special effects.</li><li><strong>Aerospace Engineering</strong>: Wings or other components that change shape to optimize performance under different conditions.</li><li><strong>Robotics</strong>: Soft robots that can change shape to navigate through different environments.</li><li><strong>Smart Materials</strong>: Materials that can change their shape in response to stimuli (e.g., temperature, light, electric fields).</li></ul></li><li><strong>Example</strong>: “The development of shape morphing structures can lead to more efficient and adaptable aircraft designs.”</li></ul><h3 id="Shape-Deformation"><a href="#Shape-Deformation" class="headerlink" title="Shape Deformation"></a>Shape Deformation</h3><ul><li><strong>Context</strong>: Shape deformation is a broader term that encompasses any change in shape, whether it is controlled or due to external forces. It includes both elastic (reversible) and plastic (permanent) deformations.</li><li><strong>Applications</strong>:<ul><li><strong>Physics and Mechanics</strong>: Studying how materials deform under various forces and conditions (e.g., tension, compression, shear).</li><li><strong>Materials Science</strong>: Understanding how different materials respond to stress and strain.</li><li><strong>Engineering</strong>: Designing structures and components that can withstand deformations without failing.</li><li><strong>Biology</strong>: Examining how biological tissues deform under pressure or during movement.</li></ul></li><li><strong>Example</strong>: “The research analyzes the shape deformation of metal alloys under high stress to improve their performance in structural applications.”</li></ul><h3 id="Academic-and-Idiomatic-Use"><a href="#Academic-and-Idiomatic-Use" class="headerlink" title="Academic and Idiomatic Use"></a>Academic and Idiomatic Use</h3><ul><li><strong>Shape Morphing</strong>:<ul><li>More specific and often used in advanced or niche fields.</li><li>Conveys a sense of smooth and intentional transformation.</li><li>Less common in general academic literature but highly relevant in fields like aerospace, robotics, and smart materials.</li></ul></li><li><strong>Shape Deformation</strong>:<ul><li>More general and widely applicable across many scientific and engineering disciplines.</li><li>Includes both controlled and uncontrolled changes in shape.</li><li>More commonly found in academic papers, textbooks, and research articles across a broad range of subjects.</li></ul></li></ul><h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><ul><li><strong>Shape Morphing</strong>: Best used when discussing specific, controlled, and often reversible shape changes in specialized contexts.</li><li><strong>Shape Deformation</strong>: More suitable for general discussions about changes in shape, whether controlled or due to external forces, across a wide range of scientific and engineering disciplines.</li></ul><h3 id="Key-Differences"><a href="#Key-Differences" class="headerlink" title="Key Differences"></a>Key Differences</h3><ul><li><p>Influence</p><p> often implies a more subtle or indirect impact, potentially over time.</p><ul><li>Example: “Her advice influenced my career path over the years.”</li></ul></li><li><p>Affect</p><p> generally denotes a direct and immediate impact.</p><ul><li>Example: “The sudden change in temperature affected the crops.”</li></ul></li></ul><hr><p>老黄采访记录：</p><p>played the game,not the score</p><p>just do your best,go to school,take the right classes,do your best,do you homework,</p><p>dedicate your self to be a good student,</p><p>that  grades will take care of itself,</p><p>if you go backwards,and you teach children just focus on the grades,</p><p>they’ll take easier classes,</p><p>ther’ll focus on just doing well in class and test but not learning and they might learn the wrong thing.</p><p>they might take less risk,they might challenge themselves less</p><p>i would prefer that our company challenges itself more,</p><p>this discover unknown things, do things that no one else has ever done before,</p><p>and be willing to fail, and be willing to learn along the way.,rather than i want you to deliver growth,growth,growth…growth margin,growth margin or whatever results.</p><p>you cannot control those things. don’t worry about those things.</p><p>and so i created a system called early indicators of future success.</p><p>don’t worry about future sucess, worry about the early indicators of future success.</p><p>and what are some of the things of early indicators ,you decide for yourself? </p><p>what are the early indicatos that your believe will lead to future success.</p><p>and that’s why our company focus on that.</p><p>we don’t let somebody else decide for us.</p><p>what’s the definition of success.as we thought we created ourselves.</p><p>and that’s why the company has to go create those indicators on work</p><p>don’t worry about anything else</p><p>and the results will take care of yourself</p><p>“Analyse” and “analysis” have the same grammatical roles and meanings as “analyze” and “analysis,” respectively, but with a difference in spelling. “Analyse” is the British English spelling, while “analyze” is the American English spelling. Both terms are used to describe the process of examining something in detail and the result of that process.<br>Analyse<br>Part of Speech: Verb<br>Definition: To examine something methodically and in detail, typically in order to explain and interpret it.<br>Usage:<br>Action: “Analyse” describes the action of examining and breaking down information into components to understand it better.<br>Examples:”Scientists analyse data to draw conclusions.”<br>“We need to analyse the results of the experiment.”<br>Analysis<br>Part of Speech: Noun<br>Definition: The detailed examination of the elements or structure of something.<br>Usage:<br>Result: “Analysis” refers to the process or the result of analysing something.<br>Examples:”The analysis revealed important insights.”<br>“Her analysis of the market trends was thorough and detailed.”<br>Key Differences<br>Spelling:<br>Analyse: British English spelling of the verb.<br>Analyze: American English spelling of the verb.<br>Analysis: The spelling of the noun remains the same in both British and American English.<br>Function:<br>Analyse/Analyze: Describes the act or process of examining something.<br>Analysis: Refers to the outcome or result of the examination process.<br>Grammatical Role:<br>Analyse/Analyze: Verb, used to describe an action.<br>Analysis: Noun, used to describe a thing or concept.<br>Context:<br>Analyse/Analyze: Used when talking about performing the action of examining.Example: “They will analyse the financial statements.” (British English)<br>Example: “They will analyze the financial statements.” (American English)<br>Analysis: Used when referring to the completed work or the process of examination.Example: “The financial analysis was very insightful.”<br>Examples in Sentences<br>Analyse (British English):<br>“Before making a decision, it’s important to analyse all the available information.”<br>“The software can analys</p><hr><p>乱七八糟转载</p><p>不太过分就尽量忍让，开心就好。</p><p>  <em>家人、朋友和重要的人要放在优先位置。少数亲密朋友胜过一百个普通朋友。不要与老朋友失联。</em> </p><p>  <em>做让你快乐的事，不要做让你不快乐的事。不要和满是负能量的人联系。</em> </p><p> <em>努力工作，但不要错过生活。成为专业领域的顶尖，找到自己的生产力系统，<strong>不要害怕冒险。</strong></em> </p><p> <em>赚钱比花钱有趣，但在朋友、新体验、节省时间、旅行和事业上花的钱不要吝啬。</em> </p><p> <em>不要受人摆布。人们可以变得强大，自信与傲慢有区别，目标是前者</em>。 -表面听话，骨子里全是叛逆。。。</p><p> <em>为自己设定每天、每年和每十年的清晰目标</em>。 -有点难，每天比较重要。</p><p> <em>勇敢追求你想要的。如果你认为不做某事会后悔，那就去做。遗憾通常来自于没做的事</em> </p><p> <em>尽力帮助别人，对陌生人友好，即使在没人注意没有回报的时刻也要友好</em>。 -无目的的帮助别人确实会很开心</p><p> <em>要贪婪地学习。 - 经常尝试新事物：做新事物能让时间过得慢些，增加幸福感，保持生活有趣，还能防止思维僵化。每年在生活和工作中都要尝试一些重大、新颖、有挑战的事情。</em> </p><p>  <em>学会原谅：要学会原谅他人。</em> -这个确实，只要不是太过分，影响小，能退一步就退一步，心里过去自己也能舒服。毕竟不能指望每个人十全十美。</p><p> <em>不过分追求地位：地位没有真实价值维持不了多久，而且会让人感到空虚。</em> 平等就行，所谓年纪辈分都是没意义的垃圾；</p><p> <em>感恩和正确看待问题：学会感恩，不要过多抱怨，不要嫉妒别人的成功。有些人可能会嫉妒你的成功，你得学会忽略这些声音。</em> 走自己的路，平常心就是这样</p><p> <em>做行动派：做一个行动派，而不是只会空谈的人。</em> 低头，很难呀</p><p> <em>冷静思考：行动前先冷静思考几秒。如果你很愤怒，那就多思考几分钟。</em> </p><p> <em>不妄下定论：不要轻易对他人妄下定论，你可能永远无法完全了解他们的全部故事，要学会设身处地为他人着想。</em>  体会人的复杂，慎重决定</p><p> <em>不要轻易说‘很难’，不为失败找借口，只为成功找方法.</em>  尝试</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;br&gt;&lt;strong&gt;morphing与deformation区别&lt;/strong&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="GPT" scheme="http://xiaomuhou.github.io/categories/GPT/"/>
-    
-    
-    <category term="ACADEMIC" scheme="http://xiaomuhou.github.io/tags/ACADEMIC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>心情随笔</title>
-    <link href="http://xiaomuhou.github.io/2024/05/15/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/"/>
-    <id>http://xiaomuhou.github.io/2024/05/15/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/</id>
-    <published>2024-05-15T14:36:32.000Z</published>
-    <updated>2024-05-15T14:40:40.251Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="心情随笔，胡思乱想"><a href="#心情随笔，胡思乱想" class="headerlink" title="心情随笔，胡思乱想"></a>心情随笔，胡思乱想</h1><p>胡乱笔记，想到什么记什么。</p><span id="more"></span><h2 id="无效预演"><a href="#无效预演" class="headerlink" title="无效预演"></a>无效预演</h2><p>最近发现一个不自主的问题，脑子里总是喜欢为不熟悉的事情做预演，但是其实是往往没啥作用，徒劳心力；</p><p>以KE为例，要注意区分用功复习与无效预演的差别，面对来临的安排，最好的做法就是只要没有必须拒绝的理由，就去接受，兵来将挡水来土掩，是一种从容的态度，之前二也是感觉很麻烦，但是结束之后又有一个还算完美的结局，所以接下来的事情，就继续下去；</p><h2 id="间隙性分心："><a href="#间隙性分心：" class="headerlink" title="间隙性分心："></a>间隙性分心：</h2><p>常常无法保持持续的专注力，上一次高效工作还是因为有个明确DDL的时候，反思一下，问题主要在于两个：</p><p>第一是目标比较模糊，虽然知道要去做哪个内容，但是缺少的内容不够明确，比方说已知需要看完那两篇博士论文，整理之前收集的SMM背景,目的是吸收方法，找一些新的分析工具，坐标转换想利用四元数，简洁表述，但是第一步还有问题，正无问题，逆所需要的信息、流程不明确，这是目前急需解决的问题，整理完论文应该就会有结果，周五之前需要结束。</p><p>第二没有完全切断干扰源，luna的视频给了我很大的启发，没有严格的限制就不会有强大的动力去切断干扰，自我设限催眠一下，是一个不错的手段，半执行状态已经能感受到方法的有效性，通过限制增加动力就可以。</p><p>第三短期目标的设置，按照工作量设定目标而非时间阶段非常有效，结合二去执行，受到限制，专注一点。</p><h2 id="对短视频的思考："><a href="#对短视频的思考：" class="headerlink" title="对短视频的思考："></a>对短视频的思考：</h2><p>前几天看了油管上chenlily的新视频，没想到也在为短视频的问题困扰，对我而言，短视频（不以时间长短作为区分，内容含量上的短）其实无所谓，因为我平时也不会去看，我讨厌那些没头没尾的创作内容，持续性的刺激多巴胺，我认为是一种非常下作的创作方法，但是人生就是这样，兜里请揣满人民币，叛逆之前也需要让别人先看到你。</p><p>C之前就表达过为了生存和播放量必须开始制作，其实我能理解，也以为她已经想通了，感觉那还蛮好的，没想到停更了那么久，新视频依然还是在为这个事情困扰，真的是个很纯粹的人了，如果是我的话，以此为生，可能会去双线并行，坚持长vlog的制作，虽然更耗心力，但是这样会有更加长远的好处，观众盘会更加稳定，风评也会越来越好；短视频不会耗费太多精力，那就继续乘着风口挣钱，不要把两类视频的播放量混在一起思考，当成赚钱的工具就行，兴趣当成工作固然幸运，但是大多不得行，做人百分比这个问题真的是个永恒的话题。</p><p>乱七八糟的想法在这里依次补充：</p><p>20240514：用到或者有了明确的想法再去做。</p><p>想得太多会不会活得很累？</p>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;心情随笔，胡思乱想&quot;&gt;&lt;a href=&quot;#心情随笔，胡思乱想&quot; class=&quot;headerlink&quot; title=&quot;心情随笔，胡思乱想&quot;&gt;&lt;/a&gt;心情随笔，胡思乱想&lt;/h1&gt;&lt;p&gt;胡乱笔记，想到什么记什么。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="note" scheme="http://xiaomuhou.github.io/categories/note/"/>
-    
-    
-    <category term="emotion" scheme="http://xiaomuhou.github.io/tags/emotion/"/>
     
   </entry>
   
