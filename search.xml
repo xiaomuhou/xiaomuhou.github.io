@@ -4202,4 +4202,22 @@ u w(1-\cos \theta)-v \sin \theta & v w(1-\cos \theta)+u \sin \theta & w^2+\left(
         <tag>note</tag>
       </tags>
   </entry>
+  <entry>
+    <title>adams命令流记录</title>
+    <url>/2026/05/24/adams%E5%91%BD%E4%BB%A4%E6%B5%81%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>ADAMS代码流：</p>
+<p>1.控制marker点在某一圆柱面的中心点，可选择两个圆表面中心点，而后测量直接计算取中间点。</p>
+<p>2.关于几种驱动代码：step</p>
+<p>-1.69E-06<em>(-4</em>time)^3 - 7.977E-04<em>(-4</em>time)^2 + 3.559E-05<em>(-4</em>time) + 4.871E-03 </p>
+<p>注意应用确认：</p>
+<p>IF( TIME-12.5 :  -4 , 4 , 4 ) IF切换代码</p>
+<p> \1. 标准驱动模板 ，选择位移 速度等不同模式对应不同变量。</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">STEP(time, 1.0, 0, 3.0, 100)</span><br></pre></td></tr></tbody></table></figure>
+<p> A. 组合往复运动（先动再停再回） </p>
+<p> STEP(time, 1, 0, 2, 50) + STEP(time, 3, 0, 4, -50) </p>
+<p>2-3维持在50</p>
+<p>后续缓慢增加。</p>
+]]></content>
+  </entry>
 </search>

@@ -6,7 +6,7 @@
   <link href="http://xiaomuhou.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiaomuhou.github.io/"/>
-  <updated>2026-05-24T14:15:14.292Z</updated>
+  <updated>2026-05-24T14:18:20.744Z</updated>
   <id>http://xiaomuhou.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>adams命令流记录</title>
+    <link href="http://xiaomuhou.github.io/2026/05/24/adams%E5%91%BD%E4%BB%A4%E6%B5%81%E8%AE%B0%E5%BD%95/"/>
+    <id>http://xiaomuhou.github.io/2026/05/24/adams%E5%91%BD%E4%BB%A4%E6%B5%81%E8%AE%B0%E5%BD%95/</id>
+    <published>2026-05-24T14:17:32.000Z</published>
+    <updated>2026-05-24T14:18:20.744Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>ADAMS代码流：</p><p>1.控制marker点在某一圆柱面的中心点，可选择两个圆表面中心点，而后测量直接计算取中间点。</p><p>2.关于几种驱动代码：step</p><p>-1.69E-06<em>(-4</em>time)^3 - 7.977E-04<em>(-4</em>time)^2 + 3.559E-05<em>(-4</em>time) + 4.871E-03 </p><p>注意应用确认：</p><p>IF( TIME-12.5 :  -4 , 4 , 4 ) IF切换代码</p><p> \1. 标准驱动模板 ，选择位移 速度等不同模式对应不同变量。</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">STEP(time, 1.0, 0, 3.0, 100)</span><br></pre></td></tr></tbody></table></figure><p> A. 组合往复运动（先动再停再回） </p><p> STEP(time, 1, 0, 2, 50) + STEP(time, 3, 0, 4, -50) </p><p>2-3维持在50</p><p>后续缓慢增加。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;ADAMS代码流：&lt;/p&gt;
+&lt;p&gt;1.控制marker点在某一圆柱面的中心点，可选择两个圆表面中心点，而后测量直接计算取中间点。&lt;/p&gt;
+&lt;p&gt;2.关于几种驱动代码：step&lt;/p&gt;
+&lt;p&gt;-1.69E-06&lt;em&gt;(-4&lt;/</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>静动思考备份</title>
@@ -439,29 +463,6 @@
     
     
     <category term="mathematic" scheme="http://xiaomuhou.github.io/tags/mathematic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gbasisorder</title>
-    <link href="http://xiaomuhou.github.io/2024/08/12/gbasisorder/gbasisorder/"/>
-    <id>http://xiaomuhou.github.io/2024/08/12/gbasisorder/gbasisorder/</id>
-    <published>2024-08-12T13:48:34.000Z</published>
-    <updated>2024-08-12T14:00:37.787Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>[Groebner basis]</strong></p><p>三种排序（备份方便查询）</p><p> <code>'degreeInverseLexicographic'</code>, <code>'degreeLexicographic'</code>, or <code>'lexicographic'</code> </p><span id="more"></span><ol><li><strong><code>gbasis(poly)</code></strong> </li></ol><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">syms x y</span><br><span class="line">poly = [x^<span class="number">2</span> + y^<span class="number">2</span> - <span class="number">1</span>; x - y^<span class="number">3</span>];</span><br><span class="line">G = gbasis(poly);</span><br></pre></td></tr></tbody></table></figure><ol><li><strong><code>gbasis(poly, vars)</code></strong> </li></ol><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">syms x y z</span><br><span class="line">poly = [x^<span class="number">2</span> + y^<span class="number">2</span> - z^<span class="number">2</span>; x - y*z];</span><br><span class="line">vars = [x, y, z];</span><br><span class="line">G = gbasis(poly, vars);</span><br></pre></td></tr></tbody></table></figure><ol><li><strong><code>gbasis(___, 'MonomialOrder', MonomialOrder)</code></strong> </li></ol><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">syms x y</span><br><span class="line">poly = [x^<span class="number">2</span> + y^<span class="number">2</span> - <span class="number">1</span>; x - y^<span class="number">3</span>];</span><br><span class="line">G = gbasis(poly, [x, y], <span class="string">'MonomialOrder'</span>, <span class="string">'grlex'</span>);</span><br></pre></td></tr></tbody></table></figure><p>EXAMPLE:</p><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">syms x y z</span><br><span class="line">f1 = x^<span class="number">2</span> + y^<span class="number">2</span> - z^<span class="number">2</span>;</span><br><span class="line">f2 = x*y - <span class="number">1</span>;</span><br><span class="line">f3 = z - <span class="number">1</span>;</span><br><span class="line">polys = [f1; f2; f3];</span><br><span class="line"></span><br><span class="line"><span class="comment">% Compute the Gröbner basis</span></span><br><span class="line">G = grobner(polys, [x, y, z]);</span><br><span class="line"></span><br><span class="line"><span class="comment">% Solve the system</span></span><br><span class="line">solutions = solve(G, [x, y, z]);</span><br><span class="line"></span><br><span class="line"><span class="comment">% Display the solutions</span></span><br><span class="line">x_sol = solutions.x;</span><br><span class="line">y_sol = solutions.y;</span><br><span class="line">z_sol = solutions.z;</span><br><span class="line"></span><br><span class="line"><span class="built_in">disp</span>(<span class="string">'Solutions for x:'</span>);</span><br><span class="line"><span class="built_in">disp</span>(x_sol);</span><br><span class="line"><span class="built_in">disp</span>(<span class="string">'Solutions for y:'</span>);</span><br><span class="line"><span class="built_in">disp</span>(y_sol);</span><br><span class="line"><span class="built_in">disp</span>(<span class="string">'Solutions for z:'</span>);</span><br><span class="line"><span class="built_in">disp</span>(z_sol);</span><br></pre></td></tr></tbody></table></figure><h3 id="1-Lexicographic-Order-lex"><a href="#1-Lexicographic-Order-lex" class="headerlink" title="1. Lexicographic Order (lex)"></a>1. <strong>Lexicographic Order (lex)</strong></h3><p><strong>Advantages:</strong></p><ul><li><strong>Simplicity:</strong> Easy to understand and implement. It’s straightforward because it follows a strict variable precedence, similar to dictionary order.</li><li><strong>Algorithm Efficiency:</strong> Often used in algorithms where the precedence of variables is crucial, such as in Gröbner basis computations where the structure of the ideal is dependent on the variable ordering.</li><li><strong>Predictability:</strong> Provides consistent results that can be easier to predict and verify, especially in systems where variable ordering is well-defined.</li></ul><p><strong>Applications:</strong></p><ul><li>Preferred in problems where the order of variables has a natural hierarchy or importance, such as certain optimization problems or algorithms where variable prioritization is essential.</li></ul><h3 id="2-Graded-Lexicographic-Order-grlex"><a href="#2-Graded-Lexicographic-Order-grlex" class="headerlink" title="2. Graded Lexicographic Order (grlex)"></a>2. <strong>Graded Lexicographic Order (grlex)</strong></h3><p><strong>Advantages:</strong></p><ul><li><strong>Degree Consideration:</strong> First organizes monomials by their total degree, which is useful in contexts where the degree of the polynomial plays a significant role.</li><li><strong>Balanced Comparison:</strong> Within monomials of the same total degree, it applies lexicographic ordering, which can provide a balance between degree and variable precedence.</li><li><strong>Ideal Theory:</strong> Commonly used in algebraic geometry and commutative algebra to handle polynomial ideals where total degree matters.</li></ul><p><strong>Applications:</strong></p><ul><li>Useful in Gröbner basis computations where maintaining a balance between total degree and variable order helps in simplifying polynomial systems, especially when dealing with polynomial equations where the degree of terms influences the structure.</li></ul><h3 id="3-Graded-Reverse-Lexicographic-Order-grevlex"><a href="#3-Graded-Reverse-Lexicographic-Order-grevlex" class="headerlink" title="3. Graded Reverse Lexicographic Order (grevlex)"></a>3. <strong>Graded Reverse Lexicographic Order (grevlex)</strong></h3><p><strong>Advantages:</strong></p><ul><li><strong>Focus on Degree and Last Variables:</strong> Organizes monomials by total degree first, but within the same degree, it compares starting from the last variable, which can be useful in certain algebraic computations.</li><li><strong>Efficient Simplification:</strong> Often leads to more efficient simplifications in polynomial systems where last variables are less significant, and can simplify Gröbner basis computations by focusing on more “significant” terms first.</li><li><strong>Algebraic Variety:</strong> Provides a different perspective in solving polynomial systems, which can be advantageous in specific algebraic contexts or when dealing with varieties in algebraic geometry.</li></ul><p><strong>Applications:</strong></p><ul><li>Preferred in cases where polynomial systems or geometric problems benefit from handling terms with less importance first, such as certain types of algebraic geometry problems or when working with varieties where polynomial terms’ significance changes based on their position.</li></ul><h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><ul><li><strong>Lexicographic Order (lex):</strong> Simplifies understanding and implementation; predictable results.</li><li><strong>Graded Lexicographic Order (grlex):</strong> Balances degree and variable ordering; useful for polynomial systems where degree is significant.</li><li><strong>Graded Reverse Lexicographic Order (grevlex):</strong> Focuses on degree first and then the last variables; efficient in simplifying systems where less significant terms are processed earlier.</li></ul><p>单论solve计算效率，化简之后的计算公式效率提高大概30%，删去分析 Gröbner 基阶次的内容。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;strong&gt;[Groebner basis]&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;三种排序（备份方便查询）&lt;/p&gt;
-&lt;p&gt; &lt;code&gt;&#39;degreeInverseLexicographic&#39;&lt;/code&gt;, &lt;code&gt;&#39;degreeLexicographic&#39;&lt;/code&gt;, or &lt;code&gt;&#39;lexicographic&#39;&lt;/code&gt; &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="note" scheme="http://xiaomuhou.github.io/categories/note/"/>
-    
-    
-    <category term="algebraic" scheme="http://xiaomuhou.github.io/tags/algebraic/"/>
     
   </entry>
   
