@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://xiaomuhou.github.io/about/index.html</loc>
+    
+    <lastmod>2026-05-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://xiaomuhou.github.io/2026/05/24/adams%E5%91%BD%E4%BB%A4%E6%B5%81%E8%AE%B0%E5%BD%95/</loc>
     
     <lastmod>2026-05-24</lastmod>
@@ -185,15 +194,6 @@
     <loc>http://xiaomuhou.github.io/2024/08/05/%E9%9A%8F%E7%AC%94II/%E9%9A%8F%E7%AC%94II/</loc>
     
     <lastmod>2024-08-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xiaomuhou.github.io/about/index.html</loc>
-    
-    <lastmod>2024-08-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
