@@ -688,6 +688,13 @@
   </url>
   
   <url>
+    <loc>http://xiaomuhou.github.io/tags/movie/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://xiaomuhou.github.io/tags/mathematica/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -695,7 +702,7 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/tags/movie/</loc>
+    <loc>http://xiaomuhou.github.io/tags/algebraic/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -709,7 +716,7 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/tags/algebraic/</loc>
+    <loc>http://xiaomuhou.github.io/tags/ACADEMIC/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -724,13 +731,6 @@
   
   <url>
     <loc>http://xiaomuhou.github.io/tags/formula/</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://xiaomuhou.github.io/tags/ACADEMIC/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -760,14 +760,14 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/categories/locking/</loc>
+    <loc>http://xiaomuhou.github.io/categories/life/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/categories/life/</loc>
+    <loc>http://xiaomuhou.github.io/categories/locking/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -837,14 +837,14 @@
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/categories/game/</loc>
+    <loc>http://xiaomuhou.github.io/categories/project/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://xiaomuhou.github.io/categories/project/</loc>
+    <loc>http://xiaomuhou.github.io/categories/game/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
