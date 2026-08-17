@@ -436,19 +436,19 @@
 \end{equation}</script><span id="more"></span>
 <p>柔度叠加矩阵案例说明：</p>
 <p>d_ij,j坐标受力在i坐标产生位移</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q1.png" class title="Q1">
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q1.png" class="" title="Q1">
 <p>此时F1=1,F2=0,F1作用下，两个位置的位移，其柔度矩阵含义如图，即为各点的挠度，在实际柔性铰链中，则为各个铰链位置变形经过转换矩阵在统一坐标下的表达：</p>
 <script type="math/tex; mode=display">
 x_1=F_1*d_{11} \\
 x_2=F_1*d_{21}</script><p>另一种情况，F1=0,F2=1;先列出点，其次看受力位置</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q2.png" class title="Q2">
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q2.png" class="" title="Q2">
 <script type="math/tex; mode=display">
 x_1=F_2*d_{12} \\
 x_2=F_2*d_{22}</script><p>所以，F1=1,F2=1,各自独立计算并且叠加，可以得到：</p>
 <script type="math/tex; mode=display">
 x_1=F_1d_{11}+F_2d_{12}\\
 x_2=F_2d_{22}+F_1D_{21}</script><p>有一个案例，文中直接给出了柔度的参数，这里按照材料力学补充一下推导流程，略作复习：</p>
-<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q3.png" class title="Q3">
+<img src="/2025/01/11/%E5%85%B3%E4%BA%8E%E6%9F%94%E5%BA%A6%E7%9F%A9%E9%98%B5%E4%B8%8E%E5%8F%98%E5%BD%A2%E5%8F%A0%E5%8A%A0%E6%B3%95%E7%9A%84%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/Q3.png" class="" title="Q3">
 <p>d_11=d_22=8d,d_12=d_21=7d;推导说明，假定F1=0,F2=1;</p>
 <p>以x_2为界限进行分类，挠度曲线参数分为两段</p>
 <script type="math/tex; mode=display">
