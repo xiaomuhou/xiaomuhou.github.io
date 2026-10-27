@@ -122,7 +122,8 @@
   <entry>
     <title>creo复习记录</title>
     <url>/2026/10/07/creo%E5%A4%8D%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h1 id="cero复习记录"><a href="#cero复习记录" class="headerlink" title="cero复习记录"></a>cero复习记录</h1><p>太久没用了，复习一下，方便后续思考。</p>
+    <content><![CDATA[<p><meta name="referrer" content="no-referrer"></p>
+<h1 id="cero复习记录"><a href="#cero复习记录" class="headerlink" title="cero复习记录"></a>cero复习记录</h1><p>太久没用了，复习一下，方便后续思考。</p>
 <span id="more"></span>
 <p>1.选定平面-拉伸长-画圆：鼠标中键双击直径</p>
 <p>2.选定平面-拉伸或者移除有点自动-根据选择方向出现，在深度后面选择方向-</p>
@@ -147,6 +148,10 @@
 </ol>
 <p>11.约束是放在一起的，都在列表里，有的装配完自动下一个了</p>
 <p>12.滑块 销轴是多重约束叠加，销轴是轴对齐，二是位置放置；滑块则是轴对齐旋转平面平面 平移轴</p>
+<p>13.关于简化零件的操作</p>
+<p>首先将一个子装配体完全布尔，组合之后删除多余文件，保存为单一文件</p>
+<p>而后将多个处理后的文件进行装配，形成简化版完全装配体</p>
+<p>保存为adams进行处理。</p>
 ]]></content>
       <categories>
         <category>note</category>
@@ -4295,6 +4300,189 @@ u w(1-\cos \theta)-v \sin \theta & v w(1-\cos \theta)+u \sin \theta & w^2+\left(
       </categories>
       <tags>
         <tag>EMO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>fluent_aircraft</title>
+    <url>/2026/10/27/fluent-aircraft/</url>
+    <content><![CDATA[<p>Fluent记录</p>
+<p>简要记录下，复杂流程还是建模里面直接处理完成比较好</p>
+<p>sw比较熟悉，不再赘述；</p>
+<p>若为creo，在装配体中直接布尔运算即可，直接在模型中建立流场不不再进入spaceclaim，对应一下傻瓜操作，则直接进入第四阶段；</p>
+<span id="more"></span>
+<p>以下为傻瓜式记录操作，方便使用。</p>
+<h2 id="第一阶段：将-prt-导出为通用格式（在建模软件中操作）"><a href="#第一阶段：将-prt-导出为通用格式（在建模软件中操作）" class="headerlink" title="第一阶段：将 .prt 导出为通用格式（在建模软件中操作）"></a>第一阶段：将 <code>.prt</code> 导出为通用格式（在建模软件中操作）</h2><p>ANSYS 直接读取原生 <code>.prt</code> 有时会因接口未配置而报错，转成 <code>.stp</code> 最稳妥。</p>
+<ol>
+<li>在 Creo（或 UG NX）中打开你的飞行器 <code>.prt</code> 文件。</li>
+<li>点击左上角 <strong><code>文件 (File)</code></strong> → <strong><code>另存为 (Save As)</code></strong> → <strong><code>保存副本 (Save a Copy)</code></strong>。</li>
+<li>在弹出的窗口底部，点击 <strong><code>类型 (Type)</code></strong> 下拉菜单，选择 <strong><code>STEP (\*.stp)</code></strong>（或者选择 <strong><code>Parasolid (\*.x_t)</code></strong>）。</li>
+<li>文件名改成<strong>纯英文或数字</strong>（例如 <code>aircraft.stp</code>，路径和文件名尽量不要有中文），点击 <strong><code>确定 (OK)</code></strong>，在随后弹出的导出选项框里直接点 <strong><code>确定 (OK)</code></strong>。</li>
+</ol>
+<h2 id="第二阶段：建立-Workbench-流体工程"><a href="#第二阶段：建立-Workbench-流体工程" class="headerlink" title="第二阶段：建立 Workbench 流体工程"></a>第二阶段：建立 Workbench 流体工程</h2><ol>
+<li>打开桌面的 <strong><code>Workbench</code></strong>（图标是一个蓝黄色的齿轮/箭头）。</li>
+<li>看界面最左侧的 <strong><code>Toolbox</code>（工具箱）</strong> 列表，找到 <strong><code>Analysis Systems</code>（分析系统）</strong> 并点击它左边的 <code>+</code> 号展开。</li>
+<li>在列表里找到 <strong><code>Fluid Flow (Fluent)</code></strong>，<strong>鼠标左键按住它不放</strong>，直接拖到右边空白的 <strong><code>Project Schematic</code>（工程视图区）</strong>，松开鼠标，会出现一个包含 A1 到 A6 的小方框表格。</li>
+<li>在这个表格的第 2 行 <strong><code>A2: Geometry</code></strong> 上点击 <strong>鼠标右键</strong> → 鼠标移到 <strong><code>Import Geometry</code>（导入几何体）</strong> → 点击 <strong><code>Browse...</code>（浏览）</strong>。</li>
+<li>在弹出的文件夹窗口中，找到刚才导出的 <code>aircraft.stp</code>，选中后点击 <strong><code>打开 (Open)</code></strong>。此时 <code>Geometry</code> 右侧会变成一个绿色的对勾。</li>
+</ol>
+<h2 id="第三阶段：建风洞并“挖掉”飞机（在-SpaceClaim-中操作）"><a href="#第三阶段：建风洞并“挖掉”飞机（在-SpaceClaim-中操作）" class="headerlink" title="第三阶段：建风洞并“挖掉”飞机（在 SpaceClaim 中操作）"></a>第三阶段：建风洞并“挖掉”飞机（在 SpaceClaim 中操作）</h2><ol>
+<li>在 <strong><code>A2: Geometry</code></strong> 上点击 <strong>鼠标右键</strong> → 点击 <strong><code>Edit Geometry in SpaceClaim...</code></strong>（耐心等待 10 到 30 秒，软件会弹出一个全新的三维窗口 SpaceClaim）。<ul>
+<li><em>视角操作口诀：按住<strong>鼠标中键（滚轮）拖动</strong>是旋转模型；按住 <strong><code>Ctrl</code> + 鼠标中键拖动</strong>是平移模型；<strong>滚动滚轮</strong>是缩放。</em></li>
+</ul>
+</li>
+<li><strong>创建外流场空气盒：</strong><ul>
+<li>看界面最顶部的菜单栏，点击 <strong><code>准备 (Prepare)</code></strong> 选项卡（如果是英文版则点 <strong><code>Prepare</code></strong>）。</li>
+<li>在左上角找到 <strong><code>外壳 (Enclosure)</code></strong> 按钮（图标是一个小圆柱外面套着一个透明正方体），<strong>左键点击它</strong>。</li>
+<li>用 <strong>鼠标左键点击一下屏幕中心的飞行器模型</strong>（选中后飞行器外面会立刻出现一个半透明的紫色/绿色方框）。</li>
+</ul>
+</li>
+<li><strong>修改风洞方框的尺寸：</strong><ul>
+<li>看屏幕左侧中间的 <strong><code>选项 - 外壳 (Options - Enclosure)</code></strong> 面板。</li>
+<li>找到 <strong><code>对称尺寸 (Symmetric dimensions)</code></strong> 这一项，<strong>把前面的勾去掉</strong>（因为飞机尾部需要留更长的空间算尾流）。</li>
+<li>此时屏幕上会出现 6 个带箭头的尺寸输入框（或者直接在左侧面板的 6 个方向框里输入数字）。假设你的飞机总长大约是 <code>1000 mm</code>（1米），为了第一次算得快，把机头前方、上下、左右这 5 个方向的数字都改成 <strong><code>3000 mm</code></strong>，把机尾正后方的那个数字改成 <strong><code>6000 mm</code></strong>（如果你的飞机是 10 米长，就对应填 <code>30000 mm</code> 和 <code>60000 mm</code>，即机身长度的 <strong>3 倍</strong>和 <strong>6 倍</strong>）。</li>
+<li>输完数字后，找到模型区左上角的一个 <strong>绿色对勾图标（完成 / Complete）</strong>，<strong>左键点击它</strong>（或者直接按键盘上的 <code>Enter</code> 回车键）。</li>
+<li>再按一下键盘左上角的 <strong><code>Esc</code> 键</strong>退出外壳工具。此时软件已经自动在方盒内部挖出了一个飞机形状的空腔。</li>
+</ul>
+</li>
+<li><strong>屏蔽原来的实体飞机（极其关键，漏掉必报错）：</strong><ul>
+<li>看屏幕最左侧上方的 <strong><code>结构 (Structure)</code></strong> 树状列表。</li>
+<li>你会看到列表里有两个东西：一个是你原来的飞行器名字（比如 <code>aircraft</code>），另一个是 <strong><code>Enclosure</code>（外壳）</strong>。</li>
+<li>在原来的飞行器名字（<code>aircraft</code>）上点击 <strong>鼠标右键</strong> → 在弹出的菜单最上方点击 <strong><code>抑制物理场 (Suppress for Physics)</code></strong>。</li>
+<li>此时 <code>aircraft</code> 前面的图标上会多出一个红色的禁止小标志（或者蓝色的屏蔽符号），并且可以把 <code>aircraft</code> 前面的复选框勾掉隐藏它。</li>
+</ul>
+</li>
+<li>直接点击 SpaceClaim 窗口右上角的 <strong><code>X</code></strong> 关闭窗口（无需手动点保存，Workbench 会自动同步保存）。</li>
+</ol>
+<blockquote>
+<p><strong>备用说明：如果你的 Workbench 没有 SpaceClaim，而是打开了 DesignModeler (DM)</strong></p>
+<ol>
+<li>进 DM 后先点左上角的 <strong><code>Generate</code>（闪电图标）</strong> 显示出飞机。</li>
+<li>点击顶部菜单 <strong><code>Tools</code></strong> → <strong><code>Enclosure</code></strong> → 在左下角 Details 框里把 <code>Cushion</code> 改成 <code>Non-Uniform</code>，填好上下左右前后的距离 → 点击顶部 <strong><code>Generate</code>（闪电图标）</strong>。</li>
+<li>点击顶部菜单 <strong><code>Create</code></strong> → <strong><code>Boolean</code>（布尔运算）</strong> → 在左下角 Details 框里把 <code>Operation</code> 改为 <strong><code>Subtract</code>（减去）</strong> → 点击 <code>Target Bodies</code> 右侧的 <code>Not Selected</code>，在屏幕上点一下大空气盒子，点 <code>Apply</code> → 点击 <code>Tool Bodies</code> 右侧的 <code>Not Selected</code>，在左侧树里点一下原来的飞机实体，点 <code>Apply</code> → 确保 <code>Preserve Tool Bodies</code> 是 <strong><code>No</code></strong> → 点击顶部 <strong><code>Generate</code>（闪电图标）</strong>，关掉窗口即可。</li>
+</ol>
+</blockquote>
+<h2 id="第四阶段：给边界命名并画网格（在-Mesh-中操作）"><a href="#第四阶段：给边界命名并画网格（在-Mesh-中操作）" class="headerlink" title="第四阶段：给边界命名并画网格（在 Mesh 中操作）"></a>第四阶段：给边界命名并画网格（在 Mesh 中操作）</h2><ol>
+<li>回到 Workbench 主界面，用鼠标左键 <strong>双击第 3 行 <code>A3: Mesh</code></strong>（等待弹出 Meshing 窗口）。</li>
+<li><strong>认识选面工具与隐藏快捷键（必用）：</strong><ul>
+<li>看顶部工具栏中间，有一个<strong>绿色小正方体，其中一个面涂成深绿色</strong>的图标，叫做 <strong><code>Face</code>（面选择工具）</strong>，<strong>左键点击它</strong>（或者直接按键盘快捷键 <strong><code>Ctrl + F</code></strong>）。只有处于这个模式下，鼠标才能单选某一个面。</li>
+</ul>
+</li>
+<li><strong>给外风洞的 6 个大面命名：</strong><ul>
+<li><strong>第一步（看清机头朝向）</strong>：转动视角，透过半透明盒子看清里面的飞机<strong>机头朝向哪一面</strong>。</li>
+<li><strong>命名入口 (<code>inlet</code>)</strong>：用鼠标左键点击<strong>机头正前方</strong>的那个大外表面（选中后会变成绿色）→ 按一下键盘上的字母 <strong><code>N</code> 键</strong> → 在弹出的小框里输入 <strong><code>inlet</code></strong> → 点击 <strong><code>OK</code></strong>。</li>
+<li><strong>命名出口 (<code>outlet</code>)</strong>：转动视角到飞机屁股后面，用鼠标左键点击<strong>机尾正后方</strong>的那个大外表面 → 按键盘 <strong><code>N</code> 键</strong> → 输入 <strong><code>outlet</code></strong> → 点击 <strong><code>OK</code></strong>。</li>
+<li><strong>命名四周远场 (<code>symmetry</code>)</strong>：按住键盘上的 <strong><code>Ctrl</code> 键不放</strong>，用鼠标左键依次点击盒子剩下的 <strong>上、下、左、右 4 个外侧面</strong>（此时 4 个面同时变绿）→ 松开 <code>Ctrl</code>，按键盘 <strong><code>N</code> 键</strong> → 输入 <strong><code>symmetry</code></strong> → 点击 <strong><code>OK</code></strong>。</li>
+</ul>
+</li>
+<li><strong>隐藏外面盒子，给里面的飞机表面命名：</strong><ul>
+<li>按住 <strong><code>Ctrl</code> 键</strong>，把外面盒子的 6 个大面全部点绿选中 → 在模型上点击 <strong>鼠标右键</strong> → 点击 <strong><code>Hide Faces</code>（隐藏面）</strong>（或者直接按键盘 <strong><code>F8</code></strong>）。</li>
+<li>此时外面的大盒子消失了，屏幕正中央只剩下里面的飞行器表面！</li>
+<li>在空白处按住 <strong>鼠标左键拖出一个大框</strong>，把整个飞行器的所有表面全部框选住（飞机会全部变成绿色）→ 按键盘 <strong><code>N</code> 键</strong> → 输入 <strong><code>aircraft_wall</code></strong> → 点击 <strong><code>OK</code></strong>。</li>
+<li>在屏幕空白处点击 <strong>鼠标右键</strong> → 点击 <strong><code>Show All Faces</code>（显示所有面）</strong>，把外面的盒子重新显示出来。</li>
+<li><em>检查一下：展开左侧树最下方的 <strong><code>Named Selections</code></strong>，确保里面有 <code>inlet</code>、<code>outlet</code>、<code>symmetry</code>、<code>aircraft_wall</code> 这 4 项。</em></li>
+</ul>
+</li>
+<li><strong>设置飞机表面网格加密（防止飞机表面太粗糙）：</strong><ul>
+<li>在左侧树的 <strong><code>Mesh</code></strong> 字样上点击 <strong>鼠标右键</strong> → 鼠标移到 <strong><code>Insert</code>（插入）</strong> → 点击 <strong><code>Sizing</code>（尺寸调整）</strong>。</li>
+<li>看屏幕左下角的 <strong><code>Details of "Face Sizing"</code></strong> 属性框：<ul>
+<li>找到 <strong><code>Scoping Method</code></strong>，点击它右侧的 <code>Geometry Selection</code>，在下拉菜单里改成 <strong><code>Named Selection</code></strong>。</li>
+<li>在下一行 <strong><code>Named Selection</code></strong> 右侧点击黄色空白框，下拉选择 <strong><code>aircraft_wall</code></strong>。</li>
+<li>找到下方的 <strong><code>Element Size</code></strong>（单元尺寸），点击右侧的 <code>Default</code>，输入一个具体数值：如果你的飞机长 1 米左右，这里输入 <strong><code>0.015 m</code></strong>（或者 <strong><code>15 mm</code></strong>，看它后面默认跟的单位是 <code>m</code> 还是 <code>mm</code>）；如果飞机长 10 米，这里就填 <code>0.15 m</code>（<code>150 mm</code>）。</li>
+<li>找到下方的 <strong><code>Behavior</code></strong> 或观察整体设置，无需改其他项。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>生成网格并查看数量：</strong><ul>
+<li>点击顶部工具栏最显眼的 <strong><code>Generate</code>（生成，带黄色闪电的图标）</strong> 按钮，等待底部绿色进度条走完（通常需要几十秒到两分钟）。</li>
+<li>点击左侧树的 <strong><code>Mesh</code></strong>，即可看到带网格线的模型。看左下角属性框，展开最底部的 <strong><code>Statistics</code>（统计）</strong>，看一下 <strong><code>Elements</code></strong>（网格总数）是不是在 <strong>30 万 到 200 万</strong> 之间（这个数量算得又快又准）。</li>
+</ul>
+</li>
+<li><strong>关闭并更新（极其重要）：</strong><ul>
+<li>直接点击 Mesh 窗口右上角的 <strong><code>X</code></strong> 关闭它。</li>
+<li>回到 Workbench 主界面，此时你会看到 <code>A3: Mesh</code> 右边是一个<strong>黄色的闪电符号</strong>。</li>
+<li>在 <strong><code>A3: Mesh</code></strong> 上点击 <strong>鼠标右键</strong> → 点击 <strong><code>Update</code>（更新）</strong>！耐心等几秒钟，直到黄色闪电变成 <strong>绿色对勾</strong>，才能进下一步。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第五阶段：设置-Fluent-并开始计算（在-Fluent-中操作）"><a href="#第五阶段：设置-Fluent-并开始计算（在-Fluent-中操作）" class="headerlink" title="第五阶段：设置 Fluent 并开始计算（在 Fluent 中操作）"></a>第五阶段：设置 Fluent 并开始计算（在 Fluent 中操作）</h2><ol>
+<li>在 Workbench 主界面，鼠标左键 <strong>双击第 4 行 <code>A4: Setup</code></strong>，弹出一个叫 <code>Fluent Launcher</code> 的小窗口：<ul>
+<li>在左侧勾选 <strong><code>Double Precision</code>（双精度）</strong>。</li>
+<li>在下方找到 <strong><code>Solver Processes</code></strong>（求解器核数），把默认的 <code>1</code> 改成 <strong><code>4</code></strong> 或 <strong><code>8</code></strong>（根据你电脑 CPU 核心数填，算得快好几倍）。</li>
+<li>点击底部的 <strong><code>Start</code></strong> 按钮，进入 Fluent 主界面。</li>
+</ul>
+</li>
+<li><strong>第一件事：检查飞机尺寸单位对不对（新手防呆必查）：</strong><ul>
+<li>看左侧树 <strong><code>Setup</code></strong> → 点击 <strong><code>General</code></strong>。</li>
+<li>在紧挨着它的中间面板里，点击 <strong><code>Scale...</code>（缩放）</strong> 按钮。</li>
+<li>看弹出的小框里的 <code>Domain Extents</code>（计算域范围），看 <code>Xmax - Xmin</code> 是几米。如果显示几米或几十米，说明单位完全正确，直接点 <strong><code>Close</code></strong> 关掉；如果显示几千米（比如把毫米当成米导入了），就把下面的 <code>Mesh Was Created In</code> 选成 <strong><code>mm</code></strong>，点一下 <strong><code>Scale</code></strong> 按钮，再点 <strong><code>Close</code></strong>。</li>
+</ul>
+</li>
+<li><strong>第二件事：看清风吹向哪个坐标轴，设置飞行速度：</strong><ul>
+<li>先看一眼右侧图形窗口里的飞机和右下角的 <strong>红绿蓝 XYZ 坐标轴</strong>。如果看不清里面的飞机，可以在顶部菜单点 <code>View</code> → 把外面的框隐藏，或者直接回忆你在 SpaceClaim 里机头朝哪个轴。</li>
+<li><em>更简单的确认方法：</em> 看左侧树展开 <strong><code>Boundary Conditions</code>（边界条件）</strong> → 展开 <strong><code>Inlet</code></strong> → 用鼠标左键 <strong>双击 <code>inlet</code></strong>。</li>
+<li>在弹出的窗口中，找到 <strong><code>Velocity Specification Method</code></strong>（速度指定方法），点击右侧下拉菜单，把默认的 <strong><code>Magnitude, Normal to Boundary</code>（垂直于边界向内吹）</strong> 保持不变！</li>
+<li><em>重点技巧：</em> 只要你的 <code>inlet</code> 是刚才在机头正前方选的那个平面，保持默认的 <strong><code>Magnitude, Normal to Boundary</code></strong>，Fluent 就会<strong>自动垂直于入口平面、朝着盒子内部（也就是从机头往机尾）吹风</strong>，你根本不用管是 X 轴还是 Z 轴！</li>
+<li>直接在下一行 <strong><code>Velocity Magnitude [m/s]</code></strong> 输入你的飞行速度，比如输入 <strong><code>50</code></strong>（代表 50 米/秒，即 180 公里/小时）。</li>
+<li>点击底部的 <strong><code>Apply</code></strong>，再点击 <strong><code>Close</code></strong>。</li>
+</ul>
+</li>
+<li><strong>第三件事：设置阻力监控曲线（看它什么时候算完）：</strong><ul>
+<li>看左侧树下半部分的 <strong><code>Solution</code>（求解）</strong> → 展开 <strong><code>Report Definitions</code>（报告定义）</strong> → 在 <strong><code>Report Definitions</code></strong> 上点击 <strong>鼠标右键</strong> → <strong><code>New</code>（新建）</strong> → 鼠标移到 <strong><code>Force Report</code>（力报告）</strong> → 点击 <strong><code>Drag...</code>（阻力）</strong>。</li>
+<li>在弹出的窗口中：<ul>
+<li><strong><code>Name</code></strong> 保持 <code>drag-rfile</code> 或改成 <strong><code>drag</code></strong>。</li>
+<li>在右侧的 <strong><code>Wall Zones</code>（壁面区域）</strong> 列表里，用鼠标左键点选 <strong><code>aircraft_wall</code></strong>（必须点成深色选中状态！）。</li>
+<li>在左下角的 <strong><code>Force Vector</code>（力方向向量）</strong> 里，看你的气流是从哪个轴吹过来的（比如气流沿 <code>+X</code> 方向吹，就填 <code>X=1, Y=0, Z=0</code>；如果沿 <code>-Z</code> 吹，就填 <code>X=0, Y=0, Z=-1</code>）。</li>
+<li>在窗口底部，把 <strong><code>Report File</code></strong> 和 <strong><code>Report Plot</code>（画阻力曲线图）</strong> 都打上勾。</li>
+<li>点击 <strong><code>OK</code></strong>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>第四件事：初始化并开始计算：</strong><ul>
+<li>在左侧树 <code>Solution</code> 下，鼠标左键 <strong>双击 <code>Initialization</code>（初始化）</strong> → 在中间面板保持默认的 <strong><code>Hybrid Initialization</code></strong> → 直接点击下方的 <strong><code>Initialize</code></strong> 按钮（等 3 秒钟，底部控制台文字停住即可）。</li>
+<li>在左侧树 <code>Solution</code> 下，鼠标左键 <strong>双击 <code>Run Calculation</code>（运行计算）</strong> → 在中间面板找到 <strong><code>Number of Iterations</code>（迭代步数）</strong>，输入 <strong><code>150</code></strong> → 点击底部的 <strong><code>Calculate</code>（计算）</strong> 按钮！</li>
+<li>如果弹出一个小提示框，直接点 <strong><code>OK</code></strong>。此时屏幕中间会自动跳出残差曲线图和阻力变化曲线图，电脑开始全力计算。等 150 步跑完（或者阻力曲线完全变成一条水平直线），弹出 <code>Calculation complete</code> 点击 <strong><code>OK</code></strong>。</li>
+<li>直接点击 Fluent 右上角的 <strong><code>X</code></strong> 关闭窗口（会自动保存结果）。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第六阶段：导出漂亮的压力云图与三维流线（在-Results-中操作）"><a href="#第六阶段：导出漂亮的压力云图与三维流线（在-Results-中操作）" class="headerlink" title="第六阶段：导出漂亮的压力云图与三维流线（在 Results 中操作）"></a>第六阶段：导出漂亮的压力云图与三维流线（在 Results 中操作）</h2><ol>
+<li>回到 Workbench 主界面，鼠标左键 <strong>双击最后一行 <code>A6: Results</code></strong>，打开后处理软件 CFD-Post。</li>
+<li><strong>第一步：画出飞行器表面压力云图（红蓝彩色机身）：</strong><ul>
+<li>看顶部工具栏中间偏左，找到一个<strong>画着彩色渐变圆圈/等高线</strong>的图标，鼠标放上去会显示 <strong><code>Contour</code>（云图）</strong>，<strong>左键点击它</strong> → 在弹出的名字小框里直接点 <strong><code>OK</code></strong>。</li>
+<li>看屏幕左下角的 <strong><code>Details of Contour 1</code></strong> 属性框：<ul>
+<li>找到 <strong><code>Locations</code>（位置）</strong>，点击右侧框，下拉选择 <strong><code>aircraft_wall</code></strong>。</li>
+<li>找到 <strong><code>Variable</code>（变量）</strong>，确认右侧是 <strong><code>Pressure</code>（压力）</strong>。</li>
+<li>找到 <strong><code>Range</code>（范围）</strong>，可以把默认的 <code>Global</code> 改成 <strong><code>Local</code>（局部范围，色彩对比最鲜明）</strong>。</li>
+<li>点击属性框底部的 <strong><code>Apply</code></strong> 按钮！</li>
+</ul>
+</li>
+<li>此时屏幕中央立刻出现彩色的飞行器表面压力分布：机头和机翼前缘是深红色（高压驻点区），机翼上方是深蓝色（低压吸力区）。</li>
+</ul>
+</li>
+<li><strong>第二步：画出绕过飞机的三维彩色流线：</strong><ul>
+<li>点击顶部工具栏中<strong>画着几条弯曲彩色线条</strong>的图标 <strong><code>Streamline</code>（流线）</strong> → 在弹出的小框直接点 <strong><code>OK</code></strong>。</li>
+<li>看屏幕左下角的 <strong><code>Details of Streamline 1</code></strong> 属性框：<ul>
+<li>找到 <strong><code>Start From</code>（起始位置）</strong>，点击右侧下拉框，选择 <strong><code>inlet</code></strong>（如果觉得从整个大入口出发的线太分散，也可以选 <strong><code>aircraft_wall</code></strong>，再把下面的 <strong><code>Direction</code></strong> 改成 <strong><code>Forward and Backward</code></strong>，这样画出来的流线全都是紧贴着机身绕流的！）。</li>
+<li>找到 <strong><code># of Points</code>（流线根数）</strong>，把默认的 <code>25</code> 改成 <strong><code>100</code></strong>。</li>
+<li>点击底部的 <strong><code>Apply</code></strong> 按钮，屏幕里就会长出 100 根绕过飞行器的彩色三维速度流线。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>第三步：播放气流流动动画与保存高清白底图片：</strong><ul>
+<li><strong>看动画</strong>：点击顶部工具栏中<strong>像电影胶片播放键</strong>的图标 <strong><code>Animation</code>（动画）</strong> → 选中列表里的 <strong><code>Streamline 1</code></strong> → 点击面板里的 <strong>三角形播放键 (<code>Play</code>)</strong>，就能看到空气小球顺着机翼飞过的动态效果（点 <code>Stop</code> 停止并关闭动画框）。</li>
+<li><strong>保存高清图</strong>：在右侧模型背景空白处点击 <strong>鼠标右键</strong> → <strong><code>Viewer Options</code></strong>（或者点顶部相机图标旁边的设置），可以把背景改成纯白色；调好最好看的视角后，点击顶部工具栏的 <strong>照相机图标 (<code>Save Picture</code>)</strong> → 勾选 <code>White Background</code> → 点击 <strong><code>Save</code></strong> 即可导出高清结果图。</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>learning</category>
+      </categories>
+      <tags>
+        <tag>note</tag>
       </tags>
   </entry>
 </search>
